@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        const container = document.getElementById("container");
+
+        function updateDisplay(text) {
+            const doc = jsyaml.load(text, 'utf8')
+
+            const entries = Object.entries(doc);
+
+            entries.sort((a, b) => {
+                const nameA = a[1].de.toUpperCase().split(/ \(/)[0]
+                const nameB = b[1].de.toUpperCase().split(/ \(/)[0]
+                const splitA = nameA.split(/ /)
+                const splitB = nameB.split(/ /)
+                const lastnameA = splitA[splitA.length-1]
+                const lastnameB = splitB[splitB.length-1]
+                const lastnameDifference = lastnameA.localeCompare(lastnameB)
+                if (lastnameDifference !== 0 ) {
+                    return lastnameDifference
+                }
+                if (typeof a[1].title === "undefined" || typeof b[1].title === "undefined" ) {
+                    console.log("boum!")
+                }
+                const titleA = a[1].title.toUpperCase() 
+                const titleB = b[1].title.toUpperCase() 
+                return titleA.localeCompare(titleB)
+            })
+
+            for (const property in entries) {
+                // console.log(`${property}: ${doc[property]['image_path']}`);
+                const fig = document.createElement("figure");
+                fig.classList.add("figure")
+                fig.style = "margin: .5rem; height: 200px; width: auto; max-width: 200px;"
+
+                const img = document.createElement("img");
+                img.src = entries[property][1]['image_path']
+                img.classList.add("figure-img") 
+                img.classList.add("img-fluid")
+
+                const figcaption = document.createElement("figcaption");
+                figcaption.classList.add("figure-caption")
+                figcaption.classList.add("text-wrap")
+                figcaption.style = "width: 100%;"
+
+                let author = entries[property][1]['de'].split(/ \(/)[0];
+                let where = entries[property][1]['where']
+                const newtext = document.createTextNode(author );
+
+                if (where.includes("lipion")) {
+                    const float = document.createElement("span");
+                    float.classList.add("float-end")
+                    float.style = "color: green"
+                    const flag = document.createTextNode('⬤');
+                    float.appendChild(flag)
+                    figcaption.appendChild(float)
+                }
+
+                figcaption.appendChild(newtext)
+                fig.appendChild(img)
+                fig.appendChild(figcaption)
+                container.appendChild(fig)
+            }
+        }
+
+        function fetchData() {
+            console.log("Fetching updated data.")
+            const xhr = new XMLHttpRequest()
+            xhr.open("GET", "everything.yaml", true)
+            xhr.onload = () => {
+                updateDisplay(xhr.response)
+            };
+            xhr.send()
+        }
+
+        fetchData()
+
+    </script>
+</body>
+
+</html>

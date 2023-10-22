@@ -1,0 +1,10 @@
+Serie 1
+Longueur 4,32  m Largeur 1,80  m Hauteur 1,43  m
+Serie 2
+Longueur 4,39  m Largeur 1,82  m Hauteur 1,57  m
+X1
+Longueur 4,50  m Largeur 1,845 m Hauteur 1,642 m
+Z4
+Longueur 4,324 m Largeur 1,864 m Hauteur 1,304 m
+Audi a3
+Longueur 4,34  m Largeur 1,82  m Hauteur 1,45  m
