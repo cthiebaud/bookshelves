@@ -21,14 +21,15 @@ i = 0
 my_dictionary = {}
 for filename in glob.iglob('**/*.yaml', recursive=True):
     # print("-------------")
-    # print(i, os.path.basename(filename))
+    print(i, os.path.basename(filename))
     where = '/' + conexclast(PurePath(filename).parts)
 
-    with open(filename, 'r') as f:
-        data = yaml.safe_load(f)
-        for key, value in data.items():
-            data[key]["where"] = where
-        my_dictionary.update(data)
+    if not 'enfer' in filename:
+        with open(filename, 'r') as f:
+            data = yaml.safe_load(f)
+            for key, value in data.items():
+                data[key]["where"] = where
+            my_dictionary.update(data)
 
 
 extensions = ['jpg', 'jpeg', 'webp', 'png']
@@ -36,9 +37,10 @@ extensions = ['jpg', 'jpeg', 'webp', 'png']
 # Using for loop
 for ext in extensions:
     for filename2 in glob.iglob('**/*.'+ext, recursive=True):
-        # print(i, filename)
-        # print(os.path.basename(filename2))
-        my_dictionary[PurePath(filename2).stem]["image_path"] = filename2
+        if not 'enfer' in filename2:
+            # print(i, filename2)
+            # print(os.path.basename(filename2))
+            my_dictionary[PurePath(filename2).stem]["image_path"] = filename2
 
 
 
