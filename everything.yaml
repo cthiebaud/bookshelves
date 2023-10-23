@@ -19,11 +19,11 @@
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-0006544890:
   ISBN-13: 978-0006544890
-  The Tao of Physics (Flamingo): An Exploration of the Parallels Between Modern Physics
-    and Eastern Mysticism
   de: Fritjof Capra (Author)
   ext: "(Flamingo) Paperback \u2013 1 Feb. 1992"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-0006544890.jpg"
+  title: The Tao of Physics - An Exploration of the Parallels Between Modern Physics
+    and Eastern Mysticism
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-0007351039:
   de: Mark Twain (Author)
@@ -150,10 +150,10 @@
   where: /saint-jean-lipion/chambre/favourites
 978-0316725088:
   ISBN-13: 978-0316725088
-  Portrait Of A Killer: Jack the Ripper - Case Closed
   de: Patricia Cornwell (Autore)
   ext: "Copertina flessibile \u2013 11 novembre 2002"
   image_path: saint-jean-lipion/chambre/polars/978-0316725088.jpg
+  title: Portrait Of A Killer - Jack the Ripper - Case Closed
   where: /saint-jean-lipion/chambre/polars
 978-0330450867:
   ISBN-13: 978-0230736078
