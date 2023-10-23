@@ -689,6 +689,13 @@
   image_path: saint-jean-lipion/chambre/cinema/978-2020006446.jpg
   title: "Jules et Jim - D\xE9coupage int\xE9gral"
   where: /saint-jean-lipion/chambre/cinema
+978-2020046053:
+  de: Roland Barthes (Auteur)
+  ext: "Broch\xE9 \u2013 1 avril 1977"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2020046053.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: Fragments d'un discours amoureux
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2020068079:
   ISBN-13: 978-2020068079
   de: Robert M. Pirsig (Auteur)
@@ -1276,12 +1283,12 @@
   title: Les meilleures intentions
   where: /saint-jean-lipion/chambre/editors
 978-2070736294:
-  ISBN-13: 978-2070736294
   de: Serge Toubiana (Auteur), Antoine de Baecque (Auteur)
   ext: "Broch\xE9 \u2013 4 juin 1997"
   image_path: saint-jean-lipion/chambre/cinema/978-2070736294.jpg
+  lan: "\U0001F1EB\U0001F1F7"
   title: "Fran\xE7ois Truffaut"
-  where: /saint-jean-lipion/chambre/cinema
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2070743018:
   ISBN-13: 978-2070743018
   de: Anne Wiazemsky (Auteur)
@@ -1499,6 +1506,12 @@
   lan: "\U0001F1EB\U0001F1F7"
   title: Le Temple du soleil
   where: /saint-jean-lipion/chambre/beaux-livres
+978-2203231412:
+  de: jibran khalil (Auteur)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2203231412.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: Le prophete
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2204081252:
   ISBN-13: null
   de: "Beno\xEEt XVI (Auteur), Jean-Pierre Ricard (Pr\xE9face)"
@@ -1575,6 +1588,20 @@
   image_path: saint-jean-lipion/chambre/favourites/978-2210423015.jpg
   title: Candide ou l'Optimisme - Suivi du texte apocryphe de 1760
   where: /saint-jean-lipion/chambre/favourites
+978-2213012162:
+  de: Pierre Bourdieu (Auteur)
+  ext: "Broch\xE9 \u2013 1 janvier 1982"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2213012162.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: "Ce que parler veut dire - L'\xE9conomie des \xE9changes linguistiques"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
+978-2213016122:
+  de: "Claude Lanzmann (Auteur), Simone de Beauvoir (Pr\xE9face)"
+  ext: "Broch\xE9 \u2013 1 janvier 1986"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2213016122.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: Shoah
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2213020280:
   ISBN-13: 978-2213020280
   de: "C\xE9sar Chesneau Du Marsai (Auteur)"
@@ -1624,6 +1651,13 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2213726083.jpg"
   title: "Une m\xE8re - La vie d'Anna Politkovska\xEFa et sa qu\xEAte de v\xE9rit\xE9"
   where: /
+978-2220032658:
+  de: Maria Montessori (Auteur)
+  ext: "Broch\xE9"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2220032658.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: L'enfant
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2221001479:
   ISBN-13: 978-2221001479
   de: "Bruno Bettelheim (Auteur), Th\xE9o Carlier (Traduction)"
@@ -1730,6 +1764,14 @@
   image_path: saint-jean-lipion/chambre/favourites/978-2234086166.jpg
   title: "Dans les ge\xF4les de Sib\xE9rie"
   where: /saint-jean-lipion/chambre/favourites
+978-2246392217:
+  de: Eberhardt Isabelle. (Auteur)
+  ext: "Broch\xE9 \u2013 1 janvier 1994"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2246392217.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: "Oeuvres Compl\xE8tes ( Tome I). Ecrits sur le Sable (r\xE9cits, notes et\
+    \ journaliers)"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2246545910:
   ISBN-13: 978-2246545910
   de: "Fran\xE7ois Weyergans (Auteur)"
@@ -2140,6 +2182,13 @@
   image_path: saint-jean-lipion/chambre/favourites/978-2413010364.jpg
   title: Algues vertes, l'histoire interdite
   where: /saint-jean-lipion/chambre/favourites
+978-2700702460:
+  de: "Gottfried Keller (Auteur), Henri Tonnelat (Pr\xE9face), Georges La Flize (Traduction)"
+  ext: "Broch\xE9 \u2013 Grand livre, 1 janvier 1981"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2700702460.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: Henri le Vert
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2701136004:
   ISBN-13: 978-2701136004
   de: John Wesson (Auteur)
@@ -2160,6 +2209,13 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/po\xE9sie/978-2701156309.jpg"
   title: Le Parti pris des choses
   where: "/saint-lazare-de-sav\xE8ne/salon/po\xE9sie"
+978-2702120316:
+  de: "Kathleen Kelley-Lain\xE9 (Auteur)"
+  ext: "Broch\xE9 \u2013 26 janvier 2005"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2702120316.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: Peter Pan ou l'Enfant triste
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2702205129:
   ISBN-13: 978-2702205129
   de: Luc Ferry (Auteur), Philippe Sollers (Avec la contribution de)
@@ -2574,6 +2630,14 @@
   image_path: saint-jean-lipion/salon/perec/978-2859566449.jpeg
   title: "La Biblioth\xE8que oulipienne, volume 2"
   where: /saint-jean-lipion/salon/perec
+978-2862602578:
+  de: "Ren\xE9 Louis (Auteur)"
+  ext: "Broch\xE9 \u2013 1 mars 1988"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2862602578.jpeg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: "De m\xE9moire de lutin !... Ou la saga internationale du monde drolatique\
+    \ des lutins"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2862604145:
   ISBN-13: 978-2862604145
   de: Collectif (Auteur)
@@ -2630,6 +2694,13 @@
   image_path: saint-jean-lipion/salon/perec/978-2867441615.jpg
   title: 53 jours
   where: /saint-jean-lipion/salon/perec
+978-2868691217:
+  de: August Strindberg (Auteur), Eva Ahlstedt (Traduction), Pierre Morizet (Traduction)
+  ext: "Broch\xE9 \u2013 Grand livre, 10 ao\xFBt 1993"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2868691217.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: "Mari\xE9s !"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2868698926:
   ISBN-13: 978-2868698926
   de: Paul Auster (Auteur), Christine Le Boeuf (Traduction)
@@ -2664,6 +2735,13 @@
   image_path: saint-jean-lipion/chambre/polars/978-2889730117.jpg
   title: Le Livre des Baltimore
   where: /saint-jean-lipion/chambre/polars
+978-2901376859:
+  de: Xavier de Maistre (Auteur)
+  ext: "Broch\xE9"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2901376859.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: Voyage Autour de Ma Chambre
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2904388118:
   ISBN-13: 978-2904388118
   de: Alain Borer (Auteur), Arthur Aeschbacher, Philippe Soupault (Auteurs)
@@ -2894,6 +2972,13 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_5/978-8804719632.jpg"
   title: La rete degli invisibili
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
+978-8806056797:
+  de: Italo Calvino (Autore)
+  ext: "Copertina rigida \u2013 1 gennaio 1983"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-8806056797.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  title: Palomar
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-8806146511:
   ISBN-13: 978-8806146511
   de: Hans Magnus Enzensberger (Autore), Rotraut Susanne Berner (Illustratore), Enrico
@@ -2909,6 +2994,13 @@
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8806151799.webp"
   title: Cantico dei cantici
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
+978-8806166489:
+  de: Mark Haddon (Autore), Paola Novarese (Traduttore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-8806166489.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  title: "Lo strano caso del cane ucciso a mezzanotte Copertina rigida \u2013 30 settembre\
+    \ 2003"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-8806177409:
   ISBN-13: 978-8806177409
   de: Elsa Morante (Autore)
@@ -3727,6 +3819,13 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-8886468237.jpg"
   title: Asana Pranayama Mudra Bandha
   where: "/saint-lazare-de-sav\xE8ne/salon/random"
+978-8887132625:
+  de: Edoardo Puglielli (Autore)
+  ext: "Copertina flessibile \u2013 8 settembre 2014"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-8887132625.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  title: Il movimento anarchico abruzzese (1907-1957)
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-8895177472:
   ISBN-13: 978-8895177472
   de: Stefania Campo (Autore)
@@ -4086,6 +4185,20 @@ boh37:
   image_path: "saint-lazare-de-sav\xE8ne/salon/_6/boh37.webp"
   title: Sei Giornate
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
+boh38:
+  de: Giorgio Biondi
+  ext: La Prima Parte Ha Come Oggetto La Nostra Infanzia A Castello, La Seconda I
+    Suoi Personaggi.
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/boh38.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  title: Granelli di...
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
+boh39:
+  de: Berenice Salvatore Finarelli
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/boh39.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  title: Storie di emigrati sangiovannesi nel mondo
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 boh4:
   ASIN: B00DFH42S6
   ISBN: none
