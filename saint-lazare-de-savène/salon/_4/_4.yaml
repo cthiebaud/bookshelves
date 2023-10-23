@@ -18,7 +18,7 @@ boh31:
   de: Lewis Carroll (Auteur)
 
 978-2080700766:
-  title: Théâtre, Le Barbier de Séville, Le Mariage de Figaro, La Mère coupable
+  title: Théâtre - Le Barbier de Séville - Le Mariage de Figaro - La Mère coupable
   ext: Poche – 31 août 1993
   de: Pierre-Augustin Caron de Beaumarchais (Auteur)
 
@@ -28,7 +28,7 @@ boh31:
   de: Arthur Rimbaud (Auteur)
 
 978-2080701114:
-  title: Romans et Contes
+  title: Romans et contes
   ext: Poche – 1 janvier 1975
   de: Voltaire (Auteur), René Pomeau (Sous la direction de)
 
@@ -74,7 +74,7 @@ boh32:
   de: Adèle Van Reeth (Auteur), Éric Fiat (Auteur) 
 
 978-2070350421:
-  title: L' Ere Du Soupcon
+  title: L'ère du soupcon
   ext: Broché – 31 décembre 1964
   de: Nathalie Sarraute (Auteur)
 
@@ -98,11 +98,12 @@ ASIN-B000NNBJZ4:
   de: Pier Paolo Pasolini (Autore)
 
 978-8804448389:
-  title: Lady Lazarus e altre poesie 
+  title: Lady Lazarus e altre poesie
   de: Sylvia Plath (Autore)
 
 978-8804472940:
-  title: Conoscenza della notte e altre poesie
+  title: Conoscenza della notte
+  ext: e altre poesie
   de: Robert Frost (Autore)
 
 978-8804347286:
@@ -120,11 +121,12 @@ ASIN-B00F47MHU0:
   de: Lautréamont (Autore)
 
 ASIN-B00185DLIE:
-  title: Pierre Delbet. L'Agriculture et la sante
+  title: L'agriculture et la santé
   de: Pierre Delbet (Auteur)
 
 978-0966583298:
-  title: QBQ! The Question Behind the Question - Practicing Personal Accountability at Work and in Life
+  title: QBQ! The Question Behind the Question
+  ext: Practicing Personal Accountability at Work and in Life
   de: John G. Miller (Author)
 
 ASIN-B00340LFAM:
@@ -183,7 +185,7 @@ ASIN-B00340LFAM:
   de: Fernand Braudel (Auteur)
 
 978-2080810588:
-  title: L'Art de la guerre
+  title: L'art de la guerre
   ext: Poche – 4 janvier 1999
   de: Sun Tzu (Auteur)
 
@@ -192,5 +194,5 @@ ASIN-B00340LFAM:
    de: Franz Kafka
 
 ASIN-B0014QGFG2:
-  title : batons, chiffres et lettres
+  title : Bâtons, chiffres et lettres
   de: Raymond Queneau
