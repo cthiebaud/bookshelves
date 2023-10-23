@@ -1,3 +1,10 @@
+201-8051502860:
+  de: Samuel Beckett
+  ext: Oscar Mondadori - 1978
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/201-8051502860.webp"
+  lan: "\U0001F1EE\U0001F1F9"
+  title: Teatro
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 256-6891968792:
   de: Lytton Strachey (Autore)
   ext: 1966
@@ -41,7 +48,15 @@
   de: Christine Mangan (Author)
   ext: "A Novel Hardcover \u2013 March 27, 2018"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0062686664.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
   title: Tangerine
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
+978-0099276586:
+  de: Ian McEwan (Autore)
+  ext: "Copertina flessibile \u2013 5 marzo 1998"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0099276586.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: Enduring Love
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0099282877:
   ISBN-13: 978-0099282877
@@ -344,6 +359,13 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-0586044766.jpg"
   title: Dubliners
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
+978-0679723165:
+  de: Vladimir Nabokov (Author)
+  ext: "Paperback \u2013 March 13, 1989"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0679723165.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: Lolita
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0691017846:
   ISBN-13: 978-0691017846
   de: Joseph Campbell (Author)
@@ -446,6 +468,13 @@
   title: QBQ! The Question Behind the Question - Practicing Personal Accountability
     at Work and in Life
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
+978-1015562929:
+  de: William Henry Hudson (Author)
+  ext: "Hardcover \u2013 October 26, 2022"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-1015562929.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: Idle Days in Patagonia
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-1371035907:
   ISBN-13: 978-1371035907
   de: Franz Kafka (Auteur)
@@ -564,6 +593,13 @@
   image_path: saint-jean-lipion/chambre/favourites/978-1785031540.jpg
   title: Casino - The Rise and Fall of the Mob in Las Vegas
   where: /saint-jean-lipion/chambre/favourites
+978-1857150308:
+  de: Virginia Woolf (Author)
+  ext: "Hardcover \u2013 January 1, 1991"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-1857150308.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: To the Lighthouse
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-1860463655:
   ISBN-13: 978-1860463655
   de: Fred Uhlman (Autore, Collaboratore)
@@ -694,7 +730,7 @@
   de: Edouard Louis (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 21 janvier 2014"
   image_path: saint-jean-lipion/chambre/autres/978-2021117707.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: En finir avec Eddy Bellegueule
   where: /saint-jean-lipion/chambre/autres
 978-2021323672:
@@ -814,7 +850,7 @@
   de: Annie Le Brun (Auteur)
   ext: "Reli\xE9 \u2013 25 octobre 2014"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2070146826.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Sade - Attaquer le soleil
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2070197521:
@@ -1150,7 +1186,7 @@
   de: Raymond Queneau (Auteur)
   ext: "Poche \u2013 16 mars 1982"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2070552023.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Exercices de style
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2070714704:
@@ -1257,7 +1293,7 @@
   de: Dieter Buchhart (Auteur, Sous la direction de)
   ext: "Reli\xE9 \u2013 Illustr\xE9, 11 octobre 2018"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2072801549.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Egon Schiele
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2072895142:
@@ -1343,7 +1379,7 @@
   de: Laure Adler (Auteur), Stefan Bollmann (Auteur)
   ext: "Reli\xE9 \u2013 6 octobre 2010"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2081233133.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Les Plus Belles Lettres de femmes
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2081255258:
@@ -1410,7 +1446,7 @@
   de: "Herg\xE9 (Auteur, Dessins, R\xE9dacteur)"
   ext: "Reli\xE9 \u2013 25 octobre 2001"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2203011427.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Le Temple du soleil
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2204081252:
@@ -1425,7 +1461,7 @@
   de: Marcel Gotlib (Auteur, Illustrations)
   ext: "Reli\xE9 \u2013 18 novembre 2010"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2205066876.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: "Int\xE9grale"
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2207112380:
@@ -1552,6 +1588,13 @@
   image_path: saint-jean-lipion/chambre/rimbaud/978-2221054413.jpg
   title: "Oeuvres po\xE9tiques compl\xE8tes de Paul Verlaine"
   where: /saint-jean-lipion/chambre/rimbaud
+978-2221092019:
+  de: Sir Arthur Conan Doyle (Auteur)
+  ext: "Poche \u2013 Grand livre, 22 d\xE9cembre 1999"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2221092019.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: Sherlock Holmes, tome 1
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2221097502:
   ISBN-13: 978-2221097502
   de: "Claude L\xE9vy (Auteur), Paul Tillard (Auteur)"
@@ -1925,7 +1968,7 @@
   de: Feurat Alani (Auteur), Leonard Cohen (Illustrations)
   ext: "Poche \u2013 Illustr\xE9, 13 janvier 2021"
   image_path: saint-jean-lipion/chambre/favourites/978-2290235805.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Le parfum d'Irak
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2290302156:
@@ -2065,7 +2108,7 @@
   de: Luc Ferry (Auteur), Philippe Sollers (Avec la contribution de)
   ext: "Poche \u2013 8 octobre 1998"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2702205129.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Le Sens du beau - Aux origines de la culture contemporaine
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2702903605:
@@ -2088,7 +2131,7 @@
   de: Samuel Beckett
   ext: "Lingua francese Copertina flessibile \u2013 22 febbraio 2007"
   image_path: saint-jean-lipion/chambre/autres/978-2707301482.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: En Attendant Godot
   where: /saint-jean-lipion/chambre/autres
 978-2707313867:
@@ -2190,7 +2233,7 @@
   de: Emanuele Scorcelletti (Auteur)
   ext: "Reli\xE9 \u2013 6 avril 2006"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2732434803.webp
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Quelques jours dans la vie de Sharon Ston - Cannes Londres Paris
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2737001222:
@@ -2436,7 +2479,7 @@
   de: James Turnbull (Auteur), D. Czap (Auteur)
   ext: "Reli\xE9 \u2013 1 octobre 1998"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2851205247.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Le Bourgogne grandeur nature
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2858150557:
@@ -2444,7 +2487,7 @@
   de: Marcel Gotlib (Auteur)
   ext: "Reli\xE9 \u2013 7 janvier 1993"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2858150557.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: "Rh\xE2\xE2 lovely, tome 2"
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2858504718:
@@ -2459,7 +2502,7 @@
     \ Teresa Berganza (Pr\xE9face), & 3 plus"
   ext: "avec partition d'extraits Broch\xE9 \u2013 1 janvier 1992"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2858681884.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Les Noces de Figaro
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2859566265:
@@ -2611,7 +2654,7 @@
   de: Martha Carroll (Auteur), Jean-Louis Celati (Auteur)
   ext: "Bilingue fran\xE7ais/anglais. Reli\xE9 \u2013 7 mai 2013"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2916195469.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: "Les Halles - Une am\xE9ricaine \xE0 Paris"
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2916400365:
@@ -3782,7 +3825,7 @@ boh1:
   de: Collectif (Auteur)
   ext: "Reli\xE9 \u2013 1 janvier 1983"
   image_path: saint-jean-lipion/chambre/beaux-livres/boh1.jpg
-  langue: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EB\U0001F1F7"
   title: Atlas General Bordas
   where: /saint-jean-lipion/chambre/beaux-livres
 boh10:
@@ -4008,7 +4051,7 @@ boh7:
   de: Morris (Autor)
   ext: (Sarah Bernhardt, titre original)
   image_path: saint-jean-lipion/chambre/beaux-livres/boh7.jpg
-  langue: "\U0001F1E9\U0001F1EA"
+  lan: "\U0001F1E9\U0001F1EA"
   title: Lucky Luke Band 93 "Meine Onkel, die Daltons"
   where: /saint-jean-lipion/chambre/beaux-livres
 boh8:
