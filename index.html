@@ -32,6 +32,10 @@
                 if (lastnameDifference !== 0 ) {
                     return lastnameDifference
                 }
+                const nameDifference = nameA.localeCompare(nameB)
+                if (nameDifference !== 0 ) {
+                    return nameDifference
+                }
                 if (typeof a[1].title === "undefined" || typeof b[1].title === "undefined" ) {
                     console.log("boum!")
                 }
