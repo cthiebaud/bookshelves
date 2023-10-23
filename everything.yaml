@@ -79,12 +79,27 @@
   image_path: saint-jean-lipion/chambre/polars/978-0099548362.jpg
   title: Italian Shoes
   where: /saint-jean-lipion/chambre/polars
+978-0099771814:
+  de: Philip Roth (Author)
+  ext: "American Trilogy (1) (Vintage International) Paperback \u2013 February 3,\
+    \ 1998"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0099771814.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: American Pastoral
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0099982401:
   ISBN-13: 978-0099982401
   de: Virginia Woolf
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-0099982401.jpg"
   title: Mrs Dalloway
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
+978-0140055214:
+  de: Roth Philip (Author)
+  ext: Paperback
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0140055214.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: Portnoy's Complaint
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0140129533:
   ISBN-13: 978-0140129533
   de: P. D. James (Auteur)
@@ -109,6 +124,13 @@
   image_path: saint-jean-lipion/chambre/pdjames/978-0140129618.jpg
   title: Unnatural Causes
   where: /saint-jean-lipion/chambre/pdjames
+978-0140169621:
+  de: Bruce Chatwin (Author), Rory Stewart (Introduction)
+  ext: "(Penguin Classics) Paperback \u2013 June 26, 2012"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0140169621.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: The Songlines
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0140185584:
   ISBN-13: 978-0140185584
   de: James Joyce (Author), Jeri Johnson (Editor)
@@ -154,6 +176,13 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-0199569410.jpg"
   title: Selected Poems
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
+978-0297842439:
+  de: Edna O'Brien (Author)
+  ext: "A Penguin Life Hardcover \u2013 Import, January 1, 1999"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0297842439.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: James Joyce
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0307408846:
   ISBN-13: 978-0307408846
   de: Erik Larson (Auteur)
@@ -224,6 +253,13 @@
   image_path: saint-jean-lipion/chambre/favourites/978-0375403552.jpeg
   title: Temperament - The Idea That Solved Music's Greatest Riddle
   where: /saint-jean-lipion/chambre/favourites
+978-0375725081:
+  de: A. S. Byatt (Author)
+  ext: "A Novel Paperback \u2013 December 1, 2001"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0375725081.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: The Biographer's Tale
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0385347778:
   ISBN-13: 978-0385347778
   de: Gillian Flynn (Autore)
@@ -365,6 +401,20 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0679723165.jpg"
   lan: "\U0001F1EC\U0001F1E7"
   title: Lolita
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
+978-0679723394:
+  de: Vladimir Nabokov
+  ext: "Paperback \u2013 August 28, 1989"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0679723394.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: Speak, Memory - An Autobiography Revisited
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
+978-0679727224:
+  de: Vladimir Nabokov (Author)
+  ext: Paperback
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0679727224.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: The Luzhin Defense
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0691017846:
   ISBN-13: 978-0691017846
@@ -1582,12 +1632,19 @@
   title: "Psychanalyse des contes de f\xE9es"
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-2221054413:
-  ISBN-13: 978-2221054413
   de: Paul Verlaine (Auteur), Yves-Alain Favre (Sous la direction de)
   ext: "Poche \u2013 1 janvier 1992"
   image_path: saint-jean-lipion/chambre/rimbaud/978-2221054413.jpg
+  lan: "\U0001F1EB\U0001F1F7"
   title: "Oeuvres po\xE9tiques compl\xE8tes de Paul Verlaine"
-  where: /saint-jean-lipion/chambre/rimbaud
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
+978-2221064528:
+  de: Alexandre Dumas (Auteur), Claude Schopp (Auteur)
+  ext: "Poche \u2013 Grand livre, 8 novembre 1991"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2221064528.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  title: "Les Trois Mousquetaires - Vingt ans apr\xE8s"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2221092019:
   de: Sir Arthur Conan Doyle (Auteur)
   ext: "Poche \u2013 Grand livre, 22 d\xE9cembre 1999"
@@ -3014,6 +3071,13 @@
   image_path: saint-jean-lipion/chambre/cinema/978-8811669043.jpg
   title: Teorema
   where: /saint-jean-lipion/chambre/cinema
+978-8811694625:
+  de: Carlo Emilio Gadda (Autore), Pietro Citati (Prefazione)
+  ext: Copertina flessibile
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-8811694625.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  title: Quer pasticciaccio brutto de via Merulana
+  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-8815248008:
   de: Mario Brunello (Autore)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_4/978-8815248008.jpg"
