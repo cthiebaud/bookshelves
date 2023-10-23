@@ -67,11 +67,13 @@
                 figcaption.classList.add("text-wrap")
                 figcaption.style = "width: 100%;"
 
+                let langue = entries[property][1]['langue'] || '';
+                if (langue) langue = langue + " "
                 let author = entries[property][1]['de'].split(/ \(/)[0];
                 let title = entries[property][1]['title']
                 let where = entries[property][1]['where']
                 const authorE = document.createTextNode(author);
-                const titleE = document.createTextNode(title);
+                const titleE = document.createTextNode(langue+title);
                 const titleSPAN = document.createElement("span");
                 titleSPAN.appendChild(titleE)
                 titleSPAN.style = "font-size:smaller;"
