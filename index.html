@@ -73,20 +73,25 @@
                 let title = entries[property][1]['title']
                 let where = entries[property][1]['where']
                 const authorE = document.createTextNode(author);
-                const titleE = document.createTextNode(lan+title);
+                const titleE = document.createTextNode(title);
                 const titleSPAN = document.createElement("span");
                 titleSPAN.appendChild(titleE)
                 titleSPAN.style = "font-size:smaller;"
 
                 if (where.includes("lipion")) {
-                    const float = document.createElement("span");
-                    float.classList.add("float-end")
-                    float.style = "color: green"
+                    const float1 = document.createElement("span");
+                    float1.classList.add("float-end")
+                    float1.style = "color: green"
                     const flag = document.createTextNode('⬤');
-                    float.appendChild(flag)
-                    figcaption.appendChild(float)
+                    float1.appendChild(flag)
+                    figcaption.appendChild(float1)
                 }
-
+                const flagE = document.createTextNode(lan);
+                const float2 = document.createElement("span");
+                float2.classList.add("float-end")
+                float2.appendChild(flagE)
+                float2.style = "font-size: larger;"
+                titleSPAN.appendChild(float2)
                 figcaption.appendChild(authorE)
                 figcaption.appendChild(document.createElement("br"))
                 figcaption.appendChild(titleSPAN)

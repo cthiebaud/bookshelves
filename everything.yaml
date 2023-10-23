@@ -1717,7 +1717,7 @@
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2204081252:
   ISBN-13: null
-  de: "Beno\xEEt XVI (Auteur), Jean-Pierre Ricard (Pr\xE9face)"
+  de: "Beno\xEEt\_XVI (Auteur), Jean-Pierre Ricard (Pr\xE9face)"
   ext: "Broch\xE9 \u2013 28 janvier 2006"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-2204081252.jpg"
   lan: "\U0001F1EB\U0001F1F7"
@@ -4351,7 +4351,7 @@
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8886452731:
   ISBN-13: 978-8886452731
-  de: Francesco Paolo Maulucci Vivolo (Autore)
+  de: "Francesco Paolo Maulucci\_Vivolo (Autore)"
   ext: "Copertina flessibile \u2013 28 marzo 2013"
   image_path: saint-jean-lipion/chambre/enfer/978-8886452731.jpg
   lan: "\U0001F1EE\U0001F1F9"
