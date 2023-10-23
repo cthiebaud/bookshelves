@@ -88,6 +88,11 @@
   image_path: saint-jean-lipion/chambre/nazis/978-0140228458.jpeg
   title: Inside Nazi Germany - Conformity, Opposition and Racism in Everyday Life
   where: /saint-jean-lipion/chambre/nazis
+978-0140432251:
+  de: Henry James (Author)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-0140432251.jpg"
+  title: The Bostonians Paperback
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-0141015538:
   ISBN-13: 978-0141015538
   de: P. D. James (Auteur)
@@ -101,6 +106,11 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-0192810618.jpg"
   title: "Romantic Agony Broch\xE9 \u2013 1 d\xE9cembre 1970"
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
+978-0192816832:
+  de: Henry James (Author)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-0192816832.jpg"
+  title: "The Europeans Paperback \u2013 January 28, 2018"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-0307408846:
   ISBN-13: 978-0307408846
   de: Erik Larson (Auteur)
@@ -1662,6 +1672,11 @@
   title: "Petit trait\xE9 invitant \xE0 la d\xE9couverte de l'art subtil du go Broch\xE9\
     \ \u2013 Grand livre, 1 f\xE9vrier 1986"
   where: /saint-jean-lipion/salon/perec
+978-2267017724:
+  de: "Susan Sontag (Auteur), Marie-France de Palom\xE9ra (Traduction)"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-2267017724.jpg"
+  title: "La maladie comme m\xE9taphore Broch\xE9 \u2013 Grand livre, 11 mars 2005"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-2277112594:
   ISBN-13: 978-2277112594
   de: Georges Perec (Auteur)
@@ -2268,6 +2283,11 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_4/978-8804347286.webp"
   title: Poesie
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
+978-8804396628:
+  de: Italo Calvino (Autore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8804396628.jpeg"
+  title: "I racconti Copertina flessibile \u2013 4 maggio 2023"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8804405382:
   de: Ezra Pound
   image_path: "saint-lazare-de-sav\xE8ne/salon/_4/978-8804405382.jpg"
@@ -2427,6 +2447,17 @@
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8807171246.jpg"
   title: "Il bene comune della Terra Perfect Paperback \u2013 1 July 2006"
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
+978-8807171437:
+  de: Umberto Galimberti (Autore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8807171437.jpg"
+  title: "L'ospite inquietante. Il nichilismo e i giovani Forniture assortite \u2013\
+    \ 1 dicembre 2008"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
+978-8807810800:
+  de: Gianni Celati (Autore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8807810800.jpg"
+  title: "Quattro novelle sulle apparenze Copertina flessibile \u2013 25 gennaio 2012"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8807818486:
   de: "Ryszard Kapu\u015Bci\u0144ski (Autore), Vera Verdiani (Traduttore)"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_5/978-8807818486.jpg"
@@ -2504,6 +2535,11 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_3/978-8815273345.jpg"
   title: "Il piano inclinato Copertina flessibile \u2013 18 maggio 2017"
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
+978-8815273659:
+  de: Piero Boitani (Autore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8815273659.jpg"
+  title: "Dieci lezioni sui classici Copertina flessibile \u2013 26 ottobre 2017"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8817010320:
   ISBN-13: 978-8817010320
   de: Zap Mangusta (Autore)
@@ -2534,6 +2570,11 @@
   image_path: saint-jean-lipion/salon/perec/978-8817106047.jpg
   title: "La vita istruzioni per l'uso Copertina flessibile \u2013 1 giugno 1997"
   where: /saint-jean-lipion/salon/perec
+978-8817138338:
+  de: Antonino Zichichi (Autore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8817138338.jpg"
+  title: "L'infinito Copertina flessibile \u2013 1 febbraio 1994"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8817167949:
   de: Michail Bulgakov (Autore), Emanuela Guercetti (Traduttore)
   image_path: saint-jean-lipion/chambre/polars/978-8817167949.jpg
@@ -2699,6 +2740,22 @@
   title: "Riccardino. Seguito dalla prima stesura del 2005. Ediz. speciale Copertina\
     \ rigida \u2013 Edizione speciale, 16 luglio 2020"
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
+978-8842028871:
+  de: Omar Calabrese (Autore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8842028871.jpg"
+  title: "L'et\xE0 neobarocca Copertina flessibile \u2013 1 gennaio 1992"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
+978-8842051176:
+  de: Bruno Munari (Autore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8842051176.jpg"
+  title: "Da cosa nasce cosa. Appunti per una metodologia progettuale. Ediz. illustrata\
+    \ Copertina flessibile \u2013 Illustrato, 1 agosto 2010"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
+978-8842094814:
+  de: Zygmunt Bauman (Autore), Marco Cupellaro (Traduttore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8842094814.jpeg"
+  title: "L'arte della vita Libro \u2013 14 ottobre 2010"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8842533177:
   ISBN-13: 978-8842533177
   de: Peter Kolosimo (Autore)
@@ -2761,6 +2818,12 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-8845917073.jpg"
   title: "Austerlitz Copertina flessibile \u2013 5 giugno 2002"
   where: "/saint-lazare-de-sav\xE8ne/salon/random"
+978-8845917103:
+  de: James Hillman (Autore), Adriana Bottini (Traduttore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8845917103.jpg"
+  title: "L'anima del mondo e il pensiero del cuore - 481 Copertina flessibile \u2013\
+    \ 3 luglio 2002"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8845925238:
   de: "S\xE1ndor M\xE1rai (Autore), Antonio Donato Sciacovelli (a cura di)"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_5/978-8845925238.jpg"
@@ -2914,6 +2977,16 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_3/978-8876443039.jpg"
   title: "Taccuino d'amore. Poesie Copertina flessibile \u2013 21 maggio 2007"
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
+978-8876842528:
+  de: "Clarissa Pinkola Est\xE9s (Autore), M. Pizzorno (Traduttore)"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8876842528.jpg"
+  title: "Donne che corrono coi lupi Copertina flessibile \u2013 21 settembre 1993"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
+978-8877466440:
+  de: Luis Sepulveda (Author)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8877466440.jpg"
+  title: "Il vecchio che leggeva romanzi d'amore. Paperback \u2013 January 1, 1993"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8877683984:
   ISBN-13: 978-8877683984
   de: Franz Kafka (Autore), R. Paoli (Traduttore)
@@ -2933,6 +3006,12 @@
   title: "Antologia di Spoon River. Testo inglese a fronte Copertina flessibile \u2013\
     \ 1 gennaio 2007"
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
+978-8879840842:
+  de: Marcello Bernardi (Autore), Cesare Barioli (Autore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8879840842.jpg"
+  title: "Corpo mente cuore. Manifesto per una nuova educazione Copertina flessibile\
+    \ \u2013 15 gennaio 1998"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8880800620:
   ISBN-13: 978-8880800620
   de: Luigi Cagnolaro (Autore), Antonio Di Natale (Autore), Giuseppe Notarbartolo
@@ -3010,6 +3089,11 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_5/978-8896328057.jpg"
   title: "Il nome sulla pelle Copertina flessibile \u2013 1 gennaio 2010"
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
+978-8897424659:
+  de: Rita Galbucci (Autore), F. Del Moro (a cura di)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/978-8897424659.jpg"
+  title: "Nel moto apparente Copertina flessibile \u2013 1 ottobre 2013"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8898301508:
   ISBN-13: 978-8898301508
   de: Giuseppe Tucci (a cura di)
@@ -3283,6 +3367,17 @@ boh32:
   image_path: "saint-lazare-de-sav\xE8ne/salon/_4/boh32.jpg"
   title: Treasure Island - 1977
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
+boh33:
+  de: Italo Svevo (Autore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/boh33.webp"
+  title: "La coscienza di Zeno. Prefazione di Eugenio Montale. Rilegatura sconosciuta\
+    \ \u2013 31 dicembre 1983"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
+boh34:
+  de: Pinter Harold. (Autore)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_6/boh34.jpg"
+  title: Il Compleanno
+  where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 boh4:
   ASIN: B00DFH42S6
   ISBN: none
