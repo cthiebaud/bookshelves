@@ -7,4 +7,4 @@ $1:\n  ISBN-13: $1
   lan: 🇬🇧
   lan: 🇮🇹
   lan: 🇫🇷
-  lan: 🇮🇩🇪
+  lan: 🇮🇩
