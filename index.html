@@ -32,16 +32,48 @@
     <div id="container" class="container-fluid">
         <h1 id="howmuch" style="text-align: center;">…</h1>
         <h5 id="howmuch2" style="text-align: center;">…</h5>
+        <h6 style="text-align: center;">
+            <a href="#" id="kafka" class="btn" role="button" data-bs-toggle="button">Kafka</a>
+            <a href="#" id="perec" class="btn" role="button" data-bs-toggle="button">Perec</a>
+        </h6>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
     <script>
         const container = document.getElementById("container");
+
+        function selectOrUnselectTag(tag, className) {
+            const figures = document.querySelectorAll('figure');
+            if (className.includes('active')) {
+                const taggeds = document.getElementsByClassName(tag);
+                for (const figure of figures) {
+                    figure.style.display = "none"
+                }
+                for (const tagged of taggeds) {
+                    tagged.style.display = "inline-block"
+                }
+            } else {
+                for (const figure of figures) {
+                    figure.style.display = "inline-block"
+                }
+            }
+        }
+        kafka.addEventListener("click", function (e) {
+            perec.classList.remove("active");
+            selectOrUnselectTag("Kafka", this.className)
+        });
+        perec.addEventListener("click", function (e) {
+            kafka.classList.remove("active");
+            selectOrUnselectTag("Perec", this.className)
+        });
 
         function blend(property) {
             const fig = document.createElement("figure");
             fig.classList.add("figure")
             fig.style = "padding: .4rem; max-width: 9.4rem;"
+            for (const tagIndex in property.tags) {
+                fig.classList.add(property.tags[tagIndex])
+            }
 
             const img = document.createElement("img");
             img.src = property['image_path']
