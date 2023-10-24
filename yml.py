@@ -8,7 +8,7 @@ import json
     
 from pathlib import PurePath 
 
-def conexclast(strlst):
+def concatExcludeLast(strlst):
     return '/'.join(strlst[0:-1])
 
 
@@ -24,7 +24,10 @@ images = []
 for filename in glob.iglob('**/*.yaml', recursive=True):
     # print("-------------")
     print(i, os.path.basename(filename))
-    where = '/' + conexclast(PurePath(filename).parts)
+    parts = PurePath(filename).parts
+    where = '/' + concatExcludeLast(parts)
+
+    locationTag = parts[len(parts) - 2]
 
     # if not 'enfer' in filename:
 
@@ -32,6 +35,9 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
         data = yaml.safe_load(f)
         for key, value in data.items():
             data[key]["where"] = where
+            tags = value.get("tags", [])
+            tags.append(locationTag)
+            value["tags"] = tags
         my_dictionary.update(data)
 
 

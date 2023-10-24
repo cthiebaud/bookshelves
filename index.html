@@ -35,6 +35,9 @@
         <h6 style="text-align: center;">
             <a href="#" id="kafka" class="btn" role="button" data-bs-toggle="button">Kafka</a>
             <a href="#" id="perec" class="btn" role="button" data-bs-toggle="button">Perec</a>
+            <a href="#" id="cinema" class="btn" role="button" data-bs-toggle="button">Cinéma</a>
+            <a href="#" id="bach" class="btn" role="button" data-bs-toggle="button">Bach</a>
+            <a href="#" id="polars" class="btn" role="button" data-bs-toggle="button">Polars</a>
         </h6>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
@@ -91,17 +94,19 @@
 
         }
 
-        function selectOrUnselectTag(tag, className) {
+        function selectOrUnselectTag(tags, className) {
             const figures = document.querySelectorAll('figure');
             const c = new Counter();
             if (className.includes('active')) {
-                const taggeds = document.getElementsByClassName(tag);
                 for (const figure of figures) {
                     figure.style.display = "none"
                 }
-                for (const tagged of taggeds) {
-                    c.count(entries[tagged.dataset.index][1])
-                    tagged.style.display = "inline-block"
+                for (const tag of tags) {
+                    const taggeds = document.getElementsByClassName(tag);
+                    for (const tagged of taggeds) {
+                        c.count(entries[tagged.dataset.index][1])
+                        tagged.style.display = "inline-block"
+                    }
                 }
             } else {
                 for (const figure of figures) {
@@ -114,11 +119,38 @@
 
         kafka.addEventListener("click", function (e) {
             perec.classList.remove("active");
-            selectOrUnselectTag("Kafka", this.className)
+            cinema.classList.remove("active");
+            bach.classList.remove("active");
+            polars.classList.remove("active");
+            selectOrUnselectTag(["Kafka"], this.className)
         });
         perec.addEventListener("click", function (e) {
             kafka.classList.remove("active");
-            selectOrUnselectTag("Perec", this.className)
+            cinema.classList.remove("active");
+            bach.classList.remove("active");
+            polars.classList.remove("active");
+            selectOrUnselectTag(["Perec"], this.className)
+        });
+        cinema.addEventListener("click", function (e) {
+            kafka.classList.remove("active");
+            perec.classList.remove("active");
+            bach.classList.remove("active");
+            polars.classList.remove("active");
+            selectOrUnselectTag(["cinema"], this.className)
+        });
+        bach.addEventListener("click", function (e) {
+            kafka.classList.remove("active");
+            perec.classList.remove("active");
+            cinema.classList.remove("active");
+            polars.classList.remove("active");
+            selectOrUnselectTag(["Bach"], this.className)
+        });
+        polars.addEventListener("click", function (e) {
+            kafka.classList.remove("active");
+            perec.classList.remove("active");
+            cinema.classList.remove("active");
+            bach.classList.remove("active");
+            selectOrUnselectTag(["polars","pdjames"], this.className)
         });
 
         function blend(index, property) {
