@@ -15,6 +15,7 @@
   ext: Testo francese a fronte Copertina flessibile – 24 ottobre 2003
   de: Molière (Autore), Romeo Lucchese (Traduttore)
   lan: 🇮🇹
+  lanOriginal: 🇫🇷
 
 boh31:
   title: Tout Alice
@@ -78,6 +79,8 @@ boh32:
   title: Atlas de littérature potentielle 
   de: OuLiPo
   lan: 🇫🇷
+  tags:
+    - Perec
 
 978-2266043175:
   title: Michel Strogoff
@@ -105,7 +108,8 @@ boh32:
   title: La terra desolata
   ext: Testo inglese a fronte Copertina flessibile – 28 giugno 2013
   de: Thomas S. Eliot (Autore), A. Serpieri (a cura di)
-  lan: 🇬🇧🇮🇹
+  lan: 🇮🇹
+  lanOriginal: 🇬🇧
 
 ASIN-B000NNBJZ4:
   title: Canti
@@ -167,6 +171,7 @@ ASIN-B00340LFAM:
   ext: Testo originale a fronte 
   de: Ezra Pound 
   lan: 🇮🇹
+  lanOriginal: 🇬🇧
 
 978-2859566265:
   title: Les aventures d'Antoine Doinel

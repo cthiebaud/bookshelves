@@ -10,99 +10,144 @@
 
 <body>
     <div id="container" class="container-fluid">
-        <h1 id="howmuch" style="text-align: center;">...</h1>
+        <h1 id="howmuch" style="text-align: center;">…</h1>
+        <h3 id="howmuch2" style="text-align: center;">…</h3>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script>
         const container = document.getElementById("container");
 
+        function blend(property) {
+            const fig = document.createElement("figure");
+            fig.classList.add("figure")
+            fig.style = "margin: .4rem; max-width: 9.4rem;"
+
+            const img = document.createElement("img");
+            img.src = property['image_path']
+            img.classList.add("figure-img")
+            img.classList.add("img-fluid")
+
+            const figcaption = document.createElement("figcaption");
+            figcaption.classList.add("figure-caption")
+            figcaption.classList.add("text-wrap")
+            figcaption.style = "width: 100%;"
+
+            let lan = property['lan'] || '';
+            if (lan) lan = lan - " "
+            let author = property['de'].split(/ \(/)[0];
+            let title = property['title']
+            let where = property['where']
+            const authorE = document.createTextNode(author);
+            const titleE = document.createTextNode(title);
+            const titleSPAN = document.createElement("span");
+            titleSPAN.appendChild(titleE)
+            titleSPAN.style = "font-size:smaller;"
+
+            if (where.includes("lipion")) {
+                const float1 = document.createElement("span");
+                float1.classList.add("float-end")
+                float1.style = "color: green"
+                const flag = document.createTextNode('⬤');
+                float1.appendChild(flag)
+                figcaption.appendChild(float1)
+            }
+            const flagE = document.createTextNode(lan);
+            const float2 = document.createElement("span");
+            float2.classList.add("float-end")
+            float2.appendChild(flagE)
+            float2.style = "font-size: larger;"
+            titleSPAN.appendChild(float2)
+            figcaption.appendChild(authorE)
+            figcaption.appendChild(document.createElement("br"))
+            figcaption.appendChild(titleSPAN)
+            fig.appendChild(img)
+            fig.appendChild(figcaption)
+            container.appendChild(fig)
+        }
+
         function updateDisplay(text) {
             const doc = jsyaml.load(text, 'utf8')
 
             const entries = Object.entries(doc);
-
-            document.getElementById("howmuch").innerHTML = entries.length
 
             entries.sort((a, b) => {
                 const nameA = a[1].de.toUpperCase().split(/ \(/)[0]
                 const nameB = b[1].de.toUpperCase().split(/ \(/)[0]
                 const splitA = nameA.split(/ /)
                 const splitB = nameB.split(/ /)
-                const lastnameA = splitA[splitA.length-1]
-                const lastnameB = splitB[splitB.length-1]
+                const lastnameA = splitA[splitA.length - 1]
+                const lastnameB = splitB[splitB.length - 1]
                 const lastnameDifference = lastnameA.localeCompare(lastnameB)
-                if (lastnameDifference !== 0 ) {
+                if (lastnameDifference !== 0) {
                     return lastnameDifference
                 }
                 const nameDifference = nameA.localeCompare(nameB)
-                if (nameDifference !== 0 ) {
+                if (nameDifference !== 0) {
                     return nameDifference
                 }
-                if (typeof a[1].title === "undefined" || typeof b[1].title === "undefined" ) {
+                if (typeof a[1].title === "undefined" || typeof b[1].title === "undefined") {
                     console.log("boum!")
                 }
-                const titleA = a[1].title.toUpperCase() 
-                const titleB = b[1].title.toUpperCase() 
+                const titleA = a[1].title.toUpperCase()
+                const titleB = b[1].title.toUpperCase()
                 return titleA.localeCompare(titleB)
             })
 
+            let count = 0
+            let _en = 0
+            let _it = 0
+            let _fr = 0
+            let _de = 0
+            let _pt = 0
+            let _sp = 0
             for (const property in entries) {
-                if (entries[property][1]['verboten'] === 'Ja') {
-                    // console.log('VERBOTEN!', entries[property][1])
-                    continue
+                let skip = false
+                if (typeof entries[property][1].tags !== "undefined") {
+                    if (entries[property][1].tags.includes("Perec")) {
+                    }
+                    if (entries[property][1].tags.includes("verboten")) {
+                        skip = true
+                        console.log("SKIP", entries[property][1], entries[property][1].tags)
+                    }
                 }
-                // console.log(`${property}: ${doc[property]['image_path']}`);
-                const fig = document.createElement("figure");
-                fig.classList.add("figure")
-                fig.style = "margin: .4rem; max-width: 9.4rem;"
-
-                const img = document.createElement("img");
-                img.src = entries[property][1]['image_path']
-                img.classList.add("figure-img") 
-                img.classList.add("img-fluid")
-
-                const figcaption = document.createElement("figcaption");
-                figcaption.classList.add("figure-caption")
-                figcaption.classList.add("text-wrap")
-                figcaption.style = "width: 100%;"
-
-                let lan = entries[property][1]['lan'] || '';
-                if (lan) lan = lan + " "
-                let author = entries[property][1]['de'].split(/ \(/)[0];
-                let title = entries[property][1]['title']
-                let where = entries[property][1]['where']
-                const authorE = document.createTextNode(author);
-                const titleE = document.createTextNode(title);
-                const titleSPAN = document.createElement("span");
-                titleSPAN.appendChild(titleE)
-                titleSPAN.style = "font-size:smaller;"
-
-                if (where.includes("lipion")) {
-                    const float1 = document.createElement("span");
-                    float1.classList.add("float-end")
-                    float1.style = "color: green"
-                    const flag = document.createTextNode('⬤');
-                    float1.appendChild(flag)
-                    figcaption.appendChild(float1)
+                if (!skip) {
+                    const entry = entries[property][1]
+                    blend(entry)
+                    switch (entry.lan) {
+                        case '🇬🇧':
+                            _en++
+                            break;
+                        case '🇮🇹':
+                            _it++
+                            break;
+                        case '🇫🇷':
+                            _fr++
+                            break;
+                        case '🇩🇪':
+                            _de++
+                            break;
+                        case '🇵🇹':
+                            _pt++
+                            break;
+                        case '🇪🇸':
+                            _sp++
+                            break;
+                        default:
+                            console.error("missing lan property", entry);
+                    }
+                    count++
+                } else {
+                    // console.log(entries[property][1])
                 }
-                const flagE = document.createTextNode(lan);
-                const float2 = document.createElement("span");
-                float2.classList.add("float-end")
-                float2.appendChild(flagE)
-                float2.style = "font-size: larger;"
-                titleSPAN.appendChild(float2)
-                figcaption.appendChild(authorE)
-                figcaption.appendChild(document.createElement("br"))
-                figcaption.appendChild(titleSPAN)
-                fig.appendChild(img)
-                fig.appendChild(figcaption)
-                container.appendChild(fig)
+
             }
+            document.getElementById("howmuch").innerHTML = `${count}`
+            document.getElementById("howmuch2").innerHTML = `🇫🇷 ${_fr} 🇮🇹 ${_it} 🇬🇧 ${_en} 🇩🇪 ${_de} 🇵🇹 ${_pt} 🇪🇸 ${_sp} `
+
         }
 
         function fetchData() {
-            console.log("Fetching updated data.")
             const xhr = new XMLHttpRequest()
             xhr.open("GET", "everything.yaml", true)
             xhr.onload = () => {

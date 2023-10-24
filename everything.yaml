@@ -13,7 +13,6 @@
   title: Elissabetta e il conte di Essex
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 802-2264833370:
-  ISBN-13: 802-2264833370
   de: Umberto Eco
   ext: Solo per i Soci Bookclub Mondadori
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/802-2264833370.jpg"
@@ -21,7 +20,6 @@
   title: Numero zero
   where: "/saint-lazare-de-sav\xE8ne/salon/random"
 977-2532643048:
-  ISBN-13: 977-2532643048
   de: Gianrico Carofiglio (Autore)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/977-2532643048.webp"
   lan: "\U0001F1EE\U0001F1F9"
@@ -35,7 +33,6 @@
   title: Enrico Berlinguer Deputato
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-0006544890:
-  ISBN-13: 978-0006544890
   de: Fritjof Capra (Author)
   ext: "An Exploration of the Parallels Between Modern Physics and Eastern Mysticism\
     \ - (Flamingo) Paperback \u2013 1 Feb. 1992"
@@ -50,7 +47,6 @@
   title: Adventures Of Huckleberry Finn
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-0007548699:
-  ISBN-13: 978-0007548699
   de: Anthony Doerr (Author)
   ext: "Paperback \u2013 January 1, 2015"
   image_path: saint-jean-lipion/chambre/polars/978-0007548699.jpg
@@ -72,7 +68,6 @@
   title: Enduring Love
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0099282877:
-  ISBN-13: 978-0099282877
   de: Patricia Highsmith (Author)
   ext: "(A Ripley Novel, 1) Paperback \u2013 5 Aug. 1999"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-0099282877.webp"
@@ -80,15 +75,15 @@
   title: The Talented Mr. Ripley
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-0099512165:
-  ISBN-13: 978-0099512165
   de: Georges Perec (Author), Gilbert Adair (Translator)
   ext: Paperback
   image_path: saint-jean-lipion/salon/perec/978-0099512165.jpg
   lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - Perec
   title: A Void
   where: /saint-jean-lipion/salon/perec
 978-0099548362:
-  ISBN-13: 978-0099548362
   de: Henning Mankell (Author), Laurie Thompson (Translator)
   ext: "Paperback \u2013 October 19, 2010"
   image_path: saint-jean-lipion/chambre/polars/978-0099548362.jpg
@@ -104,7 +99,6 @@
   title: American Pastoral
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0099982401:
-  ISBN-13: 978-0099982401
   de: Virginia Woolf
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-0099982401.jpg"
   lan: "\U0001F1EC\U0001F1E7"
@@ -118,28 +112,24 @@
   title: Portnoy's Complaint
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0140129533:
-  ISBN-13: 978-0140129533
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0140129533.webp
   lan: "\U0001F1EC\U0001F1E7"
   title: Shroud for a Nightingale
   where: /saint-jean-lipion/chambre/pdjames
 978-0140129557:
-  ISBN-13: 978-0140129557
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0140129557.jpg
   lan: "\U0001F1EC\U0001F1E7"
   title: The Black Tower
   where: /saint-jean-lipion/chambre/pdjames
 978-0140129595:
-  ISBN-13: 978-0140129595
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0140129595.jpg
   lan: "\U0001F1EC\U0001F1E7"
   title: Innocent Blood
   where: /saint-jean-lipion/chambre/pdjames
 978-0140129618:
-  ISBN-13: 978-0140129618
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0140129618.jpg
   lan: "\U0001F1EC\U0001F1E7"
@@ -153,14 +143,12 @@
   title: The Songlines
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0140185584:
-  ISBN-13: 978-0140185584
   de: James Joyce (Author), Jeri Johnson (Editor)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-0140185584.jpg"
   lan: "\U0001F1EC\U0001F1E7"
   title: Ulysses
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-0140228458:
-  ISBN-13: 978-0140228458
   de: Detlev Peukert (1988-12-03) Mass Market Paperback
   image_path: saint-jean-lipion/chambre/nazis/978-0140228458.jpeg
   lan: "\U0001F1EC\U0001F1E7"
@@ -174,14 +162,12 @@
   title: The Bostonians
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-0141015538:
-  ISBN-13: 978-0141015538
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0141015538.jpg
   lan: "\U0001F1EC\U0001F1E7"
   title: The Murder Room
   where: /saint-jean-lipion/chambre/pdjames
 978-0192810618:
-  ISBN-13: 978-0192810618
   de: Mario Praz (Auteur), Frank Kermode (Avec la contribution de), A. Davidson (Avec
     la contribution de)
   ext: "Broch\xE9 \u2013 1 d\xE9cembre 1970"
@@ -212,7 +198,6 @@
   title: James Joyce
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0307408846:
-  ISBN-13: 978-0307408846
   de: Erik Larson (Auteur)
   ext: "Love, Terror, and an American Family in Hitler's Berlin - Reli\xE9 \u2013\
     \ 10 mai 2011"
@@ -221,7 +206,6 @@
   title: In the Garden of Beasts
   where: /saint-jean-lipion/chambre/nazis
 978-0307455925:
-  ISBN-13: 978-0307455925
   de: Chimamanda Ngozi Adichie (Author)
   ext: "A novel Paperback \u2013 March 4, 2014"
   image_path: saint-jean-lipion/chambre/favourites/978-0307455925.webp
@@ -229,7 +213,6 @@
   title: Americanah
   where: /saint-jean-lipion/chambre/favourites
 978-0316725088:
-  ISBN-13: 978-0316725088
   de: Patricia Cornwell (Autore)
   ext: "Jack the Ripper - Case Closed - Copertina flessibile \u2013 11 novembre 2002"
   image_path: saint-jean-lipion/chambre/polars/978-0316725088.jpg
@@ -237,7 +220,6 @@
   title: Portrait Of A Killer
   where: /saint-jean-lipion/chambre/polars
 978-0330450867:
-  ISBN-13: 978-0230736078
   de: Ken Follett (Autore)
   ext: "Copertina flessibile \u2013 Edizione integrale, 4 settembre 2009"
   image_path: saint-jean-lipion/chambre/polars/978-0330450867.jpg
@@ -245,7 +227,6 @@
   title: The Pillars of the Earth
   where: /saint-jean-lipion/chambre/polars
 978-0340717042:
-  ISBN-13: 978-0340717042
   de: Paul Johnston (Author)
   ext: "Paperback \u2013 January 1, 1999"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-0340717042.jpg"
@@ -253,7 +234,6 @@
   title: Water of Death
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-0345430571:
-  ISBN-13: 978-0345430571
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0345430571.jpg
   lan: "\U0001F1EC\U0001F1E7"
@@ -268,7 +248,6 @@
   title: Bandits
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-0367277291:
-  ISBN-13: 978-0367277291
   de: Tobias Pontara (Auteur)
   ext: "Reli\xE9 \u2013 4 d\xE9cembre 2019"
   image_path: saint-jean-lipion/chambre/cinema/978-0367277291.jpg
@@ -276,7 +255,6 @@
   title: Andrei Tarkovsky's Sounding Cinema
   where: /saint-jean-lipion/chambre/cinema
 978-0374533557:
-  ISBN-13: 978-0374533557
   de: Daniel Kahneman (Author)
   ext: "Paperback \u2013 April 2, 2013"
   image_path: saint-jean-lipion/chambre/favourites/978-0374533557.jpeg
@@ -284,7 +262,6 @@
   title: Thinking, Fast and Slow
   where: /saint-jean-lipion/chambre/favourites
 978-0375403552:
-  ISBN-13: 978-0375403552
   de: Stuart Isacoff (Author)
   ext: "Hardcover \u2013 November 13, 2001"
   image_path: saint-jean-lipion/chambre/favourites/978-0375403552.jpeg
@@ -299,7 +276,6 @@
   title: The Biographer's Tale
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0385347778:
-  ISBN-13: 978-0385347778
   de: Gillian Flynn (Autore)
   ext: "A Novel [Lingua inglese] Copertina flessibile \u2013 Edizione internazionale,\
     \ 8 novembre 2012"
@@ -308,7 +284,6 @@
   title: Gone Girl
   where: /saint-jean-lipion/chambre/polars
 978-0385536820:
-  ISBN-13: 978-0385536820
   de: Ian McEwan (Author)
   ext: "A Novel Hardcover \u2013 Deckle Edge, November 13, 2012"
   image_path: saint-jean-lipion/chambre/favourites/978-0385536820.jpg
@@ -316,7 +291,6 @@
   title: Sweet Tooth
   where: /saint-jean-lipion/chambre/favourites
 978-0385544153:
-  ISBN-13: 978-0385544153
   de: John Grisham (Auteur)
   ext: "A Novel Reli\xE9 \u2013 23 octobre 2018"
   image_path: saint-jean-lipion/chambre/polars/978-0385544153.jpg
@@ -324,7 +298,6 @@
   title: The Reckoning
   where: /saint-jean-lipion/chambre/polars
 978-0385721707:
-  ISBN-13: 978-0385721707
   de: James Surowiecki (Author)
   ext: "Paperback \u2013 August 16, 2005"
   image_path: saint-jean-lipion/chambre/favourites/978-0385721707.jpg
@@ -332,7 +305,6 @@
   title: The Wisdom of Crowds
   where: /saint-jean-lipion/chambre/favourites
 978-0393048254:
-  ISBN-13: 978-0393048254
   de: Christoph Wolff (Author)
   ext: "Hardcover \u2013 March 1, 2000"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-0393048254.jpeg"
@@ -340,7 +312,6 @@
   title: Johann Sebastian Bach - The Learned Musician
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-0393635362:
-  ISBN-13: 978-0393635362
   de: Philip Kennicott (Author)
   ext: "Hardcover \u2013 February 18, 2020"
   image_path: saint-jean-lipion/chambre/favourites/978-0393635362.jpg
@@ -362,14 +333,12 @@
   title: The Language of Poetry
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-0510343217:
-  ISBN-13: 978-0510343217
   de: John Webster (Author)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-0510343217.jpg"
   lan: "\U0001F1EC\U0001F1E7"
   title: The White Devil
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-0525486176:
-  ISBN-13: 978-0525486176
   de: John Grisham (Auteur)
   ext: "A Novel Poche \u2013 \xC9dition internationale, 10 janvier 2018"
   image_path: saint-jean-lipion/chambre/polars/978-0525486176.jpg
@@ -377,7 +346,6 @@
   title: Camino Island
   where: /saint-jean-lipion/chambre/polars
 978-0553342901:
-  ISBN-13: 978-0553342901
   de: Vimala Schneider (Auteur)
   ext: "Broch\xE9 \u2013 1 janvier 1982"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-0553342901.jpeg"
@@ -385,14 +353,12 @@
   title: Infant Massage
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-0553820249:
-  ISBN-13: 978-0553820249
   de: Dennis Lehane (Author)
   image_path: saint-jean-lipion/chambre/polars/978-0553820249.jpg
   lan: "\U0001F1EC\U0001F1E7"
   title: Shutter Island
   where: /saint-jean-lipion/chambre/polars
 978-0571143047:
-  ISBN-13: 978-0571143047
   de: P. D. James (Auteur)
   ext: "Paperback \u2013 2 April 1990"
   image_path: saint-jean-lipion/chambre/pdjames/978-0571143047.jpg
@@ -400,14 +366,12 @@
   title: Devices and Desires
   where: /saint-jean-lipion/chambre/pdjames
 978-0571167418:
-  ISBN-13: 978-0571167418
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0571167418.jpg
   lan: "\U0001F1EC\U0001F1E7"
   title: The Children of Men
   where: /saint-jean-lipion/chambre/pdjames
 978-0571172535:
-  ISBN-13: 978-0571172535
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0571172535.jpg
   lan: "\U0001F1EC\U0001F1E7"
@@ -420,35 +384,30 @@
   title: The Buddha of Suburbia
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-0571239481:
-  ISBN-13: 978-0571239481
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0571239481.jpg
   lan: "\U0001F1EC\U0001F1E7"
   title: A Certain Justice
   where: /saint-jean-lipion/chambre/pdjames
 978-0575075207:
-  ISBN-13: 978-0575075207
   de: Philip K. Dick (Autore, Collaboratore)
   image_path: saint-jean-lipion/chambre/polars/978-0575075207.jpg
   lan: "\U0001F1EC\U0001F1E7"
   title: Minority Report
   where: /saint-jean-lipion/chambre/polars
 978-0582777316:
-  ISBN-13: 978-0582777316
   de: George Orwell (Author)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-0582777316.jpg"
   lan: "\U0001F1EC\U0001F1E7"
   title: 1984
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-0586044483:
-  ISBN-13: 978-0586044483
   de: Virginia Woolf
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-0586044483.jpg"
   lan: "\U0001F1EC\U0001F1E7"
   title: Orlando
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-0586044766:
-  ISBN-13: 978-0586044766
   de: James Joyce (Author)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-0586044766.jpg"
   lan: "\U0001F1EC\U0001F1E7"
@@ -476,7 +435,6 @@
   title: The Luzhin Defense
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-0691017846:
-  ISBN-13: 978-0691017846
   de: Joseph Campbell (Author)
   ext: "Paperback \u2013 December 1, 1990"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-0691017846.jpg"
@@ -491,7 +449,6 @@
   title: Berlin
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-0743231800:
-  ISBN-13: 978-0743231800
   de: Colin McGinn (Author)
   ext: "Paperback \u2013 January 1, 2003"
   image_path: saint-jean-lipion/chambre/favourites/978-0743231800.jpg
@@ -506,7 +463,6 @@
   title: Harry Potter and the Philosopher's Stone
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-0751572865:
-  ISBN-13: 978-0316422772
   de: Robert Galbraith (Author)
   ext: "(A Cormoran Strike Novel, 4) Paperback \u2013 June 11, 2019"
   image_path: saint-jean-lipion/chambre/polars/978-0751572865.jpg
@@ -514,7 +470,6 @@
   title: Lethal White
   where: /saint-jean-lipion/chambre/polars
 978-0751584202:
-  ISBN-13: 978-0751584202
   de: Robert Galbraith (Autore)
   ext: "A Strike Novel Copertina rigida \u2013 30 agosto 2022"
   image_path: saint-jean-lipion/chambre/polars/978-0751584202.jpg
@@ -522,15 +477,15 @@
   title: The Ink Black Heart
   where: /saint-jean-lipion/chambre/polars
 978-0785929024:
-  ISBN-13: 978-0785929024
   de: Georges Perec (Auteur)
   ext: "Poche \u2013 2 novembre 1982"
   image_path: saint-jean-lipion/salon/perec/978-0785929024.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "Quel petit v\xE9lo \xE0 guidon chrom\xE9 au fond de la cour ?"
   where: /saint-jean-lipion/salon/perec
 978-0802125552:
-  ISBN-13: 978-0802125552
   de: Gregory David Roberts (Author)
   ext: "Paperback \u2013 September 13, 2016"
   image_path: saint-jean-lipion/chambre/polars/978-0802125552.jpg
@@ -538,7 +493,6 @@
   title: The Mountain Shadow
   where: /saint-jean-lipion/chambre/polars
 978-0812969658:
-  ISBN-13: 978-0812969658
   de: Alan Bennett (Author)
   ext: "(Today Show Book Club \xB05) Paperback \u2013 November 1, 2002"
   image_path: saint-jean-lipion/chambre/polars/978-0812969658.jpg
@@ -546,7 +500,6 @@
   title: The Clothes They Stood Up In and The Lady in the Van
   where: /saint-jean-lipion/chambre/polars
 978-0812977233:
-  ISBN-13: 978-0812977233
   de: P. D. James (Auteur)
   ext: "An Adam Dalgliesh Novel Broch\xE9 \u2013 9 janvier 2007"
   image_path: saint-jean-lipion/chambre/pdjames/978-0812977233.jpg
@@ -562,7 +515,6 @@
   title: The Hothouse Effect
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-0828837408:
-  ISBN-13: 978-0828837408
   de: Nathalie Sarraute (Auteur)
   ext: "Poche \u2013 9 mai 1972"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-0828837408.jpg"
@@ -570,7 +522,6 @@
   title: "Le plan\xE9tarium"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-0857522320:
-  ISBN-13: 978-0857522320
   de: Paula Hawkins (Author)
   ext: "Paperback \u2013 July 12, 2016"
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-0857522320.jpg"
@@ -578,7 +529,6 @@
   title: The Girl on the Train
   where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-0865475120:
-  ISBN-13: 978-0865475120
   de: David Hajdu (Author)
   ext: "Paperback \u2013 June 26, 1997"
   image_path: saint-jean-lipion/chambre/biographies/978-0865475120.jpg
@@ -586,7 +536,6 @@
   title: Lush Life - A Biography of Billy Strayhorn
   where: /saint-jean-lipion/chambre/biographies
 978-0874776942:
-  ISBN-13: 978-0874776942
   de: Julia Cameron (Author)
   ext: "Paperback \u2013 July 17, 1992"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-0874776942.jpg"
@@ -608,7 +557,6 @@
   title: Idle Days in Patagonia
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-1371035907:
-  ISBN-13: 978-1371035907
   de: Franz Kafka (Auteur)
   ext: "Poche \u2013 5 Mai 1982"
   image_path: saint-jean-lipion/chambre/kafka/978-1371035907.jpg
@@ -616,7 +564,6 @@
   title: Journal
   where: /saint-jean-lipion/chambre/kafka
 978-1451681925:
-  ISBN-13: 978-1451681925
   de: Richard North Patterson (Autore)
   ext: "Copertina flessibile \u2013 10 aprile 2012"
   image_path: saint-jean-lipion/chambre/polars/978-1451681925.jpg
@@ -624,7 +571,6 @@
   title: Fall from Grace
   where: /saint-jean-lipion/chambre/polars
 978-1476727653:
-  ISBN-13: 978-1476727653
   de: Stephen King (Auteur)
   ext: "(US version). Reli\xE9 \u2013 24 septembre 2013"
   image_path: saint-jean-lipion/chambre/polars/978-1476727653.jpg
@@ -632,7 +578,6 @@
   title: Doctor Sleep
   where: /saint-jean-lipion/chambre/polars
 978-1529077261:
-  ISBN-13: 978-1529077261
   de: Don DeLillo (Author)
   ext: "(Contemporary American Fiction) Paperback \u2013 January 7, 1986"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-1529077261.jpg"
@@ -640,7 +585,6 @@
   title: White Noise
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-1529157260:
-  ISBN-13: 978-1529157260
   de: Donna Leon (Autore)
   ext: "Copertina flessibile \u2013 22 settembre 2022"
   image_path: saint-jean-lipion/chambre/polars/978-1529157260.jpg
@@ -656,7 +600,6 @@
   title: The Great Successor
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-1573226882:
-  ISBN-13: 978-1573226882
   de: Nick Hornby (Author)
   ext: "Paperback \u2013 March 1, 1998"
   image_path: saint-jean-lipion/chambre-paul/football/978-1573226882.jpeg
@@ -664,7 +607,6 @@
   title: Fever Pitch
   where: /saint-jean-lipion/chambre-paul/football
 978-1590178096:
-  ISBN-13: 978-1590178096
   de: Bela Zombory-Moldovan (Author), Peter Zombory-Moldovan (Translator, Introduction)
   ext: "(New York Review Books Classics) Paperback \u2013 August 5, 2014"
   image_path: saint-jean-lipion/chambre/favourites/978-1590178096.jpg
@@ -672,7 +614,6 @@
   title: The Burning of the World - A Memoir of 1914
   where: /saint-jean-lipion/chambre/favourites
 978-1594634024:
-  ISBN-13: 978-1594634024
   de: Paula Hawkins (Author)
   ext: "Paperback \u2013 July 12, 2016"
   image_path: saint-jean-lipion/chambre/polars/978-1594634024.jpg
@@ -680,7 +621,6 @@
   title: The Girl on the Train
   where: /saint-jean-lipion/chambre/polars
 978-1648580321:
-  ISBN-13: 978-1648580321
   de: "Louis-Ferdinand C\xE9line (Auteur)"
   ext: "Broch\xE9 \u2013 20 janvier 2019"
   image_path: saint-jean-lipion/chambre/editors/978-1648580321.jpg
@@ -688,7 +628,6 @@
   title: Rigodon
   where: /saint-jean-lipion/chambre/editors
 978-1648580338:
-  ISBN-13: 978-1648580338
   de: "Louis-Ferdinand C\xE9line (Auteur)"
   ext: "Broch\xE9 \u2013 15 janvier 2019"
   image_path: saint-jean-lipion/chambre/editors/978-1648580338.jpg
@@ -696,7 +635,6 @@
   title: Nord
   where: /saint-jean-lipion/chambre/editors
 978-1648580345:
-  ISBN-13: 978-1648580345
   de: "Louis-Ferdinand C\xE9line (Auteur)"
   ext: "Broch\xE9 \u2013 9 janvier 2019"
   image_path: saint-jean-lipion/chambre/editors/978-1648580345.jpg
@@ -704,7 +642,6 @@
   title: "D'un ch\xE2teau l'autre"
   where: /saint-jean-lipion/chambre/editors
 978-1741211160:
-  ISBN-13: 978-1741211160
   de: Winston Graham (Author)
   ext: "Paperback \u2013 January 1, 2003"
   image_path: saint-jean-lipion/chambre/polars/978-1741211160.jpg
@@ -712,7 +649,6 @@
   title: The Green Flash
   where: /saint-jean-lipion/chambre/polars
 978-1780749204:
-  ISBN-13: 978-1780749204
   de: Gloria Steinem (Author)
   ext: "Paperback \u2013 September 1, 2016"
   image_path: saint-jean-lipion/chambre/favourites/978-1780749204.jpg
@@ -720,7 +656,6 @@
   title: My Life on the Road
   where: /saint-jean-lipion/chambre/favourites
 978-1781853771:
-  ISBN-13: 978-1781853757
   de: Jonathan Holt (Author)
   ext: "(The Carnivia Trilogy) Hardcover \u2013 May 7, 2015"
   image_path: saint-jean-lipion/chambre/polars/978-1781853771.jpg
@@ -728,7 +663,6 @@
   title: The Traitor
   where: /saint-jean-lipion/chambre/polars
 978-1784700843:
-  ISBN-13: 978-1784700843
   de: Henning Mankell (Autore), Giorgio Puleo (Traduttore)
   ext: "Paperback \u2013 January 1, 2015"
   image_path: saint-jean-lipion/chambre/polars/978-1784700843.jpg
@@ -736,7 +670,6 @@
   title: An Event in Autumn
   where: /saint-jean-lipion/chambre/polars
 978-1785031540:
-  ISBN-13: 978-1785031540
   de: Nicholas Pileggi (Author)
   image_path: saint-jean-lipion/chambre/favourites/978-1785031540.jpg
   lan: "\U0001F1EC\U0001F1E7"
@@ -757,7 +690,6 @@
   title: To the Lighthouse
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-1860463655:
-  ISBN-13: 978-1860463655
   de: Fred Uhlman (Autore, Collaboratore)
   ext: "Copertina flessibile \u2013 1 settembre 2006"
   image_path: saint-jean-lipion/chambre/favourites/978-1860463655.jpg
@@ -765,7 +697,6 @@
   title: Reunion
   where: /saint-jean-lipion/chambre/favourites
 978-1906694159:
-  ISBN-13: 978-0307454553
   de: Stieg Larsson (Author), Reg Keeland (Translator)
   ext: "A Lisbeth Salander Novel (The Girl with the Dragon Tattoo Series) Paperback\
     \ \u2013 March 23, 2010"
@@ -774,28 +705,28 @@
   title: The Girl Who Played with Fire
   where: /saint-jean-lipion/chambre/polars
 978-2010115547:
-  ISBN-13: 978-2010115547
   de: Georges Perec (Auteur)
   image_path: saint-jean-lipion/salon/perec/978-2010115547.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Penser/Classer
   where: /saint-jean-lipion/salon/perec
 978-2010119538:
-  ISBN-13: 978-2010119538
   de: Georges Perec (Auteur)
   image_path: saint-jean-lipion/salon/perec/978-2010119538.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Je me souviens
   where: /saint-jean-lipion/salon/perec
 978-2020005852:
-  ISBN-13: 978-2020005852
   de: Roland Barthes (Auteur)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2020005852.jpg"
   lan: "\U0001F1EB\U0001F1F7"
   title: Mythologies
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2020006446:
-  ISBN-13: 978-2020006446
   de: Francois Truffaut
   image_path: saint-jean-lipion/chambre/cinema/978-2020006446.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -809,14 +740,12 @@
   title: Fragments d'un discours amoureux
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2020068079:
-  ISBN-13: 978-2020068079
   de: Robert M. Pirsig (Auteur)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2020068079.jpg"
   lan: "\U0001F1EB\U0001F1F7"
   title: Traite du Zen et de l'entretien des motocyclettes
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2020096287:
-  ISBN-13: 978-2020096287
   de: Eugen Kogon, Hermann Langbein, Adalbert Ruckerl (Auteur)
   ext: "Points. Histoire Broch\xE9 \u2013 1 juin 1987"
   image_path: saint-jean-lipion/chambre/nazis/978-2020096287.jpg
@@ -824,22 +753,23 @@
   title: "Les chambres \xE0 gaz secret d'\xC9tat"
   where: /saint-jean-lipion/chambre/nazis
 978-2020102438:
-  ISBN-13: 978-2020102438
   de: Claude Burgelin (Auteur)
   ext: "Broch\xE9 \u2013 1 octobre 1988"
   image_path: saint-jean-lipion/salon/perec/978-2020102438.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Georges Perec
   where: /saint-jean-lipion/salon/perec
 978-2020109000:
-  ISBN-13: 978-2020109000
   de: Georges Perec (Auteur)
   image_path: saint-jean-lipion/salon/perec/978-2020109000.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Voeux
   where: /saint-jean-lipion/salon/perec
 978-2020134170:
-  ISBN-13: 978-2020134170
   de: Brian McGuinness (Auteur)
   ext: "Broch\xE9 \u2013 11 septembre 1991"
   image_path: saint-jean-lipion/chambre/biographies/978-2020134170.jpg
@@ -847,18 +777,20 @@
   title: "Wittgenstein - 1. Les ann\xE9es de jeunesse 1889-1921"
   where: /saint-jean-lipion/chambre/biographies
 978-2020168687:
-  ISBN-13: 978-2020168687
   de: David Bellos (Auteur)
   ext: "Une vie dans les mots - Broch\xE9 \u2013 Grand livre, 31 janvier 1994"
   image_path: saint-jean-lipion/salon/perec/978-2020168687.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Georges Perec
   where: /saint-jean-lipion/salon/perec
 978-2020213677:
-  ISBN-13: 978-2020213677
   de: Georges Perec (Auteur)
   image_path: saint-jean-lipion/salon/perec/978-2020213677.jpeg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Un cabinet d'amateur
   where: /saint-jean-lipion/salon/perec
 978-2020259194:
@@ -868,7 +800,6 @@
   title: Portrait de groupe avec dame
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2020314862:
-  ISBN-13: 978-2020314862
   de: Claude Duneton (Auteur)
   ext: "Broch\xE9 \u2013 7 avril 1998"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-2020314862.jpg"
@@ -876,7 +807,6 @@
   title: "Le guide du fran\xE7ais familier"
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-2020512497:
-  ISBN-13: 978-2020512497
   de: "G\xE9rard Mordillat (Auteur), J\xE9r\xF4me Prieur (Auteur)"
   ext: "Broch\xE9 \u2013 17 mars 2004"
   image_path: saint-jean-lipion/chambre/favourites/978-2020512497.jpg
@@ -884,7 +814,6 @@
   title: "J\xE9sus apr\xE8s J\xE9sus - L'origine du christianisme"
   where: /saint-jean-lipion/chambre/favourites
 978-2020796569:
-  ISBN-13: 978-2020796569
   de: Gerard Mordillat (Auteur), Jerome Prieur (Auteur)
   ext: "Broch\xE9 \u2013 6 novembre 2008"
   image_path: saint-jean-lipion/chambre/favourites/978-2020796569.jpg
@@ -892,7 +821,6 @@
   title: "J\xE9sus sans J\xE9sus - La christianisation de l'Empire romain"
   where: /saint-jean-lipion/chambre/favourites
 978-2021082289:
-  ISBN-13: 978-2021082289
   de: Thomas Piketty (Auteur)
   ext: "Broch\xE9 \u2013 19 septembre 2013"
   image_path: saint-jean-lipion/chambre/favourites/978-2021082289.jpg
@@ -900,7 +828,6 @@
   title: "Le capital au XXI\u1D49 si\xE8cle"
   where: /saint-jean-lipion/chambre/favourites
 978-2021092158:
-  ISBN-13: 978-2021092158
   de: Quentin Meillassoux (Auteur)
   ext: "Broch\xE9 \u2013 27 avril 2012"
   image_path: saint-jean-lipion/chambre/favourites/978-2021092158.jpg
@@ -908,7 +835,6 @@
   title: "Apr\xE8s la finitude - Essai sur la n\xE9cessit\xE9 de la contingence"
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2021117707:
-  ISBN-13: 978-2021117707
   de: Edouard Louis (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 21 janvier 2014"
   image_path: saint-jean-lipion/chambre/autres/978-2021117707.jpg
@@ -916,7 +842,6 @@
   title: En finir avec Eddy Bellegueule
   where: /saint-jean-lipion/chambre/autres
 978-2021323672:
-  ISBN-13: 978-2021323672
   de: Timothy Tackett (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 15 mars 2018"
   image_path: saint-jean-lipion/chambre/biographies/978-2021323672.jpg
@@ -924,7 +849,6 @@
   title: "Anatomie de la Terreur - Le processus r\xE9volutionnaire 1787-1793"
   where: /saint-jean-lipion/chambre/biographies
 978-2070110674:
-  ISBN-13: 978-2070110674
   de: "G\xE9rard de Nerval (Auteur)"
   ext: "Reli\xE9 \u2013 12 septembre 1989"
   image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2070110674.jpg
@@ -932,7 +856,6 @@
   title: "\u0152uvres compl\xE8tes, tome 1"
   where: /saint-jean-lipion/chambre/lapleiade.etc
 978-2070114757:
-  ISBN-13: 978-2070114757
   de: Gustave Flaubert
   ext: "Reli\xE9 \u2013 20 septembre 2001"
   image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2070114757.jpg
@@ -940,7 +863,6 @@
   title: "\u0152uvres compl\xE8tes, tome 1 - \u0152uvres de jeunesse"
   where: /saint-jean-lipion/chambre/lapleiade.etc
 978-2070116157:
-  ISBN-13: 978-2070116157
   de: Gustave Flaubert (Auteur)
   ext: "Reli\xE9 \u2013 8 novembre 2013"
   image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2070116157.jpg
@@ -948,7 +870,6 @@
   title: "\u0152uvres compl\xE8tes, tome 2 (1845-1851)"
   where: /saint-jean-lipion/chambre/lapleiade.etc
 978-2070117697:
-  ISBN-13: 978-2070117697
   de: Johann Chapoutot (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 19 janvier 2017"
   image_path: saint-jean-lipion/chambre/editors/978-2070117697.jpg
@@ -956,7 +877,6 @@
   title: "La r\xE9volution culturelle nazie"
   where: /saint-jean-lipion/chambre/editors
 978-2070120512:
-  ISBN-13: 978-2070120512
   de: Claude Lanzmann (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 12 mars 2009"
   image_path: saint-jean-lipion/chambre/editors/978-2070120512.jpg
@@ -964,7 +884,6 @@
   title: "Le li\xE8vre de Patagonie"
   where: /saint-jean-lipion/chambre/editors
 978-2070123223:
-  ISBN-13: 978-2070123223
   de: Jacques de Saint Victor (Auteur)
   ext: "Broch\xE9 \u2013 18 octobre 2012"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-2070123223.jpg"
@@ -973,7 +892,6 @@
     \ XIX\u1D49-XXI\u1D49 si\xE8cles"
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-2070124640:
-  ISBN-13: 978-2070124640
   de: Mona Ozouf (Auteur)
   ext: "Poche \u2013 19 mars 2009"
   image_path: saint-jean-lipion/chambre/editors/978-2070124640.jpg
@@ -981,7 +899,6 @@
   title: "Composition fran\xE7aise - Retour sur une enfance bretonne"
   where: /saint-jean-lipion/chambre/editors
 978-2070126002:
-  ISBN-13: 978-2070126002
   de: Paul Jorion (Auteur)
   ext: "Broch\xE9 \u2013 5 novembre 2009"
   image_path: saint-jean-lipion/chambre/editors/978-2070126002.jpg
@@ -989,7 +906,6 @@
   title: "Comment la v\xE9rit\xE9 et la r\xE9alit\xE9 furent invent\xE9es"
   where: /saint-jean-lipion/chambre/editors
 978-2070126705:
-  ISBN-13: 978-2070126705
   de: Anne Wiazemsky (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 5 janvier 2012"
   image_path: saint-jean-lipion/chambre/editors/978-2070126705.jpg
@@ -997,7 +913,6 @@
   title: "Une ann\xE9e studieuse"
   where: /saint-jean-lipion/chambre/editors
 978-2070128839:
-  ISBN-13: 978-2070128839
   de: "Herta M\xFCller (Auteur), Claire de Oliveira (Traduction)"
   ext: "Broch\xE9 \u2013 Grand livre, 30 septembre 2010"
   image_path: saint-jean-lipion/chambre/editors/978-2070128839.jpeg
@@ -1005,7 +920,6 @@
   title: La bascule du souffle
   where: /saint-jean-lipion/chambre/editors
 978-2070134571:
-  ISBN-13: 978-2070134571
   de: Mona Ozouf (Auteur)
   ext: "Broch\xE9 \u2013 6 octobre 2011"
   image_path: saint-jean-lipion/chambre/editors/978-2070134571.jpg
@@ -1013,14 +927,12 @@
   title: La cause des livres
   where: /saint-jean-lipion/chambre/editors
 978-2070135431:
-  ISBN-13: 978-2070135431
   de: Anne Wiazemsky (Auteur)
   image_path: saint-jean-lipion/chambre/editors/978-2070135431.jpg
   lan: "\U0001F1EB\U0001F1F7"
   title: "Un an apr\xE8s"
   where: /saint-jean-lipion/chambre/editors
 978-2070141937:
-  ISBN-13: 978-2070141937
   de: Johann Chapoutot (Auteur)
   ext: "Penser et agir en nazi - Broch\xE9 \u2013 9 octobre 2014"
   image_path: saint-jean-lipion/chambre/editors/978-2070141937.jpg
@@ -1028,7 +940,6 @@
   title: La loi du sang
   where: /saint-jean-lipion/chambre/editors
 978-2070144327:
-  ISBN-13: 978-2070144327
   de: Franz Kafka (Auteur), Jean-Pierre Lefebvre (Sous la direction de, Traduction)
   ext: "Reli\xE9 \u2013 11 octobre 2018"
   image_path: saint-jean-lipion/chambre/kafka/978-2070144327.jpg
@@ -1036,7 +947,6 @@
   title: "\u0152uvres compl\xE8tes, II - Romans"
   where: /saint-jean-lipion/chambre/kafka
 978-2070145614:
-  ISBN-13: 978-2070145614
   de: Mona Ozouf (Auteur)
   ext: "Broch\xE9 \u2013 5 f\xE9vrier 2015"
   image_path: saint-jean-lipion/chambre/favourites/978-2070145614.jpg
@@ -1044,7 +954,6 @@
   title: "De R\xE9volution en R\xE9publique - Les chemins de la France"
   where: /saint-jean-lipion/chambre/favourites
 978-2070146826:
-  ISBN-13: 978-2070146826
   de: Annie Le Brun (Auteur)
   ext: "Reli\xE9 \u2013 25 octobre 2014"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2070146826.jpg
@@ -1052,15 +961,15 @@
   title: Sade - Attaquer le soleil
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2070197521:
-  ISBN-13: 978-2070197521
   de: Claude Burgelin (Auteur)
   ext: "Iconographie comment\xE9e Reli\xE9 \u2013 11 mai 2017"
   image_path: saint-jean-lipion/salon/perec/978-2070197521.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Album Georges Perec
   where: /saint-jean-lipion/salon/perec
 978-2070213030:
-  ISBN-13: 978-2070213030
   de: "Louis-Ferdinand C\xE9line (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 13 mai 1970"
   image_path: saint-jean-lipion/chambre/editors/978-2070213030.jpg
@@ -1068,7 +977,6 @@
   title: Casse-pipe - Carnet du cuirassier Destouches
   where: /saint-jean-lipion/chambre/editors
 978-2070234745:
-  ISBN-13: 978-2070234745
   de: James Joyce (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 10 juin 2004"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-2070234745.jpg"
@@ -1076,36 +984,32 @@
   title: Ulysse
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-2070297443:
-  ISBN-13: 978-2070297443
   de: Charles Rosen (Auteur)
   image_path: saint-jean-lipion/chambre/favourites/978-2070297443.jpg
   lan: "\U0001F1EB\U0001F1F7"
   title: Le Style classique - Haydn, Mozart, Beethoven
   where: /saint-jean-lipion/chambre/favourites
 978-2070300075:
-  ISBN-13: 978-2070300075
   de: Guillaume Apollinaire
   image_path: "saint-lazare-de-sav\xE8ne/salon/po\xE9sie/978-2070300075.jpeg"
   lan: "\U0001F1EB\U0001F1F7"
   title: Alcools / Le Bestaire / Vitam impendere amori
   where: "/saint-lazare-de-sav\xE8ne/salon/po\xE9sie"
 978-2070320691:
-  ISBN-13: 978-2070320691
   de: "Fran\xE7ois Villon (Auteur), Jean Dufournet (Editeur)"
   image_path: saint-jean-lipion/chambre/polars/978-2070320691.jpg
   lan: "\U0001F1EB\U0001F1F7"
   title: "Po\xE9sies"
   where: "/saint-lazare-de-sav\xE8ne/salon/po\xE9sie"
 978-2070321957:
-  ISBN-13: 978-2070321957
   de: "Pier Paolo Pasolini (Auteur), Jos\xE9 Guidi (Traducteur)"
   ext: (Edition bilingue)
   image_path: "saint-lazare-de-sav\xE8ne/salon/po\xE9sie/978-2070321957.jpg"
-  lan: "\U0001F1EB\U0001F1F7\U0001F1EE\U0001F1F9"
+  lan: "\U0001F1EB\U0001F1F7"
+  lanOriginal: "\U0001F1EE\U0001F1F9"
   title: "Po\xE9sies 1953-1964"
   where: "/saint-lazare-de-sav\xE8ne/salon/po\xE9sie"
 978-2070323029:
-  ISBN-13: 978-2070323029
   de: Albert Camus (Auteur)
   ext: "Poche \u2013 2 mai 1985"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070323029.jpeg"
@@ -1113,7 +1017,6 @@
   title: "L'homme r\xE9volt\xE9"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070323524:
-  ISBN-13: 978-2070323524
   de: Simone de Beauvoir (Auteur)
   ext: "Poche \u2013 21 avril 1986"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070323524.jpg"
@@ -1129,11 +1032,11 @@
   title: Baudelaire
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070326624:
-  ISBN-13: 978-2070326624
   de: Eugenio Montale (Auteur)
   ext: "A32662 Copertina flessibile \u2013 15 novembre 2014"
   image_path: "saint-lazare-de-sav\xE8ne/salon/po\xE9sie/978-2070326624.jpeg"
-  lan: "\U0001F1EB\U0001F1F7\U0001F1EE\U0001F1F9"
+  lan: "\U0001F1EB\U0001F1F7"
+  lanOriginal: "\U0001F1EE\U0001F1F9"
   title: "Po\xE8mes choisis 1916-1980"
   where: "/saint-lazare-de-sav\xE8ne/salon/po\xE9sie"
 978-2070350421:
@@ -1144,7 +1047,6 @@
   title: "L'\xE8re du soupcon"
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2070350896:
-  ISBN-13: 978-2070350896
   de: Jonathan Littell
   image_path: saint-jean-lipion/chambre/editors/978-2070350896.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -1154,6 +1056,8 @@
   de: OuLiPo
   image_path: "saint-lazare-de-sav\xE8ne/salon/_4/978-2070354399.jpg"
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "Atlas de litt\xE9rature potentielle"
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2070354795:
@@ -1163,7 +1067,6 @@
   title: "Lettres \xE0 Milena"
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2070360284:
-  ISBN-13: 978-2070360284
   de: "Louis-Ferdinand C\xE9line (Auteur)"
   ext: "Prix Renaudot 1932 Poche \u2013 16 f\xE9vrier 1972"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070360284.jpg"
@@ -1171,7 +1074,6 @@
   title: Voyage au bout de la nuit
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070360420:
-  ISBN-13: 978-2070360420
   de: Albert Camus (Auteur)
   ext: "Poche \u2013 1 janvier 1972"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070360420.jpg"
@@ -1186,7 +1088,6 @@
   title: Illusions perdues
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070362844:
-  ISBN-13: 978-2070362844
   de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)s
   ext: "Poche \u2013 10 novembre 1972"
   image_path: saint-jean-lipion/chambre/kafka/978-2070362844.webp
@@ -1194,7 +1095,6 @@
   title: "Le ch\xE2teau"
   where: /saint-jean-lipion/chambre/kafka
 978-2070364398:
-  ISBN-13: 978-2070364398
   de: Italo Svevo (Auteur)
   ext: "Broch\xE9 \u2013 6 septembre 1973"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070364398.jpg"
@@ -1202,7 +1102,6 @@
   title: La conscience de Zeno
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070367696:
-  ISBN-13: 978-2070367696
   de: Simone de Beauvoir (Auteur)
   ext: "Poche \u2013 9 juin 1972"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070367696.jpg"
@@ -1210,7 +1109,6 @@
   title: Les mandarins, tome 1
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070367702:
-  ISBN-13: 978-2070367702
   de: Simone de Beauvoir (Auteur)
   ext: "Poche \u2013 9 juin 1972"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070367702.jpg"
@@ -1218,7 +1116,6 @@
   title: Les mandarins, tome 2
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070367863:
-  ISBN-13: 978-2070367863
   de: Simone de Beauvoir (Auteur)
   ext: "Poche \u2013 10 janvier 2008"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070367863.jpeg"
@@ -1226,7 +1123,6 @@
   title: "M\xE9moires d'une jeune fille rang\xE9e"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070367986:
-  ISBN-13: 978-2070367986
   de: Marguerite Yourcenar (Auteur)
   ext: "Poche \u2013 1 janvier 1976"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070367986.jpg"
@@ -1234,14 +1130,12 @@
   title: "L'\u0152uvre au noir"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070369591:
-  ISBN-13: 978-2070369591
   de: Michel Tournier
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070369591.jpg"
   lan: "\U0001F1EB\U0001F1F7"
   title: Vendredi ou les limbes du Pacifique
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070369973:
-  ISBN-13: 978-2070369973
   de: Nathalie Sarraute (Auteur)
   ext: "Poche \u2013 20 janvier 1978"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070369973.jpg"
@@ -1249,7 +1143,6 @@
   title: "\u201CDisent les imb\xE9ciles\u201D"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070370962:
-  ISBN-13: 978-2070370962
   de: "Henri-Pierre Roch\xE9 (Auteur)"
   ext: "Poche \u2013 22 mars 1979"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070370962.jpg"
@@ -1257,7 +1150,6 @@
   title: Jules et Jim
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070371440:
-  ISBN-13: 978-2070371440
   de: Guy de Maupassant (Auteur)
   ext: "Poche \u2013 1 juillet 1979"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070371440.jpg"
@@ -1265,7 +1157,6 @@
   title: "Contes de la B\xE9casse"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070372225:
-  ISBN-13: 978-2070372225
   de: "Emile Zola (Auteur), Henri Mitterand (Sous la direction de), Andr\xE9 Wurmser\
     \ (Pr\xE9face)"
   ext: "Poche \u2013 12 septembre 1980"
@@ -1274,7 +1165,6 @@
   title: L'Argent
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070373628:
-  ISBN-13: 978-2070373628
   de: "Romain Gary (\xC9mile Ajar) (Auteur)"
   ext: "Poche \u2013 16 mars 1982"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070373628.jpg"
@@ -1282,7 +1172,6 @@
   title: La vie devant soi
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070374984:
-  ISBN-13: 978-2070374984
   de: Arnim (Auteur)
   ext: "Poche \u2013 12 octobre 1983"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070374984.jpg"
@@ -1290,7 +1179,6 @@
   title: "Isabelle d'Egypte et autres r\xE9cits"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070380596:
-  ISBN-13: 978-2070380596
   de: Daniel Pennac (Auteur)
   ext: "Poche \u2013 3 octobre 1997"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070380596.jpg"
@@ -1298,7 +1186,6 @@
   title: Au bonheur des ogres
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070381319:
-  ISBN-13: 978-2070381319
   de: Daniel Pennac (Auteur)
   ext: "Poche \u2013 3 octobre 1997"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070381319.jpg"
@@ -1306,7 +1193,6 @@
   title: "La f\xE9e carabine"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070383382:
-  ISBN-13: 978-2070383382
   de: Ingmar Bergman (Auteur)
   ext: "Poche \u2013 31 mars 2001"
   image_path: saint-jean-lipion/chambre/cinema/978-2070383382.jpg
@@ -1314,7 +1200,6 @@
   title: Laterna magica
   where: /saint-jean-lipion/chambre/cinema
 978-2070383993:
-  ISBN-13: 978-2070383993
   de: "Anonymes (Auteur), Andr\xE9 Miquel (Traduction), Jamel Eddine Bencheikh (Traduction)"
   ext: "Poche \u2013 23 avril 1991"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070383993.jpg"
@@ -1322,7 +1207,6 @@
   title: Les mille et une nuits I
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070384006:
-  ISBN-13: 978-2070384006
   de: "Anonymes (Auteur), Andr\xE9 Miquel (Traduction), Jamel Eddine Bencheikh (Traduction)"
   ext: "Poche \u2013 23 avril 1991"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070384006.jpg"
@@ -1330,7 +1214,6 @@
   title: Les Mille et Une Nuits II
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070384655:
-  ISBN-13: 978-2070384655
   de: Daniel Pennac (Auteur)
   ext: "Poche \u2013 3 octobre 1997"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070384655.jpeg"
@@ -1338,7 +1221,6 @@
   title: La petite marchande de prose
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070385645:
-  ISBN-13: 978-2070385645
   de: "Ovide (Auteur), Jean-Pierre N\xE9raudau (Sous la direction de), Georges Lafaye\
     \ (Traduction)"
   ext: "Poche \u2013 25 septembre 1992"
@@ -1347,16 +1229,16 @@
   title: "Les M\xE9tamorphoses"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070387830:
-  ISBN-13: 978-2070387830
   de: "Georges Perec (Auteur), Harry Mathews (Sous la direction de), Jacques Roubaud\
     \ (Adapt\xE9 par)"
   ext: "Poche \u2013 13 janvier 1994"
   image_path: saint-jean-lipion/salon/perec/978-2070387830.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: 53 jours
   where: /saint-jean-lipion/salon/perec
 978-2070403264:
-  ISBN-13: 978-2070403264
   de: Jonathan Coe (Auteur), Jean Pavans (Traduction)
   ext: "Poche \u2013 27 ao\xFBt 1997"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070403264.jpg"
@@ -1364,7 +1246,6 @@
   title: "Testament \xE0 l'anglaise"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070408832:
-  ISBN-13: 978-2070408832
   de: Didier Daeninckx (Auteur)
   ext: "Broch\xE9 \u2013 2 f\xE9vrier 2000"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070408832.jpg"
@@ -1372,7 +1253,6 @@
   title: Cannibale
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070409105:
-  ISBN-13: 978-2070409105
   de: Stendhal (Auteur)
   ext: Poche
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070409105.jpg"
@@ -1380,7 +1260,6 @@
   title: Lucien Leuwen
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070416219:
-  ISBN-13: 978-2070416219
   de: "Emmanuel Carr\xE8re (Auteur)"
   ext: "Poche \u2013 29 ao\xFBt 2002"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070416219.jpg"
@@ -1388,7 +1267,6 @@
   title: L'Adversaire
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070422067:
-  ISBN-13: 978-2070422067
   de: Franz Kafka (Autore), Marthe Robert (Traduttore)
   ext: "Libro \u2013 4 ottobre 2006"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070422067.jpg"
@@ -1396,7 +1274,6 @@
   title: "Lettre au p\xE8re"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070439805:
-  ISBN-13: 978-2070439805
   de: "Jo\xEBl Schmidt (Auteur)"
   ext: "Poche \u2013 13 mai 2011"
   image_path: saint-jean-lipion/chambre/biographies/978-2070439805.jpg
@@ -1404,7 +1281,6 @@
   title: Robespierre
   where: /saint-jean-lipion/chambre/biographies
 978-2070450893:
-  ISBN-13: 978-2070450893
   de: "Emmanuel Carr\xE8re (Auteur)"
   ext: "Prix Renaudot 2011 Poche \u2013 5 avril 2013"
   image_path: "saint-jean-lipion/chambre/carr\xE8re/978-2070450893.jpg"
@@ -1412,7 +1288,6 @@
   title: Limonov
   where: "/saint-jean-lipion/chambre/carr\xE8re"
 978-2070453863:
-  ISBN-13: 978-2070453863
   de: Pascal Quignard (Auteur)
   ext: "Poche \u2013 25 novembre 2013"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070453863.jpg"
@@ -1420,7 +1295,6 @@
   title: "Les solidarit\xE9s myst\xE9rieuses"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070463480:
-  ISBN-13: 978-2070463480
   de: Michel Winock (Auteur)
   ext: "Poche \u2013 18 juin 2015"
   image_path: saint-jean-lipion/chambre/biographies/978-2070463480.jpg
@@ -1428,7 +1302,6 @@
   title: Flaubert
   where: /saint-jean-lipion/chambre/biographies
 978-2070552023:
-  ISBN-13: 978-2070552023
   de: Raymond Queneau (Auteur)
   ext: "Poche \u2013 16 mars 1982"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2070552023.jpg
@@ -1436,7 +1309,6 @@
   title: Exercices de style
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2070714704:
-  ISBN-13: 978-2070714704
   de: "G\xE9rard Mac\xE9 (Auteur)"
   ext: "Broch\xE9 \u2013 4 janvier 1989"
   image_path: saint-jean-lipion/chambre/favourites/978-2070714704.jpg
@@ -1444,14 +1316,12 @@
   title: "Le dernier des \xC9gyptiens"
   where: /saint-jean-lipion/chambre/favourites
 978-2070715114:
-  ISBN-13: 978-2070715114
   de: "Primo Levi (Auteur), Andr\xE9 Maug\xE9 (Traduction)"
   image_path: saint-jean-lipion/chambre/favourites/978-2070715114.jpg
   lan: "\U0001F1EB\U0001F1F7"
   title: "Les Naufrag\xE9s et les Rescap\xE9s - Quarante ans apr\xE8s Auschwitz"
   where: /saint-jean-lipion/chambre/favourites
 978-2070719907:
-  ISBN-13: 978-2070719907
   de: "Andr\xE9 Pieyre de Mandiargues (Auteur)"
   ext: Poche
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070719907.jpg"
@@ -1459,7 +1329,6 @@
   title: "Le Mus\xE9e noir"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070724680:
-  ISBN-13: 978-2070724680
   de: "Ingmar Bergman (Auteur), Carl Gustaf Bjurstr\xF6m (Traduction), Lucie Albertini\
     \ (Traduction)"
   ext: "Broch\xE9 \u2013 Illustr\xE9, 23 janvier 1992"
@@ -1468,7 +1337,6 @@
   title: Images
   where: /saint-jean-lipion/chambre/cinema
 978-2070727384:
-  ISBN-13: 978-2070727384
   de: "Ingmar Bergman (Auteur), Carl Gustaf Bjurstr\xF6m (Traduction), Lucie Albertini\
     \ (Traduction)"
   ext: "Broch\xE9 \u2013 Grand livre, 23 octobre 1992"
@@ -1484,7 +1352,6 @@
   title: "Fran\xE7ois Truffaut"
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2070743018:
-  ISBN-13: 978-2070743018
   de: Anne Wiazemsky (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 5 mars 1996"
   image_path: saint-jean-lipion/chambre/editors/978-2070743018.jpg
@@ -1492,7 +1359,6 @@
   title: "Hymnes \xE0 l'amour"
   where: /saint-jean-lipion/chambre/editors
 978-2070762637:
-  ISBN-13: 978-2070762637
   de: Laure Adler (Auteur)
   ext: "Broch\xE9 \u2013 29 septembre 2005"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2070762637.jpg"
@@ -1500,7 +1366,6 @@
   title: Dans les pas de Hannah Arendt
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2070774678:
-  ISBN-13: 978-2070774678
   de: "Philip Roth (Auteur), Jos\xE9e Kamoun (Traduction)"
   ext: "Broch\xE9 \u2013 Grand livre, 25 mai 2006"
   image_path: saint-jean-lipion/chambre/editors/978-2070774678.jpg
@@ -1508,7 +1373,6 @@
   title: "Le complot contre l'Am\xE9rique"
   where: /saint-jean-lipion/chambre/editors
 978-2070775040:
-  ISBN-13: 978-2070775040
   de: Laurence Campa (Auteur)
   ext: "Broch\xE9 \u2013 13 juin 2013"
   image_path: saint-jean-lipion/chambre/biographies/978-2070775040.jpg
@@ -1516,7 +1380,6 @@
   title: Guillaume Apollinaire
   where: /saint-jean-lipion/chambre/biographies
 978-2070793754:
-  ISBN-13: 978-2070793754
   de: Patrice Gueniffey (Auteur)
   ext: "Poche \u2013 13 octobre 2016"
   image_path: saint-jean-lipion/chambre/biographies/978-2070793754.jpg
@@ -1524,7 +1387,6 @@
   title: Bonaparte (1769-1802)
   where: /saint-jean-lipion/chambre/biographies
 978-2072689079:
-  ISBN-13: 978-2072689079
   de: "Philippe Lan\xE7on (Auteur)"
   ext: "Prix Femina 2018 Broch\xE9 \u2013 Grand livre, 12 avril 2018"
   image_path: saint-jean-lipion/chambre/editors/978-2072689079.jpg
@@ -1532,7 +1394,6 @@
   title: Le lambeau
   where: /saint-jean-lipion/chambre/editors
 978-2072722325:
-  ISBN-13: 978-2072722325
   de: "Emmanuel Carr\xE8re (Auteur)"
   ext: "Poche \u2013 9 mars 2017"
   image_path: "saint-jean-lipion/chambre/carr\xE8re/978-2072722325.jpg"
@@ -1540,7 +1401,6 @@
   title: D'autres vies que la mienne
   where: "/saint-jean-lipion/chambre/carr\xE8re"
 978-2072743863:
-  ISBN-13: 978-2072743863
   de: Daniel Pennac (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 5 janvier 2023"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-2072743863.jpg"
@@ -1548,7 +1408,6 @@
   title: "Terminus Malauss\xE8ne"
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-2072801549:
-  ISBN-13: 978-2072801549
   de: Dieter Buchhart (Auteur, Sous la direction de)
   ext: "Reli\xE9 \u2013 Illustr\xE9, 11 octobre 2018"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2072801549.jpg
@@ -1556,7 +1415,6 @@
   title: Egon Schiele
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2072895142:
-  ISBN-13: 978-2072895142
   de: Didier Blonde (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 12 mars 2020"
   image_path: saint-jean-lipion/chambre/favourites/978-2072895142.jpg
@@ -1571,7 +1429,6 @@
   title: Londres
   where: /
 978-2080690401:
-  ISBN-13: 978-2080690401
   de: Mark Crick (Auteur)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2080690401.jpg"
   lan: "\U0001F1EB\U0001F1F7"
@@ -1614,7 +1471,6 @@
   title: La dynamique du capitalisme
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2080815002:
-  ISBN-13: 978-2080815002
   de: "Fran\xE7ois Truffaut (Auteur)"
   ext: "Broch\xE9 \u2013 7 janvier 1993"
   image_path: saint-jean-lipion/chambre/cinema/978-2080815002.jpg
@@ -1622,7 +1478,6 @@
   title: Les films de ma vie
   where: /saint-jean-lipion/chambre/cinema
 978-2081212480:
-  ISBN-13: 978-2081212480
   de: Platon (Auteur)
   ext: "Reli\xE9 \u2013 1 janvier 2008"
   image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2081212480.jpg
@@ -1630,7 +1485,6 @@
   title: "Le banquet - Ph\xE8dre - Apologie de Socrate"
   where: /saint-jean-lipion/chambre/lapleiade.etc
 978-2081212961:
-  ISBN-13: 978-2081212961
   de: Fernand Braudel (Auteur)
   ext: "Poche \u2013 7 mars 2018"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2081212961.jpg"
@@ -1638,7 +1492,6 @@
   title: La dynamique du capitalisme
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2081216488:
-  ISBN-13: 978-2081216488
   de: "Christopher Clark (Auteur), Marie-Anne de B\xE9ru (Traduction)"
   ext: "Broch\xE9 \u2013 24 ao\xFBt 2013"
   image_path: saint-jean-lipion/chambre/favourites/978-2081216488.jpg
@@ -1646,7 +1499,6 @@
   title: Les Somnambules
   where: /saint-jean-lipion/chambre/favourites
 978-2081233133:
-  ISBN-13: 978-2081233133
   de: Laure Adler (Auteur), Stefan Bollmann (Auteur)
   ext: "Reli\xE9 \u2013 6 octobre 2010"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2081233133.jpg
@@ -1654,7 +1506,6 @@
   title: Les plus belles lettres de femmes
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2081255258:
-  ISBN-13: 978-2081255258
   de: Jacqueline Raoul-Duval (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 26 f\xE9vrier 2011"
   image_path: saint-jean-lipion/chambre/kafka/978-2081255258.jpg
@@ -1662,14 +1513,12 @@
   title: "Kafka, l'\xE9ternel fianc\xE9"
   where: /saint-jean-lipion/chambre/kafka
 978-2081413146:
-  ISBN-13: 978-2286139940
   de: Fred Vargas (Auteur)
   image_path: saint-jean-lipion/chambre/polars/978-2081413146.jpg
   lan: "\U0001F1EB\U0001F1F7"
   title: Quand sort la recluse
   where: /saint-jean-lipion/chambre/polars
 978-2081429543:
-  ISBN-13: 978-2081429543
   de: Jean-Pierre Lavoignat (Auteur), Sarah Biasini (Auteur)
   ext: "Entretien Broch\xE9 \u2013 Grand livre, 12 septembre 2018"
   image_path: saint-jean-lipion/chambre/cinema/978-2081429543.jpg
@@ -1677,7 +1526,6 @@
   title: Romy
   where: /saint-jean-lipion/chambre/cinema
 978-2081486218:
-  ISBN-13: 978-2081486218
   de: Catherine Millet (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 31 ao\xFBt 2022"
   image_path: saint-jean-lipion/chambre/editors/978-2081486218.jpg
@@ -1685,7 +1533,6 @@
   title: Commencements
   where: /saint-jean-lipion/chambre/editors
 978-2082115254:
-  ISBN-13: 978-2082115254
   de: "Dante Alighieri (Auteur), Jacqueline Risset (Pr\xE9face, Traduction)"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-2082115254.jpg"
   lan: "\U0001F1EB\U0001F1F7"
@@ -1706,7 +1553,6 @@
   title: "Philosophes et philosophie, tome 2. De Locke \xE0 nos jours"
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-2130425946:
-  ISBN-13: 978-2130425946
   de: Arthur Schopenhauer (Auteur)
   ext: "Traduit par A. Burdeau, \xE9dition revue par Richard Roos. - 1989"
   image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2130425946.jpg
@@ -1714,7 +1560,6 @@
   title: "Le monde comme volont\xE9 et comme repr\xE9sentation"
   where: /saint-jean-lipion/chambre/lapleiade.etc
 978-2200624521:
-  ISBN-13: 978-2200624521
   de: "Anne Gillain (Auteur), Michel Marie (Pr\xE9face)"
   ext: "23 films pour comprendre l'homme et le cin\xE9aste - Broch\xE9 \u2013 Illustr\xE9\
     , 6 mars 2019"
@@ -1723,7 +1568,6 @@
   title: Tout Truffaut
   where: /saint-jean-lipion/chambre/cinema
 978-2203011427:
-  ISBN-13: 978-2203011427
   de: "Herg\xE9 (Auteur, Dessins, R\xE9dacteur)"
   ext: "Reli\xE9 \u2013 25 octobre 2001"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2203011427.jpg
@@ -1745,7 +1589,6 @@
   title: Dieu est amour
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-2205066876:
-  ISBN-13: 978-2205066876
   de: Marcel Gotlib (Auteur, Illustrations)
   ext: "Reli\xE9 \u2013 18 novembre 2010"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2205066876.jpg
@@ -1753,7 +1596,6 @@
   title: "L'int\xE9grale"
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2207112380:
-  ISBN-13: 978-2207112380
   de: Hans Fallada (Auteur), Laurence Courtois (Traduction)
   ext: "Poche \u2013 21 mai 2015"
   image_path: saint-jean-lipion/chambre/nazis/978-2207112380.jpg
@@ -1761,22 +1603,23 @@
   title: Seul dans Berlin
   where: /saint-jean-lipion/chambre/nazis
 978-2207158654:
-  ISBN-13: 978-2207158654
   de: Georges Perec (Autore), Marie Darrieussecq (Avanti)
   ext: "Copertina flessibile \u2013 7 novembre 2019"
   image_path: saint-jean-lipion/salon/perec/978-2207158654.webp
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: La disparition
   where: /saint-jean-lipion/salon/perec
 978-2207229071:
-  ISBN-13: 978-2207229071
   de: Georges Perec (Auteur)
   image_path: saint-jean-lipion/salon/perec/978-2207229071.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: W ou le Souvenir d'enfance
   where: /saint-jean-lipion/salon/perec
 978-2207233702:
-  ISBN-13: 978-2207233702
   de: "Fran\xE7ois Flahault (Auteur)"
   ext: "Broch\xE9 \u2013 23 mars 1987"
   image_path: saint-jean-lipion/chambre/favourites/978-2207233702.jpg
@@ -1784,7 +1627,6 @@
   title: "La sc\xE8ne de m\xE9nage"
   where: /saint-jean-lipion/chambre/favourites
 978-2207247426:
-  ISBN-13: 978-2207247426
   de: "Daniel Pr\xE9vost (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 14 avril 1998"
   image_path: saint-jean-lipion/chambre/favourites/978-2207247426.jpg
@@ -1792,30 +1634,32 @@
   title: Coco belles-nattes
   where: /saint-jean-lipion/chambre/favourites
 978-2207280461:
-  ISBN-13: 978-2207280461
   de: Georges Perec (Auteur)
   ext: "Broch\xE9 \u2013 1 janvier 1982"
   image_path: saint-jean-lipion/salon/perec/978-2207280461.jpeg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Un homme qui dort
   where: /saint-jean-lipion/salon/perec
 978-2207280478:
-  ISBN-13: 978-2207280478
   de: Georges Perec (Auteur)
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-2207280478.jpg"
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: La Disparition
   where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-2207281970:
-  ISBN-13: 978-2207281970
   de: Harry Mathews (Author)
   ext: "Paperback \u2013 January 7, 1975"
   image_path: saint-jean-lipion/salon/perec/978-2207281970.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Les verts champs de moutarde de l'Afghanistan
   where: /saint-jean-lipion/salon/perec
 978-2210423015:
-  ISBN-13: 978-2210423015
   de: Voltaire (Auteur)
   ext: "Broch\xE9 \u2013 1 f\xE9vrier 1991"
   image_path: saint-jean-lipion/chambre/favourites/978-2210423015.jpg
@@ -1837,7 +1681,6 @@
   title: Shoah
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2213020280:
-  ISBN-13: 978-2213020280
   de: "C\xE9sar Chesneau Du Marsai (Auteur)"
   ext: "Broch\xE9 \u2013 9 d\xE9cembre 1987"
   image_path: saint-jean-lipion/chambre/favourites/978-2213020280.jpg
@@ -1845,7 +1688,6 @@
   title: "Les v\xE9ritables principes de la grammaire (1729-1756)"
   where: /saint-jean-lipion/chambre/favourites
 978-2213628981:
-  ISBN-13: 978-2213628981
   de: Mona Ozouf (Auteur)
   ext: "Broch\xE9 \u2013 18 octobre 2006"
   image_path: saint-jean-lipion/chambre/favourites/978-2213628981.jpg
@@ -1854,15 +1696,15 @@
     \ roman - La muse d\xE9mocratique - La r\xE9publique des romanciers"
   where: /saint-jean-lipion/chambre/favourites
 978-2213663098:
-  ISBN-13: 978-2213663098
   de: Georges Perec (Auteur)
   ext: "Broch\xE9"
   image_path: saint-jean-lipion/salon/perec/978-2213663098.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: La vie mode d'emploi
   where: /saint-jean-lipion/salon/perec
 978-2213671567:
-  ISBN-13: 978-2213671567
   de: "Herv\xE9 Leuwers (Auteur)"
   ext: "Broch\xE9 \u2013 27 ao\xFBt 2014"
   image_path: saint-jean-lipion/chambre/biographies/978-2213671567.jpg
@@ -1870,7 +1712,6 @@
   title: Robespierre
   where: /saint-jean-lipion/chambre/biographies
 978-2213681047:
-  ISBN-13: 978-2213681047
   de: Sylvie Testud (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 22 janvier 2014"
   image_path: saint-jean-lipion/chambre/favourites/978-2213681047.jpg
@@ -1878,7 +1719,6 @@
   title: "C'est le m\xE9tier qui rentre"
   where: /saint-jean-lipion/chambre/favourites
 978-2213681856:
-  ISBN-13: 978-2213681856
   de: Jean-Baptiste Malet (Auteur)
   ext: "Broch\xE9 \u2013 17 mai 2017"
   image_path: saint-jean-lipion/chambre/favourites/978-2213681856.jpg
@@ -1901,7 +1741,6 @@
   title: L'enfant
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2221001479:
-  ISBN-13: 978-2221001479
   de: "Bruno Bettelheim (Auteur), Th\xE9o Carlier (Traduction)"
   ext: "Broch\xE9 \u2013 30 avril 2003"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-2221001479.jpg"
@@ -1930,7 +1769,6 @@
   title: Sherlock Holmes, tome 1
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2221097502:
-  ISBN-13: 978-2221097502
   de: "Claude L\xE9vy (Auteur), Paul Tillard (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 6 juin 2002"
   image_path: saint-jean-lipion/chambre/nazis/978-2221097502.jpg
@@ -1938,7 +1776,6 @@
   title: La grande rafle du Vel d'Hiv
   where: /saint-jean-lipion/chambre/nazis
 978-2221247082:
-  ISBN-13: 978-2221247082
   de: "Jean-Jacques Lefr\xE8re (Auteur), Fr\xE9d\xE9ric Martel (Pr\xE9face)"
   ext: "Biographie Broch\xE9 \u2013 Grand livre, 10 septembre 2020"
   image_path: saint-jean-lipion/chambre/rimbaud/978-2221247082.jpg
@@ -1946,7 +1783,6 @@
   title: Arthur Rimbaud
   where: /saint-jean-lipion/chambre/rimbaud
 978-2221501290:
-  ISBN-13: 978-2221501290
   de: "Arthur Rimbaud, Charles Cros, Tristan Corbi\xE8re, Lautr\xE9amont (Auteur)"
   ext: "Poche \u2013 1 juin 1980"
   image_path: saint-jean-lipion/chambre/rimbaud/978-2221501290.jpg
@@ -1954,7 +1790,6 @@
   title: "\u0152uvres po\xE9tiques compl\xE8tes"
   where: /saint-jean-lipion/chambre/rimbaud
 978-2226141361:
-  ISBN-13: 978-2226141361
   de: Dominique Auzel (Auteur)
   ext: "Broch\xE9 \u2013 2 septembre 2004"
   image_path: saint-jean-lipion/chambre/cinema/978-2226141361.jpg
@@ -1962,7 +1797,6 @@
   title: "Paroles de Fran\xE7ois Truffaut"
   where: /saint-jean-lipion/chambre/cinema
 978-2227470743:
-  ISBN-13: 978-2227470743
   de: Steven Nadler (Auteur)
   ext: "Broch\xE9 \u2013 23 janvier 2003"
   image_path: saint-jean-lipion/chambre/biographies/978-2227470743.jpg
@@ -1970,15 +1804,15 @@
   title: Spinoza
   where: /saint-jean-lipion/chambre/biographies
 978-2232103087:
-  ISBN-13: 978-2232103087
   de: OuLiPo (Auteur)
   ext: "Broch\xE9 \u2013 1 d\xE9cembre 1987"
   image_path: saint-jean-lipion/salon/perec/978-2232103087.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "La Biblioth\xE8que Oulipienne, volume 1"
   where: /saint-jean-lipion/salon/perec
 978-2234007031:
-  ISBN-13: 978-2234007031
   de: Liv Ullmann (Auteur)
   ext: "Broch\xE9 \u2013 1 janvier 1977"
   image_path: saint-jean-lipion/chambre/cinema/978-2234007031.jpeg
@@ -1986,7 +1820,6 @@
   title: Devenir
   where: /saint-jean-lipion/chambre/cinema
 978-2234056589:
-  ISBN-13: 978-2234056589
   de: "Michael L\xF6wy (Auteur)"
   ext: "Broch\xE9 \u2013 18 f\xE9vrier 2004"
   image_path: saint-jean-lipion/chambre/kafka/978-2234056589.jpg
@@ -1994,7 +1827,6 @@
   title: "Franz Kafka, r\xEAveur insoumis"
   where: /saint-jean-lipion/chambre/kafka
 978-2234075610:
-  ISBN-13: 978-2234075610
   de: "Antoine de Baecque (Auteur), No\xEBl Herpe (Auteur)"
   ext: "Biographie - Broch\xE9 \u2013 3 janvier 2014"
   image_path: saint-jean-lipion/chambre/cinema/978-2234075610.jpg
@@ -2009,7 +1841,6 @@
   title: "La d\xE9cision"
   where: /
 978-2234086166:
-  ISBN-13: 978-2234086166
   de: Yoann Barbereau (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 12 f\xE9vrier 2020"
   image_path: saint-jean-lipion/chambre/favourites/978-2234086166.jpg
@@ -2024,7 +1855,6 @@
   title: "\u0152uvres Compl\xE8tes * Ecrits sur le Sable"
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2246545910:
-  ISBN-13: 978-2246545910
   de: "Fran\xE7ois Weyergans (Auteur)"
   ext: "Prix Goncourt 2005 Broch\xE9 \u2013 Grand livre, 12 septembre 2001"
   image_path: saint-jean-lipion/chambre/editors/978-2246545910.jpg
@@ -2032,7 +1862,6 @@
   title: "Trois jours chez ma m\xE8re"
   where: /saint-jean-lipion/chambre/editors
 978-2246686019:
-  ISBN-13: 978-2246686019
   de: Will Eisner (Auteur)
   ext: "Broch\xE9 \u2013 Illustr\xE9, 2 novembre 2005"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2246686019.jpg"
@@ -2040,7 +1869,6 @@
   title: "Le complot - Histoire secr\xE8te des protocoles des sages de Sion"
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2246688310:
-  ISBN-13: 978-2246688310
   de: Daniel Rondeau (Auteur)
   ext: "Grand prix du Roman de l'Acad\xE9mie fran\xE7aise 2017 Broch\xE9 \u2013 Grand\
     \ livre, 16 ao\xFBt 2017"
@@ -2056,7 +1884,6 @@
   title: Sentiment Indien
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2246813095:
-  ISBN-13: 978-2246813095
   de: Laurent Binet (Auteur)
   ext: "Grand prix du Roman de l'Acad\xE9mie fran\xE7aise 2019 Broch\xE9 \u2013 Grand\
     \ livre, 14 ao\xFBt 2019"
@@ -2065,7 +1892,6 @@
   title: Civilizations
   where: /saint-jean-lipion/chambre/editors
 978-2246820666:
-  ISBN-13: 978-2246820666
   de: Paul B. Preciado (Auteur)
   ext: "Pr\xE9face de Virginie Despentes Broch\xE9 \u2013 Grand livre, 20 mars 2019"
   image_path: saint-jean-lipion/chambre/editors/978-2246820666.jpg
@@ -2073,7 +1899,6 @@
   title: Un appartement sur Uranus
   where: /saint-jean-lipion/chambre/editors
 978-2246855293:
-  ISBN-13: 978-2246855293
   de: Aquilino Morelle (Auteur)
   ext: "Broch\xE9 \u2013 11 janvier 2017"
   image_path: saint-jean-lipion/chambre/editors/978-2246855293.jpg
@@ -2081,7 +1906,6 @@
   title: L'abdication
   where: /saint-jean-lipion/chambre/editors
 978-2246855637:
-  ISBN-13: 978-2246855637
   de: Yann Morvan (Auteur), Laurent Calut (Auteur)
   ext: "Broch\xE9 \u2013 Illustr\xE9, 21 janvier 2015"
   image_path: saint-jean-lipion/chambre/favourites/978-2246855637.jpg
@@ -2089,7 +1913,6 @@
   title: "V\xE9ronique Sanson - Les ann\xE9es am\xE9ricaines"
   where: /saint-jean-lipion/chambre/favourites
 978-2246855873:
-  ISBN-13: 978-2246855873
   de: Olivier Guez (Auteur)
   ext: "Prix Renaudot 2017 Broch\xE9 \u2013 Grand livre, 16 ao\xFBt 2017"
   image_path: saint-jean-lipion/chambre/editors/978-2246855873.jpg
@@ -2097,7 +1920,6 @@
   title: La disparition de Josef Mengele
   where: /saint-jean-lipion/chambre/editors
 978-2251447360:
-  ISBN-13: 978-2251447360
   de: Jean-Louis Poirier (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 9 novembre 2017"
   image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2251447360.jpg
@@ -2113,7 +1935,6 @@
   title: Impressions d'Afrique
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2253030430:
-  ISBN-13: 978-2253030430
   de: Jean Raspail (Auteur)
   ext: (Le Livre de poche)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2253030430.jpg"
@@ -2127,16 +1948,15 @@
   title: Histoire de la psychanalyse - Tome 1
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2253047773:
-  ISBN-13: 978-2253047773
   de: "Franz Kafka (Auteur), Brigitte Vergne-Cain (Sous la direction de), G\xE9rard\
     \ Rudent (Avec la contribution de)"
   ext: "Poche \u2013 1 novembre 1988"
   image_path: saint-jean-lipion/chambre/kafka/978-2253047773.jpg
-  lan: "\U0001F1EE\U0001F1E9\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1E9\U0001F1EA"
+  lan2: "\U0001F1EB\U0001F1F7"
   title: "Die Verwandlung / La m\xE9tamorphose"
   where: /saint-jean-lipion/chambre/kafka
 978-2253126164:
-  ISBN-13: 978-2253126164
   de: Patrick Rambaud (Auteur)
   ext: "Poche \u2013 1 octobre 2008"
   image_path: saint-jean-lipion/chambre/editors/978-2253126164.jpeg
@@ -2144,7 +1964,6 @@
   title: "Chronique du r\xE8gne de Nicolas 1er"
   where: /saint-jean-lipion/chambre/editors
 978-2253131212:
-  ISBN-13: 978-2253131212
   de: Arthur Rimbaud (Auteur)
   ext: "Broch\xE9 \u2013 5 novembre 2004"
   image_path: saint-jean-lipion/chambre/rimbaud/978-2253131212.jpg
@@ -2152,7 +1971,6 @@
   title: "\u0152uvres compl\xE8tes"
   where: /saint-jean-lipion/chambre/rimbaud
 978-2253181590:
-  ISBN-13: 978-2253181590
   de: "J\xE9r\xF4me Loubry (Auteur)"
   ext: "Poche \u2013 2 septembre 2020"
   image_path: saint-jean-lipion/chambre/polars/978-2253181590.jpg
@@ -2160,7 +1978,6 @@
   title: Les Refuges
   where: /saint-jean-lipion/chambre/polars
 978-2258060432:
-  ISBN-13: 978-2258060432
   de: Georges Simenon (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 7 novembre 2002"
   image_path: saint-jean-lipion/chambre/polars/978-2258060432.jpg
@@ -2168,7 +1985,6 @@
   title: Tout Simenon, tome 2
   where: /saint-jean-lipion/chambre/polars
 978-2258063761:
-  ISBN-13: 978-2258063761
   de: Georges Simenon (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 7 novembre 2002"
   image_path: saint-jean-lipion/chambre/polars/978-2258063761.jpg
@@ -2176,7 +1992,6 @@
   title: Tout Simenon, tome 1
   where: /saint-jean-lipion/chambre/polars
 978-2258096103:
-  ISBN-13: 978-2258096103
   de: "Florence Sandis (Auteur), Jean-Beno\xEEt Dumonteix (Auteur)"
   ext: "Broch\xE9 \u2013 10 mai 2012"
   image_path: saint-jean-lipion/chambre/enfer/978-2258096103.jpg
@@ -2197,14 +2012,14 @@
   title: "La Cl\xE9 \xE0 molette"
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-2260009368:
-  ISBN-13: 978-2260009368
   de: Georges Perec (Auteur)
   image_path: saint-jean-lipion/salon/perec/978-2260009368.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Les revenentes
   where: /saint-jean-lipion/salon/perec
 978-2260013990:
-  ISBN-13: 978-2260013990
   de: Pierre Boulle (Auteur)
   ext: "Broch\xE9 \u2013 16 ao\xFBt 2001"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2260013990.jpg"
@@ -2212,7 +2027,6 @@
   title: "La Plan\xE8te des singes"
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2262027100:
-  ISBN-13: 978-2262027100
   de: Paul Dietschy (Auteur)
   ext: "Broch\xE9 \u2013 29 avril 2010"
   image_path: saint-jean-lipion/chambre-paul/football/978-2262027100.jpg
@@ -2220,7 +2034,6 @@
   title: Histoire du football
   where: /saint-jean-lipion/chambre-paul/football
 978-2262030377:
-  ISBN-13: 978-2262030377
   de: Jean-Yves Le Naour (Auteur)
   ext: "Broch\xE9 \u2013 22 octobre 2015"
   image_path: saint-jean-lipion/chambre/favourites/978-2262030377.jpg
@@ -2228,7 +2041,6 @@
   title: 1917 - La paix impossible
   where: /saint-jean-lipion/chambre/favourites
 978-2262074470:
-  ISBN-13: 978-2262074470
   de: "Andr\xE9 Fran\xE7ois-Poncet (Auteur), Jean-Paul Bled (Pr\xE9face)"
   ext: "Poche \u2013 1 f\xE9vrier 2018"
   image_path: saint-jean-lipion/chambre/nazis/978-2262074470.jpg
@@ -2236,7 +2048,6 @@
   title: "Souvenirs d'une ambassade \xE0 Berlin 1931 - 1938"
   where: /saint-jean-lipion/chambre/nazis
 978-2263014017:
-  ISBN-13: 978-2263014017
   de: Collectif (Author)
   ext: "Hardcover \u2013 January 1, 1988"
   image_path: saint-jean-lipion/chambre/enfer/978-2263014017.jpg
@@ -2295,7 +2106,6 @@
   title: Bonjour tristesse
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2266135467:
-  ISBN-13: 978-2266135467
   de: Victor Klemperer (Auteur)
   ext: "Poche \u2013 6 novembre 2003"
   image_path: saint-jean-lipion/chambre/nazis/978-2266135467.jpg
@@ -2303,7 +2113,6 @@
   title: "LTI, la langue du III\u1D49 Reich"
   where: /saint-jean-lipion/chambre/nazis
 978-2266219976:
-  ISBN-13: 978-2266219976
   de: Bernard Minier (Auteur)
   ext: "Poche \u2013 10 mai 2012"
   image_path: saint-jean-lipion/chambre/polars/978-2266219976.jpg
@@ -2311,7 +2120,6 @@
   title: "Glac\xE9"
   where: /saint-jean-lipion/chambre/polars
 978-2266283786:
-  ISBN-13: 978-2266283786
   de: Bernard Minier (Auteur)
   ext: "Poche \u2013 8 f\xE9vrier 2018"
   image_path: saint-jean-lipion/chambre/polars/978-2266283786.jpeg
@@ -2319,7 +2127,6 @@
   title: Nuit
   where: /saint-jean-lipion/chambre/polars
 978-2266291897:
-  ISBN-13: 978-2266291897
   de: Bernard Minier (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 5 avril 2018"
   image_path: saint-jean-lipion/chambre/polars/978-2266291897.jpg
@@ -2327,18 +2134,20 @@
   title: Soeurs
   where: /saint-jean-lipion/chambre/polars
 978-2267003260:
-  ISBN-13: 978-2267003260
   de: Georges Perec (Auteur)
   image_path: saint-jean-lipion/salon/perec/978-2267003260.jpeg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "Tentative d'\xE9puisement d'un lieu parisien"
   where: /saint-jean-lipion/salon/perec
 978-2267004427:
-  ISBN-13: 978-2267004427
   de: Georges Perec (Auteur), Pierre Lusson (Auteur), Jacques Roubaud (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 1 f\xE9vrier 1986"
   image_path: saint-jean-lipion/salon/perec/978-2267004427.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "Petit trait\xE9 invitant \xE0 la d\xE9couverte de l'art subtil du go"
   where: /saint-jean-lipion/salon/perec
 978-2267017724:
@@ -2349,15 +2158,15 @@
   title: "La maladie comme m\xE9taphore"
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-2277112594:
-  ISBN-13: 978-2277112594
   de: Georges Perec (Auteur)
   ext: Poche J'ai lu 1965
   image_path: saint-jean-lipion/salon/perec/978-2277112594.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Les choses
   where: /saint-jean-lipion/salon/perec
 978-2277137047:
-  ISBN-13: 978-2277137047
   de: Guillaume Apollinaire (Auteur)
   ext: "ou Les Amours d'un Hospodar - Poche \u2013 19 novembre 1992"
   image_path: saint-jean-lipion/chambre/enfer/978-2277137047.jpg
@@ -2365,7 +2174,6 @@
   title: Les Onze mille verges
   where: /saint-jean-lipion/chambre/enfer
 978-2290235805:
-  ISBN-13: 978-2290235805
   de: Feurat Alani (Auteur), Leonard Cohen (Illustrations)
   ext: "Poche \u2013 Illustr\xE9, 13 janvier 2021"
   image_path: saint-jean-lipion/chambre/favourites/978-2290235805.jpg
@@ -2373,7 +2181,6 @@
   title: Le parfum d'Irak
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2290302156:
-  ISBN-13: 978-2290351307
   de: Fred Vargas (Auteur)
   ext: "Poche \u2013 17 octobre 2005"
   image_path: saint-jean-lipion/chambre/polars/978-2290302156.jpg
@@ -2381,7 +2188,6 @@
   title: Debout les morts
   where: /saint-jean-lipion/chambre/polars
 978-2290349311:
-  ISBN-13: 978-2290349311
   de: Fred Vargas (Auteur)
   ext: "Poche \u2013 6 octobre 2005"
   image_path: saint-jean-lipion/chambre/polars/978-2290349311.webp
@@ -2389,7 +2195,6 @@
   title: Pars vite et reviens tard
   where: /saint-jean-lipion/chambre/polars
 978-2298161076:
-  ISBN-13: 978-2298161076
   de: Bernard Minier (Author)
   ext: "Paperback \u2013 May 20, 2020"
   image_path: saint-jean-lipion/chambre/polars/978-2298161076.jpg
@@ -2397,7 +2202,6 @@
   title: "La Vall\xE9e"
   where: /saint-jean-lipion/chambre/polars
 978-2330072612:
-  ISBN-13: 978-2330072612
   de: Clara Royer (Auteur)
   ext: "Broch\xE9 \u2013 4 janvier 2017"
   image_path: saint-jean-lipion/chambre/biographies/978-2330072612.jpg
@@ -2405,7 +2209,6 @@
   title: "Imre Kert\xE9sz : \"l'histoire de mes morts\" - essai biographique"
   where: /saint-jean-lipion/chambre/biographies
 978-2340047808:
-  ISBN-13: 978-2340047808
   de: "Nathan Granier (Auteur), Elias Orphelin (Auteur), Camille Gorret (Illustrations),\
     \ Bruno Belgod\xE8re (Pr\xE9face)"
   ext: "Broch\xE9 \u2013 Grand livre, 27 avril 2021"
@@ -2421,7 +2224,6 @@
   title: "Les structures fondamentales des soci\xE9t\xE9s humaines"
   where: /
 978-2350760032:
-  ISBN-13: 978-2350760032
   de: Pierre-Louis Basse (Auteur)
   ext: "Broch\xE9 \u2013 29 septembre 2005"
   image_path: saint-jean-lipion/chambre-paul/football/978-2350760032.jpg
@@ -2429,7 +2231,6 @@
   title: "S\xE9ville 82 France-Allemagne le match du si\xE8cle"
   where: /saint-jean-lipion/chambre-paul/football
 978-2353670444:
-  ISBN-13: 978-2353670444
   de: "Michael Heinrich (Auteur), Jean Qu\xE9tier (Traduction)"
   ext: "Biographie intellectuelle Tome 1 - 1818-1841 Broch\xE9 \u2013 Grand livre,\
     \ 26 septembre 2019"
@@ -2438,14 +2239,12 @@
   title: "Karl Marx et la naissance de la soci\xE9t\xE9 moderne"
   where: /saint-jean-lipion/chambre/biographies
 978-2365591546:
-  ISBN-13: 978-2365591546
   de: Florence Aubenas (Auteur)
   image_path: saint-jean-lipion/chambre/editors/978-2365591546.jpg
   lan: "\U0001F1EB\U0001F1F7"
   title: Le Quai de Ouistreham
   where: /saint-jean-lipion/chambre/editors
 978-2367163093:
-  ISBN-13: 978-2367163093
   de: Laurent Bourdon (Auteur)
   ext: "Reli\xE9 \u2013 25 ao\xFBt 2020"
   image_path: saint-jean-lipion/chambre/cinema/978-2367163093.jpg
@@ -2453,7 +2252,6 @@
   title: Tout Claude Chabrol
   where: /saint-jean-lipion/chambre/cinema
 978-2368909751:
-  ISBN-13: 978-2368909751
   de: Brigitte Francois-Sappey (Auteur)
   ext: "une ic\xF4ne romantique - Broch\xE9 \u2013 Grand livre, 23 mars 2023"
   image_path: saint-jean-lipion/chambre/biographies/978-2368909751.jpg
@@ -2461,7 +2259,6 @@
   title: Clara Schumann
   where: /saint-jean-lipion/chambre/biographies
 978-2370840073:
-  ISBN-13: 978-2370840073
   de: "Franz Kafka (Auteur), L\xE9a Veinstein (Postface), Robert Kahn (Traduction)"
   ext: "Broch\xE9 \u2013 5 novembre 2021"
   image_path: saint-jean-lipion/chambre/kafka/978-2370840073.jpg
@@ -2469,7 +2266,6 @@
   title: "\xC0 Milena"
   where: /saint-jean-lipion/chambre/kafka
 978-2370840790:
-  ISBN-13: 978-2370840790
   de: Franz Kafka (Author)
   ext: "Paperback \u2013 January 17, 2020"
   image_path: saint-jean-lipion/chambre/kafka/978-2370840790.jpg
@@ -2477,7 +2273,6 @@
   title: Journaux
   where: /saint-jean-lipion/chambre/kafka
 978-2371190078:
-  ISBN-13: 978-2371190078
   de: Jonathan Sperber (Auteur), David Tuaillon (Traduction)
   ext: "Broch\xE9 \u2013 Grand livre, 5 octobre 2017"
   image_path: saint-jean-lipion/chambre/biographies/978-2371190078.jpg
@@ -2485,7 +2280,6 @@
   title: "Karl Marx - Homme du XIXe si\xE8cle"
   where: /saint-jean-lipion/chambre/biographies
 978-2374483214:
-  ISBN-13: 978-2266322904
   de: Bernard Minier (Auteur)
   ext: "Broch\xE9 \u2013 31 mars 2022"
   image_path: saint-jean-lipion/chambre/polars/978-2374483214.jpg
@@ -2493,7 +2287,6 @@
   title: La Chasse
   where: /saint-jean-lipion/chambre/polars
 978-2413010364:
-  ISBN-13: 978-2413010364
   de: Ines Leraud (Avec la contribution de), Pierre Van Hove (Dessins)
   ext: "Broch\xE9 \u2013 12 juin 2019"
   image_path: saint-jean-lipion/chambre/favourites/978-2413010364.jpg
@@ -2508,7 +2301,6 @@
   title: Henri le Vert
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2701136004:
-  ISBN-13: 978-2701136004
   de: John Wesson (Auteur)
   ext: "Broch\xE9 \u2013 2 mars 2004"
   image_path: saint-jean-lipion/chambre-paul/football/978-2701136004.jpg
@@ -2516,7 +2308,6 @@
   title: La science du football
   where: /saint-jean-lipion/chambre-paul/football
 978-2701151724:
-  ISBN-13: 978-2701151724
   de: Ulrich von Hassel (Auteur)
   ext: "L'insurrection de la conscience - Broch\xE9 \u2013 9 juillet 2009"
   image_path: saint-jean-lipion/chambre/nazis/978-2701151724.jpg
@@ -2524,7 +2315,6 @@
   title: "Journal d'un conjur\xE9 1938-1944"
   where: /saint-jean-lipion/chambre/nazis
 978-2701156309:
-  ISBN-13: 978-2701156309
   de: Francis Ponge
   image_path: "saint-lazare-de-sav\xE8ne/salon/po\xE9sie/978-2701156309.jpg"
   lan: "\U0001F1EB\U0001F1F7"
@@ -2538,7 +2328,6 @@
   title: Peter Pan ou l'enfant triste
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2702205129:
-  ISBN-13: 978-2702205129
   de: Luc Ferry (Auteur), Philippe Sollers (Avec la contribution de)
   ext: Aux origines de la culture contemporaine
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2702205129.jpg
@@ -2546,7 +2335,6 @@
   title: Le Sens du beau
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2702903605:
-  ISBN-13: 978-2702903605
   de: Tulku Thondup (Auteur)
   ext: "selon le bouddhisme tib\xE9tain - Broch\xE9 \u2013 1 ao\xFBt 2001"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-2702903605.jpg"
@@ -2554,7 +2342,6 @@
   title: "L'Infini pouvoir de gu\xE9rison de l'esprit"
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-2707301352:
-  ISBN-13: 978-2707301352
   de: "Flavius Jos\xE8phe (Auteur), Pierre Vidal-Naquet (Auteur), Pierre Savinel (Traduction)"
   ext: "Broch\xE9 \u2013 1 janvier 1977"
   image_path: saint-jean-lipion/chambre/editors/978-2707301352.jpg
@@ -2562,7 +2349,6 @@
   title: La guerre des juifs
   where: /saint-jean-lipion/chambre/editors
 978-2707301482:
-  ISBN-13: 978-2707301482
   de: Samuel Beckett
   ext: "Lingua francese Copertina flessibile \u2013 22 febbraio 2007"
   image_path: saint-jean-lipion/chambre/autres/978-2707301482.jpg
@@ -2577,7 +2363,6 @@
   title: Qu'est-ce que la philosophie ?
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-2709612968:
-  ISBN-13: 978-2709612968
   de: Myriam Anissimov (Auteur)
   ext: "ou La Trag\xE9die d'un optimiste - Broch\xE9 \u2013 23 octobre 1996"
   image_path: saint-jean-lipion/chambre/biographies/978-2709612968.jpg
@@ -2585,7 +2370,6 @@
   title: Primo Levi
   where: /saint-jean-lipion/chambre/biographies
 978-2709624930:
-  ISBN-13: 978-2709624930
   de: Dan Brown (Auteur)
   ext: "Broch\xE9 \u2013 Grands caract\xE8res, 30 mars 2004"
   image_path: saint-jean-lipion/chambre/polars/978-2709624930.jpg
@@ -2593,7 +2377,6 @@
   title: Da Vinci code
   where: /saint-jean-lipion/chambre/polars
 978-2709630405:
-  ISBN-13: 978-2709630405
   de: Delphine de Vigan (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 26 ao\xFBt 2009"
   image_path: saint-jean-lipion/chambre/favourites/978-2709630405.jpg
@@ -2601,14 +2384,12 @@
   title: Les heures souterraines
   where: /saint-jean-lipion/chambre/favourites
 978-2714302991:
-  ISBN-13: 978-2714302991
   de: Gaston Bachelard (Auteur)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-2714302991.jpg"
   lan: "\U0001F1EB\U0001F1F7"
   title: "La terre et les r\xEAveries du repos"
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-2714429599:
-  ISBN-13: 978-2714429599
   de: "Stefan Zweig (Auteur), Serge Ni\xE9metz (Traduction)"
   ext: "Broch\xE9 \u2013 Grand livre, 16 janvier 1996"
   image_path: saint-jean-lipion/chambre/favourites/978-2714429599.jpg
@@ -2622,11 +2403,12 @@
   title: Le Baphomet
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-2718600147:
-  ISBN-13: 978-2718600147
   de: Georges Perec (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 24 mai 1985"
   image_path: saint-jean-lipion/salon/perec/978-2718600147.jpeg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "Esp\xE8ces d'espaces"
   where: /saint-jean-lipion/salon/perec
 978-2718605760:
@@ -2634,10 +2416,11 @@
   de: Georges Perec
   image_path: saint-jean-lipion/salon/perec/978-2718605760.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Alphabets
   where: /saint-jean-lipion/salon/perec
 978-2720202018:
-  ISBN-13: 978-2720202018
   de: Marquis de Sade (Auteur), Annie Le Brun (Sous la direction de)
   ext: "Broch\xE9 \u2013 Grand livre, 28 f\xE9vrier 1987"
   image_path: saint-jean-lipion/chambre/enfer/978-2720202018.jpg
@@ -2646,7 +2429,6 @@
     \ la vertu, chapitres I \xE0 XI"
   where: /saint-jean-lipion/chambre/enfer
 978-2729819545:
-  ISBN-13: 978-2729819545
   de: Jean Hladik (Auteur)
   ext: "Broch\xE9 \u2013 15 juillet 2004"
   image_path: saint-jean-lipion/chambre/favourites/978-2729819545.jpg
@@ -2658,19 +2440,19 @@
   de: Joseph Roth (Auteur), Ursula Kirgo
   ext: "Broch\xE9 \u2013 5 mai 1998"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_3/978-2729841102.jpg"
-  lan: "\U0001F1EE\U0001F1E9"
+  lan: "\U0001F1E9\U0001F1EA"
   title: Die Legende vom heiligen Trinker
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-2732000084:
-  ISBN-13: 978-2732000084
   de: Georges Perec (Auteur), Robert Bober (Auteur)
   ext: "Broch\xE9"
   image_path: saint-jean-lipion/salon/perec/978-2732000084.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "R\xE9cits d'Ellis Island - Histoires d'errance et d'espoir"
   where: /saint-jean-lipion/salon/perec
 978-2732431208:
-  ISBN-13: 978-2732431208
   de: Gerold Dommermuth-Gudrich (Auteur)
   ext: "Les plus c\xE9l\xE8bres mythes de l'antiquit\xE9 - Broch\xE9 \u2013 20 f\xE9\
     vrier 2004"
@@ -2679,7 +2461,6 @@
   title: 50 incontournables Mythes
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-2732434803:
-  ISBN-13: 978-2732434803
   de: Emanuele Scorcelletti (Auteur)
   ext: "Cannes Londres Paris - Reli\xE9 \u2013 6 avril 2006"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2732434803.webp
@@ -2687,7 +2468,6 @@
   title: Quelques jours dans la vie de Sharon Stone
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2737001222:
-  ISBN-13: 978-2737001222
   de: Miguel de Cervantes Saavedra
   ext: "Broch\xE9 \u2013 1 juin 2020"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2737001222.jpg"
@@ -2702,7 +2482,6 @@
   title: Sade et la loi
   where: /
 978-2742751518:
-  ISBN-13: 978-2742751518
   de: "Sebastian Haffner (Auteur), Brigitte H\xE9bert (Traduction)"
   ext: "Poche \u2013 1 septembre 2004"
   image_path: saint-jean-lipion/chambre/nazis/978-2742751518.jpg
@@ -2710,7 +2489,6 @@
   title: Histoire d'un Allemand - Souvenirs (1914-1933)
   where: /saint-jean-lipion/chambre/nazis
 978-2743615819:
-  ISBN-13: 978-2743615819
   de: John Harvey (Author), Francois Guerif (Series Editor), Jean-paul Gratias (Translator)
   ext: "(Rivages noir) (French Edition) Paperback \u2013 October 4, 2006"
   image_path: saint-jean-lipion/chambre/polars/978-2743615819.jpg
@@ -2718,7 +2496,6 @@
   title: De cendre et d'os
   where: /saint-jean-lipion/chambre/polars
 978-2744135002:
-  ISBN-13: 978-2744135002
   de: "Am\xE9lie Nothomb (Auteur)"
   ext: "Broch\xE9"
   image_path: saint-jean-lipion/chambre/favourites/978-2744135002.jpeg
@@ -2726,7 +2503,6 @@
   title: Stupeur et tremblements
   where: /saint-jean-lipion/chambre/favourites
 978-2745301673:
-  ISBN-13: 978-2745301673
   de: Arthur Rimbaud (Auteur), Steve Murphy (Sous la direction de)
   ext: "Reli\xE9 \u2013 Grand livre, 27 septembre 1999"
   image_path: saint-jean-lipion/chambre/rimbaud/978-2745301673.jpg
@@ -2748,7 +2524,6 @@
   title: "Le Myst\xE8re J\xE9r\xF4me Bosch"
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-2749173979:
-  ISBN-13: 978-2749173979
   de: "Reiner Stach (Author), R\xE9gis QUATRESOUS (Translator)"
   ext: "Paperback \u2013 March 9, 2023"
   image_path: saint-jean-lipion/chambre/kafka/978-2749173979.jpg
@@ -2756,7 +2531,6 @@
   title: "Kafka - Tome 1 - Le temps des d\xE9cisions"
   where: /saint-jean-lipion/chambre/kafka
 978-2757820322:
-  ISBN-13: 978-2757820322
   de: Lilian Thuram (Auteur)
   ext: "Poche \u2013 12 mai 2011"
   image_path: saint-jean-lipion/chambre-paul/football/978-2757820322.jpg
@@ -2764,7 +2538,6 @@
   title: "Mes \xE9toiles noires - De Lucy \xE0 Barack Obama"
   where: /saint-jean-lipion/chambre-paul/football
 978-2757825730:
-  ISBN-13: 978-2757825730
   de: Franz Kafka (Auteur), Georges-Arthur Goldschmidt (Traducteur)
   ext: "Poche \u2013 17 novembre 2011"
   image_path: saint-jean-lipion/chambre/kafka/978-2757825730.jpg
@@ -2772,7 +2545,6 @@
   title: "Le ch\xE2teau"
   where: /saint-jean-lipion/chambre/kafka
 978-2757841938:
-  ISBN-13: 978-2757841938
   de: Ian Kershaw (Auteur)
   ext: "Poche \u2013 Grand livre, 2 mai 2014"
   image_path: saint-jean-lipion/chambre/nazis/978-2757841938.jpg
@@ -2780,7 +2552,6 @@
   title: La Fin - Allemagne (1944-1945)
   where: /saint-jean-lipion/chambre/nazis
 978-2757843017:
-  ISBN-13: 978-2757843017
   de: Tom Hickman (Auteur)
   ext: "Poche \u2013 25 septembre 2014"
   image_path: saint-jean-lipion/chambre/enfer/978-2757843017.jpg
@@ -2788,7 +2559,6 @@
   title: "Le Bidule de Dieu - Une histoire du p\xE9nis"
   where: /saint-jean-lipion/chambre/enfer
 978-2757850343:
-  ISBN-13: 978-2757850343
   de: Henning Mankell (Auteur)
   ext: "Poche \u2013 16 mai 2001"
   image_path: saint-jean-lipion/chambre/polars/978-2757850343.jpg
@@ -2796,7 +2566,6 @@
   title: "La cinqui\xE8me femme"
   where: /saint-jean-lipion/chambre/polars
 978-2812400896:
-  ISBN-13: 978-2812400896
   de: "Steve Murphy (Auteur), Didier Alexandre (Sous la direction de, \xC9diteur de\
     \ s\xE9rie), Pierre Glaudes (\xC9diteur de s\xE9rie)"
   ext: "Microlectures et perspectives Broch\xE9 \u2013 26 janvier 2010"
@@ -2805,7 +2574,6 @@
   title: Rimbaud et la Commune
   where: /saint-jean-lipion/chambre/rimbaud
 978-2812401268:
-  ISBN-13: 978-2812401268
   de: "Fr\xE9d\xE9rique Leichter-Flack (Auteur)"
   ext: "Reli\xE9 \u2013 8 septembre 2021"
   image_path: saint-jean-lipion/chambre/kafka/978-2812401268.jpg
@@ -2813,7 +2581,6 @@
   title: "La Complication de l'existence - Essai sur Kafka, Platonov et C\xE9line"
   where: /saint-jean-lipion/chambre/kafka
 978-2818021187:
-  ISBN-13: 978-2818021187
   de: "Emmanuel Carr\xE8re (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 28 ao\xFBt 2014"
   image_path: "saint-jean-lipion/chambre/carr\xE8re/978-2818021187.jpg"
@@ -2821,7 +2588,6 @@
   title: Le Royaume
   where: "/saint-jean-lipion/chambre/carr\xE8re"
 978-2818038765:
-  ISBN-13: 978-2818038765
   de: "Emmanuel Carr\xE8re (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 11 f\xE9vrier 2016"
   image_path: "saint-jean-lipion/chambre/carr\xE8re/978-2818038765.jpg"
@@ -2829,7 +2595,6 @@
   title: "Il est avantageux d'avoir o\xF9 aller"
   where: "/saint-jean-lipion/chambre/carr\xE8re"
 978-2818051382:
-  ISBN-13: 978-2818051382
   de: "Emmanuel Carr\xE8re (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 27 ao\xFBt 2020"
   image_path: "saint-jean-lipion/chambre/carr\xE8re/978-2818051382.jpg"
@@ -2837,7 +2602,6 @@
   title: Yoga
   where: "/saint-jean-lipion/chambre/carr\xE8re"
 978-2818052648:
-  ISBN-13: 978-2818052648
   de: "Hom\xE8re (Auteur), Emmanuel Lascoux (Traduction)"
   ext: "Broch\xE9 \u2013 Grand livre, 8 avril 2021"
   image_path: saint-jean-lipion/chambre/editors/978-2818052648.jpg
@@ -2845,7 +2609,6 @@
   title: "L'Odyss\xE9e"
   where: /saint-jean-lipion/chambre/editors
 978-2823609851:
-  ISBN-13: 978-2823609851
   de: Florence Aubenas (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 11 f\xE9vrier 2021"
   image_path: saint-jean-lipion/chambre/editors/978-2823609851.jpg
@@ -2853,7 +2616,6 @@
   title: L'Inconnu de la poste
   where: /saint-jean-lipion/chambre/editors
 978-2841420339:
-  ISBN-13: 978-2841420339
   de: "Jean-Marie Straub (Auteur), Dani\xE8le Huillet (Auteur)"
   ext: "Poche \u2013 31 mai 1996"
   image_path: saint-jean-lipion/chambre/cinema/978-2841420339.jpg
@@ -2861,7 +2623,6 @@
   title: Chronique d'Anna Magdalena Bach
   where: /saint-jean-lipion/chambre/cinema
 978-2842712600:
-  ISBN-13: 978-2842712600
   de: "\xC9tienne Liebig (Auteur)"
   ext: "Broch\xE9 \u2013 27 avril 2006"
   image_path: saint-jean-lipion/chambre/enfer/978-2842712600.jpg
@@ -2869,7 +2630,6 @@
   title: Comment draguer la catholique sur les chemins de Compostelle
   where: /saint-jean-lipion/chambre/enfer
 978-2842712693:
-  ISBN-13: 978-2842712693
   de: Etienne Liebig (Auteur)
   ext: "Broch\xE9 \u2013 23 f\xE9vrier 2007"
   image_path: saint-jean-lipion/chambre/enfer/978-2842712693.jpg
@@ -2877,33 +2637,33 @@
   title: "Comment draguer la militante dans les r\xE9unions politiques"
   where: /saint-jean-lipion/chambre/enfer
 978-2842712976:
-  ISBN-13: 978-2842712976
   de: Coralie Trinh Thi (Auteur)
   ext: "Poche \u2013 28 juin 2007"
   image_path: saint-jean-lipion/chambre/enfer/978-2842712976.jpg
   lan: "\U0001F1EB\U0001F1F7"
-  title: Osez... la sodomie
+  tags:
+  - verboten
+  title: "Osez\u2026 la sodomie"
   verboten: Ja
   where: /saint-jean-lipion/chambre/enfer
 978-2842713546:
-  ISBN-13: 978-2842713546
   de: Etienne Liebig (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 17 avril 2008"
   image_path: saint-jean-lipion/chambre/enfer/978-2842713546.jpg
   lan: "\U0001F1EB\U0001F1F7"
-  title: "Je n'ai jamais rencontr\xE9 Mitterrand, ni sa femme, ni sa fille..."
+  title: "Je n'ai jamais rencontr\xE9 Mitterrand, ni sa femme, ni sa fille\u2026"
   where: /saint-jean-lipion/chambre/enfer
 978-2842713652:
-  ISBN-13: 978-2842713652
   de: Bernard Guerin (Auteur)
   ext: "Broch\xE9 \u2013 29 mai 2009"
   image_path: saint-jean-lipion/chambre/enfer/978-2842713652.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - verboten
   title: Anthologie de la sodomie
   verboten: Ja
   where: /saint-jean-lipion/chambre/enfer
 978-2842718855:
-  ISBN-13: 978-2842718855
   de: Esparbec (Auteur)
   ext: "Poche \u2013 13 juillet 2016"
   image_path: saint-jean-lipion/chambre/enfer/978-2842718855.jpg
@@ -2911,7 +2671,6 @@
   title: "Le Fruit d\xE9fendu"
   where: /saint-jean-lipion/chambre/enfer
 978-2843040009:
-  ISBN-13: 978-2843040009
   de: Philippe Brenot (Auteur)
   ext: "Broch\xE9 \u2013 15 novembre 2002"
   image_path: saint-jean-lipion/chambre/enfer/978-2843040009.jpg
@@ -2919,25 +2678,26 @@
   title: Eloge de la masturbation
   where: /saint-jean-lipion/chambre/enfer
 978-2843040528:
-  ISBN-13: 978-2843040528
   de: "Georges Perec (Auteur), Bernard Magn\xE9 (Avec la contribution de), Jacques\
     \ Bens (Introduction)"
   ext: "Broch\xE9 \u2013 7 mai 1999"
   image_path: saint-jean-lipion/salon/perec/978-2843040528.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "Nouveaux jeux int\xE9ressants"
   where: /saint-jean-lipion/salon/perec
 978-2843040603:
-  ISBN-13: 978-2843040603
   de: Claude Guillon (Auteur)
   ext: "Broch\xE9 \u2013 7 mai 1999"
   image_path: saint-jean-lipion/chambre/enfer/978-2843040603.jpg
   lan: "\U0001F1EB\U0001F1F7"
-  title: "Le si\xE8ge de l\u2019\xE2me, \xE9loge de la sodomie"
+  tags:
+  - verboten
+  title: "Le si\xE8ge de l\u2019\xE2me - \xC9loge de la sodomie"
   verboten: Ja
   where: /saint-jean-lipion/chambre/enfer
 978-2844141132:
-  ISBN-13: 978-2844141132
   de: Guy Delisle (Auteur)
   ext: "Broch\xE9 \u2013 15 novembre 2002"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2844141132.jpg"
@@ -2945,7 +2705,6 @@
   title: Pyong Yang
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2844851390:
-  ISBN-13: 978-2844851390
   de: Patrik Ourednik (Auteur), Marianne Canavaggio (Traduction)
   ext: "Broch\xE9 \u2013 29 janvier 2004"
   image_path: saint-jean-lipion/chambre/favourites/978-2844851390.jpg
@@ -2953,7 +2712,6 @@
   title: "Europeana - Une br\xE8ve histoire du XXe si\xE8cle"
   where: /saint-jean-lipion/chambre/favourites
 978-2846822251:
-  ISBN-13: 978-2846822251
   de: "Saint Augustin (Auteur), Fr\xE9d\xE9ric Boyer (Traduction)"
   ext: "Broch\xE9 \u2013 3 janvier 2008"
   image_path: saint-jean-lipion/chambre/editors/978-2846822251.jpg
@@ -2961,7 +2719,6 @@
   title: Les Aveux
   where: /saint-jean-lipion/chambre/editors
 978-2851088871:
-  ISBN-13: 978-2851088871
   de: Frida Kahlo (Auteur)
   ext: "Reli\xE9 \u2013 1 d\xE9cembre 1995"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2851088871.jpg"
@@ -2969,7 +2726,6 @@
   title: Le journal de Frida Kahlo
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2851205247:
-  ISBN-13: 978-2851205247
   de: James Turnbull (Auteur), D. Czap (Auteur)
   ext: "Reli\xE9 \u2013 1 octobre 1998"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2851205247.jpg
@@ -2977,7 +2733,6 @@
   title: Bourgogne - Grandeur Nature
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2858150557:
-  ISBN-13: 978-2858150557
   de: Marcel Gotlib (Auteur)
   ext: "Reli\xE9 \u2013 7 janvier 1993"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-2858150557.jpg
@@ -2992,7 +2747,6 @@
   title: Mario Praz
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-2858681884:
-  ISBN-13: 978-2858681884
   de: "Wolfgang Amadeus Mozart (Auteur), Lorenzo Da Ponte (Auteur), Raoul Agran (Illustrations),\
     \ Teresa Berganza (Pr\xE9face), & 3 plus"
   ext: "avec partition d'extraits Broch\xE9 \u2013 1 janvier 1992"
@@ -3007,11 +2761,12 @@
   title: Les aventures d'Antoine Doinel
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2859566449:
-  ISBN-13: 978-2859566449
   de: OuLiPo (Auteur)
   ext: "Broch\xE9 \u2013 1 d\xE9cembre 1987"
   image_path: saint-jean-lipion/salon/perec/978-2859566449.jpeg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "La Biblioth\xE8que Oulipienne, volume 2"
   where: /saint-jean-lipion/salon/perec
 978-2862602578:
@@ -3020,10 +2775,9 @@
     \ 1 mars 1988"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-2862602578.jpeg"
   lan: "\U0001F1EB\U0001F1F7"
-  title: "De m\xE9moire de lutin !..."
+  title: "De m\xE9moire de lutin !\u2026"
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2862604145:
-  ISBN-13: 978-2862604145
   de: Collectif (Auteur)
   ext: "Broch\xE9 \u2013 2 avril 1993"
   image_path: saint-jean-lipion/chambre-paul/football/978-2862604145.jpg
@@ -3031,15 +2785,15 @@
   title: "L'amour foot - Une passion plan\xE9taire"
   where: /saint-jean-lipion/chambre-paul/football
 978-2863740033:
-  ISBN-13: 978-2863740033
   de: Georges Perec (Auteur)
   ext: "Broch\xE9 \u2013 1 janvier 1979"
   image_path: saint-jean-lipion/salon/perec/978-2863740033.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "Les mots crois\xE9s"
   where: /saint-jean-lipion/salon/perec
 978-2864247227:
-  ISBN-13: 978-2864247227
   de: Christoph Hein (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 4 mars 2010"
   image_path: saint-jean-lipion/chambre/favourites/978-2864247227.jpg
@@ -3047,7 +2801,6 @@
   title: Paula T. une femme allemande
   where: /saint-jean-lipion/chambre/favourites
 978-2866422080:
-  ISBN-13: 978-2866422080
   de: Jean Eustache (Auteur)
   ext: "sc\xE9nario Broch\xE9 \u2013 janvier 2005"
   image_path: saint-jean-lipion/chambre/cinema/978-2866422080.jpg
@@ -3055,35 +2808,39 @@
   title: La Maman et la Putain
   where: /saint-jean-lipion/chambre/cinema
 978-2867440458:
-  ISBN-13: 978-2867440458
   de: Collectif (Auteur)
   ext: "Broch\xE9 \u2013 1 octobre 1985"
   image_path: saint-jean-lipion/salon/perec/978-2867440458.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Cahiers Georges Perec - Colloque de Cerisy, juillet 1984
   where: /saint-jean-lipion/salon/perec
 978-2867440663:
-  ISBN-13: 978-2867440663
   de: Georges Perec (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 1 juin 1986"
   image_path: saint-jean-lipion/salon/perec/978-2867440663.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: "Les mots Crois\xE9s"
   where: /saint-jean-lipion/salon/perec
 978-2867440670:
-  ISBN-13: 978-2867440670
   de: Harry Mathews (Auteur)
   ext: "Feuillets mobiles \u2013 1 janvier 1986"
   image_path: saint-jean-lipion/salon/perec/978-2867440670.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Le Verger
   where: /saint-jean-lipion/salon/perec
 978-2867441615:
-  ISBN-13: 978-2867441615
   de: Georges Perec (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 1 septembre 1989"
   image_path: saint-jean-lipion/salon/perec/978-2867441615.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: 53 jours
   where: /saint-jean-lipion/salon/perec
 978-2868691217:
@@ -3094,14 +2851,12 @@
   title: "Mari\xE9s !"
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2868698926:
-  ISBN-13: 978-2868698926
   de: Paul Auster (Auteur), Christine Le Boeuf (Traduction)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2868698926.jpg"
   lan: "\U0001F1EB\U0001F1F7"
   title: Moon Palace
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-2869300552:
-  ISBN-13: 978-2869300552
   de: Dominique Avron (Auteur)
   ext: "Broch\xE9 \u2013 1 mars 1987"
   image_path: saint-jean-lipion/chambre/cinema/978-2869300552.jpg
@@ -3116,7 +2871,6 @@
   title: Dinddra
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-2877068161:
-  ISBN-13: 978-2298070378
   de: "Jo\xEBl Dicker (Auteur)"
   ext: "Prix Goncourt des lyc\xE9ens 2012 et Grand Prix du Roman de l'Acad\xE9mie\
     \ fran\xE7aise 2012 Broch\xE9 \u2013 19 septembre 2012"
@@ -3125,7 +2879,6 @@
   title: "La V\xE9rit\xE9 sur l'Affaire Harry Quebert"
   where: /saint-jean-lipion/chambre/polars
 978-2889730117:
-  ISBN-13: 978-2889730117
   de: "Jo\xEBl Dicker (Auteur)"
   ext: "Broch\xE9 \u2013 10 mars 2022"
   image_path: saint-jean-lipion/chambre/polars/978-2889730117.jpg
@@ -3140,7 +2893,6 @@
   title: Voyage autour de ma chambre
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-2904388118:
-  ISBN-13: 978-2904388118
   de: Alain Borer (Auteur), Arthur Aeschbacher, Philippe Soupault (Auteurs)
   ext: "Broch\xE9 \u2013 1 janvier 1984"
   image_path: saint-jean-lipion/chambre/rimbaud/978-2904388118.jpg
@@ -3148,7 +2900,6 @@
   title: Un sieur rimbaud se disant negociant
   where: /saint-jean-lipion/chambre/rimbaud
 978-2909031569:
-  ISBN-13: 978-2909031569
   de: Jean-Luc Hennig (Auteur)
   ext: "Broch\xE9 \u2013 18 novembre 2003"
   image_path: saint-jean-lipion/chambre/enfer/978-2909031569.jpg
@@ -3156,7 +2907,6 @@
   title: "Br\xE8ve histoire des fesses"
   where: /saint-jean-lipion/chambre/enfer
 978-2909317274:
-  ISBN-13: 978-2909317274
   de: Arthur Rimbaud (Auteur), Claude Jeancolas (Sous la direction de)
   ext: "Coffret 3 volumes - Reli\xE9 \u2013 13 octobre 2001"
   image_path: saint-jean-lipion/chambre/rimbaud/978-2909317274.jpg
@@ -3164,7 +2914,6 @@
   title: "L'\u0153uvre int\xE9grale manuscrite"
   where: /saint-jean-lipion/chambre/rimbaud
 978-2913563827:
-  ISBN-13: 978-2913563827
   de: "Thierry Leguay (Auteur), Fran\xE7oise Rey (Auteur)"
   ext: "Reli\xE9 \u2013 1 janvier 1999"
   image_path: saint-jean-lipion/chambre/enfer/978-2913563827.jpg
@@ -3172,7 +2921,6 @@
   title: "Histoire raisonn\xE9e de la fellation"
   where: /saint-jean-lipion/chambre/enfer
 978-2914353304:
-  ISBN-13: 978-2914353304
   de: Xavier Deleu (Auteur)
   ext: "Reli\xE9 \u2013 11 avril 2002"
   image_path: saint-jean-lipion/chambre/enfer/978-2914353304.jpg
@@ -3180,7 +2928,6 @@
   title: Le consensus pornographique
   where: /saint-jean-lipion/chambre/enfer
 978-2915083163:
-  ISBN-13: 978-2915083163
   de: Georges Michel (Auteur), Lalo Schifrin (Auteur)
   ext: "Broch\xE9 \u2013 26 janvier 2006"
   image_path: saint-jean-lipion/chambre/cinema/978-2915083163.jpg
@@ -3189,7 +2936,6 @@
     \ cin\xE9ma"
   where: /saint-jean-lipion/chambre/cinema
 978-2916195469:
-  ISBN-13: 978-2916195469
   de: Martha Carroll (Auteur), Jean-Louis Celati (Auteur)
   ext: "Une am\xE9ricaine \xE0 Paris - Bilingue fran\xE7ais/anglais. Reli\xE9 \u2013\
     \ 7 mai 2013"
@@ -3198,15 +2944,13 @@
   title: Les Halles
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2916400365:
-  ISBN-13: 978-2916400365
   de: "Didier Drogba (Auteur), Herv\xE9 Penot (Auteur), Jos\xE9 Mourinho (Pr\xE9face)"
   ext: "Broch\xE9 \u2013 14 mai 2008"
   image_path: saint-jean-lipion/chambre-paul/football/978-2916400365.jpg
   lan: "\U0001F1EB\U0001F1F7"
-  title: "\"C'\xE9tait pas gagn\xE9...\""
+  title: "\"C'\xE9tait pas gagn\xE9\u2026\""
   where: /saint-jean-lipion/chambre-paul/football
 978-2916400402:
-  ISBN-13: 978-2916400402
   de: "Emmanuel Petit (Auteur), J\xE9r\xF4me Le Fauconnier (Auteur), Ars\xE8ne Wenger\
     \ (Pr\xE9face)"
   ext: "Broch\xE9 \u2013 11 juin 2008"
@@ -3215,7 +2959,6 @@
   title: A fleur de peau
   where: /saint-jean-lipion/chambre-paul/football
 978-2940427017:
-  ISBN-13: 978-2940427017
   de: Simon Blackburn (Auteur)
   ext: "Broch\xE9 \u2013 3 septembre 2009"
   image_path: saint-jean-lipion/chambre/enfer/978-2940427017.jpg
@@ -3226,64 +2969,58 @@
   de: Wolf Dietrich Schnurre (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1990"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_3/978-3125556102.jpg"
-  lan: "\U0001F1EE\U0001F1E9"
+  lan: "\U0001F1E9\U0001F1EA"
   title: "Die Tat / Ein Fall f\xFCr Herrn Schmidt"
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-3492054201:
-  ISBN-13: 978-3492054201
   de: Charlotte Roche (Autor)
   ext: "Roman Broschiert \u2013 15. August 2011"
   image_path: saint-jean-lipion/chambre/enfer/978-3492054201.jpg
-  lan: "\U0001F1EE\U0001F1E9"
+  lan: "\U0001F1E9\U0001F1EA"
   title: "Scho\xDFgebete"
   where: /saint-jean-lipion/chambre/enfer
 978-3596181162:
-  ISBN-13: 978-3596181162
   de: Franz Kafka (Autor)
   ext: "Roman Taschenbuch \u2013 1. Juni 2008"
   image_path: saint-jean-lipion/chambre/kafka/978-3596181162.jpg
-  lan: "\U0001F1EE\U0001F1E9"
+  lan: "\U0001F1E9\U0001F1EA"
   title: "Das Schlo\xDF"
   where: /saint-jean-lipion/chambre/kafka
 978-3640483419:
-  ISBN-13: 978-3640483419
   de: Veronica Martysz (Author)
   ext: "(German Edition) Paperback \u2013 January 1, 2009"
   image_path: saint-jean-lipion/chambre/cinema/978-3640483419.jpeg
-  lan: "\U0001F1EE\U0001F1E9"
+  lan: "\U0001F1E9\U0001F1EA"
   title: "Cinematographische Merkmale der \u201ESchloss\"-Verfilmung von Michael Haneke"
   where: /saint-jean-lipion/chambre/cinema
 978-3848004409:
-  ISBN-13: 978-3848004409
   de: Hartmut Lehbrink (Auteur), Jochen von Osterroth (Auteur), Rainer Schlegelmilch
     (Photographies)
   ext: "Reli\xE9 \u2013 25 octobre 2013"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-3848004409.jpg
+  lan: "\U0001F1E9\U0001F1EA"
   title: BMW
   where: /saint-jean-lipion/chambre/beaux-livres
 978-3895080944:
-  ISBN-13: 978-3895080944
   de: Laszlo Polgar (Auteur)
   ext: "Reli\xE9 \u2013 1 d\xE9cembre 1995"
   image_path: saint-jean-lipion/chambre/beaux-livres/978-3895080944.jpg
+  lan: "\U0001F1EC\U0001F1E7"
   title: Chess - Schach - Echecs - Ajedrez - training in 5333+1 positions
   where: /saint-jean-lipion/chambre/beaux-livres
 978-3899195842:
-  ISBN-13: 978-3899195842
   de: Harald Salfellner (Sous la direction de), Didier Debord (Traducteur)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-3899195842.jpg"
   lan: "\U0001F1EB\U0001F1F7"
   title: "Le Golem de Prague - Les r\xE9cits juifs du ghetto"
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-3980858755:
-  ISBN-13: 978-3980858755
   de: Collectif
   image_path: saint-jean-lipion/chambre/nazis/978-3980858755.jpg
   lan: "\U0001F1EB\U0001F1F7"
   title: Histoire des camps de concentration nazis. Etudes, rapports et documents
   where: /saint-jean-lipion/chambre/nazis
 978-8207036074:
-  ISBN-13: 978-8207036074
   de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)
   ext: "Poche \u2013 18 juin 1982"
   image_path: saint-jean-lipion/chambre/kafka/978-8207036074.jpg
@@ -3291,7 +3028,6 @@
   title: "La m\xE9tamorphose"
   where: /saint-jean-lipion/chambre/kafka
 978-8804283195:
-  ISBN-13: 978-8804283195
   de: Emidio De Felice (Autore)
   ext: "Copertina rigida \u2013 1 gennaio 1987"
   image_path: saint-jean-lipion/salon/perec/978-8804283195.jpg
@@ -3323,6 +3059,7 @@
   ext: Testo originale a fronte
   image_path: "saint-lazare-de-sav\xE8ne/salon/_4/978-8804405382.jpg"
   lan: "\U0001F1EE\U0001F1F9"
+  lanOriginal: "\U0001F1EC\U0001F1E7"
   title: Cantos scelti
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-8804425540:
@@ -3367,7 +3104,6 @@
   title: Il barone rampante
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-8804553441:
-  ISBN-13: 978-8804553441
   de: Gyatso Tenzin (Dalai Lama) (Autore), R. Singh (a cura di), C. L. Candiani (Traduttore)
   ext: "Come ottenere la perfetta felicit\xE0 - Copertina flessibile \u2013 7 marzo\
     \ 2006"
@@ -3391,7 +3127,6 @@
   title: La bellezza e l'inferno. Scritti 2004-2009
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-8804626060:
-  ISBN-13: 978-8804626060
   de: Francesco Guccini (Autore)
   ext: "Copertina flessibile \u2013 21 luglio 2015"
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-8804626060.jpg"
@@ -3399,7 +3134,6 @@
   title: Dizionario delle cose perdute
   where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-8804678038:
-  ISBN-13: 978-8804678038
   de: Antonia Fraser (Author)
   ext: "La solitudine di una regina - Paperback \u2013 May 5, 2017"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-8804678038.jpg"
@@ -3407,7 +3141,6 @@
   title: Maria Antonietta
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-8804681007:
-  ISBN-13: 978-8804681007
   de: Loriano Macchiavelli (Autore)
   ext: "Copertina flessibile \u2013 29 agosto 2017"
   image_path: saint-jean-lipion/chambre/polars/978-8804681007.jpg
@@ -3491,7 +3224,6 @@
   title: Il processo
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-8806146511:
-  ISBN-13: 978-8806146511
   de: Hans Magnus Enzensberger (Autore), Rotraut Susanne Berner (Illustratore), Enrico
     Ganni (Traduttore)
   ext: "Un libro da leggere prima di addormentarsi, dedicato a chi ha paura della\
@@ -3509,7 +3241,6 @@
   title: Diario
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-8806151799:
-  ISBN-13: 978-8806151799
   de: Fulvio Nardoni (Traduction)
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8806151799.webp"
   lan: "\U0001F1EE\U0001F1F9"
@@ -3544,7 +3275,6 @@
   title: Lo strano caso del cane ucciso a mezzanotte
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-8806177409:
-  ISBN-13: 978-8806177409
   de: Elsa Morante (Autore)
   ext: "Copertina flessibile \u2013 29 luglio 2005"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-8806177409.jpg"
@@ -3552,7 +3282,6 @@
   title: La storia
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-8806210885:
-  ISBN-13: 978-8806210885
   de: Giovanna Rosadini (Editor)
   ext: "Paperback \u2013 January 1, 2012"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-8806210885.jpg"
@@ -3567,7 +3296,6 @@
   title: "Il momento \xE8 delicato"
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-8806216290:
-  ISBN-13: 978-8806216290
   de: "Anne Holt (Autore), Margherita Podest\xE0 Heir (Traduttore)"
   ext: "Copertina flessibile \u2013 25 giugno 2013"
   image_path: saint-jean-lipion/chambre/polars/978-8806216290.jpg
@@ -3680,7 +3408,6 @@
   title: "Mi sa che fuori \xE8 primavera"
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8807171246:
-  ISBN-13: 978-8807171246
   de: Vandana Shiva (Author), R. Scafi (Translator)
   ext: "Perfect Paperback \u2013 1 July 2006"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8807171246.jpg"
@@ -3748,6 +3475,7 @@
   ext: "Copertina flessibile \u2013 22 gennaio 2007"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_8/978-8807816765.jpg"
   lan: "\U0001F1EE\U0001F1F9"
+  lanOriginal: "\U0001F1EC\U0001F1E7"
   title: Il grande - Poesie III - Testo originale a fronte
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-8807818233:
@@ -3792,7 +3520,6 @@
   title: "Buskash\xEC Copertina flessibile \u2013 17 maggio 2003"
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-8807891342:
-  ISBN-13: 978-8807891342
   de: Angelo D'Orsi (Autore)
   ext: "Copertina flessibile \u2013 27 settembre 2018"
   image_path: saint-jean-lipion/chambre/biographies/978-8807891342.jpg
@@ -3807,7 +3534,6 @@
   title: Una storia del mondo
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8809849129:
-  ISBN-13: 978-8809849129
   de: Barbara Baraldi (Autore)
   ext: "Copertina flessibile \u2013 31 gennaio 2018"
   image_path: saint-jean-lipion/chambre/polars/978-8809849129.jpg
@@ -3819,6 +3545,7 @@
   ext: "Testo francese a fronte Copertina flessibile \u2013 24 ottobre 2003"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_4/978-8811363422.jpg"
   lan: "\U0001F1EE\U0001F1F9"
+  lanOriginal: "\U0001F1EB\U0001F1F7"
   title: Il borghese gentiluomo
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-8811519782:
@@ -3850,7 +3577,6 @@
   title: Il visconte dimezzato
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-8811669043:
-  ISBN-13: 978-8811669043
   de: Pier Paolo Pasolini (Autore)
   ext: "Copertina flessibile \u2013 19 ottobre 1999"
   image_path: saint-jean-lipion/chambre/cinema/978-8811669043.jpg
@@ -3910,7 +3636,6 @@
   title: Dieci lezioni sui classici
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8817010320:
-  ISBN-13: 978-8817010320
   de: Zap Mangusta (Autore)
   ext: "Lezioni di filosofia per tipi in gamba - Copertina rigida \u2013 19 aprile\
     \ 2006"
@@ -3926,7 +3651,6 @@
   title: La manomissione delle parole
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-8817061841:
-  ISBN-13: 978-8817061841
   de: Dacia Maraini (Autore)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-8817061841.jpg"
   lan: "\U0001F1EE\U0001F1F9"
@@ -3936,7 +3660,8 @@
   de: Thomas S. Eliot (Autore), A. Serpieri (a cura di)
   ext: "Testo inglese a fronte Copertina flessibile \u2013 28 giugno 2013"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_4/978-8817066969.webp"
-  lan: "\U0001F1EC\U0001F1E7\U0001F1EE\U0001F1F9"
+  lan: "\U0001F1EE\U0001F1F9"
+  lanOriginal: "\U0001F1EC\U0001F1E7"
   title: La terra desolata
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-8817072380:
@@ -3947,11 +3672,12 @@
   title: Il cardellino
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8817106047:
-  ISBN-13: 978-8817106047
   de: Georges Perec (Autore), D. Selvatico Estense (Traduttore)
   ext: "Copertina flessibile \u2013 1 giugno 1997"
   image_path: saint-jean-lipion/salon/perec/978-8817106047.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - Perec
   title: La vita istruzioni per l'uso
   where: /saint-jean-lipion/salon/perec
 978-8817138338:
@@ -3969,15 +3695,15 @@
   title: Appunti di un giovane medico
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8817676823:
-  ISBN-13: 978-8817676823
   de: Georges Perec (Autore)
   ext: "Copertina rigida \u2013 1 gennaio 1990"
   image_path: saint-jean-lipion/salon/perec/978-8817676823.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - Perec
   title: Storia di un quadro
   where: /saint-jean-lipion/salon/perec
 978-8823520707:
-  ISBN-13: 978-8823520707
   de: "Arnaldur Indri\xF0ason (Autore), Alessandro Storti (Traduttore)"
   ext: "Copertina rigida \u2013 28 giugno 2018"
   image_path: saint-jean-lipion/chambre/polars/978-8823520707.jpg
@@ -4001,7 +3727,6 @@
   title: La mano sinistra del diavolo
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-8829702671:
-  ISBN-13: 978-8829702671
   de: Paolo Roversi (Autore)
   ext: "La serie di Radeschi (Vol. 1) Copertina flessibile \u2013 3 ottobre 2019"
   image_path: saint-jean-lipion/chambre/polars/978-8829702671.jpg
@@ -4009,7 +3734,6 @@
   title: La confraternita delle ossa
   where: /saint-jean-lipion/chambre/polars
 978-8829709564:
-  ISBN-13: 978-8829709564
   de: Papa Francesco (Jorge Mario Bergoglio) (Autore), Antonio Spadaro (Presentazione)
   ext: "Sulla fraternit\xE0 e l'amicizia sociale - Copertina flessibile \u2013 12\
     \ ottobre 2020"
@@ -4018,7 +3742,6 @@
   title: Fratelli tutti
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-8830102651:
-  ISBN-13: 978-8830102651
   de: Antonio Scurati (Autore)
   ext: "Copertina flessibile \u2013 23 settembre 2020"
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-8830102651.jpg"
@@ -4026,7 +3749,6 @@
   title: M. L'uomo della provvidenza
   where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-8830104969:
-  ISBN-13: 978-8830104969
   de: Antonio Scurati (Autore)
   ext: "Copertina flessibile \u2013 13 settembre 2022"
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-8830104969.jpg"
@@ -4034,7 +3756,6 @@
   title: M. Gli ultimi giorni dell'Europa
   where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-8830106628:
-  ISBN-13: 978-8830106628
   de: Antonio Scurati (Autore)
   ext: "Copertina flessibile \u2013 luglio 2019"
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-8830106628.jpg"
@@ -4042,7 +3763,6 @@
   title: M. Il figlio del secolo
   where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-8830421424:
-  ISBN-13: 978-8830421424
   de: Tiziano Terzani (Autore)
   ext: "Copertina rigida \u2013 25 marzo 2004"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8830421424.jpg"
@@ -4064,7 +3784,6 @@
   title: Lasciami entrare
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8831712255:
-  ISBN-13: 978-8831712255
   de: Henning Mankell (Autore), Giorgio Puleo (Traduttore)
   ext: "Copertina rigida \u2013 9 maggio 2012"
   image_path: saint-jean-lipion/chambre/polars/978-8831712255.jpg
@@ -4087,7 +3806,6 @@
   title: Blue tango
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8831761048:
-  ISBN-13: 978-8831761048
   de: Adelio Ferrero (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1994"
   image_path: saint-jean-lipion/chambre/cinema/978-8831761048.jpg
@@ -4095,7 +3813,6 @@
   title: Il cinema di Pier Paolo Pasolini
   where: /saint-jean-lipion/chambre/cinema
 978-8831772112:
-  ISBN-13: 978-8831772112
   de: Henning Mankell (Auteur)
   ext: "Le inchieste del commissario Wallander (Vol. 4) Copertina flessibile \u2013\
     \ 5 maggio 2004"
@@ -4119,7 +3836,6 @@
   title: La prova matematica dell'esistenza di Dio
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8834004005:
-  ISBN-13: 978-8834004005
   de: Jiddu Krishnamurti
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8834004005.jpg"
   lan: "\U0001F1EE\U0001F1F9"
@@ -4133,11 +3849,11 @@
   title: Lo zen in 10 minuti
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8836805969:
-  ISBN-13: 978-8836805969
   de: Pablo Neruda (Autore), G. Bellini (a cura di)
   ext: "Testo spagnolo a fronte Copertina flessibile \u2013 22 ottobre 1999"
   image_path: "saint-lazare-de-sav\xE8ne/salon/po\xE9sie/978-8836805969.jpg"
   lan: "\U0001F1EE\U0001F1F9"
+  lanOriginal: "\U0001F1EA\U0001F1F8"
   title: Venti poesie d'amore e una canzone disperata
   where: "/saint-lazare-de-sav\xE8ne/salon/po\xE9sie"
 978-8838922497:
@@ -4198,7 +3914,6 @@
   title: Il metodo Catalanotti
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8838940774:
-  ISBN-13: 978-8838940774
   de: Andrea Camilleri (Autore)
   ext: "Seguito dalla prima stesura del 2005. Ediz. speciale Copertina rigida \u2013\
     \ Edizione speciale, 16 luglio 2020"
@@ -4229,7 +3944,6 @@
   title: L'arte della vita
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8842533177:
-  ISBN-13: 978-8842533177
   de: Peter Kolosimo (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 2004"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8842533177.jpg"
@@ -4251,7 +3965,6 @@
   title: Il battello ebbro e altri versi
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8845223181:
-  ISBN-13: 978-8845223181
   de: Umberto Eco (Autore)
   ext: Copertina rigida
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-8845223181.jpg"
@@ -4266,7 +3979,6 @@
   title: Gli indifferenti
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-8845273537:
-  ISBN-13: 978-8845273537
   de: Petros Markaris (Autore), Andrea Di Gregorio (Traduttore)
   ext: "Un'indagine del commissario Kostas Charitos Copertina flessibile \u2013 7\
     \ maggio 2014"
@@ -4281,11 +3993,11 @@
   title: Il Piccolo Principe
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8845296383:
-  ISBN-13: 978-8845296383
   de: James Joyce (Autore), Enrico Terrinoni (a cura di)
   ext: "Copertina rigida \u2013 10 novembre 2021"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-8845296383.jpg"
-  lan: "\U0001F1EC\U0001F1E7\U0001F1EE\U0001F1F9"
+  lan: "\U0001F1EE\U0001F1F9"
+  lanOriginal: "\U0001F1EC\U0001F1E7"
   title: Ulisse. Testo inglese a fronte
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-8845902741:
@@ -4331,7 +4043,6 @@
   title: Todo modo
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-8845917073:
-  ISBN-13: 978-8845917073
   de: Winfried G. Sebald (Autore), Ada Vigliani (Traduttore)
   ext: "Copertina flessibile \u2013 5 giugno 2002"
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-8845917073.jpg"
@@ -4415,7 +4126,6 @@
   title: La cognizione del dolore
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-8847710467:
-  ISBN-13: 978-8847710467
   de: Andrew Matthews (Autore), A. Barrett (Illustratore), P. Mazzarelli (Traduttore)
   ext: "Copertina rigida \u2013 19 novembre 2002"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-8847710467.jpg"
@@ -4423,7 +4133,6 @@
   title: L'amore, la vendetta e la magia
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-8847711822:
-  ISBN-13: 978-8847711822
   de: Gennady Spirin (Illustratore), M. P. Chiodi (Traduttore)
   ext: "Cinque racconti d'autore - Copertina rigida \u2013 18 marzo 2003"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-8847711822.jpg"
@@ -4431,7 +4140,6 @@
   title: Cavalieri, armi e amori
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-8848117135:
-  ISBN-13: 978-8848117135
   de: Gioacchino M. Pagliaro (Autore)
   ext: "Copertina flessibile \u2013 21 ottobre 2004"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8848117135.jpg"
@@ -4477,7 +4185,6 @@
   title: Dei delitti e delle pene
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8856680065:
-  ISBN-13: 978-8856680065
   de: Papa Francesco (Jorge Mario Bergoglio) (Autore), Giuseppe Romano (Traduttore)
   ext: "La strada verso un futuro migliore - Copertina rigida \u2013 1 dicembre 2020"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8856680065.jpg"
@@ -4485,7 +4192,6 @@
   title: Ritorniamo a sognare
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-8858001226:
-  ISBN-13: 978-8858001226
   de: Daniela Capparotto (Autore)
   ext: "Copertina flessibile \u2013 27 agosto 2010"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8858001226.jpg"
@@ -4493,7 +4199,6 @@
   title: Capricorno
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-8858119280:
-  ISBN-13: 978-8858119280
   de: Alessandro Barbero (Autore)
   ext: "Sei storie medievali - Copertina flessibile \u2013 19 marzo 2015"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-8858119280.jpg"
@@ -4501,7 +4206,6 @@
   title: Donne, madonne, mercanti e cavalieri
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-8860306418:
-  ISBN-13: 978-8860306418
   de: Carlo Rovelli (Autore)
   ext: "Copertina flessibile \u2013 15 gennaio 2014"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-8860306418.jpg"
@@ -4509,7 +4213,6 @@
   title: "La realt\xE0 non \xE8 come ci appare. La struttura elementare delle cose"
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-8860529145:
-  ISBN-13: 978-8860529145
   de: Paolo Fox (Autore)
   ext: "Copertina flessibile \u2013 8 novembre 2018"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8860529145.jpg"
@@ -4517,7 +4220,6 @@
   title: L'oroscopo 2019
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-8867211432:
-  ISBN-13: 978-8867211432
   de: Maria Ferri
   ext: "Copertina flessibile \u2013 1 gennaio 2013"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8867211432.jpg"
@@ -4605,7 +4307,6 @@
   title: Il vecchio che leggeva romanzi d'amore
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8877683984:
-  ISBN-13: 978-8877683984
   de: Franz Kafka (Autore), R. Paoli (Traduttore)
   ext: "Copertina flessibile \u2013 19 novembre 2003"
   image_path: saint-jean-lipion/chambre/kafka/978-8877683984.png
@@ -4620,11 +4321,11 @@
   title: Muffe, peponidi, tartufi e altri vergognosi vegetali
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8879836135:
-  ISBN-13: 978-8879836135
   de: Edgar Lee Masters (Autore), L. Ciotti Miller (Traduttore)
   ext: "Copertina flessibile \u2013 1 gennaio 2007"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-8879836135.jpg"
-  lan: "\U0001F1EC\U0001F1E7\U0001F1EE\U0001F1F9"
+  lan: "\U0001F1EE\U0001F1F9"
+  lanOriginal: "\U0001F1EC\U0001F1E7"
   title: Antologia di Spoon River. Testo inglese a fronte
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-8879840842:
@@ -4636,7 +4337,6 @@
   title: Corpo mente cuore
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8880800620:
-  ISBN-13: 978-8880800620
   de: Luigi Cagnolaro (Autore), Antonio Di Natale (Autore), Giuseppe Notarbartolo
     di Sciara (Autore)
   ext: "Copertina flessibile \u2013 1 febbraio 2006"
@@ -4646,7 +4346,6 @@
     e costiere italiane
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-8882792237:
-  ISBN-13: 978-8882792237
   de: Fausto Vitaliano (Auteur), Antonio Lapone (Illustrations), Cristina Stella (Couleurs)
   ext: "Broch\xE9 \u2013 1 septembre 2015"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-8882792237.jpg"
@@ -4654,7 +4353,6 @@
   title: La Repubblica a piccoli passi
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
 978-8883425738:
-  ISBN-13: 978-8883425738
   de: Charles Georges (Autore)
   ext: "Pratiche taoiste di lunga vita - Copertina flessibile \u2013 1 gennaio 2008"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8883425738.jpg"
@@ -4662,7 +4360,6 @@
   title: Qi gong ed energia vitale
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-8884409942:
-  ISBN-13: 978-8884409942
   de: Enrico Giacovelli (Autore)
   ext: "I film su Mozart, i film da Mozart, i film con musiche di Mozart - Copertina\
     \ flessibile \u2013 30 novembre 2017"
@@ -4692,7 +4389,6 @@
   title: Leonardo da Vinci e il suo megacervello
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8884906830:
-  ISBN-13: 978-8884906830
   de: Laura Lombardo Radice (Autore), Chiara Ingrao (Autore)
   ext: "Copertina flessibile \u2013 8 marzo 2005"
   image_path: saint-jean-lipion/chambre/biographies/978-8884906830.jpg
@@ -4707,7 +4403,6 @@
   title: Dizionario del pendolo di Foucault
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8886452731:
-  ISBN-13: 978-8886452731
   de: "Francesco Paolo Maulucci\_Vivolo (Autore)"
   ext: "Copertina flessibile \u2013 28 marzo 2013"
   image_path: saint-jean-lipion/chambre/enfer/978-8886452731.jpg
@@ -4715,7 +4410,6 @@
   title: Pompei - I graffiti d'amore
   where: /saint-jean-lipion/chambre/enfer
 978-8886468237:
-  ISBN-13: 978-8886468237
   de: Satyananda Paramahansa (Autore)
   ext: "Ediz. illustrata Copertina flessibile \u2013 Illustrato, 1 maggio 2002"
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-8886468237.jpg"
@@ -4730,7 +4424,6 @@
   title: Il movimento anarchico abruzzese 1907-1957
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 978-8895177472:
-  ISBN-13: 978-8895177472
   de: Stefania Campo (Autore)
   ext: "Le ricette di Andrea Camilleri Copertina flessibile \u2013 1 aprile 2009"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-8895177472.jpg"
@@ -4752,7 +4445,6 @@
   title: Nel moto apparente
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 978-8898301508:
-  ISBN-13: 978-8898301508
   de: Giuseppe Tucci (a cura di)
   ext: "Copertina flessibile \u2013 1 febbraio 1981"
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/978-8898301508.jpg"
@@ -4774,7 +4466,6 @@
   title: The Value of Culture - On the relationship between economics and arts
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
 978-9053564066:
-  ISBN-13: 978-9053564066
   de: Birgitta Steene (Author)
   ext: "Hardcover \u2013 9 Feb. 2014"
   image_path: saint-jean-lipion/chambre/cinema/978-9053564066.jpg
@@ -4789,7 +4480,6 @@
   title: Tristano morre
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
 979-1021030428:
-  ISBN-13: 979-1021030428
   de: Johann Chapoutot (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 27 septembre 2018"
   image_path: saint-jean-lipion/chambre/favourites/979-1021030428.jpg
@@ -4797,7 +4487,6 @@
   title: Comprendre le nazisme
   where: /saint-jean-lipion/chambre/favourites
 979-1021048904:
-  ISBN-13: 979-1021048904
   de: Emmanuel de Waresquiel (Auteur)
   ext: "Poche \u2013 6 mai 2021"
   image_path: saint-jean-lipion/chambre/biographies/979-1021048904.jpg
@@ -4805,7 +4494,6 @@
   title: "Fouch\xE9 - Les silences de la pieuvre"
   where: /saint-jean-lipion/chambre/biographies
 979-1022608381:
-  ISBN-13: 979-1022608381
   de: Christoph Hein (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 24 janvier 2019"
   image_path: saint-jean-lipion/chambre/favourites/979-1022608381.jpg
@@ -4813,7 +4501,6 @@
   title: "L'Ombre d'un p\xE8re"
   where: /saint-jean-lipion/chambre/favourites
 979-1023904178:
-  ISBN-13: 979-1023904178
   de: Camille Larbey (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 18 mars 2021"
   image_path: saint-jean-lipion/chambre/cinema/979-1023904178.jpg
@@ -4821,7 +4508,6 @@
   title: Marlene Dietrich - Celle qui avait la voix
   where: /saint-jean-lipion/chambre/cinema
 979-1027800209:
-  ISBN-13: 979-1027800209
   de: Stefan Zweig (Auteur)
   ext: "Broch\xE9 \u2013 16 avril 2015"
   image_path: saint-jean-lipion/chambre/rimbaud/979-1027800209.jpg
@@ -4829,7 +4515,6 @@
   title: Paul Verlaine
   where: /saint-jean-lipion/chambre/rimbaud
 979-1090216099:
-  ISBN-13: 979-1090216099
   de: "Cl\xE9mentine M\xE9lois"
   image_path: saint-jean-lipion/salon/perec/979-1090216099.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -4837,7 +4522,6 @@
     \ du 8 f\xE9vrier au 24 mars 2018"
   where: /saint-jean-lipion/salon/perec
 979-1095772132:
-  ISBN-13: 979-1095772132
   de: "B\xE9atrice Barbusse (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 13 octobre 2016"
   image_path: saint-jean-lipion/chambre/favourites/979-1095772132.jpg
@@ -4932,6 +4616,8 @@ boh11:
   ext: Edition originale
   image_path: saint-jean-lipion/salon/perec/boh11.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Les choses
   where: /saint-jean-lipion/salon/perec
 boh12:
@@ -4939,6 +4625,8 @@ boh12:
   de: Georges Perec (Auteur)
   image_path: saint-jean-lipion/salon/perec/boh12.webp
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Perec
   title: Entretien (avec Gabriel Simony)
   where: /saint-jean-lipion/salon/perec
 boh13:
@@ -5001,7 +4689,7 @@ boh2:
   de: Erus Sangiorgi, Marcella Brizzi
   image_path: "saint-jean-lipion/chambre/\xE9sot\xE9risme/boh2.jpeg"
   lan: "\U0001F1EE\U0001F1F9"
-  title: in caso di... Prontuario di rimedi naturali
+  title: "in caso di\u2026 Prontuario di rimedi naturali"
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 boh20:
   ASIN: B01EN52O8I
@@ -5152,7 +4840,7 @@ boh38:
     Suoi Personaggi.
   image_path: "saint-lazare-de-sav\xE8ne/salon/_7/boh38.jpg"
   lan: "\U0001F1EE\U0001F1F9"
-  title: Granelli di...
+  title: "Granelli di\u2026"
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
 boh39:
   de: Berenice Salvatore Finarelli
@@ -5188,12 +4876,11 @@ boh6:
   where: /saint-jean-lipion/chambre/lapleiade.etc
 boh7:
   ASIN: B0141G1U4S
-  ISBN: none
   de: Morris (Autor)
   ext: (Sarah Bernhardt, titre original)
   image_path: saint-jean-lipion/chambre/beaux-livres/boh7.jpg
   lan: "\U0001F1E9\U0001F1EA"
-  title: Lucky Luke - "Meine Onkel, die Daltons"
+  title: Lucky Luke - \"Meine Onkel, die Daltons\"
   where: /saint-jean-lipion/chambre/beaux-livres
 boh8:
   ISBN: none
