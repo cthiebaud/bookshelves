@@ -413,6 +413,13 @@
   lan: "\U0001F1EC\U0001F1E7"
   title: Dubliners
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
+978-0674055292:
+  de: Edgar Allan Poe (Author), Kevin J. Hayes (Editor), William Giraldi (Foreword)
+  ext: "Hardcover \u2013 Illustrated, October 26, 2015"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-0674055292.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  title: The Annotated Poe
+  where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-0679723165:
   de: Vladimir Nabokov (Author)
   ext: "Paperback \u2013 March 13, 1989"
@@ -556,11 +563,21 @@
   lan: "\U0001F1EC\U0001F1E7"
   title: Idle Days in Patagonia
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
+978-1316504864:
+  de: Peter Williams (Author)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-1316504864.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - Bach
+  title: Bach - A Musical Biography
+  where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-1371035907:
   de: Franz Kafka (Auteur)
   ext: "Poche \u2013 5 Mai 1982"
   image_path: saint-jean-lipion/chambre/kafka/978-1371035907.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: Journal
   where: /saint-jean-lipion/chambre/kafka
 978-1451681925:
@@ -848,6 +865,26 @@
   lan: "\U0001F1EB\U0001F1F7"
   title: "Anatomie de la Terreur - Le processus r\xE9volutionnaire 1787-1793"
   where: /saint-jean-lipion/chambre/biographies
+978-2070107933:
+  de: Franz Kafka (Auteur)
+  ext: "Reli\xE9 \u2013 26 novembre 1976"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-2070107933.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
+  title: "\u0152uvres compl\xE8tes (Edition de Claude David en 1976) I - L'Am\xE9\
+    rique - Le proc\xE8s - Le ch\xE2teau"
+  where: "/saint-lazare-de-sav\xE8ne/salon/random"
+978-2070109708:
+  de: Franz Kafka (Auteur)
+  ext: "Reli\xE9 \u2013 24 avril 1980"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-2070109708.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
+  title: "\u0152uvres compl\xE8tes (\xC9dition de Claude David en 1980) II - R\xE9\
+    cits et fragments narratifs"
+  where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-2070110674:
   de: "G\xE9rard de Nerval (Auteur)"
   ext: "Reli\xE9 \u2013 12 septembre 1989"
@@ -855,6 +892,16 @@
   lan: "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres compl\xE8tes, tome 1"
   where: /saint-jean-lipion/chambre/lapleiade.etc
+978-2070110841:
+  de: Franz Kafka (Auteur)
+  ext: "Reli\xE9 \u2013 23 octobre 1984"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-2070110841.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
+  title: "\u0152uvres compl\xE8tes (Edition de Claude David en 1984) )II - Journaux\
+    \ - Lettres \xE0 sa famille et a\xE0 ses amis"
+  where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-2070114757:
   de: Gustave Flaubert
   ext: "Reli\xE9 \u2013 20 septembre 2001"
@@ -944,7 +991,10 @@
   ext: "Reli\xE9 \u2013 11 octobre 2018"
   image_path: saint-jean-lipion/chambre/kafka/978-2070144327.jpg
   lan: "\U0001F1EB\U0001F1F7"
-  title: "\u0152uvres compl\xE8tes, II - Romans"
+  tags:
+  - Kafka
+  title: "\u0152uvres compl\xE8tes (Sous la direction de Jean-Pierre Lefebvre) II\
+    \ - Romans - Le Disparu [Amerika] - Le Proc\xE8s - Le Ch\xE2teau"
   where: /saint-jean-lipion/chambre/kafka
 978-2070145614:
   de: Mona Ozouf (Auteur)
@@ -1039,6 +1089,15 @@
   lanOriginal: "\U0001F1EE\U0001F1F9"
   title: "Po\xE8mes choisis 1916-1980"
   where: "/saint-lazare-de-sav\xE8ne/salon/po\xE9sie"
+978-2070338641:
+  de: Jean-Pierre Morel (Auteur)
+  ext: "(Essai et dossier) Poche \u2013 29 mai 2008"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-2070338641.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
+  title: "Le Ch\xE2teau de Franz Kafka"
+  where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-2070350421:
   de: Nathalie Sarraute (Auteur)
   ext: "Broch\xE9 \u2013 31 d\xE9cembre 1964"
@@ -1064,6 +1123,8 @@
   de: Franz Kafka
   image_path: "saint-lazare-de-sav\xE8ne/salon/_4/978-2070354795.jpg"
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "Lettres \xE0 Milena"
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-2070360284:
@@ -1088,11 +1149,13 @@
   title: Illusions perdues
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070362844:
-  de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)s
+  de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)
   ext: "Poche \u2013 10 novembre 1972"
   image_path: saint-jean-lipion/chambre/kafka/978-2070362844.webp
   lan: "\U0001F1EB\U0001F1F7"
-  title: "Le ch\xE2teau"
+  tags:
+  - Kafka
+  title: "Le ch\xE2teau - Alexandre Vialatte (Traduction)"
   where: /saint-jean-lipion/chambre/kafka
 978-2070364398:
   de: Italo Svevo (Auteur)
@@ -1271,6 +1334,8 @@
   ext: "Libro \u2013 4 ottobre 2006"
   image_path: "saint-lazare-de-sav\xE8ne/salon/poches/978-2070422067.jpg"
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "Lettre au p\xE8re"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
 978-2070439805:
@@ -1432,6 +1497,8 @@
   de: Mark Crick (Auteur)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2080690401.jpg"
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: La Soupe de Kafka
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2080700209:
@@ -1456,6 +1523,15 @@
   lan: "\U0001F1EB\U0001F1F7"
   title: Romans et contes
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
+978-2080704283:
+  de: Franz Kafka (Auteur)
+  ext: "Poche \u2013 octobre 1984"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-2080704283.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
+  title: "Le Ch\xE2teau - Bernard Lortholary (Traduction)"
+  where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-2080810588:
   de: Sun Tzu (Auteur)
   ext: "Poche \u2013 4 janvier 1999"
@@ -1510,6 +1586,8 @@
   ext: "Broch\xE9 \u2013 Grand livre, 26 f\xE9vrier 2011"
   image_path: saint-jean-lipion/chambre/kafka/978-2081255258.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "Kafka, l'\xE9ternel fianc\xE9"
   where: /saint-jean-lipion/chambre/kafka
 978-2081413146:
@@ -1824,6 +1902,8 @@
   ext: "Broch\xE9 \u2013 18 f\xE9vrier 2004"
   image_path: saint-jean-lipion/chambre/kafka/978-2234056589.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "Franz Kafka, r\xEAveur insoumis"
   where: /saint-jean-lipion/chambre/kafka
 978-2234075610:
@@ -1954,6 +2034,8 @@
   image_path: saint-jean-lipion/chambre/kafka/978-2253047773.jpg
   lan: "\U0001F1E9\U0001F1EA"
   lan2: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "Die Verwandlung / La m\xE9tamorphose"
   where: /saint-jean-lipion/chambre/kafka
 978-2253126164:
@@ -2263,6 +2345,8 @@
   ext: "Broch\xE9 \u2013 5 novembre 2021"
   image_path: saint-jean-lipion/chambre/kafka/978-2370840073.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "\xC0 Milena"
   where: /saint-jean-lipion/chambre/kafka
 978-2370840790:
@@ -2270,6 +2354,8 @@
   ext: "Paperback \u2013 January 17, 2020"
   image_path: saint-jean-lipion/chambre/kafka/978-2370840790.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: Journaux
   where: /saint-jean-lipion/chambre/kafka
 978-2371190078:
@@ -2528,6 +2614,8 @@
   ext: "Paperback \u2013 March 9, 2023"
   image_path: saint-jean-lipion/chambre/kafka/978-2749173979.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "Kafka - Tome 1 - Le temps des d\xE9cisions"
   where: /saint-jean-lipion/chambre/kafka
 978-2757820322:
@@ -2538,11 +2626,13 @@
   title: "Mes \xE9toiles noires - De Lucy \xE0 Barack Obama"
   where: /saint-jean-lipion/chambre-paul/football
 978-2757825730:
-  de: Franz Kafka (Auteur), Georges-Arthur Goldschmidt (Traducteur)
+  de: Franz Kafka (Auteur), Georges-Arthur Goldschmidt (Traduction)
   ext: "Poche \u2013 17 novembre 2011"
   image_path: saint-jean-lipion/chambre/kafka/978-2757825730.jpg
   lan: "\U0001F1EB\U0001F1F7"
-  title: "Le ch\xE2teau"
+  tags:
+  - Kafka
+  title: "Le ch\xE2teau - Georges-Arthur Goldschmidt (Traduction)"
   where: /saint-jean-lipion/chambre/kafka
 978-2757841938:
   de: Ian Kershaw (Auteur)
@@ -2578,6 +2668,8 @@
   ext: "Reli\xE9 \u2013 8 septembre 2021"
   image_path: saint-jean-lipion/chambre/kafka/978-2812401268.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "La Complication de l'existence - Essai sur Kafka, Platonov et C\xE9line"
   where: /saint-jean-lipion/chambre/kafka
 978-2818021187:
@@ -2739,6 +2831,15 @@
   lan: "\U0001F1EB\U0001F1F7"
   title: "Rh\xE2\xE2 lovely, tome 2"
   where: /saint-jean-lipion/chambre/beaux-livres
+978-2858502523:
+  de: Centre George Pompidou - Collectif () Yasha David (Sous la direction de)
+  ext: "Broch\xE9 \u2013 22 juin 1984"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2858502523.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
+  title: "Le Si\xE8cle de Kafka"
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-2858504718:
   de: Collectif
   ext: "Collection \"Cahiers Pour un temps\" - Broch\xE9"
@@ -2965,6 +3066,15 @@
   lan: "\U0001F1EB\U0001F1F7"
   title: "Eloge du d\xE9sir sexuel"
   where: /saint-jean-lipion/chambre/enfer
+978-3100381354:
+  de: Franz Kafka (Autor), Malcolm Pasley (Nachwort)
+  ext: "Roman Gebundene Ausgabe \u2013 1. Mai 1982"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-3100381354.jpg"
+  lan: "\U0001F1E9\U0001F1EA"
+  tags:
+  - Kafka
+  title: "Das Schlo\xDF"
+  where: "/saint-lazare-de-sav\xE8ne/salon/random"
 978-3125556102:
   de: Wolf Dietrich Schnurre (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1990"
@@ -2984,6 +3094,8 @@
   ext: "Roman Taschenbuch \u2013 1. Juni 2008"
   image_path: saint-jean-lipion/chambre/kafka/978-3596181162.jpg
   lan: "\U0001F1E9\U0001F1EA"
+  tags:
+  - Kafka
   title: "Das Schlo\xDF"
   where: /saint-jean-lipion/chambre/kafka
 978-3640483419:
@@ -3025,6 +3137,8 @@
   ext: "Poche \u2013 18 juin 1982"
   image_path: saint-jean-lipion/chambre/kafka/978-8207036074.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "La m\xE9tamorphose"
   where: /saint-jean-lipion/chambre/kafka
 978-8804283195:
@@ -3221,6 +3335,8 @@
   ext: "Copertina flessibile \u2013 4 ottobre 2023"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_8/978-8806139834.jpeg"
   lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - Kafka
   title: Il processo
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-8806146511:
@@ -4309,8 +4425,10 @@
 978-8877683984:
   de: Franz Kafka (Autore), R. Paoli (Traduttore)
   ext: "Copertina flessibile \u2013 19 novembre 2003"
-  image_path: saint-jean-lipion/chambre/kafka/978-8877683984.png
+  image_path: saint-jean-lipion/chambre/kafka/978-8877683984.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - Kafka
   title: Meditazione
   where: /saint-jean-lipion/chambre/kafka
 978-8877828590:
@@ -4778,6 +4896,8 @@ boh3:
   ext: "Poche \u2013 16 juillet 1973"
   image_path: saint-jean-lipion/chambre/kafka/boh3.jpeg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "Le proc\xE8s"
   where: /saint-jean-lipion/chambre/kafka
 boh30:
@@ -4855,6 +4975,8 @@ boh4:
   ext: "Poche \u2013 25 ao\xFBt 1972"
   image_path: saint-jean-lipion/chambre/kafka/boh4.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
   title: "La colonie p\xE9nitentiaire et autres r\xE9cits"
   where: /saint-jean-lipion/chambre/kafka
 boh5:

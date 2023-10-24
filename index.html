@@ -101,15 +101,18 @@
             let _pt = 0
             let _sp = 0
             for (const property in entries) {
-                let skip = false
+                const enableSkip = undefined // "Kafka" // "Perec" // 
+                let skip = typeof enableSkip !== "undefined"
                 if (typeof entries[property][1].tags !== "undefined") {
-                    if (entries[property][1].tags.includes("Perec")) {
-                    }
+                    if (enableSkip) {
+                        skip = !entries[property][1].tags.includes(enableSkip)
+                    } 
                     if (entries[property][1].tags.includes("verboten")) {
                         skip = true
                         console.log("SKIP", entries[property][1].de, entries[property][1].tags)
                     }
                 }
+
                 if (!skip) {
                     const entry = entries[property][1]
                     blend(entry)
