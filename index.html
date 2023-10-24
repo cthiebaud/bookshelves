@@ -41,23 +41,77 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
     <script>
         const container = document.getElementById("container");
+        let entries
+
+        class Counter {
+            total = 0;
+            sgl = 0;
+            slds = 0;
+            en = 0;
+            it = 0;
+            fr = 0;
+            de = 0;
+            pt = 0;
+            sp = 0;
+            count = (entry) => {
+                switch (entry.lan) {
+                    case '🇬🇧':
+                        this.en++
+                        break;
+                    case '🇮🇹':
+                        this.it++
+                        break;
+                    case '🇫🇷':
+                        this.fr++
+                        break;
+                    case '🇩🇪':
+                        this.de++
+                        break;
+                    case '🇵🇹':
+                        this.pt++
+                        break;
+                    case '🇪🇸':
+                        this.sp++
+                        break;
+                    default:
+                        console.error("missing lan property", entry);
+                }
+                if (entry.where.includes("lipion")) {
+                    this.sgl++
+                } else {
+                    this.slds++
+                }
+                this.total++
+            };
+
+            display = () => {
+                document.getElementById("howmuch").innerHTML = `${this.total}`
+                document.getElementById("howmuch2").innerHTML = `🇫🇷\u00A0${this.fr}\u00A0\u00A0\u00A0🇮🇹\u00A0${this.it}\u00A0\u00A0\u00A0🇬🇧\u00A0${this.en}\u00A0\u00A0\u00A0🇩🇪\u00A0${this.de}\u00A0\u00A0\u00A0🇵🇹\u00A0${this.pt}\u00A0\u00A0\u00A0🇪🇸\u00A0${this.sp}\u00A0\u00A0\u00A0⁞\u00A0\u00A0\u00A0↑\u00A0${this.slds}\u00A0\u00A0\u00A0↓\u00A0${this.sgl}`
+            }
+
+        }
 
         function selectOrUnselectTag(tag, className) {
             const figures = document.querySelectorAll('figure');
+            const c = new Counter();
             if (className.includes('active')) {
                 const taggeds = document.getElementsByClassName(tag);
                 for (const figure of figures) {
                     figure.style.display = "none"
                 }
                 for (const tagged of taggeds) {
+                    c.count(entries[tagged.dataset.index][1])
                     tagged.style.display = "inline-block"
                 }
             } else {
                 for (const figure of figures) {
+                    c.count(entries[figure.dataset.index][1])
                     figure.style.display = "inline-block"
                 }
             }
+            c.display()
         }
+
         kafka.addEventListener("click", function (e) {
             perec.classList.remove("active");
             selectOrUnselectTag("Kafka", this.className)
@@ -67,8 +121,9 @@
             selectOrUnselectTag("Perec", this.className)
         });
 
-        function blend(property) {
+        function blend(index, property) {
             const fig = document.createElement("figure");
+            fig.dataset.index = index
             fig.classList.add("figure")
             fig.style = "padding: .4rem; max-width: 9.4rem;"
             for (const tagIndex in property.tags) {
@@ -120,7 +175,7 @@
         function updateDisplay(text) {
             const doc = jsyaml.load(text, 'utf8')
 
-            const entries = Object.entries(doc);
+            entries = Object.entries(doc);
 
             entries.sort((a, b) => {
                 const nameA = a[1].de.toUpperCase().split(/ \(/)[0]
@@ -145,15 +200,7 @@
                 return titleA.localeCompare(titleB)
             })
 
-            let count = 0
-            let _sgl = 0
-            let _slds = 0
-            let _en = 0
-            let _it = 0
-            let _fr = 0
-            let _de = 0
-            let _pt = 0
-            let _sp = 0
+            const c = new Counter();
             for (const property in entries) {
                 const enableSkip = undefined // "Kafka" // "Perec" // 
                 let skip = typeof enableSkip !== "undefined"
@@ -169,43 +216,14 @@
 
                 if (!skip) {
                     const entry = entries[property][1]
-                    blend(entry)
-                    switch (entry.lan) {
-                        case '🇬🇧':
-                            _en++
-                            break;
-                        case '🇮🇹':
-                            _it++
-                            break;
-                        case '🇫🇷':
-                            _fr++
-                            break;
-                        case '🇩🇪':
-                            _de++
-                            break;
-                        case '🇵🇹':
-                            _pt++
-                            break;
-                        case '🇪🇸':
-                            _sp++
-                            break;
-                        default:
-                            console.error("missing lan property", entry);
-                    }
-                    if (entry.where.includes("lipion")) {
-                        _sgl++
-                    } else {
-                        _slds++
-                    }
-                    count++
+                    blend(property, entry)
+                    c.count(entry)
                 } else {
                     // console.log(entries[property][1])
                 }
 
             }
-            document.getElementById("howmuch").innerHTML = `${count}`
-            document.getElementById("howmuch2").innerHTML = `🇫🇷\u00A0${_fr}\u00A0\u00A0\u00A0🇮🇹\u00A0${_it}\u00A0\u00A0\u00A0🇬🇧\u00A0${_en}\u00A0\u00A0\u00A0🇩🇪\u00A0${_de}\u00A0\u00A0\u00A0🇵🇹\u00A0${_pt}\u00A0\u00A0\u00A0🇪🇸\u00A0${_sp}\u00A0\u00A0\u00A0⁞\u00A0\u00A0\u00A0↑\u00A0${_slds}\u00A0\u00A0\u00A0↓\u00A0${_sgl}`
-
+            c.display()
         }
 
         function fetchData() {
