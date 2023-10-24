@@ -34,7 +34,6 @@
             figcaption.style = "width: 100%;"
 
             let lan = property['lan'] || '';
-            if (lan) lan = lan - " "
             let author = property['de'].split(/ \(/)[0];
             let title = property['title']
             let where = property['where']
@@ -108,7 +107,7 @@
                     }
                     if (entries[property][1].tags.includes("verboten")) {
                         skip = true
-                        console.log("SKIP", entries[property][1], entries[property][1].tags)
+                        console.log("SKIP", entries[property][1].de, entries[property][1].tags)
                     }
                 }
                 if (!skip) {
