@@ -6,12 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bookshelves</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        figure:after {
+            content: "";
+            /* This is necessary for the pseudo element to work. */
+            display: block;
+            /* This will put the pseudo element on its own line. */
+            margin: 0 auto;
+            /* This will center the border. */
+            width: 84%;
+            /* Change this to whatever width you want. */
+            padding-top: 20px;
+            /* This creates some space between the element and the border. */
+            border-bottom: 1px solid lightgray;
+            /* This creates the border. Replace black with whatever color you want. */
+        }
+
+        .figure-img {
+            margin-bottom: 0.25rem;
+        }
+    </style>
 </head>
 
 <body>
     <div id="container" class="container-fluid">
         <h1 id="howmuch" style="text-align: center;">…</h1>
-        <h4 id="howmuch2" style="text-align: center;">…</h4>
+        <h5 id="howmuch2" style="text-align: center;">…</h5>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
@@ -21,7 +41,7 @@
         function blend(property) {
             const fig = document.createElement("figure");
             fig.classList.add("figure")
-            fig.style = "margin: .4rem; max-width: 9.4rem;"
+            fig.style = "padding: .4rem; max-width: 9.4rem;"
 
             const img = document.createElement("img");
             img.src = property['image_path']
@@ -31,7 +51,7 @@
             const figcaption = document.createElement("figcaption");
             figcaption.classList.add("figure-caption")
             figcaption.classList.add("text-wrap")
-            figcaption.style = "width: 100%;"
+            figcaption.style = "width: 100%;" // border-bottom: 1px solid lightgray;
 
             let lan = property['lan'] || '';
             let author = property['de'].split(/ \(/)[0];
@@ -46,8 +66,8 @@
             if (where.includes("lipion")) {
                 const float1 = document.createElement("span");
                 float1.classList.add("float-end")
-                float1.style = "color: green"
-                const flag = document.createTextNode('⬤');
+                float1.style = "color: #b9e537; font-size: 14pt;"
+                const flag = document.createTextNode('⧭'); // 
                 float1.appendChild(flag)
                 figcaption.appendChild(float1)
             }
@@ -56,7 +76,7 @@
             float2.classList.add("float-end")
             float2.appendChild(flagE)
             float2.style = "font-size: larger;"
-            titleSPAN.appendChild(float2)
+            // titleSPAN.appendChild(float2)
             figcaption.appendChild(authorE)
             figcaption.appendChild(document.createElement("br"))
             figcaption.appendChild(titleSPAN)
@@ -94,6 +114,8 @@
             })
 
             let count = 0
+            let _sgl = 0
+            let _slds = 0
             let _en = 0
             let _it = 0
             let _fr = 0
@@ -106,7 +128,7 @@
                 if (typeof entries[property][1].tags !== "undefined") {
                     if (enableSkip) {
                         skip = !entries[property][1].tags.includes(enableSkip)
-                    } 
+                    }
                     if (entries[property][1].tags.includes("verboten")) {
                         skip = true
                         console.log("SKIP", entries[property][1].de, entries[property][1].tags)
@@ -138,6 +160,11 @@
                         default:
                             console.error("missing lan property", entry);
                     }
+                    if (entry.where.includes("lipion")) {
+                        _sgl++
+                    } else {
+                        _slds++
+                    }
                     count++
                 } else {
                     // console.log(entries[property][1])
@@ -145,7 +172,7 @@
 
             }
             document.getElementById("howmuch").innerHTML = `${count}`
-            document.getElementById("howmuch2").innerHTML = `🇫🇷 ${_fr} 🇮🇹 ${_it} 🇬🇧 ${_en} 🇩🇪 ${_de} 🇵🇹 ${_pt} 🇪🇸 ${_sp} `
+            document.getElementById("howmuch2").innerHTML = `🇫🇷\u00A0${_fr}\u00A0\u00A0\u00A0🇮🇹\u00A0${_it}\u00A0\u00A0\u00A0🇬🇧\u00A0${_en}\u00A0\u00A0\u00A0🇩🇪\u00A0${_de}\u00A0\u00A0\u00A0🇵🇹\u00A0${_pt}\u00A0\u00A0\u00A0🇪🇸\u00A0${_sp}\u00A0\u00A0\u00A0⁞\u00A0\u00A0\u00A0↑\u00A0${_slds}\u00A0\u00A0\u00A0↓\u00A0${_sgl}`
 
         }
 
