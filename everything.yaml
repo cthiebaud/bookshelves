@@ -2583,6 +2583,15 @@
   - rimbaud
   title: "\u0152uvres po\xE9tiques compl\xE8tes"
   where: /saint-jean-lipion/chambre/rimbaud
+978-2226038128:
+  de: "Collectif - Albin Michel (\xC9diteur)"
+  ext: "Reli\xE9 \u2013 1 janvier 1984"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2226038128.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: La peinture flamande - Kunsthistorisches museum de Vienne
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-2226141361:
   de: Dominique Auzel (Auteur)
   ext: "Broch\xE9 \u2013 2 septembre 2004"
@@ -3786,7 +3795,7 @@
   title: Bourgogne - Grandeur Nature
   where: /saint-jean-lipion/chambre/beaux-livres
 978-2852299566:
-  de: Collectif (Auteur), Michel Lardy (Auteur)
+  de: Encyclopaedia Universalis (Editeur), Michel Lardy (Auteur)
   ext: "Reli\xE9 \u2013 3 novembre 1994"
   image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2852299566.jpg"
   lan: "\U0001F1EB\U0001F1F7"
@@ -5435,6 +5444,15 @@
   - _9
   title: Poems Copertina
   where: "/saint-lazare-de-sav\xE8ne/salon/_9"
+978-8845174131:
+  de: David West Reynolds (Testi di)
+  ext: "Ediz. illustrata Copertina rigida \u2013 Illustrato, 8 settembre 1999"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-8845174131.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - arts
+  title: Star Wars - Episodio I - Guida ai personaggi
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-8845223181:
   de: Umberto Eco (Autore)
   ext: Copertina rigida
@@ -5828,6 +5846,15 @@
   - _3
   title: Sull'acqua. Da St. Tropez a Montecarlo
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
+978-8872920961:
+  de: Ralph Gibson (Autore)
+  ext: "Antologia fotografica Copertina rigida \u2013 Illustrato, 15 gennaio 1987"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-8872920961.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - arts
+  title: Tropismo
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-8873078418:
   de: Luca Novelli (Autore)
   ext: "Copertina flessibile \u2013 1 ottobre 2008"
