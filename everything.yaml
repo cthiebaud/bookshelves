@@ -848,6 +848,14 @@
   - poches
   title: "Le plan\xE9tarium"
   where: "/saint-lazare-de-sav\xE8ne/salon/poches"
+978-0847814275:
+  de: Jean-Yves Bosseur
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-0847814275.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: "Musique - passion d\u2019artistes"
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-0853424062:
   de: John Millington Synge (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1986"
@@ -2288,6 +2296,17 @@
   - cinema
   title: Tout Truffaut
   where: /saint-jean-lipion/chambre/cinema
+978-2203004047:
+  de: "Beno\xEEt Peeters (Auteur)"
+  ext: "exposition, Mus\xE9e d'Ixelles, 23 d\xE9cembre 1988-15 janvier 1989, Angoul\xEA\
+    me, Mus\xE9e des beaux-arts, 26 ... 1989, Paris, H\xF4tel de Sens, 4 mars-4 mai\
+    \ 1989 Reli\xE9 \u2013 1 janvier 1996"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2203004047.jpeg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: "Herg\xE9 dessinateur - 60 ans d'aventures de Tintin"
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-2203011427:
   de: "Herg\xE9 (Auteur, Dessins, R\xE9dacteur)"
   ext: "Reli\xE9 \u2013 25 octobre 2001"
@@ -3766,6 +3785,15 @@
   - beaux-livres
   title: Bourgogne - Grandeur Nature
   where: /saint-jean-lipion/chambre/beaux-livres
+978-2852299566:
+  de: Collectif (Auteur), Michel Lardy (Auteur)
+  ext: "Reli\xE9 \u2013 3 novembre 1994"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2852299566.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: "Le grand atlas de g\xE9ographie"
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-2858150557:
   de: Marcel Gotlib (Auteur)
   ext: "Reli\xE9 \u2013 7 janvier 1993"
@@ -3999,6 +4027,15 @@
   - rimbaud
   title: "L'\u0153uvre int\xE9grale manuscrite"
   where: /saint-jean-lipion/chambre/rimbaud
+978-2909808390:
+  de: Bodmer (Auteur)
+  ext: "Broch\xE9 \u2013 20 mars 2000"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2909808390.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: Les Indiens
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-2913563827:
   de: "Thierry Leguay (Auteur), Fran\xE7oise Rey (Auteur)"
   ext: "Reli\xE9 \u2013 1 janvier 1999"
@@ -5480,6 +5517,17 @@
   - _8
   title: Il signore di Parigi
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
+978-8845910074:
+  de: Bruce Chatwin
+  ext: "Traduzione di Clara Morena - Fuori collana, 37 - 1993, 3\xAA ediz., pp. 162,\
+    \ 101 ill. a colori"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-8845910074.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - arts
+  title: "L\u2019occhio assoluto"
+  url: https://adelphi.it/libro/9788845923104
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-8845911064:
   de: Wystan Hugh Auden (Autore), G. Forti (Traduttore)
   ext: "Copertina flessibile \u2013 19 novembre 1994"
@@ -5986,6 +6034,24 @@
   - _7
   title: Il movimento anarchico abruzzese 1907-1957
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
+978-8888108223:
+  de: Claudio Betti (Autore), Antonio Castronuovo (Autore), Mario Cresci (Autore)
+  ext: "Copertina rigida \u2013 1 gennaio 2001"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-8888108223.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - arts
+  title: "Tea - Vie e virt\xF9 di una foglia esotica"
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
+978-8890772030:
+  de: Guido Moretti (Autore)
+  ext: "Copertina rigida - Edizioni Tipoarte Bologna \u2013 2013"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-8890772030.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - arts
+  title: Bologna - taccuino di viaggio / travel notebook
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-8895177472:
   de: Stefania Campo (Autore)
   ext: "Le ricette di Andrea Camilleri Copertina flessibile \u2013 1 aprile 2009"
@@ -6031,6 +6097,15 @@
   - _3
   title: Requiem per un'ombra
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
+978-8899920012:
+  de: Guido Moretti (Autore)
+  ext: "Copertina rigida - Edizioni Tipoarte Bologna \u2013 2016"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-8899920012.png"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - arts
+  title: Bologna - San Petronio - taccuino di viaggio
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-9053562185:
   de: Arjo Klamer (Editor)
   ext: "Hardcover \u2013 June 1, 1997"
