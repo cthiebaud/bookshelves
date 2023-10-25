@@ -148,9 +148,9 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_7/978-0140055214.jpg"
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _7
+  - _9
   title: Portnoy's Complaint
-  where: "/saint-lazare-de-sav\xE8ne/salon/_7"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-0140129533:
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0140129533.webp
@@ -443,9 +443,9 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_3/978-0349113029.jpg"
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _3
+  - _9
   title: Bandits
-  where: "/saint-lazare-de-sav\xE8ne/salon/_3"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-0367277291:
   de: Tobias Pontara (Auteur)
   ext: "Reli\xE9 \u2013 4 d\xE9cembre 2019"
@@ -4171,9 +4171,9 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/_4/978-8804347286.webp"
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _4
+  - _9
   title: Poesie
-  where: "/saint-lazare-de-sav\xE8ne/salon/_4"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-8804380275:
   de: Italo Calvino (Autore)
   ext: Copertina flessibile
@@ -4199,9 +4199,9 @@
   lan: "\U0001F1EE\U0001F1F9"
   lanOriginal: "\U0001F1EC\U0001F1E7"
   tags:
-  - _4
+  - _9
   title: Cantos scelti
-  where: "/saint-lazare-de-sav\xE8ne/salon/_4"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-8804425540:
   de: Italo Calvino (Autore)
   ext: Copertina flessibile
@@ -4299,9 +4299,9 @@
   image_path: "saint-lazare-de-sav\xE8ne/salon/random/978-8804626060.jpg"
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - random
+  - _4
   title: Dizionario delle cose perdute
-  where: "/saint-lazare-de-sav\xE8ne/salon/random"
+  where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 978-8804678038:
   de: Antonia Fraser (Author)
   ext: "La solitudine di una regina - Paperback \u2013 May 5, 2017"
