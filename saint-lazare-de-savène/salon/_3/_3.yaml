@@ -3,6 +3,8 @@
   ext: Copertina flessibile – 21 maggio 2007
   de: Wislawa Szymborska (Autore), P. Marchesani (a cura di)
   lan: 🇮🇹
+  tags:
+    - poésie  
 
 978-8838922497:
   title: L'arte del dubbio
@@ -15,42 +17,56 @@
   ext: Copertina flessibile – 18 ottobre 2012
   de: Andrea Camilleri (Autore)
   lan: 🇮🇹
+  tags:
+    - polars  
 
 978-8838937965:
   title: Il metodo Catalanotti
   ext: Copertina flessibile – 31 maggio 2018
   de: Andrea Camilleri (Autore)
   lan: 🇮🇹
+  tags:
+    - polars  
 
 978-8838933448:
   title: La giostra degli scambi
   ext: Copertina flessibile – 30 aprile 2015
   de: Andrea Camilleri (Autore)
   lan: 🇮🇹
+  tags:
+    - polars  
 
 978-8838932533:
   title: Morte in mare aperto
   ext: e altre indagini del giovane Montalbano Copertina flessibile – 23 ottobre 2014
   de: Andrea Camilleri (Autore)
   lan: 🇮🇹
+  tags:
+    - polars  
 
 978-8838930539:
   title: Un covo di vipere
   ext: Copertina flessibile – 30 maggio 2013
   de: Andrea Camilleri (Autore)
   lan: 🇮🇹
+  tags:
+    - polars  
 
 978-8838931918:
   title: La piramide di fango
   ext: Copertina flessibile – 29 maggio 2014
   de: Andrea Camilleri (Autore)
   lan: 🇮🇹
+  tags:
+    - polars  
 
 978-8838927058:
   title: Una lama di luce
   ext: Copertina flessibile – 7 giugno 2012
   de: Andrea Camilleri (Autore)
   lan: 🇮🇹
+  tags:
+    - polars  
 
 978-3125556102:
   title: Die Tat / Ein Fall für Herrn Schmidt
@@ -179,6 +195,8 @@ boh26:
   ext: Copertina flessibile – 24 gennaio 2019
   de: Ilaria Tuti (Autore)
   lan: 🇮🇹
+  tags: 
+    - polars
 
 978-8831728508:
   title: Cartoline dalla fine del mondo
@@ -204,6 +222,7 @@ boh27:
   ext: Copertina flessibile – 26 gennaio 2011
   de: John Ajvide Lindqvist (Autore), Giorgio Puleo (Traduttore)
   lan: 🇮🇹
+    - horror
 
 978-2872670314:
   title: Dinddra
@@ -216,6 +235,8 @@ boh27:
   ext: Copertina flessibile – 1 gennaio 1997
   de: Arthur Rimbaud (Autore)
   lan: 🇮🇹
+  tags:
+    - poésie
 
 boh28:
   ASIN: B00KU2SOSI 

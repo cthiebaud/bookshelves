@@ -66,6 +66,8 @@
   ext: Paperback – January 1, 2012
   de: Giovanna Rosadini (Editor)
   lan: 🇮🇹
+  tags:
+    - poésie  
 
 978-8804678038:
   title: Maria Antonietta
@@ -141,17 +143,23 @@ boh19:
   title: La Divina Commedia - Inferno
   de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
   lan: 🇮🇹
+  tags:
+    - poésie  
 
 boh20: 
   ASIN: B01EN52O8I
   title: La Divina Commedia - Purgatorio
   de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
   lan: 🇮🇹
+  tags:
+    - poésie  
 
 978-2082115254:
   title : La Divine Comédie - L'Enfer
   de: Dante Alighieri (Auteur), Jacqueline Risset (Préface, Traduction)
   lan: 🇫🇷
+  tags:
+    - poésie  
 
 978-2072743863:
   title: Terminus Malaussène

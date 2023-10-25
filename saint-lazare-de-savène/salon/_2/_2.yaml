@@ -71,9 +71,11 @@ boh22:
   lan: 🇮🇹
 
 boh23: 
-  title: poesia italiana contemporanea 1909 - 1959
+  title: Poesia italiana contemporanea 1909 - 1959
   de: Giacinto Spagnoletti (a cura di)
   lan: 🇮🇹
+  tags:
+    - poésie  
 
 978-8847711822:
   title: Cavalieri, armi e amori

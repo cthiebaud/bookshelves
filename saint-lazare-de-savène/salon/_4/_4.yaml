@@ -33,6 +33,8 @@ boh31:
   ext: Poche – 1 Janvier 1964
   de: Arthur Rimbaud (Auteur)
   lan: 🇫🇷
+  tags:
+    - poésie
 
 978-2080701114:
   title: Romans et contes
@@ -52,6 +54,8 @@ ASIN-B0098MD4B8:
   ext: Broché – 12 septembre 1999
   de: Donatien Alphonse François de Sade (Auteur)
   lan: 🇫🇷
+  tags: 
+    - enfer
 
 978-2264005878:
   title: Gradus - Les procédés littéraires
@@ -97,6 +101,8 @@ ASIN-B0098MD4B8:
   ext: Copertina flessibile – 1 gennaio 1971
   de: Pier Paolo Pasolini (Autore)
   lan: 🇮🇹
+  tags:
+    - poésie
 
 978-8817066969:
   title: La terra desolata
@@ -104,34 +110,46 @@ ASIN-B0098MD4B8:
   de: Thomas S. Eliot (Autore), A. Serpieri (a cura di)
   lan: 🇮🇹
   lanOriginal: 🇬🇧
+  tags:
+    - poésie
 
 ASIN-B000NNBJZ4:
   title: Canti
   de: Giacomo Leopardi (Author)
   lan: 🇮🇹
+  tags:
+    - poésie
 
 978-8811519782:
   title: Le ceneri di Gramsci
   ext: Copertina flessibile – 1 gennaio 1993
   de: Pier Paolo Pasolini (Autore)
   lan: 🇮🇹
+  tags:
+    - poésie
 
 978-8804448389:
   title: Lady Lazarus e altre poesie
   de: Sylvia Plath (Autore)
   lan: 🇮🇹
+  tags:
+    - poésie
 
 978-8804472940:
   title: Conoscenza della notte
   ext: e altre poesie
   de: Robert Frost (Autore)
   lan: 🇮🇹
+  tags:
+    - poésie
 
 978-8845911064:
   title: La verità, vi prego, sull'amore
   ext: Copertina flessibile – 19 novembre 1994
   de: Wystan Hugh Auden (Autore), G. Forti (Traduttore)
   lan: 🇮🇹
+  tags:
+    - poésie
 
 ASIN-B00F47MHU0:
   title: Opere complete
@@ -154,6 +172,8 @@ ASIN-B00340LFAM:
   title : Verlaine par lui-même
   de: Jacques Henry Bornecque (Auteur)
   lan: 🇫🇷
+  tags:
+    - poésie
 
 978-2859566265:
   title: Les aventures d'Antoine Doinel

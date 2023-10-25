@@ -33,11 +33,12 @@
         <h1 id="howmuch" style="text-align: center;">…</h1>
         <h5 id="howmuch2" style="text-align: center;">…</h5>
         <h6 style="text-align: center;">
-            <a href="#" id="kafka" class="btn" role="button" data-bs-toggle="button">Kafka</a>
-            <a href="#" id="perec" class="btn" role="button" data-bs-toggle="button">Perec</a>
-            <a href="#" id="cinema" class="btn" role="button" data-bs-toggle="button">Cinéma</a>
-            <a href="#" id="bach" class="btn" role="button" data-bs-toggle="button">Bach</a>
-            <a href="#" id="polars" class="btn" role="button" data-bs-toggle="button">Polars</a>
+            <a href="#" id="kafka" class="btn" role="button" data-bs-toggle="button" data-tags="Kafka">Kafka</a>
+            <a href="#" id="perec" class="btn" role="button" data-bs-toggle="button" data-tags="Perec">Perec</a>
+            <a href="#" id="cinema" class="btn" role="button" data-bs-toggle="button" data-tags="cinema">Cinéma</a>
+            <a href="#" id="bach" class="btn" role="button" data-bs-toggle="button" data-tags="Bach">Bach</a>
+            <a href="#" id="polars" class="btn" role="button" data-bs-toggle="button" data-tags="polars pdjames">Polar</a>
+            <a href="#" id="poesie" class="btn" role="button" data-bs-toggle="button" data-tags="poésie rimbaud">Poésie</a>
         </h6>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
@@ -94,15 +95,28 @@
 
         }
 
-        function selectOrUnselectTag(tags, className) {
-            const figures = document.querySelectorAll('figure');
-            const c = new Counter();
+        function selectOrUnselectTag(e) {
+
+            const id = e.target.id
+            const className = e.target.className
+            const tags = e.target.dataset.tags.split(' ')
+
+            const allBtns = document.getElementsByClassName("btn")
+            for (const btn of allBtns) {
+                if (btn.id === id) {
+                    continue
+                }
+                btn.classList.remove("active")
+            }
+
+            const figures = document.querySelectorAll('figure')
+            const c = new Counter()
             if (className.includes('active')) {
                 for (const figure of figures) {
                     figure.style.display = "none"
                 }
                 for (const tag of tags) {
-                    const taggeds = document.getElementsByClassName(tag);
+                    const taggeds = document.getElementsByClassName(tag)
                     for (const tagged of taggeds) {
                         c.count(entries[tagged.dataset.index][1])
                         tagged.style.display = "inline-block"
@@ -117,41 +131,10 @@
             c.display()
         }
 
-        kafka.addEventListener("click", function (e) {
-            perec.classList.remove("active");
-            cinema.classList.remove("active");
-            bach.classList.remove("active");
-            polars.classList.remove("active");
-            selectOrUnselectTag(["Kafka"], this.className)
-        });
-        perec.addEventListener("click", function (e) {
-            kafka.classList.remove("active");
-            cinema.classList.remove("active");
-            bach.classList.remove("active");
-            polars.classList.remove("active");
-            selectOrUnselectTag(["Perec"], this.className)
-        });
-        cinema.addEventListener("click", function (e) {
-            kafka.classList.remove("active");
-            perec.classList.remove("active");
-            bach.classList.remove("active");
-            polars.classList.remove("active");
-            selectOrUnselectTag(["cinema"], this.className)
-        });
-        bach.addEventListener("click", function (e) {
-            kafka.classList.remove("active");
-            perec.classList.remove("active");
-            cinema.classList.remove("active");
-            polars.classList.remove("active");
-            selectOrUnselectTag(["Bach"], this.className)
-        });
-        polars.addEventListener("click", function (e) {
-            kafka.classList.remove("active");
-            perec.classList.remove("active");
-            cinema.classList.remove("active");
-            bach.classList.remove("active");
-            selectOrUnselectTag(["polars","pdjames"], this.className)
-        });
+        const allBtns = document.getElementsByClassName("btn")
+        for (const btn of allBtns) {
+            btn.addEventListener("click", selectOrUnselectTag);
+        }
 
         function blend(index, property) {
             const fig = document.createElement("figure");

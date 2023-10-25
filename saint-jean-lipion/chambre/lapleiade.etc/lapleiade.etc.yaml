@@ -11,7 +11,6 @@
   lan: 🇫🇷
 
 boh6:
-  ISBN: none
   title: Les Frères Karamazov
   ext: La Pléiade, Gaillmard – 1956
   de: Fédor Dostoïevski (Auteur), Henri Mongault (Traduction)
@@ -34,9 +33,10 @@ boh6:
   ext: Relié – 12 septembre 1989
   de: Gérard de Nerval (Auteur)
   lan: 🇫🇷
+  tags:
+    - poésie  
 
 boh5: 
-  ISBN: none
   ASIN: B08YXPPKVH
   title: La Guerre et la Paix
   ext: Bibliothèque nrf de La Pléiade Relié – 1956

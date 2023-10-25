@@ -42,8 +42,8 @@
   lan: 🇬🇧
 
 978-8844005177:
-  title: Poems Copertina
-  ext: flessibile – Novembre 1997
+  title: Poems
+  ext: Copertina flessibile – Novembre 1997
   de: Emily Dickinson (Autore)
   lan: 🇬🇧
   tags:
@@ -239,6 +239,8 @@ boh32:
   title: Poesie
   de: William Butler Yeats (Autore)
   lan: 🇮🇹
+  tags:
+    - poésie
 
 978-8804405382:
   title: Cantos scelti
@@ -246,6 +248,8 @@ boh32:
   de: Ezra Pound 
   lan: 🇮🇹
   lanOriginal: 🇬🇧
+  tags:
+    - poésie
 
 978-0140055214:
   title: Portnoy's Complaint

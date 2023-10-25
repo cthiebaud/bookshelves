@@ -89,12 +89,13 @@
   lan: 🇫🇷
 
 boh8:
-  ISBN: none
   RO: RO30338643
   title: Poèmes érotiques
   ext: 1980
   de: Paul Verlaine
   lan: 🇫🇷
+  tags:
+    - poésie  
 
 978-2720202018:
   title: La Nouvelle Justine ou Les Malheurs de la vertu - chapitres I à XI
