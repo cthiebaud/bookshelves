@@ -125,6 +125,15 @@
   - _7
   title: American Pastoral
   where: "/saint-lazare-de-sav\xE8ne/salon/_7"
+978-0099800408:
+  de: A S Byatt (Auteur)
+  ext: "Broch\xE9 \u2013 7 f\xE9vrier 1991"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-0099800408.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _9
+  title: Possession - A Romance
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-0099982401:
   de: Virginia Woolf
   image_path: "saint-lazare-de-sav\xE8ne/salon/_1/978-0099982401.jpg"
@@ -228,6 +237,15 @@
   - _9
   title: Wuthering Heights
   where: "/saint-lazare-de-sav\xE8ne/salon/_9"
+978-0140430264:
+  de: Laurence Sterne (Autore), A. Alvarez (Introduction), Graham Petrie (Editor)
+  ext: "Copertina flessibile \u2013 1982"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-0140430264.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _9
+  title: A Sentimental Journey Through France And Italy
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-0140432251:
   de: Henry James (Author)
   ext: Paperback
@@ -237,6 +255,24 @@
   - _6
   title: The Bostonians
   where: "/saint-lazare-de-sav\xE8ne/salon/_6"
+978-0140433623:
+  de: Mary Shelley (Author)
+  ext: "or, The Modern Prometheus Paperback \u2013 1992"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-0140433623.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _9
+  title: Frankenstein
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
+978-0140434132:
+  de: Jane Austen (Author)
+  ext: "Paperback \u2013 1995"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-0140434132.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _9
+  title: Northanger Abbey
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-0141015538:
   de: P. D. James (Auteur)
   image_path: saint-jean-lipion/chambre/pdjames/978-0141015538.jpg
@@ -255,6 +291,15 @@
   - _1
   title: The Romantic Agony
   where: "/saint-lazare-de-sav\xE8ne/salon/_1"
+978-0192815248:
+  de: Matthew Lewis (Author), Howard Anderson (Editor)
+  ext: "(The World's Classics) Paperback \u2013 1985"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-0192815248.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _9
+  title: The Monk
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-0192815729:
   de: Ann Ward Radcliffe (Author)
   ext: "Paperback \u2013 1986"
@@ -320,6 +365,15 @@
   - polars
   title: Portrait Of A Killer
   where: /saint-jean-lipion/chambre/polars
+978-0330262132:
+  de: Douglas Adams (Author)
+  ext: "Paperback \u2013 1980"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-0330262132.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _9
+  title: The Restaurant at the End of the Universe
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-0330450867:
   de: Ken Follett (Autore)
   ext: "Copertina flessibile \u2013 Edizione integrale, 4 settembre 2009"
@@ -905,6 +959,15 @@
   - polars
   title: The Girl on the Train
   where: /saint-jean-lipion/chambre/polars
+978-1633605404:
+  de: E. M. Forster (Author)
+  ext: "Paperback \u2013 1984"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-1633605404.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _9
+  title: A Passage to India
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-1648580321:
   de: "Louis-Ferdinand C\xE9line (Auteur)"
   ext: "Broch\xE9 \u2013 20 janvier 2019"
@@ -985,6 +1048,24 @@
   - _8
   title: La storia dell'arte
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
+978-1841157832:
+  de: Michael Cunningham (Author)
+  ext: "A Novel (Picador Modern Classics, 1) Paperback \u2013 2003"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-1841157832.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _9
+  title: The Hours
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
+978-1853260049:
+  de: Charles Dickens (Author), Marcus Stone (Illustrator), John Bowen (Introduction)
+  ext: "(Wordsworth Classics) Paperback \u2013 January 1, 2000"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-1853260049.webp"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _9
+  title: Great Expectations
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-1857150308:
   de: Virginia Woolf (Author)
   ext: "Hardcover \u2013 January 1, 1991"
@@ -4138,6 +4219,15 @@
   - _5
   title: Il barone rampante
   where: "/saint-lazare-de-sav\xE8ne/salon/_5"
+978-8804508458:
+  de: Mary Shelley (Autore), Chiara Zanolli (Traduttore), Laura Caretti (Traduttore)
+  ext: "Copertina flessibile \u2013 2009"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-8804508458.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _9
+  title: Frankenstein
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-8804553441:
   de: Gyatso Tenzin (Dalai Lama) (Autore), R. Singh (a cura di), C. L. Candiani (Traduttore)
   ext: "Come ottenere la perfetta felicit\xE0 - Copertina flessibile \u2013 7 marzo\
@@ -4340,6 +4430,17 @@
   - _8
   title: L'ultimo Natale di guerra
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
+978-8806164089:
+  de: Dylan Thomas (Autore), R. S. Crivelli (a cura di), A. Marianni (a cura di)
+  ext: "Testo inglese a fronte Copertina flessibile \u2013 2005"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_9/978-8806164089.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  lanOriginal: "\U0001F1EC\U0001F1E7"
+  tags:
+  - "po\xE9sie"
+  - _9
+  title: Poesie
+  where: "/saint-lazare-de-sav\xE8ne/salon/_9"
 978-8806166076:
   de: Cesare Segre (a cura di), Carlo Ossola (a cura di)
   ext: vol. 1 e 2 [Due volumi indivisibili]
