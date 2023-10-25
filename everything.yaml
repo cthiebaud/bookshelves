@@ -45,7 +45,7 @@
   where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 977-2532643048:
   de: Gianrico Carofiglio (Autore)
-  image_path: "saint-lazare-de-sav\xE8ne/salon/_1/977-2532643048.webp"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/_1/977-2532643048.jpg"
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - _1
@@ -2160,7 +2160,7 @@
   title: Londres
   where: /
 978-2080102379:
-  de: "Andr\xE9 Chastel & Angela   de:\\u00A0Della\\u00A0Chiesa"
+  de: "Andr\xE9 Chastel, Angela Della\_Chiesa"
   image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2080102379.jpeg"
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -2168,7 +2168,7 @@
   title: "Tout l'\u0153uvre peint de L\xE9onard de Vinci"
   where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-2080102553:
-  de: Hubert Damisch & Lucia Tongiorgi\u00A0Tomasi
+  de: "Hubert Damisch, Lucia Tongiorgi\_Tomasi"
   image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2080102553.jpg"
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -2274,7 +2274,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - favourites
-  title: Les Somnambules
+  title: Les somnambules
   where: /saint-jean-lipion/chambre/favourites
 978-2081233133:
   de: Laure Adler (Auteur), Stefan Bollmann (Auteur)
@@ -3010,7 +3010,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _2
-  title: "La Plan\xE8te des singes"
+  title: "La plan\xE8te des singes"
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-2262027100:
   de: Paul Dietschy (Auteur)
@@ -3046,7 +3046,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - enfer
-  title: "Le Grand livre du K\u0101ma S\u016Btra"
+  title: "Le K\u0101ma S\u016Btra"
   where: /saint-jean-lipion/chambre/enfer
 978-2264005878:
   de: "Bernard Dupriez (Auteur), Jean-Claude Zylberstein (\xC9diteur de s\xE9rie)"
@@ -3945,7 +3945,7 @@
   tags:
   - Kafka
   - arts
-  title: "Le Si\xE8cle de Kafka"
+  title: "Le si\xE8cle de Kafka"
   where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-2858504718:
   de: Collectif
@@ -4141,7 +4141,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - rimbaud
-  title: Un sieur rimbaud se disant negociant
+  title: Un sieur Rimbaud se disant negociant
   where: /saint-jean-lipion/chambre/rimbaud
 978-2905899026:
   de: Mario Praz (Auteur)
@@ -4171,7 +4171,7 @@
   title: "L'\u0153uvre int\xE9grale manuscrite"
   where: /saint-jean-lipion/chambre/rimbaud
 978-2909808390:
-  de: Bodmer (Auteur)
+  de: Karl Bodmer (Auteur)
   ext: "Broch\xE9 \u2013 20 mars 2000"
   image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2909808390.jpg"
   lan: "\U0001F1EB\U0001F1F7"
@@ -4623,7 +4623,7 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - _8
-  title: Possessione
+  title: Possessione - Una storia romantica
   where: "/saint-lazare-de-sav\xE8ne/salon/_8"
 978-8806136413:
   de: Ugo Foscolo (Autore), Giovanna Ioli (a cura di)
@@ -6146,7 +6146,7 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - _2
-  title: Cetacei. Guide per il riconoscimento delle specie animali delle acque lagunari
+  title: Cetacei - Guide per il riconoscimento delle specie animali delle acque lagunari
     e costiere italiane
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 978-8882792237:
@@ -6223,7 +6223,7 @@
   title: Dizionario del pendolo di Foucault
   where: "/saint-lazare-de-sav\xE8ne/salon/_3"
 978-8886452731:
-  de: "Francesco Paolo Maulucci\_Vivolo (Autore)"
+  de: Francesco Paolo Maulucci Vivolo (Autore)
   ext: "Copertina flessibile \u2013 28 marzo 2013"
   image_path: saint-jean-lipion/chambre/enfer/978-8886452731.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -6482,7 +6482,7 @@ ASIN-B00340LFAM:
   title: "Verlaine par lui-m\xEAme"
   where: "/saint-lazare-de-sav\xE8ne/salon/_4"
 ASIN-B003X72BGS:
-  de: Jean-Mathieu Luccioni, Claude Bruneteau (Auteurs)
+  de: Claude Bruneteau, Jean-Mathieu Luccioni (Auteurs)
   ext: "Broch\xE9 \u2013 1 Janvier 1972"
   image_path: "saint-lazare-de-sav\xE8ne/salon/_5/ASIN-B003X72BGS.jpg"
   lan: "\U0001F1EB\U0001F1F7"
@@ -6544,7 +6544,7 @@ boh1:
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - beaux-livres
-  title: Atlas General Bordas
+  title: "Atlas g\xE9n\xE9ral Bordas"
   where: /saint-jean-lipion/chambre/beaux-livres
 boh10:
   ISBN: none
@@ -6671,7 +6671,7 @@ boh21:
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _2
-  title: Leonard de Vinci
+  title: "L\xE9onard de Vinci"
   where: "/saint-lazare-de-sav\xE8ne/salon/_2"
 boh22:
   ASIN: B0000ECQO5
