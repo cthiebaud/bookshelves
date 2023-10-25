@@ -811,6 +811,15 @@
   - polars
   title: The Mountain Shadow
   where: /saint-jean-lipion/chambre/polars
+978-0810902626:
+  de: Jack Wasserman (Text by)
+  ext: "Copertina rigida \u2013 Stampa grande, 1 agosto 1975"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-0810902626.jpg"
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - arts
+  title: Leonardo da Vinci
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-0812969658:
   de: Alan Bennett (Author)
   ext: "(Today Show Book Club \xB05) Paperback \u2013 November 1, 2002"
@@ -2105,6 +2114,22 @@
   - current.yaml
   title: Londres
   where: /
+978-2080102379:
+  de: "Andr\xE9 Chastel & Angela   de:\\u00A0Della\\u00A0Chiesa"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2080102379.jpeg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: "Tout l'\u0153uvre peint de L\xE9onard de Vinci"
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
+978-2080102553:
+  de: Hubert Damisch & Lucia Tongiorgi\u00A0Tomasi
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-2080102553.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: "Tout l'\u0153uvre peint de Paolo Uccello"
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-2080690401:
   de: Mark Crick (Auteur)
   image_path: "saint-lazare-de-sav\xE8ne/salon/_2/978-2080690401.jpg"
@@ -4158,6 +4183,24 @@
   - cinema
   title: "Cinematographische Merkmale der \u201ESchloss\"-Verfilmung von Michael Haneke"
   where: /saint-jean-lipion/chambre/cinema
+978-3822835401:
+  de: Jean-Claude Gautrans (Auteur)
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-3822835401.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: Paris Mon Amour
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
+978-3836525459:
+  de: Luigi Ficacci (Autore), Dominique Reviller (Traduttore)
+  ext: "(1909-1992) Sous la surface des choses Copertina flessibile \u2013 4 ottobre\
+    \ 2010"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-3836525459.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: Francis Bacon
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-3848004409:
   de: Hartmut Lehbrink (Auteur), Jochen von Osterroth (Auteur), Rainer Schlegelmilch
     (Photographies)
@@ -6070,6 +6113,16 @@
   - arts
   title: "Tea - Vie e virt\xF9 di una foglia esotica"
   where: "/saint-lazare-de-sav\xE8ne/salon/arts"
+978-8889431122:
+  de: Gibson Ralph (Auteur)
+  ext: "Reli\xE9 \u2013 2005"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-8889431122.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  lanOriginal: "\U0001F1EC\U0001F1E7"
+  tags:
+  - arts
+  title: Ralph gibson brazil
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 978-8890772030:
   de: Guido Moretti (Autore)
   ext: "Copertina rigida - Edizioni Tipoarte Bologna \u2013 2013"
@@ -6127,7 +6180,7 @@
 978-8899920012:
   de: Guido Moretti (Autore)
   ext: "Copertina rigida - Edizioni Tipoarte Bologna \u2013 2016"
-  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-8899920012.png"
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/978-8899920012.jpg"
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - arts
@@ -6640,6 +6693,23 @@ boh4:
   - kafka
   title: "La colonie p\xE9nitentiaire et autres r\xE9cits"
   where: /saint-jean-lipion/chambre/kafka
+boh40:
+  de: August L. Mayer
+  ext: Recht Verlag, 1923
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/boh40.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: Anthonis van Dyck.
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
+boh41:
+  de: Claude Nori, Ferdinando Scianna
+  image_path: "saint-lazare-de-sav\xE8ne/salon/arts/boh41.jpg"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  title: "Camera International #11, \xC9t\xE9 87 ; Voyage en Italie"
+  where: "/saint-lazare-de-sav\xE8ne/salon/arts"
 boh5:
   ASIN: B08YXPPKVH
   ISBN: none
