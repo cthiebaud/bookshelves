@@ -142,7 +142,7 @@ boh42:
 978-8893082532:
   title: Le fiabe più belle
   ext: Ediz. a colori Copertina rigida – Illustrato, 1991
-  de: Hans Christian Andersen - Illustrazioni di Lisbeth Zwerger
+  de: Hans Christian   de:en - Illustrazioni di Lisbeth Zwerger
   lan: 🇮🇹
 
 977-1827138009:
@@ -177,5 +177,72 @@ boh43:
 boh44:
   title: Portugal and the Discoveries - The meeting of Civilizations
   de: Jose Manuel Garcia (Auteur)
+  lan: 🇬🇧
+
+978-2070116355:
+  title: Marcel Proust - L'écriture et les arts
+  ext:  Broché – 1 novembre 1999
+  de: Jean-Yves Tadié (Auteur)
+  lan: 🇫🇷
+
+978-2040184438:
+  title: Atlas du monde arabe
+  ext: (Ancienne Edition) Relié – 1 mars 1993
+  de: Rafic Boustani, Philippe Fargues (Auteur)
+  lan: 🇫🇷
+
+978-2203009479:
+  title: Adèle et la bête
+  ext:  Relié  – 22 octobre 2007
+  de: Tardi (Auteur, Couleurs, Dessins, Lettreur, Rédacteur)
+  lan: 🇫🇷
+
+978-2082015394:
+  title: Les 1001 albums qu'il faut avoir écoutés dans sa vie
+  ext: Rock, Hip Hop, Soul, Dance, World Music, Pop, Techno... Broché – 15 janvier 2014
+  de: Collectif (Auteur), Robert Dimery (Auteur), Michka Assayas (Préface), Anne Marcy-Benitez (Traduction), Géraldine Bretault (Traduction), Lorena Lamin (Traduction)
+  lan: 🇫🇷
+
+978-2213003795:
+  title: Une histoire du Jazz
+  ext: Relié – 1 janvier 1976
+  de: Joachim-Ernst Berendt (Auteur)
+  lan: 🇫🇷
+
+978-0590444590:
+  title: Hansel and Gretel
+  ext: Copertina flessibile – 1 agosto 1991
+  de: Jacob & Wilhelm Grimm - Illustrazioni di Lisbeth Zwerger
   lan: 🇮🇹
 
+978-8895862118:
+  title: Pier Paolo Pasolini - La rabbia
+  de: Roberto Chiesi
+  url: http://fondazione.cinetecadibologna.it/edizioni/edobj_rabbia_libro
+  lan: 🇮🇹
+  tags: 
+    - Pasolini
+
+978-2226129352:
+  title: Candide ou l'optimisme
+  ext: Relié – Grand livre, 4 novembre 2002
+  de: Voltaire - Dessiné par Jean-Marc Rochette
+  lan: 🇫🇷
+
+978-2905899026:
+  title: Mnémosyne
+  ext: Relié – 1 janvier 1986
+  de: Mario Praz (Auteur)
+  lan: 🇫🇷
+
+978-3218004824:
+  title: Das Weltgerichtstriptychon von Hieronymus Bosch
+  ext: Paperback – January 1, 1988
+  de: Renate Trnek (Author)
+  lan: 🇩🇪
+
+977-1827138009-2:
+  title: "[antimateria]"
+  de: asimmetrie - Collectif
+  url: https://www.asimmetrie.it/images/stories/archivio-numeri-passati-pdf/asimmetrie-7-HR.pdf
+  lan: 🇮🇹
