@@ -1801,6 +1801,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: Atlas du monde Arabe
   where: /saint-lazare-de-savene/salon/arts
+978-2070100156:
+  de: Guillaume Apollinaire (Auteur)
+  ext: "Reli\xE9 \u2013 1 d\xE9cembre 1956"
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070100156.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "\u0152uvres po\xE9tiques"
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070104574:
   de: Marcel Proust
   image_path: saint-lazare-de-savene/salon/lapleiade/978-2070104574.jpg
@@ -1930,6 +1942,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres compl\xE8tes, tome 1 - \u0152uvres de jeunesse"
   where: /saint-jean-lipion/chambre/lapleiade
+978-2070115594:
+  de: "St\xE9phane Mallarm\xE9 (Auteur)"
+  ext: "Reli\xE9"
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070115594.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "\u0152uvres compl\xE8tes"
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070116157:
   de: Gustave Flaubert (Auteur)
   ext: "Reli\xE9 \u2013 8 novembre 2013"
