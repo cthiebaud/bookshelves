@@ -1865,14 +1865,15 @@
 978-2070120512:
   de: Claude Lanzmann (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 12 mars 2009"
-  image_path: saint-jean-lipion/chambre/editors/978-2070120512.jpg
+  image_path: saint-lazare-de-savene/salon/editors/978-2070120512.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - editors
-  - saint-jean-lipion
+  - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Le li\xE8vre de Patagonie"
-  where: /saint-jean-lipion/chambre/editors
+  url: https://www.amazon.fr/s\?k=978-2070120512
+  where: /saint-lazare-de-savene/salon/editors
 978-2070123223:
   de: Jacques de Saint Victor (Auteur)
   ext: "Broch\xE9 \u2013 18 octobre 2012"
@@ -2030,6 +2031,30 @@
   - "\U0001F1EB\U0001F1F7"
   title: Ulysse
   where: /saint-lazare-de-savene/salon/_1
+978-2070286751:
+  de: A. Cohen (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 30 mars 1979"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070286751.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Carnets, 1978
+  url: https://www.amazon.fr/s\?k=978-2070286751
+  where: /saint-lazare-de-savene/salon/editors
+978-2070294718:
+  de: Yukio Mishima (Auteur), Tanguy Kenec'hdu (Auteur, Traduction)
+  ext: "Broch\xE9 \u2013 Grand livre, 12 f\xE9vrier 1980"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070294718.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Neige de printemps
+  url: https://www.amazon.fr/s\?k=978-2070294718
+  where: /saint-lazare-de-savene/salon/editors
 978-2070297443:
   de: Charles Rosen (Auteur)
   image_path: saint-jean-lipion/chambre/favourites/978-2070297443.jpg
@@ -2040,6 +2065,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: Le style classique - Haydn, Mozart, Beethoven
   where: /saint-jean-lipion/chambre/favourites
+978-2070298709:
+  de: Marguerite Yourcenar (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 25 novembre 1977"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070298709.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "M\xE9moires d'Hadrien"
+  url: https://www.amazon.fr/s\?k=978-2070298709
+  where: /saint-lazare-de-savene/salon/editors
 978-2070300075:
   de: Guillaume Apollinaire
   image_path: "saint-lazare-de-savene/salon/po\xE9sie/978-2070300075.jpeg"
@@ -2554,6 +2591,30 @@
   - "\U0001F1EB\U0001F1F7"
   title: Exercices de style
   where: /saint-jean-lipion/chambre/beaux-livres
+978-2070704491:
+  ext: "Broch\xE9 \u2013 Grand livre, 31 octobre 1985"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070704491.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Dans le jardin de la nature - La Mutation des sensibilit\xE9s en Angleterre\
+    \ \xE0 l'\xE9poque moderne (1500-1800)"
+  url: https://www.amazon.fr/s\?k=978-2070704491
+  where: /saint-lazare-de-savene/salon/editors
+978-2070712809:
+  de: Michel Leiris (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 17 f\xE9vrier 1988"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070712809.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "A cor et \xE0 cri"
+  url: https://www.amazon.fr/s\?k=978-2070712809
+  where: /saint-lazare-de-savene/salon/editors
 978-2070714704:
   de: "G\xE9rard Mac\xE9 (Auteur)"
   ext: "Broch\xE9 \u2013 4 janvier 1989"
@@ -2575,6 +2636,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Les naufrag\xE9s et les rescap\xE9s - Quarante ans apr\xE8s Auschwitz"
   where: /saint-jean-lipion/chambre/favourites
+978-2070718665:
+  de: Bella Cohen (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 23 janvier 1990"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070718665.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Autour d'Albert Cohen
+  url: https://www.amazon.fr/s\?k=978-2070718665
+  where: /saint-lazare-de-savene/salon/editors
 978-2070719907:
   de: "Andr\xE9 Pieyre de Mandiargues (Auteur)"
   ext: Poche
@@ -2632,6 +2705,30 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Hymnes \xE0 l'amour"
   where: /saint-jean-lipion/chambre/editors
+978-2070748792:
+  de: Pascal Quignard (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 14 mars 1998"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070748792.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Vie secr\xE8te"
+  url: https://www.amazon.fr/s\?k=978-2070748792
+  where: /saint-lazare-de-savene/salon/editors
+978-2070759071:
+  de: "Philip Roth (Auteur), Jos\xE9e Kamoun (Traduction)"
+  ext: "Broch\xE9 \u2013 Grand livre, 4 septembre 2002"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070759071.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: La Tache
+  url: https://www.amazon.fr/s\?k=978-2070759071
+  where: /saint-lazare-de-savene/salon/editors
 978-2070762637:
   de: Laure Adler (Auteur)
   ext: "Broch\xE9 \u2013 29 septembre 2005"
@@ -2666,6 +2763,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: Guillaume Apollinaire
   where: /saint-jean-lipion/chambre/biographies
+978-2070775064:
+  de: Alain Sevestre (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 5 janvier 2011"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070775064.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Manuel de l'innocent
+  url: https://www.amazon.fr/s\?k=978-2070775064
+  where: /saint-lazare-de-savene/salon/editors
 978-2070793754:
   de: Patrice Gueniffey (Auteur)
   ext: "Poche \u2013 13 octobre 2016"
@@ -2699,6 +2808,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: D'autres vies que la mienne
   where: "/saint-jean-lipion/chambre/carr\xE8re"
+978-2072738449:
+  de: Didier Blonde (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 4 janvier 2018"
+  image_path: saint-lazare-de-savene/salon/editors/978-2072738449.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Le figurant
+  url: https://www.amazon.fr/s\?k=978-2072738449
+  where: /saint-lazare-de-savene/salon/editors
 978-2072743863:
   de: Daniel Pennac (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 5 janvier 2023"
@@ -2763,6 +2884,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Tout l'\u0153uvre peint de Paolo Uccello"
   where: /saint-lazare-de-savene/salon/arts
+978-2080263704:
+  de: Thomas VDB (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 13 octobre 2021"
+  image_path: saint-lazare-de-savene/salon/editors/978-2080263704.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Comedian rhapsodie
+  url: https://www.amazon.fr/s\?k=978-2080263704
+  where: /saint-lazare-de-savene/salon/editors
 978-2080690401:
   de: Mark Crick (Auteur)
   image_path: saint-lazare-de-savene/salon/_2/978-2080690401.jpg
