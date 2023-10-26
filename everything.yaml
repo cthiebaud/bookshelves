@@ -2021,6 +2021,18 @@
   title: "\xC9variste"
   url: https://www.amazon.fr/s\?k=978-2070147045
   where: /saint-lazare-de-savene/salon/editors
+978-2070185979:
+  de: Nathalie Sarraute (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 17 mars 1980"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070185979.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: L'Usage de la parole
+  url: https://www.amazon.fr/LUsage-parole-Nathalie-Sarraute/dp/2070185974/ref=tmm_pap_swatch_0
+  where: /saint-lazare-de-savene/salon/editors
 978-2070197521:
   de: Claude Burgelin (Auteur)
   ext: "Iconographie comment\xE9e Reli\xE9 \u2013 11 mai 2017"
@@ -2044,6 +2056,19 @@
   - "\U0001F1EB\U0001F1F7"
   title: Casse-pipe - Carnet du cuirassier Destouches
   where: /saint-jean-lipion/chambre/editors
+978-2070231539:
+  de: Marcel Proust (Auteur), Henri Bonnet (Sous la direction de), Bernard Brun (Sous
+    la direction de)
+  ext: "Cahiers du temps retrouv\xE9 Broch\xE9 \u2013 Grand livre, 25 novembre 1982"
+  image_path: saint-lazare-de-savene/salon/editors/978-2070231539.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Matin\xE9e chez la Princesse de Guermantes"
+  url: https://www.amazon.fr/Matin%C3%A9e-Princesse-Guermantes-Cahiers-retrouv%C3%A9/dp/2070231534/ref=sr_1_1
+  where: /saint-lazare-de-savene/salon/editors
 978-2070234745:
   de: James Joyce (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 10 juin 2004"
@@ -4407,6 +4432,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: "S\xE9ville 82 France-Allemagne le match du si\xE8cle"
   where: /saint-jean-lipion/chambre-paul/football
+978-2352120834:
+  de: Franz Kafka (Auteur)
+  ext: 18 mars 1980
+  image_path: saint-lazare-de-savene/salon/editors/978-2352120834.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - Kafka
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "L'Am\xE9rique"
+  where: /saint-lazare-de-savene/salon/editors
 978-2353670444:
   de: "Michael Heinrich (Auteur), Jean Qu\xE9tier (Traduction)"
   ext: "Biographie intellectuelle Tome 1 - 1818-1841 Broch\xE9 \u2013 Grand livre,\
@@ -8585,6 +8622,18 @@ ASIN-B000NNBJZ4:
   - "\U0001F1EE\U0001F1F9"
   title: Canti
   where: /saint-lazare-de-savene/salon/_4
+ASIN-B0014LJ38Y:
+  de: Elio Vittorini (Auteur), Michel Arnaud (Auteur)
+  ext: "(Du monde entier) Broch\xE9 \u2013 1 janvier 1980"
+  image_path: saint-lazare-de-savene/salon/editors/ASIN-B0014LJ38Y.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editors
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: L'oeillet rouge
+  url: https://www.amazon.fr/Loeillet-rouge-Du-monde-entier/dp/B0014LJ38Y
+  where: /saint-lazare-de-savene/salon/editors
 ASIN-B0014QGFG2:
   de: Raymond Queneau
   image_path: saint-lazare-de-savene/salon/_4/ASIN-B0014QGFG2.jpg
