@@ -32,14 +32,17 @@
     <div id="container" class="container-fluid">
         <h1 id="howmuch" style="text-align: center;">…</h1>
         <h5 id="howmuch2" style="text-align: center;">…</h5>
-        <h6 style="text-align: center;">
+        <h6 id="howmuch3" style="text-align: center;">…</h6>
+        <div style="text-align: center;">
+            <a href="#" id="cinema" class="btn" role="button" data-bs-toggle="button" data-tags="cinema">Cinéma</a>
+            <a href="#" id="football" class="btn" role="button" data-bs-toggle="button" data-tags="football">Foot</a>
             <a href="#" id="kafka" class="btn" role="button" data-bs-toggle="button" data-tags="Kafka">Kafka</a>
             <a href="#" id="perec" class="btn" role="button" data-bs-toggle="button" data-tags="Perec">Perec</a>
-            <a href="#" id="cinema" class="btn" role="button" data-bs-toggle="button" data-tags="cinema">Cinéma</a>
-            <a href="#" id="bach" class="btn" role="button" data-bs-toggle="button" data-tags="Bach">Bach</a>
-            <a href="#" id="polars" class="btn" role="button" data-bs-toggle="button" data-tags="polars pdjames">Polar</a>
+            <a href="#" id="poches" class="btn" role="button" data-bs-toggle="button" data-tags="poches">Folio</a>
             <a href="#" id="poesie" class="btn" role="button" data-bs-toggle="button" data-tags="poésie rimbaud">Poésie</a>
-        </h6>
+            <a href="#" id="polars" class="btn" role="button" data-bs-toggle="button" data-tags="polars pdjames">Polar</a>
+            <a href="#" id="rimbaud" class="btn" role="button" data-bs-toggle="button" data-tags="rimbaud">Rimbaud</a>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
@@ -90,7 +93,8 @@
 
             display = () => {
                 document.getElementById("howmuch").innerHTML = `${this.total}`
-                document.getElementById("howmuch2").innerHTML = `🇫🇷\u00A0${this.fr}\u00A0\u00A0\u00A0🇮🇹\u00A0${this.it}\u00A0\u00A0\u00A0🇬🇧\u00A0${this.en}\u00A0\u00A0\u00A0🇩🇪\u00A0${this.de}\u00A0\u00A0\u00A0🇵🇹\u00A0${this.pt}\u00A0\u00A0\u00A0🇪🇸\u00A0${this.sp}\u00A0\u00A0\u00A0⁞\u00A0\u00A0\u00A0↑\u00A0${this.slds}\u00A0\u00A0\u00A0↓\u00A0${this.sgl}`
+                document.getElementById("howmuch2").innerHTML = `🇫🇷\u00A0${this.fr}\u00A0\u00A0\u00A0🇮🇹\u00A0${this.it}\u00A0\u00A0\u00A0🇬🇧\u00A0${this.en}\u00A0\u00A0\u00A0🇩🇪\u00A0${this.de}\u00A0\u00A0\u00A0🇵🇹\u00A0${this.pt}`
+                document.getElementById("howmuch3").innerHTML = `↑\u00A0${this.slds}\u00A0\u00A0\u00A0\u00A0${this.sgl}\u00A0↓`
             }
 
         }
