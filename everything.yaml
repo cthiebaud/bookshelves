@@ -1792,14 +1792,14 @@
   where: /saint-lazare-de-savene/salon/arts
 978-2070104574:
   de: Marcel Proust
-  image_path: saint-lazare-de-savene/salon/proust/978-2070104574.jpg
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070104574.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - proust
   - lapleiade
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: A la recherche du temps perdu - 1
+  title: A la recherche du temps perdu - I
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070107933:
   de: Franz Kafka (Auteur)
@@ -1852,6 +1852,17 @@
   title: "\u0152uvres compl\xE8tes (Edition de Claude David en 1984) II - Journaux\
     \ - Lettres \xE0 sa famille et a\xE0 ses amis"
   where: /saint-lazare-de-savene/salon/random
+978-2070111367:
+  de: Marcel Proust
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070111367.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: A la recherche du temps perdu - II
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070114757:
   de: Gustave Flaubert
   ext: "Reli\xE9 \u2013 20 septembre 2001"
