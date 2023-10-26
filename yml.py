@@ -32,13 +32,14 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
     # if not 'enfer' in filename:
 
     with open(filename, 'r') as f:
-        data = yaml.safe_load(f)
-        for key, value in data.items():
-            data[key]["where"] = where
-            tags = value.get("tags", [])
-            tags.append(locationTag)
-            value["tags"] = tags
-        my_dictionary.update(data)
+        if os.fstat(f.fileno()).st_size != 0: # https://stackoverflow.com/a/283719/1070215
+            data = yaml.safe_load(f)
+            for key, value in data.items():
+                data[key]["where"] = where
+                tags = value.get("tags", [])
+                tags.append(locationTag)
+                value["tags"] = tags
+            my_dictionary.update(data)
 
 
 extensions = ['jpg', 'jpeg', 'webp', 'png']
