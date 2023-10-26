@@ -1863,6 +1863,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: A la recherche du temps perdu - II
   where: /saint-lazare-de-savene/salon/lapleiade
+978-2070111435:
+  de: Marcel Proust
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070111435.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: A la recherche du temps perdu - III
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070114757:
   de: Gustave Flaubert
   ext: "Reli\xE9 \u2013 20 septembre 2001"
@@ -4537,6 +4548,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Karl Marx et la naissance de la soci\xE9t\xE9 moderne"
   where: /saint-jean-lipion/chambre/biographies
+978-2360757770:
+  de: Collectif (Autore)
+  ext: "Copertina flessibile \u2013 6 maggio 2019"
+  image_path: saint-lazare-de-savene/salon/proust/978-2360757770.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Marcel Proust - Lire - Hors s\xE9rie"
+  where: /saint-lazare-de-savene/salon/proust
 978-2365591546:
   de: Florence Aubenas (Auteur)
   image_path: saint-jean-lipion/chambre/editors/978-2365591546.jpg
@@ -5322,6 +5344,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: Les Aveux
   where: /saint-jean-lipion/chambre/editors
+978-2850250439:
+  de: "Jos\xE9 Pierre (Auteur)"
+  ext: "Edition originale Reli\xE9 \u2013 1 janvier 1976"
+  image_path: saint-lazare-de-savene/salon/arts/978-2850250439.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arts
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Le symbolisme
+  where: /saint-lazare-de-savene/salon/arts
 978-2851088871:
   de: Frida Kahlo (Auteur)
   ext: "Reli\xE9 \u2013 1 d\xE9cembre 1995"
@@ -5583,6 +5616,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: "La V\xE9rit\xE9 sur l'Affaire Harry Quebert"
   where: /saint-jean-lipion/chambre/polars
+978-2880011871:
+  de: William Howard Adams (Auteur), Marcel Proust (Auteur), Paul Nadar (Photographies)
+  ext: "Reli\xE9 \u2013 1 janvier 1985"
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2880011871.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "En souvenir de Proust - Les personnages du temps perdu photographi\xE9s\
+    \ par Paul Nadar"
+  where: /saint-lazare-de-savene/salon/proust
 978-2880012458:
   de: Robert Descharnes, Salvador Dali (Auteur)
   ext: "Reli\xE9 \u2013 1 janvier 1962"
