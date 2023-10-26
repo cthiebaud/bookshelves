@@ -1812,6 +1812,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: A la recherche du temps perdu - I
   where: /saint-lazare-de-savene/salon/lapleiade
+978-2070105793:
+  de: Paul Verlaine (Auteur)
+  ext: "Reli\xE9 \u2013 1 juillet 1938"
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070105793.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "\u0152uvres po\xE9tiques compl\xE8tes"
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070107933:
   de: Franz Kafka (Auteur)
   ext: "Reli\xE9 \u2013 26 novembre 1976"
@@ -1825,6 +1837,28 @@
   title: "\u0152uvres compl\xE8tes (Edition de Claude David en 1976) I - L'Am\xE9\
     rique - Le proc\xE8s - Le ch\xE2teau"
   where: /saint-lazare-de-savene/salon/random
+978-2070108299:
+  de: Charles Baudelaire (Auteur)
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070108299.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "\u0152uvres compl\xE8tes I"
+  where: /saint-lazare-de-savene/salon/lapleiade
+978-2070108534:
+  de: Charles Baudelaire (Auteur)
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070108534.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "\u0152uvres compl\xE8tes II"
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070109708:
   de: Franz Kafka (Auteur)
   ext: "Reli\xE9 \u2013 24 avril 1980"
@@ -2009,6 +2043,19 @@
   - "\U0001F1EB\U0001F1F7"
   title: La bascule du souffle
   where: /saint-jean-lipion/chambre/editors
+978-2070129249:
+  de: "Fran\xE7ois Villon (Auteur), Jacqueline Cerquiglini-Toulet (Traduction), La\xEB\
+    titia Tabard (Collaborateur)"
+  ext: "Reli\xE9 \u2013 16 octobre 2014"
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070129249.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "\u0152uvres compl\xE8tes"
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070134571:
   de: Mona Ozouf (Auteur)
   ext: "Broch\xE9 \u2013 6 octobre 2011"
