@@ -716,6 +716,18 @@
   - "\U0001F1EC\U0001F1E7"
   title: The Language of Poetry
   where: /saint-lazare-de-savene/salon/_5
+978-0500293690:
+  de: Eric Karpeles (Auteur), Pierre Saint-Jean (Traduction)
+  ext: "Broch\xE9 \u2013 Illustr\xE9, 1 septembre 2017"
+  image_path: saint-lazare-de-savene/salon/proust/978-0500293690.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Le mus\xE9e imaginaire de Marcel Proust"
+  url: https://www.amazon.fr/s\?k=978-0500293690
+  where: /saint-lazare-de-savene/salon/proust
 978-0500510346:
   de: Perry Ogden (Author), John Edwards (Author)
   ext: "Hardcover \u2013 September 1, 2001"
@@ -1560,6 +1572,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: Je me souviens
   where: /saint-jean-lipion/salon/perec
+978-2020000116:
+  de: Claude Mauriac (Author)
+  ext: "(Ecrivains de Toujours) Mass Market Paperback \u2013 March 1, 2018"
+  image_path: saint-lazare-de-savene/salon/proust/978-2020000116.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Proust
+  where: /saint-lazare-de-savene/salon/proust
 978-2020005852:
   de: Roland Barthes (Auteur)
   image_path: saint-lazare-de-savene/salon/_2/978-2020005852.jpg
@@ -1767,6 +1790,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: Atlas du monde Arabe
   where: /saint-lazare-de-savene/salon/arts
+978-2070104574:
+  de: Marcel Proust
+  image_path: saint-lazare-de-savene/salon/proust/978-2070104574.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: A la recherche du temps perdu - 1
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070107933:
   de: Franz Kafka (Auteur)
   ext: "Reli\xE9 \u2013 26 novembre 1976"
@@ -1796,15 +1830,15 @@
 978-2070110674:
   de: "G\xE9rard de Nerval (Auteur)"
   ext: "Reli\xE9 \u2013 12 septembre 1989"
-  image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2070110674.jpg
+  image_path: saint-jean-lipion/chambre/lapleiade/978-2070110674.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
-  - lapleiade.etc
+  - lapleiade
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres compl\xE8tes, tome 1"
-  where: /saint-jean-lipion/chambre/lapleiade.etc
+  where: /saint-jean-lipion/chambre/lapleiade
 978-2070110841:
   de: Franz Kafka (Auteur)
   ext: "Reli\xE9 \u2013 23 octobre 1984"
@@ -1821,25 +1855,25 @@
 978-2070114757:
   de: Gustave Flaubert
   ext: "Reli\xE9 \u2013 20 septembre 2001"
-  image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2070114757.jpg
+  image_path: saint-jean-lipion/chambre/lapleiade/978-2070114757.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - lapleiade.etc
+  - lapleiade
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres compl\xE8tes, tome 1 - \u0152uvres de jeunesse"
-  where: /saint-jean-lipion/chambre/lapleiade.etc
+  where: /saint-jean-lipion/chambre/lapleiade
 978-2070116157:
   de: Gustave Flaubert (Auteur)
   ext: "Reli\xE9 \u2013 8 novembre 2013"
-  image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2070116157.jpg
+  image_path: saint-jean-lipion/chambre/lapleiade/978-2070116157.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - lapleiade.etc
+  - lapleiade
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres compl\xE8tes, tome 2 (1845-1851)"
-  where: /saint-jean-lipion/chambre/lapleiade.etc
+  where: /saint-jean-lipion/chambre/lapleiade
 978-2070116355:
   de: "Jean-Yves Tadi\xE9 (Auteur)"
   ext: "Broch\xE9 \u2013 1 novembre 1999"
@@ -2815,6 +2849,18 @@
   title: La Tache
   url: https://www.amazon.fr/s\?k=978-2070759071
   where: /saint-lazare-de-savene/salon/editors
+978-2070761852:
+  de: Marcel Proust (Author)
+  ext: "Paperback \u2013 May 5, 2001"
+  image_path: saint-lazare-de-savene/salon/proust/978-2070761852.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Jean Santeuil
+  url: https://www.amazon.fr/s\?k=978-2070761852
+  where: /saint-lazare-de-savene/salon/proust
 978-2070762637:
   de: Laure Adler (Auteur)
   ext: "Broch\xE9 \u2013 29 septembre 2005"
@@ -3668,6 +3714,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: La grande rafle du Vel d'Hiv
   where: /saint-jean-lipion/chambre/nazis
+978-2221141441:
+  de: "C\xE9leste Albaret (Auteur), Georges Belmont (Avec la contribution de)"
+  ext: "Poche \u2013 13 mars 2014"
+  image_path: saint-lazare-de-savene/salon/proust/978-2221141441.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Monsieur Proust
+  url: https://www.amazon.fr/s\?k=978-2221141441
+  where: /saint-lazare-de-savene/salon/proust
 978-2221219003:
   de: "M\xE9lissa Plaza (Autore), C\xE9cile Dupire (Collaboratore)"
   ext: "Copertina flessibile \u2013 Grande libro, 9 maggio 2019"
@@ -4060,6 +4118,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: Les Sex Addicts
   where: /saint-jean-lipion/chambre/enfer
+978-2259211109:
+  de: "Jean-Paul Enthoven, Rapha\xEBl Enthoven (Auteur)"
+  ext: "Broch\xE9 \u2013 Illustr\xE9, 3 octobre 2019"
+  image_path: saint-lazare-de-savene/salon/proust/978-2259211109.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Dictionnaire amoureux de Marcel Proust
+  url: https://www.amazon.fr/s\?k=978-2259211109
+  where: /saint-lazare-de-savene/salon/proust
 978-2259249188:
   de: "Ad\xE8le Van Reeth, \xC9ric Fiat (Auteur)"
   image_path: saint-lazare-de-savene/salon/_4/978-2259249188.jpg
@@ -7252,6 +7322,18 @@
   - "\U0001F1EE\U0001F1F9"
   title: Lo zen in 10 minuti
   where: /saint-lazare-de-savene/salon/_3
+978-8835938934:
+  de: "Jacques Benoist-M\xE9chin (Autore), G. Garrera (a cura di)"
+  ext: "Copertina flessibile \u2013 1 gennaio 1995"
+  image_path: saint-lazare-de-savene/salon/proust/978-8835938934.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - proust
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Un incontro con Proust
+  url: https://www.amazon.fr/s\?k=978-8835938934
+  where: /saint-lazare-de-savene/salon/proust
 978-8836641437:
   de: Francesco Leone, Fernando Mazzocca (a cura di)
   ext: "Catalogo della mostra (Forl\xEC, 9 febbraio-16 giugno 2019). Ediz. a colori\
@@ -9193,25 +9275,25 @@ boh5:
   ASIN: B08YXPPKVH
   de: "L\xE9on Tolsto\xEF"
   ext: "Biblioth\xE8que nrf de La Pl\xE9iade Reli\xE9 \u2013 1956"
-  image_path: saint-jean-lipion/chambre/lapleiade.etc/boh5.jpg
+  image_path: saint-jean-lipion/chambre/lapleiade/boh5.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - lapleiade.etc
+  - lapleiade
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: La Guerre et la Paix
-  where: /saint-jean-lipion/chambre/lapleiade.etc
+  where: /saint-jean-lipion/chambre/lapleiade
 boh6:
   de: "F\xE9dor Dosto\xEFevski (Auteur), Henri Mongault (Traduction)"
   ext: "La Pl\xE9iade, Gaillmard \u2013 1956"
-  image_path: saint-jean-lipion/chambre/lapleiade.etc/boh6.webp
+  image_path: saint-jean-lipion/chambre/lapleiade/boh6.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - lapleiade.etc
+  - lapleiade
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "Les Fr\xE8res Karamazov"
-  where: /saint-jean-lipion/chambre/lapleiade.etc
+  where: /saint-jean-lipion/chambre/lapleiade
 boh7:
   ASIN: B0141G1U4S
   de: Morris (Autor)
