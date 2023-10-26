@@ -31,8 +31,18 @@
 <body>
     <div id="container" class="container-fluid">
         <h1 id="howmuch" style="text-align: center;">…</h1>
-        <h5 id="howmuch2" style="text-align: center;">…</h5>
-        <h6 id="howmuch3" style="text-align: center;">…</h6>
+        <div style="text-align: center;">
+            <a href="#" id="🇫🇷" class="btn" role="button" data-bs-toggle="button" data-tags="🇫🇷"> 🇫🇷 <span id="c-🇫🇷"></span> </a>
+            <a href="#" id="🇮🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇮🇹"> 🇮🇹 <span id="c-🇮🇹"></span> </a>
+            <a href="#" id="🇬🇧" class="btn" role="button" data-bs-toggle="button" data-tags="🇬🇧"> 🇬🇧 <span id="c-🇬🇧"></span> </a>
+            <a href="#" id="🇩🇪" class="btn" role="button" data-bs-toggle="button" data-tags="🇩🇪"> 🇩🇪 <span id="c-🇩🇪"></span> </a>
+            <a href="#" id="🇵🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇵🇹"> 🇵🇹 <span id="c-🇵🇹"></span> </a>
+        </div>
+        <div style="text-align: center;">
+            <a href="#" id="saint-jean-lipion" class="btn" role="button" data-bs-toggle="button" data-tags="saint-jean-lipion"> ↑ <span id="c-saint-jean-lipion"></span> </a>
+            <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene"> <span
+                    id="c-saint-lazare-de-savene"></span> ↓ </a>
+        </div>
         <div style="text-align: center;">
             <a href="#" id="cinema" class="btn" role="button" data-bs-toggle="button" data-tags="cinema">Cinéma</a>
             <a href="#" id="football" class="btn" role="button" data-bs-toggle="button" data-tags="football">Foot</a>
@@ -93,17 +103,26 @@
 
             display = () => {
                 document.getElementById("howmuch").innerHTML = `${this.total}`
-                document.getElementById("howmuch2").innerHTML = `🇫🇷\u00A0${this.fr}\u00A0\u00A0\u00A0🇮🇹\u00A0${this.it}\u00A0\u00A0\u00A0🇬🇧\u00A0${this.en}\u00A0\u00A0\u00A0🇩🇪\u00A0${this.de}\u00A0\u00A0\u00A0🇵🇹\u00A0${this.pt}`
-                document.getElementById("howmuch3").innerHTML = `↑\u00A0${this.slds}\u00A0\u00A0\u00A0\u00A0${this.sgl}\u00A0↓`
+                {
+                    document.getElementById("c-🇫🇷").innerHTML = `${this.fr}`
+                    document.getElementById("c-🇮🇹").innerHTML = `${this.it}`
+                    document.getElementById("c-🇬🇧").innerHTML = `${this.en}`
+                    document.getElementById("c-🇩🇪").innerHTML = `${this.de}`
+                    document.getElementById("c-🇵🇹").innerHTML = `${this.pt}`
+                }
+                {
+                    document.getElementById("c-saint-jean-lipion").innerHTML = `${this.sgl}`
+                    document.getElementById("c-saint-lazare-de-savene").innerHTML = `${this.slds}`
+                }
             }
 
         }
 
         function selectOrUnselectTag(e) {
 
-            const id = e.target.id
-            const className = e.target.className
-            const tags = e.target.dataset.tags.split(' ')
+            const id = e.currentTarget.id
+            const className = e.currentTarget.className
+            const tags = e.currentTarget.dataset.tags.split(' ')
 
             const allBtns = document.getElementsByClassName("btn")
             for (const btn of allBtns) {
@@ -139,6 +158,19 @@
         for (const btn of allBtns) {
             btn.addEventListener("click", selectOrUnselectTag);
         }
+        howmuch.addEventListener("click", () => {
+            const allBtns = document.getElementsByClassName("btn")
+            for (const btn of allBtns) {
+                btn.classList.remove("active")
+            }
+            const figures = document.querySelectorAll('figure')
+            const c = new Counter()
+            for (const figure of figures) {
+                c.count(entries[figure.dataset.index][1])
+                figure.style.display = "inline-block"
+            }
+            c.display()
+        })
 
         function blend(index, property) {
             const fig = document.createElement("figure");
@@ -148,6 +180,7 @@
             for (const tagIndex in property.tags) {
                 fig.classList.add(property.tags[tagIndex])
             }
+            fig.classList.add(property.where)
 
             const img = document.createElement("img");
             img.src = property['image_path']

@@ -25,9 +25,9 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
     # print("-------------")
     print(i, os.path.basename(filename))
     parts = PurePath(filename).parts
+    house = parts[0]
+    folder = parts[len(parts) - 2]
     where = '/' + concatExcludeLast(parts)
-
-    locationTag = parts[len(parts) - 2]
 
     # if not 'enfer' in filename:
 
@@ -35,9 +35,11 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
         if os.fstat(f.fileno()).st_size != 0: # https://stackoverflow.com/a/283719/1070215
             data = yaml.safe_load(f)
             for key, value in data.items():
-                data[key]["where"] = where
+                value["where"] = where
                 tags = value.get("tags", [])
-                tags.append(locationTag)
+                tags.append(folder)
+                tags.append(house)
+                tags.append(value["lan"])
                 value["tags"] = tags
             my_dictionary.update(data)
 
