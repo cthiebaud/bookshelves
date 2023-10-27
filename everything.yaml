@@ -3496,7 +3496,7 @@
 978-2203001039:
   de: "Herg\xE9 (Auteur)"
   ext: "Reli\xE9 \u2013 novembre 1984"
-  image_path: saint-lazare-de-savene/chambre-alessia/tintin/978-2203001039.jpg
+  image_path: saint-lazare-de-savene/chambre-alessia/tintin/978-2203001039.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - tintin
@@ -3688,14 +3688,14 @@
 978-2203004016:
   de: Michel Baudson (Auteur)
   ext: "Reli\xE9 \u2013 mars 1984"
-  image_path: saint-lazare-de-savene/chambre-alessia/tintin/978-2203004016.jpeg
+  image_path: saint-lazare-de-savene/chambre-alessia/autour_de_tintin/978-2203004016.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - tintin
+  - autour_de_tintin
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Le musee imaginaire de tintin
-  where: /saint-lazare-de-savene/chambre-alessia/tintin
+  where: /saint-lazare-de-savene/chambre-alessia/autour_de_tintin
 978-2203004047:
   de: "Beno\xEEt Peeters (Auteur)"
   ext: "exposition, Mus\xE9e d'Ixelles, 23 d\xE9cembre 1988-15 janvier 1989, Angoul\xEA\
@@ -3761,7 +3761,7 @@
   image_path: saint-lazare-de-savene/salon/arts/978-2203015036.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - tintin
+  - autour_de_tintin
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -6067,14 +6067,14 @@
   where: /saint-lazare-de-savene/salon/arts
 978-2908978001:
   de: Didier Quella-Guyot
-  image_path: saint-lazare-de-savene/chambre-alessia/tintin/978-2908978001.webp
+  image_path: saint-lazare-de-savene/chambre-alessia/autour_de_tintin/978-2908978001.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - tintin
+  - autour_de_tintin
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Lire Tintin au Tibet, de Herg\xE9 - lecture m\xE9thodique et documentaire"
-  where: /saint-lazare-de-savene/chambre-alessia/tintin
+  where: /saint-lazare-de-savene/chambre-alessia/autour_de_tintin
 978-2909031569:
   de: Jean-Luc Hennig (Auteur)
   ext: "Broch\xE9 \u2013 18 novembre 2003"

@@ -25,22 +25,26 @@
         .figure-img {
             margin-bottom: 0.25rem;
         }
+
+        .counter {
+            /* display: none; */
+        }
     </style>
 </head>
 
 <body>
     <div id="container" class="container-fluid">
-        <h1 id="howmuch" style="text-align: center;">…</h1>
-        <div style="text-align: center;">
+        <h1 id="howmuch" class="counter" style="text-align: center;">…</h1>
+        <div class="counter" style="text-align: center;">
             <a href="#" id="🇫🇷" class="btn" role="button" data-bs-toggle="button" data-tags="🇫🇷"> 🇫🇷 <span id="c-🇫🇷"></span> </a>
             <a href="#" id="🇮🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇮🇹"> 🇮🇹 <span id="c-🇮🇹"></span> </a>
             <a href="#" id="🇬🇧" class="btn" role="button" data-bs-toggle="button" data-tags="🇬🇧"> 🇬🇧 <span id="c-🇬🇧"></span> </a>
             <a href="#" id="🇩🇪" class="btn" role="button" data-bs-toggle="button" data-tags="🇩🇪"> 🇩🇪 <span id="c-🇩🇪"></span> </a>
             <a href="#" id="🇵🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇵🇹"> 🇵🇹 <span id="c-🇵🇹"></span> </a>
         </div>
-        <div style="text-align: center;">
+        <div class="counter" style="text-align: center;">
             <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene">
-                San Lazzaro 
+                San Lazzaro
                 <span id="c-saint-lazare-de-savene"></span>
                 ↑
             </a>
@@ -50,7 +54,7 @@
                 San Giovanni
             </a>
         </div>
-        <div style="text-align: center;">
+        <div class="counter" style="text-align: center;">
             <a href="#" id="cinema" class="btn" role="button" data-bs-toggle="button" data-tags="cinema">Cinéma</a>
             <a href="#" id="editors" class="btn" role="button" data-bs-toggle="button" data-tags="editors">Editeurs</a>
             <a href="#" id="football" class="btn" role="button" data-bs-toggle="button" data-tags="football">Foot</a>
@@ -264,7 +268,7 @@
 
             const c = new Counter();
             for (const property in entries) {
-                const enableSkip = undefined // "Kafka" // "Perec" // 
+                const enableSkip = undefined // "tintin" // "Kafka" // "Perec" // 
                 let skip = typeof enableSkip !== "undefined"
                 if (typeof entries[property][1].tags !== "undefined") {
                     if (enableSkip) {
