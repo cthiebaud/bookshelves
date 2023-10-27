@@ -582,6 +582,16 @@
   - "\U0001F1EC\U0001F1E7"
   title: Portrait Of A Killer
   where: /saint-jean-lipion/chambre/polars
+978-0330256445:
+  de: Bruce Chatwin (Auteur)
+  image_path: saint-lazare-de-savene/salon/_5/978-0330256445.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _5
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: In Patagonia
+  where: /saint-lazare-de-savene/salon/_5
 978-0330262132:
   de: Douglas Adams (Author)
   ext: "Paperback \u2013 1980"
@@ -4414,6 +4424,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres compl\xE8tes * Ecrits sur le Sable"
   where: /saint-lazare-de-savene/salon/_7
+978-2246398127:
+  de: Bruce Chatwin (Auteur)
+  ext: null
+  image_path: saint-lazare-de-savene/salon/_5/978-2246398127.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _5
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: En Patagonie
+  where: /saint-lazare-de-savene/salon/_5
 978-2246545910:
   de: "Fran\xE7ois Weyergans (Auteur)"
   ext: "Prix Goncourt 2005 Broch\xE9 \u2013 Grand livre, 12 septembre 2001"
@@ -6626,6 +6647,16 @@
   title: "06. O \xEDdolo roubado"
   url: null
   where: /saint-lazare-de-savene/chambre-alessia/tintin
+978-8804146643:
+  de: Angelo Marchese
+  image_path: saint-lazare-de-savene/salon/_7/978-8804146643.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _7
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Dizionario di retorica e di stilistica
+  where: /saint-lazare-de-savene/salon/_7
 978-8804234951:
   de: Jonathan Swift
   image_path: saint-lazare-de-savene/salon/smallbooks/978-8804234951.jpeg
@@ -6906,6 +6937,16 @@
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Palomar
+  where: /saint-lazare-de-savene/salon/_7
+978-8806117917:
+  de: Luciano Canepari
+  image_path: saint-lazare-de-savene/salon/_7/978-8806117917.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _7
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Introduzione alla fonetica
   where: /saint-lazare-de-savene/salon/_7
 978-8806126957:
   de: Primo Levi (Autore)
@@ -7661,6 +7702,16 @@
   - "\U0001F1EE\U0001F1F9"
   title: Operette morali
   where: /saint-lazare-de-savene/salon/_2
+978-8815059628:
+  de: Erving Goffman
+  image_path: saint-lazare-de-savene/salon/_7/978-8815059628.webp
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _7
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: La vita quotidiana come rappresentazione
+  where: /saint-lazare-de-savene/salon/_7
 978-8815248008:
   de: Mario Brunello (Autore)
   image_path: saint-lazare-de-savene/salon/_4/978-8815248008.jpg
@@ -9727,6 +9778,18 @@ ASIN-B00340LFAM:
   - "\U0001F1EB\U0001F1F7"
   title: "Verlaine par lui-m\xEAme"
   where: /saint-lazare-de-savene/salon/_4
+ASIN-B003L9T0IU:
+  de: Michel et Monique Peron (Auteur)
+  ext: "Collection \"Outre manche outre atlantique\" / Classe de premi\xE8re - Reli\xE9\
+    \ \u2013 1 janvier 1967"
+  image_path: saint-lazare-de-savene/salon/_7/ASIN-B003L9T0IU.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _7
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Great Britain - A Polyphoto
+  where: /saint-lazare-de-savene/salon/_7
 ASIN-B003X72BGS:
   de: Claude Bruneteau, Jean-Mathieu Luccioni (Auteurs)
   ext: "Broch\xE9 \u2013 1 Janvier 1972"
@@ -9795,6 +9858,16 @@ ASIN-B00NO4ODDO:
   - "\U0001F1EE\U0001F1F9"
   title: In Patagonia
   where: /saint-lazare-de-savene/salon/_5
+ASIN-B00OB8WNMK:
+  de: Denis de Rougemont
+  image_path: saint-lazare-de-savene/salon/_7/ASIN-B00OB8WNMK.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _7
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: L'amore e l'occidente
+  where: /saint-lazare-de-savene/salon/_7
 ASIN-B073DBKH1H:
   de: B.Brecht (Autore), Einaudi (a cura di)
   ext: "ed. Einaudi Gli Struzzi n. 16 A15 Copertina flessibile \u2013 1 gennaio 1963"
