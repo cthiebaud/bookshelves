@@ -6772,6 +6772,16 @@
   - "\U0001F1EE\U0001F1F9"
   title: Il barone rampante
   where: /saint-lazare-de-savene/salon/_5
+978-8804500919:
+  de: "N\xE2z\u0131m Hikmet"
+  image_path: "saint-lazare-de-savene/salon/po\xE9sie/978-8804500919.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - "po\xE9sie"
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Poesie d'amore
+  where: "/saint-lazare-de-savene/salon/po\xE9sie"
 978-8804508458:
   de: Mary Shelley (Autore), Chiara Zanolli (Traduttore), Laura Caretti (Traduttore)
   ext: "Copertina flessibile \u2013 2009"
@@ -7586,6 +7596,17 @@
   - "\U0001F1EE\U0001F1F9"
   title: Trasumanar e organizzar
   where: /saint-lazare-de-savene/salon/_4
+978-8811666295:
+  de: Pier Paolo Pasolini (Autore)
+  ext: Copertina flessibile
+  image_path: "saint-lazare-de-savene/salon/po\xE9sie/978-8811666295.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _2
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Scritti corsari
+  where: /saint-lazare-de-savene/salon/_2
 978-8811666752:
   de: ITALO CALVINO (Autore), [Garzanti] (a cura di)
   ext: Copertina flessibile
@@ -7630,6 +7651,16 @@
   - "\U0001F1EE\U0001F1F9"
   title: Quer pasticciaccio brutto de via Merulana
   where: /saint-lazare-de-savene/salon/_7
+978-8811810506:
+  de: Giacomo Leopardi (Autore), P. Ruffilli (Curatore)
+  image_path: saint-lazare-de-savene/salon/_2/978-8811810506.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _2
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Operette morali
+  where: /saint-lazare-de-savene/salon/_2
 978-8815248008:
   de: Mario Brunello (Autore)
   image_path: saint-lazare-de-savene/salon/_4/978-8815248008.jpg
@@ -7737,6 +7768,18 @@
   - "\U0001F1EE\U0001F1F9"
   title: Le donne di Dante
   where: /saint-lazare-de-savene/salon/arts2
+978-8817000567:
+  de: "Federico Garc\xEDa Lorca (Autore), Prellwitz N. von (a cura di), L. Bruno (Traduttore),\
+    \ L. Blini (Traduttore)"
+  ext: "Copertina flessibile \u2013 25 febbraio 2004"
+  image_path: "saint-lazare-de-savene/salon/po\xE9sie/978-8817000567.jpg"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - "po\xE9sie"
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Le poesie
+  where: "/saint-lazare-de-savene/salon/po\xE9sie"
 978-8817010320:
   de: Zap Mangusta (Autore)
   ext: "Lezioni di filosofia per tipi in gamba - Copertina rigida \u2013 19 aprile\
@@ -8587,6 +8630,17 @@
   - "\U0001F1EE\U0001F1F9"
   title: Il venti di luglio
   where: /saint-lazare-de-savene/salon/_8
+978-8845923630:
+  de: James Hillman (Autore), Adriana Bottini (Traduttore)
+  ext: "Carattere, vocazione, destino Copertina flessibile \u2013 18 marzo 2009"
+  image_path: saint-lazare-de-savene/salon/_2/978-8845923630.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _2
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Il codice dell'anima
+  where: /saint-lazare-de-savene/salon/_2
 978-8845925238:
   de: "S\xE1ndor M\xE1rai (Autore), Antonio Donato Sciacovelli (a cura di)"
   ext: "Copertina flessibile \u2013 20 ottobre 2010"
@@ -9741,6 +9795,17 @@ ASIN-B00NO4ODDO:
   - "\U0001F1EE\U0001F1F9"
   title: In Patagonia
   where: /saint-lazare-de-savene/salon/_5
+ASIN-B073DBKH1H:
+  de: B.Brecht (Autore), Einaudi (a cura di)
+  ext: "ed. Einaudi Gli Struzzi n. 16 A15 Copertina flessibile \u2013 1 gennaio 1963"
+  image_path: saint-lazare-de-savene/salon/_2/ASIN-B073DBKH1H.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _2
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: I Capolavori di Brecht
+  where: /saint-lazare-de-savene/salon/_2
 ASIN-B07TJB59Y5:
   de: Vladimir Propp (Autore) Gian Luigi Bravo (A cura di)
   ext: "Copertina flessibile \u2013 1 gennaio 1973"
