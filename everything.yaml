@@ -32,6 +32,18 @@
   title: Delicieusement Belge
   url: https://www.colruyt.be/fr/en-cuisine/questions-culinaires/conseils-culinaires/specialites-belges
   where: /saint-lazare-de-savene/salon/cuisine
+802-0994241182:
+  de: Collectif
+  image_path: saint-lazare-de-savene/salon/smallbooks/802-0994241182.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - cuisine
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: 16 etichette adesive per sottaceti e sottoli
+  url: https://www.alfabet.it/default/og18.html
+  where: /saint-lazare-de-savene/salon/smallbooks
 802-2264833370:
   de: Umberto Eco
   ext: Solo per i Soci Bookclub Mondadori
@@ -86,6 +98,17 @@
   - "\U0001F1EE\U0001F1F9"
   title: "La grande cucina vegetariana n\xB0 2 - Pasta, gnocchi e crespelle"
   url: https://edicola.shop/la-grande-cucina-vegetariana-padta-gnocchi-e-crespelle-n-7-del-1-6-2018-settimanale.html
+  where: /saint-lazare-de-savene/salon/cuisine
+977-2035843037:
+  de: Corriere della sera - Collectif
+  image_path: saint-lazare-de-savene/salon/cuisine/977-2035843037.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - cuisine
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: La cucina dell'estate - Riso, orzo, farro e couscous
+  url: https://www.amazon.it/s\?k=977-2035843037
   where: /saint-lazare-de-savene/salon/cuisine
 977-2532643048:
   de: Gianrico Carofiglio (Autore)
@@ -838,6 +861,17 @@
   - "\U0001F1EC\U0001F1E7"
   title: Infant Massage
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
+978-0553447897:
+  de: Evan Robertson (Author)
+  image_path: saint-lazare-de-savene/salon/smallbooks/978-0553447897.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Bibliophilia - 100 Literary Postcards
+  url: https://www.amazon.co.uk/s\?k=978-0553447897
+  where: /saint-lazare-de-savene/salon/smallbooks
 978-0553820249:
   de: Dennis Lehane (Author)
   image_path: saint-jean-lipion/chambre/polars/978-0553820249.jpg
@@ -3505,6 +3539,19 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Les 1001 albums qu'il faut avoir \xE9cout\xE9s dans sa vie"
   where: /saint-lazare-de-savene/salon/arts
+978-2082025010:
+  de: Sutcliffe Serena (Auteur)
+  ext: "Reli\xE9 \u2013 8 janvier 1992"
+  image_path: saint-lazare-de-savene/salon/smallbooks/978-2082025010.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - cuisine
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Guide des vins de Bourgogne
+  url: https://www.amazon.fr/s\?k=978-2082025010
+  where: /saint-lazare-de-savene/salon/smallbooks
 978-2082115254:
   de: "Dante Alighieri (Auteur), Jacqueline Risset (Pr\xE9face, Traduction)"
   image_path: saint-lazare-de-savene/salon/_1/978-2082115254.jpg
@@ -4987,6 +5034,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: "S\xE9ville 82 France-Allemagne le match du si\xE8cle"
   where: /saint-jean-lipion/chambre-paul/football
+978-2352045939:
+  de: Peter Wohlleben (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 1 mars 2017"
+  image_path: saint-lazare-de-savene/salon/arbres/978-2352045939.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arbres
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "La Vie secr\xE8te des arbres"
+  url: https://www.amazon.fr/s\?k=978-2352045939
+  where: /saint-lazare-de-savene/salon/arbres
 978-2352120834:
   de: Franz Kafka (Auteur)
   ext: 18 mars 1980
@@ -5111,6 +5170,30 @@
   - "\U0001F1EB\U0001F1F7"
   title: Algues vertes - L'histoire interdite
   where: /saint-jean-lipion/chambre/favourites
+978-2501043526:
+  de: "Isabel Brancq (Auteur), Gwena\xEBl Quantin (Photographies)"
+  ext: "Reli\xE9 \u2013 15 septembre 2004"
+  image_path: saint-lazare-de-savene/salon/cuisine/978-2501043526.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - cuisine
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Petites cr\xE8mes"
+  url: https://www.amazon.fr/s\?k=978-2501043526
+  where: /saint-lazare-de-savene/salon/cuisine
+978-2501073882:
+  de: Sandra Mahut (Auteur), Nathalie Carnet (Photographies)
+  ext: "Reli\xE9"
+  image_path: saint-lazare-de-savene/salon/cuisine/978-2501073882.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - cuisine
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Paniers vapeurs
+  url: https://www.amazon.it/s\?k=978-2501073882
+  where: /saint-lazare-de-savene/salon/cuisine
 978-2700053807:
   de: Richard Cawley (Auteur)
   ext: "Reli\xE9"
@@ -5189,6 +5272,19 @@
   - "\U0001F1EB\U0001F1F7"
   title: Le parti pris des choses
   where: "/saint-lazare-de-savene/salon/po\xE9sie"
+978-2701183152:
+  de: Catherine Lenne (Auteur)
+  ext: "70 questions impertinentes sur la vie secr\xE8te des plantes - Broch\xE9 \u2013\
+    \ 7 mai 2014"
+  image_path: saint-lazare-de-savene/salon/arbres/978-2701183152.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - arbres
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Dans la peau d'une plante
+  url: https://www.amazon.fr/s\?k=978-2701183152
+  where: /saint-lazare-de-savene/salon/arbres
 978-2702120316:
   de: "Kathleen Kelley-Lain\xE9 (Auteur)"
   ext: "Broch\xE9 \u2013 26 janvier 2005"
@@ -6530,6 +6626,28 @@
   title: "06. O \xEDdolo roubado"
   url: null
   where: /saint-lazare-de-savene/chambre-alessia/tintin
+978-8804234951:
+  de: Jonathan Swift
+  image_path: saint-lazare-de-savene/salon/smallbooks/978-8804234951.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Opere
+  where: /saint-lazare-de-savene/salon/smallbooks
+978-8804240723:
+  de: Eugenio Montale (Autore), G. Zampa (a cura di)
+  image_path: saint-lazare-de-savene/salon/smallbooks/978-8804240723.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Tutte le poesie
+  url: https://www.amazon.it/Tutte-poesie-Eugenio-Montale/dp/8804240725/ref=sr_1_1
+  where: /saint-lazare-de-savene/salon/smallbooks
 978-8804283195:
   de: Emidio De Felice (Autore)
   ext: "Copertina rigida \u2013 1 gennaio 1987"
@@ -6634,7 +6752,7 @@
 978-8804472940:
   de: Robert Frost (Autore)
   ext: e altre poesie
-  image_path: saint-lazare-de-savene/salon/_4/978-8804472940.webp
+  image_path: saint-lazare-de-savene/salon/_4/978-8804472940.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
@@ -7081,6 +7199,32 @@
   - "\U0001F1EE\U0001F1F9"
   title: Treno di panna
   where: /saint-lazare-de-savene/salon/_8
+978-8806593315:
+  de: Pier Paolo Pasolini (Autore), N. Naldini (a cura di)
+  ext: "Reli\xE9"
+  image_path: saint-lazare-de-savene/salon/smallbooks/978-8806593315.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - "po\xE9sie"
+  - cinema
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Lettere 1940-1954
+  where: /saint-lazare-de-savene/salon/smallbooks
+978-8806599539:
+  de: Pier Paolo Pasolini (Autore), N. Naldini (a cura di)
+  ext: "Reli\xE9"
+  image_path: saint-lazare-de-savene/salon/smallbooks/978-8806599539.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - "po\xE9sie"
+  - cinema
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Lettere 1955-1975
+  where: /saint-lazare-de-savene/salon/smallbooks
 978-8807014147:
   de: Antonio Tabucchi (Autore)
   ext: "Copertina flessibile \u2013 marzo 1991"
@@ -7570,6 +7714,18 @@
   - "\U0001F1EE\U0001F1F9"
   title: Dieci lezioni sui classici
   where: /saint-lazare-de-savene/salon/_6
+978-8815283184:
+  de: Umberto Castiello (Auteur)
+  ext: "Introduzione alla psicologia vegetale - Broch\xE9 \u2013 1 septembre 2023"
+  image_path: saint-lazare-de-savene/salon/arbres/978-8815283184.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - arbres
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: La mente delle piante
+  url: https://www.amazon.fr/s\?k=978-8815283184
+  where: /saint-lazare-de-savene/salon/arbres
 978-8815291103:
   de: Marco Santagata (Autore)
   ext: "Copertina rigida \u2013 4 febbraio 2021"
@@ -7695,6 +7851,18 @@
   - "\U0001F1EE\U0001F1F9"
   title: L'arte come terapia
   where: /saint-lazare-de-savene/salon/arts2
+978-8823516854:
+  de: Rabindranath Tagore
+  image_path: saint-lazare-de-savene/salon/smallbooks/978-8823516854.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Petali sulle ceneri
+  url: https://www.amazon.it/s\?k=978-8823516854
+  where: /saint-lazare-de-savene/salon/smallbooks
 978-8823520707:
   de: "Arnaldur Indri\xF0ason (Autore), Alessandro Storti (Traduttore)"
   ext: "Copertina rigida \u2013 28 giugno 2018"
@@ -7890,6 +8058,18 @@
   - "\U0001F1EE\U0001F1F9"
   title: Telemaco Signorini e la pittura in Europa
   where: /saint-lazare-de-savene/salon/arts2
+978-8832020021:
+  de: Lorenzo Notte (a cura di)
+  ext: "La citt\xE0 nella letteratura Copertina flessibile \u2013 15 novembre 2018"
+  image_path: saint-lazare-de-savene/salon/smallbooks/978-8832020021.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Bologna - Dicono di lei
+  url: https://www.amazon.it/s\?k=978-8832020021
+  where: /saint-lazare-de-savene/salon/smallbooks
 978-8833914954:
   de: Giovanni Mazzetti (Autore)
   ext: "Copertina flessibile \u2013 17 ottobre 2003"
@@ -8646,6 +8826,18 @@
   - "\U0001F1EE\U0001F1F9"
   title: Donne, madonne, mercanti e cavalieri
   where: /saint-lazare-de-savene/salon/_1
+978-8858133323:
+  de: Stefano Mancuso (Autore), Grisha Fischer (Illustratore)
+  ext: "Copertina rigida \u2013 15 novembre 2018"
+  image_path: saint-lazare-de-savene/salon/arbres/978-8858133323.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - arbres
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: L'incredibile viaggio delle piante
+  url: https://www.amazon.it/s\?k=978-8858133323
+  where: /saint-lazare-de-savene/salon/arbres
 978-8860306418:
   de: Carlo Rovelli (Autore)
   ext: "Copertina flessibile \u2013 15 gennaio 2014"
@@ -8909,6 +9101,18 @@
   title: "L'Artusi \xABsenza\xBB. L'arte di mangiare bene senza glutine, latte, zucchero"
   url: https://www.amazon.it/s\?k=978-8878474635
   where: /saint-lazare-de-savene/salon/cuisine
+978-8879724289:
+  de: Kam Chuen Lam (Autore), Kai Sin Lam (Autore), Lucia Corradini Caspani (Traduttore)
+  ext: "Copertina flessibile \u2013 1 febbraio 2001"
+  image_path: saint-lazare-de-savene/salon/cuisine/978-8879724289.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - cuisine
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: La cucina feng shui
+  url: https://www.amazon.it/s\?k=978-8879724289
+  where: /saint-lazare-de-savene/salon/cuisine
 978-8879836135:
   de: Edgar Lee Masters (Autore), L. Ciotti Miller (Traduttore)
   ext: "Copertina flessibile \u2013 1 gennaio 2007"
@@ -8968,6 +9172,18 @@
   - "\U0001F1EE\U0001F1F9"
   title: Qi gong ed energia vitale
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
+978-8884166142:
+  de: Artemisia Gentileschi (Autore), Eva Menzio (a cura di), Roland Barthes (Collaboratore),
+    & 1 altro
+  ext: "Copertina flessibile \u2013 31 gennaio 2017"
+  image_path: saint-lazare-de-savene/salon/arts/978-8884166142.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - arts2
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: "Lettere - precedute da \xABAtti di un processo per stupro\xBB"
+  where: /saint-lazare-de-savene/salon/arts2
 978-8884409942:
   de: Enrico Giacovelli (Autore)
   ext: "I film su Mozart, i film da Mozart, i film con musiche di Mozart - Copertina\
@@ -9058,6 +9274,18 @@
   title: Il quaderno dei dolci di mele
   url: https://www.amazon.it/s\?k=978-8886089517
   where: /saint-lazare-de-savene/salon/cuisine
+978-8886089555:
+  de: Paola Fantin (Autore)
+  ext: "Copertina flessibile \u2013 14 dicembre 2009"
+  image_path: saint-lazare-de-savene/salon/arbres/978-8886089555.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - arbres
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Quaderno degli alberi antichi e leggenda
+  url: https://www.amazon.it/s\?k=978-8886089555
+  where: /saint-lazare-de-savene/salon/arbres
 978-8886452731:
   de: "Francesco Paolo Maulucci\_Vivolo"
   ext: "Copertina flessibile \u2013 28 marzo 2013"
@@ -9102,6 +9330,19 @@
   - "\U0001F1EE\U0001F1F9"
   title: "Tea - Vie e virt\xF9 di una foglia esotica"
   where: /saint-lazare-de-savene/salon/arts
+978-8888700441:
+  de: Shelagh and Jonathan Routh (Autore), Valentina Francese (Traduttore)
+  ext: "Copertina flessibile \u2013 1 gennaio 2005"
+  image_path: saint-lazare-de-savene/salon/smallbooks/978-8888700441.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - cuisine
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Note di cucina di Leonardo da Vinci
+  url: https://www.amazon.it/cucina-Leonardo-Vinci-Shelagh-Routh/dp/8888700447/ref=sr_1_1
+  where: /saint-lazare-de-savene/salon/smallbooks
 978-8889431122:
   de: Ralph Gibson (Auteur)
   ext: "Reli\xE9 \u2013 2005"
@@ -9478,6 +9719,17 @@ ASIN-B00F47MHU0:
   - "\U0001F1EE\U0001F1F9"
   title: Opere complete
   where: /saint-lazare-de-savene/salon/_4
+ASIN-B00HFSBGAS:
+  de: William Shakespeare (Autore)
+  ext: Copertina rigida
+  image_path: saint-lazare-de-savene/salon/lapleiade/ASIN-B00HFSBGAS.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Tutte le opere - a cura di Mario Praz
+  where: /saint-lazare-de-savene/salon/lapleiade
 ASIN-B00NO4ODDO:
   de: Bruce Chatwin (Autore), Marina Marchesi (Traduttore)
   ext: "Copertina flessibile \u2013 22 gennaio 2003"
@@ -9968,6 +10220,16 @@ boh5:
   - "\U0001F1EB\U0001F1F7"
   title: La Guerre et la Paix
   where: /saint-jean-lipion/chambre/lapleiade
+boh50:
+  de: Il meglio di Sale & Pepe -  Collectif
+  image_path: saint-lazare-de-savene/salon/cuisine/boh50.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - cuisine
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Dolci con le mele - torte, plumcake, pie, crostate e altre delizie
+  where: /saint-lazare-de-savene/salon/cuisine
 boh6:
   de: "F\xE9dor Dosto\xEFevski (Auteur), Henri Mongault (Traduction)"
   ext: "La Pl\xE9iade, Gaillmard \u2013 1956"
@@ -10015,3 +10277,35 @@ boh9:
   title: "Cahiers du Cin\xE9ma hors-s\xE9rie 2007 - Bergman, Antonioni, deux grands\
     \ modernes"
   where: /saint-jean-lipion/chambre/cinema
+lamartine:
+  de: Lamartine
+  image_path: saint-lazare-de-savene/salon/smallbooks/lamartine.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "M\xE9ditations et nouvelles m\xE9ditations"
+  where: /saint-lazare-de-savene/salon/smallbooks
+paris:
+  de: "\xC9ditions A. Leconte"
+  image_path: saint-lazare-de-savene/salon/smallbooks/paris.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Plan de Paris par Arrondissement
+  where: /saint-lazare-de-savene/salon/smallbooks
+vinci:
+  de: "Mus\xE9e du Louvre - Collectif"
+  image_path: saint-lazare-de-savene/salon/smallbooks/vinci.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: "Catalogue de l'exposition L\xE9onard de Vinci 24 octobre 2019 - f\xE9vrier\
+    \ 2020"
+  where: /saint-lazare-de-savene/salon/smallbooks

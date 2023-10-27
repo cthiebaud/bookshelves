@@ -1,0 +1,94 @@
+vinci:
+  title: Catalogue de l'exposition Léonard de Vinci 24 octobre 2019 - février 2020
+  de: Musée du Louvre - Collectif
+  lan: 🇬🇧
+
+lamartine:
+  title: Méditations et nouvelles méditations
+  de: Lamartine
+  lan: 🇫🇷
+  tags:
+    - poésie
+
+paris:
+  title: Plan de Paris par Arrondissement
+  de: Éditions A. Leconte
+  lan: 🇫🇷
+
+978-8804234951:
+  title: Opere
+  de: Jonathan Swift
+  lan: 🇮🇹
+
+978-8806593315:
+  title: Lettere 1940-1954
+  ext: Relié
+  de: Pier Paolo Pasolini (Autore), N. Naldini (a cura di)
+  lan: 🇮🇹
+  tags:
+    - poésie
+    - cinema
+
+978-8806599539:
+  title: Lettere 1955-1975
+  ext: Relié
+  de: Pier Paolo Pasolini (Autore), N. Naldini (a cura di)
+  lan: 🇮🇹
+  tags:
+    - poésie
+    - cinema
+
+978-2082025010:
+  title: Guide des vins de Bourgogne
+  ext: Relié – 8 janvier 1992
+  de: Sutcliffe Serena (Auteur)
+  lan: 🇫🇷
+  url: https://www.amazon.fr/s\?k=978-2082025010
+  tags:
+    - cuisine
+
+978-8832020021:
+  title: Bologna - Dicono di lei
+  ext: La città nella letteratura Copertina flessibile – 15 novembre 2018
+  de: Lorenzo Notte (a cura di)
+  lan: 🇫🇷
+  url: https://www.amazon.it/s\?k=978-8832020021
+
+978-8888700441:
+  title: Note di cucina di Leonardo da Vinci
+  ext: Copertina flessibile – 1 gennaio 2005
+  de: Shelagh and Jonathan Routh (Autore), Valentina Francese (Traduttore)
+  lan: 🇫🇷
+  url: https://www.amazon.it/cucina-Leonardo-Vinci-Shelagh-Routh/dp/8888700447/ref=sr_1_1
+  tags:
+    - cuisine
+
+802-0994241182:
+  title: 16 etichette adesive per sottaceti e sottoli
+  de: Collectif
+  lan: 🇫🇷
+  url: https://www.alfabet.it/default/og18.html
+  tags:
+    - cuisine
+
+978-8823516854:
+  title: Petali sulle ceneri
+  de: Rabindranath Tagore
+  lan: 🇫🇷
+  url: https://www.amazon.it/s\?k=978-8823516854
+  tags:
+    - poésie
+
+978-0553447897:
+  title: Bibliophilia - 100 Literary Postcards
+  de: Evan Robertson (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.co.uk/s\?k=978-0553447897
+
+978-8804240723:
+  title: Tutte le poesie
+  de: Eugenio Montale (Autore), G. Zampa (a cura di)
+  lan: 🇫🇷
+  url: https://www.amazon.it/Tutte-poesie-Eugenio-Montale/dp/8804240725/ref=sr_1_1
+  tags:
+    - poésie
