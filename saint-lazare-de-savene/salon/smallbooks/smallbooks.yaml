@@ -19,6 +19,8 @@ paris:
   title: Opere
   de: Jonathan Swift
   lan: 🇮🇹
+  tags:
+    - lapleiade
 
 978-8806593315:
   title: Lettere 1940-1954
@@ -28,6 +30,7 @@ paris:
   tags:
     - poésie
     - cinema
+    - lapleiade
 
 978-8806599539:
   title: Lettere 1955-1975
@@ -37,6 +40,7 @@ paris:
   tags:
     - poésie
     - cinema
+    - lapleiade
 
 978-2082025010:
   title: Guide des vins de Bourgogne
@@ -92,3 +96,5 @@ paris:
   url: https://www.amazon.it/Tutte-poesie-Eugenio-Montale/dp/8804240725/ref=sr_1_1
   tags:
     - poésie
+    - lapleiade
+

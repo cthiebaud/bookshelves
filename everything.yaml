@@ -1939,6 +1939,37 @@
   - "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres po\xE9tiques"
   where: /saint-lazare-de-savene/salon/lapleiade
+978-2070101733:
+  de: Denis Diderot (Auteur)
+  ext: "Reli\xE9 \u2013 25 septembre 1946"
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070101733.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Oeuvres
+  where: /saint-lazare-de-savene/salon/lapleiade
+978-2070104031:
+  de: Roland-Manuel (sous la direction de)
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070104031.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Histoire de la musique 1 - Des origines a\xE0 Jean-S\xE9bastien Bach"
+  where: /saint-lazare-de-savene/salon/lapleiade
+978-2070104048:
+  de: Roland-Manuel (sous la direction de)
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070104048.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Histoire de la musique 2 - Du XVIIIe si\xE8cle a\xE0 nos jours"
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070104574:
   de: Marcel Proust
   image_path: saint-lazare-de-savene/salon/lapleiade/978-2070104574.jpg
@@ -1961,6 +1992,17 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres po\xE9tiques compl\xE8tes"
+  where: /saint-lazare-de-savene/salon/lapleiade
+978-2070106974:
+  de: Stendhal (Auteur)
+  ext: "Reli\xE9 \u2013 26 octobre 1973"
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070106974.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Voyages en Italie
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070107933:
   de: Franz Kafka (Auteur)
@@ -1996,6 +2038,18 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres compl\xE8tes II"
+  where: /saint-lazare-de-savene/salon/lapleiade
+978-2070109616:
+  de: "Voltaire (Auteur), Fr\xE9d\xE9ric Deloffre (Sous la direction de), Jacques\
+    \ Van Den Heuvel (Sous la direction de)"
+  ext: "Reli\xE9 \u2013 16 mai 1979"
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070109616.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Romans et contes
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070109708:
   de: Franz Kafka (Auteur)
@@ -2035,6 +2089,17 @@
   title: "\u0152uvres compl\xE8tes (Edition de Claude David en 1984) II - Journaux\
     \ - Lettres \xE0 sa famille et a\xE0 ses amis"
   where: /saint-lazare-de-savene/salon/random
+978-2070111053:
+  de: Albert Cohen (Auteur)
+  ext: "Reli\xE9 \u2013 13juin 1988"
+  image_path: saint-lazare-de-savene/salon/lapleiade/978-2070111053.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Belle du Seigneur
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070111367:
   de: Marcel Proust
   image_path: saint-lazare-de-savene/salon/lapleiade/978-2070111367.jpg
@@ -6662,6 +6727,7 @@
   image_path: saint-lazare-de-savene/salon/smallbooks/978-8804234951.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - lapleiade
   - smallbooks
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -6673,6 +6739,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
+  - lapleiade
   - smallbooks
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -7258,6 +7325,7 @@
   tags:
   - "po\xE9sie"
   - cinema
+  - lapleiade
   - smallbooks
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -7271,6 +7339,7 @@
   tags:
   - "po\xE9sie"
   - cinema
+  - lapleiade
   - smallbooks
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -10436,6 +10505,17 @@ paris:
   - "\U0001F1EB\U0001F1F7"
   title: Plan de Paris par Arrondissement
   where: /saint-lazare-de-savene/salon/smallbooks
+shakespeare:
+  de: William Shakespeare
+  ext: "Pr\xE9sentations par Henri Fluch\xE8re - Reli\xE9 - 1980"
+  image_path: saint-lazare-de-savene/salon/lapleiade/shakespeare.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Oeuvres compl\xE8tes, Vol. II - Com\xE9dies II - Trag\xE9dies"
+  where: /saint-lazare-de-savene/salon/lapleiade
 vinci:
   de: "Mus\xE9e du Louvre - Collectif"
   image_path: saint-lazare-de-savene/salon/smallbooks/vinci.jpg
