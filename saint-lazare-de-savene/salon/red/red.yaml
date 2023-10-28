@@ -45,7 +45,7 @@ ASIN-B0007J1C9W:
 ASIN-B00A7WBHJY:
   title: La litterature anglaise par les textes
   ext: Relié – 1 janvier 1966
-  de: G.GUIBILLON (Auteur)
+  de: Georges Guibillon (Auteur)
   lan: 🇫🇷
 
 ASIN-B003X7DCEI:
@@ -108,3 +108,20 @@ bovary:
   de: Jules César (Auteur), L.-A. (Léopold-Albert) Constans (Auteur), A. (André) Balland (Traduction)
   lan: 🇫🇷
 
+ASIN-B009HVT4FK:
+  title: Trois contes
+  ext: Hardcover – 1959
+  publisher: George G. Harrap and Co.
+  de: Gustave Flaubert
+  lan: 🇫🇷
+
+fallada:
+  title: Jeder stirbt für sich allein 1
+  de: Hans Fallada
+  publisher: Aufbau Verlag
+  lan: 🇩🇪
+
+fallada2:
+  title: Jeder stirbt für sich allein 2
+  de: Hans Fallada
+  lan: 🇩🇪

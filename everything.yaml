@@ -10019,8 +10019,20 @@ ASIN-B0098MD4B8:
   - "\U0001F1EB\U0001F1F7"
   title: Histoire de Juliette - 2
   where: /saint-lazare-de-savene/salon/_4
+ASIN-B009HVT4FK:
+  de: Gustave Flaubert
+  ext: "Hardcover \u2013 1959"
+  image_path: saint-lazare-de-savene/salon/red/ASIN-B009HVT4FK.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  publisher: George G. Harrap and Co.
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Trois contes
+  where: /saint-lazare-de-savene/salon/red
 ASIN-B00A7WBHJY:
-  de: G.GUIBILLON (Auteur)
+  de: Georges Guibillon (Auteur)
   ext: "Reli\xE9 \u2013 1 janvier 1966"
   image_path: saint-lazare-de-savene/salon/red/ASIN-B00A7WBHJY.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -10641,6 +10653,27 @@ bovary:
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Madame Bovary
+  where: /saint-lazare-de-savene/salon/red
+fallada:
+  de: Hans Fallada
+  image_path: saint-lazare-de-savene/salon/red/fallada.jpeg
+  lan: "\U0001F1E9\U0001F1EA"
+  publisher: Aufbau Verlag
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1E9\U0001F1EA"
+  title: "Jeder stirbt f\xFCr sich allein 1"
+  where: /saint-lazare-de-savene/salon/red
+fallada2:
+  de: Hans Fallada
+  image_path: saint-lazare-de-savene/salon/red/fallada2.jpeg
+  lan: "\U0001F1E9\U0001F1EA"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1E9\U0001F1EA"
+  title: "Jeder stirbt f\xFCr sich allein 2"
   where: /saint-lazare-de-savene/salon/red
 fleurs_du_mal:
   de: Charles Baudelaire (Ernest Raynaud)
