@@ -9,6 +9,16 @@
   - "\U0001F1EE\U0001F1F9"
   title: Teatro
   where: /saint-lazare-de-savene/salon/_7
+256-1892524916:
+  de: Cesare Pavese
+  image_path: saint-lazare-de-savene/salon/black/256-1892524916.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - black
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: "La Luna e i Fal\xF2 - Il Compagno"
+  where: /saint-lazare-de-savene/salon/black
 256-6891968792:
   de: Lytton Strachey (Autore)
   ext: 1966
@@ -1122,6 +1132,17 @@
   title: Vegetarian Supercook
   url: https://www.roseelliot.com/books/vegetarian-cook-books/vegetarian-supercook--hamlyn-2004
   where: /saint-lazare-de-savene/salon/cuisine
+978-0618735167:
+  de: Philip Roth (Author)
+  ext: "Hardcover \u2013 April 1, 2006"
+  image_path: saint-lazare-de-savene/salon/black/978-0618735167.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - black
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Everyman
+  where: /saint-lazare-de-savene/salon/black
 978-0670069712:
   de: Philip Roth (Author)
   ext: "(Vintage International) Paperback \u2013 October 5, 2010"
@@ -4901,6 +4922,19 @@
   title: "Biblioth\xE8que id\xE9ale des philosophes antiques - De Pythagore \xE0 Bo\xE8\
     ce"
   where: /saint-jean-lipion/chambre/lapleiade.etc
+978-2253001553:
+  de: "Pierre Dac, L\xE9opold Lavolaille, Nostrautobus, Jean Survot, G. K. W. Van\
+    \ Den Paraboum, Maurice Henry, Fernand Rauz\xE9na, Don Charl'os, Pr Jules Lem\xE8\
+    tre Et Son Fr\xE8re L\xE9on (Autore)"
+  ext: "Copertina flessibile \u2013 15 ottobre 1990"
+  image_path: saint-lazare-de-savene/salon/poches/978-2253001553.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - poches
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "L'os \xE0 mo\xEBlle"
+  where: /saint-lazare-de-savene/salon/poches
 978-2253030423:
   de: Raymond Roussel (Auteur), Tiphaine Samoyault (Sous la direction de)
   ext: "Poche \u2013 13 octobre 2005"
@@ -6233,6 +6267,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: Chronique d'Anna Magdalena Bach
   where: /saint-jean-lipion/chambre/cinema
+978-2842059194:
+  de: "Fran\xE7ois Flahault (Auteur)"
+  ext: "Poche \u2013 7 septembre 2005"
+  image_path: saint-lazare-de-savene/salon/smallbooks/978-2842059194.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - smallbooks
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Le Paradoxe de Robinson - Capitalisme et soci\xE9t\xE9"
+  where: /saint-lazare-de-savene/salon/smallbooks
 978-2842712600:
   de: "\xC9tienne Liebig (Auteur)"
   ext: "Broch\xE9 \u2013 27 avril 2006"
@@ -10071,7 +10116,7 @@
   title: Brazil
   where: /saint-lazare-de-savene/salon/arts
 978-8889642481:
-  di: Matteo Fantuzzi (Autore)
+  de: Matteo Fantuzzi (Autore)
   image_path: saint-lazare-de-savene/salon/random/978-8889642481.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
