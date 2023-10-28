@@ -1503,7 +1503,7 @@
   url: null
   where: /saint-lazare-de-savene/chambre-alessia/tintin
 978-1408730959:
-  de: Galbraith Robert (Author)
+  de: Robert Galbraith (Author)
   ext: "(Cormoran Strike Book 7) Paperback \u2013 September 23, 2023"
   image_path: saint-lazare-de-savene/salon/random/978-1408730959.jpg
   lan: "\U0001F1EC\U0001F1E7"
@@ -2351,6 +2351,7 @@
   image_path: saint-jean-lipion/chambre/editors/978-2070117697.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - nazis
   - editors
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -2489,6 +2490,7 @@
   image_path: saint-jean-lipion/chambre/editors/978-2070141937.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - nazis
   - editors
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -3744,6 +3746,7 @@
   image_path: saint-lazare-de-savene/salon/black/978-2081360440.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - polars
   - black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -3756,6 +3759,7 @@
   image_path: saint-lazare-de-savene/salon/black/978-2081378261.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - polars
   - black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -3795,7 +3799,7 @@
   title: Commencements
   where: /saint-jean-lipion/chambre/editors
 978-2082000611:
-  de: Bugialli Guiliano (Auteur)
+  de: Guiliano Bugialli (Auteur)
   image_path: saint-lazare-de-savene/salon/cuisine/978-2082000611.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -4241,6 +4245,7 @@
   image_path: saint-lazare-de-savene/salon/black/978-2203020269.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - "illustr\xE9"
   - black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -5136,6 +5141,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Souvenirs d'une ambassade \xE0 Berlin 1931 - 1938"
   where: /saint-jean-lipion/chambre/nazis
+978-2262079932:
+  de: Olivier Wieviorka (Auteur)
+  ext: "Broch\xE9 \u2013 Grand livre, 24 ao\xFBt 2023"
+  image_path: saint-lazare-de-savene/978-2262079932.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - nazis
+  - saint-lazare-de-savene
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Histoire totale de la Seconde Guerre mondiale
+  where: /saint-lazare-de-savene
 978-2263014017:
   de: Collectif (Author)
   ext: "Hardcover \u2013 January 1, 1988"
@@ -5348,6 +5365,7 @@
   image_path: saint-lazare-de-savene/salon/black/978-2290041000.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - polars
   - black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -5393,6 +5411,7 @@
   image_path: saint-lazare-de-savene/salon/black/978-2290351284.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - polars
   - black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -6738,6 +6757,7 @@
   image_path: saint-lazare-de-savene/salon/black/978-2878581904.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - polars
   - black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -7053,6 +7073,7 @@
   lan: "\U0001F1E9\U0001F1EA"
   publisher: Aufbau Verlag
   tags:
+  - nazis
   - red
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
@@ -7064,6 +7085,7 @@
   lan: "\U0001F1E9\U0001F1EA"
   publisher: Aufbau Verlag
   tags:
+  - nazis
   - red
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
@@ -7837,7 +7859,6 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - cinema
   - lapleiade
   - small
   - saint-lazare-de-savene
@@ -7851,7 +7872,6 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - cinema
   - lapleiade
   - small
   - saint-lazare-de-savene
