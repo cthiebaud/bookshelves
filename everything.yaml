@@ -2339,6 +2339,7 @@
   image_path: saint-lazare-de-savene/salon/arts/978-2070116355.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - proust
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -7203,13 +7204,13 @@
 978-8804240723:
   de: Eugenio Montale (Autore), G. Zampa (a cura di)
   image_path: saint-lazare-de-savene/salon/small/978-8804240723.jpg
-  lan: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
   - lapleiade
   - small
   - saint-lazare-de-savene
-  - "\U0001F1EB\U0001F1F7"
+  - "\U0001F1EE\U0001F1F9"
   title: Tutte le poesie
   url: https://www.amazon.it/Tutte-poesie-Eugenio-Montale/dp/8804240725/ref=sr_1_1
   where: /saint-lazare-de-savene/salon/small
@@ -10118,12 +10119,12 @@
 978-8889642481:
   de: Matteo Fantuzzi (Autore)
   image_path: saint-lazare-de-savene/salon/random/978-8889642481.jpg
-  lan: "\U0001F1EB\U0001F1F7"
+  lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
   - small
   - saint-lazare-de-savene
-  - "\U0001F1EB\U0001F1F7"
+  - "\U0001F1EE\U0001F1F9"
   title: "Kobarid Copertina flessibile \u2013 1 settembre 2008"
   where: /saint-lazare-de-savene/salon/small
 978-8890772030:
