@@ -35,7 +35,8 @@
 <body>
     <div id="container" class="container-fluid">
         <h1 id="howmuch" class="counter" style="text-align: center;">…</h1>
-        <div class="counter" style="text-align: center;">
+        <hr>
+        <div id="langage" class="counter" style="text-align: center;">
             <a href="#" id="🇫🇷" class="btn" role="button" data-bs-toggle="button" data-tags="🇫🇷"> 🇫🇷 <span id="c-🇫🇷"></span> </a>
             <a href="#" id="🇮🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇮🇹"> 🇮🇹 <span id="c-🇮🇹"></span> </a>
             <a href="#" id="🇬🇧" class="btn" role="button" data-bs-toggle="button" data-tags="🇬🇧"> 🇬🇧 <span id="c-🇬🇧"></span> </a>
@@ -43,19 +44,21 @@
             <a href="#" id="🇵🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇵🇹"> 🇵🇹 <span id="c-🇵🇹"></span> </a>
             <a href="#" id="🇪🇸" class="btn" role="button" data-bs-toggle="button" data-tags="🇪🇸"> 🇪🇸 <span id="c-🇪🇸"></span> </a>
         </div>
-        <div class="counter" style="text-align: center;">
+        <hr>
+        <div id="location" class="counter" style="text-align: center;">
             <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene">
+                ↑
                 San Lazzaro
                 <span id="c-saint-lazare-de-savene"></span>
-                ↑
             </a>
             <a href="#" id="saint-jean-lipion" class="btn" role="button" data-bs-toggle="button" data-tags="saint-jean-lipion">
-                ↓
                 <span id="c-saint-jean-lipion"></span>
                 San Giovanni
+                ↓
             </a>
         </div>
-        <div class="counter" style="text-align: center;">
+        <hr>
+        <div id="tags" class="counter" style="text-align: center;">
             <a href="#" id="black" class="btn" role="button" data-bs-toggle="button" data-tags="black">Black</a>
             <a href="#" id="cinema" class="btn" role="button" data-bs-toggle="button" data-tags="cinema">Cinéma</a>
             <a href="#" id="cuisine" class="btn" role="button" data-bs-toggle="button" data-tags="cuisine">Cuisine</a>
@@ -70,9 +73,10 @@
             <a href="#" id="polars" class="btn" role="button" data-bs-toggle="button" data-tags="polars pdjames">Polar</a>
             <a href="#" id="red" class="btn" role="button" data-bs-toggle="button" data-tags="red">Red</a>
             <a href="#" id="rimbaud" class="btn" role="button" data-bs-toggle="button" data-tags="rimbaud">Rimbaud</a>
-            <a href="#" id="smallbooks" class="btn" role="button" data-bs-toggle="button" data-tags="smallbooks">Small Books</a>
+            <a href="#" id="small" class="btn" role="button" data-bs-toggle="button" data-tags="small">Small</a>
             <a href="#" id="tintin" class="btn" role="button" data-bs-toggle="button" data-tags="tintin">Tintin</a>
         </div>
+        <hr>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
@@ -139,9 +143,17 @@
 
         }
 
+        const categories = {
+            langage: undefined,
+            location: undefined,
+            tags: undefined
+        }
+
         function selectOrUnselectTag(e) {
 
             const id = e.currentTarget.id
+            const category = e.currentTarget.parentNode.id
+            // console.log(category)
             const className = e.currentTarget.className
             const tags = e.currentTarget.dataset.tags.split(' ')
 
@@ -150,21 +162,50 @@
                 if (btn.id === id) {
                     continue
                 }
+                if (btn.parentNode.id !== category) {
+                    continue
+                }
                 btn.classList.remove("active")
             }
 
             const figures = document.querySelectorAll('figure')
             const c = new Counter()
+
             if (className.includes('active')) {
-                for (const figure of figures) {
-                    figure.style.display = "none"
+                categories[category] = tags
+            } else {
+                categories[category] = undefined
+            }
+            console.log(categories)
+
+            // eteins tout
+            for (const figure of figures) {
+                figure.style.display = "none"
+            }
+
+            let selection = ""
+            // build a css selector
+            if (categories.langage) {
+                selection += "." + categories.langage
+            }
+            if (categories.location) {
+                selection += "." + categories.location
+            }
+            if (categories.tags) {
+                const previous = selection
+                let sel = ""
+                for (const tag of categories.tags) {
+                    sel = selection + "." + tag + " "
                 }
-                for (const tag of tags) {
-                    const taggeds = document.getElementsByClassName(tag)
-                    for (const tagged of taggeds) {
-                        c.count(entries[tagged.dataset.index][1])
-                        tagged.style.display = "inline-block"
-                    }
+                selection = sel
+            }
+
+            console.log(selection)
+            if (selection.trim() !== "") {
+                const taggeds = document.querySelectorAll(selection)
+                for (const tagged of taggeds) {
+                    c.count(entries[tagged.dataset.index][1])
+                    tagged.style.display = "inline-block"
                 }
             } else {
                 for (const figure of figures) {
@@ -172,6 +213,8 @@
                     figure.style.display = "inline-block"
                 }
             }
+
+
             c.display()
         }
 
@@ -179,6 +222,7 @@
         for (const btn of allBtns) {
             btn.addEventListener("click", selectOrUnselectTag);
         }
+
         howmuch.addEventListener("click", () => {
             const allBtns = document.getElementsByClassName("btn")
             for (const btn of allBtns) {

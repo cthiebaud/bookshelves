@@ -44,16 +44,16 @@
   where: /saint-lazare-de-savene/salon/cuisine
 802-0994241182:
   de: Collectif
-  image_path: saint-lazare-de-savene/salon/smallbooks/802-0994241182.jpg
+  image_path: saint-lazare-de-savene/salon/small/802-0994241182.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cuisine
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: 16 etichette adesive per sottaceti e sottoli
   url: https://www.alfabet.it/default/og18.html
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 802-2264833370:
   de: Umberto Eco
   ext: Solo per i Soci Bookclub Mondadori
@@ -976,15 +976,15 @@
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-0553447897:
   de: Evan Robertson (Author)
-  image_path: saint-lazare-de-savene/salon/smallbooks/978-0553447897.jpg
+  image_path: saint-lazare-de-savene/salon/small/978-0553447897.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Bibliophilia - 100 Literary Postcards
   url: https://www.amazon.co.uk/s\?k=978-0553447897
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-0553820249:
   de: Dennis Lehane (Author)
   image_path: saint-jean-lipion/chambre/polars/978-0553820249.jpg
@@ -3832,16 +3832,16 @@
 978-2082025010:
   de: Sutcliffe Serena (Auteur)
   ext: "Reli\xE9 \u2013 8 janvier 1992"
-  image_path: saint-lazare-de-savene/salon/smallbooks/978-2082025010.jpg
+  image_path: saint-lazare-de-savene/salon/small/978-2082025010.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cuisine
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Guide des vins de Bourgogne
   url: https://www.amazon.fr/s\?k=978-2082025010
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-2082115254:
   de: "Dante Alighieri (Auteur), Jacqueline Risset (Pr\xE9face, Traduction)"
   image_path: saint-lazare-de-savene/salon/_1/978-2082115254.jpg
@@ -4923,10 +4923,10 @@
     ce"
   where: /saint-jean-lipion/chambre/lapleiade.etc
 978-2253001553:
-  de: "Pierre Dac, L\xE9opold Lavolaille, Nostrautobus, Jean Survot, G. K. W. Van\
-    \ Den Paraboum, Maurice Henry, Fernand Rauz\xE9na, Don Charl'os, Pr Jules Lem\xE8\
-    tre Et Son Fr\xE8re L\xE9on (Autore)"
-  ext: "Copertina flessibile \u2013 15 ottobre 1990"
+  de: "Pierre Dac, L\xE9opold Lavolaille, Nostrautobus, Jean Survot, G.K.W. van den\
+    \ Paraboum, Maurice Henry, Fernand Rauz\xE9na, Don Charl'os, Pr Jules Lem\xE8\
+    tre et son fr\xE8re L\xE9on, Jacques Allahune (Autore)"
+  ext: "Copertina flessibile \u2013 1974"
   image_path: saint-lazare-de-savene/salon/poches/978-2253001553.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -6270,14 +6270,14 @@
 978-2842059194:
   de: "Fran\xE7ois Flahault (Auteur)"
   ext: "Poche \u2013 7 septembre 2005"
-  image_path: saint-lazare-de-savene/salon/smallbooks/978-2842059194.jpg
+  image_path: saint-lazare-de-savene/salon/small/978-2842059194.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Le Paradoxe de Robinson - Capitalisme et soci\xE9t\xE9"
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-2842712600:
   de: "\xC9tienne Liebig (Auteur)"
   ext: "Broch\xE9 \u2013 27 avril 2006"
@@ -7191,28 +7191,28 @@
   where: /saint-lazare-de-savene/salon/_7
 978-8804234951:
   de: Jonathan Swift
-  image_path: saint-lazare-de-savene/salon/smallbooks/978-8804234951.jpeg
+  image_path: saint-lazare-de-savene/salon/small/978-8804234951.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - lapleiade
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Opere
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-8804240723:
   de: Eugenio Montale (Autore), G. Zampa (a cura di)
-  image_path: saint-lazare-de-savene/salon/smallbooks/978-8804240723.jpg
+  image_path: saint-lazare-de-savene/salon/small/978-8804240723.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
   - lapleiade
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Tutte le poesie
   url: https://www.amazon.it/Tutte-poesie-Eugenio-Montale/dp/8804240725/ref=sr_1_1
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-8804273684:
   de: Thomas Malory (Autore), Gabriella Agrati (a cura di), Maria Letizia Magini (a
     cura di)
@@ -7832,31 +7832,31 @@
 978-8806593315:
   de: Pier Paolo Pasolini (Autore), N. Naldini (a cura di)
   ext: "Reli\xE9"
-  image_path: saint-lazare-de-savene/salon/smallbooks/978-8806593315.jpg
+  image_path: saint-lazare-de-savene/salon/small/978-8806593315.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
   - cinema
   - lapleiade
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Lettere 1940-1954
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-8806599539:
   de: Pier Paolo Pasolini (Autore), N. Naldini (a cura di)
   ext: "Reli\xE9"
-  image_path: saint-lazare-de-savene/salon/smallbooks/978-8806599539.jpg
+  image_path: saint-lazare-de-savene/salon/small/978-8806599539.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
   - cinema
   - lapleiade
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Lettere 1955-1975
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-8807014147:
   de: Antonio Tabucchi (Autore)
   ext: "Copertina flessibile \u2013 marzo 1991"
@@ -8541,16 +8541,16 @@
   where: /saint-lazare-de-savene/salon/arts2
 978-8823516854:
   de: Rabindranath Tagore
-  image_path: saint-lazare-de-savene/salon/smallbooks/978-8823516854.jpg
+  image_path: saint-lazare-de-savene/salon/small/978-8823516854.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Petali sulle ceneri
   url: https://www.amazon.it/s\?k=978-8823516854
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-8823520707:
   de: "Arnaldur Indri\xF0ason (Autore), Alessandro Storti (Traduttore)"
   ext: "Copertina rigida \u2013 28 giugno 2018"
@@ -8749,15 +8749,15 @@
 978-8832020021:
   de: Lorenzo Notte (a cura di)
   ext: "La citt\xE0 nella letteratura Copertina flessibile \u2013 15 novembre 2018"
-  image_path: saint-lazare-de-savene/salon/smallbooks/978-8832020021.jpg
+  image_path: saint-lazare-de-savene/salon/small/978-8832020021.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Bologna - Dicono di lei
   url: https://www.amazon.it/s\?k=978-8832020021
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-8833243405:
   de: Carlo Monaco (Autore)
   ext: "1 Copertina flessibile \u2013 15 marzo 2021"
@@ -10093,16 +10093,16 @@
 978-8888700441:
   de: Shelagh and Jonathan Routh (Autore), Valentina Francese (Traduttore)
   ext: "Copertina flessibile \u2013 1 gennaio 2005"
-  image_path: saint-lazare-de-savene/salon/smallbooks/978-8888700441.jpg
+  image_path: saint-lazare-de-savene/salon/small/978-8888700441.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cuisine
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Note di cucina di Leonardo da Vinci
   url: https://www.amazon.it/cucina-Leonardo-Vinci-Shelagh-Routh/dp/8888700447/ref=sr_1_1
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-8889431122:
   de: Ralph Gibson (Auteur)
   ext: "Reli\xE9 \u2013 2005"
@@ -10121,11 +10121,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Kobarid Copertina flessibile \u2013 1 settembre 2008"
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 978-8890772030:
   de: Guido Moretti (Autore)
   ext: "Copertina rigida - Edizioni Tipoarte Bologna \u2013 2013"
@@ -11279,15 +11279,15 @@ keats:
   where: /saint-lazare-de-savene/salon/red
 lamartine:
   de: Lamartine
-  image_path: saint-lazare-de-savene/salon/smallbooks/lamartine.jpg
+  image_path: saint-lazare-de-savene/salon/small/lamartine.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "M\xE9ditations et nouvelles m\xE9ditations"
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 looking_glass:
   de: Lewis Carroll
   ext: Published by MacMillan & Co., 1938
@@ -11301,14 +11301,14 @@ looking_glass:
   where: /saint-lazare-de-savene/salon/red
 paris:
   de: "\xC9ditions A. Leconte"
-  image_path: saint-lazare-de-savene/salon/smallbooks/paris.jpg
+  image_path: saint-lazare-de-savene/salon/small/paris.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Plan de Paris par Arrondissement
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 qwe:
   de: Bologna Center - Journal of international affairs - Volume 17 - 2014
   image_path: saint-lazare-de-savene/salon/black/qwe.jpg
@@ -11332,15 +11332,15 @@ shakespeare:
   where: /saint-lazare-de-savene/salon/lapleiade
 vinci:
   de: "Mus\xE9e du Louvre - Collectif"
-  image_path: saint-lazare-de-savene/salon/smallbooks/vinci.jpg
+  image_path: saint-lazare-de-savene/salon/small/vinci.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - smallbooks
+  - small
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: "Catalogue de l'exposition L\xE9onard de Vinci 24 octobre 2019 - f\xE9vrier\
     \ 2020"
-  where: /saint-lazare-de-savene/salon/smallbooks
+  where: /saint-lazare-de-savene/salon/small
 wonderland:
   de: Lewis Carroll
   ext: Published by MacMillan & Co., 1938
