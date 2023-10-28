@@ -202,6 +202,13 @@ ASIN-B00HFWJT1C:
   lan: 🇬🇧
   url: https://www.amazon.com/s\?k=978-0416101607
 
+978-0416101607-2:
+  title: Macbeth
+  ext: (Arden Shakespeare) Paperback – January 1, 1985
+  de: William Shakespeare (Author), Kenneth Muir (Editor)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0416101607
+
 978-0415026949:
   title: King Richard III
   ext: (Arden Shakespeare) Paperback
@@ -215,3 +222,10 @@ ASIN-B00HFWJT1C:
   de: Isaac Bashevis Singer (Autore)
   lan: 🇮🇹
   url: https://www.amazon.fr/s\?k=978-2020302067
+
+dostoievski:
+  title: Les Possédés
+  de: Fédor Mikhaïlovitch Dostoïevski (Autore), Elisabeth Guertik (Traduttore)
+  lan: 🇫🇷
+
+
