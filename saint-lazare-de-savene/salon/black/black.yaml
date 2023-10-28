@@ -110,6 +110,8 @@ ASIN-B00HFWJT1C:
   de: Fred Vargas (Auteur)
   lan: 🇫🇷
   url: https://www.amazon.fr/s\?k=978-2290351284
+  tags:
+    - polars
 
 978-2290041000:
   title: L'armée furieuse
@@ -117,6 +119,8 @@ ASIN-B00HFWJT1C:
   de: Fred Vargas (Auteur)
   lan: 🇫🇷
   url: https://www.amazon.fr/s\?k=978-2290041000
+  tags:
+    - polars
 
 978-8895744407:
   title: La più odiata dagli italiani
@@ -143,6 +147,8 @@ ASIN-B00HFWJT1C:
   de: Fred Vargas (Auteur), Laurence Sudret (Commentaires)
   lan: 🇫🇷
   url: https://www.amazon.fr/s\?k=978-2878581904
+  tags:
+    - polars
 
 978-2081378261:
   title: Un lieu incertain
@@ -150,6 +156,8 @@ ASIN-B00HFWJT1C:
   de: Fred Vargas (Auteur)
   lan: 🇫🇷
   url: https://www.amazon.fr/s\?k=978-2081378261
+  tags:
+    - polars
 
 978-0460870344:
   title: The Turn Of The Screw
@@ -171,6 +179,8 @@ ASIN-B00HFWJT1C:
   de: Fred Vargas (Auteur)
   lan: 🇫🇷
   url: https://www.amazon.fr/s\?k=978-2081360440
+  tags:
+    - polars
 
 978-8898829156:
   title: Il potere del cervello quantico
