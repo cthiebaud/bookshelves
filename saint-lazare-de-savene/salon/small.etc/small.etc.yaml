@@ -1,0 +1,44 @@
+vinci:
+  title: Catalogue de l'exposition Léonard de Vinci 24 octobre 2019 - février 2020
+  de: Musée du Louvre - Collectif
+  lan: 🇬🇧
+
+978-8804234951:
+  title: Opere
+  de: Jonathan Swift
+  lan: 🇮🇹
+  tags:
+    - lapleiade
+
+978-8806593315:
+  title: Lettere 1940-1954
+  ext: Relié
+  de: Pier Paolo Pasolini (Autore), N. Naldini (a cura di)
+  lan: 🇮🇹
+  tags:
+    - poésie
+    - lapleiade
+
+978-8806599539:
+  title: Lettere 1955-1975
+  ext: Relié
+  de: Pier Paolo Pasolini (Autore), N. Naldini (a cura di)
+  lan: 🇮🇹
+  tags:
+    - poésie
+    - lapleiade
+
+978-0553447897:
+  title: Bibliophilia - 100 Literary Postcards
+  de: Evan Robertson (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.co.uk/s\?k=978-0553447897
+
+978-8804240723:
+  title: Tutte le poesie
+  de: Eugenio Montale (Autore), G. Zampa (a cura di)
+  lan: 🇮🇹
+  url: https://www.amazon.it/Tutte-poesie-Eugenio-Montale/dp/8804240725/ref=sr_1_1
+  tags:
+    - poésie
+    - lapleiade
