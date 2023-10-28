@@ -1543,6 +1543,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: "D'un ch\xE2teau l'autre"
   where: /saint-jean-lipion/chambre/editors
+978-1684125555:
+  de: Walt Whitman
+  image_path: saint-lazare-de-savene/salon/red/978-1684125555.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  publisher: Canterbury Classics
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Leaves of Grass
+  where: /saint-lazare-de-savene/salon/red
 978-1741211160:
   de: Winston Graham (Author)
   ext: "Paperback \u2013 January 1, 2003"
@@ -6649,6 +6660,28 @@
   - "\U0001F1E9\U0001F1EA"
   title: "Cinematographische Merkmale der \u201ESchloss\"-Verfilmung von Michael Haneke"
   where: /saint-jean-lipion/chambre/cinema
+978-3746628110:
+  de: Hans Fallada
+  image_path: saint-lazare-de-savene/salon/red/978-3746628110.jpeg
+  lan: "\U0001F1E9\U0001F1EA"
+  publisher: Aufbau Verlag
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1E9\U0001F1EA"
+  title: "Jeder stirbt f\xFCr sich allein 1"
+  where: /saint-lazare-de-savene/salon/red
+978-3746628110-2:
+  de: Hans Fallada
+  image_path: saint-lazare-de-savene/salon/red/978-3746628110-2.jpeg
+  lan: "\U0001F1E9\U0001F1EA"
+  publisher: Aufbau Verlag
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1E9\U0001F1EA"
+  title: "Jeder stirbt f\xFCr sich allein 2"
+  where: /saint-lazare-de-savene/salon/red
 978-3822805398:
   de: Andrea Kettenmann (Auteur)
   ext: "Broch\xE9 - 14 avril 1998"
@@ -10064,6 +10097,17 @@ ASIN-B00HFSBGAS:
   - "\U0001F1EE\U0001F1F9"
   title: Tutte le opere - a cura di Mario Praz
   where: /saint-lazare-de-savene/salon/lapleiade
+ASIN-B00HNSXRVQ:
+  de: Christophe Marlowe
+  image_path: saint-lazare-de-savene/salon/red/ASIN-B00HNSXRVQ.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  publisher: Guanda - Quaderni della Fenice - 72
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Il Dottor Faust
+  where: /saint-lazare-de-savene/salon/red
 ASIN-B00NO4ODDO:
   de: Bruce Chatwin (Autore), Marina Marchesi (Traduttore)
   ext: "Copertina flessibile \u2013 22 gennaio 2003"
@@ -10653,27 +10697,6 @@ bovary:
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Madame Bovary
-  where: /saint-lazare-de-savene/salon/red
-fallada:
-  de: Hans Fallada
-  image_path: saint-lazare-de-savene/salon/red/fallada.jpeg
-  lan: "\U0001F1E9\U0001F1EA"
-  publisher: Aufbau Verlag
-  tags:
-  - red
-  - saint-lazare-de-savene
-  - "\U0001F1E9\U0001F1EA"
-  title: "Jeder stirbt f\xFCr sich allein 1"
-  where: /saint-lazare-de-savene/salon/red
-fallada2:
-  de: Hans Fallada
-  image_path: saint-lazare-de-savene/salon/red/fallada2.jpeg
-  lan: "\U0001F1E9\U0001F1EA"
-  tags:
-  - red
-  - saint-lazare-de-savene
-  - "\U0001F1E9\U0001F1EA"
-  title: "Jeder stirbt f\xFCr sich allein 2"
   where: /saint-lazare-de-savene/salon/red
 fleurs_du_mal:
   de: Charles Baudelaire (Ernest Raynaud)

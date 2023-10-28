@@ -115,13 +115,27 @@ ASIN-B009HVT4FK:
   de: Gustave Flaubert
   lan: 🇫🇷
 
-fallada:
+978-3746628110:
   title: Jeder stirbt für sich allein 1
   de: Hans Fallada
   publisher: Aufbau Verlag
   lan: 🇩🇪
 
-fallada2:
+978-3746628110-2:
   title: Jeder stirbt für sich allein 2
   de: Hans Fallada
+  publisher: Aufbau Verlag
   lan: 🇩🇪
+
+978-1684125555:
+  title: Leaves of Grass
+  de: Walt Whitman
+  publisher: Canterbury Classics
+  lan: 🇬🇧
+
+ASIN-B00HNSXRVQ:
+  title: Il Dottor Faust
+  de: Christophe Marlowe
+  publisher: Guanda - Quaderni della Fenice - 72
+  lan: 🇮🇹
+
