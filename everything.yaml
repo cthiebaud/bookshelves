@@ -524,6 +524,16 @@
   - "\U0001F1EC\U0001F1E7"
   title: The Europeans
   where: /saint-lazare-de-savene/salon/_9
+978-0195016529:
+  de: Frank Kermode, John Hollander (Editor)
+  image_path: saint-lazare-de-savene/salon/black/978-0195016529.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - black
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: The Oxford Anthology of English Literature - Volume VI - Modern British Literature
+  where: /saint-lazare-de-savene/salon/black
 978-0199569410:
   de: Rainer Maria Rilke (Author), Robert Vilain (Author), Susan Ranson (Author),
     Marielle Sutherland (Author)
@@ -7056,6 +7066,17 @@
   - "\U0001F1EE\U0001F1F9"
   title: Cantos scelti
   where: /saint-lazare-de-savene/salon/_9
+978-8804407805:
+  de: Paolo Maurensig (Autore)
+  ext: "Copertina rigida \u2013 1 settembre 1995"
+  image_path: saint-lazare-de-savene/salon/black/978-8804407805.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - black
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Canone inverso
+  where: /saint-lazare-de-savene/salon/black
 978-8804425540:
   de: Italo Calvino (Autore)
   ext: Copertina flessibile
@@ -10345,6 +10366,18 @@ ASIN-B00HFSBGAS:
   - "\U0001F1EE\U0001F1F9"
   title: Tutte le opere - a cura di Mario Praz
   where: /saint-lazare-de-savene/salon/lapleiade
+ASIN-B00HFWJT1C:
+  de: Edgar Allan Poe (Autore)
+  ext: "Copertina rigida \u2013 1 gennaio 1974"
+  image_path: saint-lazare-de-savene/salon/black/ASIN-B00HFWJT1C.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  publisher: Sansoni
+  tags:
+  - black
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Tutti i racconti e le poesie
+  where: /saint-lazare-de-savene/salon/black
 ASIN-B00HNSXRVQ:
   de: Christophe Marlowe
   image_path: saint-lazare-de-savene/salon/red/ASIN-B00HNSXRVQ.jpeg
