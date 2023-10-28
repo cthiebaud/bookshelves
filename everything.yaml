@@ -976,15 +976,15 @@
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
 978-0553447897:
   de: Evan Robertson (Author)
-  image_path: saint-lazare-de-savene/salon/small.etc/978-0553447897.jpg
+  image_path: saint-lazare-de-savene/salon/small_etc/978-0553447897.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - small.etc
+  - small_etc
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Bibliophilia - 100 Literary Postcards
   url: https://www.amazon.co.uk/s\?k=978-0553447897
-  where: /saint-lazare-de-savene/salon/small.etc
+  where: /saint-lazare-de-savene/salon/small_etc
 978-0553820249:
   de: Dennis Lehane (Author)
   image_path: saint-jean-lipion/chambre/polar/978-0553820249.jpg
@@ -3687,14 +3687,14 @@
 978-2081212480:
   de: Platon (Auteur)
   ext: "Reli\xE9 \u2013 1 janvier 2008"
-  image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2081212480.jpg
+  image_path: saint-jean-lipion/chambre/lapleiade_etc/978-2081212480.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - lapleiade.etc
+  - lapleiade_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "Le banquet - Ph\xE8dre - Apologie de Socrate"
-  where: /saint-jean-lipion/chambre/lapleiade.etc
+  where: /saint-jean-lipion/chambre/lapleiade_etc
 978-2081212961:
   de: Fernand Braudel (Auteur)
   ext: "Poche \u2013 7 mars 2018"
@@ -3895,14 +3895,14 @@
 978-2130425946:
   de: Arthur Schopenhauer (Auteur)
   ext: "Traduit par A. Burdeau, \xE9dition revue par Richard Roos. - 1989"
-  image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2130425946.jpg
+  image_path: saint-jean-lipion/chambre/lapleiade_etc/978-2130425946.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - lapleiade.etc
+  - lapleiade_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "Le monde comme volont\xE9 et comme repr\xE9sentation"
-  where: /saint-jean-lipion/chambre/lapleiade.etc
+  where: /saint-jean-lipion/chambre/lapleiade_etc
 978-2130426226:
   de: Roland Jaccard (Auteur)
   ext: "Broch\xE9 \u2013 ao\xFBt 1989"
@@ -4147,14 +4147,14 @@
 978-2203004016:
   de: Michel Baudson (Auteur)
   ext: "Reli\xE9 \u2013 mars 1984"
-  image_path: saint-lazare-de-savene/chambre-alessia/tintin.etc/978-2203004016.jpeg
+  image_path: saint-lazare-de-savene/chambre-alessia/tintin_etc/978-2203004016.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - tintin.etc
+  - tintin_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Le musee imaginaire de tintin
-  where: /saint-lazare-de-savene/chambre-alessia/tintin.etc
+  where: /saint-lazare-de-savene/chambre-alessia/tintin_etc
 978-2203004047:
   de: "Beno\xEEt Peeters (Auteur)"
   ext: "exposition, Mus\xE9e d'Ixelles, 23 d\xE9cembre 1988-15 janvier 1989, Angoul\xEA\
@@ -4220,7 +4220,7 @@
   image_path: saint-lazare-de-savene/salon/arts/978-2203015036.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - autour_de_tintin
+  - tintin_etc
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -4919,15 +4919,15 @@
 978-2251447360:
   de: Jean-Louis Poirier (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 9 novembre 2017"
-  image_path: saint-jean-lipion/chambre/lapleiade.etc/978-2251447360.jpg
+  image_path: saint-jean-lipion/chambre/lapleiade_etc/978-2251447360.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - lapleiade.etc
+  - lapleiade_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "Biblioth\xE8que id\xE9ale des philosophes antiques - De Pythagore \xE0 Bo\xE8\
     ce"
-  where: /saint-jean-lipion/chambre/lapleiade.etc
+  where: /saint-jean-lipion/chambre/lapleiade_etc
 978-2253001553:
   de: "Pierre Dac, L\xE9opold Lavolaille, Nostrautobus, Jean Survot, G.K.W. van den\
     \ Paraboum, Maurice Henry, Fernand Rauz\xE9na, Don Charl'os, Pr Jules Lem\xE8\
@@ -6855,14 +6855,14 @@
   where: /saint-lazare-de-savene/salon/red
 978-2908978001:
   de: Didier Quella-Guyot
-  image_path: saint-lazare-de-savene/chambre-alessia/tintin.etc/978-2908978001.webp
+  image_path: saint-lazare-de-savene/chambre-alessia/tintin_etc/978-2908978001.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - tintin.etc
+  - tintin_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Lire Tintin au Tibet, de Herg\xE9 - lecture m\xE9thodique et documentaire"
-  where: /saint-lazare-de-savene/chambre-alessia/tintin.etc
+  where: /saint-lazare-de-savene/chambre-alessia/tintin_etc
 978-2909031569:
   de: Jean-Luc Hennig (Auteur)
   ext: "Broch\xE9 \u2013 18 novembre 2003"
@@ -7214,28 +7214,28 @@
   where: /saint-lazare-de-savene/salon/_7
 978-8804234951:
   de: Jonathan Swift
-  image_path: saint-lazare-de-savene/salon/small.etc/978-8804234951.jpeg
+  image_path: saint-lazare-de-savene/salon/small_etc/978-8804234951.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - lapleiade
-  - small.etc
+  - small_etc
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Opere
-  where: /saint-lazare-de-savene/salon/small.etc
+  where: /saint-lazare-de-savene/salon/small_etc
 978-8804240723:
   de: Eugenio Montale (Autore), G. Zampa (a cura di)
-  image_path: saint-lazare-de-savene/salon/small.etc/978-8804240723.jpg
+  image_path: saint-lazare-de-savene/salon/small_etc/978-8804240723.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
   - lapleiade
-  - small.etc
+  - small_etc
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Tutte le poesie
   url: https://www.amazon.it/Tutte-poesie-Eugenio-Montale/dp/8804240725/ref=sr_1_1
-  where: /saint-lazare-de-savene/salon/small.etc
+  where: /saint-lazare-de-savene/salon/small_etc
 978-8804273684:
   de: Thomas Malory (Autore), Gabriella Agrati (a cura di), Maria Letizia Magini (a
     cura di)
@@ -7855,29 +7855,29 @@
 978-8806593315:
   de: Pier Paolo Pasolini (Autore), N. Naldini (a cura di)
   ext: "Reli\xE9"
-  image_path: saint-lazare-de-savene/salon/small.etc/978-8806593315.jpg
+  image_path: saint-lazare-de-savene/salon/small_etc/978-8806593315.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
   - lapleiade
-  - small.etc
+  - small_etc
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Lettere 1940-1954
-  where: /saint-lazare-de-savene/salon/small.etc
+  where: /saint-lazare-de-savene/salon/small_etc
 978-8806599539:
   de: Pier Paolo Pasolini (Autore), N. Naldini (a cura di)
   ext: "Reli\xE9"
-  image_path: saint-lazare-de-savene/salon/small.etc/978-8806599539.jpg
+  image_path: saint-lazare-de-savene/salon/small_etc/978-8806599539.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
   - lapleiade
-  - small.etc
+  - small_etc
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Lettere 1955-1975
-  where: /saint-lazare-de-savene/salon/small.etc
+  where: /saint-lazare-de-savene/salon/small_etc
 978-8807014147:
   de: Antonio Tabucchi (Autore)
   ext: "Copertina flessibile \u2013 marzo 1991"
@@ -11353,15 +11353,15 @@ shakespeare:
   where: /saint-lazare-de-savene/salon/lapleiade
 vinci:
   de: "Mus\xE9e du Louvre - Collectif"
-  image_path: saint-lazare-de-savene/salon/small.etc/vinci.jpg
+  image_path: saint-lazare-de-savene/salon/small_etc/vinci.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - small.etc
+  - small_etc
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: "Catalogue de l'exposition L\xE9onard de Vinci 24 octobre 2019 - f\xE9vrier\
     \ 2020"
-  where: /saint-lazare-de-savene/salon/small.etc
+  where: /saint-lazare-de-savene/salon/small_etc
 wonderland:
   de: Lewis Carroll
   ext: Published by MacMillan & Co., 1938
