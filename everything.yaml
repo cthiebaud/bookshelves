@@ -43,7 +43,7 @@
   url: https://www.colruyt.be/fr/en-cuisine/questions-culinaires/conseils-culinaires/specialites-belges
   where: /saint-lazare-de-savene/salon/cuisine
 802-0994241182:
-  de: Collectif
+  de: Alfabet - Collectif
   image_path: saint-lazare-de-savene/salon/small/802-0994241182.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -264,7 +264,7 @@
   title: Mrs Dalloway
   where: /saint-lazare-de-savene/salon/_1
 978-0140055214:
-  de: Roth Philip (Author)
+  de: Philip Roth (Author)
   ext: Paperback
   image_path: saint-lazare-de-savene/salon/_7/978-0140055214.jpg
   lan: "\U0001F1EC\U0001F1E7"
@@ -1651,7 +1651,7 @@
   title: The Girl on the Train
   where: /saint-jean-lipion/chambre/polar
 978-1633605404:
-  de: E. M. Forster (Author)
+  de: Edward Morgan Forster(Author)
   ext: "Paperback \u2013 1984"
   image_path: saint-lazare-de-savene/salon/_9/978-1633605404.jpg
   lan: "\U0001F1EC\U0001F1E7"
@@ -3821,9 +3821,8 @@
   url: https://www.amazon.fr/l%C3%A9gumes-mon-moulin-Roger-Verg%C3%A9/dp/2082005674/ref=sr_1_1?keywords=978-2082005678&qid=1698411201&sr=8-1
   where: /saint-lazare-de-savene/salon/cuisine
 978-2082015394:
-  de: "Collectif (Auteur), Robert Dimery (Auteur), Michka Assayas (Pr\xE9face), Anne\
-    \ Marcy-Benitez (Traduction), G\xE9raldine Bretault (Traduction), Lorena Lamin\
-    \ (Traduction)"
+  de: "Robert Dimery - Collectif (Auteur), Michka Assayas (Pr\xE9face), Anne Marcy-Benitez\
+    \ (Traduction), G\xE9raldine Bretault (Traduction), Lorena Lamin (Traduction)"
   ext: "Rock, Hip Hop, Soul, Dance, World Music, Pop, Techno... Broch\xE9 \u2013 15\
     \ janvier 2014"
   image_path: saint-lazare-de-savene/salon/arts/978-2082015394.jpg
@@ -4626,7 +4625,7 @@
   title: "\u0152uvres po\xE9tiques compl\xE8tes"
   where: /saint-jean-lipion/chambre/rimbaud
 978-2226038128:
-  de: "Collectif - Albin Michel (\xC9diteur)"
+  de: "Albin Michel - Collectif (\xC9diteur)"
   ext: "Reli\xE9 \u2013 1 janvier 1984"
   image_path: saint-lazare-de-savene/salon/arts/978-2226038128.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -4769,7 +4768,7 @@
   - _7
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "\u0152uvres compl\xE8tes * Ecrits sur le Sable"
+  title: "\u0152uvres compl\xE8tes - Ecrits sur le Sable"
   where: /saint-lazare-de-savene/salon/_7
 978-2246398127:
   de: Bruce Chatwin (Auteur)
@@ -5054,7 +5053,7 @@
   title: Les Sex Addicts
   where: /saint-jean-lipion/chambre/enfer
 978-2259211109:
-  de: "Jean-Paul Enthoven, Rapha\xEBl Enthoven (Auteur)"
+  de: "Jean-Paul et Rapha\xEBl Enthoven (Auteur)"
   ext: "Broch\xE9 \u2013 Illustr\xE9, 3 octobre 2019"
   image_path: saint-lazare-de-savene/salon/proust/978-2259211109.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -5154,7 +5153,7 @@
   title: Histoire totale de la Seconde Guerre mondiale
   where: /saint-lazare-de-savene
 978-2263014017:
-  de: Collectif (Author)
+  de: "V\u0101tsy\u0101yana (Author)"
   ext: "Hardcover \u2013 January 1, 1988"
   image_path: saint-jean-lipion/chambre/enfer/978-2263014017.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -5512,15 +5511,15 @@
   title: "Karl Marx et la naissance de la soci\xE9t\xE9 moderne"
   where: /saint-jean-lipion/chambre/biographie
 978-2360757770:
-  de: Collectif (Autore)
-  ext: "Copertina flessibile \u2013 6 maggio 2019"
+  de: Lire - Collectif (Autore)
+  ext: "Hors s\xE9rie - Copertina flessibile \u2013 6 maggio 2019"
   image_path: saint-lazare-de-savene/salon/proust/978-2360757770.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - proust
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "Marcel Proust - Lire - Hors s\xE9rie"
+  title: Marcel Proust
   where: /saint-lazare-de-savene/salon/proust
 978-2365591546:
   de: Florence Aubenas (Auteur)
@@ -6520,8 +6519,8 @@
   title: "Le si\xE8cle de Kafka"
   where: /saint-lazare-de-savene/salon/arts
 978-2858504718:
-  de: Collectif
-  ext: "Collection \"Cahiers Pour un temps\" - Broch\xE9"
+  de: Cahiers pour un temps - Collectif
+  ext: "Broch\xE9"
   image_path: saint-lazare-de-savene/salon/_6/978-2858504718.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -6577,7 +6576,7 @@
   title: "De m\xE9moire de lutin !\u2026"
   where: /saint-lazare-de-savene/salon/_7
 978-2862604145:
-  de: Collectif (Auteur)
+  de: Autrement - Collectif (Auteur)
   ext: "Broch\xE9 \u2013 2 avril 1993"
   image_path: saint-jean-lipion/chambre-paul/football/978-2862604145.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -6635,7 +6634,7 @@
   title: La Maman et la Putain
   where: /saint-jean-lipion/chambre/cinema
 978-2867440458:
-  de: Collectif (Auteur)
+  de: Cahiers Georges Perec - Collectif (Auteur)
   ext: "Broch\xE9 \u2013 1 octobre 1985"
   image_path: saint-jean-lipion/salon/perec/978-2867440458.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -6644,7 +6643,7 @@
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
-  title: Cahiers Georges Perec - Colloque de Cerisy, juillet 1984
+  title: Colloque de Cerisy, juillet 1984
   where: /saint-jean-lipion/salon/perec
 978-2867440663:
   de: Georges Perec (Auteur)
@@ -7169,7 +7168,7 @@
   title: "Le Golem de Prague - Les r\xE9cits juifs du ghetto"
   where: /saint-lazare-de-savene/salon/_2
 978-3980858755:
-  de: Collectif
+  de: Les Cahiers De Dachau - Collectif
   image_path: saint-jean-lipion/chambre/nazi/978-3980858755.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -10730,7 +10729,7 @@ LIEUES-2:
   title: 20 000 lieues sous les mers - tome 2
   where: /saint-lazare-de-savene/salon/red
 boh1:
-  de: Collectif (Auteur)
+  de: Bordas - Collectif (Auteur)
   ext: "Reli\xE9 \u2013 1 janvier 1983"
   image_path: saint-jean-lipion/chambre/beaux-livre/boh1.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -10738,17 +10737,18 @@ boh1:
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
-  title: "Atlas g\xE9n\xE9ral Bordas"
+  title: "Atlas g\xE9n\xE9ral"
   where: /saint-jean-lipion/chambre/beaux-livre
 boh10:
-  de: Collectif
+  de: "Cahiers du cin\xE9ma - Collectif"
+  ext: "novembre 2015 n\xB0716"
   image_path: saint-jean-lipion/chambre/cinema/boh10.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cinema
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
-  title: "Cahiers du cin\xE9ma novembre 2015 n\xB0716 - Nanni Moretti \xE0 Rome"
+  title: "Nanni Moretti \xE0 Rome"
   where: /saint-jean-lipion/chambre/cinema
 boh11:
   de: Georges Perec (Auteur)
@@ -11175,14 +11175,14 @@ boh44:
   title: Portugal and the Discoveries - The meeting of Civilizations
   where: /saint-lazare-de-savene/salon/arts
 boh45:
-  de: Collectif
+  de: MilK - Collectif
   image_path: saint-lazare-de-savene/salon/arts2/boh45.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - arts2
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: 'MilK Decoration #32'
+  title: 'Decoration #32'
   url: https://milk.fr/milkdecoration
   where: /saint-lazare-de-savene/salon/arts2
 boh5:
@@ -11244,15 +11244,15 @@ boh8:
   title: "Po\xE8mes \xE9rotiques"
   where: /saint-jean-lipion/chambre/enfer
 boh9:
-  de: Collectif
+  de: "Cahiers du Cin\xE9ma - Collectif"
+  ext: "Hors-s\xE9rie 2007"
   image_path: saint-jean-lipion/chambre/cinema/boh9.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cinema
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
-  title: "Cahiers du Cin\xE9ma hors-s\xE9rie 2007 - Bergman, Antonioni, deux grands\
-    \ modernes"
+  title: Bergman, Antonioni, deux grands modernes
   where: /saint-jean-lipion/chambre/cinema
 bovary:
   de: Gustave Flaubert
@@ -11266,7 +11266,7 @@ bovary:
   title: Madame Bovary
   where: /saint-lazare-de-savene/salon/red
 dostoievski:
-  de: "F\xE9dor Mikha\xEFlovitch Dosto\xEFevski (Autore), Elisabeth Guertik (Traduttore)"
+  de: "F\xE9dor Dosto\xEFevski (Autore), Elisabeth Guertik (Traduttore)"
   image_path: saint-lazare-de-savene/salon/black/dostoievski.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -11332,7 +11332,8 @@ paris:
   title: Plan de Paris par Arrondissement
   where: /saint-lazare-de-savene/salon/small
 qwe:
-  de: Bologna Center - Journal of international affairs - Volume 17 - 2014
+  de: Journal of international affairs - Collectif
+  ext: Bologna Center - Volume 17 - 2014
   image_path: saint-lazare-de-savene/salon/black/qwe.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
