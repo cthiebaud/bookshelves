@@ -1,0 +1,110 @@
+wonderland:
+  title: Alice's Adventures in Wonderland
+  ext: Published by MacMillan & Co., 1938
+  de: Lewis Carroll
+  lan: 🇬🇧
+
+looking_glass:
+  title: Through The Looking-Glass  - And What Alice Found There
+  ext: Published by MacMillan & Co., 1938
+  de: Lewis Carroll
+  lan: 🇬🇧
+
+978-B004473K4I:
+  title: Petite anthologie des poêtes français
+  de: Charles Sarolea (Introduction), Nelson (Editeur)
+  lan: 🇫🇷
+  tags:
+    - poésie
+
+ASIN-B000KS30XG:
+  title: The Mill on the Floss
+  ext: (Everyman's Library, No. 325) Hardcover – 1946
+  de: George Eliot (Author)
+  lan: 🇬🇧
+
+keats:
+  title: Endymion and other poems
+  de: John Keats
+  url: https://sites.gold.ac.uk/goldsmithshistory/a-greatly-lamented-goldsmiths-casualty-of-passchendaele-william-thomas-young/
+  lan: 🇬🇧
+  tags:
+    - poésie
+
+978-8806114176:
+  title: Sulla fiaba
+  de: Italo Calvino 
+  lan: 🇮🇹
+
+ASIN-B0007J1C9W:
+  title: Selected stories
+  ext: (Hour-glass library) M. Fridberg; First Edition (January 1, 1946)
+  de: Frank O'Connor (Author)
+  lan: 🇬🇧
+
+ASIN-B00A7WBHJY:
+  title: La litterature anglaise par les textes
+  ext: Relié – 1 janvier 1966
+  de: G.GUIBILLON (Auteur)
+  lan: 🇫🇷
+
+ASIN-B003X7DCEI:
+  title: 20 000 lieues sous les mers - tome 1 
+  ext: collection voyages extraordinaires. Relié – 1 janvier 1968
+  de: Jules Verne (Auteur)
+  lan: 🇫🇷
+
+LIEUES-2:
+  title: 20 000 lieues sous les mers - tome 2
+  ext: collection voyages extraordinaires. Relié – 1 janvier 1968
+  de: Jules Verne (Auteur)
+  lan: 🇫🇷
+
+fleurs_du_mal:
+  title: Les fleurs du mal
+  ext: Edité par Garnier coll. Selecta, 1957
+  de: Charles Baudelaire (Ernest Raynaud)
+  lan: 🇫🇷
+  tags:
+    - poésie
+
+bovary:
+  title: Madame Bovary
+  ext: Edité par Garnier coll. Selecta
+  de: Gustave Flaubert
+  lan: 🇫🇷
+
+978-8804273684:
+  title: Storia di re Artù e dei suoi cavalieri
+  ext: Copertina flessibile – 1 gennaio 1985
+  de: Thomas Malory (Autore), Gabriella Agrati (a cura di), Maria Letizia Magini (a cura di)
+  lan: 🇮🇹
+
+978-2246138822:
+  title: La Trêve
+  ext: Copertina flessibile – 1 gennaio 1988
+  de: Primo Levi (Autore)
+  lan: 🇮🇹
+
+978-8845906886:
+  title: Lo Hobbit
+  ext: o La riconquista del tesoro Copertina flessibile – 29 maggio 1989
+  de: John R. R. Tolkien (Autore), Elena Jeronimidis Conte (Traduttore)
+  lan: 🇮🇹
+
+978-2908024029:
+  title: L'art d'avoir toujours raison
+  ext: Broché
+  de: Arthur Schopenhauer (Auteur)
+  lan: 🇫🇷
+
+978-2251010328:
+  title: Guerre des Gaules - livres I-V
+  lan: 🇫🇷
+  de: Jules César (Auteur), L.-A. (Léopold-Albert) Constans (Auteur), A. (André) Balland (Traduction)
+
+978-2251010311:
+  title: Guerre des Gaules - livres V-VIII
+  de: Jules César (Auteur), L.-A. (Léopold-Albert) Constans (Auteur), A. (André) Balland (Traduction)
+  lan: 🇫🇷
+

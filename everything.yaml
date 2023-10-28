@@ -1948,7 +1948,7 @@
   - lapleiade
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: Oeuvres
+  title: "\u0152uvres"
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070104031:
   de: Roland-Manuel (sous la direction de)
@@ -2011,6 +2011,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - Kafka
+  - lapleiade
   - random
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -2058,6 +2059,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - Kafka
+  - lapleiade
   - random
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -2083,6 +2085,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - Kafka
+  - lapleiade
   - random
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -2310,6 +2313,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - Kafka
+  - lapleiade
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4478,6 +4482,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Dans les ge\xF4les de Sib\xE9rie"
   where: /saint-jean-lipion/chambre/favourites
+978-2246138822:
+  de: Primo Levi (Autore)
+  ext: "Copertina flessibile \u2013 1 gennaio 1988"
+  image_path: saint-lazare-de-savene/salon/red/978-2246138822.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: "La Tr\xEAve"
+  where: /saint-lazare-de-savene/salon/red
 978-2246392217:
   de: Isabelle Eberhardt (Auteur)
   ext: "(r\xE9cits, notes et journaliers) - Broch\xE9 \u2013 1 janvier 1994"
@@ -4612,6 +4627,28 @@
   - "\U0001F1EB\U0001F1F7"
   title: La disparition de Josef Mengele
   where: /saint-jean-lipion/chambre/editors
+978-2251010311:
+  de: "Jules C\xE9sar (Auteur), L.-A. (L\xE9opold-Albert) Constans (Auteur), A. (Andr\xE9\
+    ) Balland (Traduction)"
+  image_path: saint-lazare-de-savene/salon/red/978-2251010311.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Guerre des Gaules - livres V-VIII
+  where: /saint-lazare-de-savene/salon/red
+978-2251010328:
+  de: "Jules C\xE9sar (Auteur), L.-A. (L\xE9opold-Albert) Constans (Auteur), A. (Andr\xE9\
+    ) Balland (Traduction)"
+  image_path: saint-lazare-de-savene/salon/red/978-2251010328.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Guerre des Gaules - livres I-V
+  where: /saint-lazare-de-savene/salon/red
 978-2251447360:
   de: Jean-Louis Poirier (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 9 novembre 2017"
@@ -6398,6 +6435,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Mn\xE9mosyne"
   where: /saint-lazare-de-savene/salon/arts
+978-2908024029:
+  de: Arthur Schopenhauer (Auteur)
+  ext: "Broch\xE9"
+  image_path: saint-lazare-de-savene/salon/red/978-2908024029.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: L'art d'avoir toujours raison
+  where: /saint-lazare-de-savene/salon/red
 978-2908978001:
   de: Didier Quella-Guyot
   image_path: saint-lazare-de-savene/chambre-alessia/autour_de_tintin/978-2908978001.webp
@@ -6746,6 +6794,18 @@
   title: Tutte le poesie
   url: https://www.amazon.it/Tutte-poesie-Eugenio-Montale/dp/8804240725/ref=sr_1_1
   where: /saint-lazare-de-savene/salon/smallbooks
+978-8804273684:
+  de: Thomas Malory (Autore), Gabriella Agrati (a cura di), Maria Letizia Magini (a
+    cura di)
+  ext: "Copertina flessibile \u2013 1 gennaio 1985"
+  image_path: saint-lazare-de-savene/salon/red/978-8804273684.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: "Storia di re Art\xF9 e dei suoi cavalieri"
+  where: /saint-lazare-de-savene/salon/red
 978-8804283195:
   de: Emidio De Felice (Autore)
   ext: "Copertina rigida \u2013 1 gennaio 1987"
@@ -7005,6 +7065,16 @@
   - "\U0001F1EE\U0001F1F9"
   title: Palomar
   where: /saint-lazare-de-savene/salon/_7
+978-8806114176:
+  de: Italo Calvino
+  image_path: saint-lazare-de-savene/salon/red/978-8806114176.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Sulla fiaba
+  where: /saint-lazare-de-savene/salon/red
 978-8806117917:
   de: Luciano Canepari
   image_path: saint-lazare-de-savene/salon/_7/978-8806117917.jpg
@@ -8659,6 +8729,17 @@
   - "\U0001F1EE\U0001F1F9"
   title: Il signore di Parigi
   where: /saint-lazare-de-savene/salon/_8
+978-8845906886:
+  de: John R. R. Tolkien (Autore), Elena Jeronimidis Conte (Traduttore)
+  ext: "o La riconquista del tesoro Copertina flessibile \u2013 29 maggio 1989"
+  image_path: saint-lazare-de-savene/salon/red/978-8845906886.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Lo Hobbit
+  where: /saint-lazare-de-savene/salon/red
 978-8845910074:
   de: Bruce Chatwin
   ext: "Traduzione di Clara Morena - Fuori collana, 37 - 1993, 3\xAA ediz., pp. 162,\
@@ -9673,6 +9754,17 @@
   title: "Comer E Beber Com E\xE7a De Queiroz"
   url: https://www.wook.pt/livro/comer-e-beber-com-eca-de-queiroz-maria-de-lourdes-modesto/16026042
   where: /saint-lazare-de-savene/salon/cuisine
+978-B004473K4I:
+  de: Charles Sarolea (Introduction), Nelson (Editeur)
+  image_path: saint-lazare-de-savene/salon/red/978-B004473K4I.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Petite anthologie des po\xEAtes fran\xE7ais"
+  where: /saint-lazare-de-savene/salon/red
 979-1020407160:
   de: "Mus\xE9e Carnavalet - Collectif"
   ext: "Broch\xE9 \u2013 Illustr\xE9, 5 janvier 2022"
@@ -9793,6 +9885,28 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Francis Bacon - Beaux Arts magazine hors s\xE9rie"
   where: /saint-lazare-de-savene/salon/arts2
+ASIN-B0007J1C9W:
+  de: Frank O'Connor (Author)
+  ext: (Hour-glass library) M. Fridberg; First Edition (January 1, 1946)
+  image_path: saint-lazare-de-savene/salon/red/ASIN-B0007J1C9W.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Selected stories
+  where: /saint-lazare-de-savene/salon/red
+ASIN-B000KS30XG:
+  de: George Eliot (Author)
+  ext: "(Everyman's Library, No. 325) Hardcover \u2013 1946"
+  image_path: saint-lazare-de-savene/salon/red/ASIN-B000KS30XG.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: The Mill on the Floss
+  where: /saint-lazare-de-savene/salon/red
 ASIN-B000NNBJZ4:
   de: Giacomo Leopardi (Author)
   image_path: saint-lazare-de-savene/salon/_4/ASIN-B000NNBJZ4.jpg
@@ -9870,6 +9984,17 @@ ASIN-B003X72BGS:
   - "\U0001F1EB\U0001F1F7"
   title: Nouveau guide de la version anglaise
   where: /saint-lazare-de-savene/salon/_5
+ASIN-B003X7DCEI:
+  de: Jules Verne (Auteur)
+  ext: "collection voyages extraordinaires. Reli\xE9 \u2013 1 janvier 1968"
+  image_path: saint-lazare-de-savene/salon/red/ASIN-B003X7DCEI.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: 20 000 lieues sous les mers - tome 1
+  where: /saint-lazare-de-savene/salon/red
 ASIN-B0092FT3LQ:
   de: Primo Levi (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1978"
@@ -9894,6 +10019,17 @@ ASIN-B0098MD4B8:
   - "\U0001F1EB\U0001F1F7"
   title: Histoire de Juliette - 2
   where: /saint-lazare-de-savene/salon/_4
+ASIN-B00A7WBHJY:
+  de: G.GUIBILLON (Auteur)
+  ext: "Reli\xE9 \u2013 1 janvier 1966"
+  image_path: saint-lazare-de-savene/salon/red/ASIN-B00A7WBHJY.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: La litterature anglaise par les textes
+  where: /saint-lazare-de-savene/salon/red
 ASIN-B00F47MHU0:
   de: "Lautr\xE9amont (Autore)"
   ext: "Copertina flessibile \u2013 1 gennaio 1978"
@@ -9959,6 +10095,17 @@ ASIN-B07TJB59Y5:
   - "\U0001F1EE\U0001F1F9"
   title: Morfologia della fiaba
   where: /saint-lazare-de-savene/salon/_5
+LIEUES-2:
+  de: Jules Verne (Auteur)
+  ext: "collection voyages extraordinaires. Reli\xE9 \u2013 1 janvier 1968"
+  image_path: saint-lazare-de-savene/salon/red/LIEUES-2.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: 20 000 lieues sous les mers - tome 2
+  where: /saint-lazare-de-savene/salon/red
 boh1:
   de: Collectif (Auteur)
   ext: "Reli\xE9 \u2013 1 janvier 1983"
@@ -10484,6 +10631,41 @@ boh9:
   title: "Cahiers du Cin\xE9ma hors-s\xE9rie 2007 - Bergman, Antonioni, deux grands\
     \ modernes"
   where: /saint-jean-lipion/chambre/cinema
+bovary:
+  de: Gustave Flaubert
+  ext: "Edit\xE9 par Garnier coll. Selecta"
+  image_path: saint-lazare-de-savene/salon/red/bovary.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Madame Bovary
+  where: /saint-lazare-de-savene/salon/red
+fleurs_du_mal:
+  de: Charles Baudelaire (Ernest Raynaud)
+  ext: "Edit\xE9 par Garnier coll. Selecta, 1957"
+  image_path: saint-lazare-de-savene/salon/red/fleurs_du_mal.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Les fleurs du mal
+  where: /saint-lazare-de-savene/salon/red
+keats:
+  de: John Keats
+  image_path: saint-lazare-de-savene/salon/red/keats.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - "po\xE9sie"
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Endymion and other poems
+  url: https://sites.gold.ac.uk/goldsmithshistory/a-greatly-lamented-goldsmiths-casualty-of-passchendaele-william-thomas-young/
+  where: /saint-lazare-de-savene/salon/red
 lamartine:
   de: Lamartine
   image_path: saint-lazare-de-savene/salon/smallbooks/lamartine.jpg
@@ -10495,6 +10677,17 @@ lamartine:
   - "\U0001F1EB\U0001F1F7"
   title: "M\xE9ditations et nouvelles m\xE9ditations"
   where: /saint-lazare-de-savene/salon/smallbooks
+looking_glass:
+  de: Lewis Carroll
+  ext: Published by MacMillan & Co., 1938
+  image_path: saint-lazare-de-savene/salon/red/looking_glass.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Through The Looking-Glass  - And What Alice Found There
+  where: /saint-lazare-de-savene/salon/red
 paris:
   de: "\xC9ditions A. Leconte"
   image_path: saint-lazare-de-savene/salon/smallbooks/paris.jpg
@@ -10514,7 +10707,7 @@ shakespeare:
   - lapleiade
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "Oeuvres compl\xE8tes, Vol. II - Com\xE9dies II - Trag\xE9dies"
+  title: "\u0152uvres compl\xE8tes, Vol. II - Com\xE9dies II - Trag\xE9dies"
   where: /saint-lazare-de-savene/salon/lapleiade
 vinci:
   de: "Mus\xE9e du Louvre - Collectif"
@@ -10527,3 +10720,14 @@ vinci:
   title: "Catalogue de l'exposition L\xE9onard de Vinci 24 octobre 2019 - f\xE9vrier\
     \ 2020"
   where: /saint-lazare-de-savene/salon/smallbooks
+wonderland:
+  de: Lewis Carroll
+  ext: Published by MacMillan & Co., 1938
+  image_path: saint-lazare-de-savene/salon/red/wonderland.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - red
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Alice's Adventures in Wonderland
+  where: /saint-lazare-de-savene/salon/red
