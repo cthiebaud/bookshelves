@@ -194,13 +194,18 @@
             if (categories.tags) {
                 const previous = selection
                 let sel = ""
+                let qwe = 0
                 for (const tag of categories.tags) {
-                    sel = selection + "." + tag + " "
+                    if (qwe>0) {
+                        sel +=","
+                    }
+                    sel += selection + "." + tag
+                    qwe++
                 }
                 selection = sel
             }
 
-            console.log(selection)
+            console.log(categories, selection)
             if (selection.trim() !== "") {
                 const taggeds = document.querySelectorAll(selection)
                 for (const tagged of taggeds) {
