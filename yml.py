@@ -46,24 +46,24 @@ extensions = ['jpg', 'jpeg', 'webp', 'png']
   
 # Using for loop
 for ext in extensions:
-    for filename2 in glob.iglob('**/[!T]*.'+ext, recursive=True):
+    for filename2 in glob.iglob('thumbs/*.'+ext, recursive=True):
 
       # if not 'enfer' in filename2:
       
         # print(i, filename2)
-        print(os.path.basename(filename2))
+        # print(os.path.basename(filename2))
         images.append(filename2)
-        my_dictionary[PurePath(filename2).stem]["image_path"] = f"thumbs/T_{os.path.basename(filename2)}" # filename2
+        my_dictionary[PurePath(filename2).stem[2:]]["image_path"] = f"thumbs/{os.path.basename(filename2)}" # filename2
 
 
 
-print("^^^^^^^^^^^^^^^^^^^^")
-j = 0
-for key, value in my_dictionary.items():
-    if not "image_path" in value:
-        print(j, value)
-        j = j + 1
-print("vvvvvvvvvvvvvvvvvvvv")
+## print("^^^^^^^^^^^^^^^^^^^^")
+## j = 0
+## for key, value in my_dictionary.items():
+##     if not "image_path" in value:
+##         print(j, value)
+##         j = j + 1
+## print("vvvvvvvvvvvvvvvvvvvv")
 
 with io.open('everything.yaml', 'w',encoding='utf8') as file:
     yaml.dump(my_dictionary, file)
