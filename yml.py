@@ -46,14 +46,14 @@ extensions = ['jpg', 'jpeg', 'webp', 'png']
   
 # Using for loop
 for ext in extensions:
-    for filename2 in glob.iglob('**/*.'+ext, recursive=True):
+    for filename2 in glob.iglob('**/[!T]*.'+ext, recursive=True):
 
       # if not 'enfer' in filename2:
       
         # print(i, filename2)
-        # print(os.path.basename(filename2))
+        print(os.path.basename(filename2))
         images.append(filename2)
-        my_dictionary[PurePath(filename2).stem]["image_path"] = filename2
+        my_dictionary[PurePath(filename2).stem]["image_path"] = f"thumbs/T_{os.path.basename(filename2)}" # filename2
 
 
 
