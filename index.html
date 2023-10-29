@@ -38,6 +38,9 @@
         #tags .btn {
             font-size: 12px;
         }
+        .active > .btn:not(.active) {
+            color:lightgray;
+        }
     </style>
 </head>
 
@@ -186,8 +189,10 @@
 
             if (className.includes('active')) {
                 categories[category] = tags
+                e.currentTarget.parentNode.classList.add('active')
             } else {
                 categories[category] = undefined
+                e.currentTarget.parentNode.classList.remove('active')
             }
             console.log(categories)
 
@@ -259,7 +264,7 @@
             const fig = document.createElement("figure");
             fig.dataset.index = index
             fig.classList.add("figure")
-            fig.style = "padding: 10px; max-width: 158px;"
+            fig.style = "padding: 10px; max-width: 158px" // max-width: 158px;
             for (const tagIndex in property.tags) {
                 fig.classList.add(property.tags[tagIndex])
             }
