@@ -56,14 +56,15 @@
         <hr>
         <div id="location" class="counter" style="text-align: center;">
             <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene">
-                ↑
-                San Lazzaro
+                ⥣
+                <span style="font-size:smaller">San Lazzaro</span>
                 <span id="c-saint-lazare-de-savene"></span>
             </a>
             <a href="#" id="saint-jean-lipion" class="btn" role="button" data-bs-toggle="button" data-tags="saint-jean-lipion">
                 <span id="c-saint-jean-lipion"></span>
-                San Giovanni
-                ↓
+                <span style="font-size:smaller">San Giovanni</span>
+                <span style="color: #b9e537; font-size: 14pt; font-weight: bold;">●</span>
+                ⥥
             </a>
         </div>
         <hr>
@@ -287,8 +288,8 @@
             if (where.includes("lipion")) {
                 const float1 = document.createElement("span");
                 float1.classList.add("float-end")
-                float1.style = "color: #b9e537; font-size: 14pt;"
-                const flag = document.createTextNode('⧭'); // 
+                float1.style = "color: #b9e537; font-size: 14pt; font-weight: bold;"
+                const flag = document.createTextNode('●'); // 
                 float1.appendChild(flag)
                 figcaption.appendChild(float1)
             }
