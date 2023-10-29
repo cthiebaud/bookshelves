@@ -11,7 +11,6 @@ from pathlib import PurePath
 def concatExcludeLast(strlst):
     return '/'.join(strlst[0:-1])
 
-
 try:
     os.remove('everything.yaml')
 except OSError:
@@ -20,7 +19,6 @@ except OSError:
 # root_dir needs a trailing slash (i.e. /root/dir/)
 i = 0
 my_dictionary = {}
-images = []
 for filename in glob.iglob('**/*.yaml', recursive=True):
     # print("-------------")
     print(i, os.path.basename(filename))
@@ -43,7 +41,7 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                 value["tags"] = tags
             my_dictionary.update(data)
 
-
+images = []
 extensions = ['jpg', 'jpeg', 'webp', 'png']
   
 # Using for loop
