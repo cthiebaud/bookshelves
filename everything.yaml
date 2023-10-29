@@ -1447,11 +1447,11 @@
   image_path: thumbs/T_978-0966583298.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _4
+  - _9
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: QBQ! The Question Behind the Question
-  where: /saint-lazare-de-savene/salon/_4
+  where: /saint-lazare-de-savene/salon/_9
 978-0970373908:
   de: George Russell (Author)
   ext: "Hardcover \u2013 January 1, 2001"
@@ -1900,11 +1900,11 @@
   image_path: thumbs/T_978-2020005852.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - _2
+  - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Mythologies
-  where: /saint-lazare-de-savene/salon/_2
+  where: /saint-lazare-de-savene/salon/_4
 978-2020006446:
   de: Francois Truffaut
   image_path: thumbs/T_978-2020006446.jpg
@@ -1931,11 +1931,11 @@
   image_path: thumbs/T_978-2020068079.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - _2
+  - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Traite du zen et de l'entretien des motocyclettes
-  where: /saint-lazare-de-savene/salon/_2
+  where: /saint-lazare-de-savene/salon/_4
 978-2020096287:
   de: Eugen Kogon, Hermann Langbein, Adalbert Ruckerl (Auteur)
   ext: "Points. Histoire Broch\xE9 \u2013 1 juin 1987"
@@ -3622,11 +3622,11 @@
   tags:
   - cuisine
   - kafka
-  - _2
+  - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: La Soupe de Kafka
-  where: /saint-lazare-de-savene/salon/_2
+  where: /saint-lazare-de-savene/salon/_4
 978-2080700209:
   de: Arthur Rimbaud (Auteur)
   ext: "Poche \u2013 1 Janvier 1964"
@@ -4994,11 +4994,11 @@
   image_path: thumbs/T_978-2253030430.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - _2
+  - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Moi, Antoine de Tounens, roi de Patagonie
-  where: /saint-lazare-de-savene/salon/_2
+  where: /saint-lazare-de-savene/salon/_4
 978-2253035794:
   de: Roland Jaccard (Sous la direction de)
   image_path: thumbs/T_978-2253035794.jpg
@@ -5139,11 +5139,11 @@
   image_path: thumbs/T_978-2260013990.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - _2
+  - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "La plan\xE8te des singes"
-  where: /saint-lazare-de-savene/salon/_2
+  where: /saint-lazare-de-savene/salon/_4
 978-2262027100:
   de: Paul Dietschy (Auteur)
   ext: "Broch\xE9 \u2013 29 avril 2010"
@@ -6010,11 +6010,11 @@
   image_path: thumbs/T_978-2729841102.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
-  - _3
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1E9\U0001F1EA"
   title: Die Legende vom heiligen Trinker
-  where: /saint-lazare-de-savene/salon/_3
+  where: /transit
 978-2731801293:
   de: Compagnie Internationale du Livre - Collectif
   image_path: thumbs/T_978-2731801293.jpeg
@@ -6067,11 +6067,11 @@
   image_path: thumbs/T_978-2737001222.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - _2
+  - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Don Quichotte de la Manche
-  where: /saint-lazare-de-savene/salon/_2
+  where: /saint-lazare-de-savene/salon/_4
 978-2738116697:
   de: "Fran\xE7ois Ost (Auteur)"
   ext: "Broch\xE9 \u2013 20 octobre 2005"
@@ -6750,11 +6750,11 @@
   image_path: thumbs/T_978-2868698926.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - _3
+  - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Moon Palace
-  where: /saint-lazare-de-savene/salon/_3
+  where: /saint-lazare-de-savene/salon/_4
 978-2869300552:
   de: Dominique Avron (Auteur)
   ext: "Broch\xE9 \u2013 1 mars 1987"
@@ -7026,6 +7026,7 @@
   image_path: thumbs/T_978-2940427017.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - enfer
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -7060,11 +7061,11 @@
   image_path: thumbs/T_978-3125556102.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
-  - _3
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1E9\U0001F1EA"
   title: "Die Tat / Ein Fall f\xFCr Herrn Schmidt"
-  where: /saint-lazare-de-savene/salon/_3
+  where: /transit
 978-3218004824:
   de: Renate Trnek (Author)
   ext: "Paperback \u2013 January 1, 1988"
@@ -7388,11 +7389,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - _4
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1EE\U0001F1F9"
   title: Lady Lazarus e altre poesie
-  where: /saint-lazare-de-savene/salon/_4
+  where: /transit
 978-8804450849:
   de: Francesco Guccini (Autore), Loriano Macchiavelli (Autore)
   ext: "Copertina flessibile \u2013 19 maggio 1998"
@@ -7422,11 +7423,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - _4
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1EE\U0001F1F9"
   title: Conoscenza della notte
-  where: /saint-lazare-de-savene/salon/_4
+  where: /transit
 978-8804476771:
   de: John Ruskin (Autore)
   ext: "Copertina flessibile \u2013 16 maggio 2000"
@@ -7466,11 +7467,11 @@
   image_path: thumbs/T_978-8804508458.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _9
+  - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Frankenstein
-  where: /saint-lazare-de-savene/salon/_9
+  where: /saint-lazare-de-savene/salon/_3
 978-8804553441:
   de: "Dalai\_Lama (Gyatso Tenzin) (Autore), R. Singh (a cura di), C. L. Candiani\
     \ (Traduttore)"
@@ -7513,11 +7514,11 @@
   image_path: thumbs/T_978-8804626060.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _4
+  - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Dizionario delle cose perdute
-  where: /saint-lazare-de-savene/salon/_4
+  where: /saint-lazare-de-savene/salon/_3
 978-8804678038:
   de: Antonia Fraser (Author)
   ext: "La solitudine di una regina - Paperback \u2013 May 5, 2017"
@@ -8164,11 +8165,11 @@
   image_path: thumbs/T_978-8807818677.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _3
+  - saint-lazare-de-savene
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Piccolo viaggio nell'anima tedesca
-  where: /saint-lazare-de-savene/salon/_3
+  where: /saint-lazare-de-savene
 978-8807819698:
   de: Alessandro Baricco (Autore)
   ext: "Copertina flessibile \u2013 29 settembre 2008"
@@ -8267,11 +8268,11 @@
   lanOriginal: "\U0001F1EB\U0001F1F7"
   tags:
   - "th\xE9atre"
-  - _4
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1EE\U0001F1F9"
   title: Il borghese gentiluomo
-  where: /saint-lazare-de-savene/salon/_4
+  where: /transit
 978-8811519782:
   de: Pier Paolo Pasolini (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1993"
@@ -8279,11 +8280,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - _4
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1EE\U0001F1F9"
   title: Le ceneri di Gramsci
-  where: /saint-lazare-de-savene/salon/_4
+  where: /transit
 978-8811635987:
   de: Pier Paolo Pasolini (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1971"
@@ -8291,11 +8292,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - _4
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1EE\U0001F1F9"
   title: Trasumanar e organizzar
-  where: /saint-lazare-de-savene/salon/_4
+  where: /transit
 978-8811666295:
   de: Pier Paolo Pasolini (Autore)
   ext: Copertina flessibile
@@ -8376,31 +8377,31 @@
   image_path: thumbs/T_978-8815248008.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _4
+  - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Silenzio
-  where: /saint-lazare-de-savene/salon/_4
+  where: /saint-lazare-de-savene/salon/_3
 978-8815253101:
   de: Ezio Raimondi (Autore)
   image_path: thumbs/T_978-8815253101.webp
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _4
+  - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Un'etica del lettore
-  where: /saint-lazare-de-savene/salon/_4
+  where: /saint-lazare-de-savene/salon/_3
 978-8815259868:
   de: Stefano Zamagni (Autore)
   image_path: thumbs/T_978-8815259868.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _4
+  - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Prudenza
-  where: /saint-lazare-de-savene/salon/_4
+  where: /saint-lazare-de-savene/salon/_3
 978-8815260499:
   de: Remo Bodei (Autore)
   image_path: thumbs/T_978-8815260499.jpg
@@ -8531,11 +8532,11 @@
   lanOriginal: "\U0001F1EC\U0001F1E7"
   tags:
   - "po\xE9sie"
-  - _4
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1EE\U0001F1F9"
   title: La terra desolata
-  where: /saint-lazare-de-savene/salon/_4
+  where: /transit
 978-8817072380:
   de: Donna Tartt (Autore), Mirko Zilahi De' Gyurgyokai (Traduttore)
   ext: "Copertina rigida \u2013 12 marzo 2014"
@@ -9045,11 +9046,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - polar
-  - _2
+  - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Riccardino
-  where: /saint-lazare-de-savene/salon/_2
+  where: /saint-lazare-de-savene/salon/_3
 978-8842028871:
   de: Omar Calabrese (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1992"
@@ -9310,11 +9311,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - _4
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1EE\U0001F1F9"
   title: "La verit\xE0, vi prego, sull'amore"
-  where: /saint-lazare-de-savene/salon/_4
+  where: /transit
 978-8845911125:
   de: Leonardo Sciascia (Autore)
   ext: "Copertina flessibile \u2013 22 febbraio 1995"
@@ -9928,11 +9929,11 @@
   image_path: thumbs/T_978-8877828590.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _3
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1EE\U0001F1F9"
   title: Muffe, peponidi, tartufi e altri vergognosi vegetali
-  where: /saint-lazare-de-savene/salon/_3
+  where: /transit
 978-8878474635:
   de: Silvia Strozzi (Autore)
   ext: "Copertina flessibile \u2013 3 dicembre 2014"
@@ -10093,11 +10094,11 @@
   image_path: thumbs/T_978-8885668362.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _3
+  - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Dizionario del pendolo di Foucault
-  where: /saint-lazare-de-savene/salon/_3
+  where: /saint-lazare-de-savene/salon/_2
 978-8885854390:
   de: Adriana Gandolfi, Ezio Mattiocco (Autore)
   ext: "Rilegato in Pelle \u2013 1 gennaio 1996"
@@ -10569,11 +10570,11 @@ ASIN-B000NNBJZ4:
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - _4
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1EE\U0001F1F9"
   title: Canti
-  where: /saint-lazare-de-savene/salon/_4
+  where: /transit
 ASIN-B0014LJ38Y:
   de: Elio Vittorini (Auteur), Michel Arnaud (Auteur)
   ext: "(Du monde entier) Broch\xE9 \u2013 1 janvier 1980"
@@ -11005,11 +11006,11 @@ boh25:
   image_path: thumbs/T_boh25.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _3
-  - saint-lazare-de-savene
+  - transit
+  - transit
   - "\U0001F1EE\U0001F1F9"
   title: La scrittura secolare
-  where: /saint-lazare-de-savene/salon/_3
+  where: /transit
 boh26:
   ASIN: B00HNT1YRE
   de: Alessandro Serpieri (Autore)

@@ -38,14 +38,6 @@ boh21:
   de: Julia Cameron (Author)
   lan: 🇬🇧
 
-978-8838940774:
-  title: Riccardino
-  ext: Seguito dalla prima stesura del 2005. Ediz. speciale Copertina rigida – Edizione speciale, 16 luglio 2020
-  de: Andrea Camilleri (Autore)
-  lan: 🇮🇹
-  tags:
-    - polar
-
 978-8845223181:
   title: L'isola del giorno prima
   ext: Copertina rigida
@@ -57,6 +49,12 @@ boh22:
   title: Il pendolo di Foucault
   ext: Copertina rigida – 1 gennaio 1988
   de: Umberto Eco (Autore)
+  lan: 🇮🇹
+
+978-8885668362:
+  title: Dizionario del pendolo di Foucault
+  ext: Copertina flessibile – 1 gennaio 1989
+  de: Luigi Bauco, Francesco Millocca (Autore), G. Corbo (A Cura Di)
   lan: 🇮🇹
 
 978-8806177409:
@@ -94,42 +92,6 @@ boh23:
   ext: Copertina rigida – 19 novembre 2002
   de: Andrew Matthews (Autore), A. Barrett (Illustratore), P. Mazzarelli (Traduttore)
   lan: 🇮🇹
-
-978-2080690401:
-  title: La Soupe de Kafka
-  de: Mark Crick (Auteur)
-  lan: 🇫🇷
-  tags:
-    - cuisine  
-    - kafka
-
-978-2260013990:
-  title: La planète des singes
-  ext: Broché – 16 août 2001
-  de: Pierre Boulle (Auteur)
-  lan: 🇫🇷
-
-978-2020068079:
-  title: Traite du zen et de l'entretien des motocyclettes
-  de: Robert M. Pirsig (Auteur)
-  lan: 🇫🇷
-
-978-2020005852:
-  title: Mythologies
-  de: Roland Barthes (Auteur)
-  lan: 🇫🇷
-
-978-2253030430:
-  title: Moi, Antoine de Tounens, roi de Patagonie
-  ext: (Le Livre de poche)
-  de: Jean Raspail (Auteur)
-  lan: 🇫🇷
-
-978-2737001222:
-  title: Don Quichotte de la Manche
-  ext: Broché – 1 juin 2020
-  de: Miguel de Cervantes Saavedra
-  lan: 🇫🇷
 
 978-2081212961:
   title: La dynamique du capitalisme
