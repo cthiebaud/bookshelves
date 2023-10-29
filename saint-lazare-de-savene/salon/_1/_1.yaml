@@ -10,6 +10,7 @@
   de: Christoph Wolff (Author)
   lan: 🇬🇧
   tags:
+    - music
     - Bach
 
 978-2340047808:
@@ -43,6 +44,8 @@
   ext: Le ricette di Andrea Camilleri Copertina flessibile – 1 aprile 2009
   de: Stefania Campo (Autore)
   lan: 🇮🇹
+  tags:
+    - cuisine
 
 978-8858119280:
   title: Donne, madonne, mercanti e cavalieri
@@ -74,6 +77,8 @@
   ext: La solitudine di una regina - Paperback – May 5, 2017
   de: Antonia Fraser (Author)
   lan: 🇮🇹
+  tags:
+    - biographie
 
 boh16:
   title: Il ramo d'oro, volume primo
@@ -131,7 +136,9 @@ boh18:
   title : La terre et les rêveries du repos
   de: Gaston Bachelard (Auteur)
   lan: 🇫🇷
-
+  tags:
+    - philo
+    
 978-0099282877:
   title: The Talented Mr. Ripley
   ext: (A Ripley Novel, 1) Paperback – 5 Aug. 1999

@@ -210,24 +210,30 @@ ASIN-B00HFWJT1C:
 
 978-0416101607:
   title: Macbeth
-  ext: (Arden Shakespeare) Paperback – January 1, 1985
+  ext: (Arden) Paperback – January 1, 1985
   de: William Shakespeare (Author), Kenneth Muir (Editor)
   lan: 🇬🇧
   url: https://www.amazon.com/s\?k=978-0416101607
+  tags:
+    - théatre
 
 978-0416101607-2:
   title: Macbeth
-  ext: (Arden Shakespeare) Paperback – January 1, 1985
+  ext: (Arden) Paperback – January 1, 1985
   de: William Shakespeare (Author), Kenneth Muir (Editor)
   lan: 🇬🇧
   url: https://www.amazon.com/s\?k=978-0416101607
+  tags:
+    - théatre
 
 978-0415026949:
   title: King Richard III
-  ext: (Arden Shakespeare) Paperback
+  ext: (Arden) Paperback
   de: William Shakespeare (Author)
   lan: 🇬🇧
   url: https://www.amazon.com/s\?k=978-0415026949
+  tags:
+    - théatre
 
 978-2020302067:
   title: Le golem 

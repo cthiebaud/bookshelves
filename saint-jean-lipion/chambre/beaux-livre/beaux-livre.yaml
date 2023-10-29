@@ -9,12 +9,16 @@
   ext: Relié – 25 octobre 2014
   de: Annie Le Brun (Auteur)
   lan: 🇫🇷
+  tags: 
+    - enfer
 
 978-2702205129:
   title: Le Sens du beau
   ext: Aux origines de la culture contemporaine
   de: Luc Ferry (Auteur), Philippe Sollers (Avec la contribution de)
   lan: 🇫🇷
+  tags: 
+    - philo
 
 978-2081233133:
   title: Les plus belles lettres de femmes
@@ -41,18 +45,24 @@
   ext: Une américaine à Paris - Bilingue français/anglais. Relié – 7 mai 2013
   de: Martha Carroll (Auteur), Jean-Louis Celati (Auteur)
   lan: 🇫🇷
+  tags: 
+    - photo
 
 978-2858150557:
   title: Rhââ lovely, tome 2
   ext: Relié – 7 janvier 1993
   de: Marcel Gotlib (Auteur)
   lan: 🇫🇷
+  tags: 
+    - bd
 
 978-2732434803:
   title: Quelques jours dans la vie de Sharon Stone
   ext: Cannes Londres Paris - Relié – 6 avril 2006
   de: Emanuele Scorcelletti (Auteur)
   lan: 🇫🇷
+  tags: 
+    - photo
 
 978-2203011427:
   title: 14. Le Temple du soleil
@@ -61,18 +71,23 @@
   lan: 🇫🇷
   tags:
     - tintin
+    - bd
 
 978-2205066876:
   title: L'intégrale
   ext: Relié – 18 novembre 2010
   de: Marcel Gotlib (Auteur, Illustrations)
   lan: 🇫🇷
+  tags: 
+    - bd
 
 978-2072801549:
   title: Egon Schiele
   ext: Relié – Illustré, 11 octobre 2018
   de: Dieter Buchhart (Auteur, Sous la direction de)
   lan: 🇫🇷
+  tags: 
+    - peinture
 
 978-3848004409:
   title: BMW
@@ -91,6 +106,8 @@ boh1:
   ext: Poche – Illustré, 13 janvier 2021
   de: Feurat Alani (Auteur), Leonard Cohen (Illustrations)
   lan: 🇫🇷
+  tags: 
+    - bd
 
 boh7:
   ASIN: B0141G1U4S
@@ -98,10 +115,13 @@ boh7:
   ext: (Sarah Bernhardt, titre original)
   de: Morris (Autor)
   lan: 🇩🇪
+  tags: 
+    - bd
 
 978-2858681884:
   title: Les Noces de Figaro
   ext: avec partition d'extraits Broché – 1 janvier 1992
   de: Wolfgang Amadeus Mozart (Auteur), Lorenzo Da Ponte (Auteur), Raoul Agran (Illustrations), Teresa Berganza (Préface), & 3 plus
   lan: 🇫🇷
-
+  tags:
+    - music

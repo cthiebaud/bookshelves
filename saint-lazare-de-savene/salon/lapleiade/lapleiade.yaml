@@ -70,12 +70,16 @@ ASIN-B00HFSBGAS:
   ext: Copertina rigida
   de: William Shakespeare (Autore)
   lan: 🇮🇹
+  tags:
+    - théatre
 
 shakespeare:
   title: Œuvres complètes, Vol. II - Comédies II - Tragédies
   ext: Présentations par Henri Fluchère - Relié - 1980
   de: William Shakespeare
   lan: 🇫🇷
+  tags:
+    - théatre
 
 978-2070106974:
   title: Voyages en Italie

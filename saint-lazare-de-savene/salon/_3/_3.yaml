@@ -109,6 +109,8 @@
   ext: Copertina flessibile – 15 giugno 2006
   de: Kurt Gödel (Autore), Gabriele Lolli (a cura di), Piergiorgio Odifreddi (a cura di)
   lan: 🇮🇹
+  tags:
+    - philo
 
 978-8845902741:
   title: La signorina Else
@@ -203,6 +205,8 @@ boh26:
   ext: La nuova indagine di Enrico Radeschi Copertina flessibile – 18 gennaio 2018
   de: Paolo Roversi (Autore)
   lan: 🇮🇹
+  tags:
+    - polar
 
 boh27: 
   ASIN: B07KFPZYXR
@@ -245,6 +249,8 @@ boh28:
   title: La canzone francese
   de: Guido Armellini (a cura di)
   lan: 🇮🇹
+  tags:
+    - music
 
 boh29:
   ASIN: B07CQN67D8

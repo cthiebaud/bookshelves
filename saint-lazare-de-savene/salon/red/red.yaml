@@ -97,6 +97,8 @@ bovary:
   ext: Broché
   de: Arthur Schopenhauer (Auteur)
   lan: 🇫🇷
+  tags:
+    - philo
 
 978-2251010328:
   title: Guerre des Gaules - livres I-V
@@ -142,6 +144,8 @@ ASIN-B00HNSXRVQ:
   de: Christophe Marlowe
   publisher: Guanda - Quaderni della Fenice - 72
   lan: 🇮🇹
+  tags:
+    - théatre
 
 978-0521422123:
   title: The Economics of Art and Culture

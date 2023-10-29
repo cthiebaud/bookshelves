@@ -14,6 +14,8 @@
   ext: Broché – 29 septembre 2005
   de: Laure Adler (Auteur)
   lan: 🇫🇷
+  tags:
+    - biographie
 
 978-8806146511:
   title: Il mago dei numeri
@@ -27,6 +29,8 @@ boh21:
   ext: Relié – 1 janvier 1988
   de: Serge Bramly (Auteur)
   lan: 🇫🇷
+  tags:
+    - biographie
 
 978-0874776942:
   title: The Artist's Way
@@ -39,6 +43,8 @@ boh21:
   ext: Seguito dalla prima stesura del 2005. Ediz. speciale Copertina rigida – Edizione speciale, 16 luglio 2020
   de: Andrea Camilleri (Autore)
   lan: 🇮🇹
+  tags:
+    - polar
 
 978-8845223181:
   title: L'isola del giorno prima
@@ -94,6 +100,7 @@ boh23:
   de: Mark Crick (Auteur)
   lan: 🇫🇷
   tags:
+    - cuisine  
     - Kafka
 
 978-2260013990:
@@ -135,12 +142,16 @@ boh23:
   ext: Broché – 27 avril 2012
   de: Quentin Meillassoux (Auteur)
   lan: 🇫🇷
+  tags:
+    - philo
 
 978-2246686019:
   title: Le complot - Histoire secrète des Protocoles des Sages de Sion
   ext: Broché – Illustré, 2 novembre 2005
   de: Will Eisner (Auteur)
   lan: 🇫🇷
+  tags:
+    - bd
 
 978-8850213979:
   title: Il profumo
@@ -153,6 +164,8 @@ boh23:
   ext: Copertina flessibile – 31 gennaio 2017
   de: Artemisia Gentileschi (Autore), Eva Menzio (a cura di), Roland Barthes (Collaboratore), & 1 altro
   lan: 🇮🇹
+  tags:
+    - peinture
 
 978-8811666295:
   title: Scritti corsari
@@ -176,3 +189,5 @@ ASIN-B073DBKH1H:
   ext: ed. Einaudi Gli Struzzi n. 16 A15 Copertina flessibile – 1 gennaio 1963
   de: B.Brecht (Autore), Einaudi (a cura di)
   lan: 🇮🇹
+  tags:
+    - théatre

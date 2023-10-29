@@ -26,6 +26,8 @@
   title: Le style classique - Haydn, Mozart, Beethoven
   de: Charles Rosen (Auteur)
   lan: 🇫🇷
+  tags:
+    - music
 
 978-2072895142:
   title: Carnet d'adresses de quelques personnages fictifs de la littérature
@@ -46,6 +48,8 @@
   ext: Paperback – January 1, 2003
   de: Colin McGinn (Author)
   lan: 🇬🇧
+  tags:
+    - philo
 
 978-0374533557:
   title: Thinking, Fast and Slow
@@ -57,6 +61,8 @@
   title: Casino - The Rise and Fall of the Mob in Las Vegas
   de: Nicholas Pileggi (Author)
   lan: 🇬🇧
+  tags:
+    - cinema
 
 978-0307455925:
   title: Americanah
@@ -117,6 +123,9 @@
   ext: Broché – Grand livre, 27 septembre 2018
   de: Johann Chapoutot (Auteur)
   lan: 🇫🇷
+  tags:
+    - nazi
+
 
 978-0393635362:
   title: Counterpoint - A Memoir of Bach and Mourning
@@ -124,6 +133,7 @@
   de: Philip Kennicott (Author)
   lan: 🇬🇧
   tags:
+    - music
     - Bach
 
 978-2021082289:
@@ -137,6 +147,8 @@
   ext: Hardcover – November 13, 2001
   de: Stuart Isacoff (Author)
   lan: 🇬🇧
+  tags:
+    - music
 
 978-2070145614:
   title: De Révolution en République - Les chemins de la France
@@ -161,6 +173,8 @@
   ext: Broché – Illustré, 21 janvier 2015
   de: Yann Morvan (Auteur), Laurent Calut (Auteur)
   lan: 🇫🇷
+  tags:
+    - music
 
 978-1780749204:
   title: My Life on the Road
@@ -226,6 +240,8 @@
   ext: Broché – 12 juin 2019
   de: Ines Leraud (Avec la contribution de), Pierre Van Hove (Dessins)
   lan: 🇫🇷
+  tags:
+    - bd
 
 978-2844851390:
   title: Europeana - Une brève histoire du XXe siècle
@@ -238,3 +254,6 @@
   ext: Broché – 27 avril 2012
   de: Quentin Meillassoux (Auteur)
   lan: 🇫🇷
+  tags:
+    - philo 
+

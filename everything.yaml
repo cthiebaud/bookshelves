@@ -684,6 +684,7 @@
   image_path: thumbs/T_978-0367277291.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - music
   - cinema
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
@@ -706,6 +707,7 @@
   image_path: thumbs/T_978-0375403552.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - music
   - favourite
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
@@ -773,6 +775,7 @@
   image_path: thumbs/T_978-0393048254.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - music
   - Bach
   - _1
   - saint-lazare-de-savene
@@ -785,6 +788,7 @@
   image_path: thumbs/T_978-0393635362.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - music
   - Bach
   - favourite
   - saint-jean-lipion
@@ -793,10 +797,11 @@
   where: /saint-jean-lipion/chambre/favourite
 978-0415026949:
   de: William Shakespeare (Author)
-  ext: (Arden Shakespeare) Paperback
+  ext: (Arden) Paperback
   image_path: thumbs/T_978-0415026949.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - "th\xE9atre"
   - black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
@@ -828,10 +833,11 @@
   where: /saint-lazare-de-savene/salon/_5
 978-0416101607:
   de: William Shakespeare (Author), Kenneth Muir (Editor)
-  ext: "(Arden Shakespeare) Paperback \u2013 January 1, 1985"
+  ext: "(Arden) Paperback \u2013 January 1, 1985"
   image_path: thumbs/T_978-0416101607.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - "th\xE9atre"
   - black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
@@ -840,10 +846,11 @@
   where: /saint-lazare-de-savene/salon/black
 978-0416101607-2:
   de: William Shakespeare (Author), Kenneth Muir (Editor)
-  ext: "(Arden Shakespeare) Paperback \u2013 January 1, 1985"
+  ext: "(Arden) Paperback \u2013 January 1, 1985"
   image_path: thumbs/T_978-0416101607-2.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - "th\xE9atre"
   - black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
@@ -1239,6 +1246,7 @@
   image_path: thumbs/T_978-0743231800.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - philo
   - favourite
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
@@ -1405,6 +1413,7 @@
   image_path: thumbs/T_978-0865475120.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - music
   - biographie
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
@@ -1764,6 +1773,7 @@
   image_path: thumbs/T_978-1785031540.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - cinema
   - favourite
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
@@ -1963,6 +1973,7 @@
   image_path: thumbs/T_978-2020134170.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - biographie
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -2063,6 +2074,7 @@
   image_path: thumbs/T_978-2021092158.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -2527,6 +2539,7 @@
   image_path: thumbs/T_978-2070146826.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - enfer
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -2632,6 +2645,7 @@
   image_path: thumbs/T_978-2070297443.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - music
   - favourite
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -3356,6 +3370,7 @@
   image_path: thumbs/T_978-2070762637.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - biographie
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -3483,6 +3498,7 @@
   image_path: thumbs/T_978-2072801549.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - peinture
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -3597,6 +3613,7 @@
   image_path: thumbs/T_978-2080690401.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - cuisine
   - Kafka
   - _2
   - saint-lazare-de-savene
@@ -3622,6 +3639,7 @@
   image_path: thumbs/T_978-2080700766.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - "th\xE9atre"
   - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -3690,6 +3708,7 @@
   image_path: thumbs/T_978-2081212480.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - lapleiade_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -3897,6 +3916,7 @@
   image_path: thumbs/T_978-2130425946.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - lapleiade_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4209,6 +4229,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - tintin
+  - bd
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4291,6 +4312,7 @@
   image_path: thumbs/T_978-2205066876.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - bd
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4663,6 +4685,7 @@
   image_path: thumbs/T_978-2227470743.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - biographie
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4798,6 +4821,7 @@
   image_path: thumbs/T_978-2246686019.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - bd
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -4877,6 +4901,7 @@
   image_path: thumbs/T_978-2246855637.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - music
   - favourite
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4921,6 +4946,7 @@
   image_path: thumbs/T_978-2251447360.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - lapleiade_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5377,6 +5403,7 @@
   image_path: thumbs/T_978-2290235805.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - bd
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5548,6 +5575,7 @@
   image_path: thumbs/T_978-2368909751.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - music
   - biographie
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5605,6 +5633,7 @@
   image_path: thumbs/T_978-2413010364.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - bd
   - favourite
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5742,6 +5771,7 @@
   image_path: thumbs/T_978-2702205129.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5797,6 +5827,7 @@
   image_path: thumbs/T_978-2707301482.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - "th\xE9atre"
   - autre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5808,6 +5839,7 @@
   image_path: thumbs/T_978-2707313867.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - _5
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -5873,6 +5905,7 @@
   image_path: thumbs/T_978-2714302991.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - _1
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -6011,6 +6044,7 @@
   image_path: thumbs/T_978-2732434803.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - photo
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6201,6 +6235,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - Kafka
+  - "C\xE9line"
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6280,6 +6315,7 @@
   image_path: thumbs/T_978-2841420339.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - music
   - Bach
   - cinema
   - saint-jean-lipion
@@ -6502,6 +6538,7 @@
   image_path: thumbs/T_978-2858150557.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - bd
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6537,6 +6574,7 @@
   image_path: thumbs/T_978-2858681884.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - music
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6547,6 +6585,7 @@
   image_path: thumbs/T_978-2859566265.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - cinema
   - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -6848,6 +6887,7 @@
   image_path: thumbs/T_978-2908024029.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -6924,6 +6964,7 @@
   image_path: thumbs/T_978-2915083163.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - music
   - cinema
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6937,6 +6978,7 @@
   image_path: thumbs/T_978-2916195469.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - photo
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -7469,6 +7511,7 @@
   image_path: thumbs/T_978-8804678038.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - biographie
   - _1
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -8210,6 +8253,7 @@
   lan: "\U0001F1EE\U0001F1F9"
   lanOriginal: "\U0001F1EB\U0001F1F7"
   tags:
+  - "th\xE9atre"
   - _4
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -8516,7 +8560,7 @@
 978-8817167949:
   de: Michail Bulgakov (Autore), Emanuela Guercetti (Traduttore)
   ext: "Copertina flessibile \u2013 24 ottobre 1990"
-  image_path: thumbs/T_978-8817167949.jpg
+  image_path: thumbs/T_978-8817167949.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - _3
@@ -8716,6 +8760,7 @@
   image_path: thumbs/T_978-8831728508.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - polar
   - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -8809,6 +8854,7 @@
   image_path: thumbs/T_978-8833916798.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - philo
   - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -8985,6 +9031,7 @@
   image_path: thumbs/T_978-8838940774.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - polar
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -9446,6 +9493,7 @@
   image_path: thumbs/T_978-8849127225.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - music
   - _5
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -9960,6 +10008,7 @@
   image_path: thumbs/T_978-8884166142.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - peinture
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -9972,6 +10021,8 @@
   image_path: thumbs/T_978-8884409942.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - music
+  - Mozart
   - cinema
   - saint-jean-lipion
   - "\U0001F1EE\U0001F1F9"
@@ -10176,6 +10227,7 @@
   image_path: thumbs/T_978-8895177472.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - cuisine
   - _1
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -10357,6 +10409,7 @@
   image_path: thumbs/T_979-1021030428.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - nazi
   - favourite
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -10523,6 +10576,7 @@ ASIN-B0014QGFG2:
   image_path: thumbs/T_ASIN-B0014QGFG2.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - perec
   - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -10647,6 +10701,7 @@ ASIN-B00HFSBGAS:
   image_path: thumbs/T_ASIN-B00HFSBGAS.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - "th\xE9atre"
   - lapleiade
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -10670,6 +10725,7 @@ ASIN-B00HNSXRVQ:
   lan: "\U0001F1EE\U0001F1F9"
   publisher: Guanda - Quaderni della Fenice - 72
   tags:
+  - "th\xE9atre"
   - red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -10702,6 +10758,7 @@ ASIN-B073DBKH1H:
   image_path: thumbs/T_ASIN-B073DBKH1H.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - "th\xE9atre"
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -10885,6 +10942,7 @@ boh21:
   image_path: thumbs/T_boh21.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - biographie
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -10971,6 +11029,7 @@ boh28:
   image_path: thumbs/T_boh28.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - music
   - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -11226,6 +11285,7 @@ boh7:
   image_path: thumbs/T_boh7.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
+  - bd
   - beaux-livre
   - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
@@ -11349,6 +11409,7 @@ shakespeare:
   image_path: thumbs/T_shakespeare.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - "th\xE9atre"
   - lapleiade
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"

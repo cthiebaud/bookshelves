@@ -16,6 +16,8 @@
   de: Molière (Autore), Romeo Lucchese (Traduttore)
   lan: 🇮🇹
   lanOriginal: 🇫🇷
+  tags:
+    - théatre
 
 boh31:
   title: Tout Alice
@@ -27,6 +29,8 @@ boh31:
   ext: Poche – 31 août 1993
   de: Pierre-Augustin Caron de Beaumarchais (Auteur)
   lan: 🇫🇷
+  tags:
+    - théatre
 
 978-2080700209:
   title: Œuvres poétiques
@@ -180,6 +184,8 @@ ASIN-B00340LFAM:
   title: Les aventures d'Antoine Doinel
   de: François Truffaut
   lan: 🇫🇷
+  tags:
+    - cinema
 
 978-2266119825:
   title: Tristes tropiques 
@@ -250,6 +256,8 @@ ASIN-B0014QGFG2:
   title : Bâtons, chiffres et lettres
   de: Raymond Queneau
   lan: 🇫🇷
+  tags:
+    - perec
 
 978-8804626060: 
   title: Dizionario delle cose perdute
