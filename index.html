@@ -27,26 +27,30 @@
         }
 
         #howmuch {
-            font-size: 28px;
+            font-size: 24px;
         }
+
         #langage .btn {
             font-size: 16px;
         }
+
         #location .btn {
             font-size: 14px;
         }
+
         #tags .btn {
             font-size: 12px;
         }
-        .active > .btn:not(.active) {
-            color:lightgray;
+
+        .active>.btn:not(.active) {
+            color: lightgray;
         }
     </style>
 </head>
 
 <body>
     <div id="container" class="container-fluid">
-        <h1 id="howmuch" class="counter" style="text-align: center;">…</h1>
+        <div id="howmuch" class="counter" style="text-align: center;">…</div>
         <hr>
         <div id="langage" class="counter" style="text-align: center;">
             <a href="#" id="🇫🇷" class="btn" role="button" data-bs-toggle="button" data-tags="🇫🇷"> 🇫🇷 <span id="c-🇫🇷"></span> </a>
@@ -59,15 +63,16 @@
         <hr>
         <div id="location" class="counter" style="text-align: center;">
             <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene">
-                ⥣
+                <span style=" visibility: hidden; font-size: 14pt; font-weight: bold;">●</span>
                 <span style="font-size:smaller">San Lazzaro</span>
                 <span id="c-saint-lazare-de-savene"></span>
+                ⥣
             </a>
             <a href="#" id="saint-jean-lipion" class="btn" role="button" data-bs-toggle="button" data-tags="saint-jean-lipion">
+                ⥥
                 <span id="c-saint-jean-lipion"></span>
                 <span style="font-size:smaller">San Giovanni</span>
                 <span style="color: #b9e537; font-size: 14pt; font-weight: bold;">●</span>
-                ⥥
             </a>
         </div>
         <hr>
@@ -99,6 +104,7 @@
     <script>
         const container = document.getElementById("container");
         let entries
+        let total_des_totaux = undefined
 
         class Counter {
             total = 0;
@@ -142,7 +148,11 @@
             };
 
             display = () => {
-                document.getElementById("howmuch").innerHTML = `${this.total}`
+                if (typeof total_des_totaux === "undefined") {
+                    total_des_totaux = this.total
+                }
+                var s = Number(this.total / total_des_totaux).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 2 });
+                document.getElementById("howmuch").innerHTML = `${this.total}/${total_des_totaux} ⇒ ${s}`
                 {
                     document.getElementById("c-🇫🇷").innerHTML = `${this.fr}`
                     document.getElementById("c-🇮🇹").innerHTML = `${this.it}`
