@@ -4,7 +4,7 @@
   de: Centre George Pompidou - Collectif () Yasha David (Sous la direction de)
   lan: 🇫🇷
   tags:
-    - Kafka
+    - kafka
 
 978-8888108223:
   title: Tea - Vie e virtù di una foglia esotica
@@ -36,6 +36,8 @@
   ext: exposition, Musée d'Ixelles, 23 décembre 1988-15 janvier 1989, Angoulême, Musée des beaux-arts, 26 ... 1989, Paris, Hôtel de Sens, 4 mars-4 mai 1989 Relié – 1 janvier 1996
   de: Benoît Peeters (Auteur)
   lan: 🇫🇷
+  tags:
+    - tintin
 
 978-0847814275:
   title: Musique - passion d’artistes
@@ -46,12 +48,6 @@
   title: Les Indiens
   ext: Broché – 20 mars 2000
   de: Karl Bodmer (Auteur)
-  lan: 🇫🇷
-
-978-2852299566:
-  title: Le grand atlas de géographie
-  ext: Relié – 3 novembre 1994
-  de: Encyclopaedia Universalis (Editeur), Michel Lardy (Auteur)
   lan: 🇫🇷
 
 978-8872920961:
@@ -65,12 +61,6 @@
   ext: Relié – 1 janvier 1984
   de: Albin Michel - Collectif (Éditeur)
   lan: 🇫🇷
-
-978-8845174131:
-  title: Star Wars - Episodio I - Guida ai personaggi
-  ext: Ediz. illustrata Copertina rigida – Illustrato, 8 settembre 1999
-  de: David West Reynolds (Testi di)
-  lan: 🇮🇹
 
 978-0810902626:
   title: Leonardo da Vinci
@@ -113,16 +103,10 @@ boh40:
   lan: 🇫🇷
 
 boh41:
-  title: "Camera International #11, Été 87 ; Voyage en Italie"
+  title: Camera International - Voyage en Italie
+  ext: "#11, Été 87 ;"
   de: Claude Nori, Ferdinando Scianna 
   lan: 🇫🇷
-
-978-2203015036:
-  title: Êtes-vous tintinologue
-  de:  Renée-Héloïse Giroux, François Hébert, Hergé
-  lan: 🇫🇷
-  tags:
-    - tintin_etc
 
 boh42:
   ASIN: B0000EA6R5
@@ -130,27 +114,10 @@ boh42:
   de: Maie-Louise Bastin
   lan: 🇫🇷
 
-978-8845171314:
-  title: “Cogito ergo sum” - Guida alla filosofia per ragazzi
-  de: Jeremy Weate
-  ext: 1999
-  lan: 🇮🇹
-
-978-2742719358:
-  title: Le Noël d'Auggie Wren Relié – 10 décembre 1998
-  de: Paul Auster, Jean Claverie, Christine Le Boeuf
-  lan: 🇫🇷
-
 978-8893082532:
   title: Le fiabe più belle
   ext: Ediz. a colori Copertina rigida – Illustrato, 1991
   de: Hans Christian Andersen - Illustrazioni di Lisbeth Zwerger
-  lan: 🇮🇹
-
-977-1827138009:
-  title: "[le onde gravitazionali]"
-  de: asimmetrie - Collectif
-  url: https://www.asimmetrie.it/images/stories/archivio-numeri-passati-pdf/asimmetrie-5-HR.pdf
   lan: 🇮🇹
 
 boh43: 
@@ -189,29 +156,13 @@ boh44:
   tags:
     - proust
 
-978-2040184438:
-  title: Atlas du monde Arabe
-  ext: (Ancienne Edition) Relié – 1 mars 1993
-  de: Rafic Boustani, Philippe Fargues (Auteur)
-  lan: 🇫🇷
-
-978-2203009479:
-  title: Adèle Blanc-Sec - Adèle et la bête
-  ext:  Relié  – 22 octobre 2007
-  de: Tardi (Auteur, Couleurs, Dessins, Lettreur, Rédacteur)
-  lan: 🇫🇷
-
-978-2082015394:
-  title: Les 1001 albums qu'il faut avoir écoutés dans sa vie
-  ext: Rock, Hip Hop, Soul, Dance, World Music, Pop, Techno... Broché – 15 janvier 2014
-  de: Robert Dimery - Collectif (Auteur), Michka Assayas (Préface), Anne Marcy-Benitez (Traduction), Géraldine Bretault (Traduction), Lorena Lamin (Traduction)
-  lan: 🇫🇷
-
 978-2213003795:
   title: Une histoire du Jazz
   ext: Relié – 1 janvier 1976
   de: Joachim-Ernst Berendt (Auteur)
   lan: 🇫🇷
+  tags:
+    - music
 
 978-0590444590:
   title: Hansel and Gretel
@@ -245,22 +196,10 @@ boh44:
   de: Renate Trnek (Author)
   lan: 🇩🇪
 
-977-1827138009-2:
-  title: "[antimateria]"
-  de: asimmetrie - Collectif
-  url: https://www.asimmetrie.it/images/stories/archivio-numeri-passati-pdf/asimmetrie-7-HR.pdf
-  lan: 🇮🇹
-
 978-2851088871:
   title: Le journal de Frida Kahlo
   ext: Relié – 1 décembre 1995
   de: Frida Kahlo (Auteur)
-  lan: 🇫🇷
-
-978-2844141132:
-  title: Pyong Yang
-  ext: Broché – 15 novembre 2002
-  de: Guy Delisle (Auteur)
   lan: 🇫🇷
 
 978-2850250439:

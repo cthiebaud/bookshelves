@@ -139,6 +139,8 @@
   de: Louis-Ferdinand Céline (Auteur), Pascal Fouché (Sous la direction de)
   lan: 🇫🇷
   url: https://www.amazon.fr/s\?k=978-2072983221
+  tags:
+    - celine
 
 978-2070124855:
   title: Journal d'un corps
@@ -181,7 +183,7 @@
   de: Franz Kafka (Auteur)
   lan: 🇫🇷
   tags:
-    - Kafka
+    - kafka
 
 ASIN-B0014LJ38Y:
   title: L'oeillet rouge

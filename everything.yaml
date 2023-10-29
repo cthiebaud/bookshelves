@@ -81,23 +81,23 @@
   image_path: thumbs/T_977-1827138009.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: '[le onde gravitazionali]'
   url: https://www.asimmetrie.it/images/stories/archivio-numeri-passati-pdf/asimmetrie-5-HR.pdf
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 977-1827138009-2:
   de: asimmetrie - Collectif
   image_path: thumbs/T_977-1827138009-2.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: '[antimateria]'
   url: https://www.asimmetrie.it/images/stories/archivio-numeri-passati-pdf/asimmetrie-7-HR.pdf
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 977-1970474443:
   de: La Repubblica,  L'espresso - Collectif
   image_path: thumbs/T_977-1970474443.jpg
@@ -213,7 +213,7 @@
   image_path: thumbs/T_978-0099512165.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
@@ -776,7 +776,7 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - music
-  - Bach
+  - bach
   - _1
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
@@ -789,7 +789,7 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - music
-  - Bach
+  - bach
   - favourite
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
@@ -899,11 +899,11 @@
   image_path: thumbs/T_978-0500510346.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: 7 Reece Mews - Francis Bacon's Studio
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-0510343217:
   de: John Webster (Author)
   image_path: thumbs/T_978-0510343217.jpg
@@ -1291,7 +1291,7 @@
   image_path: thumbs/T_978-0785929024.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -1436,11 +1436,11 @@
   image_path: thumbs/T_978-0941434201.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Love - A Celebration in Art & Literature
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-0966583298:
   de: John G. Miller (Author)
   ext: Practicing Personal Accountability at Work and in Life
@@ -1459,12 +1459,12 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - music
-  - arts2
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: The Lydian Chromatic Concept of Tonal Organization - The Art and Science
     of Tonal Gravity
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-1015562929:
   de: William Henry Hudson (Author)
   ext: "Hardcover \u2013 October 26, 2022"
@@ -1481,7 +1481,7 @@
   image_path: thumbs/T_978-1316504864.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - Bach
+  - bach
   - random
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
@@ -1493,7 +1493,7 @@
   image_path: thumbs/T_978-1371035907.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -1676,6 +1676,7 @@
   image_path: thumbs/T_978-1648580321.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - celine
   - editor
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -1687,6 +1688,7 @@
   image_path: thumbs/T_978-1648580338.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - celine
   - editor
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -1698,6 +1700,7 @@
   image_path: thumbs/T_978-1648580345.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - celine
   - editor
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -1851,7 +1854,7 @@
   image_path: thumbs/T_978-2010115547.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -1862,7 +1865,7 @@
   image_path: thumbs/T_978-2010119538.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -1950,7 +1953,7 @@
   image_path: thumbs/T_978-2020102438.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -1961,7 +1964,7 @@
   image_path: thumbs/T_978-2020109000.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -1985,7 +1988,7 @@
   image_path: thumbs/T_978-2020168687.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -1996,7 +1999,7 @@
   image_path: thumbs/T_978-2020213677.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -2108,11 +2111,11 @@
   image_path: thumbs/T_978-2040184438.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - arts
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Atlas du monde Arabe
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-2070100156:
   de: Guillaume Apollinaire (Auteur)
   ext: "Reli\xE9 \u2013 1 d\xE9cembre 1956"
@@ -2196,7 +2199,7 @@
   image_path: thumbs/T_978-2070107933.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - lapleiade
   - random
   - saint-lazare-de-savene
@@ -2244,7 +2247,7 @@
   image_path: thumbs/T_978-2070109708.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - lapleiade
   - random
   - saint-lazare-de-savene
@@ -2270,7 +2273,7 @@
   image_path: thumbs/T_978-2070110841.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - lapleiade
   - random
   - saint-lazare-de-savene
@@ -2514,7 +2517,7 @@
   image_path: thumbs/T_978-2070144327.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - lapleiade
   - kafka
   - saint-jean-lipion
@@ -2540,11 +2543,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - enfer
-  - beaux-livre
+  - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Sade - Attaquer le soleil
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre
 978-2070147045:
   de: "Fran\xE7ois-Henri D\xE9s\xE9rable (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 1 janvier 2015"
@@ -2575,7 +2578,7 @@
   image_path: thumbs/T_978-2070197521.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -2587,6 +2590,7 @@
   image_path: thumbs/T_978-2070213030.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - celine
   - editor
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -2748,7 +2752,7 @@
   image_path: thumbs/T_978-2070338641.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - random
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -2780,7 +2784,7 @@
   image_path: thumbs/T_978-2070354399.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -2791,7 +2795,7 @@
   image_path: thumbs/T_978-2070354795.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -2803,6 +2807,7 @@
   image_path: thumbs/T_978-2070360284.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - celine
   - poche
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -2836,7 +2841,7 @@
   image_path: thumbs/T_978-2070362844.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -3060,7 +3065,7 @@
   image_path: thumbs/T_978-2070387830.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -3116,7 +3121,7 @@
   image_path: thumbs/T_978-2070422067.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - poche
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -3172,11 +3177,11 @@
   image_path: thumbs/T_978-2070552023.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - beaux-livre
+  - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Exercices de style
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre
 978-2070704491:
   de: Keith Thomas (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 31 octobre 1985"
@@ -3499,11 +3504,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - peinture
-  - beaux-livre
+  - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Egon Schiele
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre
 978-2072860188:
   de: "H\xE9l\xE8ne Cixous (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 22 octobre 2020"
@@ -3559,6 +3564,7 @@
   image_path: thumbs/T_978-2072983221.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - celine
   - editors
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -3571,6 +3577,7 @@
   image_path: thumbs/T_978-2072983375.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - celine
   - saint-lazare-de-savene
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -3614,7 +3621,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cuisine
-  - Kafka
+  - kafka
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -3663,7 +3670,7 @@
   image_path: thumbs/T_978-2080704283.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - random
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -3742,18 +3749,18 @@
   image_path: thumbs/T_978-2081233133.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - beaux-livre
+  - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Les plus belles lettres de femmes
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre
 978-2081255258:
   de: Jacqueline Raoul-Duval (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 26 f\xE9vrier 2011"
   image_path: thumbs/T_978-2081255258.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -3847,11 +3854,12 @@
   image_path: thumbs/T_978-2082015394.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - arts
+  - music
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Les 1001 albums qu'il faut avoir \xE9cout\xE9s dans sa vie"
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-2082025010:
   de: Sutcliffe Serena (Auteur)
   ext: "Reli\xE9 \u2013 8 janvier 1992"
@@ -4182,6 +4190,7 @@
   image_path: thumbs/T_978-2203004047.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - tintin
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -4193,11 +4202,12 @@
   image_path: thumbs/T_978-2203009479.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - arts
+  - bd
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Ad\xE8le Blanc-Sec - Ad\xE8le et la b\xEAte"
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-2203011014:
   de: "Herg\xE9 (Auteur)"
   ext: "Reli\xE9 \u2013 f\xE9vrier 1984"
@@ -4230,22 +4240,22 @@
   tags:
   - tintin
   - bd
-  - beaux-livre
+  - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: 14. Le Temple du soleil
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre_etc
 978-2203015036:
   de: "Ren\xE9e-H\xE9lo\xEFse Giroux, Fran\xE7ois H\xE9bert, Herg\xE9"
   image_path: thumbs/T_978-2203015036.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - tintin_etc
-  - arts
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "\xCAtes-vous tintinologue"
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-2203017016:
   de: "Herg\xE9 (Auteur)"
   ext: "Version Luxe Copertina rigida \u2013 1 ottobre 1986"
@@ -4313,11 +4323,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - bd
-  - beaux-livre
+  - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "L'int\xE9grale"
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre_etc
 978-2207112380:
   de: Hans Fallada (Auteur), Laurence Courtois (Traduction)
   ext: "Poche \u2013 21 mai 2015"
@@ -4335,7 +4345,7 @@
   image_path: thumbs/T_978-2207158654.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4346,7 +4356,7 @@
   image_path: thumbs/T_978-2207229071.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4380,7 +4390,7 @@
   image_path: thumbs/T_978-2207280461.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4391,7 +4401,7 @@
   image_path: thumbs/T_978-2207280478.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - random
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -4403,7 +4413,7 @@
   image_path: thumbs/T_978-2207281970.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4426,6 +4436,7 @@
   image_path: thumbs/T_978-2213003795.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - music
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -4483,7 +4494,7 @@
   image_path: thumbs/T_978-2213663098.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4709,7 +4720,7 @@
   image_path: thumbs/T_978-2232103087.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4732,7 +4743,7 @@
   image_path: thumbs/T_978-2234056589.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5006,7 +5017,7 @@
   lan: "\U0001F1E9\U0001F1EA"
   lan2: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
@@ -5116,7 +5127,7 @@
   image_path: thumbs/T_978-2260009368.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5332,7 +5343,7 @@
   image_path: thumbs/T_978-2267003260.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5344,7 +5355,7 @@
   image_path: thumbs/T_978-2267004427.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5367,7 +5378,7 @@
   image_path: thumbs/T_978-2277112594.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5404,11 +5415,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - bd
-  - beaux-livre
+  - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Le parfum d'Irak
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre_etc
 978-2290302156:
   de: Fred Vargas (Auteur)
   ext: "Poche \u2013 17 octobre 2005"
@@ -5519,7 +5530,7 @@
   image_path: thumbs/T_978-2352120834.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - editors
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -5587,7 +5598,7 @@
   image_path: thumbs/T_978-2370840073.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5599,7 +5610,7 @@
   image_path: thumbs/T_978-2370840790.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5772,11 +5783,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - philo
-  - beaux-livre
+  - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Le Sens du beau
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre
 978-2702903605:
   de: Tulku Thondup (Auteur)
   ext: "selon le bouddhisme tib\xE9tain - Broch\xE9 \u2013 1 ao\xFBt 2001"
@@ -5951,7 +5962,7 @@
   image_path: thumbs/T_978-2718600147.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5963,7 +5974,7 @@
   image_path: thumbs/T_978-2718605760.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6021,7 +6032,7 @@
   image_path: thumbs/T_978-2732000084.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6045,11 +6056,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - photo
-  - beaux-livre
+  - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Quelques jours dans la vie de Sharon Stone
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre
 978-2737001222:
   de: Miguel de Cervantes Saavedra
   ext: "Broch\xE9 \u2013 1 juin 2020"
@@ -6077,11 +6088,12 @@
   image_path: thumbs/T_978-2742719358.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - arts
+  - bd
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Le No\xEBl d'Auggie Wren Reli\xE9 \u2013 10 d\xE9cembre 1998"
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-2742751518:
   de: "Sebastian Haffner (Auteur), Brigitte H\xE9bert (Traduction)"
   ext: "Poche \u2013 1 septembre 2004"
@@ -6154,7 +6166,7 @@
   image_path: thumbs/T_978-2749173979.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6177,7 +6189,7 @@
   image_path: thumbs/T_978-2757825730.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6234,8 +6246,8 @@
   image_path: thumbs/T_978-2812401268.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
-  - "C\xE9line"
+  - kafka
+  - celine
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6316,7 +6328,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - music
-  - Bach
+  - bach
   - cinema
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6421,7 +6433,7 @@
   image_path: thumbs/T_978-2843040528.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6446,11 +6458,12 @@
   image_path: thumbs/T_978-2844141132.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - arts
+  - bd
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Pyong Yang
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-2844851390:
   de: Patrik Ourednik (Auteur), Marianne Canavaggio (Traduction)
   ext: "Broch\xE9 \u2013 29 janvier 2004"
@@ -6516,22 +6529,22 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cuisine
-  - beaux-livre
+  - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Bourgogne - Grandeur Nature
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre
 978-2852299566:
   de: Encyclopaedia Universalis (Editeur), Michel Lardy (Auteur)
   ext: "Reli\xE9 \u2013 3 novembre 1994"
   image_path: thumbs/T_978-2852299566.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - arts
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Le grand atlas de g\xE9ographie"
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-2858150557:
   de: Marcel Gotlib (Auteur)
   ext: "Reli\xE9 \u2013 7 janvier 1993"
@@ -6539,18 +6552,18 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - bd
-  - beaux-livre
+  - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "Rh\xE2\xE2 lovely, tome 2"
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre_etc
 978-2858502523:
   de: Centre George Pompidou - Collectif () Yasha David (Sous la direction de)
   ext: "Broch\xE9 \u2013 22 juin 1984"
   image_path: thumbs/T_978-2858502523.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -6575,11 +6588,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - music
-  - beaux-livre
+  - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Les Noces de Figaro
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre
 978-2859566265:
   de: "Fran\xE7ois Truffaut"
   image_path: thumbs/T_978-2859566265.jpg
@@ -6597,7 +6610,7 @@
   image_path: thumbs/T_978-2859566449.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6632,7 +6645,7 @@
   image_path: thumbs/T_978-2863740033.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6679,7 +6692,7 @@
   image_path: thumbs/T_978-2867440458.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6691,7 +6704,7 @@
   image_path: thumbs/T_978-2867440663.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6703,7 +6716,7 @@
   image_path: thumbs/T_978-2867440670.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6715,7 +6728,7 @@
   image_path: thumbs/T_978-2867441615.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6821,11 +6834,11 @@
   image_path: thumbs/T_978-2880012458.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Dali de Gala
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-2889730117:
   de: "Jo\xEBl Dicker (Auteur)"
   ext: "Broch\xE9 \u2013 10 mars 2022"
@@ -6979,11 +6992,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - photo
-  - beaux-livre
+  - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Les Halles
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre
 978-2916400365:
   de: "Didier Drogba (Auteur), Herv\xE9 Penot (Auteur), Jos\xE9 Mourinho (Pr\xE9face)"
   ext: "Broch\xE9 \u2013 14 mai 2008"
@@ -7035,7 +7048,7 @@
   image_path: thumbs/T_978-3100381354.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
-  - Kafka
+  - kafka
   - random
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
@@ -7092,7 +7105,7 @@
   image_path: thumbs/T_978-3596181162.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
@@ -7184,22 +7197,22 @@
   image_path: thumbs/T_978-3848004409.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
-  - beaux-livre
+  - beau_livre
   - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
   title: BMW
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre
 978-3895080944:
   de: Laszlo Polgar (Auteur)
   ext: "Reli\xE9 \u2013 1 d\xE9cembre 1995"
   image_path: thumbs/T_978-3895080944.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - beaux-livre
+  - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
   title: Chess - Schach - Echecs - Ajedrez - training in 5333+1 positions
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre_etc
 978-3899195842:
   de: Harald Salfellner (Sous la direction de), Didier Debord (Traducteur)
   image_path: thumbs/T_978-3899195842.jpg
@@ -7226,7 +7239,7 @@
   image_path: thumbs/T_978-8207036074.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -7663,7 +7676,7 @@
   image_path: thumbs/T_978-8806139834.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - Kafka
+  - kafka
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -8026,11 +8039,11 @@
   image_path: thumbs/T_978-8807492068.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il mistero delle cose - Nove ritratti di artisti
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8807810800:
   de: Gianni Celati (Autore)
   ext: "Copertina flessibile \u2013 25 gennaio 2012"
@@ -8241,11 +8254,11 @@
   image_path: thumbs/T_978-8809989634.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Signorini
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8811363422:
   de: "Moli\xE8re (Autore), Romeo Lucchese (Traduttore)"
   ext: "Testo francese a fronte Copertina flessibile \u2013 24 ottobre 2003"
@@ -8415,11 +8428,11 @@
   image_path: thumbs/T_978-8815266385.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il grande racconto di Ulisse
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8815273345:
   de: Romano Prodi (Autore)
   ext: "Copertina flessibile \u2013 18 maggio 2017"
@@ -8460,11 +8473,11 @@
   image_path: thumbs/T_978-8815291103.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Le donne di Dante
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8817000567:
   de: "Federico Garc\xEDa Lorca (Autore), Prellwitz N. von (a cura di), L. Bruno (Traduttore),\
     \ L. Blini (Traduttore)"
@@ -8540,7 +8553,7 @@
   image_path: thumbs/T_978-8817106047.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EE\U0001F1F9"
@@ -8574,7 +8587,7 @@
   image_path: thumbs/T_978-8817676823.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EE\U0001F1F9"
@@ -8599,11 +8612,11 @@
   image_path: thumbs/T_978-8823506367.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: L'arte come terapia
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-8823516854:
   de: Rabindranath Tagore
   image_path: thumbs/T_978-8823516854.jpg
@@ -8807,11 +8820,11 @@
   image_path: thumbs/T_978-8831798402.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Telemaco Signorini e la pittura in Europa
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8832020021:
   de: Lorenzo Notte (a cura di)
   ext: "La citt\xE0 nella letteratura Copertina flessibile \u2013 15 novembre 2018"
@@ -8900,11 +8913,11 @@
   image_path: thumbs/T_978-8836641437.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Ottocento - L'arte dell'Italia tra Hayez e Segantini
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8836805969:
   de: Pablo Neruda (Autore), G. Bellini (a cura di)
   ext: "Testo spagnolo a fronte Copertina flessibile \u2013 22 ottobre 1999"
@@ -9137,22 +9150,24 @@
   image_path: thumbs/T_978-8845171314.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts
+  - philo
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: "\u201CCogito ergo sum\u201D - Guida alla filosofia per ragazzi"
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-8845174131:
   de: David West Reynolds (Testi di)
   ext: "Ediz. illustrata Copertina rigida \u2013 Illustrato, 8 settembre 1999"
   image_path: thumbs/T_978-8845174131.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts
+  - bd
+  - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Star Wars - Episodio I - Guida ai personaggi
-  where: /saint-lazare-de-savene/salon/arts
+  where: /saint-lazare-de-savene/salon/arts_etc
 978-8845223181:
   de: Umberto Eco (Autore)
   ext: Copertina rigida
@@ -9181,11 +9196,11 @@
   image_path: thumbs/T_978-8845272134.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Storia della bellezza
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8845273537:
   de: Petros Markaris (Autore), Andrea Di Gregorio (Traduttore)
   ext: "Un'indagine del commissario Kostas Charitos Copertina flessibile \u2013 7\
@@ -9577,11 +9592,11 @@
   image_path: thumbs/T_978-8857233253.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Artemisia Gentileschi e il suo tempo
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8857239545:
   de: Marco Meneguzzo (A cura di), Renato Barilli (Autore), Flavio Caroli (Autore),
     Paul Metcalfe
@@ -9590,11 +9605,11 @@
   image_path: thumbs/T_978-8857239545.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Sergio Vacchi - Mondi paralleli
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8858001226:
   de: Daniela Capparotto (Autore)
   ext: "Copertina flessibile \u2013 27 agosto 2010"
@@ -9695,11 +9710,11 @@
   image_path: thumbs/T_978-8866483434.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Jean Michel Basquiat
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8867211432:
   de: Maria Ferri
   ext: "Copertina flessibile \u2013 1 gennaio 2013"
@@ -9820,11 +9835,11 @@
   image_path: thumbs/T_978-8873818960.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: "Il Liceo Galvani dall'Unit\xE0 d'Italia a oggi"
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8873819783:
   de: "Aldo Molinari, Arp\xE1d Weisz (Autore), Vincenza Maugeri (Prefazione), Carlo\
     \ Felice Chiesa (Prefazione)"
@@ -9901,7 +9916,7 @@
   image_path: thumbs/T_978-8877683984.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EE\U0001F1F9"
@@ -10022,7 +10037,7 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - music
-  - Mozart
+  - mozart
   - cinema
   - saint-jean-lipion
   - "\U0001F1EE\U0001F1F9"
@@ -10089,11 +10104,11 @@
   image_path: thumbs/T_978-8885854390.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Ori e argenti d'Abruzzo dal Medioevo al XX secolo
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 978-8886089517:
   de: Elisabetta Tiveron (Autore), R. Da Re Giustiniani (Illustratore)
   ext: "Copertina flessibile \u2013 17 dicembre 2015"
@@ -10476,11 +10491,11 @@
   image_path: thumbs/T_979-1090743922.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Les entrailles de New York
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 979-1092457186:
   de: Peter Bagge (Auteur), Paulin Dardel (Traduction)
   ext: "L'histoire de Margaret Sanger Broch\xE9 \u2013 Livre \xE0 rabats, 24 ao\xFB\
@@ -10521,11 +10536,11 @@
   image_path: thumbs/T_979-2842781958.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Francis Bacon - Beaux Arts magazine hors s\xE9rie"
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 ASIN-B0007J1C9W:
   de: Frank O'Connor (Author)
   ext: (Hour-glass library) M. Fridberg; First Edition (January 1, 1946)
@@ -10792,11 +10807,11 @@ boh1:
   image_path: thumbs/T_boh1.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - beaux-livre
+  - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "Atlas g\xE9n\xE9ral"
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre_etc
 boh10:
   de: "Cahiers du cin\xE9ma - Collectif"
   ext: "novembre 2015 n\xB0716"
@@ -10814,7 +10829,7 @@ boh11:
   image_path: thumbs/T_boh11.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -10826,7 +10841,7 @@ boh12:
   image_path: thumbs/T_boh12.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Perec
+  - perec
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -11054,7 +11069,7 @@ boh3:
   image_path: thumbs/T_boh3.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -11175,7 +11190,7 @@ boh4:
   image_path: thumbs/T_boh4.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - Kafka
+  - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -11194,13 +11209,14 @@ boh40:
   where: /saint-lazare-de-savene/salon/arts
 boh41:
   de: Claude Nori, Ferdinando Scianna
+  ext: "#11, \xC9t\xE9 87 ;"
   image_path: thumbs/T_boh41.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "Camera International #11, \xC9t\xE9 87 ; Voyage en Italie"
+  title: Camera International - Voyage en Italie
   where: /saint-lazare-de-savene/salon/arts
 boh42:
   ASIN: B0000EA6R5
@@ -11239,12 +11255,12 @@ boh45:
   image_path: thumbs/T_boh45.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - arts2
+  - arts_bis
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: 'Decoration #32'
   url: https://milk.fr/milkdecoration
-  where: /saint-lazare-de-savene/salon/arts2
+  where: /saint-lazare-de-savene/salon/arts_bis
 boh5:
   ASIN: B08YXPPKVH
   de: "L\xE9on Tolsto\xEF"
@@ -11286,11 +11302,11 @@ boh7:
   lan: "\U0001F1E9\U0001F1EA"
   tags:
   - bd
-  - beaux-livre
+  - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
   title: Lucky Luke - "Meine Onkel, die Daltons"
-  where: /saint-jean-lipion/chambre/beaux-livre
+  where: /saint-jean-lipion/chambre/beau_livre_etc
 boh8:
   RO: RO30338643
   de: Paul Verlaine

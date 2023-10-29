@@ -4,7 +4,7 @@
   de: Franz Kafka (Autore), Marthe Robert (Traduttore)
   lan: 🇫🇷
   tags:
-    - Kafka
+    - kafka
 
 978-2070367986:
   title: L'Œuvre au noir
@@ -17,6 +17,8 @@
   ext: Prix Renaudot 1932 Poche – 16 février 1972
   de: Louis-Ferdinand Céline (Auteur)
   lan: 🇫🇷
+  tags:
+    - celine
 
 978-2070416219:
   title: L'Adversaire
