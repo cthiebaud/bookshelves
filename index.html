@@ -67,9 +67,7 @@
             position: relative;
             width: 14px;
             height: 16px;
-            /* https://stackoverflow.com/a/60263364/1070215 */
         }
-
         .sgl::after {
             content: "";
             background-image: url(/svg/bronze.857-b-last-try.svg);
@@ -90,7 +88,7 @@
 <body>
     <div id="container" class="container-fluid">
         <div id="howmuch" class="category">
-            <span id="total" class="float-start"></span>
+            <span id="total" class="float-start" style="display:none;"></span>
             <span id="current">…</span>
             <span id="percent"></span>
             <span id="circle_with_cross" class="btn" style="display:none; color: gray; padding: 0;">ⓧ</span>
@@ -106,14 +104,14 @@
             <hr>
             <div id="location" class="category">
                 <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene">
-                    <span style="font-size:smaller">San Lazzaro di Savena</span>
+                    <span style="font-size:smaller">San Lazzaro</span>
                     <span id="c-saint-lazare-de-savene"></span>
                     ⥣
                 </a>
                 <a href="#" id="saint-jean-lipion" class="btn" role="button" data-bs-toggle="button" data-tags="saint-jean-lipion">
                     ⥥
                     <span id="c-saint-jean-lipion"></span>
-                    <span style="font-size:smaller">San Giovanni Lipioni</span>
+                    <span style="font-size:smaller">San Giovanni</span>
                     <span class="sgl"></span>
                 </a>
             </div>
@@ -331,7 +329,7 @@
                 const fig = document.createElement("figure");
                 fig.dataset.index = index
                 fig.classList.add("figure")
-                fig.style = "padding: 10px; max-width: 158px" // max-width: 158px;
+                fig.style = "padding: 10px; max-width: 170px" // max-width: 158px;
                 for (const tagIndex in property.tags) {
                     fig.classList.add(property.tags[tagIndex])
                 }
