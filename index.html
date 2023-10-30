@@ -7,6 +7,10 @@
     <title>bookshelves</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <style>
+        hr {
+            margin: 0.2rem;
+        }
+
         figure:after {
             content: "";
             /* This is necessary for the pseudo element to work. */
@@ -30,12 +34,22 @@
             text-align: center;
         }
 
-        #howmuch {
+        #howmuch #total,
+        #howmuch #current {
             font-size: 24px;
         }
 
-        #percent {
+        #howmuch #percent {
             font-size: 16px;
+        }
+
+        #howmuch #circle_with_cross {
+            font-size: 24px;
+            display: none;
+            color: light gray;
+            display: inline-block;
+            margin: -8px 0 0 0;
+            padding: 0;
         }
 
         #langage .btn {
@@ -62,11 +76,16 @@
             color: red;
         }
 
+        .btn:hover {
+            background-color: #e0e0e0;
+        }
+
         .sgl {
             display: inline-block;
             position: relative;
             width: 14px;
             height: 16px;
+            z-index: 1;
         }
 
         .sgl::after {
@@ -88,401 +107,372 @@
 
 <body>
     <div id="container" class="container-fluid">
-        <div id="howmuch" class="category">
+        <div id="howmuch" class="category" style="position: relative;">
             <span id="total" class="float-start" style="display:none;"></span>
-            <span id="current">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="100%" height="36px"
-                    viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
-                    <circle cx="84" cy="50" r="10" fill="#e15b64">
-                        <animate attributeName="r" repeatCount="indefinite" dur="1.0416666666666665s" calcMode="spline" keyTimes="0;1" values="5;0" keySplines="0 0.5 0.5 1"
-                            begin="0s"></animate>
-                        <animate attributeName="fill" repeatCount="indefinite" dur="4.166666666666666s" calcMode="discrete" keyTimes="0;0.25;0.5;0.75;1"
-                            values="#e15b64;#abbd81;#f8b26a;#f47e60;#e15b64" begin="0s"></animate>
-                    </circle>
-                    <circle cx="16" cy="50" r="10" fill="#e15b64">
-                        <animate attributeName="r" repeatCount="indefinite" dur="4.166666666666666s" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" values="0;0;5;5;5"
-                            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" begin="0s"></animate>
-                        <animate attributeName="cx" repeatCount="indefinite" dur="4.166666666666666s" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" values="16;16;16;50;84"
-                            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" begin="0s"></animate>
-                    </circle>
-                    <circle cx="50" cy="50" r="10" fill="#f47e60">
-                        <animate attributeName="r" repeatCount="indefinite" dur="4.166666666666666s" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" values="0;0;5;5;5"
-                            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" begin="-1.0416666666666665s"></animate>
-                        <animate attributeName="cx" repeatCount="indefinite" dur="4.166666666666666s" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" values="16;16;16;50;84"
-                            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" begin="-1.0416666666666665s"></animate>
-                    </circle>
-                    <circle cx="84" cy="50" r="10" fill="#f8b26a">
-                        <animate attributeName="r" repeatCount="indefinite" dur="4.166666666666666s" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" values="0;0;5;5;5"
-                            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" begin="-2.083333333333333s"></animate>
-                        <animate attributeName="cx" repeatCount="indefinite" dur="4.166666666666666s" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" values="16;16;16;50;84"
-                            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" begin="-2.083333333333333s"></animate>
-                    </circle>
-                    <circle cx="16" cy="50" r="10" fill="#abbd81">
-                        <animate attributeName="r" repeatCount="indefinite" dur="4.166666666666666s" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" values="0;0;5;5;5"
-                            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" begin="-3.1249999999999996s"></animate>
-                        <animate attributeName="cx" repeatCount="indefinite" dur="4.166666666666666s" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" values="16;16;16;50;84"
-                            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" begin="-3.1249999999999996s"></animate>
-                    </circle>
-                </svg>
-            </span>
+            <span id="current">&hellip;</span>
             <span id="percent"></span>
-            <span id="circle_with_cross" class="btn" style="display:none; color: gray; padding: 0;">ⓧ</span>
-            <hr>
-            <div id="langage" class="category">
-                <a href="#" id="🇫🇷" class="btn" role="button" data-bs-toggle="button" data-tags="🇫🇷"> 🇫🇷 <span id="c-🇫🇷"></span> </a>
-                <a href="#" id="🇮🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇮🇹"> 🇮🇹 <span id="c-🇮🇹"></span> </a>
-                <a href="#" id="🇬🇧" class="btn" role="button" data-bs-toggle="button" data-tags="🇬🇧"> 🇬🇧 <span id="c-🇬🇧"></span> </a>
-                <a href="#" id="🇩🇪" class="btn" role="button" data-bs-toggle="button" data-tags="🇩🇪"> 🇩🇪 <span id="c-🇩🇪"></span> </a>
-                <a href="#" id="🇵🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇵🇹"> 🇵🇹 <span id="c-🇵🇹"></span> </a>
-                <a href="#" id="🇪🇸" class="btn" role="button" data-bs-toggle="button" data-tags="🇪🇸"> 🇪🇸 <span id="c-🇪🇸"></span> </a>
-            </div>
-            <hr>
-            <div id="location" class="category">
-                <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene">
-                    <span style="font-size:smaller">San Lazzaro</span>
-                    <span id="c-saint-lazare-de-savene"></span>
-                    ⥣
-                </a>
-                <a href="#" id="saint-jean-lipion" class="btn" role="button" data-bs-toggle="button" data-tags="saint-jean-lipion">
-                    ⥥
-                    <span id="c-saint-jean-lipion"></span>
-                    <span style="font-size:smaller">San Giovanni</span>
-                    <span class="sgl"></span>
-                </a>
-            </div>
-            <hr>
-            <div id="tags" class="category">
-                <a href="#" id="2_guerre" class="btn" role="button" data-bs-toggle="button" data-tags="nazi">2ᵉ guerre</a>
-                <a href="#" id="bach" class="btn" role="button" data-bs-toggle="button" data-tags="bach">Bach</a>
-                <a href="#" id="bd" class="btn" role="button" data-bs-toggle="button" data-tags="bd tintin tintin_etc">BD</a>
-                <a href="#" id="beau_livre" class="btn" role="button" data-bs-toggle="button" data-tags="beau_livre arts arts_bis">Beaux livres</a>
-                <a href="#" id="biographie" class="btn" role="button" data-bs-toggle="button" data-tags="biographie">Biographie</a>
-                <a href="#" id="celine" class="btn" role="button" data-bs-toggle="button" data-tags="celine">Céline</a>
-                <a href="#" id="cinema" class="btn" role="button" data-bs-toggle="button" data-tags="cinema">Cinéma</a>
-                <a href="#" id="cuisine" class="btn" role="button" data-bs-toggle="button" data-tags="cuisine">Cuisine</a>
-                <a href="#" id="editor" class="btn" role="button" data-bs-toggle="button" data-tags="editor">Editeurs</a>
-                <a href="#" id="enfer" class="btn" role="button" data-bs-toggle="button" data-tags="enfer">Enfer</a>
-                <a href="#" id="football" class="btn" role="button" data-bs-toggle="button" data-tags="football">Foot</a>
-                <a href="#" id="kafka" class="btn" role="button" data-bs-toggle="button" data-tags="kafka">Kafka</a>
-                <a href="#" id="lapleiade" class="btn" role="button" data-bs-toggle="button" data-tags="lapleiade">La Pléiade</a>
-                <a href="#" id="mozart" class="btn" role="button" data-bs-toggle="button" data-tags="mozart">Mozart</a>
-                <a href="#" id="musique" class="btn" role="button" data-bs-toggle="button" data-tags="music bach mozart">Music</a>
-                <a href="#" id="perec" class="btn" role="button" data-bs-toggle="button" data-tags="perec">Perec</a>
-                <a href="#" id="philo" class="btn" role="button" data-bs-toggle="button" data-tags="philo">Philo</a>
-                <a href="#" id="poche" class="btn" role="button" data-bs-toggle="button" data-tags="poche">Poche</a>
-                <a href="#" id="poesie" class="btn" role="button" data-bs-toggle="button" data-tags="poésie rimbaud">Poésie</a>
-                <a href="#" id="polar" class="btn" role="button" data-bs-toggle="button" data-tags="polar pdjames">Polar</a>
-                <a href="#" id="proust" class="btn" role="button" data-bs-toggle="button" data-tags="proust">Proust</a>
-                <a href="#" id="rimbaud" class="btn" role="button" data-bs-toggle="button" data-tags="rimbaud">Rimbaud</a>
-                <a href="#" id="small" class="btn" role="button" data-bs-toggle="button" data-tags="small">Small</a>
-                <a href="#" id="theatre" class="btn" role="button" data-bs-toggle="button" data-tags="théatre">Théatre</a>
-                <a href="#" id="tintin" class="btn" role="button" data-bs-toggle="button" data-tags="tintin tintin_etc">Tintin</a>
-                <a href="#" id="black" class="btn color_black" role="button" data-bs-toggle="button" data-tags="black">⬤</a>
-                <a href="#" id="red" class="btn color_red" role="button" data-bs-toggle="button" data-tags="red">⬤</a>
-            </div>
-            <hr>
+            <span id="circle_with_cross" class="btn">ⓧ</span>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
-        <script>
-            const container = document.getElementById("container");
-            let entries
-            let total_des_totaux = undefined
+        <hr>
+        <div id="langage" class="category">
+            <a href="#" id="🇫🇷" class="btn" role="button" data-bs-toggle="button" data-tags="🇫🇷"> 🇫🇷 <span id="c-🇫🇷"></span> </a>
+            <a href="#" id="🇮🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇮🇹"> 🇮🇹 <span id="c-🇮🇹"></span> </a>
+            <a href="#" id="🇬🇧" class="btn" role="button" data-bs-toggle="button" data-tags="🇬🇧"> 🇬🇧 <span id="c-🇬🇧"></span> </a>
+            <a href="#" id="🇩🇪" class="btn" role="button" data-bs-toggle="button" data-tags="🇩🇪"> 🇩🇪 <span id="c-🇩🇪"></span> </a>
+            <a href="#" id="🇵🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇵🇹"> 🇵🇹 <span id="c-🇵🇹"></span> </a>
+            <a href="#" id="🇪🇸" class="btn" role="button" data-bs-toggle="button" data-tags="🇪🇸"> 🇪🇸 <span id="c-🇪🇸"></span> </a>
+        </div>
+        <hr>
+        <div id="location" class="category">
+            <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene">
+                <span style="font-size:smaller">San Lazzaro</span>
+                <span id="c-saint-lazare-de-savene"></span>
+                ⥣
+            </a>
+            <a href="#" id="saint-jean-lipion" class="btn" role="button" data-bs-toggle="button" data-tags="saint-jean-lipion">
+                ⥥
+                <span id="c-saint-jean-lipion"></span>
+                <span style="font-size:smaller">San Giovanni</span>
+                <span class="sgl"></span>
+            </a>
+        </div>
+        <hr>
+        <div id="tags" class="category">
+            <a href="#" id="2_guerre" class="btn" role="button" data-bs-toggle="button" data-tags="nazi">2ᵉ guerre</a>
+            <a href="#" id="bach" class="btn" role="button" data-bs-toggle="button" data-tags="bach">Bach</a>
+            <a href="#" id="bd" class="btn" role="button" data-bs-toggle="button" data-tags="bd tintin tintin_etc">BD</a>
+            <a href="#" id="beau_livre" class="btn" role="button" data-bs-toggle="button" data-tags="beau_livre arts arts_bis">Beaux livres</a>
+            <a href="#" id="biographie" class="btn" role="button" data-bs-toggle="button" data-tags="biographie">Biographie</a>
+            <a href="#" id="celine" class="btn" role="button" data-bs-toggle="button" data-tags="celine">Céline</a>
+            <a href="#" id="cinema" class="btn" role="button" data-bs-toggle="button" data-tags="cinema">Cinéma</a>
+            <a href="#" id="cuisine" class="btn" role="button" data-bs-toggle="button" data-tags="cuisine">Cuisine</a>
+            <a href="#" id="editor" class="btn" role="button" data-bs-toggle="button" data-tags="editor">Editeurs</a>
+            <a href="#" id="enfer" class="btn" role="button" data-bs-toggle="button" data-tags="enfer">Enfer</a>
+            <a href="#" id="football" class="btn" role="button" data-bs-toggle="button" data-tags="football">Foot</a>
+            <a href="#" id="kafka" class="btn" role="button" data-bs-toggle="button" data-tags="kafka">Kafka</a>
+            <a href="#" id="lapleiade" class="btn" role="button" data-bs-toggle="button" data-tags="lapleiade">La Pléiade</a>
+            <a href="#" id="mozart" class="btn" role="button" data-bs-toggle="button" data-tags="mozart">Mozart</a>
+            <a href="#" id="musique" class="btn" role="button" data-bs-toggle="button" data-tags="music bach mozart">Music</a>
+            <a href="#" id="perec" class="btn" role="button" data-bs-toggle="button" data-tags="perec">Perec</a>
+            <a href="#" id="philo" class="btn" role="button" data-bs-toggle="button" data-tags="philo">Philo</a>
+            <a href="#" id="poche" class="btn" role="button" data-bs-toggle="button" data-tags="poche">Poche</a>
+            <a href="#" id="poesie" class="btn" role="button" data-bs-toggle="button" data-tags="poésie rimbaud">Poésie</a>
+            <a href="#" id="polar" class="btn" role="button" data-bs-toggle="button" data-tags="polar pdjames">Polar</a>
+            <a href="#" id="proust" class="btn" role="button" data-bs-toggle="button" data-tags="proust">Proust</a>
+            <a href="#" id="rimbaud" class="btn" role="button" data-bs-toggle="button" data-tags="rimbaud">Rimbaud</a>
+            <a href="#" id="small" class="btn" role="button" data-bs-toggle="button" data-tags="small">Small</a>
+            <a href="#" id="theatre" class="btn" role="button" data-bs-toggle="button" data-tags="théatre">Théatre</a>
+            <a href="#" id="tintin" class="btn" role="button" data-bs-toggle="button" data-tags="tintin tintin_etc">Tintin</a>
+            <a href="#" id="black" class="btn" role="button" data-bs-toggle="button" data-tags="black">
+                <span class="color_black">⬤</span>
+            </a>
+            <a href="#" id="red" class="btn" role="button" data-bs-toggle="button" data-tags="red">
+                <span class="color_red">⬤</span>
+            </a>
+        </div>
+        <hr>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
+    <script>
+        const container = document.getElementById("container");
+        let entries
+        let total_des_totaux = undefined
 
-            class Counter {
-                total = 0;
-                sgl = 0;
-                slds = 0;
-                en = 0;
-                it = 0;
-                fr = 0;
-                de = 0;
-                pt = 0;
-                sp = 0;
-                count = (entry) => {
-                    switch (entry.lan) {
-                        case '🇬🇧':
-                            this.en++
-                            break;
-                        case '🇮🇹':
-                            this.it++
-                            break;
-                        case '🇫🇷':
-                            this.fr++
-                            break;
-                        case '🇩🇪':
-                            this.de++
-                            break;
-                        case '🇵🇹':
-                            this.pt++
-                            break;
-                        case '🇪🇸':
-                            this.sp++
-                            break;
-                        default:
-                            console.error("missing lan property", entry);
-                    }
-                    if (entry.where.includes("lipion")) {
-                        this.sgl++
-                    } else {
-                        this.slds++
-                    }
-                    this.total++
-                };
-
-                display = () => {
-                    if (typeof total_des_totaux === "undefined") {
-                        total_des_totaux = this.total
-                    }
-                    var s = Number(this.total / total_des_totaux).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 1 });
-                    document.getElementById("total").innerHTML = `${total_des_totaux}`
-                    document.getElementById("current").innerHTML = `${this.total}`
-                    document.getElementById("percent").innerHTML = `${s}`
-                    circle_with_cross.style.display = (this.total === total_des_totaux ? "none" : "inline")
-                    // /${total_des_totaux} ⇒ ${s}
-                    {
-                        document.getElementById("c-🇫🇷").innerHTML = `${this.fr}`
-                        document.getElementById("c-🇮🇹").innerHTML = `${this.it}`
-                        document.getElementById("c-🇬🇧").innerHTML = `${this.en}`
-                        document.getElementById("c-🇩🇪").innerHTML = `${this.de}`
-                        document.getElementById("c-🇵🇹").innerHTML = `${this.pt}`
-                        document.getElementById("c-🇪🇸").innerHTML = `${this.sp}`
-                    }
-                    {
-                        document.getElementById("c-saint-jean-lipion").innerHTML = `${this.sgl}`
-                        document.getElementById("c-saint-lazare-de-savene").innerHTML = `${this.slds}`
-                    }
+        class Counter {
+            total = 0;
+            sgl = 0;
+            slds = 0;
+            en = 0;
+            it = 0;
+            fr = 0;
+            de = 0;
+            pt = 0;
+            sp = 0;
+            count = (entry) => {
+                switch (entry.lan) {
+                    case '🇬🇧':
+                        this.en++
+                        break;
+                    case '🇮🇹':
+                        this.it++
+                        break;
+                    case '🇫🇷':
+                        this.fr++
+                        break;
+                    case '🇩🇪':
+                        this.de++
+                        break;
+                    case '🇵🇹':
+                        this.pt++
+                        break;
+                    case '🇪🇸':
+                        this.sp++
+                        break;
+                    default:
+                        console.error("missing lan property", entry);
                 }
-
-            }
-
-            const categories = {
-                langage: undefined,
-                location: undefined,
-                tags: undefined
-            }
-
-            function selectOrUnselectTag(e) {
-
-                const id = e.currentTarget.id
-                const category = e.currentTarget.parentNode.id
-                // console.log(category)
-                const className = e.currentTarget.className
-                const tags = e.currentTarget.dataset.tags.split(' ')
-
-                const allBtns = document.getElementsByClassName("btn")
-                for (const btn of allBtns) {
-                    if (btn.id === id) {
-                        continue
-                    }
-                    if (btn.parentNode.id !== category) {
-                        continue
-                    }
-                    btn.classList.remove("active")
-                }
-
-                const figures = document.querySelectorAll('figure')
-                const c = new Counter()
-
-                if (className.includes('active')) {
-                    categories[category] = tags
-                    e.currentTarget.parentNode.classList.add('active')
+                if (entry.where.includes("lipion")) {
+                    this.sgl++
                 } else {
-                    categories[category] = undefined
-                    e.currentTarget.parentNode.classList.remove('active')
+                    this.slds++
                 }
-                console.log(categories)
+                this.total++
+            };
 
-                // eteins tout
-                for (const figure of figures) {
-                    figure.style.display = "none"
+            display = () => {
+                if (typeof total_des_totaux === "undefined") {
+                    total_des_totaux = this.total
                 }
-
-                let selection = ""
-                // build a css selector
-                if (categories.langage) {
-                    selection += "." + categories.langage
+                var s = Number(this.total / total_des_totaux).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 1 });
+                document.getElementById("total").innerHTML = `${total_des_totaux}`
+                document.getElementById("current").innerHTML = `${this.total}`
+                document.getElementById("percent").innerHTML = `${s}`
+                circle_with_cross.style.display = (this.total === total_des_totaux ? "none" : "inline-block")
+                // /${total_des_totaux} ⇒ ${s}
+                {
+                    document.getElementById("c-🇫🇷").innerHTML = `${this.fr}`
+                    document.getElementById("c-🇮🇹").innerHTML = `${this.it}`
+                    document.getElementById("c-🇬🇧").innerHTML = `${this.en}`
+                    document.getElementById("c-🇩🇪").innerHTML = `${this.de}`
+                    document.getElementById("c-🇵🇹").innerHTML = `${this.pt}`
+                    document.getElementById("c-🇪🇸").innerHTML = `${this.sp}`
                 }
-                if (categories.location) {
-                    selection += "." + categories.location
+                {
+                    document.getElementById("c-saint-jean-lipion").innerHTML = `${this.sgl}`
+                    document.getElementById("c-saint-lazare-de-savene").innerHTML = `${this.slds}`
                 }
-                if (categories.tags) {
-                    const previous = selection
-                    let sel = ""
-                    let qwe = 0
-                    for (const tag of categories.tags) {
-                        if (qwe > 0) {
-                            sel += ","
-                        }
-                        sel += selection + "." + tag
-                        qwe++
-                    }
-                    selection = sel
-                }
-
-                console.log(categories, selection)
-                if (selection.trim() !== "") {
-                    const taggeds = document.querySelectorAll(selection)
-                    for (const tagged of taggeds) {
-                        c.count(entries[tagged.dataset.index][1])
-                        tagged.style.display = "inline-block"
-                    }
-                } else {
-                    for (const figure of figures) {
-                        c.count(entries[figure.dataset.index][1])
-                        figure.style.display = "inline-block"
-                    }
-                }
-
-
-                c.display()
             }
+
+        }
+
+        const categories = {
+            langage: undefined,
+            location: undefined,
+            tags: undefined
+        }
+
+        function selectOrUnselectTag(e) {
+
+            const id = e.currentTarget.id
+            const category = e.currentTarget.parentNode.id
+            // console.log(category)
+            const className = e.currentTarget.className
+            const tags = e.currentTarget.dataset.tags.split(' ')
 
             const allBtns = document.getElementsByClassName("btn")
             for (const btn of allBtns) {
-                btn.addEventListener("click", selectOrUnselectTag);
+                if (btn.id === id) {
+                    continue
+                }
+                if (btn.parentNode.id !== category) {
+                    continue
+                }
+                btn.classList.remove("active")
             }
 
-            circle_with_cross.addEventListener("click", () => {
-                const allBtns = document.querySelectorAll(".btn,.category")
-                for (const btn of allBtns) {
-                    btn.classList.remove("active")
+            const figures = document.querySelectorAll('figure')
+            const c = new Counter()
+
+            if (className.includes('active')) {
+                categories[category] = tags
+                e.currentTarget.parentNode.classList.add('active')
+            } else {
+                categories[category] = undefined
+                e.currentTarget.parentNode.classList.remove('active')
+            }
+            console.log(categories)
+
+            // eteins tout
+            for (const figure of figures) {
+                figure.style.display = "none"
+            }
+
+            let selection = ""
+            // build a css selector
+            if (categories.langage) {
+                selection += "." + categories.langage
+            }
+            if (categories.location) {
+                selection += "." + categories.location
+            }
+            if (categories.tags) {
+                const previous = selection
+                let sel = ""
+                let qwe = 0
+                for (const tag of categories.tags) {
+                    if (qwe > 0) {
+                        sel += ","
+                    }
+                    sel += selection + "." + tag
+                    qwe++
                 }
-                Object.keys(categories).forEach(function (key, index) {
-                    categories[key] = undefined
-                });
-                const figures = document.querySelectorAll('figure')
-                const c = new Counter()
+                selection = sel
+            }
+
+            console.log(categories, selection)
+            if (selection.trim() !== "") {
+                const taggeds = document.querySelectorAll(selection)
+                for (const tagged of taggeds) {
+                    c.count(entries[tagged.dataset.index][1])
+                    tagged.style.display = "inline-block"
+                }
+            } else {
                 for (const figure of figures) {
                     c.count(entries[figure.dataset.index][1])
                     figure.style.display = "inline-block"
                 }
-                c.display()
+            }
+
+
+            c.display()
+        }
+
+        const allBtns = document.querySelectorAll(".btn:not(#circle_with_cross)")
+        for (const btn of allBtns) {
+            btn.addEventListener("click", selectOrUnselectTag);
+        }
+
+        circle_with_cross.addEventListener("click", () => {
+            const allBtns = document.querySelectorAll(".btn,.category")
+            for (const btn of allBtns) {
+                btn.classList.remove("active")
+            }
+            Object.keys(categories).forEach(function (key, index) {
+                categories[key] = undefined
+            });
+            const figures = document.querySelectorAll('figure')
+            const c = new Counter()
+            for (const figure of figures) {
+                c.count(entries[figure.dataset.index][1])
+                figure.style.display = "inline-block"
+            }
+            c.display()
+        })
+
+        function blend(index, property) {
+            const fig = document.createElement("figure");
+            fig.dataset.index = index
+            fig.classList.add("figure")
+            fig.style = "padding: 10px; max-width: 164px" // max-width: 158px;
+            for (const tagIndex in property.tags) {
+                fig.classList.add(property.tags[tagIndex])
+            }
+            fig.classList.add(property.where)
+
+            const img = document.createElement("img");
+            img.src = property['image_path']
+            img.classList.add("figure-img")
+            img.classList.add("img-fluid")
+
+            const figcaption = document.createElement("figcaption");
+            figcaption.classList.add("figure-caption")
+            figcaption.classList.add("text-wrap")
+            figcaption.style = "width: 100%;" // border-bottom: 1px solid lightgray;
+
+            let lan = property['lan'] || '';
+            let author = property['de'].split(/ \(/)[0];
+            let title = property['title']
+            let where = property['where']
+            const authorE = document.createTextNode(author);
+            const titleE = document.createTextNode(title);
+            const titleSPAN = document.createElement("span");
+            titleSPAN.appendChild(titleE)
+            titleSPAN.style = "font-size:smaller;"
+
+            if (where.includes("lipion")) {
+                const float1 = document.createElement("span");
+                float1.classList.add("float-end")
+                float1.style = "color: #b9e537; font-size: 14pt; font-weight: bold;"
+                const sgl = document.createElement("span");
+                sgl.classList.add("sgl")
+                /*
+                <span class="sgl"></span>
+                const flag = document.createTextNode('●'); // 
+                */
+                float1.appendChild(sgl)
+                figcaption.appendChild(float1)
+            }
+            const flagE = document.createTextNode(lan);
+            const float2 = document.createElement("span");
+            float2.classList.add("float-end")
+            float2.appendChild(flagE)
+            float2.style = "font-size: larger;"
+            // titleSPAN.appendChild(float2)
+            figcaption.appendChild(authorE)
+            figcaption.appendChild(document.createElement("br"))
+            figcaption.appendChild(titleSPAN)
+            fig.appendChild(img)
+            fig.appendChild(figcaption)
+            container.appendChild(fig)
+        }
+
+        function updateDisplay(text) {
+            const doc = jsyaml.load(text, 'utf8')
+
+            entries = Object.entries(doc);
+
+            entries.sort((a, b) => {
+                const nameA = a[1].de.toUpperCase().split(/ \(/)[0]
+                const nameB = b[1].de.toUpperCase().split(/ \(/)[0]
+                const splitA = nameA.split(/ /)
+                const splitB = nameB.split(/ /)
+                const lastnameA = splitA[splitA.length - 1]
+                const lastnameB = splitB[splitB.length - 1]
+                const lastnameDifference = lastnameA.localeCompare(lastnameB)
+                if (lastnameDifference !== 0) {
+                    return lastnameDifference
+                }
+                const nameDifference = nameA.localeCompare(nameB)
+                if (nameDifference !== 0) {
+                    return nameDifference
+                }
+                if (typeof a[1].title === "undefined" || typeof b[1].title === "undefined") {
+                    console.log("boum!")
+                }
+                const titleA = a[1].title.toUpperCase()
+                const titleB = b[1].title.toUpperCase()
+                return titleA.localeCompare(titleB)
             })
 
-            function blend(index, property) {
-                const fig = document.createElement("figure");
-                fig.dataset.index = index
-                fig.classList.add("figure")
-                fig.style = "padding: 10px; max-width: 164px" // max-width: 158px;
-                for (const tagIndex in property.tags) {
-                    fig.classList.add(property.tags[tagIndex])
+            const c = new Counter();
+            for (const property in entries) {
+                const enableSkip = undefined // "tintin" // "Kafka" // "Perec" // 
+                let skip = typeof enableSkip !== "undefined"
+                if (typeof entries[property][1].tags !== "undefined") {
+                    if (enableSkip) {
+                        skip = !entries[property][1].tags.includes(enableSkip)
+                    }
+                    if (entries[property][1].tags.includes("verboten")) {
+                        skip = true
+                        console.log("SKIP", entries[property][1].de, entries[property][1].tags)
+                    }
                 }
-                fig.classList.add(property.where)
 
-                const img = document.createElement("img");
-                img.src = property['image_path']
-                img.classList.add("figure-img")
-                img.classList.add("img-fluid")
-
-                const figcaption = document.createElement("figcaption");
-                figcaption.classList.add("figure-caption")
-                figcaption.classList.add("text-wrap")
-                figcaption.style = "width: 100%;" // border-bottom: 1px solid lightgray;
-
-                let lan = property['lan'] || '';
-                let author = property['de'].split(/ \(/)[0];
-                let title = property['title']
-                let where = property['where']
-                const authorE = document.createTextNode(author);
-                const titleE = document.createTextNode(title);
-                const titleSPAN = document.createElement("span");
-                titleSPAN.appendChild(titleE)
-                titleSPAN.style = "font-size:smaller;"
-
-                if (where.includes("lipion")) {
-                    const float1 = document.createElement("span");
-                    float1.classList.add("float-end")
-                    float1.style = "color: #b9e537; font-size: 14pt; font-weight: bold;"
-                    const sgl = document.createElement("span");
-                    sgl.classList.add("sgl")
-                    /*
-                    <span class="sgl"></span>
-                    const flag = document.createTextNode('●'); // 
-                    */
-                    float1.appendChild(sgl)
-                    figcaption.appendChild(float1)
+                if (!skip) {
+                    const entry = entries[property][1]
+                    blend(property, entry)
+                    c.count(entry)
+                } else {
+                    // console.log(entries[property][1])
                 }
-                const flagE = document.createTextNode(lan);
-                const float2 = document.createElement("span");
-                float2.classList.add("float-end")
-                float2.appendChild(flagE)
-                float2.style = "font-size: larger;"
-                // titleSPAN.appendChild(float2)
-                figcaption.appendChild(authorE)
-                figcaption.appendChild(document.createElement("br"))
-                figcaption.appendChild(titleSPAN)
-                fig.appendChild(img)
-                fig.appendChild(figcaption)
-                container.appendChild(fig)
+
             }
+            c.display()
+        }
 
-            function updateDisplay(text) {
-                const doc = jsyaml.load(text, 'utf8')
+        function fetchData() {
+            const xhr = new XMLHttpRequest()
+            xhr.open("GET", "everything.yaml", true)
+            xhr.onload = () => {
+                updateDisplay(xhr.response)
+            };
+            xhr.send()
+        }
 
-                entries = Object.entries(doc);
+        fetchData()
 
-                entries.sort((a, b) => {
-                    const nameA = a[1].de.toUpperCase().split(/ \(/)[0]
-                    const nameB = b[1].de.toUpperCase().split(/ \(/)[0]
-                    const splitA = nameA.split(/ /)
-                    const splitB = nameB.split(/ /)
-                    const lastnameA = splitA[splitA.length - 1]
-                    const lastnameB = splitB[splitB.length - 1]
-                    const lastnameDifference = lastnameA.localeCompare(lastnameB)
-                    if (lastnameDifference !== 0) {
-                        return lastnameDifference
-                    }
-                    const nameDifference = nameA.localeCompare(nameB)
-                    if (nameDifference !== 0) {
-                        return nameDifference
-                    }
-                    if (typeof a[1].title === "undefined" || typeof b[1].title === "undefined") {
-                        console.log("boum!")
-                    }
-                    const titleA = a[1].title.toUpperCase()
-                    const titleB = b[1].title.toUpperCase()
-                    return titleA.localeCompare(titleB)
-                })
-
-                const c = new Counter();
-                for (const property in entries) {
-                    const enableSkip = undefined // "tintin" // "Kafka" // "Perec" // 
-                    let skip = typeof enableSkip !== "undefined"
-                    if (typeof entries[property][1].tags !== "undefined") {
-                        if (enableSkip) {
-                            skip = !entries[property][1].tags.includes(enableSkip)
-                        }
-                        if (entries[property][1].tags.includes("verboten")) {
-                            skip = true
-                            console.log("SKIP", entries[property][1].de, entries[property][1].tags)
-                        }
-                    }
-
-                    if (!skip) {
-                        const entry = entries[property][1]
-                        blend(property, entry)
-                        c.count(entry)
-                    } else {
-                        // console.log(entries[property][1])
-                    }
-
-                }
-                c.display()
-            }
-
-            function fetchData() {
-                const xhr = new XMLHttpRequest()
-                xhr.open("GET", "everything.yaml", true)
-                xhr.onload = () => {
-                    updateDisplay(xhr.response)
-                };
-                xhr.send()
-            }
-
-            fetchData()
-
-        </script>
+    </script>
 </body>
 
 </html>
