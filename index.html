@@ -50,9 +50,9 @@
 
 <body>
     <div id="container" class="container-fluid">
-        <div id="howmuch" class="counter" style="text-align: center;">…</div>
+        <div id="howmuch" class="category" style="text-align: center;">…</div>
         <hr>
-        <div id="langage" class="counter" style="text-align: center;">
+        <div id="langage" class="category" style="text-align: center;">
             <a href="#" id="🇫🇷" class="btn" role="button" data-bs-toggle="button" data-tags="🇫🇷"> 🇫🇷 <span id="c-🇫🇷"></span> </a>
             <a href="#" id="🇮🇹" class="btn" role="button" data-bs-toggle="button" data-tags="🇮🇹"> 🇮🇹 <span id="c-🇮🇹"></span> </a>
             <a href="#" id="🇬🇧" class="btn" role="button" data-bs-toggle="button" data-tags="🇬🇧"> 🇬🇧 <span id="c-🇬🇧"></span> </a>
@@ -61,7 +61,7 @@
             <a href="#" id="🇪🇸" class="btn" role="button" data-bs-toggle="button" data-tags="🇪🇸"> 🇪🇸 <span id="c-🇪🇸"></span> </a>
         </div>
         <hr>
-        <div id="location" class="counter" style="text-align: center;">
+        <div id="location" class="category" style="text-align: center;">
             <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene">
                 <span style=" visibility: hidden; font-size: 14pt; font-weight: bold;">●</span>
                 <span style="font-size:smaller">San Lazzaro</span>
@@ -76,7 +76,7 @@
             </a>
         </div>
         <hr>
-        <div id="tags" class="counter" style="text-align: center;">
+        <div id="tags" class="category" style="text-align: center;">
             <a href="#" id="2_guerre" class="btn" role="button" data-bs-toggle="button" data-tags="nazi">2ᵉ guerre</a>
             <a href="#" id="bach" class="btn" role="button" data-bs-toggle="button" data-tags="bach">Bach</a>
             <a href="#" id="bd" class="btn" role="button" data-bs-toggle="button" data-tags="bd tintin tintin_etc">BD</a>
@@ -265,10 +265,13 @@
         }
 
         howmuch.addEventListener("click", () => {
-            const allBtns = document.getElementsByClassName("btn")
+            const allBtns = document.querySelectorAll(".btn,.category")
             for (const btn of allBtns) {
                 btn.classList.remove("active")
             }
+            Object.keys(categories).forEach(function (key, index) {
+                categories[key]  = undefined
+            });
             const figures = document.querySelectorAll('figure')
             const c = new Counter()
             for (const figure of figures) {
