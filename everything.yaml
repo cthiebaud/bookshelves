@@ -36,11 +36,11 @@
   lan: "\U0001F1E9\U0001F1EA"
   tags:
   - bach
-  - random
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
   title: Chronique d'Anna Magdalena Bach (DVD)
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_1
 370-0224304768:
   de: Liv Ullmann, Erland Josephson, Ingmar Bergman (Regista)
   image_path: thumbs/T_370-0224304768.jpg
@@ -939,12 +939,12 @@
   image_path: thumbs/T_978-0500293690.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - proust
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Le mus\xE9e imaginaire de Marcel Proust"
   url: https://www.amazon.fr/s\?k=978-0500293690
-  where: /saint-lazare-de-savene/salon/proust
+  where: /saint-lazare-de-savene/salon/_1
 978-0500510346:
   de: Perry Ogden (Author), John Edwards (Author)
   ext: "Hardcover \u2013 September 1, 2001"
@@ -1557,11 +1557,11 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - bach
-  - random
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Bach - A Musical Biography
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_1
 978-1371035907:
   de: Franz Kafka (Auteur)
   ext: "Poche \u2013 5 Mai 1982"
@@ -3481,11 +3481,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - biographie
-  - _2
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Dans les pas de Hannah Arendt
-  where: /saint-lazare-de-savene/salon/_2
+  where: /saint-lazare-de-savene/salon/_1
 978-2070773336:
   de: Patrick Modiano (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 6 janvier 2005"
@@ -7653,11 +7653,11 @@
   image_path: thumbs/T_978-8804497974.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _5
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il barone rampante
-  where: /saint-lazare-de-savene/salon/_5
+  where: /saint-lazare-de-savene/salon/_1
 978-8804500919:
   de: "N\xE2z\u0131m Hikmet"
   image_path: thumbs/T_978-8804500919.jpg
@@ -10153,11 +10153,11 @@
   image_path: thumbs/T_978-8876153839.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _5
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Irritazioni
-  where: /saint-lazare-de-savene/salon/_5
+  where: /saint-lazare-de-savene/salon/_1
 978-8876443039:
   de: Wislawa Szymborska (Autore), P. Marchesani (a cura di)
   ext: "Copertina flessibile \u2013 21 maggio 2007"
@@ -11251,11 +11251,11 @@ boh21:
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - biographie
-  - _2
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "L\xE9onard de Vinci"
-  where: /saint-lazare-de-savene/salon/_2
+  where: /saint-lazare-de-savene/salon/_1
 boh22:
   ASIN: B0000ECQO5
   de: Umberto Eco (Autore)
@@ -11646,6 +11646,18 @@ dalla_dittatura_alla_democrazia:
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: L'Italia dalla dittatura alla democrazia 1919/1948, Vol. 2
+  where: /saint-lazare-de-savene/couloir/autre
+dalla_dittatura_alla_democrazia-1:
+  de: Franco Catalano
+  ext: 1972
+  image_path: thumbs/T_dalla_dittatura_alla_democrazia-1.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  publisher: Feltrinelli
+  tags:
+  - autre
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: L'Italia dalla dittatura alla democrazia 1919/1948, Vol. 1
   where: /saint-lazare-de-savene/couloir/autre
 dostoievski:
   de: "F\xE9dor Dosto\xEFevski (Autore), Elisabeth Guertik (Traduttore)"
