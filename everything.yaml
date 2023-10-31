@@ -4279,6 +4279,17 @@
   title: 01. Tintin au pays des Soviets
   url: https://www.tintin.com/fr/albums/tintin-au-pays-des-soviets
   where: /saint-lazare-de-savene/couloir/tintin
+978-2203011069:
+  de: "Herg\xE9 (Auteur)"
+  ext: "Reli\xE9 \u2013 ao\xFBt 1986"
+  image_path: thumbs/T_978-2203011069.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - tintin
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "06. L'oreille cass\xE9e"
+  where: /saint-lazare-de-savene/couloir/tintin
 978-2203011090:
   de: "Herg\xE9 (Auteur)"
   ext: "Reli\xE9 \u2013 novembre 1989"
