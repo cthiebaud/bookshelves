@@ -30,6 +30,17 @@
   - "\U0001F1EE\U0001F1F9"
   title: Elissabetta e il conte di Essex
   where: /saint-lazare-de-savene/salon/_6
+334-6030019931:
+  de: "Dani\xE8le Huillet, Jean-Marie Straub (R\xE9alisateur)"
+  image_path: thumbs/T_334-6030019931.jpg
+  lan: "\U0001F1E9\U0001F1EA"
+  tags:
+  - bach
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1E9\U0001F1EA"
+  title: Chronique d'Anna Magdalena Bach (DVD)
+  where: /saint-lazare-de-savene/salon/random
 540-0141281286:
   de: Colruyt - Collectif
   ext: Recettes de chez nous, signees Colruyt
@@ -3351,6 +3362,7 @@
   image_path: thumbs/T_978-2070727384.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - cinema
   - editor
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4276,8 +4288,19 @@
   - tintin
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: 01. Tintin au pays des Soviets
+  title: "01. Tintin au pays des Soviets - Fac-simil\xE9 \xE9dition originale"
   url: https://www.tintin.com/fr/albums/tintin-au-pays-des-soviets
+  where: /saint-lazare-de-savene/couloir/tintin
+978-2203011052:
+  de: "Herg\xE9 (Auteur)"
+  ext: "Reli\xE9 \u2013 juin 1985"
+  image_path: thumbs/T_978-2203011052.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - tintin
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "05. Le lotus bleu - Fac-simil\xE9 \xE9dition originale d'octobre 1936"
   where: /saint-lazare-de-savene/couloir/tintin
 978-2203011069:
   de: "Herg\xE9 (Auteur)"
@@ -4288,7 +4311,7 @@
   - tintin
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "06. L'oreille cass\xE9e"
+  title: "06. L'oreille cass\xE9e - Fac-simil\xE9 \xE9dition originale"
   where: /saint-lazare-de-savene/couloir/tintin
 978-2203011090:
   de: "Herg\xE9 (Auteur)"
@@ -4299,8 +4322,7 @@
   - tintin
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: 09. Le Crabe aux pinces d'or
-  url: null
+  title: "09. Le Crabe aux pinces d'or - Fac-simil\xE9 \xE9dition originale"
   where: /saint-lazare-de-savene/couloir/tintin
 978-2203011427:
   de: "Herg\xE9 (Auteur, Dessins, R\xE9dacteur)"
@@ -6416,7 +6438,7 @@
   url: https://www.youtube.com/watch?v=X4qBsZ-uqU8
   where: /saint-lazare-de-savene/salon/cuisine
 978-2841420339:
-  de: "Jean-Marie Straub (Auteur), Dani\xE8le Huillet (Auteur)"
+  de: "Dani\xE8le Huillet, Jean-Marie Straub (Auteur)"
   ext: "Poche \u2013 31 mai 1996"
   image_path: thumbs/T_978-2841420339.jpg
   lan: "\U0001F1EB\U0001F1F7"
