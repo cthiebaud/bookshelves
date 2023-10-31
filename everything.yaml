@@ -694,6 +694,7 @@
   image_path: thumbs/T_978-0316349932.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - polar
   - rowling
   - rowling
   - saint-lazare-de-savene
@@ -1471,6 +1472,8 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - polar
+  - rowling
+  - polar
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
   title: Lethal White
@@ -1481,6 +1484,8 @@
   image_path: thumbs/T_978-0751584202.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - polar
+  - rowling
   - polar
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
@@ -1718,6 +1723,7 @@
   image_path: thumbs/T_978-1408704004.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - polar
   - rowling
   - rowling
   - saint-lazare-de-savene
@@ -1731,6 +1737,7 @@
   image_path: thumbs/T_978-1408704035.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - polar
   - rowling
   - rowling
   - saint-lazare-de-savene
@@ -1745,6 +1752,7 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - polar
+  - rowling
   - random
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
