@@ -615,11 +615,11 @@
   image_path: thumbs/T_978-0297842439.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _7
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: James Joyce
-  where: /saint-lazare-de-savene/salon/_7
+  where: /saint-lazare-de-savene/salon/_1
 978-0307408846:
   de: Erik Larson (Auteur)
   ext: "Love, Terror, and an American Family in Hitler's Berlin - Reli\xE9 \u2013\
@@ -670,11 +670,11 @@
   image_path: thumbs/T_978-0330256445.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _5
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: In Patagonia
-  where: /saint-lazare-de-savene/salon/_5
+  where: /saint-lazare-de-savene/salon/_1
 978-0330262132:
   de: Douglas Adams (Author)
   ext: "Paperback \u2013 1980"
@@ -1896,11 +1896,11 @@
   image_path: thumbs/T_978-1857150308.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _7
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: To the Lighthouse
-  where: /saint-lazare-de-savene/salon/_7
+  where: /saint-lazare-de-savene/salon/_1
 978-1860463655:
   de: Fred Uhlman (Autore, Collaboratore)
   ext: "Copertina flessibile \u2013 1 settembre 2006"
@@ -2856,11 +2856,11 @@
   tags:
   - kafka
   - schloss
-  - random
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "commente Le Ch\xE2teau de Franz Kafka"
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_1
 978-2070350421:
   de: Nathalie Sarraute (Auteur)
   ext: "Broch\xE9 \u2013 31 d\xE9cembre 1964"
@@ -3774,14 +3774,15 @@
   ext: "Poche \u2013 octobre 1984"
   image_path: thumbs/T_978-2080704283.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  publisher: Garnier-Flammarion
   tags:
   - kafka
   - schloss
-  - random
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Le Ch\xE2teau - Traduction de Bernard Lortholary"
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_1
 978-2080810588:
   de: Sun Tzu (Auteur)
   ext: "Poche \u2013 4 janvier 1999"
@@ -4963,11 +4964,11 @@
   image_path: thumbs/T_978-2246398127.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - _5
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: En Patagonie
-  where: /saint-lazare-de-savene/salon/_5
+  where: /saint-lazare-de-savene/salon/_1
 978-2246545910:
   de: "Fran\xE7ois Weyergans (Auteur)"
   ext: "Prix Goncourt 2005 Broch\xE9 \u2013 Grand livre, 12 septembre 2001"
@@ -7227,11 +7228,11 @@
   tags:
   - kafka
   - schloss
-  - random
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
   title: "Das Schlo\xDF"
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_1
 978-3125556102:
   de: Wolf Dietrich Schnurre (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1990"
@@ -7260,12 +7261,12 @@
   image_path: thumbs/T_978-3257242126.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
-  - random
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
   title: Schachnovelle
   url: https://www.amazon.de/s\?k=978-3257242126
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_1
 978-3491912052:
   de: Franz Kafka (Autor), Anna Thalbach, Martin Wuttke, Sophie Rois, Uwe Friedrichsen,
     Monica Bleibtreu  (Sprecher)
@@ -7275,11 +7276,11 @@
   tags:
   - kafka
   - schloss
-  - _4
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
-  title: "Das Schloss. 6 CDs: Gek\xFCrzte Lesung"
-  where: /saint-lazare-de-savene/salon/_4
+  title: "Das Schlo\xDF. 6 CDs: Gek\xFCrzte Lesung"
+  where: /saint-lazare-de-savene/salon/_1
 978-3492054201:
   de: Charlotte Roche (Autor)
   ext: "Roman Broschiert \u2013 15. August 2011"
@@ -8488,11 +8489,11 @@
   tags:
   - kafka
   - schloss
-  - _4
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il castello
-  where: /saint-lazare-de-savene/salon/_4
+  where: /saint-lazare-de-savene/salon/_1
 978-8811519782:
   de: Pier Paolo Pasolini (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1993"
@@ -11044,11 +11045,11 @@ ASIN-B00NO4ODDO:
   image_path: thumbs/T_ASIN-B00NO4ODDO.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _5
+  - _1
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: In Patagonia
-  where: /saint-lazare-de-savene/salon/_5
+  where: /saint-lazare-de-savene/salon/_1
 ASIN-B00OB8WNMK:
   de: Denis de Rougemont
   image_path: thumbs/T_ASIN-B00OB8WNMK.jpg
