@@ -488,7 +488,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: What We Think About When We Think About Soccer
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-0192810618:
   de: Mario Praz (Auteur), Frank Kermode (Avec la contribution de), A. Davidson (Avec
     la contribution de)
@@ -978,7 +978,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: The Economics of Football
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-0525486176:
   de: John Grisham (Auteur)
   ext: "A Novel Poche \u2013 \xC9dition internationale, 10 janvier 2018"
@@ -1459,7 +1459,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: I Am The Secret Footballer
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-0865475120:
   de: David Hajdu (Author)
   ext: "Paperback \u2013 June 26, 1997"
@@ -1597,7 +1597,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Soccermatics - Mathematical Adventures in the Beautiful Game
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-1476727653:
   de: Stephen King (Auteur)
   ext: "(US version). Reli\xE9 \u2013 24 septembre 2013"
@@ -1678,7 +1678,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Money and Football - A Soccernomics Guide
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-1573226882:
   de: Nick Hornby (Author)
   ext: "Paperback \u2013 March 1, 1998"
@@ -1801,7 +1801,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Handbook on the Economics of Professional Football
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-1781853771:
   de: Jonathan Holt (Author)
   ext: "(The Carnivia Trilogy) Hardcover \u2013 May 7, 2015"
@@ -4700,7 +4700,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Pas pour les filles ?
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-2221247082:
   de: "Jean-Jacques Lefr\xE8re (Auteur), Fr\xE9d\xE9ric Martel (Pr\xE9face)"
   ext: "Biographie Broch\xE9 \u2013 Grand livre, 10 septembre 2020"
@@ -4937,7 +4937,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Pr\xE9sident Platini"
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-2246813095:
   de: Laurent Binet (Auteur)
   ext: "Grand prix du Roman de l'Acad\xE9mie fran\xE7aise 2019 Broch\xE9 \u2013 Grand\
@@ -4995,6 +4995,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: La disparition de Josef Mengele
   where: /saint-jean-lipion/chambre/editor
+978-2246862031:
+  de: "Cl\xE9mentine M\xE9lois (Auteur)"
+  ext: "Broch\xE9 \u2013 Grand livre, 5 avril 2017"
+  image_path: thumbs/T_978-2246862031.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _A
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Sinon j'oublie - d\xE9dicac\xE9 par l'auteure"
+  where: /saint-lazare-de-savene/chambre_alessia/_A
 978-2251010311:
   de: "Jules C\xE9sar (Auteur), L.-A. (L\xE9opold-Albert) Constans (Auteur), A. (Andr\xE9\
     ) Balland (Traduction)"
@@ -5276,7 +5287,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Comment regarder un match de foot
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-2264005878:
   de: "Bernard Dupriez (Auteur), Jean-Claude Zylberstein (\xC9diteur de s\xE9rie)"
   ext: "(Dictionnaire) Poche \u2013 7 mars 2019"
@@ -5875,7 +5886,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "\xC9conomie du football professionnel"
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-2707189592:
   de: "Micka\xEBl Correia (Auteur)"
   ext: "Broch\xE9 \u2013 Illustr\xE9, 8 mars 2018"
@@ -5886,7 +5897,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Une histoire populaire du football
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-2707301352:
   de: "Flavius Jos\xE8phe (Auteur), Pierre Vidal-Naquet (Auteur), Pierre Savinel (Traduction)"
   ext: "Broch\xE9 \u2013 1 janvier 1977"
@@ -5932,7 +5943,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Football
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-2708111691:
   de: Auguste Detoeuf
   image_path: thumbs/T_978-2708111691.jpeg
@@ -6926,7 +6937,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Football et \xE9rotisme au masculin - Une anthropologue au stade"
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-2901376859:
   de: Xavier de Maistre (Auteur)
   ext: "Broch\xE9"
@@ -9125,7 +9136,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: L'ultimo rigore di Faruk - Una storia di calcio e di guerra
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-8838937965:
   de: Andrea Camilleri (Autore)
   ext: "Copertina flessibile \u2013 31 maggio 2018"
@@ -9689,7 +9700,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: 'Nasce un mito: Juventus!'
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-8854198203:
   de: Cesare Beccaria (Autore), Voltaire (Autore)
   ext: "Con il commento di Voltaire - Ediz. integrale Copertina rigida \u2013 Edizione\
@@ -9978,7 +9989,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il giuoco del calcio
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 978-8873856511:
   de: Elisabetta Novello, Giovanni Luigi Fontana
   ext: Temi, progetti, esperienze - Quaderni di Patrimonio Industriale. Industrial
@@ -10646,7 +10657,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Un lion ne meurt jamais
-  where: /saint-lazare-de-savene/chambre-paul/football
+  where: /saint-lazare-de-savene/chambre_paul/football
 979-1095772132:
   de: "B\xE9atrice Barbusse (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 13 octobre 2016"
