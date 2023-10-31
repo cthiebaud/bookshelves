@@ -114,3 +114,32 @@ shakespeare:
   ext: Relié – 25 septembre 1946
   de: Denis Diderot (Auteur)
   lan: 🇫🇷
+
+978-2070110841:
+  title: Œuvres complètes (Édition de Claude David - 1984) II - Journaux - Lettres à sa famille et à ses amis
+  ext: Relié – 23 octobre 1984
+  de: Franz Kafka (Auteur)
+  lan: 🇫🇷
+  tags:
+    - kafka
+    - lapleiade
+
+978-2070109708:
+  title: Œuvres complètes (Édition de Claude David - 1980) II - Récits et fragments narratifs
+  ext: Relié – 24 avril 1980
+  de: Franz Kafka (Auteur)
+  lan: 🇫🇷
+  tags:
+    - kafka
+    - lapleiade
+
+978-2070107933:
+  title: Œuvres complètes (Édition de Claude David - 1976) I - L'Amérique - Le procès - Le château
+  ext: Relié – 26 novembre 1976
+  de: Franz Kafka (Auteur)
+  lan: 🇫🇷
+  tags:
+    - kafka
+    - lapleiade
+    - schloss
+

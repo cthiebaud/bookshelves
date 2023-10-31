@@ -30,6 +30,7 @@
   lan: 🇩🇪
   tags:
     - kafka
+    - schloss
 
 978-2370840073:
   title: À Milena
@@ -40,13 +41,14 @@
     - kafka
 
 978-2070144327:
-  title: Œuvres complètes (Édition de Jean-Pierre Lefebvre en 2018) II - Romans - Le Disparu [Amerika] - Le Procès - Le Château
+  title: Œuvres complètes (Édition de Jean-Pierre Lefebvre - 2018) II - Romans - Le Disparu [Amerika] - Le Procès - Le Château
   ext: Relié – 11 octobre 2018
   de: Franz Kafka (Auteur), Jean-Pierre Lefebvre (Sous la direction de, Traduction)
   lan: 🇫🇷
   tags:
     - kafka
     - lapleiade
+    - schloss
 
 978-2757825730:
   title: Le château - Traduction de Georges-Arthur Goldschmidt
@@ -55,6 +57,7 @@
   lan: 🇫🇷
   tags:
     - kafka
+    - schloss
 
 978-2070362844:
   title: Le château - Traduction de Alexandre Vialatte
@@ -63,6 +66,7 @@
   lan: 🇫🇷
   tags:
     - kafka
+    - schloss
 
 boh4:
   ASIN: B00DFH42S6

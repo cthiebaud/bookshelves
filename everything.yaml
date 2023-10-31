@@ -2254,12 +2254,13 @@
   tags:
   - kafka
   - lapleiade
-  - random
+  - schloss
+  - lapleiade
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "\u0152uvres compl\xE8tes (Edition de Claude David en 1976) I - L'Am\xE9\
+  title: "\u0152uvres compl\xE8tes (\xC9dition de Claude David - 1976) I - L'Am\xE9\
     rique - Le proc\xE8s - Le ch\xE2teau"
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070108299:
   de: Charles Baudelaire (Auteur)
   image_path: thumbs/T_978-2070108299.jpg
@@ -2302,12 +2303,12 @@
   tags:
   - kafka
   - lapleiade
-  - random
+  - lapleiade
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "\u0152uvres compl\xE8tes (\xC9dition de Claude David en 1980) II - R\xE9\
+  title: "\u0152uvres compl\xE8tes (\xC9dition de Claude David - 1980) II - R\xE9\
     cits et fragments narratifs"
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070110674:
   de: "G\xE9rard de Nerval (Auteur)"
   ext: "Reli\xE9 \u2013 12 septembre 1989"
@@ -2328,12 +2329,12 @@
   tags:
   - kafka
   - lapleiade
-  - random
+  - lapleiade
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "\u0152uvres compl\xE8tes (Edition de Claude David en 1984) II - Journaux\
+  title: "\u0152uvres compl\xE8tes (\xC9dition de Claude David - 1984) II - Journaux\
     \ - Lettres \xE0 sa famille et \xE0 ses amis"
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/lapleiade
 978-2070111053:
   de: Albert Cohen (Auteur)
   ext: "Reli\xE9 \u2013 13juin 1988"
@@ -2572,10 +2573,11 @@
   tags:
   - kafka
   - lapleiade
+  - schloss
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
-  title: "\u0152uvres compl\xE8tes (\xC9dition de Jean-Pierre Lefebvre en 2018) II\
+  title: "\u0152uvres compl\xE8tes (\xC9dition de Jean-Pierre Lefebvre - 2018) II\
     \ - Romans - Le Disparu [Amerika] - Le Proc\xE8s - Le Ch\xE2teau"
   where: /saint-jean-lipion/chambre/kafka
 978-2070145614:
@@ -2806,6 +2808,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
+  - schloss
   - random
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -2895,6 +2898,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
+  - schloss
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -3724,6 +3728,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
+  - schloss
   - random
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -6267,6 +6272,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
+  - schloss
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -7127,6 +7133,7 @@
   lan: "\U0001F1E9\U0001F1EA"
   tags:
   - kafka
+  - schloss
   - random
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
@@ -7162,6 +7169,7 @@
   lan: "\U0001F1E9\U0001F1EA"
   tags:
   - kafka
+  - schloss
   - _4
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
@@ -7197,6 +7205,7 @@
   lan: "\U0001F1E9\U0001F1EA"
   tags:
   - kafka
+  - schloss
   - kafka
   - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
@@ -7208,6 +7217,8 @@
   image_path: thumbs/T_978-3640483419.jpeg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
+  - kafka
+  - schloss
   - cinema
   - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
@@ -8371,6 +8382,7 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - kafka
+  - schloss
   - _4
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"

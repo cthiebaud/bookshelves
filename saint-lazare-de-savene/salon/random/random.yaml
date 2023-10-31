@@ -54,6 +54,7 @@
   lan: 🇫🇷
   tags:
     - kafka
+    - schloss
   
 978-2080704283:
   title: Le Château - Traduction de Bernard Lortholary
@@ -62,6 +63,7 @@
   lan: 🇫🇷
   tags:
     - kafka
+    - schloss
 
 978-3100381354:
   title: Das Schloß
@@ -70,6 +72,7 @@
   lan: 🇩🇪
   tags:
     - kafka
+    - schloss
 
 978-1316504864:
   title: Bach - A Musical Biography
@@ -83,33 +86,6 @@
   ext: Hardcover – Illustrated, October 26, 2015
   de: Edgar Allan Poe (Author), Kevin J. Hayes (Editor), William Giraldi (Foreword)
   lan: 🇬🇧
-
-978-2070110841:
-  title: Œuvres complètes (Edition de Claude David en 1984) II - Journaux - Lettres à sa famille et à ses amis
-  ext: Relié – 23 octobre 1984
-  de: Franz Kafka (Auteur)
-  lan: 🇫🇷
-  tags:
-    - kafka
-    - lapleiade
-
-978-2070109708:
-  title: Œuvres complètes (Édition de Claude David en 1980) II - Récits et fragments narratifs
-  ext: Relié – 24 avril 1980
-  de: Franz Kafka (Auteur)
-  lan: 🇫🇷
-  tags:
-    - kafka
-    - lapleiade
-
-978-2070107933:
-  title: Œuvres complètes (Edition de Claude David en 1976) I - L'Amérique - Le procès - Le château
-  ext: Relié – 26 novembre 1976
-  de: Franz Kafka (Auteur)
-  lan: 🇫🇷
-  tags:
-    - kafka
-    - lapleiade
 
 978-1408730959:
   title: The Running Grave
