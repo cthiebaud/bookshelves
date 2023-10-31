@@ -93,6 +93,8 @@
   de: Newt Scamander 
   lan: 🇬🇧
   url: https://www.amazon.co.uk/s\?k=978-0747554660
+  tags:
+    - small
 
 978-0747554714:
   title: Quidditch Through the Ages
@@ -100,6 +102,8 @@
   de: Kennilworthy Whisp
   lan: 🇬🇧
   url: https://www.amazon.co.uk/s\?k=978-0747554714
+  tags:
+    - small
 
 978-8873660323:
   title: Harry Potter. Il libro degli stickers
