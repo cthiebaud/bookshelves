@@ -1666,6 +1666,17 @@
   - "\U0001F1EC\U0001F1E7"
   title: The Mountain Shadow
   where: /saint-jean-lipion/chambre/polar
+978-0805073393:
+  de: Thomas Frank (Author)
+  ext: "Hardcover \u2013 June 1, 2004"
+  image_path: thumbs/T_978-0805073393.webp
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _B
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: What's the Matter with Kansas? - How Conservatives Won the Heart of America
+  where: /saint-lazare-de-savene/chambre_alessia/_B
 978-0810902626:
   de: Jack Wasserman (Text by)
   ext: "Copertina rigida \u2013 Stampa grande, 1 agosto 1975"
@@ -1711,6 +1722,17 @@
   - "\U0001F1EC\U0001F1E7"
   title: Death in Holy Orders
   where: /saint-jean-lipion/chambre/pdjames
+978-0812993547:
+  de: Ta-Nehisi Coates (Author)
+  ext: "Hardcover \u2013 July 14, 2015"
+  image_path: thumbs/T_978-0812993547.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _B
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Between the World and Me
+  where: /saint-lazare-de-savene/chambre_alessia/_B
 978-0814407691:
   de: Barton Kunstler (Author)
   ext: Intensify Creativity in Your Organization Using Secrets from History's Most
@@ -8291,6 +8313,16 @@
   - "\U0001F1EE\U0001F1F9"
   title: Poesie
   where: /saint-lazare-de-savene/salon/_9
+978-8804352211:
+  de: Bianca Pitzorno (Autore)
+  image_path: thumbs/T_978-8804352211.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _B
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Ascolta il mio cuore
+  where: /saint-lazare-de-savene/chambre_alessia/_B
 978-8804361459:
   de: Robert Musil (Autore), Giulio Schiavoni (Traduttore)
   ext: "Copertina flessibile \u2013 7 luglio 1992"
@@ -9957,6 +9989,17 @@
   - "\U0001F1EE\U0001F1F9"
   title: La ragazza della nave
   where: /saint-jean-lipion/chambre/polar
+978-8828203117:
+  de: Lilli Gruber (Autore)
+  ext: "Copertina flessibile \u2013 24 ottobre 2019"
+  image_path: thumbs/T_978-8828203117.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - berlusconneries_etc
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Basta! Il potere delle donne contro la politica del testosterone
+  where: /saint-lazare-de-savene/chambre_alessia/berlusconneries_etc
 978-8828603207:
   de: Italo Calvino (Autore)
   ext: Con una scelta del poema (Oscar grandi classici Vol. 58) - Data di pubblicazione
@@ -13194,11 +13237,11 @@ revolutionibus:
   image_path: thumbs/T_revolutionibus.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _B
+  - _E
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: "De revolutionibus orbium caelestium - La ricerca dealla sfericit\xE0"
-  where: /saint-lazare-de-savene/chambre_alessia/_B
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 shakespeare:
   de: William Shakespeare
   ext: "Pr\xE9sentations par Henri Fluch\xE8re - Reli\xE9 - 1980"
