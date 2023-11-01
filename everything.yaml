@@ -175,6 +175,18 @@
   - "\U0001F1EC\U0001F1E7"
   title: The Tao of Physics
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
+978-0007152520:
+  de: Simon Singh (Author)
+  ext: "Paperback \u2013 January 1, 2005"
+  image_path: thumbs/T_978-0007152520.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _C
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Big Bang
+  url: https://www.amazon.com/s\?k=978-0007152520
+  where: /saint-lazare-de-savene/chambre_alessia/_C
 978-0007351039:
   de: Mark Twain (Author)
   image_path: thumbs/T_978-0007351039.jpg
@@ -4634,7 +4646,7 @@
   - tintin_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: Le musee imaginaire de tintin
+  title: "Le mus\xE9e imaginaire de tintin"
   where: /saint-lazare-de-savene/couloir/tintin_etc
 978-2203004047:
   de: "Beno\xEEt Peeters (Auteur)"
@@ -4730,7 +4742,7 @@
   - random
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "Tintinologue ? num\xE9ro 2"
+  title: "\xCAtes-vous tintinologue ? num\xE9ro 2"
   url: https://www.amazon.fr/s\?k=978-2203015029
   where: /saint-lazare-de-savene/salon/random
 978-2203015036:
@@ -7891,6 +7903,18 @@
   - "\U0001F1EE\U0001F1F9"
   title: Dizionario dei nomi italiani
   where: /saint-jean-lipion/salon/perec
+978-8804342847:
+  de: Luigi Capuana (Autore)
+  ext: "Copertina flessibile \u2013 31 gennaio 1991"
+  image_path: thumbs/T_978-8804342847.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _C
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Il marchese di Roccaverdina
+  url: https://www.amazon.it/s\?k=978-8804342847
+  where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8804343257:
   de: Charles Dickens (Autore), Giuseppe Tomasi di Lampedusa (Collaboratore), Alessandro
     Monti (Presentazione), Caesara Mazzola (Traduttore)
@@ -8041,6 +8065,18 @@
   title: Le pietre di Venezia
   url: https://www.amazon.it/s\?k=978-8804476771
   where: /saint-lazare-de-savene/salon/black
+978-8804484912:
+  de: Giovanni Macchia (Autore)
+  ext: "Copertina flessibile \u2013 31 gennaio 2023"
+  image_path: thumbs/T_978-8804484912.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _C
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Le rovine di Parigi
+  url: https://www.amazon.it/s\?k=978-8804484912
+  where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8804492603:
   de: Thomas Mann (Autore)
   ext: "Copertina flessibile \u2013 13 gennaio 2015"
@@ -8831,6 +8867,18 @@
   - "\U0001F1EE\U0001F1F9"
   title: Castelli di rabbia
   where: /saint-lazare-de-savene/salon/_8
+978-8807820434:
+  de: Jean-Jacques Rousseau (Autore), Giulio Preti (Traduttore)
+  ext: "Copertina flessibile \u2013 3 novembre 2008"
+  image_path: thumbs/T_978-8807820434.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _C
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Origine della disuguaglianza
+  url: https://www.amazon.it/s\?k=978-8807820434
+  where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8807821196:
   de: John Donne (Autore), Rosa Tavelli (Traduttore)
   ext: "Testo originale a fronte Copertina flessibile \u2013 marzo 1995"
@@ -9281,6 +9329,29 @@
   - "\U0001F1EE\U0001F1F9"
   title: Appunti di un giovane medico
   where: /saint-lazare-de-savene/salon/_3
+978-8817169400:
+  de: Lucio Anneo Seneca (Auteur)
+  ext: "Broch\xE9"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _C
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: "La brevit\xE0 della vita"
+  url: https://www.amazon.it/s\?k=978-8817169400
+  where: /saint-lazare-de-savene/chambre_alessia/_C
+978-8817258739:
+  de: Stephen Hawking (Autore), Ron Miller (Illustratore), Carl Sagan (Presentazione),
+    Libero Sosio (Traduttore)
+  ext: "Copertina flessibile \u2013 9 gennaio 2015"
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _C
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Dal big bang ai buchi neri - Breve storia del tempo
+  url: https://www.amazon.it/s\?k=978-8817258739
+  where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8817676823:
   de: Georges Perec (Autore)
   ext: "Copertina rigida \u2013 1 gennaio 1990"
@@ -10787,6 +10858,18 @@
   title: "L'Artusi \xABsenza\xBB. L'arte di mangiare bene senza glutine, latte, zucchero"
   url: https://www.amazon.it/s\?k=978-8878474635
   where: /saint-lazare-de-savene/salon/cuisine
+978-8879263108:
+  de: Ian McEwan (Autore)
+  ext: "Copertina flessibile \u2013 1 gennaio 1999"
+  image_path: thumbs/T_978-8879263108.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _C
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: L'inventore di sogni
+  url: https://www.amazon.it/s\?k=978-8879263108
+  where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8879724289:
   de: Kam Chuen Lam (Autore), Kai Sin Lam (Autore), Lucia Corradini Caspani (Traduttore)
   ext: "Copertina flessibile \u2013 1 febbraio 2001"

@@ -11,10 +11,12 @@
   lan: 🇮🇹
   url: https://www.amazon.it/s\?k=978-8861901742
 
-# 976-3955463108:
-#   title: 
-#   lan: 🇫🇷
-#   url: https://www.amazon.it/s\?k=976-3955463108
+978-8879263108:
+  title: L'inventore di sogni
+  ext: Copertina flessibile – 1 gennaio 1999
+  de: Ian McEwan (Autore)
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8879263108
 
 978-2012372368:
   title: Du rêve pour les oufs
@@ -137,4 +139,46 @@
   ext: Broché – 1 janvier 2002
   de: Nick Hornby (Auteur)
   lan: 🇮🇹
+
+978-0007152520:
+  title: Big Bang
+  ext: Paperback – January 1, 2005
+  de: Simon Singh (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0007152520
+
+978-8817258739:
+  title: Dal big bang ai buchi neri - Breve storia del tempo
+  ext: Copertina flessibile – 9 gennaio 2015
+  de: Stephen Hawking (Autore), Ron Miller (Illustratore), Carl Sagan (Presentazione), Libero Sosio (Traduttore)
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8817258739
+
+978-8807820434:
+  title: Origine della disuguaglianza
+  ext: Copertina flessibile – 3 novembre 2008
+  de: Jean-Jacques Rousseau (Autore), Giulio Preti (Traduttore)
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8807820434
+
+978-8817169400:
+  title: La brevità della vita
+  ext: Broché
+  de: Lucio Anneo Seneca (Auteur)
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8817169400
+
+978-8804342847:
+  title: Il marchese di Roccaverdina
+  ext: Copertina flessibile – 31 gennaio 1991
+  de: Luigi Capuana (Autore)
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8804342847
+
+978-8804484912:
+  title: Le rovine di Parigi
+  ext: Copertina flessibile – 31 gennaio 2023
+  de: Giovanni Macchia (Autore)
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8804484912
 
