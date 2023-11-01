@@ -699,6 +699,17 @@
   - "\U0001F1EC\U0001F1E7"
   title: The Ascent of Man
   where: /saint-lazare-de-savene/salon/black
+978-0316228534:
+  de: J.K. Rowling (Author)
+  ext: "Hardcover \u2013 September 27, 2012"
+  image_path: thumbs/T_978-0316228534.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - rowling
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: The Casual Vacancy
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0316349932:
   de: Robert Galbraith (Author)
   ext: "Cormoran Strike Book 3 (Cormoran Strike, 3) Hardcover \u2013 20 Oct. 2015"
@@ -712,7 +723,7 @@
   - "\U0001F1EC\U0001F1E7"
   title: Career of Evil
   url: https://www.amazon.co.uk/s\?k=978-0316349932
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0316725088:
   de: Patricia Cornwell (Autore)
   ext: "Jack the Ripper - Case Closed - Copertina flessibile \u2013 11 novembre 2002"
@@ -1418,7 +1429,7 @@
   - "\U0001F1EC\U0001F1E7"
   title: Harry Potter, 4 - Harry Potter and the Goblet of Fire
   url: https://www.amazon.co.uk/s\?k=978-0747546245
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0747551003:
   de: J.K. Rowling (Author)
   image_path: thumbs/T_978-0747551003.jpeg
@@ -1429,7 +1440,7 @@
   - "\U0001F1EC\U0001F1E7"
   title: Harry Potter, 5 - Harry Potter and the Order of the Phoenix
   url: https://www.amazon.co.uk/s\?k=978-0747551003
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0747554660:
   de: Newt Scamander
   ext: (Harry Potter's Schoolbooks S.)
@@ -1442,7 +1453,7 @@
   - "\U0001F1EC\U0001F1E7"
   title: Fantastic Beasts and Where to Find Them
   url: https://www.amazon.co.uk/s\?k=978-0747554660
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0747554714:
   de: Kennilworthy Whisp
   ext: (Harry Potter's Schoolbooks S.)
@@ -1455,7 +1466,7 @@
   - "\U0001F1EC\U0001F1E7"
   title: Quidditch Through the Ages
   url: https://www.amazon.co.uk/s\?k=978-0747554714
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0747581086:
   de: J.K. Rowling (Author)
   image_path: thumbs/T_978-0747581086.jpeg
@@ -1466,7 +1477,7 @@
   - "\U0001F1EC\U0001F1E7"
   title: Harry Potter, 6 - Harry Potter and the Half-Blood Prince
   url: https://www.amazon.co.uk/s\?k=978-0747581086
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0747591054:
   de: J.K. Rowling (Author)
   image_path: thumbs/T_978-0747591054.jpeg
@@ -1477,7 +1488,7 @@
   - "\U0001F1EC\U0001F1E7"
   title: Harry Potter, 7 - Harry Potter and the Deathly Hallows
   url: https://www.amazon.co.uk/s\?k=978-0747591054
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0751572865:
   de: Robert Galbraith (Author)
   ext: "(A Cormoran Strike Novel, 4) Paperback \u2013 June 11, 2019"
@@ -1743,7 +1754,7 @@
   - "\U0001F1EC\U0001F1E7"
   title: The Cuckoo's Calling
   url: https://www.amazon.co.uk/s\?k=978-1408704004
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-1408704035:
   de: Robert Galbraith (Author)
   ext: "Cormoran Strike Book 2 Paperback \u2013 19 Jun. 2014"
@@ -1757,7 +1768,7 @@
   - "\U0001F1EC\U0001F1E7"
   title: The Silkworm
   url: https://www.amazon.co.uk/s\?k=978-1408704035
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-1408730959:
   de: Robert Galbraith (Author)
   ext: "(Cormoran Strike Book 7) Paperback \u2013 September 23, 2023"
@@ -3539,7 +3550,7 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Harry Potter, 1 - Harry Potter \xE0 l'\xE9cole des sorciers"
   url: https://www.amazon.fr/s\?k=978-2070541270
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-2070543588:
   de: "J.K. Rowling (Auteur), Jean-Fran\xE7ois M\xE9nard (Traduction)"
   image_path: thumbs/T_978-2070543588.jpeg
@@ -3550,7 +3561,7 @@
   - "\U0001F1EB\U0001F1F7"
   title: Harry Potter, 4 - Harry Potter et la Coupe de Feu
   url: https://www.amazon.fr/s\?k=978-2070543588
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-2070552023:
   de: Raymond Queneau (Auteur)
   ext: "Poche \u2013 16 mars 1982"
@@ -3572,7 +3583,7 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Harry Potter, 5 - Harry Potter et l'Ordre du Ph\xE9nix"
   url: https://www.amazon.fr/s\?k=978-2070556854
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-2070572670:
   de: J.K. Rowling (Auteur)
   exty: "Broch\xE9 \u2013 Grand livre, 1 octobre 2005"
@@ -3584,7 +3595,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Harry Potter, 6 - Harry Potter et le Prince de sang m\xEAl\xE9"
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-2070704491:
   de: Keith Thomas (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 31 octobre 1985"
@@ -10255,11 +10266,11 @@
   image_path: thumbs/T_978-8862569873.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _D
+  - _C
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il labirinto dei libri sognanti
-  where: /saint-lazare-de-savene/chambre_alessia/_D
+  where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8865209028:
   de: Emily Kydd (Autore), Alex Luck (Fotografo), Marianna Sala (Traduttore)
   ext: "Oltre 70 ricette a base di riso. Ediz. a colori Copertina rigida \u2013 Illustrato,\
@@ -10432,7 +10443,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Harry Potter. Il libro degli stickers
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-8873818960:
   de: Meris Gaspari (a cura di)
   ext: "Nuova ediz. Copertina flessibile \u2013 29 novembre 2016"
@@ -10538,7 +10549,7 @@
   - "\U0001F1EE\U0001F1F9"
   title: Harry Potter, 1 - Harry Potter e la pietra filosofale
   url: https://www.amazon.it/s\?k=978-8877827029
-  where: /saint-lazare-de-savene/chambre_alessia/_D/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-8877828590:
   de: Nick Arnold (Autore), T. De Saulles (Illustratore), M. Passarello (Traduttore)
   ext: "Ediz. illustrata Copertina flessibile \u2013 Illustrato, 23 febbraio 2001"
