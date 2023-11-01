@@ -13189,6 +13189,16 @@ qwe:
   - "\U0001F1EC\U0001F1E7"
   title: Stalemates
   where: /saint-lazare-de-savene/salon/black
+revolutionibus:
+  de: Giuliano Giuliani, Carlo Monaco
+  image_path: thumbs/T_revolutionibus.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _B
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: "De revolutionibus orbium caelestium - La ricerca dealla sfericit\xE0"
+  where: /saint-lazare-de-savene/chambre_alessia/_B
 shakespeare:
   de: William Shakespeare
   ext: "Pr\xE9sentations par Henri Fluch\xE8re - Reli\xE9 - 1980"
