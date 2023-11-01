@@ -535,6 +535,17 @@
   - "\U0001F1EC\U0001F1E7"
   title: Northanger Abbey
   where: /saint-lazare-de-savene/salon/_9
+978-0140510010:
+  de: E. Boris Uvarov, D. R. Chapman (Author), Alan Isaacs (Editor)
+  ext: "The Penguin Paperback \u2013 June 30, 1950"
+  image_path: thumbs/T_978-0140510010.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _A
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Dictionary of Science
+  where: /saint-lazare-de-savene/chambre_alessia/_A
 978-0141008257:
   de: Jonathan Safran Foer (Author)
   ext: "Paperback \u2013 January 1, 2003"
@@ -4405,6 +4416,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: Commencements
   where: /saint-jean-lipion/chambre/editor
+978-2081640023:
+  de: Thierry Alquier (Autore)
+  ext: "MYSTERE/POLICIER, DES 9/10 ANS Libro \u2013 7 febbraio 1997"
+  image_path: thumbs/T_978-2081640023.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _A
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "La m\xE9moire en miettes"
+  where: /saint-lazare-de-savene/chambre_alessia/_A
 978-2082000611:
   de: Guiliano Bugialli (Auteur)
   ext: "Reli\xE9 \u2013 8 janvier 1992"
@@ -5657,6 +5679,7 @@
   de: "Madame de La Fayette (Auteur), Michel Butor (Pr\xE9face), B\xE9atrice Didier\
     \ (Collaborateur)"
   ext: "Poche \u2013 1 f\xE9vrier 1973"
+  image_path: thumbs/T_978-2253006725.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _A
@@ -12014,6 +12037,16 @@ ASIN-B00F47MHU0:
   - "\U0001F1EE\U0001F1F9"
   title: Opere complete
   where: /saint-lazare-de-savene/salon/_4
+ASIN-B00H79JXY6:
+  de: Juliet Mitchell
+  image_path: thumbs/T_ASIN-B00H79JXY6.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _A
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Psicoanalisi e femminismo.
+  where: /saint-lazare-de-savene/chambre_alessia/_A
 ASIN-B00HFSBGAS:
   de: William Shakespeare (Autore)
   ext: Copertina rigida
@@ -12105,6 +12138,16 @@ LIEUES-2:
   - "\U0001F1EB\U0001F1F7"
   title: 20 000 lieues sous les mers - tome 2
   where: /saint-lazare-de-savene/salon/red
+barbie:
+  de: Vogue - Collectif
+  image_path: thumbs/T_barbie.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _A
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: The Barbie Issue - The Forever Icon
+  where: /saint-lazare-de-savene/chambre_alessia/_A
 boh1:
   de: Bordas - Collectif (Auteur)
   ext: "Reli\xE9 \u2013 1 janvier 1983"
@@ -12736,6 +12779,16 @@ looking_glass:
   - "\U0001F1EC\U0001F1E7"
   title: Through The Looking-Glass  - And What Alice Found There
   where: /saint-lazare-de-savene/salon/red
+morgue:
+  de: Edgar Allan Poe
+  image_path: thumbs/T_morgue.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _A
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: The Murders in the Rue Morgue
+  where: /saint-lazare-de-savene/chambre_alessia/_A
 paris:
   de: "\xC9ditions A. Leconte"
   image_path: thumbs/T_paris.jpg
@@ -12746,6 +12799,17 @@ paris:
   - "\U0001F1EB\U0001F1F7"
   title: Plan de Paris par Arrondissement
   where: /saint-lazare-de-savene/salon/small
+politica:
+  de: "Centro Studi \u201CLa permanenza del Classico\u201D - Collectif"
+  image_path: thumbs/T_politica.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _A
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Elogio della politica
+  url: https://centri.unibo.it/permanenza/it/agenda/elogio-della-politica-i-classici-vii-edizione
+  where: /saint-lazare-de-savene/chambre_alessia/_A
 qwe:
   de: Journal of international affairs - Collectif
   ext: Bologna Center - Volume 17 - 2014
