@@ -82,11 +82,11 @@
   image_path: thumbs/T_802-2264833370.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - random
+  - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Numero zero
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_2
 977-1128608539:
   de: La Repubblica,  L'espresso - Collectif
   image_path: thumbs/T_977-1128608539.jpg
@@ -963,11 +963,11 @@
   image_path: thumbs/T_978-0451163516.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - autre
+  - _9
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: The Man from St. Petersburg
-  where: /saint-lazare-de-savene/couloir/autre
+  where: /saint-lazare-de-savene/salon/_9
 978-0460870344:
   de: Henry James (Author)
   ext: Paperback
@@ -2055,7 +2055,7 @@
 978-1857150308:
   de: Virginia Woolf (Author)
   ext: "Hardcover \u2013 January 1, 1991"
-  image_path: thumbs/T_978-1857150308.jpg
+  image_path: thumbs/T_978-1857150308.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - _1
@@ -3257,6 +3257,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: La vie devant soi
   where: /saint-lazare-de-savene/salon/poche
+978-2070373918:
+  de: Raymond Radiguet (Auteur)
+  ext: "Poche \u2013 1 janvier 1982"
+  image_path: thumbs/T_978-2070373918.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - poche
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Le Diable au corps
+  where: /saint-lazare-de-savene/salon/poche
 978-2070374984:
   de: Arnim (Auteur)
   ext: "Poche \u2013 12 octobre 1983"
@@ -3399,11 +3410,11 @@
   image_path: thumbs/T_978-2070409280.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - autre
+  - poche
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Eug\xE9nie Grandet"
-  where: /saint-lazare-de-savene/couloir/autre
+  where: /saint-lazare-de-savene/salon/poche
 978-2070416219:
   de: "Emmanuel Carr\xE8re (Auteur)"
   ext: "Poche \u2013 29 ao\xFBt 2002"
@@ -3438,6 +3449,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: Robespierre
   where: /saint-jean-lipion/chambre/biographie
+978-2070442553:
+  de: Raymond Queneau (Auteur), Odile Cortinovis (Sous la direction de)
+  ext: "Poche \u2013 6 mai 2011"
+  image_path: thumbs/T_978-2070442553.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - poche
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Connaissez-vous Paris ?
+  where: /saint-lazare-de-savene/salon/poche
 978-2070450893:
   de: "Emmanuel Carr\xE8re (Auteur)"
   ext: "Prix Renaudot 2011 Poche \u2013 5 avril 2013"
@@ -6428,11 +6450,11 @@
   image_path: thumbs/T_978-2729841102.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
-  - transit
-  - transit
+  - _2
+  - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
   title: Die Legende vom heiligen Trinker
-  where: /transit
+  where: /saint-lazare-de-savene/salon/_2
 978-2731801293:
   de: Compagnie Internationale du Livre - Collectif
   image_path: thumbs/T_978-2731801293.jpeg
@@ -6878,11 +6900,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - bd
-  - arts_etc
+  - _2
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Pyongyang
-  where: /saint-lazare-de-savene/salon/arts_etc
+  where: /saint-lazare-de-savene/salon/_2
 978-2844851390:
   de: Patrik Ourednik (Auteur), Marianne Canavaggio (Traduction)
   ext: "Broch\xE9 \u2013 29 janvier 2004"
@@ -7838,11 +7860,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - transit
-  - transit
+  - _2
+  - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Lady Lazarus e altre poesie
-  where: /transit
+  where: /saint-lazare-de-savene/salon/_2
 978-8804450849:
   de: Francesco Guccini (Autore), Loriano Macchiavelli (Autore)
   ext: "Copertina flessibile \u2013 19 maggio 1998"
@@ -7872,11 +7894,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - transit
-  - transit
+  - _2
+  - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Conoscenza della notte
-  where: /transit
+  where: /saint-lazare-de-savene/salon/_2
 978-8804476771:
   de: John Ruskin (Autore)
   ext: "Copertina flessibile \u2013 16 maggio 2000"
@@ -7906,10 +7928,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
+  - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Poesie d'amore
-  where: "/saint-lazare-de-savene/salon/po\xE9sie"
+  where: /saint-lazare-de-savene/salon/_2
 978-8804508458:
   de: Mary Shelley (Autore), Chiara Zanolli (Traduttore), Laura Caretti (Traduttore)
   ext: "Copertina flessibile \u2013 2009"
@@ -8717,11 +8740,11 @@
   lanOriginal: "\U0001F1EB\U0001F1F7"
   tags:
   - "th\xE9atre"
-  - transit
-  - transit
+  - _2
+  - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il borghese gentiluomo
-  where: /transit
+  where: /saint-lazare-de-savene/salon/_2
 978-8811364283:
   de: Franz Kafka (Autore), Ferruccio Masini (Presentazione), Guido Massino (Prefazione),
     Clara Morena (Traduttore)
@@ -8743,11 +8766,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - transit
-  - transit
+  - _2
+  - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Le ceneri di Gramsci
-  where: /transit
+  where: /saint-lazare-de-savene/salon/_2
 978-8811635987:
   de: Pier Paolo Pasolini (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1971"
@@ -8973,10 +8996,11 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
+  - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Le poesie
-  where: "/saint-lazare-de-savene/salon/po\xE9sie"
+  where: /saint-lazare-de-savene/salon/_2
 978-8817010320:
   de: Zap Mangusta (Autore)
   ext: "Lezioni di filosofia per tipi in gamba - Copertina rigida \u2013 19 aprile\
@@ -9029,11 +9053,11 @@
   lanOriginal: "\U0001F1EC\U0001F1E7"
   tags:
   - "po\xE9sie"
-  - transit
-  - transit
+  - _2
+  - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: La terra desolata
-  where: /transit
+  where: /saint-lazare-de-savene/salon/_2
 978-8817072380:
   de: Donna Tartt (Autore), Mirko Zilahi De' Gyurgyokai (Traduttore)
   ext: "Copertina rigida \u2013 12 marzo 2014"
@@ -9192,33 +9216,33 @@
   image_path: thumbs/T_978-8830102651.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - random
+  - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: M - L'uomo della provvidenza
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_2
 978-8830104969:
   de: Antonio Scurati (Autore)
   ext: "Copertina flessibile \u2013 13 settembre 2022"
   image_path: thumbs/T_978-8830104969.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - random
+  - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: M - Gli ultimi giorni dell'Europa
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_2
 978-8830106628:
   de: Antonio Scurati (Autore)
   ext: "Copertina flessibile \u2013 luglio 2019"
   image_path: thumbs/T_978-8830106628.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - random
+  - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: M - Il figlio del secolo
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_2
 978-8830421424:
   de: Tiziano Terzani (Autore)
   ext: "Copertina rigida \u2013 25 marzo 2004"
@@ -11127,11 +11151,11 @@ ASIN-B000NNBJZ4:
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - "po\xE9sie"
-  - transit
-  - transit
+  - _2
+  - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Canti
-  where: /transit
+  where: /saint-lazare-de-savene/salon/_2
 ASIN-B0014LJ38Y:
   de: Elio Vittorini (Auteur), Michel Arnaud (Auteur)
   ext: "(Du monde entier) Broch\xE9 \u2013 1 janvier 1980"
@@ -11574,11 +11598,11 @@ boh25:
   image_path: thumbs/T_boh25.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - transit
-  - transit
+  - _2
+  - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: La scrittura secolare
-  where: /transit
+  where: /saint-lazare-de-savene/salon/_2
 boh26:
   ASIN: B00HNT1YRE
   de: Alessandro Serpieri (Autore)
@@ -11725,11 +11749,11 @@ boh37:
   image_path: thumbs/T_boh37.webp
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _6
+  - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Sei Giornate
-  where: /saint-lazare-de-savene/salon/_6
+  where: /saint-lazare-de-savene/salon/_2
 boh38:
   de: Giorgio Biondi
   ext: La Prima Parte Ha Come Oggetto La Nostra Infanzia A Castello, La Seconda I
