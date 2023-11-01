@@ -12027,6 +12027,16 @@ fleurs_du_mal:
   - "\U0001F1EB\U0001F1F7"
   title: Les fleurs du mal
   where: /saint-lazare-de-savene/salon/red
+gai-luron:
+  de: Gotlib
+  image_path: thumbs/T_gai-luron.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - small
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Gai-Luron - Chauds les marrons ! Chauds !
+  where: /saint-lazare-de-savene/salon/small
 keats:
   de: John Keats
   image_path: thumbs/T_keats.jpg
