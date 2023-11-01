@@ -26,10 +26,3 @@ for ext in extensions:
           im.save(newName, "JPEG")
         
  
-## for filename3 in glob.iglob('thumbs/*', recursive=False):
-##   size = os.stat(filename3).st_size 
-##   sizes.append(size)
-##   i += 1
-## 
-## 
-## print(i, sum(sizes), min(sizes), max(sizes))
