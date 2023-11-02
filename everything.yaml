@@ -30,6 +30,19 @@
   - "\U0001F1EE\U0001F1F9"
   title: Elissabetta e il conte di Essex
   where: /saint-lazare-de-savene/salon/_6
+312-6170004598:
+  ISBN-13: 978-2907179164
+  de: Eric Birmingham, Pierre Nolot (Auteur), Pierre Bretagnolle (Illustrateur)
+  ext: "Broch\xE9 \u2013 1 juillet 1992"
+  image_path: thumbs/T_312-6170004598.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - chess
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Echec et mat - Initiation au jeu d'e\xE9checs"
+  where: /saint-lazare-de-savene/salon/random
 334-6030019931:
   de: "Dani\xE8le Huillet, Jean-Marie Straub (R\xE9alisateur)"
   image_path: thumbs/T_334-6030019931.jpg
@@ -8159,6 +8172,7 @@
   image_path: thumbs/T_978-3895080944.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - chess
   - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EC\U0001F1E7"
