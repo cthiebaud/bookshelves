@@ -11683,17 +11683,41 @@
   title: Harry Potter, 1 - Harry Potter e la pietra filosofale
   url: https://www.amazon.it/s\?k=978-8877827029
   where: /saint-lazare-de-savene/chambre_alessia/rowling
+978-8877828552:
+  de: Terry Deary (Autore), P. Reeve (Illustratore), G. Calza (Traduttore)
+  ext: "Ediz. illustrata Copertina flessibile \u2013 Illustrato, 2 giugno 2000"
+  image_path: thumbs/T_978-8877828552.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - brutte_scienze_brutte_storie_morto_che_parla
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Callosi cavalieri e mefitici manieri
+  url: https://www.amazon.it/s\?k=978-8877828552
+  where: /saint-lazare-de-savene/chambre_alessia/brutte_scienze_brutte_storie_morto_che_parla
+978-8877828576:
+  de: Terry Deary (Autore), P. Reeve (Illustratore), G. Calza (Traduttore)
+  ext: "Ediz. illustrata Copertina flessibile \u2013 Illustrato, 28 gennaio 2000"
+  image_path: thumbs/T_978-8877828576.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - brutte_scienze_brutte_storie_morto_che_parla
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Ribollenti rivoluzioni
+  url: https://www.amazon.it/s\?k=978-8877828576
+  where: /saint-lazare-de-savene/chambre_alessia/brutte_scienze_brutte_storie_morto_che_parla
 978-8877828590:
   de: Nick Arnold (Autore), T. De Saulles (Illustratore), M. Passarello (Traduttore)
   ext: "Ediz. illustrata Copertina flessibile \u2013 Illustrato, 23 febbraio 2001"
   image_path: thumbs/T_978-8877828590.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - transit
-  - transit
+  - brutte_scienze_brutte_storie_morto_che_parla
+  - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Muffe, peponidi, tartufi e altri vergognosi vegetali
-  where: /transit
+  where: /saint-lazare-de-savene/chambre_alessia/brutte_scienze_brutte_storie_morto_che_parla
 978-8877829429:
   de: Jostein Gaarder (Autore), Klaus Hagerup (Autore), A. Tonzig (Traduttore)
   ext: "Copertina flessibile \u2013 14 settembre 2001"
@@ -11856,33 +11880,45 @@
   image_path: thumbs/T_978-8884511416.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _3
+  - brutte_scienze_brutte_storie_morto_che_parla
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Isaac Newton e la sua mela
-  where: /saint-lazare-de-savene/salon/_3
+  where: /saint-lazare-de-savene/chambre_alessia/brutte_scienze_brutte_storie_morto_che_parla
+978-8884511935:
+  de: Terry Deary (Autore), M. Brown (Illustratore), Federica Rupeno (Traduttore)
+  ext: "Ediz. illustrata Copertina flessibile \u2013 Illustrato, 28 giugno 2002"
+  image_path: thumbs/T_978-8884511935.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - brutte_scienze_brutte_storie_morto_che_parla
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Irosi irlandesi
+  url: https://www.amazon.it/s\?k=978-8884511935
+  where: /saint-lazare-de-savene/chambre_alessia/brutte_scienze_brutte_storie_morto_che_parla
 978-8884512444:
   de: Nick Arnold (Autore), T. De Saulles (Illustratore), Federica Rupeno (Traduttore)
   ext: "Copertina flessibile \u2013 1 gennaio 2003"
   image_path: thumbs/T_978-8884512444.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _3
+  - brutte_scienze_brutte_storie_morto_che_parla
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Germi, virus, batteri e altri microscopici mostri
-  where: /saint-lazare-de-savene/salon/_3
+  where: /saint-lazare-de-savene/chambre_alessia/brutte_scienze_brutte_storie_morto_che_parla
 978-8884513632:
   de: Michael Cox (Autore), C. Goddard (Illustratore), A. Roccato (Traduttore)
   ext: "Copertina flessibile \u2013 15 aprile 2004"
   image_path: thumbs/T_978-8884513632.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _3
+  - brutte_scienze_brutte_storie_morto_che_parla
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Leonardo da Vinci e il suo megacervello
-  where: /saint-lazare-de-savene/salon/_3
+  where: /saint-lazare-de-savene/chambre_alessia/brutte_scienze_brutte_storie_morto_che_parla
 978-8884906830:
   de: Laura Lombardo Radice (Autore), Chiara Ingrao (Autore)
   ext: "Copertina flessibile \u2013 8 marzo 2005"
