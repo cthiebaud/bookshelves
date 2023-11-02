@@ -38,11 +38,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - chess
-  - random
+  - _6
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Echec et mat - Initiation au jeu d'e\xE9checs"
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_6
 334-6030019931:
   de: "Dani\xE8le Huillet, Jean-Marie Straub (R\xE9alisateur)"
   image_path: thumbs/T_334-6030019931.jpg
@@ -1512,6 +1512,18 @@
   - "\U0001F1EC\U0001F1E7"
   title: The hero with a thousand faces
   where: /saint-lazare-de-savene/salon/_1
+978-0714890517:
+  de: Bruce Bernard
+  image_path: thumbs/T_978-0714890517.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  publisher: Phaidon
+  tags:
+  - photo
+  - _B
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Si\xE8cle"
+  where: /saint-lazare-de-savene/chambre_alessia/_B
 978-0714897356:
   de: Sophie Lovell (Autore)
   ext: La ville en un regard
@@ -6451,11 +6463,11 @@
   image_path: thumbs/T_978-2361065096.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - random
+  - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Psychologie de la connerie
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_4
 978-2365591546:
   de: Florence Aubenas (Auteur)
   image_path: thumbs/T_978-2365591546.jpg
@@ -7567,11 +7579,11 @@
   image_path: thumbs/T_978-2862602868.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - random
+  - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Bologne - Un guide intime
-  where: /saint-lazare-de-savene/salon/random
+  where: /saint-lazare-de-savene/salon/_4
 978-2862604145:
   de: Autrement - Collectif (Auteur)
   ext: "Broch\xE9 \u2013 2 avril 1993"
@@ -8553,6 +8565,17 @@
   - "\U0001F1EE\U0001F1F9"
   title: Marcovaldo
   title2: "ovvero le stagioni in citt\xE0"
+  where: /saint-lazare-de-savene/chambre_alessia/_B
+978-8804533085:
+  de: Andy Riley (Autore)
+  ext: "Copertina rigida \u2013 6 aprile 2004"
+  image_path: thumbs/T_978-8804533085.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _B
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Il libro dei coniglietti suicidi
   where: /saint-lazare-de-savene/chambre_alessia/_B
 978-8804546757:
   de: Antonio Pennacchi (Autore), S. Cardinali (Illustratore)
@@ -10705,6 +10728,18 @@
   title: Quando eravamo in tre
   title2: Che fatica avere dei legami - Che avventura crescere
   where: /saint-lazare-de-savene/chambre_alessia/_B
+978-8845199820:
+  de: Catherine Felix (Autore)
+  ext: "Ediz. illustrata Copertina rigida \u2013 Illustrato, 22 ottobre 2014"
+  image_path: thumbs/T_978-8845199820.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _B
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Gattosofia
+  title2: 100 consigli per vivere ogni giorno felini e contenti
+  where: /saint-lazare-de-savene/chambre_alessia/_B
 978-8845223181:
   de: Umberto Eco (Autore)
   ext: Copertina rigida
@@ -11030,6 +11065,16 @@
   - "\U0001F1EE\U0001F1F9"
   title: La cognizione del dolore
   where: /saint-lazare-de-savene/salon/_8
+978-8847425255:
+  de: Collectif
+  image_path: thumbs/T_978-8847425255.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _B
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Amicizia
+  where: /saint-lazare-de-savene/chambre_alessia/_B
 978-8847710467:
   de: Andrew Matthews (Autore), A. Barrett (Illustratore), P. Mazzarelli (Traduttore)
   ext: "Copertina rigida \u2013 19 novembre 2002"
@@ -11126,6 +11171,17 @@
   - "\U0001F1EE\U0001F1F9"
   title: Parole
   where: /saint-lazare-de-savene/couloir/autre
+978-8854015135:
+  collana: Cube Book
+  de: Gabriele Atripaldi
+  image_path: thumbs/T_978-8854015135.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _B
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Meraviglie d'Italia
+  where: /saint-lazare-de-savene/chambre_alessia/_B
 978-8854165526:
   de: "Lev Nikolaevi\u010D Tolstoj (Author)"
   ext: "(Italian Edition) Paperback \u2013 May 18, 2018"
