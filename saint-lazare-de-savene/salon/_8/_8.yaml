@@ -16,37 +16,62 @@
   title: Il venti di luglio
   ext: Copertina flessibile – 21 maggio 2008
   de: Alexander Lernet-Holenia (Autore), E. Dell'Anna Ciancia (Traduttore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845922848
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8845905636:
   title: Il signore di Parigi
   ext: Racconto Copertina flessibile – 24 maggio 1993
   de: Alexander Lernet-Holenia (Autore), D. Linder (Traduttore), E. Linder (Traduttore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845905636
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8845926266:
   title: La sovrana lettrice
   ext:  Copertina flessibile – 28 settembre 2011
   de: Bennett Alan (Autore)
+  publisher: Adelphi
+  collection: Fabula
   lan: 🇮🇹
+  url: https://www.adelphi.it/libro/9788845922091
+  tags:
+    - editori
 
 978-8845918711:
   title: La scomparsa di Majorana
   ext: Copertina rigida – 26 maggio 2004
   de: Leonardo Sciascia (Autore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845918711
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8806135669:
   title: Vento largo
   ext: Copertina flessibile – 1 gennaio 1997
   de: Francesco Biamonti (Autore)
+  publisher: Einaudi
+  url: https://www.einaudi.it/catalogo-libri/narrativa-italiana/vento-largo-francesco-biamonti-9788806189679/
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8806160425:
   title: L'ultimo Natale di guerra
   ext: Copertina flessibile – 19 novembre 2002
   de: Primo Levi (Autore), Marco Belpoliti (a cura di)
+  publisher: Einaudi
+  url: https://www.einaudi.it/catalogo-libri/narrativa-italiana/narrativa-italiana-del-novecento/lultimo-natale-di-guerra-primo-levi-9788806153939/
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8806139834:
   title: Il processo - nella traduzione di Primo Levi
@@ -60,13 +85,21 @@
   title: I sommersi e i salvati
   ext: Copertina flessibile – 1 agosto 1991
   de: Primo Levi (Autore)
+  publisher: Einaudi
+  url: https://www.einaudi.it/catalogo-libri/narrativa-italiana/narrativa-italiana-del-novecento/i-sommersi-e-i-salvati-primo-levi-9788806222680/
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8806135171:
   title: Il sistema periodico
   ext: Copertina flessibile – 1 luglio 1994
   de: Primo Levi (Autore)
+  publisher: Einaudi
+  url: https://www.einaudi.it/catalogo-libri/narrativa-italiana/narrativa-italiana-del-novecento/il-sistema-periodico-primo-levi-9788806219505/
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8806130688:
   title: Creatura di sabbia
@@ -82,13 +115,21 @@
 978-8806136154:
   title: Possessione - Una storia romantica
   de: Antonia Susan Byatt (Author)
+  publisher: Einaudi
+  url: https://www.einaudi.it/catalogo-libri/narrativa-straniera/narrativa-di-lingua-inglese/possessione-a-s-byatt-9788806231781/
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8806146559:
   title: Diario
   ext: Copertina flessibile – 1 ottobre 1996
   de: Anne Frank (Autore), Otto Frank (a cura di), Mirjam Pressler (a cura di), Frediano Sessi (a cura di), & 2 altro
+  publisher: Feltrinelli
+  url: https://www.lafeltrinelli.it/diario-ediz-integrale-libro-anne-frank/e/9788863113525
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8806136413:
   title: Le ultime lettere di Jacopo Ortis
@@ -188,13 +229,19 @@
   title: Il visconte dimezzato
   ext: Copertina flessibile
   de: Italo Calvino (Autore), D. Carenzi (a cura di)
+  publisher: Garzanti
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8811666752:
   title: Il barone rampante
   ext: Copertina flessibile
-  de: ITALO CALVINO (Autore), [Garzanti] (a cura di)
+  de: Italo Calvino (Autore), [Garzanti] (a cura di)
+  publisher: Garzanti
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8804425540:
   title: Le città invisibili
@@ -212,13 +259,21 @@
   title: Sette brevi lezioni di fisica
   ext: Forniture assortite – 22 ottobre 2014
   de: Carlo Rovelli (Autore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845929250
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8845903465:
   title: La cura
   ext: Copertina flessibile – 22 febbraio 1978
   de: Hermann Hesse (Autore), Italo Alighiero Chiusano (Traduttore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845903465
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8833914954:
   title: Il pensionato furioso - Sfida all'ortodossia previdenziale
@@ -272,7 +327,11 @@
   title: Castelli di rabbia
   ext: Copertina flessibile – 29 settembre 2008
   de: Alessandro Baricco (Autore)
+  publisher: Feltrinelli
+  url: https://www.lafeltrinelli.it/castelli-di-rabbia-libro-alessandro-baricco/e/9788807895760
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8807816253:
   title: Un baule pieno di gente
@@ -290,7 +349,11 @@
   title: Novecento - Un monologo
   ext: Copertina flessibile – settembre 2001
   de: Alessandro Baricco (Autore)
+  publisher: Feltrinelli
+  url: https://www.lafeltrinelli.it/novecento-monologo-libro-alessandro-baricco/e/9788807813023
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8807815324:
   title: Bar Sport duemila

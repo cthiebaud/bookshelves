@@ -3302,7 +3302,7 @@
 978-2070321957:
   de: "Pier Paolo Pasolini (Auteur), Jos\xE9 Guidi (Traducteur)"
   ext: (Edition bilingue)
-  image_path: thumbs/T_978-2070321957.jpg
+  image_path: thumbs/T_978-2070321957.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   lanOriginal: "\U0001F1EE\U0001F1F9"
   tags:
@@ -4616,7 +4616,7 @@
   title: "Les 1001 albums qu'il faut avoir \xE9cout\xE9s dans sa vie"
   where: /saint-lazare-de-savene/salon/arts_etc
 978-2082025010:
-  de: Sutcliffe Serena (Auteur)
+  de: Serena Sutcliffe (Auteur)
   ext: "Reli\xE9 \u2013 8 janvier 1992"
   image_path: thumbs/T_978-2082025010.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -5516,7 +5516,7 @@
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "Candide ou l'optimisme - Dessin\xE9 par Jean-Marc Rochette"
+  title: "Candide ou l'Optimisme - Dessin\xE9 par Jean-Marc Rochette"
   where: /saint-lazare-de-savene/salon/arts
 978-2226141361:
   de: Dominique Auzel (Auteur)
@@ -8720,7 +8720,9 @@
   ext: "Copertina rigida \u2013 1 gennaio 1983"
   image_path: thumbs/T_978-8806056797.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Mondadori
   tags:
+  - editori
   - _7
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -8730,11 +8732,14 @@
   de: Italo Calvino
   image_path: thumbs/T_978-8806114176.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Mondadori
   tags:
+  - editori
   - red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Sulla fiaba
+  url: https://www.oscarmondadori.it/libri/sulla-fiaba-italo-calvino/
   where: /saint-lazare-de-savene/salon/red
 978-8806117917:
   de: Luciano Canepari
@@ -8762,13 +8767,16 @@
 978-8806126957:
   de: Primo Levi (Autore)
   ext: "Copertina flessibile \u2013 1 agosto 1991"
-  image_path: thumbs/T_978-8806126957.jpg
+  image_path: thumbs/T_978-8806126957.webp
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Einaudi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: I sommersi e i salvati
+  url: https://www.einaudi.it/catalogo-libri/narrativa-italiana/narrativa-italiana-del-novecento/i-sommersi-e-i-salvati-primo-levi-9788806222680/
   where: /saint-lazare-de-savene/salon/_8
 978-8806130688:
   de: Tahar Ben Jelloun (Autore)
@@ -8785,32 +8793,41 @@
   ext: "Copertina flessibile \u2013 1 luglio 1994"
   image_path: thumbs/T_978-8806135171.jpeg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Einaudi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il sistema periodico
+  url: https://www.einaudi.it/catalogo-libri/narrativa-italiana/narrativa-italiana-del-novecento/il-sistema-periodico-primo-levi-9788806219505/
   where: /saint-lazare-de-savene/salon/_8
 978-8806135669:
   de: Francesco Biamonti (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1997"
   image_path: thumbs/T_978-8806135669.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Einaudi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Vento largo
+  url: https://www.einaudi.it/catalogo-libri/narrativa-italiana/vento-largo-francesco-biamonti-9788806189679/
   where: /saint-lazare-de-savene/salon/_8
 978-8806136154:
   de: Antonia Susan Byatt (Author)
   image_path: thumbs/T_978-8806136154.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Einaudi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Possessione - Una storia romantica
+  url: https://www.einaudi.it/catalogo-libri/narrativa-straniera/narrativa-di-lingua-inglese/possessione-a-s-byatt-9788806231781/
   where: /saint-lazare-de-savene/salon/_8
 978-8806136413:
   de: Ugo Foscolo (Autore), Giovanna Ioli (a cura di)
@@ -8854,11 +8871,14 @@
   ext: "Copertina flessibile \u2013 1 ottobre 1996"
   image_path: thumbs/T_978-8806146559.webp
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Feltrinelli
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Diario
+  url: https://www.lafeltrinelli.it/diario-ediz-integrale-libro-anne-frank/e/9788863113525
   where: /saint-lazare-de-savene/salon/_8
 978-8806151799:
   de: Fulvio Nardoni (Traduction)
@@ -8884,13 +8904,16 @@
 978-8806160425:
   de: Primo Levi (Autore), Marco Belpoliti (a cura di)
   ext: "Copertina flessibile \u2013 19 novembre 2002"
-  image_path: thumbs/T_978-8806160425.jpg
+  image_path: thumbs/T_978-8806160425.jpeg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Einaudi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: L'ultimo Natale di guerra
+  url: https://www.einaudi.it/catalogo-libri/narrativa-italiana/narrativa-italiana-del-novecento/lultimo-natale-di-guerra-primo-levi-9788806153939/
   where: /saint-lazare-de-savene/salon/_8
 978-8806164089:
   de: Dylan Thomas (Autore), R. S. Crivelli (a cura di), A. Marianni (a cura di)
@@ -9239,11 +9262,14 @@
   ext: "Copertina flessibile \u2013 25 gennaio 2012"
   image_path: thumbs/T_978-8807810800.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Feltrinelli
   tags:
+  - editori
   - _6
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Quattro novelle sulle apparenze
+  url: https://www.feltrinellieditore.it/opera/quattro-novelle-sulle-apparenze-1/
   where: /saint-lazare-de-savene/salon/_6
 978-8807812439:
   de: Banana Yoshimoto (Autore), Giorgio Amitrano (Traduttore)
@@ -9261,11 +9287,14 @@
   ext: "Copertina flessibile \u2013 settembre 2001"
   image_path: thumbs/T_978-8807813023.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Feltrinelli
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Novecento - Un monologo
+  url: https://www.lafeltrinelli.it/novecento-monologo-libro-alessandro-baricco/e/9788807813023
   where: /saint-lazare-de-savene/salon/_8
 978-8807814341:
   de: Stefano Benni (Autore)
@@ -9341,12 +9370,15 @@
   ext: "e altre guerre di poveri - Copertina flessibile \u2013 19 gennaio 2009"
   image_path: thumbs/T_978-8807818486.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Feltrinelli
   tags:
   - football
+  - editori
   - _5
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: La prima guerra del football
+  url: https://www.feltrinellieditore.it/opera/la-prima-guerra-del-football-1-2/
   where: /saint-lazare-de-savene/salon/_5
 978-8807818677:
   de: Francesca Predazzi (Autore), Vanna Vannuccini (Autore)
@@ -9376,11 +9408,14 @@
   ext: "Copertina flessibile \u2013 29 settembre 2008"
   image_path: thumbs/T_978-8807819698.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Feltrinelli
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Castelli di rabbia
+  url: https://www.lafeltrinelli.it/castelli-di-rabbia-libro-alessandro-baricco/e/9788807895760
   where: /saint-lazare-de-savene/salon/_8
 978-8807820434:
   de: Jean-Jacques Rousseau (Autore), Giulio Preti (Traduttore)
@@ -9446,11 +9481,14 @@
   ext: "Copertina flessibile \u2013 27 settembre 2018"
   image_path: thumbs/T_978-8807891342.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Feltrinelli
   tags:
+  - editori
   - biographie
   - saint-jean-lipion
   - "\U0001F1EE\U0001F1F9"
   title: Gramsci
+  url: https://www.lafeltrinelli.it/gramsci-nuova-biografia-libro-angelo-d-orsi/e/9788807891342
   where: /saint-jean-lipion/chambre/biographie
 978-8807920868:
   de: Manfred Mai (Autore), M. Tranquillini (Illustratore), A. Carati (Traduttore)
@@ -9571,11 +9609,13 @@
   title: Scritti corsari
   where: /saint-lazare-de-savene/salon/_2
 978-8811666752:
-  de: ITALO CALVINO (Autore), [Garzanti] (a cura di)
+  de: Italo Calvino (Autore), [Garzanti] (a cura di)
   ext: Copertina flessibile
-  image_path: thumbs/T_978-8811666752.jpg
+  image_path: thumbs/T_978-8811666752.webp
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Garzanti
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -9586,7 +9626,9 @@
   ext: Copertina flessibile
   image_path: thumbs/T_978-8811666769.webp
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Garzanti
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -10835,56 +10877,70 @@
   ext: "Copertina flessibile \u2013 1 febbraio 1988"
   image_path: thumbs/T_978-8845902741.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: La signorina Else
+  url: https://www.adelphi.it/libro/9788845902741
   where: /saint-lazare-de-savene/salon/_3
 978-8845903465:
   de: Hermann Hesse (Autore), Italo Alighiero Chiusano (Traduttore)
   ext: "Copertina flessibile \u2013 22 febbraio 1978"
   image_path: thumbs/T_978-8845903465.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: La cura
+  url: https://www.adelphi.it/libro/9788845903465
   where: /saint-lazare-de-savene/salon/_8
 978-8845905100:
   de: Mario Praz (Autore)
   ext: "Copertina flessibile \u2013 8 giugno 1994"
   image_path: thumbs/T_978-8845905100.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _5
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il mondo che ho visto
+  url: https://www.adelphi.it/libro/9788845905100
   where: /saint-lazare-de-savene/salon/_5
 978-8845905636:
   de: Alexander Lernet-Holenia (Autore), D. Linder (Traduttore), E. Linder (Traduttore)
   ext: "Racconto Copertina flessibile \u2013 24 maggio 1993"
   image_path: thumbs/T_978-8845905636.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il signore di Parigi
+  url: https://www.adelphi.it/libro/9788845905636
   where: /saint-lazare-de-savene/salon/_8
 978-8845906862:
   de: Milan Kundera (Autore), Antonio Barbato (Traduttore), Giuseppe Dierna (Traduttore)
   ext: Copertina flessibile
   image_path: thumbs/T_978-8845906862.jpeg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _C
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
-  title: L'insostenibile leggerezza dell'essere
-  url: https://www.amazon.it/s\?k=978-8845906862
+  title: "L'insostenibile leggerezza dell\u2019essere"
+  url: https://www.adelphi.it/libro/9788845906046
   where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8845906886:
   de: John R. R. Tolkien (Autore), Elena Jeronimidis Conte (Traduttore)
@@ -10911,27 +10967,34 @@
   url: https://adelphi.it/libro/9788845923104
   where: /saint-lazare-de-savene/salon/arts
 978-8845911064:
+  collection: Piccola Biblioteca Adelphi
   de: Wystan Hugh Auden (Autore), G. Forti (Traduttore)
   ext: "Copertina flessibile \u2013 19 novembre 1994"
   image_path: thumbs/T_978-8845911064.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
   - "po\xE9sie"
+  - editori
   - transit
   - transit
   - "\U0001F1EE\U0001F1F9"
   title: "La verit\xE0, vi prego, sull'amore"
+  url: https://www.adelphi.it/libro/9788845911064
   where: /transit
 978-8845911125:
   de: Leonardo Sciascia (Autore)
   ext: "Copertina flessibile \u2013 22 febbraio 1995"
   image_path: thumbs/T_978-8845911125.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _5
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Todo modo
+  url: https://www.adelphi.it/libro/9788845911125
   where: /saint-lazare-de-savene/salon/_5
 978-8845917073:
   de: Winfried G. Sebald (Autore), Ada Vigliani (Traduttore)
@@ -10949,22 +11012,28 @@
   ext: "481 Copertina flessibile \u2013 3 luglio 2002"
   image_path: thumbs/T_978-8845917103.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _6
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: L'anima del mondo e il pensiero del cuore
+  url: https://www.adelphi.it/libro/9788845917103
   where: /saint-lazare-de-savene/salon/_6
 978-8845918711:
   de: Leonardo Sciascia (Autore)
   ext: "Copertina rigida \u2013 26 maggio 2004"
   image_path: thumbs/T_978-8845918711.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: La scomparsa di Majorana
+  url: https://www.adelphi.it/libro/9788845918711
   where: /saint-lazare-de-savene/salon/_8
 978-8845919619:
   de: Leonardo Sciascia (Autore)
@@ -10982,100 +11051,127 @@
   ext: "Copertina flessibile \u2013 21 maggio 2008"
   image_path: thumbs/T_978-8845922848.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il venti di luglio
+  url: https://www.adelphi.it/libro/9788845922848
   where: /saint-lazare-de-savene/salon/_8
 978-8845923630:
   de: James Hillman (Autore), Adriana Bottini (Traduttore)
   ext: "Carattere, vocazione, destino Copertina flessibile \u2013 18 marzo 2009"
   image_path: thumbs/T_978-8845923630.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il codice dell'anima
+  url: https://www.adelphi.it/libro/9788845923630
   where: /saint-lazare-de-savene/salon/_2
 978-8845924477:
   de: Leonardo Sciascia (Autore)
   ext: "Copertina flessibile \u2013 28 ottobre 2009"
   image_path: thumbs/T_978-8845924477.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _C
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il consiglio d'Egitto
-  url: https://www.amazon.it/s\?k=978-8845924477
+  url: https://www.adelphi.it/libro/9788845906961
   where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8845925238:
   de: "S\xE1ndor M\xE1rai (Autore), Antonio Donato Sciacovelli (a cura di)"
   ext: "Copertina flessibile \u2013 20 ottobre 2010"
   image_path: thumbs/T_978-8845925238.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _5
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il sangue di San Gennaro
+  url: https://www.adelphi.it/libro/9788845925238
   where: /saint-lazare-de-savene/salon/_5
 978-8845926266:
+  collection: Fabula
   de: Bennett Alan (Autore)
   ext: "Copertina flessibile \u2013 28 settembre 2011"
   image_path: thumbs/T_978-8845926266.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: La sovrana lettrice
+  url: https://www.adelphi.it/libro/9788845922091
   where: /saint-lazare-de-savene/salon/_8
 978-8845926402:
   de: "Ir\xE8ne N\xE9mirovsky (Autore)"
   ext: "Copertina flessibile \u2013 29 giugno 2011"
   image_path: thumbs/T_978-8845926402.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _5
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Suite francese
+  url: https://www.adelphi.it/libro/9788845920165
   where: /saint-lazare-de-savene/salon/_5
 978-8845929250:
   de: Carlo Rovelli (Autore)
   ext: "Forniture assortite \u2013 22 ottobre 2014"
   image_path: thumbs/T_978-8845929250.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _8
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Sette brevi lezioni di fisica
+  url: https://www.adelphi.it/libro/9788845929250
   where: /saint-lazare-de-savene/salon/_8
 978-8845931215:
   de: Han Kang (Autore), Milena Zemira Ciccimarra (Traduttore)
   ext: "Copertina flessibile \u2013 13 ottobre 2016"
   image_path: thumbs/T_978-8845931215.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Adelphi
   tags:
+  - editori
   - _5
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: La vegetariana
+  url: https://www.adelphi.it/libro/9788845931215
   where: /saint-lazare-de-savene/salon/_5
 978-8845932076:
   de: Roberto Calasso (Autore)
   ext: "Copertina flessibile \u2013 28 settembre 2017"
   image_path: thumbs/T_978-8845932076.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Feltrinelli
   tags:
+  - editori
   - _5
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: L'innominabile attuale
+  url: https://www.lafeltrinelli.it/innominabile-attuale-libro-roberto-calasso/e/9788845932076
   where: /saint-lazare-de-savene/salon/_5
 978-8845934407:
   de: Carlo Emilio Gadda (Autore)
@@ -11547,7 +11643,7 @@
 978-8871640280:
   de: Guy de Maupassant (Autore), B. Besi Ellena (Traduttore)
   ext: "Copertina flessibile \u2013 1 giugno 1994"
-  image_path: thumbs/T_978-8871640280.webp
+  image_path: thumbs/T_978-8871640280.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - _3
@@ -12482,7 +12578,7 @@ ASIN-B0014LJ38Y:
   - editor
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: L'oeillet rouge
+  title: "L'o\u0153illet rouge"
   url: https://www.amazon.fr/Loeillet-rouge-Du-monde-entier/dp/B0014LJ38Y
   where: /saint-lazare-de-savene/salon/editor
 ASIN-B0014QGFG2:
@@ -12556,11 +12652,14 @@ ASIN-B0092FT3LQ:
   ext: "Copertina flessibile \u2013 1 gennaio 1978"
   image_path: thumbs/T_ASIN-B0092FT3LQ.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Einaudi
   tags:
+  - editori
   - _6
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: La chiave a stella
+  url: https://www.einaudi.it/catalogo-libri/narrativa-italiana/narrativa-italiana-del-novecento/la-chiave-a-stella-primo-levi-9788806219529/
   where: /saint-lazare-de-savene/salon/_6
 ASIN-B0098MD4B8:
   ASIN: B0098MD4B8
@@ -12671,11 +12770,14 @@ ASIN-B00NO4ODDO:
   ext: "Copertina flessibile \u2013 22 gennaio 2003"
   image_path: thumbs/T_ASIN-B00NO4ODDO.jpg
   lan: "\U0001F1EE\U0001F1F9"
+  publisher: Feltrinelli
   tags:
+  - editori
   - _1
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: In Patagonia
+  url: https://www.lafeltrinelli.it/in-patagonia-libro-bruce-chatwin/e/9788845904936
   where: /saint-lazare-de-savene/salon/_1
 ASIN-B00OB8WNMK:
   de: Denis de Rougemont

@@ -34,7 +34,13 @@ keats:
 978-8806114176:
   title: Sulla fiaba
   de: Italo Calvino 
+  publisher: Mondadori
+  url: https://www.oscarmondadori.it/libri/sulla-fiaba-italo-calvino/
   lan: 🇮🇹
+  tags:
+    - editori
+
+
 
 ASIN-B0007J1C9W:
   title: Selected stories

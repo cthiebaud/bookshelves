@@ -68,37 +68,61 @@
   title: Il mondo che ho visto
   ext: Copertina flessibile – 8 giugno 1994
   de: Mario Praz (Autore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845905100
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8845932076:
   title: L'innominabile attuale
   ext: Copertina flessibile – 28 settembre 2017
   de: Roberto Calasso (Autore)
+  publisher: Feltrinelli
+  url: https://www.lafeltrinelli.it/innominabile-attuale-libro-roberto-calasso/e/9788845932076
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8845925238:
   title: Il sangue di San Gennaro
   ext: Copertina flessibile – 20 ottobre 2010
   de: Sándor Márai (Autore), Antonio Donato Sciacovelli (a cura di)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845925238
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8845931215:
   title: La vegetariana
   ext: Copertina flessibile – 13 ottobre 2016
   de: Han Kang (Autore), Milena Zemira Ciccimarra (Traduttore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845931215
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8845911125:
   title: Todo modo
   ext: Copertina flessibile – 22 febbraio 1995
   de: Leonardo Sciascia (Autore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845911125
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8845926402:
   title: Suite francese
   ext: Copertina flessibile – 29 giugno 2011
   de: Irène Némirovsky (Autore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845920165
   lan: 🇮🇹
+  tags:
+    - editori
 
 ASIN-B003X72BGS:
   title: Nouveau guide de la version anglaise
@@ -121,9 +145,12 @@ ASIN-B003X72BGS:
   title: La prima guerra del football
   ext: e altre guerre di poveri - Copertina flessibile – 19 gennaio 2009
   de: Ryszard Kapuściński (Autore), Vera Verdiani (Traduttore)
+  publisher: Feltrinelli
+  url: https://www.feltrinellieditore.it/opera/la-prima-guerra-del-football-1-2/
   lan: 🇮🇹
   tags:
     - football
+    - editori
 
 ASIN-B07TJB59Y5:
   title: Morfologia della fiaba

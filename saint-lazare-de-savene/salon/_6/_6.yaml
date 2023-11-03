@@ -38,7 +38,11 @@ boh33:
   title: Quattro novelle sulle apparenze
   ext: Copertina flessibile – 25 gennaio 2012
   de: Gianni Celati (Autore)
+  publisher: Feltrinelli
+  url: https://www.feltrinellieditore.it/opera/quattro-novelle-sulle-apparenze-1/
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8817138338:
   title: L'infinito
@@ -50,7 +54,11 @@ boh33:
   title: L'anima del mondo e il pensiero del cuore
   ext: 481 Copertina flessibile – 3 luglio 2002
   de: James Hillman (Autore), Adriana Bottini (Traduttore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845917103
   lan: 🇮🇹
+  tags:
+    - editori
 
 boh34:
   title: Il compleanno
@@ -164,8 +172,12 @@ ASIN-B0092FT3LQ:
   title: La chiave a stella
   ext: Copertina flessibile – 1 gennaio 1978
   de: Primo Levi (Autore)
+  publisher: Einaudi
+  url: https://www.einaudi.it/catalogo-libri/narrativa-italiana/narrativa-italiana-del-novecento/la-chiave-a-stella-primo-levi-9788806219529/
   lan: 🇮🇹
-  
+  tags:
+    - editori
+
 978-9722029063:
   title: Tristano morre
   ext: (Portuguese) Copertina flessibile – 1 gennaio 2006

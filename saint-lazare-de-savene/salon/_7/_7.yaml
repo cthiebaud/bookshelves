@@ -76,7 +76,10 @@
   title: Palomar
   ext: Copertina rigida – 1 gennaio 1983
   de: Italo Calvino (Autore)
+  publisher: Mondadori
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-2213012162:
   title: Ce que parler veut dire

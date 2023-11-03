@@ -43,15 +43,21 @@
   title: Il consiglio d'Egitto
   ext: Copertina flessibile – 28 ottobre 2009
   de: Leonardo Sciascia (Autore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845906961
   lan: 🇮🇹
-  url: https://www.amazon.it/s\?k=978-8845924477
+  tags:
+    - editori
 
 978-8845906862:
-  title: L'insostenibile leggerezza dell'essere
+  title: L'insostenibile leggerezza dell’essere
   ext: Copertina flessibile
   de: Milan Kundera (Autore), Antonio Barbato (Traduttore), Giuseppe Dierna (Traduttore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845906046
   lan: 🇮🇹
-  url: https://www.amazon.it/s\?k=978-8845906862
+  tags:
+    - editori
 
 978-8804361459:
   title: I turbamenti del giovane Törless

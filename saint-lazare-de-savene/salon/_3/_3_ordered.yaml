@@ -187,7 +187,11 @@ boh28:
   title: La signorina Else
   ext: Copertina flessibile – 1 febbraio 1988
   de: Arthur Schnitzler (Autore), Renata Colorni (Traduttore)
+  publisher: Adelphi
+  url: https://www.adelphi.it/libro/9788845902741
   lan: 🇮🇹
+  tags:
+    - editori
 
 978-8815259868:
   title: Prudenza
