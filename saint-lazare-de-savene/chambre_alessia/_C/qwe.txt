@@ -1,0 +1,79 @@
+978-8850214013:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8850214013
+
+978-8804493044:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8804493044
+
+978-8804361459:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8804361459
+
+978-8804492603:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8804492603
+
+978-8804320555:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8804320555
+
+978-8804712572:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8804712572
+
+978-8804670308:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8804670308
+
+978-8804379973:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8804379973
+
+978-8845906862:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8845906862
+
+978-8845924477:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8845924477
+
+978-8807818820:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8807818820
+
+978-8807810008:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8807810008
+
+978-8865590003:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8865590003
+
+978-8806180799:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8806180799
+
+978-8806122058:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8806122058
+
+978-8845916755:
+  title: 
+  lan: 🇮🇹
+  url: https://www.amazon.it/s\?k=978-8845916755
