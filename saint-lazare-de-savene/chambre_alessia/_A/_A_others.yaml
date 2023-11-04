@@ -16,19 +16,6 @@
   lan: 🇮🇹
   url: https://www.amazon.it/s\?k=978-8845177873
 
-978-8877829429:
-  title: Lilli de Libris e la biblioteca magica
-  ext: Copertina flessibile – 14 settembre 2001
-  de: Jostein Gaarder (Autore), Klaus Hagerup (Autore), A. Tonzig (Traduttore)
-  lan: 🇮🇹
-  url: https://www.amazon.it/s\?k=978-8877829429
-
-978-8808176882:
-  title: Scrivere una canzone
-  de: Giuseppe Anastasi, Alfredo Rapetti Mogol (Autore)
-  lan: 🇮🇹
-  url: https://www.amazon.it/s\?k=978-8808176882
-
 978-8806122058:
   title: I Viceré
   ext: Copertina flessibile – 1 gennaio 1997
@@ -66,5 +53,12 @@ politica:
 ASIN-B00H79JXY6:
   title: Psicoanalisi e femminismo.
   de: Juliet Mitchell
+  lan: 🇮🇹
+
+978-8845181832:
+  title: Quando eravamo in tre
+  title2: Che fatica avere dei legami - Che avventura crescere
+  ext: Copertina rigida – 26 marzo 2003
+  de: Aidan Chambers (Autore), M. C. Scotto di Santillo (Traduttore)
   lan: 🇮🇹
 
