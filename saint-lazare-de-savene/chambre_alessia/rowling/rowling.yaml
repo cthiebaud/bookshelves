@@ -1,9 +1,25 @@
+978-0316228534:
+  title: The Casual Vacancy
+  ext: Hardcover – September 27, 2012
+  de: J. K. Rowling (Author)
+  lan: 🇬🇧
+
 978-0751584189:
   title: Cormoran Strike Book 6 - The Ink Black Heart
   ext: Hardcover – 30 Aug. 2022
   de: Robert Galbraith (Author)
   lan: 🇬🇧
   url: https://www.amazon.co.uk/s\?k=978-0751584189
+  tags:
+    - polar
+    - rowling
+
+978-0316349932:
+  title: Cormoran Strike Book 3 - Career of Evil
+  ext: Hardcover – 20 Oct. 2015
+  de: Robert Galbraith (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.co.uk/s\?k=978-0316349932
   tags:
     - polar
     - rowling
@@ -28,24 +44,6 @@
     - polar
     - rowling
 
-978-0316349932:
-  title: Cormoran Strike Book 3 - Career of Evil
-  ext: Hardcover – 20 Oct. 2015
-  de: Robert Galbraith (Author)
-  lan: 🇬🇧
-  url: https://www.amazon.co.uk/s\?k=978-0316349932
-  tags:
-    - polar
-    - rowling
-
-978-2070572670:
-  title: Harry Potter, 6 - Harry Potter et le Prince de sang mêlé
-  exty: Broché – Grand livre, 1 octobre 2005
-  de: J. K. Rowling (Auteur)
-  lan: 🇫🇷
-  tags:
-    - harry_potter
-
 978-2070541270:
   title: Harry Potter, 1 - Harry Potter à l'école des sorciers
   de: J. K. Rowling (Auteur), Jean-François Ménard (Traduction)
@@ -66,12 +64,32 @@
   lan: 🇫🇷
   url: https://www.amazon.fr/s\?k=978-2070543588
 
+978-2070572670:
+  title: Harry Potter, 6 - Harry Potter et le Prince de sang mêlé
+  exty: Broché – Grand livre, 1 octobre 2005
+  de: J. K. Rowling (Auteur)
+  lan: 🇫🇷
+  tags:
+    - harry_potter
+
 978-8877827029:
   title: Harry Potter, 1 - Harry Potter e la pietra filosofale
   ext: (Vol. 1) Relié – 17 octobre 2013
   de: J. K. Rowling (Auteur), Stefano Bartezzaghi (Sous la direction de), Marina Astrologo (Traduction)
   lan: 🇮🇹
   url: https://www.amazon.it/s\?k=978-8877827029
+
+978-0747546245:
+  title: Harry Potter, 4 - Harry Potter and the Goblet of Fire
+  de: J. K. Rowling (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.co.uk/s\?k=978-0747546245
+
+978-0747551003:
+  title: Harry Potter, 5 - Harry Potter and the Order of the Phoenix
+  de: J. K. Rowling (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.co.uk/s\?k=978-0747551003
 
 978-0747581086:
   title: Harry Potter, 6 - Harry Potter and the Half-Blood Prince
@@ -85,49 +103,40 @@
   lan: 🇬🇧
   url: https://www.amazon.co.uk/s\?k=978-0747591054
 
-978-0747551003:
-  title: Harry Potter, 5 - Harry Potter and the Order of the Phoenix
-  de: J. K. Rowling (Author)
-  lan: 🇬🇧
-  url: https://www.amazon.co.uk/s\?k=978-0747551003
-
-978-0747546245:
-  title: Harry Potter, 4 - Harry Potter and the Goblet of Fire
-  de: J. K. Rowling (Author)
-  lan: 🇬🇧
-  url: https://www.amazon.co.uk/s\?k=978-0747546245
-
-978-0747554660:
-  title: Fantastic Beasts and Where to Find Them 
-  ext: (Harry Potter's Schoolbooks S.)
-  de: Newt Scamander 
-  lan: 🇬🇧
-  url: https://www.amazon.co.uk/s\?k=978-0747554660
-  tags:
-    - small
-
-978-0747554714:
-  title: Quidditch Through the Ages
-  ext: (Harry Potter's Schoolbooks S.)
-  de: Kennilworthy Whisp
-  lan: 🇬🇧
-  url: https://www.amazon.co.uk/s\?k=978-0747554714
-  tags:
-    - small
-
-978-8873660323:
-  title: Harry Potter. Il libro degli stickers
-  de: Anonyme
-  lan: 🇮🇹
-
-978-0316228534:
-  title: The Casual Vacancy
-  ext: Hardcover – September 27, 2012
-  de: J. K. Rowling (Author)
-  lan: 🇬🇧
-
 978-2070528189:
   title: Harry Potter, 3 - Harry Potter et le Prisonnier d'Azkaban
   ext: Broché – 1 octobre 1999
   de: J. K. Rowling (Auteur), Jean-Claude Götting (Illustrations), Jean-François Ménard (Traduction)
   lan: 🇫🇷
+
+978-0747554660:
+  title: Fantastic Beasts and Where to Find Them 
+  ext: (Harry Potter's Schoolbooks S.)
+  de: Newt Scamander, J. K. Rowling (Auteur)
+  lan: 🇬🇧
+  url: https://www.amazon.co.uk/s\?k=978-0747554660ß
+  tags:
+    - small
+
+978-2070549283:
+  title: Les Animaux fantastiques Poche – 29 août 2001
+  de: Newt Scamander, J. K. Rowling (Auteur)
+  lan: 🇫🇷
+
+978-0747554714:
+  title: Quidditch Through the Ages
+  ext: (Harry Potter's Schoolbooks S.)
+  de: Kennilworthy Whisp, J. K. Rowling (Auteur)
+  lan: 🇬🇧
+  url: https://www.amazon.co.uk/s\?k=978-0747554714
+  tags:
+    - small
+
+## ∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ß
+
+978-0747542988:
+  title: Harry Potter and the Philosopher's Stone
+  ext: Paperback – Import, January 1, 1998
+  de: J. K. Rowling (Author)
+  lan: 🇬🇧
+

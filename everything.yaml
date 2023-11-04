@@ -1564,11 +1564,11 @@
   image_path: thumbs/T_978-0747542988.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _6
+  - rowling
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Harry Potter and the Philosopher's Stone
-  where: /saint-lazare-de-savene/salon/_6
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0747546245:
   de: J. K. Rowling (Author)
   image_path: thumbs/T_978-0747546245.jpeg
@@ -1592,7 +1592,7 @@
   url: https://www.amazon.co.uk/s\?k=978-0747551003
   where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0747554660:
-  de: Newt Scamander
+  de: Newt Scamander, J. K. Rowling (Auteur)
   ext: (Harry Potter's Schoolbooks S.)
   image_path: thumbs/T_978-0747554660.jpeg
   lan: "\U0001F1EC\U0001F1E7"
@@ -1602,10 +1602,10 @@
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Fantastic Beasts and Where to Find Them
-  url: https://www.amazon.co.uk/s\?k=978-0747554660
+  url: "https://www.amazon.co.uk/s\\?k=978-0747554660\xDF"
   where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-0747554714:
-  de: Kennilworthy Whisp
+  de: Kennilworthy Whisp, J. K. Rowling (Auteur)
   ext: (Harry Potter's Schoolbooks S.)
   image_path: thumbs/T_978-0747554714.jpeg
   lan: "\U0001F1EC\U0001F1E7"
@@ -3887,6 +3887,16 @@
   - "\U0001F1EB\U0001F1F7"
   title: Harry Potter, 4 - Harry Potter et la Coupe de Feu
   url: https://www.amazon.fr/s\?k=978-2070543588
+  where: /saint-lazare-de-savene/chambre_alessia/rowling
+978-2070549283:
+  de: Newt Scamander, J. K. Rowling (Auteur)
+  image_path: thumbs/T_978-2070549283.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - rowling
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Les Animaux fantastiques Poche \u2013 29 ao\xFBt 2001"
   where: /saint-lazare-de-savene/chambre_alessia/rowling
 978-2070552023:
   de: Raymond Queneau (Auteur)
@@ -11992,11 +12002,11 @@
   image_path: thumbs/T_978-8873660323.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - rowling
+  - hardcovers
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Harry Potter. Il libro degli stickers
-  where: /saint-lazare-de-savene/chambre_alessia/rowling
+  where: /saint-lazare-de-savene/chambre_alessia/hardcovers
 978-8873818960:
   de: Meris Gaspari (a cura di)
   ext: "Nuova ediz. Copertina flessibile \u2013 29 novembre 2016"
