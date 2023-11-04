@@ -215,12 +215,12 @@
   image_path: thumbs/T_978-0007152520.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Big Bang
   url: https://www.amazon.com/s\?k=978-0007152520
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-0007351039:
   de: Mark Twain (Author)
   image_path: thumbs/T_978-0007351039.jpg
@@ -608,12 +608,12 @@
   image_path: thumbs/T_978-0141346090.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: An Abundance of Katherines
   url: https://www.amazon.com/s\?k=978-0141346090
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-0143113720:
   de: Ian Kershaw (Author)
   ext: "Paperback \u2013 Illustrated, May 27, 2008"
@@ -887,12 +887,12 @@
   image_path: thumbs/T_978-0340994689.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _A
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: One Day
   url: https://www.amazon.com/s\?k=978-0340994689
-  where: /saint-lazare-de-savene/chambre_alessia/_A
+  where: /saint-lazare-de-savene/chambre_alessia
 978-0345430571:
   de: Phyllis Dorothy James (Auteur)
   image_path: thumbs/T_978-0345430571.jpg
@@ -1312,12 +1312,12 @@
   image_path: thumbs/T_978-0571154913.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Remains Of The Day
   url: https://www.amazon.co.uk/s\?k=978-0571154913
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-0571167418:
   de: Phyllis Dorothy James (Auteur)
   image_path: thumbs/T_978-0571167418.jpg
@@ -1740,12 +1740,12 @@
   image_path: thumbs/T_978-0811201896.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: Baudelaire
   url: https://www.amazon.com/s\?k=978-0811201896
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-0812969658:
   de: Alan Bennett (Author)
   ext: "(Today Show Book Club \xB05) Paperback \u2013 November 1, 2002"
@@ -2403,12 +2403,12 @@
   image_path: thumbs/T_978-2012372368.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - _C
+  - _E
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Du r\xEAve pour les oufs"
   url: https://www.amazon.fr/s\?k=978-2012372368
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2012372467:
   de: "S\xE9gol\xE8ne Royal (Auteur), Marie-Fran\xE7oise Colombani (Narrateur)"
   ext: "S\xE9gol\xE8ne Royal r\xE9pond \xE0 Marie-Fran\xE7oise Colombani Broch\xE9\
@@ -2608,6 +2608,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: "J\xE9sus apr\xE8s J\xE9sus - L'origine du christianisme"
   where: /saint-jean-lipion/chambre/favourite
+978-2020557719:
+  de: Pierre Bourdieu (Auteur)
+  ext: Poche
+  image_path: thumbs/T_978-2020557719.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: La Domination masculine
+  url: https://www.amazon.fr/s\?k=978-2020557719
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2020796569:
   de: Gerard Mordillat (Auteur), Jerome Prieur (Auteur)
   ext: "Broch\xE9 \u2013 6 novembre 2008"
@@ -2700,6 +2712,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Anatomie de la Terreur - Le processus r\xE9volutionnaire 1787-1793"
   where: /saint-jean-lipion/chambre/biographie
+978-2021427424:
+  de: "St\xE9phane Foucart (Auteur)"
+  ext: "Broch\xE9 \u2013 Grand livre, 29 ao\xFBt 2019"
+  image_path: thumbs/T_978-2021427424.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Et le monde devint silencieux - Comment lagrochimie a d\xE9truit les insectes"
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2021518689:
   de: Anna Colin Lebedev (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 2 septembre 2022"
@@ -3299,6 +3322,18 @@
   title: La Guerre des mondes
   url: https://www.amazon.fr/s\?k=978-2070308552
   where: /saint-lazare-de-savene/salon/random
+978-2070311880:
+  de: Leprince de Beaumont (Auteur), Willi Glasauer (Illustrations)
+  ext: "Broch\xE9 \u2013 1 d\xE9cembre 1989"
+  image_path: thumbs/T_978-2070311880.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "La Belle et la B\xEAte"
+  url: https://www.amazon.fr/s\?k=978-2070311880
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2070320691:
   de: "Fran\xE7ois Villon (Auteur), Jean Dufournet (Editeur)"
   image_path: thumbs/T_978-2070320691.jpg
@@ -3852,6 +3887,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: Flaubert
   where: /saint-jean-lipion/chambre/biographie
+978-2070512546:
+  de: Roald Dahl (Auteur)
+  ext: "Poche \u2013 Illustr\xE9, 16 juin 2016"
+  image_path: thumbs/T_978-2070512546.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Matilda
+  url: https://www.amazon.fr/s\?k=978-2070512546
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2070513284:
   de: "Antoine de Saint-Exup\xE9ry (Autore)"
   image_path: thumbs/T_978-2070513284.jpg
@@ -3862,6 +3909,40 @@
   - "\U0001F1EB\U0001F1F7"
   title: Le petit prince
   url: https://www.amazon.fr/s\?k=978-2070513284
+  where: /saint-lazare-de-savene/chambre_alessia/_E
+978-2070513468:
+  de: Sir Arthur Conan Doyle (Auteur), Bernard Tourville (Traduction)
+  ext: Poche
+  image_path: thumbs/T_978-2070513468.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Le Chien des Baskerville
+  url: https://www.amazon.fr/s\?k=978-2070513468
+  where: /saint-lazare-de-savene/chambre_alessia/_E
+978-2070514427:
+  de: Jean-Philippe Arrou-Vignod (Auteur), Serge Bloch (Illustrations)
+  ext: "Broch\xE9 \u2013 Illustr\xE9, 1 juin 2017"
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Enqu\xEAte au coll\xE8ge"
+  url: https://www.amazon.fr/s\?k=978-2070514427
+  where: /saint-lazare-de-savene/chambre_alessia/_E
+978-2070522545:
+  de: Danziger/Martin, Virginia Lopez-Ballesteros, Olivier Malthet (Auteur)
+  image_path: thumbs/T_978-2070522545.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "P.S. R\xE9ponds-moi vite ! Poche \u2013 20 f\xE9vrier 1999"
+  url: https://www.amazon.fr/s\?k=978-2070522545
   where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2070528189:
   de: "J. K. Rowling (Auteur), Jean-Claude G\xF6tting (Illustrations), Jean-Fran\xE7\
@@ -4587,6 +4668,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: Commencements
   where: /saint-jean-lipion/chambre/editor
+978-2081638471:
+  de: "Durand Jean-Beno\xEEt (Auteur)"
+  image_path: thumbs/T_978-2081638471.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: BD mode d'emploi
+  url: https://www.amazon.fr/s\?k=978-2081638471
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2081640023:
   de: Thierry Alquier (Autore)
   ext: "MYSTERE/POLICIER, DES 9/10 ANS Libro \u2013 7 febbraio 1997"
@@ -4695,7 +4787,7 @@
   title: "Philosophes et philosophie 2. De Locke \xE0 nos jours"
   where: /saint-lazare-de-savene/salon/_6
 978-2092821152:
-  de: Claude Bourgeyx (Auteur), Bruno Jarret (Auteur), Serge Bloch (Auteur)
+  de: Claude Bourgeyx, Serge Bloch, Bruno Jarret (Auteur)
   ext: "Broch\xE9 \u2013 13 juin 2002"
   image_path: thumbs/T_978-2092821152.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -4703,7 +4795,7 @@
   - _E
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
-  title: "Le fil \xE0 retordre"
+  title: "Le fil \xE0 retordre - 42 histoires extravagantes"
   url: https://www.amazon.fr/s\?k=978-2092821152
   where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2130368946:
@@ -5277,6 +5369,39 @@
   - "\U0001F1EB\U0001F1F7"
   title: Candide ou l'Optimisme
   where: /saint-jean-lipion/chambre/favourite
+978-2211025973:
+  de: Ulf Nilsson (Auteur), Eva Eriksson (Auteur)
+  ext: "Poche \u2013 4 mai 1994"
+  image_path: thumbs/T_978-2211025973.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: La petite soeur de Cricri-Lapin
+  url: https://www.amazon.fr/s\?k=978-2211025973
+  where: /saint-lazare-de-savene/chambre_alessia/_E
+978-2211049283:
+  de: Charles Perrault (Auteur)
+  image_path: thumbs/T_978-2211049283.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Contes Broch\xE9 \u2013 20 d\xE9cembre 2013"
+  url: https://www.amazon.fr/s\?k=2211049281
+  where: /saint-lazare-de-savene/chambre_alessia/_E
+978-2211071611:
+  de: "Lewis Carroll (Auteur), Bernard No\xEBl (Auteur), John Tenniel (Auteur)"
+  image_path: thumbs/T_978-2211071611.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Alice racont\xE9e aux petits Poche \u2013 1 janvier 1980"
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2213003795:
   de: Joachim-Ernst Berendt (Auteur)
   ext: "Reli\xE9 \u2013 1 janvier 1976"
@@ -5549,6 +5674,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Paroles de Fran\xE7ois Truffaut"
   where: /saint-jean-lipion/chambre/cinema
+978-2226443885:
+  de: "Am\xE9lie Nothomb (Auteur)"
+  ext: "Broch\xE9 \u2013 Grand livre, 21 ao\xFBt 2019"
+  image_path: thumbs/T_978-2226443885.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Soif
+  url: https://www.amazon.fr/s\?k=978-2226443885
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2227470743:
   de: Steven Nadler (Auteur)
   ext: "Broch\xE9 \u2013 23 janvier 2003"
@@ -5653,6 +5790,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Dans les ge\xF4les de Sib\xE9rie"
   where: /saint-jean-lipion/chambre/favourite
+978-2244194028:
+  de: Charles Dickens (Auteur)
+  ext: "Poche \u2013 13 ao\xFBt 2014"
+  image_path: thumbs/T_978-2244194028.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Oliver Twist - Texte abr\xE9g\xE9"
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2246138822:
   de: Primo Levi (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1988"
@@ -6324,6 +6472,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: Les Onze mille verges
   where: /saint-jean-lipion/chambre/enfer
+978-2277300786:
+  de: George Sand (Auteur)
+  ext: "Broch\xE9 \u2013 1 septembre 1999"
+  image_path: thumbs/T_978-2277300786.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: La Mare au diable
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2283020203:
   de: "Jo\xEBl Egloff (Auteur)"
   ext: "Prix du Livre Inter 2005 Broch\xE9 \u2013 Grand livre, 7 janvier 2005"
@@ -6626,6 +6785,17 @@
   title: Paniers vapeurs
   url: https://www.amazon.it/s\?k=978-2501073882
   where: /saint-lazare-de-savene/salon/cuisine
+978-2700046205:
+  de: Elaine Mills (Auteur)
+  ext: "Histoire d'une maison de poup\xE9e Reli\xE9 \u2013 14 mars 2000"
+  image_path: thumbs/T_978-2700046205.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: La maison au bout du chemin
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2700053807:
   de: Richard Cawley (Auteur)
   ext: "Reli\xE9"
@@ -6832,16 +7002,16 @@
   where: /saint-lazare-de-savene/salon/red
 978-2708705319:
   de: "Aim\xE9 C\xE9saire (Auteur)"
-  ext:, suivi de: "Discours sur la N\xE9gritude Poche \u2013 11 juillet 2000"
-  image_path: thumbs/T_978-2708705319.jpg
+  ext: "suivi de Discours sur la N\xE9gritude Poche \u2013 11 juillet 2000"
+  image_path: thumbs/T_978-2708705319.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - _C
+  - _E
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: Discours sur le colonialisme
   url: https://www.amazon.fr/s\?k=978-2708705319
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2709612968:
   de: Myriam Anissimov (Auteur)
   ext: "ou La Trag\xE9die d'un optimiste - Broch\xE9 \u2013 23 octobre 1996"
@@ -7091,6 +7261,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: De cendre et d'os
   where: /saint-jean-lipion/chambre/polar
+978-2744124389:
+  de: Christian Grenier (Auteur)
+  image_path: thumbs/T_978-2744124389.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Le pianiste sans visage Reli\xE9 \u2013 1 janvier 1999"
+  url: https://www.amazon.fr/s\?k=379-687
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2744135002:
   de: "Am\xE9lie Nothomb (Auteur)"
   ext: "Broch\xE9"
@@ -7113,6 +7294,18 @@
   - "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres compl\xE8tes - 1 - Po\xE9sies"
   where: /saint-jean-lipion/chambre/rimbaud
+978-2747013550:
+  de: C. Grenier (Auteur)
+  ext: "Broch\xE9 \u2013 15 avril 2004"
+  image_path: thumbs/T_978-2747013550.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Mercredi mensonge
+  url: https://www.amazon.fr/s\?k=978-2747013550
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2749104201:
   de: Philippe Val (Auteur)
   ext: "Poche \u2013 5 mai 2005"
@@ -7474,6 +7667,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: Les Aveux
   where: /saint-jean-lipion/chambre/editor
+978-2848990248:
+  de: "Dani\xE8le Festy (Auteur)"
+  ext: "Broch\xE9 \u2013 15 mars 2004"
+  image_path: thumbs/T_978-2848990248.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - _E
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "La m\xE9nopause en douceur"
+  where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2849010471:
   de: "Auguste Guinnard, Paul Hyades, Henry de La Vaulx, Otto Nordenskj\xF6ld (Auteur),\
     \ Jean Raspail (Pr\xE9face)"
@@ -8269,12 +8473,12 @@
   image_path: thumbs/T_978-4990211592.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Mio padre
   url: https://www.amazon.it/s\?k=978-4990211592
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8207036074:
   de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)
   ext: "Poche \u2013 18 juin 1982"
@@ -8374,12 +8578,12 @@
   image_path: thumbs/T_978-8804342847.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il marchese di Roccaverdina
   url: https://www.amazon.it/s\?k=978-8804342847
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8804343257:
   de: Charles Dickens (Autore), Giuseppe Tomasi di Lampedusa (Collaboratore), Alessandro
     Monti (Presentazione), Caesara Mazzola (Traduttore)
@@ -8387,12 +8591,12 @@
   image_path: thumbs/T_978-8804343257.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Grandi speranze
   url: https://www.amazon.it/s\?k=978-8804343257
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8804347286:
   de: William Butler Yeats (Autore)
   image_path: thumbs/T_978-8804347286.webp
@@ -8566,7 +8770,7 @@
   where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8804492603:
   de: Thomas Mann (Autore)
-  ext: "Copertina flessibile \u2013 13 gennaio 2015"
+  ext: Copertina flessibile
   image_path: thumbs/T_978-8804492603.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
@@ -9582,12 +9786,12 @@
   image_path: thumbs/T_978-8807820434.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Origine della disuguaglianza
   url: https://www.amazon.it/s\?k=978-8807820434
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8807821196:
   de: John Donne (Autore), Rosa Tavelli (Traduttore)
   ext: "Testo originale a fronte Copertina flessibile \u2013 marzo 1995"
@@ -10057,12 +10261,12 @@
   image_path: thumbs/T_978-8817005005.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _A
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: La carne, lo spirito e l'amore
   url: https://www.amazon.it/s\?k=978-8817005005
-  where: /saint-lazare-de-savene/chambre_alessia/_A
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8817009430:
   de: Peter Gomez, Marco Travaglio (Autore)
   ext: "Copertina flessibile \u2013 8 marzo 2006"
@@ -10184,12 +10388,12 @@
   image_path: thumbs/T_978-8817124287.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Ivanhoe
   url: https://www.amazon.it/s\?k=978-8817124287
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8817138338:
   de: Antonino Zichichi (Autore)
   ext: "Copertina flessibile \u2013 1 febbraio 1994"
@@ -10218,12 +10422,12 @@
   image_path: thumbs/T_978-8817169400.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: "La brevit\xE0 della vita"
   url: https://www.amazon.it/s\?k=978-8817169400
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8817258739:
   de: Stephen Hawking (Autore), Ron Miller (Illustratore), Carl Sagan (Presentazione),
     Libero Sosio (Traduttore)
@@ -10231,12 +10435,12 @@
   image_path: thumbs/T_978-8817258739.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Dal big bang ai buchi neri - Breve storia del tempo
   url: https://www.amazon.it/s\?k=978-8817258739
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8817676823:
   de: Georges Perec (Autore)
   ext: "Copertina rigida \u2013 1 gennaio 1990"
@@ -10268,12 +10472,12 @@
   image_path: thumbs/T_978-8820114695.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _A
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il buio oltre la siepe
   url: https://www.amazon.it/s\?k=978-8820114695
-  where: /saint-lazare-de-savene/chambre_alessia/_A
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8823506367:
   de: Alain de Botton, John Armstrong (Autore), S. De Franco, F. Angelini (Traduttore)
   ext: "The school of life Copertina rigida \u2013 14 novembre 2013"
@@ -11016,12 +11220,12 @@
   image_path: thumbs/T_978-8845177873.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _A
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Cuore
   url: https://www.amazon.it/s\?k=978-8845177873
-  where: /saint-lazare-de-savene/chambre_alessia/_A
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8845180132:
   de: Natalie Babbitt (Autore), B. Masini (Traduttore)
   image_path: thumbs/T_978-8845180132.jpg
@@ -11038,12 +11242,12 @@
   image_path: thumbs/T_978-8845181832.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _A
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Quando eravamo in tre
   title2: Che fatica avere dei legami - Che avventura crescere
-  where: /saint-lazare-de-savene/chambre_alessia/_A
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8845199820:
   de: Catherine Felix (Autore)
   ext: "Ediz. illustrata Copertina rigida \u2013 Illustrato, 22 ottobre 2014"
@@ -11181,17 +11385,15 @@
   where: /saint-lazare-de-savene/salon/_8
 978-8845906862:
   de: Milan Kundera (Autore), Antonio Barbato (Traduttore), Giuseppe Dierna (Traduttore)
-  ext: Copertina flessibile
+  ext: "Copertina flessibile \u2013 29 maggio 1989"
   image_path: thumbs/T_978-8845906862.jpeg
   lan: "\U0001F1EE\U0001F1F9"
-  publisher: Adelphi
   tags:
-  - editori
   - _C
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
-  title: "L'insostenibile leggerezza dell\u2019essere"
-  url: https://www.adelphi.it/libro/9788845906046
+  title: L'insostenibile leggerezza dell'essere
+  url: https://www.amazon.it/s\?k=978-8845906862
   where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8845906886:
   de: John R. R. Tolkien (Autore), Elena Jeronimidis Conte (Traduttore)
@@ -11605,12 +11807,12 @@
   image_path: thumbs/T_978-8854169869.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Poesie zen
   url: https://www.amazon.it/s\?k=978-8854169869
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8854184190:
   de: Renato Tavella (Autore)
   ext: "Copertina flessibile \u2013 9 luglio 2015"
@@ -11757,12 +11959,12 @@
   image_path: thumbs/T_978-8861901742.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Odio gli indifferenti
   url: https://www.amazon.it/s\?k=978-8861901742
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8862080873:
   de: Daniele Montruccoli (Autore)
   ext: "Ediz. italiana e inglese Copertina rigida \u2013 1 gennaio 2009"
@@ -11780,11 +11982,12 @@
   image_path: thumbs/T_978-8862569873.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - _A
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Il labirinto dei libri sognanti
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  url: https://www.amazon.it/s\?k=978-8862569873
+  where: /saint-lazare-de-savene/chambre_alessia/_A
 978-8865209028:
   de: Emily Kydd (Autore), Alex Luck (Fotografo), Marianna Sala (Traduttore)
   ext: "Oltre 70 ricette a base di riso. Ediz. a colori Copertina rigida \u2013 Illustrato,\
@@ -11817,12 +12020,12 @@
   image_path: thumbs/T_978-8865492987.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Dove iniziano i Balcani
   url: https://www.amazon.it/s\?k=978-8865492987
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8865590003:
   de: Tracy Chevalier (Autore), Luciana Pugliese (Traduttore)
   ext: "Copertina flessibile \u2013 4 maggio 2010"
@@ -12246,24 +12449,24 @@
   image_path: thumbs/T_978-8879262989.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _A
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Kamo - L'agenzia Babele
   url: https://www.amazon.it/s\?k=978-8879262989
-  where: /saint-lazare-de-savene/chambre_alessia/_A
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8879263108:
   de: Ian McEwan (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1999"
   image_path: thumbs/T_978-8879263108.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: L'inventore di sogni
   url: https://www.amazon.it/s\?k=978-8879263108
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8879272391:
   de: Babette Cole (Autore), G. Lughi (Traduttore)
   image_path: thumbs/T_978-8879272391.png
@@ -12808,12 +13011,12 @@
   image_path: thumbs/T_978-8899240387.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _C
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: "La Via degli D\xE8i"
   url: https://www.amazon.it/s\?k=978-8899240387
-  where: /saint-lazare-de-savene/chambre_alessia/_C
+  where: /saint-lazare-de-savene/chambre_alessia
 978-8899920012:
   de: Guido Moretti (Autore)
   ext: "Copertina rigida - Edizioni Tipoarte Bologna \u2013 2016"
@@ -13247,11 +13450,11 @@ ASIN-B00H79JXY6:
   image_path: thumbs/T_ASIN-B00H79JXY6.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _A
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Psicoanalisi e femminismo.
-  where: /saint-lazare-de-savene/chambre_alessia/_A
+  where: /saint-lazare-de-savene/chambre_alessia
 ASIN-B00HFSBGAS:
   de: William Shakespeare (Autore)
   ext: Copertina rigida
@@ -14012,22 +14215,22 @@ politica:
   image_path: thumbs/T_politica.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _A
+  - chambre_alessia
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Elogio della politica
   url: https://centri.unibo.it/permanenza/it/agenda/elogio-della-politica-i-classici-vii-edizione
-  where: /saint-lazare-de-savene/chambre_alessia/_A
+  where: /saint-lazare-de-savene/chambre_alessia
 revolutionibus:
   de: Giuliano Giuliani, Carlo Monaco
   image_path: thumbs/T_revolutionibus.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - _E
+  - _F
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: "De revolutionibus orbium caelestium - La ricerca dealla sfericit\xE0"
-  where: /saint-lazare-de-savene/chambre_alessia/_E
+  where: /saint-lazare-de-savene/chambre_alessia/_F
 san_giovanni_lipioni_sulle_orme_dei_padri:
   de: Luciano Picciani
   image_path: thumbs/T_san_giovanni_lipioni_sulle_orme_dei_padri.jpeg
