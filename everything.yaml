@@ -14447,6 +14447,76 @@ gai-luron:
   - "\U0001F1EB\U0001F1F7"
   title: Gai-Luron - Chauds les marrons ! Chauds !
   where: /saint-lazare-de-savene/salon/small
+i_love_you_baby_1:
+  de: Yoko Maki
+  image_path: thumbs/T_i_love_you_baby_1.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - manga
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: I Love You Baby 1
+  where: /saint-lazare-de-savene/chambre_alessia/manga
+i_love_you_baby_2:
+  de: Yoko Maki
+  image_path: thumbs/T_i_love_you_baby_2.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - manga
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: I Love You Baby 2
+  where: /saint-lazare-de-savene/chambre_alessia/manga
+i_love_you_baby_3:
+  de: Yoko Maki
+  image_path: thumbs/T_i_love_you_baby_3.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - manga
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: I Love You Baby 3
+  where: /saint-lazare-de-savene/chambre_alessia/manga
+i_love_you_baby_4:
+  de: Yoko Maki
+  image_path: thumbs/T_i_love_you_baby_4.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - manga
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: I Love You Baby 4
+  where: /saint-lazare-de-savene/chambre_alessia/manga
+i_love_you_baby_5:
+  de: Yoko Maki
+  image_path: thumbs/T_i_love_you_baby_5.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - manga
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: I Love You Baby 5
+  where: /saint-lazare-de-savene/chambre_alessia/manga
+i_love_you_baby_6:
+  de: Yoko Maki
+  image_path: thumbs/T_i_love_you_baby_6.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - manga
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: I Love You Baby 6
+  where: /saint-lazare-de-savene/chambre_alessia/manga
+i_love_you_baby_7:
+  de: Yoko Maki
+  image_path: thumbs/T_i_love_you_baby_7.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - manga
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: I Love You Baby 7
+  where: /saint-lazare-de-savene/chambre_alessia/manga
 keats:
   de: John Keats
   image_path: thumbs/T_keats.jpg
