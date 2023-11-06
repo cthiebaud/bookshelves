@@ -49,11 +49,11 @@ images = []
 extensions = ['jpg', 'jpeg', 'webp', 'png']
 
 def classify(hue, lgt, sat):
-    if (lgt < 0.2):
+    if (lgt < 0.1):
         return "black"
-    if (lgt > 0.8):
+    if (lgt > 0.9):
         return "white"
-    if (sat < 0.25):
+    if (sat < 0.2):
         return "gray"
     if (hue < 30/360.0)   :
         return "red"

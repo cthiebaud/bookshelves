@@ -679,6 +679,20 @@
   title: Autograph Man
   url: https://www.amazon.com/Autograph-Man-Zadie-Smith/dp/0140276343
   where: /saint-lazare-de-savene/chambre_alessia/_H
+978-0140294910:
+  de: Jonathan Coe (Autore)
+  dominant_color: rgb(98, 131, 194)
+  ext: "Copertina flessibile \u2013 31 agosto 2000"
+  image_path: thumbs/T_978-0140294910.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  - blue
+  title: A Touch of Love
+  url: https://www.amazon.com/s\?k=978-0140294910
+  where: /saint-lazare-de-savene/salon/random
 978-0140430011:
   de: "Emily Bront\xEB (Autore), David Daiches (Editor)"
   dominant_color: rgb(166, 151, 133)
@@ -1015,12 +1029,12 @@
   image_path: thumbs/T_978-0195016529.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - black
   title: The Oxford Anthology of English Literature - Volume VI - Modern British Literature
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-0199569410:
   de: Rainer Maria Rilke (Author), Robert Vilain (Author), Susan Ranson (Author),
     Marielle Sutherland (Author)
@@ -1138,12 +1152,12 @@
   image_path: thumbs/T_978-0316109338.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - red
   title: The Ascent of Man
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-0316228534:
   de: J. K. Rowling (Author)
   dominant_color: rgb(213, 65, 42)
@@ -1461,13 +1475,13 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - "th\xE9atre"
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - white
   title: King Richard III
   url: https://www.amazon.com/s\?k=978-0415026949
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-0415123433:
   de: Ronald Carter (Author), John McRae (Author), Malcolm Bradbury (Foreword)
   dominant_color: rgb(24, 32, 41)
@@ -1503,13 +1517,13 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - "th\xE9atre"
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - yellow
   title: Macbeth
   url: https://www.amazon.com/s\?k=978-0416101607
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-0416101607-2:
   de: William Shakespeare (Author), Kenneth Muir (Editor)
   dominant_color: rgb(237, 188, 122)
@@ -1518,13 +1532,13 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - "th\xE9atre"
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - yellow
   title: Macbeth
   url: https://www.amazon.com/s\?k=978-0416101607
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-0451163516:
   de: Ken Follett (Author)
   dominant_color: rgb(196, 201, 216)
@@ -1545,13 +1559,13 @@
   image_path: thumbs/T_978-0460870344.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - gray
   title: The Turn Of The Screw
   url: https://www.amazon.com/s\?k=978-0460870344
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-0465026562:
   de: Douglas Hofstadter (Auteur)
   dominant_color: rgb(241, 178, 96)
@@ -1560,12 +1574,12 @@
   lan: "\U0001F1EC\U0001F1E7"
   publisher: Basic Books
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - yellow
   title: "G\xF6del, Escher, Bach: an Eternal Golden Braid"
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-0500293690:
   de: Eric Karpeles (Auteur), Pierre Saint-Jean (Traduction)
   dominant_color: rgb(231, 233, 230)
@@ -1626,13 +1640,13 @@
   image_path: thumbs/T_978-0521422123.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - red
   title: The Economics of Art and Culture
   url: https://www.amazon.com/s\?k=978-0521422123
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-0521517140:
   de: Stephen Dobson, John Goddard (Author)
   dominant_color: rgb(191, 183, 182)
@@ -1974,12 +1988,12 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - roth
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - black
   title: Everyman
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-0670069712:
   de: Philip Roth (Author)
   dominant_color: rgb(111, 104, 92)
@@ -1988,13 +2002,13 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - roth
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - gray
   title: The Humbling
   url: https://www.amazon.com/s\?k=978-0670069712
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-0671039721:
   de: Stephen King (Author)
   dominant_color: rgb(231, 69, 50)
@@ -2838,13 +2852,13 @@
   image_path: thumbs/T_978-1524731656.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - black
   title: Bad Blood
   url: https://www.amazon.com/s\?k=978-1524731656
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-1529077261:
   de: Don DeLillo (Author)
   dominant_color: rgb(176, 176, 185)
@@ -3026,12 +3040,12 @@
   lan: "\U0001F1EC\U0001F1E7"
   publisher: Canterbury Classics
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - red
   title: Leaves of Grass
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-1741211160:
   de: Winston Graham (Author)
   dominant_color: rgb(124, 116, 65)
@@ -3503,13 +3517,13 @@
   image_path: thumbs/T_978-2020302067.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - red
   title: Le golem
   url: https://www.amazon.fr/s\?k=978-2020302067
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-2020314862:
   de: Claude Duneton (Auteur)
   dominant_color: rgb(231, 225, 200)
@@ -4103,13 +4117,13 @@
   tags:
   - editeurs
   - roth
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - black
   title: Le rabaissement
   url: https://www.amazon.fr/s\?k=978-2070126163
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-2070126705:
   de: Anne Wiazemsky (Auteur)
   dominant_color: rgb(249, 235, 210)
@@ -5922,13 +5936,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - polar
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - black
   title: Temps glaciaires
   url: https://www.amazon.fr/s\?k=978-2081360440
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-2081378261:
   de: Fred Vargas (Auteur)
   dominant_color: rgb(30, 30, 34)
@@ -5937,13 +5951,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - polar
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - black
   title: Un lieu incertain
   url: https://www.amazon.fr/s\?k=978-2081378261
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-2081413146:
   de: Fred Vargas (Auteur)
   dominant_color: rgb(227, 228, 227)
@@ -6142,12 +6156,12 @@
   lan: "\U0001F1EB\U0001F1F7"
   publisher: Presses Universitaires de France - PUF
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: "Trait\xE9 de relations publiques"
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-2130425946:
   de: Arthur Schopenhauer (Auteur)
   dominant_color: rgb(101, 113, 111)
@@ -6170,13 +6184,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   publisher: Presses Universitaires de France - PUF
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: La tentation nihiliste
   url: https://www.amazon.fr/s\?k=978-2130426226
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-2130435587:
   de: Roland Jaccard (Auteur)
   dominant_color: rgb(240, 78, 74)
@@ -6620,13 +6634,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "illustr\xE9"
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - black
   title: Valse avec Bachir
   url: https://www.amazon.fr/s\?k=978-2203020269
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-2203231412:
   de: "Gibran Khalil\_Gibran"
   dominant_color: rgb(193, 167, 155)
@@ -7227,13 +7241,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - black
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - black
   title: "Les h\xE9ros sont \xE9ternels"
   url: https://www.amazon.fr/s\?k=978-2232101274
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-2232103087:
   de: OuLiPo (Auteur)
   dominant_color: rgb(250, 244, 210)
@@ -7348,12 +7362,12 @@
   image_path: thumbs/T_978-2246138822.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - red
   title: "La Tr\xEAve"
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-2246392217:
   de: Isabelle Eberhardt (Auteur)
   dominant_color: rgb(192, 205, 195)
@@ -7535,12 +7549,12 @@
   image_path: thumbs/T_978-2251010311.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: Guerre des Gaules - livres V-VIII
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-2251010328:
   de: "Jules C\xE9sar (Auteur), L.-A. (L\xE9opold-Albert) Constans (Auteur), A. (Andr\xE9\
     ) Balland (Traduction)"
@@ -7548,12 +7562,12 @@
   image_path: thumbs/T_978-2251010328.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: Guerre des Gaules - livres I-V
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-2251447360:
   de: Jean-Louis Poirier (Auteur)
   dominant_color: rgb(141, 139, 139)
@@ -7706,6 +7720,20 @@
   - yellow
   title: Les refuges
   where: /saint-jean-lipion/chambre/polar
+978-2253936930:
+  de: Bernard Werber (Auteur)
+  dominant_color: rgb(29, 11, 10)
+  ext: "Poche \u2013 21 septembre 2022"
+  image_path: thumbs/T_978-2253936930.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  - black
+  title: "La Proph\xE9tie des abeilles"
+  url: https://www.amazon.fr/s\?k=978-2253936930
+  where: /saint-lazare-de-savene/salon/random
 978-2258060432:
   de: Georges Simenon (Auteur)
   dominant_color: rgb(194, 193, 192)
@@ -8066,6 +8094,20 @@
   - white
   title: Soeurs
   where: /saint-jean-lipion/chambre/polar
+978-2266313049:
+  de: Michel Bussi (Auteur)
+  dominant_color: rgb(52, 55, 47)
+  ext: "Poche \u2013 Illustr\xE9, 4 f\xE9vrier 2021"
+  image_path: thumbs/T_978-2266313049.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  - gray
+  title: "Au Soleil redout\xE9"
+  url: https://www.amazon.fr/s\?k=978-2266313049
+  where: /saint-lazare-de-savene/salon/random
 978-2267003260:
   de: Georges Perec (Auteur)
   dominant_color: rgb(170, 165, 161)
@@ -8168,13 +8210,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - polar
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - white
   title: "L'arm\xE9e furieuse"
   url: https://www.amazon.fr/s\?k=978-2290041000
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-2290235805:
   de: Feurat Alani (Auteur), Leonard Cohen (Illustrations)
   dominant_color: rgb(83, 44, 73)
@@ -8223,13 +8265,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - polar
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - gray
   title: Ceux qui vont mourir te saluent
   url: https://www.amazon.fr/s\?k=978-2290351284
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-2298161076:
   de: Bernard Minier (Author)
   dominant_color: rgb(213, 226, 227)
@@ -8748,12 +8790,12 @@
   lan: "\U0001F1EB\U0001F1F7"
   publisher: Editions d'Organisation
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: Propos de O. L. Barenton, confiseur
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-2708705319:
   de: "Aim\xE9 C\xE9saire (Auteur)"
   dominant_color: rgb(241, 238, 237)
@@ -8855,13 +8897,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   publisher: Belfond (1 octobre 1998)
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: "Les fant\xF4mes du Roi L\xE9opold"
   url: https://fr.wikipedia.org/wiki/Les_Fant%C3%B4mes_du_roi_L%C3%A9opold
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-2715204867:
   de: Pierre Klossowski (Autore)
   dominant_color: rgb(176, 207, 226)
@@ -9587,13 +9629,13 @@
   image_path: thumbs/T_978-2849010471.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - gray
   title: Fous de Patagonie
   url: https://www.amazon.fr/s\?k=978-2849010471
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-2850250439:
   de: "Jos\xE9 Pierre (Auteur)"
   dominant_color: rgb(105, 92, 49)
@@ -9805,13 +9847,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   publisher: Verdier
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - yellow
   title: "R\xE9cits de la Kolyma"
   url: https://editions-verdier.fr/livre/recits-de-la-kolyma/
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-2866422080:
   de: Jean Eustache (Auteur)
   dominant_color: rgb(77, 52, 86)
@@ -9955,13 +9997,13 @@
   tags:
   - polar
   - proust
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - gray
   title: "Meurtre chez tante L\xE9onie"
   url: https://www.amazon.fr/s\?k=978-2878580518
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-2878581904:
   de: Fred Vargas (Auteur), Laurence Sudret (Commentaires)
   dominant_color: rgb(17, 17, 18)
@@ -9970,13 +10012,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - polar
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - black
   title: Sous les vents de Neptune
   url: https://www.amazon.fr/s\?k=978-2878581904
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-2878681406:
   de: Dominique Fernandez, Illustrations de Fabrice Moireau
   dominant_color: rgb(215, 216, 212)
@@ -10090,12 +10132,12 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - philo
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - gray
   title: L'art d'avoir toujours raison
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-2908978001:
   de: Didier Quella-Guyot
   dominant_color: rgb(164, 154, 143)
@@ -10252,12 +10294,12 @@
   image_path: thumbs/T_978-2950125804.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - black
   title: "Catacombes et carri\xE8res de Paris"
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-3100381354:
   de: Franz Kafka (Autor), Malcolm Pasley (Nachwort)
   dominant_color: rgb(235, 226, 196)
@@ -10394,12 +10436,12 @@
   publisher: Aufbau Verlag
   tags:
   - nazi
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
   - red
   title: "Jeder stirbt f\xFCr sich allein 1"
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-3746628110-2:
   de: Hans Fallada
   dominant_color: rgb(144, 146, 141)
@@ -10408,12 +10450,12 @@
   publisher: Aufbau Verlag
   tags:
   - nazi
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1E9\U0001F1EA"
   - gray
   title: "Jeder stirbt f\xFCr sich allein 2"
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-3822805398:
   de: Andrea Kettenmann (Auteur)
   dominant_color: rgb(198, 160, 108)
@@ -10607,12 +10649,12 @@
   image_path: thumbs/T_978-8804273684.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - red
   title: "Storia di re Art\xF9 e dei suoi cavalieri"
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-8804283195:
   de: Emidio De Felice (Autore)
   dominant_color: rgb(236, 230, 217)
@@ -10771,12 +10813,12 @@
   image_path: thumbs/T_978-8804407805.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - gray
   title: Canone inverso
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-8804425540:
   de: Italo Calvino (Autore)
   dominant_color: rgb(183, 176, 171)
@@ -10850,13 +10892,13 @@
   image_path: thumbs/T_978-8804476771.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - white
   title: Le pietre di Venezia
   url: https://www.amazon.it/s\?k=978-8804476771
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-8804484912:
   de: Giovanni Macchia (Autore)
   dominant_color: rgb(161, 146, 115)
@@ -11183,6 +11225,20 @@
   - black
   title: La rete degli invisibili
   where: /saint-lazare-de-savene/salon/_5
+978-8804746614:
+  de: Massimo Carlotto (Autore)
+  dominant_color: rgb(236, 225, 185)
+  ext: "Copertina flessibile \u2013 18 gennaio 2022"
+  image_path: thumbs/T_978-8804746614.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  - white
+  title: Il Francese
+  url: https://www.amazon.it/s\?k=978-8804746614
+  where: /saint-lazare-de-savene/salon/random
 978-8805059423:
   de: Piero Burzio (Autore)
   dominant_color: rgb(79, 126, 38)
@@ -11235,13 +11291,13 @@
   publisher: Mondadori
   tags:
   - editori
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - red
   title: Sulla fiaba
   url: https://www.oscarmondadori.it/libri/sulla-fiaba-italo-calvino/
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-8806117917:
   de: Luciano Canepari
   dominant_color: rgb(243, 243, 243)
@@ -11646,6 +11702,20 @@
   - gray
   title: Veleno - Una storia vera
   where: /saint-lazare-de-savene/salon/_5
+978-8806251390:
+  de: Cristina Cassar Scalia (Autore)
+  dominant_color: rgb(42, 90, 100)
+  ext: "Copertina flessibile \u2013 31 maggio 2022"
+  image_path: thumbs/T_978-8806251390.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  - cyan
+  title: La carrozza della Santa
+  url: https://www.amazon.it/s\?k=978-8806251390
+  where: /saint-lazare-de-savene/salon/random
 978-8806252588:
   de: Daria Bignardi (Autore)
   dominant_color: rgb(137, 139, 178)
@@ -12984,13 +13054,13 @@
   lan: "\U0001F1EB\U0001F1F7"
   publisher: Sperling & Kupfer
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - white
   title: Il rivoluzionario
   url: https://www.amazon.fr/s\?k=978-8820053123
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-8820114695:
   de: Harper Lee (Autore)
   dominant_color: rgb(218, 46, 64)
@@ -13336,13 +13406,13 @@
   image_path: thumbs/T_978-8833243405.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - white
   title: Nude le mie parole - Il romanzo della Divina Commedia
   url: https://www.amazon.it/s\?k=978-8833243405
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-8833914954:
   de: Giovanni Mazzetti (Autore)
   dominant_color: rgb(102, 85, 83)
@@ -14147,12 +14217,12 @@
   image_path: thumbs/T_978-8845906886.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - red
   title: Lo Hobbit
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 978-8845910074:
   de: Bruce Chatwin
   dominant_color: rgb(79, 90, 82)
@@ -14737,6 +14807,20 @@
   - white
   title: Capricorno
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
+978-8858041307:
+  de: Carlotydes (Autore), Ginny Chiara Viola (Presentazione)
+  dominant_color: rgb(247, 242, 237)
+  ext: "Copertina flessibile \u2013 12 maggio 2022"
+  image_path: thumbs/T_978-8858041307.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  - white
+  title: Costellazioni - Guida illustrata di astrologia
+  url: https://www.amazon.it/s\?k=978-8858041307
+  where: /saint-lazare-de-savene/salon/random
 978-8858119280:
   de: Alessandro Barbero (Autore)
   dominant_color: rgb(98, 63, 131)
@@ -14881,13 +14965,13 @@
   image_path: thumbs/T_978-8865417096.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - gray
   title: Streghe di Romagna
   url: https://www.amazon.it/s\?k=978-8865417096
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-8865492987:
   de: Francesca Cosi, Alessandra Repossi (Autore)
   dominant_color: rgb(211, 217, 208)
@@ -14925,13 +15009,13 @@
   image_path: thumbs/T_978-8866321927.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - gray
   title: Cronache del mal d'amore
   url: https://www.amazon.it/s\?k=978-8866321927
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-8866483434:
   de: Jeffrey Deitch, Gianni Mercurio (a cura di)
   dominant_color: rgb(69, 67, 66)
@@ -15002,6 +15086,20 @@
   - gray
   title: "La felicit\xE0"
   where: /saint-lazare-de-savene/salon/_3
+978-8869435003:
+  de: Marco Di Tillo (Autore)
+  dominant_color: rgb(212, 210, 209)
+  ext: "Un nuovo caso per Marco Canepa Copertina flessibile \u2013 28 febbraio 2021"
+  image_path: thumbs/T_978-8869435003.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  - white
+  title: Come lupi nella neve
+  url: https://www.amazon.it/s\?k=978-8869435003
+  where: /saint-lazare-de-savene/salon/random
 978-8870005653:
   de: Aljs Vignudelli (a cura di)
   dominant_color: rgb(224, 222, 198)
@@ -15086,13 +15184,13 @@
   image_path: thumbs/T_978-8871688053.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - black
   title: Fare pochissimo
   url: https://www.amazon.it/s\?k=978-8871688053
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-8872920961:
   de: Ralph Gibson (Autore)
   dominant_color: rgb(76, 78, 68)
@@ -16060,6 +16158,34 @@
   title: La straniera
   url: https://www.amazon.it/s\?k=978-8893447751
   where: /saint-lazare-de-savene/chambre_alessia/_A
+978-8893903189:
+  de: Piernicola Silvis (Autore)
+  dominant_color: rgb(237, 200, 15)
+  ext: "Copertina flessibile \u2013 26 agosto 2021"
+  image_path: thumbs/T_978-8893903189.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  - yellow
+  title: La pioggia
+  url: https://www.amazon.it/s\?k=978-8893903189
+  where: /saint-lazare-de-savene/salon/random
+978-8894953657:
+  de: Alessandro Bruni (Autore)
+  dominant_color: rgb(129, 114, 155)
+  ext: "Copertina flessibile \u2013 11 marzo 2021"
+  image_path: thumbs/T_978-8894953657.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - random
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  - gray
+  title: L'errante
+  url: https://www.amazon.it/s\?k=978-8894953657
+  where: /saint-lazare-de-savene/salon/random
 978-8895177472:
   de: Stefania Campo (Autore)
   dominant_color: rgb(236, 231, 228)
@@ -16082,13 +16208,13 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - football
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - black
   title: "La pi\xF9 odiata dagli italiani"
   url: https://www.amazon.it/s\?k=978-8895744407
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-8895862118:
   de: Roberto Chiesi
   dominant_color: rgb(221, 218, 219)
@@ -16149,13 +16275,13 @@
   image_path: thumbs/T_978-8898829156.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - gray
   title: Il potere del cervello quantico
   url: https://www.amazon.it/s\?k=978-8898829156
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-8898970759:
   de: Mario Pistacchio (Autore), Laura Toffanello (Autore)
   dominant_color: rgb(45, 44, 44)
@@ -16243,12 +16369,12 @@
   lan: "\U0001F1EA\U0001F1F8"
   tags:
   - cinema
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EA\U0001F1F8"
   - gray
   title: La biblia del cinefilo
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 978-9722029063:
   de: Antonio Tabucchi (Autore)
   dominant_color: rgb(217, 228, 227)
@@ -16295,12 +16421,12 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - yellow
   title: "Petite anthologie des po\xEAtes fran\xE7ais"
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 979-1020407160:
   de: "Mus\xE9e Carnavalet - Collectif"
   dominant_color: rgb(206, 201, 191)
@@ -16417,13 +16543,13 @@
   image_path: thumbs/T_979-1092457186.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - gray
   title: Femme rebelle
   url: https://www.amazon.fr/s\?k=979-1092457186
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 979-1093463124:
   de: "Djibril Ciss\xE9 (Auteur)"
   dominant_color: rgb(192, 186, 185)
@@ -16470,12 +16596,12 @@ ASIN-B0007J1C9W:
   image_path: thumbs/T_ASIN-B0007J1C9W.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - gray
   title: Selected stories
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 ASIN-B000KS30XG:
   de: George Eliot (Author)
   dominant_color: rgb(187, 56, 45)
@@ -16483,12 +16609,12 @@ ASIN-B000KS30XG:
   image_path: thumbs/T_ASIN-B000KS30XG.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - red
   title: The Mill on the Floss
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 ASIN-B000NNBJZ4:
   de: Giacomo Leopardi (Author)
   dominant_color: rgb(205, 203, 181)
@@ -16588,12 +16714,12 @@ ASIN-B003X7DCEI:
   image_path: thumbs/T_ASIN-B003X7DCEI.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: 20 000 lieues sous les mers - tome 1
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 ASIN-B0092FT3LQ:
   de: Primo Levi (Autore)
   dominant_color: rgb(60, 53, 44)
@@ -16633,12 +16759,12 @@ ASIN-B009HVT4FK:
   lan: "\U0001F1EB\U0001F1F7"
   publisher: George G. Harrap and Co.
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: Trois contes
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 ASIN-B00A7WBHJY:
   de: Georges Guibillon (Auteur)
   dominant_color: rgb(247, 124, 112)
@@ -16646,12 +16772,12 @@ ASIN-B00A7WBHJY:
   image_path: thumbs/T_ASIN-B00A7WBHJY.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: "La litt\xE9rature anglaise par les textes"
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 ASIN-B00F1Y4WK4:
   de: "F\xE9dor Dosto\xEFevski (Auteur)"
   dominant_color: rgb(181, 127, 83)
@@ -16713,12 +16839,12 @@ ASIN-B00HFWJT1C:
   lan: "\U0001F1EE\U0001F1F9"
   publisher: Sansoni
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - red
   title: Tutti i racconti e le poesie
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 ASIN-B00HNSXRVQ:
   de: Christophe Marlowe
   dominant_color: rgb(132, 85, 71)
@@ -16727,12 +16853,12 @@ ASIN-B00HNSXRVQ:
   publisher: Guanda - Quaderni della Fenice - 72
   tags:
   - "th\xE9atre"
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - red
   title: Il Dottor Faust
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 ASIN-B00NO4ODDO:
   de: Bruce Chatwin (Autore), Marina Marchesi (Traduttore)
   dominant_color: rgb(189, 143, 120)
@@ -16795,12 +16921,12 @@ LIEUES-2:
   image_path: thumbs/T_LIEUES-2.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: 20 000 lieues sous les mers - tome 2
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 barbie:
   de: Vogue - Collectif
   dominant_color: rgb(237, 199, 48)
@@ -17442,12 +17568,12 @@ bovary:
   image_path: thumbs/T_bovary.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - gray
   title: Madame Bovary
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 dalla_dittatura_alla_democrazia:
   de: Franco Catalano
   dominant_color: rgb(210, 185, 181)
@@ -17483,12 +17609,12 @@ dostoievski:
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - black
-  - black
+  - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - gray
   title: "Les Poss\xE9d\xE9s"
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/mostly_black
 fleurs_du_mal:
   de: Charles Baudelaire (Ernest Raynaud)
   dominant_color: rgb(186, 93, 94)
@@ -17497,12 +17623,12 @@ fleurs_du_mal:
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - red
   title: Les fleurs du mal
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 gai-luron:
   de: Gotlib
   dominant_color: rgb(205, 200, 123)
@@ -17613,13 +17739,13 @@ keats:
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - "po\xE9sie"
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - white
   title: Endymion and other poems
   url: https://sites.gold.ac.uk/goldsmithshistory/a-greatly-lamented-goldsmiths-casualty-of-passchendaele-william-thomas-young/
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 lamartine:
   de: Lamartine
   dominant_color: rgb(226, 213, 189)
@@ -17640,12 +17766,12 @@ looking_glass:
   image_path: thumbs/T_looking_glass.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - red
   title: Through The Looking-Glass  - And What Alice Found There
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
 morgue:
   de: Edgar Allan Poe
   dominant_color: rgb(242, 244, 237)
@@ -17766,9 +17892,9 @@ wonderland:
   image_path: thumbs/T_wonderland.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - red
+  - mostly_red
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   - red
   title: Alice's Adventures in Wonderland
-  where: /saint-lazare-de-savene/salon/red
+  where: /saint-lazare-de-savene/salon/mostly_red
