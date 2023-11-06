@@ -638,6 +638,17 @@
   title: An Abundance of Katherines
   url: https://www.amazon.com/s\?k=978-0141346090
   where: /saint-lazare-de-savene/chambre_alessia/_H
+978-0142402511:
+  de: John Green (Author)
+  image_path: thumbs/T_978-0142402511.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _H
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Looking For Alaska
+  url: https://www.amazon.com/s\?k=978-0142402511
+  where: /saint-lazare-de-savene/chambre_alessia/_H
 978-0143113720:
   de: Ian Kershaw (Author)
   ext: "Paperback \u2013 Illustrated, May 27, 2008"
@@ -1079,6 +1090,17 @@
   - "\U0001F1EC\U0001F1E7"
   title: Johann Sebastian Bach - The Learned Musician
   where: /saint-lazare-de-savene/salon/_1
+978-0393329810:
+  de: Jeffry A. Frieden (Author)
+  image_path: thumbs/T_978-0393329810.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _H
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Global Capitalism - Its Fall and Rise in the Twentieth Century
+  url: https://www.amazon.com/s\?k=978-0393329810
+  where: /saint-lazare-de-savene/chambre_alessia/_H
 978-0393635362:
   de: Philip Kennicott (Author)
   ext: "Hardcover \u2013 February 18, 2020"
@@ -1784,6 +1806,18 @@
   - "\U0001F1EC\U0001F1E7"
   title: Cormoran Strike Book 6 - The Ink Black Heart
   where: /saint-jean-lipion/chambre/polar
+978-0753823798:
+  de: Simon Sebag Montefiore (Author)
+  ext: "Paperback \u2013 October 14, 2008"
+  image_path: thumbs/T_978-0753823798.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _H
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Young Stalin
+  url: https://www.amazon.com/s\?k=978-0753823798
+  where: /saint-lazare-de-savene/chambre_alessia/_H
 978-0785929024:
   de: Georges Perec (Auteur)
   ext: "Poche \u2013 2 novembre 1982"
@@ -2032,6 +2066,42 @@
   - "\U0001F1EB\U0001F1F7"
   title: Journal
   where: /saint-jean-lipion/chambre/kafka
+978-1400031351:
+  de: Alexander McCall Smith (Author)
+  ext: "(No. 1 Ladies Detective Agency, Book 2) Paperback \u2013 August 1, 2002"
+  image_path: thumbs/T_978-1400031351.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _H
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Tears of the Giraffe
+  url: https://www.amazon.com/s\?k=978-1400031351
+  where: /saint-lazare-de-savene/chambre_alessia/_H
+978-1400031368:
+  de: Alexander McCall Smith (Author)
+  ext: "(No. 1 Ladies Detective Agency) Paperback \u2013 November 12, 2002"
+  image_path: thumbs/T_978-1400031368.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _H
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Morality for Beautiful Girls
+  url: https://www.amazon.com/s\?k=978-1400031368
+  where: /saint-lazare-de-savene/chambre_alessia/_H
+978-1400031801:
+  de: Alexander McCall Smith (Author)
+  ext: "(No. 1 Ladies' Detective Agency, Book 4) Paperback \u2013 February 1, 2004"
+  image_path: thumbs/T_978-1400031801.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _H
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: The Kalahari Typing School for Men
+  url: https://www.amazon.com/s\?k=978-1400031801
+  where: /saint-lazare-de-savene/chambre_alessia/_H
 978-1400041169:
   de: Julie Orringer (Author)
   ext: "Hardcover \u2013 Deckle Edge, May 4, 2010"
@@ -2401,6 +2471,18 @@
   - "\U0001F1EE\U0001F1F9"
   title: La storia dell'arte
   where: /saint-lazare-de-savene/salon/_8
+978-1840246674:
+  de: Alan Moorehead (Author)
+  ext: "Paperback \u2013 June 1, 2012"
+  image_path: thumbs/T_978-1840246674.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _H
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: The Villa Diana - Travels in Post-War Italy
+  url: https://www.amazon.com/s\?k=978-1840246674
+  where: /saint-lazare-de-savene/chambre_alessia/_H
 978-1841157832:
   de: Michael Cunningham (Author)
   ext: "A Novel (Picador Modern Classics, 1) Paperback \u2013 2003"
@@ -10700,12 +10782,12 @@
   image_path: thumbs/T_978-8817258739.jpeg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - chambre_alessia
+  - _C
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Dal big bang ai buchi neri - Breve storia del tempo
   url: https://www.amazon.it/s\?k=978-8817258739
-  where: /saint-lazare-de-savene/chambre_alessia
+  where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8817676823:
   de: Georges Perec (Autore)
   ext: "Copertina rigida \u2013 1 gennaio 1990"
@@ -12049,6 +12131,17 @@
   - "\U0001F1EB\U0001F1F7"
   title: Le malade imaginaire
   where: /saint-lazare-de-savene/couloir/autre
+978-8849412857:
+  de: Nella Maccarrone (cur.)
+  image_path: thumbs/T_978-8849412857.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - _H
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Sources of conflict, visions of peace
+  url: https://www.amazon.com/s\?k=978-8849412857
+  where: /saint-lazare-de-savene/chambre_alessia/_H
 978-8850213979:
   de: "Patrick S\xFCskind (Autore), Giovanna Agabio (Traduttore)"
   ext: "Ediz. a caratteri grandi Copertina flessibile \u2013 Stampa grande, 5 luglio\
