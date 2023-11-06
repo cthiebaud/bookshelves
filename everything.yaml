@@ -14,11 +14,11 @@
   image_path: thumbs/T_256-1892524916.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - black
+  - random
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: "La Luna e i Fal\xF2 - Il Compagno"
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/random
 256-6891968792:
   de: Lytton Strachey (Autore)
   ext: 1966
@@ -965,11 +965,11 @@
   image_path: thumbs/T_978-0316109338.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
-  - black
+  - red
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
   title: The Ascent of Man
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/red
 978-0316228534:
   de: J. K. Rowling (Author)
   ext: "Hardcover \u2013 September 27, 2012"
@@ -1133,6 +1133,7 @@
   image_path: thumbs/T_978-0375703768.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - black
   - _G
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
@@ -1787,6 +1788,7 @@
   image_path: thumbs/T_978-0691137353.jpg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - black
   - _G
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
@@ -1812,6 +1814,7 @@
   publisher: Phaidon
   tags:
   - photo
+  - black
   - hardcovers
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -2716,6 +2719,7 @@
   image_path: thumbs/T_978-1853260049.webp
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - black
   - _9
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
@@ -2974,12 +2978,12 @@
   image_path: thumbs/T_978-2020302067.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - black
+  - red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Le golem
   url: https://www.amazon.fr/s\?k=978-2020302067
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/red
 978-2020314862:
   de: Claude Duneton (Auteur)
   ext: "Broch\xE9 \u2013 7 avril 1998"
@@ -3593,6 +3597,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - enfer
+  - black
   - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -4517,6 +4522,7 @@
   image_path: thumbs/T_978-2070724680.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - black
   - cinema
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -5829,6 +5835,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - music
+  - black
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -6114,6 +6121,7 @@
   image_path: thumbs/T_978-2226141361.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - black
   - cinema
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -6149,6 +6157,7 @@
   image_path: thumbs/T_978-2232101274.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - black
   - black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -6297,6 +6306,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - bd
+  - black
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -8685,6 +8695,7 @@
   image_path: thumbs/T_978-2916400365.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - black
   - football
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -9826,6 +9837,7 @@
   image_path: thumbs/T_978-8806212407.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - black
   - _5
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -10095,6 +10107,7 @@
   image_path: thumbs/T_978-8807490316.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - black
   - _A
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -10445,6 +10458,7 @@
   image_path: thumbs/T_978-8809849129.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - black
   - polar
   - saint-jean-lipion
   - "\U0001F1EE\U0001F1F9"
@@ -12416,6 +12430,7 @@
   image_path: thumbs/T_978-8850214013.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - black
   - _C
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -13894,6 +13909,8 @@
   image_path: thumbs/T_979-1020407160.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - proust
+  - black
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -13906,6 +13923,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - nazi
+  - black
   - favourite
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -14007,6 +14025,7 @@
   image_path: thumbs/T_979-1095772132.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - black
   - favourite
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -14235,11 +14254,11 @@ ASIN-B00HFWJT1C:
   lan: "\U0001F1EE\U0001F1F9"
   publisher: Sansoni
   tags:
-  - black
+  - red
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   title: Tutti i racconti e le poesie
-  where: /saint-lazare-de-savene/salon/black
+  where: /saint-lazare-de-savene/salon/red
 ASIN-B00HNSXRVQ:
   de: Christophe Marlowe
   image_path: thumbs/T_ASIN-B00HNSXRVQ.jpeg
@@ -14890,6 +14909,7 @@ dostoievski:
   image_path: thumbs/T_dostoievski.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - black
   - black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"

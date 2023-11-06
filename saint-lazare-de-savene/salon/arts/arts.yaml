@@ -130,6 +130,9 @@ boh43:
   ext: Broché – Illustré, 5 janvier 2022
   de: Musée Carnavalet - Collectif
   lan: 🇫🇷
+  tags:
+    - proust
+    - black
 
 978-3822891193:
   title: Rivera
@@ -163,6 +166,7 @@ boh44:
   lan: 🇫🇷
   tags:
     - music
+    - black
 
 978-0590444590:
   title: Hansel and Gretel
