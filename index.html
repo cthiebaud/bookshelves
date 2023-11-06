@@ -68,12 +68,45 @@
             opacity: .5;
         }
 
+        .color.btn {
+            margin: 0;
+            padding: 0;
+        }
+
         .color_black {
             color: black;
         }
 
+        .color_white {
+            color: white;
+        }
+
+        .color_gray {
+            color: gray;
+        }
+
         .color_red {
             color: red;
+        }
+
+        .color_yellow {
+            color: yellow;
+        }
+
+        .color_green {
+            color: green;
+        }
+
+        .color_cyan {
+            color: cyan;
+        }
+
+        .color_blue {
+            color: blue;
+        }
+
+        .color_magenta {
+            color: magenta;
         }
 
         .btn:hover {
@@ -168,12 +201,34 @@
             <a href="#" id="theatre" class="btn" role="button" data-bs-toggle="button" data-tags="théatre">Théatre</a>
             <a href="#" id="tintin" class="btn" role="button" data-bs-toggle="button" data-tags="tintin tintin_etc">Tintin</a>
             <br>
-            <a href="#" id="black" class="btn" role="button" data-bs-toggle="button" data-tags="black">
+            <a href="#" id="black" class="color btn" role="button" data-bs-toggle="button" data-tags="black">
                 <span class="color_black">⬤</span>
             </a>
-            <a href="#" id="red" class="btn" role="button" data-bs-toggle="button" data-tags="red">
+            <a href="#" id="white" class="color btn" role="button" data-bs-toggle="button" data-tags="white">
+                <span class="color_white">⬤</span>
+            </a>
+            <!-- a href="#" id="gray" class="color btn" role="button" data-bs-toggle="button" data-tags="gray">
+                <span class="color_gray">⬤</span>
+            </a -->
+            <a href="#" id="red" class="color btn" role="button" data-bs-toggle="button" data-tags="red">
                 <span class="color_red">⬤</span>
             </a>
+            <a href="#" id="yellow" class="color btn" role="button" data-bs-toggle="button" data-tags="yellow">
+                <span class="color_yellow">⬤</span>
+            </a>
+            <a href="#" id="green" class="color btn" role="button" data-bs-toggle="button" data-tags="green">
+                <span class="color_green">⬤</span>
+            </a>
+            <a href="#" id="cyan" class="color btn" role="button" data-bs-toggle="button" data-tags="cyan">
+                <span class="color_cyan">⬤</span>
+            </a>
+            <a href="#" id="blue" class="color btn" role="button" data-bs-toggle="button" data-tags="blue">
+                <span class="color_blue">⬤</span>
+            </a>
+            <a href="#" id="magenta" class="color btn" role="button" data-bs-toggle="button" data-tags="magenta">
+                <span class="color_magenta">⬤</span>
+            </a>
+            <br>
             <a href="#" id="chess" class="btn" role="button" data-bs-toggle="button" data-tags="chess" style="margin-top:0; margin-bottom:0; padding-top:0; padding-bottom:0;">
                 <span style="font-size: 20px; font-weight: 900;">♘</span>
             </a>
@@ -372,10 +427,10 @@
             fig.classList.add(property.where)
 
             const img = document.createElement("img");
-            if (!property['image_path'] ) {
+            if (!property['image_path']) {
                 console.log("image_path not defined", property)
             }
-            img.src = property['image_path']            
+            img.src = property['image_path']
             img.classList.add("figure-img")
             img.classList.add("img-fluid")
 

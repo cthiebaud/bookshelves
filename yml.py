@@ -1,12 +1,14 @@
+import colorsys
 import glob
-import os
 import io
-
-# import pyyaml module
-import yaml
 import json
+import os
+import sys
+import webcolors
+import yaml
     
 from pathlib import PurePath 
+from colorthief import ColorThief
 
 def concatExcludeLast(strlst):
     return '/'.join(strlst[0:-1])
@@ -40,20 +42,62 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                 tags.append(value["lan"])
                 value["tags"] = tags
             my_dictionary.update(data)
+    
+    i = i + 1
 
 images = []
 extensions = ['jpg', 'jpeg', 'webp', 'png']
-  
+
+def classify(hue, lgt, sat):
+    if (lgt < 0.2):
+        return "black"
+    if (lgt > 0.8):
+        return "white"
+    if (sat < 0.25):
+        return "gray"
+    if (hue < 30/360.0)   :
+        return "red"
+    if (hue < 90/360.0)   :
+        return "yellow"
+    if (hue < 150/360.0)  :
+        return "green"
+    if (hue < 210/360.0)  :
+        return "cyan"
+    if (hue < 270/360.0)  :
+        return "blue"
+    if (hue < 330/360.0)  :
+        return "magenta"
+    return "red"
+
+i = 0
 # Using for loop
 for ext in extensions:
     for filename2 in glob.iglob('thumbs/*.'+ext, recursive=True):
 
       # if not 'enfer' in filename2:
       
-        # print(i, filename2)
         # print(os.path.basename(filename2))
+        key = PurePath(filename2).stem[2:]
         images.append(filename2)
-        my_dictionary[PurePath(filename2).stem[2:]]["image_path"] = f"thumbs/{os.path.basename(filename2)}" # filename2
+        my_dictionary[key]["image_path"] = f"thumbs/{os.path.basename(filename2)}" # filename2
+
+        args = len(sys.argv) - 1
+        if args > 0:
+            color_thief = ColorThief(filename2)
+            # get the dominant color
+            dominant_color = color_thief.get_color(quality=1)
+            r,g,b = dominant_color
+            dominant_color_string = f"rgb({r}, {g}, {b})"
+            my_dictionary[key]["dominant_color"] = dominant_color_string
+            h,l,s = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
+            clazz = classify(h,l,s)
+            print(i, key, filename2,"-",  r,g,b, "-", h,l,s, "-", clazz)
+
+            tags = my_dictionary[key].get("tags", [])
+            tags.append(clazz)
+            value["tags"] = tags
+
+        i = i + 1
 
 
 
