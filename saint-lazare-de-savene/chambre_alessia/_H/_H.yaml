@@ -133,13 +133,6 @@
   lan: 🇬🇧
   url: https://www.amazon.com/s\?k=978-0141030999
 
-
-
-
-
-
-## ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆
-
 morgue:
   title: The Murders in the Rue Morgue
   de: Edgar Allan Poe
@@ -150,9 +143,88 @@ barbie:
   de: Vogue - Collectif
   lan: 🇬🇧
 
+978-0141008585:
+  title: How To Be Good
+  ext: Paperback
+  de: Nick Hornby (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0141008585
+
+978-0140623598:
+  title: Tender is the Night
+  ext: Paperback
+  de: Scott Fitzgerald (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0140623598
+
+978-0140015669:
+  title: The Heart Is a Lonely Hunter
+  ext: Paperback
+  de: Carson McCullers (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0140015669
+
+978-0141030081:
+  title: Freakonomics
+  de: Stephen J. Dubner, Steven Levitt (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0141030081
+
+978-0571200337:
+  title: The Bell Jar
+  ext: Copertina flessibile – 1 aprile 1999
+  de: Sylvia Plath (Autore)
+  lan: 🇬🇧
+  url: https://www.amazon.it/s\?k=978-0571200337
+  
+978-0571235926:
+  title: The Dark Heart of Italy
+  de: Tobias Jones (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0571235926
+
+978-0099909408:
+  title: A Moveable Feast
+  ext: Paperback
+  de: Ernest Hemingway (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0099909408
+
 978-0340994689:
   title: One Day
   de: David Nicholls (Author)
   lan: 🇮🇹
   url: https://www.amazon.com/s\?k=978-0340994689
 
+978-1849162753:
+  title: The Girl Who Kicked the Hornet's Nest
+  ext: (The Girl with the Dragon Tattoo Series) Paperback – February 21, 2012
+  de: Stieg Larsson (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-1849162753
+
+978-1444768763:
+  title: Yellow Birds
+  ext: Paperback – January 1, 2013
+  de: K. Powers (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-1444768763
+
+978-0099908401:
+  title: The Old Man And the Sea
+  de: Ernest Hemingway (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0099908401
+
+978-0307386458:
+  title: The Road
+  de: Cormac McCarthy (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0307386458
+
+978-0955471223:
+  title: Banksy Locations and Tours
+  ext: Paperback – January 1, 2008
+  de: Martin Bull, Banksy
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0955471223
