@@ -169,6 +169,8 @@ ASIN-B00HFWJT1C:
   de: Philip Roth (Author)
   lan: 🇬🇧
   url: https://www.amazon.com/s\?k=978-0670069712
+  tags:
+    - roth
 
 978-2081360440:
   title: Temps glaciaires
@@ -201,6 +203,7 @@ ASIN-B00HFWJT1C:
   url: https://www.amazon.fr/s\?k=978-2070126163
   tags:
     - editeurs
+    - roth
 
 978-0416101607:
   title: Macbeth
@@ -246,6 +249,8 @@ dostoievski:
   ext: Hardcover – April 1, 2006
   de: Philip Roth (Author)
   lan: 🇬🇧
+  tags:
+    - roth
 
 256-1892524916:
   title: La Luna e i Falò - Il Compagno

@@ -256,6 +256,8 @@ boh32:
   ext: Paperback
   de: Philip Roth (Author)
   lan: 🇬🇧
+  tags:
+    - roth
 
 978-1522796152:
   title: Bartleby, the Scrivener
