@@ -65,12 +65,19 @@
   lan: 🇬🇧
   url: https://www.amazon.com/s\?k=978-0753823798
 
+978-0552778251:
+  title: The Orphan Master's Son
+  ext: A Novel Paperback – August 7, 2012
+  de: Adam Johnson (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0552778251
 
-
-
-
-
-## ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆
+978-0141008257:
+  title: Everything Is Illuminated
+  ext: Paperback – January 1, 2003
+  de: Jonathan Safran Foer (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0141008257
 
 978-0140276343:  
   title: Autograph Man
@@ -79,12 +86,59 @@
   lan: 🇬🇧
   url: https://www.amazon.com/Autograph-Man-Zadie-Smith/dp/0140276343
 
-978-0141008257:
-  title: Everything Is Illuminated
-  ext: Paperback – January 1, 2003
-  de: Jonathan Safran Foer (Author)
+978-0571154913:
+  title: Remains Of The Day
+  de: Kazuo Ishiguro (Author)
   lan: 🇬🇧
-  url: https://www.amazon.com/s\?k=978-0141008257
+  url: https://www.amazon.co.uk/s\?k=978-0571154913
+
+978-0141439570:
+  title: The Picture of Dorian Gray
+  ext: Paperback
+  de: Oscar Wilde (Author), Robert Mighall (Editor, Introduction)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0141439570
+
+978-0007152520:
+  title: Big Bang
+  ext: Paperback – January 1, 2005
+  de: Simon Singh (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0007152520
+
+978-1847394071:
+  title: The Perks of Being a Wallflower
+  ext: Paperback – February 1, 1999
+  de: Stephen Chbosky (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-1847394071
+
+978-0192832696:
+  title: The Great Gatsby
+  de: F. Scott Fitzgerald (Autore), Ruth Prigozy (a cura di)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0192832696
+
+978-0141346090:
+  title: An Abundance of Katherines
+  ext: Paperback
+  de: John Green (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0141346090
+
+978-0141030999:
+  title: We Are All Made of Glue - A Short History of Tractors in Ukrainian
+  ext: Paperback – International Edition, January 1, 2012
+  de: Marina Lewycka (Author)
+  lan: 🇬🇧
+  url: https://www.amazon.com/s\?k=978-0141030999
+
+
+
+
+
+
+## ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆
 
 morgue:
   title: The Murders in the Rue Morgue
@@ -101,24 +155,4 @@ barbie:
   de: David Nicholls (Author)
   lan: 🇮🇹
   url: https://www.amazon.com/s\?k=978-0340994689
-
-978-0141346090:
-  title: An Abundance of Katherines
-  ext: Paperback
-  de: John Green (Author)
-  lan: 🇬🇧
-  url: https://www.amazon.com/s\?k=978-0141346090
-
-978-0007152520:
-  title: Big Bang
-  ext: Paperback – January 1, 2005
-  de: Simon Singh (Author)
-  lan: 🇬🇧
-  url: https://www.amazon.com/s\?k=978-0007152520
-
-978-0571154913:
-  title: Remains Of The Day
-  de: Kazuo Ishiguro (Author)
-  lan: 🇬🇧
-  url: https://www.amazon.co.uk/s\?k=978-0571154913
 
