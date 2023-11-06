@@ -7701,6 +7701,7 @@
 978-2744121388:
   de: Charles Dickens
   ext: "Reli\xE9"
+  image_path: thumbs/T_978-2744121388.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _E
@@ -10858,6 +10859,17 @@
   title: Amleto
   url: https://www.amazon.it/s\?k=978-8817019330
   where: /saint-lazare-de-savene/chambre_alessia/_G
+978-8817023795:
+  de: Serena Dandini, Corrado Guzzanti
+  image_path: thumbs/T_978-8817023795.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - berlusconneries
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: L'ottavo nano (DVD)
+  url: https://www.amazon.it/s\?k=978-8817023795
+  where: /saint-lazare-de-savene/chambre_alessia/berlusconneries
 978-8817052344:
   de: Gianrico Carofiglio (Autore), M. Losacco (a cura di)
   ext: "Copertina flessibile \u2013 2 novembre 2011"
