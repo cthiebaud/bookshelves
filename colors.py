@@ -40,6 +40,7 @@ def getContrast(file):
     # print(min,max,contrast)    
     return contrast
 
+# https://stackoverflow.com/a/59218331/1070215
 def getMonochrome(im):
 
     # Down-res image to make SVD time reasonable
@@ -65,6 +66,37 @@ def getMonochrome(im):
 
     return PC1var
 
+# https://stackoverflow.com/a/3244061/1070215
+def getDominant(file):
+    print('reading image')
+    from PIL import Image
+    import scipy
+    import scipy.misc
+    import scipy.cluster
+    import binascii
+    import struct
+
+    NUM_CLUSTERS = 5
+
+    im = Image.open(file)
+    im = im.resize((150, 150))      # optional, to reduce time
+    ar = np.asarray(im)
+    shape = ar.shape
+    ar = ar.reshape(scipy.product(shape[:2]), shape[2]).astype(float)
+
+    print('finding clusters')
+    codes, dist = scipy.cluster.vq.kmeans(ar, NUM_CLUSTERS)
+    print('cluster centres:\n', codes)
+
+    vecs, dist = scipy.cluster.vq.vq(ar, codes)         # assign codes
+    counts, bins = scipy.histogram(vecs, len(codes))    # count occurrences
+
+    index_max = scipy.argmax(counts)                    # find most frequent
+    peak = codes[index_max]
+    colour = binascii.hexlify(bytearray(int(c) for c in peak)).decode('ascii')
+    print('most frequent is %s (#%s)' % (peak, colour))
+    return peak
+
 
 with open('colors.json', 'r') as fp:
     colors_dictionnary = json.load(fp)
@@ -78,29 +110,39 @@ for ext in extensions:
         # print(os.path.basename(filename2))
         key = PurePath(filename2).stem[2:]
 
+        ## if key != "978-2823609851":
+        ##     continue
+
         print(i, key)
-        i = i + 1
 ##             if is_low_contrast(im, fraction_threshold=0.5): 
 ##                 print("  low contrast")
 ##                 if (monochrome(im)) :
 ##                     print("    monochrome")
 
-        color_thief = ColorThief(filename2)
+        # color_thief = ColorThief(filename2)
+        # dominant_color = color_thief.get_color(quality=1)
         # get the dominant color
-        dominant_color = color_thief.get_color(quality=1)
-        r,g,b = dominant_color
-        dominant_color_string = f"rgb({r}, {g}, {b})"
-        h,l,s = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
 
-        if key in colors_dictionnary:
-            colors_dictionnary[key]["hls"] = f"{h}, {l}, {s}"
-        else:
-            contrast = getContrast(filename2)
+        if key not in colors_dictionnary:
+            # print(i, "skip")
+            # colors_dictionnary[key]["hls"] = f"{h}, {l}, {s}"       
+            # colors_dictionnary[key]["dominant_color"] = dominant_color_string      
+        # else:
+
+            ## contrast = getContrast(filename2)
             im = io.imread(filename2)
             monochrome = getMonochrome(im)
 
-            colors_dictionnary[key] = {"dominant_color": dominant_color_string, "contrast": contrast, "monochrome": monochrome}
+            dominant_color = getDominant(filename2)
+            print(dominant_color)
+            r,g,b = dominant_color
+            print(dominant_color)
+            dominant_color_string = f"rgb({r}, {g}, {b})"
+            h,l,s = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
+            colors_dictionnary[key] = {"dominant_color": dominant_color_string, "hls": f"{h}, {l}, {s}", "monochrome_variance": monochrome} # , "contrast": contrast, "monochrome": monochrome
             print("    ", colors_dictionnary[key])
+
+        i = i + 1
 
 ##             ##            
 ##             ##            colors_dictionnary[key]["dominant_color"] = dominant_color_string

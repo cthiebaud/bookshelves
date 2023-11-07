@@ -19,17 +19,17 @@ try:
 except OSError:
     pass
 
-def classify(dominant_color):
+def classify(hue, lgt, sat):
 
-    r,g,b = dominant_color
-    hue, lgt, sat = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
+    ## r,g,b = dominant_color
+    ## hue, lgt, sat = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
 
-    if (lgt < 0.18)       : return "black"
-    if (lgt > 0.94)       : return "white"
-    if (sat < 0.11)       : return "gray"
+    if (lgt < 0.20)       : return "black"
+    if (lgt > 0.95)       : return "white"
+    if (sat < 0.10)       : return "gray"
     if (hue < 30/360.0)   : return "red"
-    if (hue < 90/360.0)   : return "yellow"
-    if (hue < 150/360.0)  : return "green"
+    if (hue < 85/360.0)   : return "yellow"
+    if (hue < 145/360.0)  : return "green"
     if (hue < 210/360.0)  : return "cyan"
     if (hue < 270/360.0)  : return "blue"
     if (hue < 330/360.0)  : return "magenta"
@@ -61,13 +61,16 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                 tags.append(house)
                 tags.append(value["lan"])
                 if (key in colors_dictionnary) :
-                    d = colors_dictionnary[key]["dominant_color"]
-                    matches = re.finditer(r'\d+', d)
-                    tup = []
-                    for matchNum, match in enumerate(matches, start=1):
-                        tup.append(int(d[match.regs[0][0]:match.regs[0][1]]))                            
-                    clazz = classify(tuple(tup))
-                    tags.append(clazz)
+                    monochrome_variance = colors_dictionnary[key]["monochrome_variance"]
+                    if monochrome_variance > 80:
+                        hls = colors_dictionnary[key]["hls"]
+                        ## matches = re.finditer(r'\d+', d)
+                        ## tup = []
+                        ## for matchNum, match in enumerate(matches, start=1):
+                        ##     tup.append(int(d[match.regs[0][0]:match.regs[0## ][1]]))   
+                        qwe = hls.split(", ")                       
+                        clazz = classify(float(qwe[0]), float(qwe[1]), float(qwe[2]))
+                        tags.append(clazz)
                 value["tags"] = tags
             my_dictionary.update(data)
     
