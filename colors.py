@@ -18,20 +18,7 @@ from skimage.exposure import is_low_contrast
 from pathlib import PurePath 
 from colorthief import ColorThief
 
-
 colors_dictionnary = {}
-
-def classify(hue, lgt, sat):
-    if (lgt < 0.16)       : return "black"
-    if (lgt > 0.94)       : return "white"
-    if (sat < 0.12)       : return "gray"
-    if (hue < 30/360.0)   : return "red"
-    if (hue < 90/360.0)   : return "yellow"
-    if (hue < 150/360.0)  : return "green"
-    if (hue < 210/360.0)  : return "cyan"
-    if (hue < 270/360.0)  : return "blue"
-    if (hue < 330/360.0)  : return "magenta"
-    return "red"
 
 ## https://stackoverflow.com/a/58826063/1070215
 def getContrast(file):
@@ -91,26 +78,28 @@ for ext in extensions:
         # print(os.path.basename(filename2))
         key = PurePath(filename2).stem[2:]
 
-        if key not in colors_dictionnary:
-            print(i, key)
-            i = i + 1
-            contrast = getContrast(filename2)
-            im = io.imread(filename2)
-            monochrome = getMonochrome(im)
-
+        print(i, key)
+        i = i + 1
 ##             if is_low_contrast(im, fraction_threshold=0.5): 
 ##                 print("  low contrast")
 ##                 if (monochrome(im)) :
 ##                     print("    monochrome")
 
-            color_thief = ColorThief(filename2)
-            # get the dominant color
-            dominant_color = color_thief.get_color(quality=1)
-            r,g,b = dominant_color
-            dominant_color_string = f"rgb({r}, {g}, {b})"
-            h,l,s = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
-            clazz = classify(h,l,s)
-            colors_dictionnary[key] = {"dominant_color": dominant_color_string, "clazz": clazz, "contrast": contrast, "monochrome": monochrome}
+        color_thief = ColorThief(filename2)
+        # get the dominant color
+        dominant_color = color_thief.get_color(quality=1)
+        r,g,b = dominant_color
+        dominant_color_string = f"rgb({r}, {g}, {b})"
+        h,l,s = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
+
+        if key in colors_dictionnary:
+            colors_dictionnary[key]["hls"] = f"{h}, {l}, {s}"
+        else:
+            contrast = getContrast(filename2)
+            im = io.imread(filename2)
+            monochrome = getMonochrome(im)
+
+            colors_dictionnary[key] = {"dominant_color": dominant_color_string, "contrast": contrast, "monochrome": monochrome}
             print("    ", colors_dictionnary[key])
 
 ##             ##            

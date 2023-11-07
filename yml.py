@@ -24,9 +24,9 @@ def classify(dominant_color):
     r,g,b = dominant_color
     hue, lgt, sat = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
 
-    if (lgt < 0.10)       : return "black"
-    if (lgt > 0.90)       : return "white"
-    if (sat < 0.10)       : return "gray"
+    if (lgt < 0.18)       : return "black"
+    if (lgt > 0.94)       : return "white"
+    if (sat < 0.11)       : return "gray"
     if (hue < 30/360.0)   : return "red"
     if (hue < 90/360.0)   : return "yellow"
     if (hue < 150/360.0)  : return "green"
