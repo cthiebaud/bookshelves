@@ -1,28 +1,32 @@
 import glob
 import os
 from PIL import Image
-from operator import attrgetter
 
-sizes = []
 extensions = ['jpg', 'jpeg', 'webp', 'png']
-i = 0
+directories = [("covers-no-text","thumbs2"), ("covers","thumbs")]
+
 for ext in extensions:
-    for filename in glob.iglob('/Users/christophe.thiebaud/github.com/cthiebaud/bookcovers/covers/*.'+ext, recursive=True):
-        
-        # count
-        size = os.stat(filename).st_size
-        sizes.append(size)
-        i += 1
-
+  ## print(ext) 
+  for dir in directories:
+    ## print(dir[0], "=>", dir[1]) 
+    covers = f"/Users/christophe.thiebaud/github.com/cthiebaud/bookcovers/{dir[0]}/*.{ext}"
+    thumbs = dir[1]
+    i = 0
+    for filename in glob.iglob(covers):
         basename = os.path.basename(filename)
-        newName = "/Users/christophe.thiebaud/github.com/cthiebaud/bookshelves/thumbs/T_" + basename
-        # don't create thumbnail if already exists
-        if not os.path.isfile(newName):
-          print(f"{basename} => {newName}")
-          im = Image.open(filename).convert('RGB')
-
-          im.thumbnail((200, 400), Image.LANCZOS)
+        if basename[0] == 'Z':
+           basename = basename[2:]
+        if basename.startswith('978-2070514427') :
           # prefix thumbnail file with T_
-          im.save(newName, "JPEG")
+          thumbName = f"/Users/christophe.thiebaud/github.com/cthiebaud/bookshelves/{dir[1]}/T_{basename}"
+          print(i, filename, "=>", thumbName, os.path.isfile(thumbName))
+          
+          # don't create thumbnail if already exists
+          if not os.path.isfile(thumbName):
+            print(f"{basename} => {thumbName}")
+            im = Image.open(filename).convert('RGB')
+            im.thumbnail((200, 400), Image.LANCZOS)
+            im.save(thumbName, "JPEG")
         
+        i = i + 1
  
