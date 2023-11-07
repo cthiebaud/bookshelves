@@ -6,6 +6,7 @@ import os
 import sys
 import webcolors
 import yaml
+import re
     
 from pathlib import PurePath 
 from colorthief import ColorThief
@@ -17,6 +18,22 @@ try:
     os.remove('everything.yaml')
 except OSError:
     pass
+
+def classify(dominant_color):
+
+    r,g,b = dominant_color
+    hue, lgt, sat = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
+
+    if (lgt < 0.10)       : return "black"
+    if (lgt > 0.90)       : return "white"
+    if (sat < 0.10)       : return "gray"
+    if (hue < 30/360.0)   : return "red"
+    if (hue < 90/360.0)   : return "yellow"
+    if (hue < 150/360.0)  : return "green"
+    if (hue < 210/360.0)  : return "cyan"
+    if (hue < 270/360.0)  : return "blue"
+    if (hue < 330/360.0)  : return "magenta"
+    return "red"
 
 # root_dir needs a trailing slash (i.e. /root/dir/)
 i = 0
@@ -44,7 +61,13 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                 tags.append(house)
                 tags.append(value["lan"])
                 if (key in colors_dictionnary) :
-                    tags.append(colors_dictionnary[key]["clazz"])
+                    d = colors_dictionnary[key]["dominant_color"]
+                    matches = re.finditer(r'\d+', d)
+                    tup = []
+                    for matchNum, match in enumerate(matches, start=1):
+                        tup.append(int(d[match.regs[0][0]:match.regs[0][1]]))                            
+                    clazz = classify(tuple(tup))
+                    tags.append(clazz)
                 value["tags"] = tags
             my_dictionary.update(data)
     

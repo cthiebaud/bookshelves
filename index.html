@@ -416,7 +416,9 @@
             c.display()
         })
 
-        function blend(index, property) {
+        function blend(index, propert) {
+            const key = propert[0]
+            const property = propert[1]
             const fig = document.createElement("figure");
             fig.dataset.index = index
             fig.classList.add("figure")
@@ -425,6 +427,7 @@
                 fig.classList.add(property.tags[tagIndex])
             }
             fig.classList.add(property.where)
+            fig.id = key
 
             const img = document.createElement("img");
             if (!property['image_path']) {
@@ -526,9 +529,9 @@
                 }
 
                 if (!skip) {
-                    const entry = entries[property][1]
+                    const entry = entries[property]
                     blend(property, entry)
-                    c.count(entry)
+                    c.count(entry[1])
                 } else {
                     // console.log(entries[property][1])
                 }
