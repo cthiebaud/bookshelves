@@ -22,18 +22,22 @@ def classify(luminance, hue, lgt, sat):
 
     ## r,g,b = dominant_color
     ## hue, lgt, sat = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
-    if (sat < 0.18) : 
-        if (luminance <= 42)   : return "black"
-        if (luminance >= 250)   : return "white"
+    if (sat < 0.20) : 
+        if (luminance <= 50)   : return "black"
+        if (luminance >= 239)   : return "white"
         return "gray"
     else:
-        if (luminance <= 20)   : return "black"
-        if (luminance >= 240)   : return "white"
+        if (luminance <= 30)   : return "black"
+        if (luminance >= 245)   : return "white"
         ## if (lgt < 0.20)       : return "black"
         ## if (lgt > 0.95)       : return "white"
         ## if (sat < 0.10)       : return "gray"
+        
+        ## 0.05555555555
         if (hue < 20/360.0)   : return "red"
+        # 0.22222222
         if (hue < 80/360.0)   : return "yellow"
+        # 0.3888
         if (hue < 140/360.0)  : return "green"
         if (hue < 200/360.0)  : return "cyan"
         if (hue < 260/360.0)  : return "blue"
@@ -45,6 +49,11 @@ i = 0
 my_dictionary = {}
 with open('colors.json', 'r') as fp:
     colors_dictionnary = json.load(fp)
+
+goodreads = {}
+
+with open('year_first_published.json', 'r') as fp:
+    goodreads = json.load(fp)
 
 for filename in glob.iglob('**/*.yaml', recursive=True):
     # print("-------------")
@@ -77,6 +86,9 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                         clazz = classify(luminance, float(qwe[0]), float(qwe[1]), float(qwe[2]))
                         if clazz is not None:
                             tags.append(clazz)
+                if key in goodreads:
+                    print("found date", key, goodreads[key])
+                    tags.append(f"_{goodreads[key]}")
                 value["tags"] = tags
             my_dictionary.update(data)
     
