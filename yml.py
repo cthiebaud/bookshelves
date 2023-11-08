@@ -32,12 +32,12 @@ def classify(luminance, hue, lgt, sat):
         ## if (lgt < 0.20)       : return "black"
         ## if (lgt > 0.95)       : return "white"
         ## if (sat < 0.10)       : return "gray"
-        if (hue < 30/360.0)   : return "red"
-        if (hue < 90/360.0)   : return "yellow"
-        if (hue < 150/360.0)  : return "green"
-        if (hue < 210/360.0)  : return "cyan"
-        if (hue < 270/360.0)  : return "blue"
-        if (hue < 320/360.0)  : return "magenta"
+        if (hue < 20/360.0)   : return "red"
+        if (hue < 80/360.0)   : return "yellow"
+        if (hue < 140/360.0)  : return "green"
+        if (hue < 200/360.0)  : return "cyan"
+        if (hue < 260/360.0)  : return "blue"
+        if (hue < 340/360.0)  : return "magenta"
         return "red"
 
 # root_dir needs a trailing slash (i.e. /root/dir/)

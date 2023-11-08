@@ -443,12 +443,16 @@
             // background-color: ${property['dominant_color']};` // 
             let hls = `${property['hls']}`.split(", ")
 
-            hls[0] = Number.parseFloat(hls[0]).toFixed(2)
-            hls[1] = Math.floor(hls[1]*100)
-            hls[2] = Math.floor(hls[2]*100)
-            let bg = `background: hsl(${hls[0]}turn ${hls[2]}% ${hls[1]}%)`
+            // hls[0] = Number.parseFloat(hls[0]).toFixed(2) + "turn"
+            hls[0] = parseFloat(hls[0])*360
+            hls[1] = parseFloat(hls[1])*100
+            hls[2] = parseFloat(hls[2])*100
+            let hslString = `${hls[0]} ${hls[2]}% ${hls[1]}%`
+            let bg = `background: hsl(${hslString})`
             figcaptionstyle = `width: 100%; ${bg};`
             figcaption.style = figcaptionstyle
+            figcaption.dataset.hsl = hslString
+            figcaption.dataset.dominant_color = property['dominant_color']
 
             let lan = property['lan'] || '';
             if (!property['de']) {
