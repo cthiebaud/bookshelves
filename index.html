@@ -465,6 +465,11 @@
             img.classList.add("figure-img")
             img.classList.add("img-fluid")
 
+            const goodreads_link = document.createElement("a");
+            goodreads_link.target = "_goodreads"
+            goodreads_link.href = `https://www.goodreads.com/book/isbn/${key}`
+            goodreads_link.appendChild(img)
+
             const figcaption = document.createElement("figcaption");
             figcaption.classList.add("figure-caption")
             figcaption.classList.add("text-wrap")
@@ -520,7 +525,7 @@
             figcaption.appendChild(document.createElement("br"))
             figcaption.appendChild(titleSPAN)
             figcaption.appendChild(titleBar)
-            fig.appendChild(img)
+            fig.appendChild(goodreads_link)
             fig.appendChild(figcaption)
             container.appendChild(fig)
         }
