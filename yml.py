@@ -6,7 +6,6 @@ import os
 import sys
 import webcolors
 import yaml
-import re
     
 from pathlib import PurePath 
 from colorthief import ColorThief
@@ -19,21 +18,27 @@ try:
 except OSError:
     pass
 
-def classify(hue, lgt, sat):
+def classify(luminance, hue, lgt, sat):
 
     ## r,g,b = dominant_color
     ## hue, lgt, sat = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
-
-    if (lgt < 0.20)       : return "black"
-    if (lgt > 0.95)       : return "white"
-    if (sat < 0.10)       : return "gray"
-    if (hue < 30/360.0)   : return "red"
-    if (hue < 85/360.0)   : return "yellow"
-    if (hue < 145/360.0)  : return "green"
-    if (hue < 210/360.0)  : return "cyan"
-    if (hue < 270/360.0)  : return "blue"
-    if (hue < 330/360.0)  : return "magenta"
-    return "red"
+    if (sat < 0.18) : 
+        if (luminance <= 42)   : return "black"
+        if (luminance >= 250)   : return "white"
+        return "gray"
+    else:
+        if (luminance <= 20)   : return "black"
+        if (luminance >= 240)   : return "white"
+        ## if (lgt < 0.20)       : return "black"
+        ## if (lgt > 0.95)       : return "white"
+        ## if (sat < 0.10)       : return "gray"
+        if (hue < 30/360.0)   : return "red"
+        if (hue < 90/360.0)   : return "yellow"
+        if (hue < 150/360.0)  : return "green"
+        if (hue < 210/360.0)  : return "cyan"
+        if (hue < 270/360.0)  : return "blue"
+        if (hue < 320/360.0)  : return "magenta"
+        return "red"
 
 # root_dir needs a trailing slash (i.e. /root/dir/)
 i = 0
@@ -61,16 +66,17 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                 tags.append(house)
                 tags.append(value["lan"])
                 if (key in colors_dictionnary) :
+                    hls = colors_dictionnary[key]["hls"]
+                    value["hls"] = hls
+                    dominant_color = colors_dictionnary[key]["dominant_color"]
+                    value["dominant_color"] = dominant_color
                     monochrome_variance = colors_dictionnary[key]["monochrome_variance"]
-                    if monochrome_variance > 80:
-                        hls = colors_dictionnary[key]["hls"]
-                        ## matches = re.finditer(r'\d+', d)
-                        ## tup = []
-                        ## for matchNum, match in enumerate(matches, start=1):
-                        ##     tup.append(int(d[match.regs[0][0]:match.regs[0## ][1]]))   
+                    luminance = colors_dictionnary[key]["luminance"]
+                    if monochrome_variance > 79:
                         qwe = hls.split(", ")                       
-                        clazz = classify(float(qwe[0]), float(qwe[1]), float(qwe[2]))
-                        tags.append(clazz)
+                        clazz = classify(luminance, float(qwe[0]), float(qwe[1]), float(qwe[2]))
+                        if clazz is not None:
+                            tags.append(clazz)
                 value["tags"] = tags
             my_dictionary.update(data)
     

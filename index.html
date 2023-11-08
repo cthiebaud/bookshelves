@@ -440,7 +440,15 @@
             const figcaption = document.createElement("figcaption");
             figcaption.classList.add("figure-caption")
             figcaption.classList.add("text-wrap")
-            figcaption.style = "width: 100%;" // border-bottom: 1px solid lightgray;
+            // background-color: ${property['dominant_color']};` // 
+            let hls = `${property['hls']}`.split(", ")
+
+            hls[0] = Number.parseFloat(hls[0]).toFixed(2)
+            hls[1] = Math.floor(hls[1]*100)
+            hls[2] = Math.floor(hls[2]*100)
+            let bg = `background: hsl(${hls[0]}turn ${hls[2]}% ${hls[1]}%)`
+            figcaptionstyle = `width: 100%; ${bg};`
+            figcaption.style = figcaptionstyle
 
             let lan = property['lan'] || '';
             if (!property['de']) {
@@ -454,7 +462,7 @@
             const titleSPAN = document.createElement("span");
             titleSPAN.appendChild(titleE)
             titleSPAN.style = "font-size:smaller;"
-
+            
             if (where.includes("lipion")) {
                 const float1 = document.createElement("span");
                 float1.classList.add("float-end")
