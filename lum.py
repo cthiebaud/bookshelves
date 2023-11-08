@@ -49,7 +49,7 @@ for qwe in colors_dictionnary:
         tup.append(float(d[match.regs[0][0]:match.regs[0][1]]))   
     g = gray(tup[0], tup[1], tup[2])
     colors_dictionnary[qwe]["luminance"] = g
-    del colors_dictionnary[qwe]["gray"]
+    # del colors_dictionnary[qwe]["gray"]
 
 with open('colors.json', 'w') as fp:
   json.dump(colors_dictionnary, fp, indent=2)
