@@ -27,17 +27,23 @@ def getContrast(file):
     # or convert to grayscale, which should be the same.
     # Alternately, use L (luminance) from LAB.
     img = cv2.imread(file)
-    Y = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)[:,:,0]
+    ## Y = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)[:,:,0]
+## 
+    ## # compute min and max of Y
+    ## min = np.min(Y)
+    ## max = np.max(Y)
+## 
+    ## contrast = None
+    ## # compute contrast
+    ## if max == 0 and min == 0:
+    ##     contrast = 0
+    ## else:
+    ##     contrast = (max-min)/(max+min)
+    ## print("CONTRAST", min, max, contrast)    
 
-    # compute min and max of Y
-    min = np.min(Y)
-    max = np.max(Y)
-
-    contrast = 0
-    # compute contrast
-    if max+min != 0:
-        contrast = (max-min)/(max+min)
-    # print(min,max,contrast)    
+    img_grey = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    contrast = img_grey.std()
+    print("CONTRAST", contrast)    
     return contrast
 
 # https://stackoverflow.com/a/59218331/1070215
@@ -60,13 +66,13 @@ def getMonochrome(im):
     PC1var = dd[0]*100./dd.sum()
     PC2var = dd[1]*100./dd.sum()
     PC3var = dd[2]*100./dd.sum()
-    print(f"PC1 variance: {PC1var}; PC2 variance: {PC2var}; PC3 variance: {PC3var}")
+    print(f"MONOCHROME, PC1 variance: {PC1var}; PC2 variance: {PC2var}; PC3 variance: {PC3var}")
 
     return PC1var
 
 # https://stackoverflow.com/a/3244061/1070215
 def getDominant(file):
-    print('reading image')
+    ## print('reading image')
     from PIL import Image
     import scipy
     import scipy.misc
@@ -82,9 +88,9 @@ def getDominant(file):
     shape = ar.shape
     ar = ar.reshape(scipy.product(shape[:2]), shape[2]).astype(float)
 
-    print('finding clusters')
+    ## print('finding clusters')
     codes, dist = scipy.cluster.vq.kmeans(ar, NUM_CLUSTERS)
-    print('cluster centres:\n', codes)
+    ## print('cluster centres:\n', codes)
 
     vecs, dist = scipy.cluster.vq.vq(ar, codes)         # assign codes
     counts, bins = scipy.histogram(vecs, len(codes))    # count occurrences
@@ -92,7 +98,7 @@ def getDominant(file):
     index_max = scipy.argmax(counts)                    # find most frequent
     peak = codes[index_max]
     colour = binascii.hexlify(bytearray(int(c) for c in peak)).decode('ascii')
-    print('most frequent is %s (#%s)' % (peak, colour))
+    print('DOMINANT COLOR %s (#%s)' % (peak, colour))
     return peak
 
 
@@ -127,18 +133,23 @@ for ext in extensions:
             # colors_dictionnary[key]["dominant_color"] = dominant_color_string      
         # else:
 
-            ## contrast = getContrast(filename2)
+            contrast = getContrast(filename2)
             im = io.imread(filename2)
             monochrome = getMonochrome(im)
 
             dominant_color = getDominant(filename2)
-            print(dominant_color)
             r,g,b = dominant_color
-            print(dominant_color)
+            ## print(dominant_color)
             dominant_color_string = f"rgb({r}, {g}, {b})"
             h,l,s = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
-            colors_dictionnary[key] = {"dominant_color": dominant_color_string, "hls": f"{h}, {l}, {s}", "monochrome_variance": monochrome} # , "contrast": contrast, "monochrome": monochrome
-            print("    ", colors_dictionnary[key])
+            colors_dictionnary[key] = {
+                "dominant_color": dominant_color_string, 
+                "hls": f"{h}, {l}, {s}", 
+                "monochrome_variance": monochrome,
+                "contrast": contrast} 
+            print("========>", colors_dictionnary[key])
+            with open('colors.json', 'w') as fp:
+              json.dump(colors_dictionnary, fp, indent=2)
 
         i = i + 1
 

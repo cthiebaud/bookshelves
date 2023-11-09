@@ -539,12 +539,12 @@
                     titleSPAN.appendChild(float)
                 }
             } {
-                const text = document.createTextNode(`lum: ${property.luminance}; sat: ${(+property.saturation).toFixed(2)}; mon: ${(+property.monochrome_variance).toFixed(2)}`); // monochrome_variance
+                const text = document.createTextNode(`lum: ${property.luminance}; H: ${(+property.hue * 360).toFixed(0)}; S: ${(+property.saturation).toFixed(2)}; L: ${(+property.lightness * 255).toFixed(0)}; mono: ${(+property.monochrome_variance).toFixed(2)}`); // monochrome_variance
                 const div = document.createElement("div");
                 // div.classList.add("float-end")
                 div.appendChild(text)
                 div.style = "font-size: smallest;"
-                if (true) {
+                if (false) {
                     titleSPAN.appendChild(div)
                 }
             }
@@ -568,11 +568,33 @@
                     const lumB = +b[1].luminance
                     const satA = +a[1].saturation
                     const satB = +b[1].saturation
-                    const lumsatA = lumA + satA
-                    const lumsatB = lumB + satB
-                    if (lumsatA != lumsatB) {
-                        return lumsatB - lumsatA
+                    const hueA = +a[1].hue
+                    const hueB = +b[1].hue
+                    let critA
+                    let critB
+                    {
+                        critA = lumA // lumA //* Math.exp(satA) 
+                        critB = lumB // lumB //* Math.exp(satB) 
+                        if (critA != critB) {
+                            return critB - critA
+                        }
                     }
+                    {
+                        critA = satA // lumA //* Math.exp(satA) 
+                        critB = satB // lumB //* Math.exp(satB) 
+                        if (critA != critB) {
+                            return critA - critB
+                        }
+                    }
+                    /*
+                    {
+                        critA = hueA // lumA //* Math.exp(satA) 
+                        critB = hueB // lumB //* Math.exp(satB) 
+                        if (critA != critB) {
+                            return critA - critB
+                        }
+                    }*/
+
 
                     const nameA = a[1].de.toUpperCase().split(/ \(/)[0]
                     const nameB = b[1].de.toUpperCase().split(/ \(/)[0]

@@ -18,6 +18,19 @@ try:
 except OSError:
     pass
 
+yellow_threshold = [{
+    "lum":255, "sat":1,
+    "lum":254, "sat":0.85,
+    "lum":253, "sat":0.73,
+    "lum":252, "sat":0.63,
+    "lum":251, "sat":0.53,
+    "lum":250, "sat":0.43,
+    "lum":249, "sat":0.33,
+    "lum":248, "sat":0.68,
+    "lum":248, "sat":0.60,
+    
+    
+}]
 def classify(luminance, hue, lgt, sat):
 
     ## luminance = lgt * 255
@@ -34,52 +47,62 @@ def classify(luminance, hue, lgt, sat):
     ##     ## if (lgt > 0.95)       : return "white"
     ##     ## if (sat < 0.10)       : return "gray"
         
-    if (sat < 0.1) : 
-        if luminance <= 41 :
-            return "black"
-        if luminance >= 230 :
-            return "white"
-        return "gray"
-    else:
+    ## if (sat < 0.1) : 
+    ##     if luminance <= 41 :
+    ##         return "black"
+    ##     if luminance >= 240 :
+    ##         return "white"
+    ##     return "gray"
+    ## else:
         ## 0.05555555555
-        if (hue < 20/360.0)   : 
-            if luminance <= 41 :
-                return "black"
-            if luminance >= 243 :
-                return "white"
+        if (hue < 20/360.0)     : 
+            ## if luminance <= 47  :
+            ##     return "black"
+            ## if luminance >= 242 :
+            ##     return "white"
+            ## if sat <= 0.1050    : 
+            ##     return "gray"
             return "red"
         # 0.22222222
         if (hue < 80/360.0)   : 
-            if luminance <= 50 :
-                return "black"
-            if luminance >= 251 :
-                return "white"
+            ## if luminance <= 50:
+            ##     return "black"
+            ## if luminance >= 245:
+            ##     return "white"
+            ## if sat <= 0.1050: 
+            ##     return "gray"
             return "yellow"
         # 0.3888
         if (hue < 140/360.0)  : 
-            if luminance <= 41 :
-                return "black"
-            if luminance >= 243 :
-                return "white"
+            ## if luminance <= 41 :
+            ##     return "black"
+            ## if luminance >= 243 :
+            ##     return "white"
             return "green"
         if (hue < 200/360.0)  : 
-            if luminance <= 41 :
-                return "black"
-            if luminance >= 243 :
-                return "white"
+            ## if luminance <= 41 :
+            ##     return "black"
+            ## if luminance >= 243 :
+            ##     return "white"
             return "cyan"
         if (hue < 260/360.0)  : 
-            if luminance <= 41 :
-                return "black"
-            if luminance >= 233 :
-                return "white"
+            ##if luminance <= 41 :
+            ##    return "black"
+            ##if luminance >= 233 :
+            ##    return "white"
             return "blue"
         if (hue < 340/360.0)  : 
-            if luminance <= 41 :
-                return "black"
-            if luminance >= 243 :
-                return "white"
+            ## if luminance <= 41 :
+            ##     return "black"
+            ## if luminance >= 243 :
+            ##     return "white"
             return "magenta"
+        ## if luminance <= 47  :
+        ##     return "black"
+        ## if luminance >= 242 :
+        ##     return "white"
+        ## if sat <= 0.1050    : 
+        ##     return "gray"
         return "red"
 
 # root_dir needs a trailing slash (i.e. /root/dir/)
@@ -117,6 +140,8 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                     value["hls"] = hls
                     h,l,s = hls.split(", ")                       
                     value["saturation"] = s
+                    value["hue"] = h
+                    value["lightness"] = l
                     
                     dominant_color = colors_dictionnary[key]["dominant_color"]
                     value["dominant_color"] = dominant_color
