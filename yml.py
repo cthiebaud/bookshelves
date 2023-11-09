@@ -20,18 +20,19 @@ except OSError:
 
 def classify(luminance, hue, lgt, sat):
 
+    ## luminance = lgt * 255
     ## r,g,b = dominant_color
     ## hue, lgt, sat = colorsys.rgb_to_hls(r/255.0,g/255.0,b/255.0)
-    if (sat < 0.20) : 
-        if (luminance <= 50)   : return "black"
-        if (luminance >= 239)   : return "white"
-        return "gray"
-    else:
-        if (luminance <= 30)   : return "black"
-        if (luminance >= 245)   : return "white"
-        ## if (lgt < 0.20)       : return "black"
-        ## if (lgt > 0.95)       : return "white"
-        ## if (sat < 0.10)       : return "gray"
+    ## if (sat < 0.15) : 
+    ##     if (luminance <= 50)   : return "black"
+    ##     if (luminance >= 240)   : return "white"
+    ##     return "gray"
+    ## else:
+    ##     if (luminance <= 30)   : return "black"
+    ##     if (luminance >= 251)   : return "white"
+    ##     ## if (lgt < 0.20)       : return "black"
+    ##     ## if (lgt > 0.95)       : return "white"
+    ##     ## if (sat < 0.10)       : return "gray"
         
         ## 0.05555555555
         if (hue < 20/360.0)   : return "red"
@@ -77,17 +78,23 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                 if (key in colors_dictionnary) :
                     hls = colors_dictionnary[key]["hls"]
                     value["hls"] = hls
+                    
                     dominant_color = colors_dictionnary[key]["dominant_color"]
                     value["dominant_color"] = dominant_color
+                    
                     monochrome_variance = colors_dictionnary[key]["monochrome_variance"]
+                    value["monochrome_variance"] = monochrome_variance
+                    
                     luminance = colors_dictionnary[key]["luminance"]
-                    if monochrome_variance > 79:
+                    value["luminance"] = luminance
+                    
+                    if True: # monochrome_variance > 79:
                         qwe = hls.split(", ")                       
                         clazz = classify(luminance, float(qwe[0]), float(qwe[1]), float(qwe[2]))
                         if clazz is not None:
                             tags.append(clazz)
                 if key in goodreads:
-                    print("found date", key, goodreads[key])
+                    # print("found date", key, goodreads[key])
                     tags.append(f"_{goodreads[key]}")
                 value["tags"] = tags
             my_dictionary.update(data)
@@ -102,16 +109,12 @@ i = 0
 for ext in extensions:
     for filename2 in glob.iglob('thumbs/*.'+ext, recursive=True):
 
-      # if not 'enfer' in filename2:
-      
         # print(os.path.basename(filename2))
         key = PurePath(filename2).stem[2:]
         images.append(filename2)
         my_dictionary[key]["image_path"] = f"thumbs/{os.path.basename(filename2)}" # filename2
 
         i = i + 1
-
-
 
 ## print("^^^^^^^^^^^^^^^^^^^^")
 ## j = 0
