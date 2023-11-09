@@ -34,15 +34,52 @@ def classify(luminance, hue, lgt, sat):
     ##     ## if (lgt > 0.95)       : return "white"
     ##     ## if (sat < 0.10)       : return "gray"
         
+    if (sat < 0.1) : 
+        if luminance <= 41 :
+            return "black"
+        if luminance >= 230 :
+            return "white"
+        return "gray"
+    else:
         ## 0.05555555555
-        if (hue < 20/360.0)   : return "red"
+        if (hue < 20/360.0)   : 
+            if luminance <= 41 :
+                return "black"
+            if luminance >= 243 :
+                return "white"
+            return "red"
         # 0.22222222
-        if (hue < 80/360.0)   : return "yellow"
+        if (hue < 80/360.0)   : 
+            if luminance <= 50 :
+                return "black"
+            if luminance >= 251 :
+                return "white"
+            return "yellow"
         # 0.3888
-        if (hue < 140/360.0)  : return "green"
-        if (hue < 200/360.0)  : return "cyan"
-        if (hue < 260/360.0)  : return "blue"
-        if (hue < 340/360.0)  : return "magenta"
+        if (hue < 140/360.0)  : 
+            if luminance <= 41 :
+                return "black"
+            if luminance >= 243 :
+                return "white"
+            return "green"
+        if (hue < 200/360.0)  : 
+            if luminance <= 41 :
+                return "black"
+            if luminance >= 243 :
+                return "white"
+            return "cyan"
+        if (hue < 260/360.0)  : 
+            if luminance <= 41 :
+                return "black"
+            if luminance >= 233 :
+                return "white"
+            return "blue"
+        if (hue < 340/360.0)  : 
+            if luminance <= 41 :
+                return "black"
+            if luminance >= 243 :
+                return "white"
+            return "magenta"
         return "red"
 
 # root_dir needs a trailing slash (i.e. /root/dir/)
@@ -91,11 +128,10 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                     value["monochrome_variance"] = monochrome_variance
                     if (monochrome_variance < 75):
                         tags.append("rainbow")
-                    else:
-                        if True:
-                            clazz = classify(luminance, float(h), float(l), float(s))
-                            if clazz is not None:
-                                tags.append(clazz)
+                    if True:
+                        clazz = classify(luminance, float(h), float(l), float(s))
+                        if clazz is not None:
+                            tags.append(clazz)
                 if key in goodreads:
                     # print("found date", key, goodreads[key])
                     tags.append(f"_{goodreads[key]}")

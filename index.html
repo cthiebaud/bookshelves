@@ -60,7 +60,9 @@
             font-size: 14px;
         }
 
-        #tags .btn {
+        #tags .btn,
+        #color .btn,
+        #date .btn {
             font-size: 12px;
         }
 
@@ -109,8 +111,8 @@
             color: magenta;
         }
 
-        .btn:hover {
-            border-color: #808080;
+        .btn:not(.active):hover {
+            border: 1px dashed #a0a0a0;
         }
 
         .sgl {
