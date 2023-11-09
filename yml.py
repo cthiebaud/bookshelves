@@ -150,6 +150,9 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                     luminance = colors_dictionnary[key]["luminance"]
                     image_properties["luminance"] = luminance
 
+                    contrast = colors_dictionnary[key]["contrast"]
+                    image_properties["contrast"] = contrast
+
                     monochrome_variance = colors_dictionnary[key]["monochrome_variance"]
                     image_properties["monochrome_variance"] = monochrome_variance
                     if (monochrome_variance < 75):

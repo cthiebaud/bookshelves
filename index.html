@@ -491,7 +491,7 @@
             figcaption.classList.add("figure-caption")
             figcaption.classList.add("text-wrap")
             // background-color: ${property['dominant_color']};` // 
-            let hls = `${property['hls']}`.split(", ")
+            let hls = `${image_properties['hls']}`.split(", ")
 
             // hls[0] = Number.parseFloat(hls[0]).toFixed(2) + "turn"
             hls[0] = parseFloat(hls[0]) * 360
@@ -502,7 +502,7 @@
             figcaptionstyle = `width: 100%;` // ${bg};
             figcaption.style = figcaptionstyle
             figcaption.dataset.hsl = hslString
-            figcaption.dataset.dominant_color = property['dominant_color']
+            figcaption.dataset.dominant_color = image_properties['dominant_color']
 
             let lan = property['lan'] || '';
             if (!property['de']) {
@@ -541,7 +541,7 @@
                     titleSPAN.appendChild(float)
                 }
             } {
-                const text = document.createTextNode(`lum: ${image_properties.luminance}; H: ${(+image_properties.hue * 360).toFixed(0)}; S: ${(+image_properties.saturation).toFixed(2)}; L: ${(+image_properties.lightness * 255).toFixed(0)}; mono: ${(+image_properties.monochrome_variance).toFixed(2)}`); // monochrome_variance
+                const text = document.createTextNode(`lum: ${image_properties.luminance}; H: ${(+image_properties.hue * 360).toFixed(0)}; S: ${(+image_properties.saturation).toFixed(2)}; L: ${(+image_properties.lightness * 255).toFixed(0)}; contrast: ${(+image_properties.contrast).toFixed(2)}; mono: ${(+image_properties.monochrome_variance).toFixed(2)}`); // monochrome_variance
                 const div = document.createElement("div");
                 // div.classList.add("float-end")
                 div.appendChild(text)
@@ -572,6 +572,8 @@
                     const satB = +b[1].image_properties.saturation
                     const hueA = +a[1].image_properties.hue
                     const hueB = +b[1].image_properties.hue
+                    const conA = +a[1].image_properties.contrast
+                    const conB = +b[1].image_properties.contrast
                     let critA
                     let critB
                     {
@@ -589,6 +591,13 @@
                         }
                     }
                     /*
+                    {
+                        critA = conA // lumA //* Math.exp(satA) 
+                        critB = conB // lumB //* Math.exp(satB) 
+                        if (critA != critB) {
+                            return critB - critA
+                        }
+                    }
                     {
                         critA = hueA // lumA //* Math.exp(satA) 
                         critB = hueB // lumB //* Math.exp(satB) 
