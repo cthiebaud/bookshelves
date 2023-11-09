@@ -476,7 +476,7 @@
             if (!property['image_path']) {
                 console.log("image_path not defined", property)
             }
-            img.src = property['image_path']
+            img.src = property['image_path'].replace("thumbs", "thumbs2")
             img.classList.add("figure-img")
             img.classList.add("img-fluid")
 

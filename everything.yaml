@@ -4760,14 +4760,14 @@
   where: /saint-lazare-de-savene/salon/_4
 978-2020096287:
   de: Eugen Kogon, Hermann Langbein, Adalbert Ruckerl (Auteur)
-  dominant_color: rgb(250.96833289714735, 251.13068132251593, 231.37189217482336)
+  dominant_color: rgb(251.03977554051824, 250.895692358475, 231.18740716289815)
   ext: "Points. Histoire Broch\xE9 \u2013 1 juin 1987"
-  hls: 0.16803608615348406, 0.9460834774457634, 0.7185686684454156
+  hls: 0.16545704455926408, 0.9455434954968949, 0.7148129109704029
   image_path: thumbs/T_978-2020096287.jpg
   lan: "\U0001F1EB\U0001F1F7"
   luminance: 250
-  monochrome_variance: 91.27505544590431
-  saturation: '0.7185686684454156'
+  monochrome_variance: 90.90154954878373
+  saturation: '0.7148129109704029'
   tags:
   - nazi
   - saint-jean-lipion
@@ -5279,13 +5279,13 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070104574:
   de: Marcel Proust
-  dominant_color: rgb(254.30167208546214, 254.40617742684626, 251.39247561542035)
-  hls: 0.17244612262721204, 0.9917620647887581, 0.71731800342711
+  dominant_color: rgb(254.63348149734912, 254.66406040807584, 253.0837572966315)
+  hls: 0.16989167146746365, 0.9955839562837399, 0.7016763761740706
   image_path: thumbs/T_978-2070104574.jpg
   lan: "\U0001F1EB\U0001F1F7"
-  luminance: 254
-  monochrome_variance: 92.78009148455865
-  saturation: '0.71731800342711'
+  luminance: 255
+  monochrome_variance: 94.13655635118026
+  saturation: '0.7016763761740706'
   tags:
   - proust
   - lapleiade
@@ -5489,13 +5489,13 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070111367:
   de: Marcel Proust
-  dominant_color: rgb(254.60543930531267, 254.6945667249593, 253.4516673701984)
-  hls: 0.17861821357527527, 0.9963651648924661, 0.670472658664324
+  dominant_color: rgb(254.6594540416249, 254.6934143034019, 253.76292671422675)
+  hls: 0.1727495458961644, 0.9969732176816248, 0.6027805362462569
   image_path: thumbs/T_978-2070111367.jpg
   lan: "\U0001F1EB\U0001F1F7"
   luminance: 255
-  monochrome_variance: 92.38864397683206
-  saturation: '0.670472658664324'
+  monochrome_variance: 93.1844111235258
+  saturation: '0.6027805362462569'
   tags:
   - proust
   - lapleiade
@@ -10641,21 +10641,20 @@
 978-2253047773:
   de: "Franz Kafka (Auteur), Brigitte Vergne-Cain (Sous la direction de), G\xE9rard\
     \ Rudent (Avec la contribution de)"
-  dominant_color: rgb(224.11313394018205, 234.01636324230603, 233.7200910273082)
+  dominant_color: rgb(224.4030091348737, 234.39322944653412, 234.1065018807093)
   ext: "Poche \u2013 1 novembre 1988"
-  hls: 0.49501387870630764, 0.8982931317303688, 0.19092217665529482
+  hls: 0.49521652915084396, 0.899600467806682, 0.1951071568744743
   image_path: thumbs/T_978-2253047773.jpg
   lan: "\U0001F1E9\U0001F1EA"
   lan2: "\U0001F1EB\U0001F1F7"
   luminance: 232
-  monochrome_variance: 73.21519516707349
-  saturation: '0.19092217665529482'
+  monochrome_variance: 76.7425178228147
+  saturation: '0.1951071568744743'
   tags:
   - kafka
   - kafka
   - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
-  - rainbow
   - cyan
   - _1915
   title: "Die Verwandlung / La m\xE9tamorphose"
@@ -16001,20 +16000,21 @@
   where: /saint-lazare-de-savene/salon/_8
 978-8806164089:
   de: Dylan Thomas (Autore), R. S. Crivelli (a cura di), A. Marianni (a cura di)
-  dominant_color: rgb(221.8261464750171, 223.88004791238876, 228.78388090349077)
+  dominant_color: rgb(220.68925114620478, 222.7706316861946, 227.49121242995415)
   ext: "Testo inglese a fronte Copertina flessibile \u2013 2005"
-  hls: 0.6174671880507944, 0.8835490732911919, 0.11715335302168157
+  hls: 0.61566714723486, 0.8787852226983508, 0.11002931560525485
   image_path: thumbs/T_978-8806164089.jpg
   lan: "\U0001F1EE\U0001F1F9"
   lanOriginal: "\U0001F1EC\U0001F1E7"
-  luminance: 224
-  monochrome_variance: 81.5822766034614
-  saturation: '0.11715335302168157'
+  luminance: 223
+  monochrome_variance: 71.7990969784448
+  saturation: '0.11002931560525485'
   tags:
   - "po\xE9sie"
   - _9
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
+  - rainbow
   - blue
   - _1965
   title: Poesie
@@ -16096,14 +16096,14 @@
   where: /saint-lazare-de-savene/chambre_alessia/_C
 978-8806210885:
   de: Giovanna Rosadini (Editor)
-  dominant_color: rgb(254.4991794574766, 254.528284583454, 254.16647359783764)
+  dominant_color: rgb(254.9976406911387, 254.99569773090002, 254.98181944348067)
   ext: "Paperback \u2013 January 1, 2012"
-  hls: 0.18007381714691886, 0.9974407023162581, 0.2771984320686262
+  hls: 0.14619883040929393, 0.9999597257541557, 0.7702702702709409
   image_path: thumbs/T_978-8806210885.jpg
   lan: "\U0001F1EE\U0001F1F9"
-  luminance: 254
-  monochrome_variance: 98.14566681152345
-  saturation: '0.2771984320686262'
+  luminance: 255
+  monochrome_variance: 87.31635882912828
+  saturation: '0.7702702702709409'
   tags:
   - "po\xE9sie"
   - _1
@@ -23659,19 +23659,18 @@ boh18:
 boh19:
   ASIN: B01EN52O8I
   de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
-  dominant_color: rgb(149.7820351758794, 136.5838567839196, 95.36385050251256)
-  hls: 0.12624458327922627, 0.4806782072125333, 0.22198285940135376
-  image_path: thumbs/T_boh19.jpg
+  dominant_color: rgb(224.58619767286345, 208.01444429584058, 175.03316838304133)
+  hls: 0.1109292286986156, 0.7835673844233426, 0.4489286527826919
+  image_path: thumbs/T_boh19.jpeg
   lan: "\U0001F1EE\U0001F1F9"
-  luminance: 137
-  monochrome_variance: 71.39143799564594
-  saturation: '0.22198285940135376'
+  luminance: 210
+  monochrome_variance: 79.36710348351774
+  saturation: '0.4489286527826919'
   tags:
   - "po\xE9sie"
   - _1
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
-  - rainbow
   - yellow
   title: La Divina Commedia - Inferno
   where: /saint-lazare-de-savene/salon/_1
@@ -23695,13 +23694,13 @@ boh2:
 boh20:
   ASIN: B01EN52O8I
   de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
-  dominant_color: rgb(198.19616658778986, 183.90960719356366, 155.15227165168008)
-  hls: 0.11134887454062191, 0.6928400749793528, 0.27477475776405014
-  image_path: thumbs/T_boh20.jpg
+  dominant_color: rgb(250.17018547750592, 248.68074191002367, 243.19208760852408)
+  hls: 0.13109241717328765, 0.9673770060510392, 0.419414136622391
+  image_path: thumbs/T_boh20.jpeg
   lan: "\U0001F1EE\U0001F1F9"
-  luminance: 185
-  monochrome_variance: 86.87962921599296
-  saturation: '0.27477475776405014'
+  luminance: 249
+  monochrome_variance: 83.60163292586488
+  saturation: '0.419414136622391'
   tags:
   - "po\xE9sie"
   - _1
