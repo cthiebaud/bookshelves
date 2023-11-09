@@ -232,6 +232,9 @@
             <a href="#" id="magenta" class="color btn" role="button" data-bs-toggle="button" data-tags="magenta">
                 <span class="color_magenta">⬤</span>
             </a>
+            <a href="#" id="rainbow" class="color btn" role="button" data-bs-toggle="button" data-tags="rainbow">
+                <span class="color_rainbow">🌈</span>
+            </a>
         </div>
         <hr>
         <div id="date" class="category">
@@ -525,22 +528,22 @@
                 float1.appendChild(sgl)
                 figcaption.appendChild(float1)
             } {
-                const flagE = document.createTextNode(lan);
-                const float2 = document.createElement("span");
-                float2.classList.add("float-end")
-                float2.appendChild(flagE)
-                float2.style = "font-size: larger;"
+                const text = document.createTextNode(lan);
+                const float = document.createElement("span");
+                float.classList.add("float-end")
+                float.appendChild(text)
+                float.style = "font-size: larger;"
                 if (false) {
-                    titleSPAN.appendChild(float2)
+                    titleSPAN.appendChild(float)
                 }
             } {
-                const flagE = document.createTextNode(property.luminance);
-                const float2 = document.createElement("span");
-                float2.classList.add("float-end")
-                float2.appendChild(flagE)
-                float2.style = "font-size: larger;"
-                if (false) {
-                    titleSPAN.appendChild(float2)
+                const text = document.createTextNode(`lum: ${property.luminance}; sat: ${(+property.saturation).toFixed(2)}; mon: ${(+property.monochrome_variance).toFixed(2)}`); // monochrome_variance
+                const div = document.createElement("div");
+                // div.classList.add("float-end")
+                div.appendChild(text)
+                div.style = "font-size: smallest;"
+                if (true) {
+                    titleSPAN.appendChild(div)
                 }
             }
             figcaption.appendChild(authorE)
@@ -559,10 +562,14 @@
 
             entries.sort((a, b) => {
                 try {
-                    const lumA = a[1].luminance
-                    const lumB = b[1].luminance
-                    if (lumA != lumB) {
-                        return lumB - lumA
+                    const lumA = +a[1].luminance
+                    const lumB = +b[1].luminance
+                    const satA = +a[1].saturation
+                    const satB = +b[1].saturation
+                    const lumsatA = lumA + satA
+                    const lumsatB = lumB + satB
+                    if (lumsatA != lumsatB) {
+                        return lumsatB - lumsatA
                     }
 
                     const nameA = a[1].de.toUpperCase().split(/ \(/)[0]

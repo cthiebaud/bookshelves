@@ -60,9 +60,7 @@ def getMonochrome(im):
     PC1var = dd[0]*100./dd.sum()
     PC2var = dd[1]*100./dd.sum()
     PC3var = dd[2]*100./dd.sum()
-    ## print(f"PC1 variance: {PC1var}")
-    ## print(f"PC2 variance: {PC2var}")
-    ## print(f"PC3 variance: {PC3var}")
+    print(f"PC1 variance: {PC1var}; PC2 variance: {PC2var}; PC3 variance: {PC3var}")
 
     return PC1var
 

@@ -78,21 +78,24 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                 if (key in colors_dictionnary) :
                     hls = colors_dictionnary[key]["hls"]
                     value["hls"] = hls
+                    h,l,s = hls.split(", ")                       
+                    value["saturation"] = s
                     
                     dominant_color = colors_dictionnary[key]["dominant_color"]
                     value["dominant_color"] = dominant_color
                     
-                    monochrome_variance = colors_dictionnary[key]["monochrome_variance"]
-                    value["monochrome_variance"] = monochrome_variance
-                    
                     luminance = colors_dictionnary[key]["luminance"]
                     value["luminance"] = luminance
-                    
-                    if True: # monochrome_variance > 79:
-                        qwe = hls.split(", ")                       
-                        clazz = classify(luminance, float(qwe[0]), float(qwe[1]), float(qwe[2]))
-                        if clazz is not None:
-                            tags.append(clazz)
+
+                    monochrome_variance = colors_dictionnary[key]["monochrome_variance"]
+                    value["monochrome_variance"] = monochrome_variance
+                    if (monochrome_variance < 75):
+                        tags.append("rainbow")
+                    else:
+                        if True:
+                            clazz = classify(luminance, float(h), float(l), float(s))
+                            if clazz is not None:
+                                tags.append(clazz)
                 if key in goodreads:
                     # print("found date", key, goodreads[key])
                     tags.append(f"_{goodreads[key]}")
