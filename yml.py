@@ -155,7 +155,7 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
 
                     monochrome_variance = colors_dictionnary[key]["monochrome_variance"]
                     image_properties["monochrome_variance"] = monochrome_variance
-                    if (monochrome_variance < 75):
+                    if (monochrome_variance < 70 and contrast > 40):
                         tags.append("rainbow")
                     if True:
                         clazz = classify(luminance, float(h), float(l), float(s))
