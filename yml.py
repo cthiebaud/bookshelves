@@ -132,25 +132,26 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
             for key, value in data.items():
                 value["where"] = where
                 tags = value.get("tags", [])
+                image_properties = value.get("image_properties", {})
                 tags.append(folder)
                 tags.append(house)
                 tags.append(value["lan"])
                 if (key in colors_dictionnary) :
                     hls = colors_dictionnary[key]["hls"]
-                    value["hls"] = hls
+                    image_properties["hls"] = hls
                     h,l,s = hls.split(", ")                       
-                    value["saturation"] = s
-                    value["hue"] = h
-                    value["lightness"] = l
+                    image_properties["saturation"] = s
+                    image_properties["hue"] = h
+                    image_properties["lightness"] = l
                     
                     dominant_color = colors_dictionnary[key]["dominant_color"]
-                    value["dominant_color"] = dominant_color
+                    image_properties["dominant_color"] = dominant_color
                     
                     luminance = colors_dictionnary[key]["luminance"]
-                    value["luminance"] = luminance
+                    image_properties["luminance"] = luminance
 
                     monochrome_variance = colors_dictionnary[key]["monochrome_variance"]
-                    value["monochrome_variance"] = monochrome_variance
+                    image_properties["monochrome_variance"] = monochrome_variance
                     if (monochrome_variance < 75):
                         tags.append("rainbow")
                     if True:
@@ -161,6 +162,7 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                     # print("found date", key, goodreads[key])
                     tags.append(f"_{goodreads[key]}")
                 value["tags"] = tags
+                value["image_properties"] = image_properties
             my_dictionary.update(data)
     
     i = i + 1

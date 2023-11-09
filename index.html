@@ -462,6 +462,8 @@
         function blend(index, propert) {
             const key = propert[0]
             const property = propert[1]
+            const image_properties = property['image_properties']
+            
             const fig = document.createElement("figure");
             fig.dataset.index = index
             fig.classList.add("figure")
@@ -539,12 +541,12 @@
                     titleSPAN.appendChild(float)
                 }
             } {
-                const text = document.createTextNode(`lum: ${property.luminance}; H: ${(+property.hue * 360).toFixed(0)}; S: ${(+property.saturation).toFixed(2)}; L: ${(+property.lightness * 255).toFixed(0)}; mono: ${(+property.monochrome_variance).toFixed(2)}`); // monochrome_variance
+                const text = document.createTextNode(`lum: ${image_properties.luminance}; H: ${(+image_properties.hue * 360).toFixed(0)}; S: ${(+image_properties.saturation).toFixed(2)}; L: ${(+image_properties.lightness * 255).toFixed(0)}; mono: ${(+image_properties.monochrome_variance).toFixed(2)}`); // monochrome_variance
                 const div = document.createElement("div");
                 // div.classList.add("float-end")
                 div.appendChild(text)
                 div.style = "font-size: smallest;"
-                if (false) {
+                if (true) {
                     titleSPAN.appendChild(div)
                 }
             }
@@ -564,12 +566,12 @@
 
             entries.sort((a, b) => {
                 try {
-                    const lumA = +a[1].luminance
-                    const lumB = +b[1].luminance
-                    const satA = +a[1].saturation
-                    const satB = +b[1].saturation
-                    const hueA = +a[1].hue
-                    const hueB = +b[1].hue
+                    const lumA = +a[1].image_properties.luminance
+                    const lumB = +b[1].image_properties.luminance
+                    const satA = +a[1].image_properties.saturation
+                    const satB = +b[1].image_properties.saturation
+                    const hueA = +a[1].image_properties.hue
+                    const hueB = +b[1].image_properties.hue
                     let critA
                     let critB
                     {
