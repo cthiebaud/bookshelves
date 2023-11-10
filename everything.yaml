@@ -27721,6 +27721,28 @@ ASIN-B003X7DCEI:
   - magenta
   title: 20 000 lieues sous les mers - tome 1
   where: /saint-lazare-de-savene/salon/mostly_red
+ASIN-B003X84X04:
+  de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)
+  ext: "Poche \u2013 16 juillet 1973"
+  image_path: thumbs/T_ASIN-B003X84X04.jpg
+  image_properties:
+    contrast: 99.90283351047793
+    dominant_color: rgb(15.04886521537749, 14.953450671607225, 15.094488188976378)
+    hls: 0.7794198139025724, 0.058917527177614906, 0.004693750144512043
+    hue: '0.7794198139025724'
+    lightness: '0.058917527177614906'
+    luminance: 15
+    monochrome_variance: 77.38463626660908
+    saturation: '0.004693750144512043'
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - kafka
+  - kafka
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  - green
+  title: "Le proc\xE8s"
+  where: /saint-jean-lipion/chambre/kafka
 ASIN-B0092FT3LQ:
   de: Primo Levi (Autore)
   ext: "Copertina flessibile \u2013 1 gennaio 1978"
@@ -28550,28 +28572,6 @@ boh29:
   - gray
   title: Storia sociale dell'arte. Volume primo
   where: /saint-lazare-de-savene/salon/_3
-boh3:
-  de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)
-  ext: "Poche \u2013 16 juillet 1973"
-  image_path: thumbs/T_boh3.jpeg
-  image_properties:
-    contrast: 61.952266958176104
-    dominant_color: rgb(221.55044679122665, 215.5140536149472, 202.1017059301381)
-    hls: 0.11493758371133954, 0.8306904955320877, 0.22523712488545927
-    hue: '0.11493758371133954'
-    lightness: '0.8306904955320877'
-    luminance: 216
-    monochrome_variance: 80.16092015027915
-    saturation: '0.22523712488545927'
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - kafka
-  - kafka
-  - saint-jean-lipion
-  - "\U0001F1EB\U0001F1F7"
-  - rainbow
-  title: "Le proc\xE8s"
-  where: /saint-jean-lipion/chambre/kafka
 boh30:
   ASIN: B000KGVW0G
   de: Hauser Arnold (Autore)
