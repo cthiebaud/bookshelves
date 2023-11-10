@@ -23,11 +23,11 @@ def classify_color(image_path):
 
     # Classify the image based on color
     if mean_saturation < 30 and std_saturation < 10:
-        return "Black"
+        return "White"
     elif mean_saturation < 30 and std_saturation < 50:
         return "Gray"
     elif mean_saturation < 30 and std_saturation >= 50:
-        return "White"    
+        return "Black"
     elif std_hue > 60:
         return "Rainbow"    
     else:

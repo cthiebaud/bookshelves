@@ -41,7 +41,7 @@
     "monochrome_variance": 96.9827690176479,
     "contrast": 75.37682095182844,
     "luminance": 247,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 32.84202922077922
   },
   "978-2070724680": {
@@ -158,7 +158,7 @@
     "monochrome_variance": 94.05093873669536,
     "contrast": 12.543711836791914,
     "luminance": 255,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 2.7643045843045844
   },
   "paris": {
@@ -230,7 +230,7 @@
     "monochrome_variance": 84.20698192228382,
     "contrast": 11.096371403614825,
     "luminance": 252,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 25.542297297297296
   },
   "978-8806056797": {
@@ -293,7 +293,7 @@
     "monochrome_variance": 98.07071374763844,
     "contrast": 23.870339350015918,
     "luminance": 233,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 101.3233487654321
   },
   "978-8808176882": {
@@ -320,7 +320,7 @@
     "monochrome_variance": 97.04086978946928,
     "contrast": 27.253571276272325,
     "luminance": 236,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 120.69368338557993
   },
   "978-0140129595": {
@@ -437,7 +437,7 @@
     "monochrome_variance": 97.13187511783116,
     "contrast": 72.80384355228777,
     "luminance": 89,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 70.78128205128205
   },
   "978-2020302067": {
@@ -500,7 +500,7 @@
     "monochrome_variance": 79.41300545677207,
     "contrast": 2.634837283055812,
     "luminance": 255,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 0.5928213166144201
   },
   "978-8806155315": {
@@ -518,7 +518,7 @@
     "monochrome_variance": 91.50132277505509,
     "contrast": 15.503521496801257,
     "luminance": 177,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 46.39503745318352
   },
   "978-0007548699": {
@@ -608,7 +608,7 @@
     "monochrome_variance": 73.49275063039417,
     "contrast": 2.2476696298434296,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 11.016560402684563
   },
   "370-0224304768": {
@@ -653,7 +653,7 @@
     "monochrome_variance": 69.32816122281749,
     "contrast": 9.416005878984805,
     "luminance": 218,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 39.02977611940298
   },
   "lamartine": {
@@ -779,7 +779,7 @@
     "monochrome_variance": 89.58298557686956,
     "contrast": 103.41079201068237,
     "luminance": 254,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 11.121441947565543
   },
   "978-2221219003": {
@@ -860,7 +860,7 @@
     "monochrome_variance": 93.1069659120682,
     "contrast": 10.015707309754625,
     "luminance": 233,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 122.25669354838709
   },
   "978-2081255258": {
@@ -896,7 +896,7 @@
     "monochrome_variance": 97.4974450624328,
     "contrast": 18.93259746430907,
     "luminance": 250,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 6.447876923076923
   },
   "979-2842781958": {
@@ -1337,7 +1337,7 @@
     "monochrome_variance": 99.20190086351386,
     "contrast": 98.81567437489629,
     "luminance": 254,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 58.81679331306991
   },
   "978-2701156309": {
@@ -1607,7 +1607,7 @@
     "monochrome_variance": 90.02351311625102,
     "contrast": 56.949728171612065,
     "luminance": 186,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 47.42983146067416
   },
   "978-8845273537": {
@@ -1778,7 +1778,7 @@
     "monochrome_variance": 97.85739670284057,
     "contrast": 31.07156420121137,
     "luminance": 255,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 4.9068
   },
   "978-2091720128": {
@@ -1904,7 +1904,7 @@
     "monochrome_variance": 99.17016450978558,
     "contrast": 81.11282949012703,
     "luminance": 252,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 12.831914893617022
   },
   "978-8845917073": {
@@ -1967,7 +1967,7 @@
     "monochrome_variance": 84.0713904012858,
     "contrast": 12.418438887623616,
     "luminance": 244,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 18.310648464163823
   },
   "978-8845916755": {
@@ -2138,7 +2138,7 @@
     "monochrome_variance": 96.31053305943475,
     "contrast": 49.713450183104,
     "luminance": 35,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 153.56977203647418
   },
   "978-0099800408": {
@@ -2156,7 +2156,7 @@
     "monochrome_variance": 84.5204169720753,
     "contrast": 44.12576953176807,
     "luminance": 1,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 12.162395498392282
   },
   "978-2070736294": {
@@ -2291,7 +2291,7 @@
     "monochrome_variance": 89.40842680483598,
     "contrast": 5.3432494335961325,
     "luminance": 239,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 15.801983870967742
   },
   "978-8804468646": {
@@ -2435,7 +2435,7 @@
     "monochrome_variance": 91.34428454225818,
     "contrast": 58.50905591957989,
     "luminance": 160,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 33.59024429967427
   },
   "looking_glass": {
@@ -2759,7 +2759,7 @@
     "monochrome_variance": 89.42100233397323,
     "contrast": 7.713369315412253,
     "luminance": 255,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 6.968591549295775
   },
   "978-8868390457": {
@@ -2813,7 +2813,7 @@
     "monochrome_variance": 84.13808032785131,
     "contrast": 13.368608236955696,
     "luminance": 241,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 17.74668941979522
   },
   "978-2340047808": {
@@ -2957,7 +2957,7 @@
     "monochrome_variance": 89.28399214532658,
     "contrast": 13.733676174495008,
     "luminance": 250,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 24.35775684931507
   },
   "979-1092457186": {
@@ -3011,7 +3011,7 @@
     "monochrome_variance": 98.83774975283193,
     "contrast": 85.46274165819923,
     "luminance": 245,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 2.3803894080996884
   },
   "978-2904388118": {
@@ -3191,7 +3191,7 @@
     "monochrome_variance": 93.29828833801504,
     "contrast": 25.042691925873022,
     "luminance": 235,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 33.91189552238806
   },
   "978-0330262132": {
@@ -3254,7 +3254,7 @@
     "monochrome_variance": 98.60126092230946,
     "contrast": 71.08333218917541,
     "luminance": 86,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 26.51448675496689
   },
   "978-8847425255": {
@@ -3398,7 +3398,7 @@
     "monochrome_variance": 97.39189401374726,
     "contrast": 33.50695428895099,
     "luminance": 236,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 26.268978328173375
   },
   "ASIN-B000KS30XG": {
@@ -3767,7 +3767,7 @@
     "monochrome_variance": 96.57851664866953,
     "contrast": 9.271763156859128,
     "luminance": 255,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 3.048071672354949
   },
   "978-2070731404": {
@@ -3929,7 +3929,7 @@
     "monochrome_variance": 94.27540375649377,
     "contrast": 9.51270284582207,
     "luminance": 255,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 3.574334470989761
   },
   "978-2298161076": {
@@ -4010,7 +4010,7 @@
     "monochrome_variance": 86.25236850770611,
     "contrast": 15.040420474767219,
     "luminance": 244,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 17.481506849315068
   },
   "978-0140432251": {
@@ -4028,7 +4028,7 @@
     "monochrome_variance": 95.31039697375633,
     "contrast": 29.900883293924952,
     "luminance": 197,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 25.31139705882353
   },
   "978-0571200337": {
@@ -4181,7 +4181,7 @@
     "monochrome_variance": 99.8143888311667,
     "contrast": 99.37774534258999,
     "luminance": 253,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 0.5175227963525836
   },
   "978-2226038128": {
@@ -4217,7 +4217,7 @@
     "monochrome_variance": 99.9999999999995,
     "contrast": 73.95136493167412,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 0.0
   },
   "978-8806130688": {
@@ -4370,7 +4370,7 @@
     "monochrome_variance": 99.99999999999997,
     "contrast": 45.08276693251095,
     "luminance": 1,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 0.0
   },
   "978-2246813095": {
@@ -5036,7 +5036,7 @@
     "monochrome_variance": 84.34533434137037,
     "contrast": 40.67788163977973,
     "luminance": 0,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 10.681094224924012
   },
   "978-0828837408": {
@@ -5117,7 +5117,7 @@
     "monochrome_variance": 71.33447681154331,
     "contrast": 2.531300378963614,
     "luminance": 250,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 10.952111801242236
   },
   "978-8828203117": {
@@ -5135,7 +5135,7 @@
     "monochrome_variance": 83.47923860147785,
     "contrast": 24.244042827510118,
     "luminance": 0,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 11.394223300970873
   },
   "978-2072952333": {
@@ -5144,7 +5144,7 @@
     "monochrome_variance": 84.22245933351181,
     "contrast": 14.517951331962712,
     "luminance": 244,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 18.29331058020478
   },
   "978-8804532408": {
@@ -5288,7 +5288,7 @@
     "monochrome_variance": 85.5605463990165,
     "contrast": 18.567459484681628,
     "luminance": 242,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 26.82112852664577
   },
   "978-2743615819": {
@@ -5360,7 +5360,7 @@
     "monochrome_variance": 95.84183327701558,
     "contrast": 31.005890469216915,
     "luminance": 194,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 30.14916918429003
   },
   "978-8883425738": {
@@ -5468,7 +5468,7 @@
     "monochrome_variance": 94.7088452215688,
     "contrast": 34.821655835319724,
     "luminance": 198,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 51.06988505747126
   },
   "978-3492054201": {
@@ -5576,7 +5576,7 @@
     "monochrome_variance": 97.05106666779646,
     "contrast": 68.79507846374067,
     "luminance": 231,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 29.213375796178344
   },
   "978-8895862118": {
@@ -5855,7 +5855,7 @@
     "monochrome_variance": 83.9562394375945,
     "contrast": 51.473246389523005,
     "luminance": 0,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 6.461759259259259
   },
   "978-8817023795": {
@@ -6026,7 +6026,7 @@
     "monochrome_variance": 87.27477270896595,
     "contrast": 26.221285040465375,
     "luminance": 205,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 14.4118
   },
   "978-1472924148": {
@@ -6107,7 +6107,7 @@
     "monochrome_variance": 96.99418241548118,
     "contrast": 35.26990275401282,
     "luminance": 242,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 114.89017628205129
   },
   "978-2757825730": {
@@ -6251,7 +6251,7 @@
     "monochrome_variance": 94.83232522307598,
     "contrast": 25.471091873862832,
     "luminance": 191,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 31.519645061728394
   },
   "978-2070135431": {
@@ -6737,7 +6737,7 @@
     "monochrome_variance": 86.03991367076424,
     "contrast": 20.901758547831122,
     "luminance": 235,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 19.237836879432624
   },
   "978-8807014581": {
@@ -6791,7 +6791,7 @@
     "monochrome_variance": 82.11073788286582,
     "contrast": 12.078632321272005,
     "luminance": 238,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 123.05962962962963
   },
   "978-8877683984": {
@@ -6800,7 +6800,7 @@
     "monochrome_variance": 90.6890678782363,
     "contrast": 38.66951831878622,
     "luminance": 252,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 30.075308219178083
   },
   "978-2843040603": {
@@ -6836,7 +6836,7 @@
     "monochrome_variance": 98.40324213849617,
     "contrast": 68.04488165348833,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 43.90167711598746
   },
   "978-2842712976": {
@@ -6935,7 +6935,7 @@
     "monochrome_variance": 99.75124316500808,
     "contrast": 44.176339538264145,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 0.9495483870967742
   },
   "978-8833914954": {
@@ -7115,7 +7115,7 @@
     "monochrome_variance": 93.86580962105123,
     "contrast": 19.146729462391363,
     "luminance": 255,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 17.05221153846154
   },
   "978-8845911125": {
@@ -7142,7 +7142,7 @@
     "monochrome_variance": 97.91717797358554,
     "contrast": 47.30522445399147,
     "luminance": 237,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 91.70108695652173
   },
   "dalla_dittatura_alla_democrazia-1": {
@@ -7169,7 +7169,7 @@
     "monochrome_variance": 68.5256275756073,
     "contrast": 2.5565011966031737,
     "luminance": 237,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 21.904432835820895
   },
   "978-8806210885": {
@@ -7178,7 +7178,7 @@
     "monochrome_variance": 87.31635882912828,
     "contrast": 6.095305736981391,
     "luminance": 255,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 3.7679505813953487
   },
   "978-0691137353": {
@@ -7205,7 +7205,7 @@
     "monochrome_variance": 79.4165434946924,
     "contrast": 2.0816566838028465,
     "luminance": 237,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 29.93687898089172
   },
   "978-2070453863": {
@@ -7304,7 +7304,7 @@
     "monochrome_variance": 95.70518718619833,
     "contrast": 66.43426079403153,
     "luminance": 248,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 77.35291803278689
   },
   "978-2070762637": {
@@ -7394,7 +7394,7 @@
     "monochrome_variance": 98.13348916043485,
     "contrast": 69.74934551926913,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 18.701166666666666
   },
   "boh26": {
@@ -7448,7 +7448,7 @@
     "monochrome_variance": 82.6631663169653,
     "contrast": 95.16170676544978,
     "luminance": 1,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 8.78623417721519
   },
   "978-2020102438": {
@@ -7475,7 +7475,7 @@
     "monochrome_variance": 98.78874221355267,
     "contrast": 26.90458811092151,
     "luminance": 252,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 11.376144578313253
   },
   "978-2070308552": {
@@ -7520,7 +7520,7 @@
     "monochrome_variance": 98.98316333635297,
     "contrast": 59.36523363251616,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 15.511776061776061
   },
   "978-2232101274": {
@@ -7574,7 +7574,7 @@
     "monochrome_variance": 71.7990969784448,
     "contrast": 7.655420608884352,
     "luminance": 223,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 110.85656626506024
   },
   "978-0140138122": {
@@ -7583,7 +7583,7 @@
     "monochrome_variance": 80.29366976019149,
     "contrast": 16.571890209159584,
     "luminance": 228,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 15.010741324921135
   },
   "978-2072743863": {
@@ -7691,7 +7691,7 @@
     "monochrome_variance": 95.62498217494738,
     "contrast": 22.572186771062917,
     "luminance": 244,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 24.100391156462585
   },
   "978-2070101733": {
@@ -7934,7 +7934,7 @@
     "monochrome_variance": 99.99999999999983,
     "contrast": 48.32623193681914,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 0.0
   },
   "978-0307386458": {
@@ -8177,7 +8177,7 @@
     "monochrome_variance": 96.86530244359187,
     "contrast": 90.58325324908279,
     "luminance": 250,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 16.182883959044368
   },
   "978-2702903605": {
@@ -8294,7 +8294,7 @@
     "monochrome_variance": 97.4741123237746,
     "contrast": 30.588709936148838,
     "luminance": 234,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 119.19572755417957
   },
   "978-8804556893": {
@@ -8510,7 +8510,7 @@
     "monochrome_variance": 86.7903958160551,
     "contrast": 13.085728382881614,
     "luminance": 249,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 25.321513605442178
   },
   "978-2070141937": {
@@ -8519,7 +8519,7 @@
     "monochrome_variance": 76.4997230912676,
     "contrast": 2.5122357752971016,
     "luminance": 245,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 9.507743902439024
   },
   "978-2070719907": {
@@ -8555,7 +8555,7 @@
     "monochrome_variance": 93.76262376439232,
     "contrast": 43.032375949186104,
     "luminance": 1,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 31.000096153846155
   },
   "978-2070354399": {
@@ -8672,7 +8672,7 @@
     "monochrome_variance": 82.22841316864623,
     "contrast": 2.469097605577233,
     "luminance": 244,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 20.858631921824106
   },
   "978-2205066876": {
@@ -8699,7 +8699,7 @@
     "monochrome_variance": 81.01601388094184,
     "contrast": 2.45284365540911,
     "luminance": 253,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 7.897073170731708
   },
   "978-8815290892": {
@@ -8780,7 +8780,7 @@
     "monochrome_variance": 71.6796514080008,
     "contrast": 8.503070608269727,
     "luminance": 252,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 26.834214743589744
   },
   "978-3836525459": {
@@ -8942,7 +8942,7 @@
     "monochrome_variance": 97.76405249718609,
     "contrast": 25.649900436604046,
     "luminance": 247,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 124.74894409937889
   },
   "978-2858504718": {
@@ -9068,7 +9068,7 @@
     "monochrome_variance": 99.99999999999953,
     "contrast": 33.46003671876014,
     "luminance": 1,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 0.0
   },
   "978-8815273659": {
@@ -9284,7 +9284,7 @@
     "monochrome_variance": 97.42178627528959,
     "contrast": 33.844306128845695,
     "luminance": 140,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 24.073850415512464
   },
   "978-2812401268": {
@@ -9365,7 +9365,7 @@
     "monochrome_variance": 81.03876707364842,
     "contrast": 7.884618739679615,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 31.95154794520548
   },
   "978-8886452731": {
@@ -9689,7 +9689,7 @@
     "monochrome_variance": 85.66030506776858,
     "contrast": 7.835796240374349,
     "luminance": 222,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 16.994375
   },
   "978-2070369591": {
@@ -9752,7 +9752,7 @@
     "monochrome_variance": 85.15534960784017,
     "contrast": 11.377536414745425,
     "luminance": 232,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 35.010907590759075
   },
   "978-2070727384": {
@@ -10085,7 +10085,7 @@
     "monochrome_variance": 100.0,
     "contrast": 51.25327062023803,
     "luminance": 39,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 0.0
   },
   "978-2010152504": {
@@ -10121,7 +10121,7 @@
     "monochrome_variance": 95.40913050254905,
     "contrast": 43.58735222509051,
     "luminance": 253,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 40.34301075268817
   },
   "978-2211049283": {
@@ -10256,7 +10256,7 @@
     "monochrome_variance": 94.86069848314352,
     "contrast": 24.252498933524183,
     "luminance": 255,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 2.5298355263157895
   },
   "978-2731801293": {
@@ -10355,7 +10355,7 @@
     "monochrome_variance": 91.97242515856637,
     "contrast": 25.062023942044767,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 33.764489795918365
   },
   "978-0521422123": {
@@ -10391,7 +10391,7 @@
     "monochrome_variance": 97.03477355640906,
     "contrast": 61.89506588495034,
     "luminance": 253,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 33.293671875
   },
   "978-0340994689": {
@@ -10553,7 +10553,7 @@
     "monochrome_variance": 97.31913093737863,
     "contrast": 68.53736077108658,
     "luminance": 252,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 26.112590579710144
   },
   "978-8804396628": {
@@ -10607,7 +10607,7 @@
     "monochrome_variance": 94.19265595685323,
     "contrast": 41.26222243844785,
     "luminance": 96,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 54.141642857142855
   },
   "978-8877829030": {
@@ -10796,7 +10796,7 @@
     "monochrome_variance": 91.44606589175021,
     "contrast": 7.739881729743249,
     "luminance": 169,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 12.482997807454653
   },
   "978-1846147586": {
@@ -10823,7 +10823,7 @@
     "monochrome_variance": 83.60163292586488,
     "contrast": 19.865215943215958,
     "luminance": 249,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 23.039982817869415
   },
   "978-3640483419": {
@@ -10940,7 +10940,7 @@
     "monochrome_variance": 95.73764008685937,
     "contrast": 36.77532650184887,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 21.236367781155014
   },
   "978-8804492603": {
@@ -10967,7 +10967,7 @@
     "monochrome_variance": 77.89825612150521,
     "contrast": 6.776377093431553,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 33.50998407643312
   },
   "978-1849162753": {
@@ -11156,7 +11156,7 @@
     "monochrome_variance": 89.30917926434826,
     "contrast": 14.942541646005605,
     "luminance": 254,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 23.074951612903227
   },
   "978-0525478812": {
@@ -11408,7 +11408,7 @@
     "monochrome_variance": 94.833085628123,
     "contrast": 4.865722704171052,
     "luminance": 255,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 1.4622826086956522
   },
   "978-0415026949": {
@@ -11570,7 +11570,7 @@
     "monochrome_variance": 87.24340927320348,
     "contrast": 9.655355974489153,
     "luminance": 31,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 135.7168458781362
   },
   "978-0571200436": {
@@ -11642,7 +11642,7 @@
     "monochrome_variance": 95.0146288956569,
     "contrast": 47.73485469965052,
     "luminance": 244,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 26.311957186544344
   },
   "201-8051502860": {
@@ -11723,7 +11723,7 @@
     "monochrome_variance": 86.26047360637483,
     "contrast": 11.190577885772672,
     "luminance": 134,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 8.48939793323847
   },
   "978-2246398127": {
@@ -11768,7 +11768,7 @@
     "monochrome_variance": 73.57823495255013,
     "contrast": 50.730939092796035,
     "luminance": 254,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 11.337705696202532
   },
   "978-8806151799": {
@@ -11777,7 +11777,7 @@
     "monochrome_variance": 97.10716833462405,
     "contrast": 42.15404069106973,
     "luminance": 60,
-    "clazz": "black",
+    "clazz": "white",
     "mean_hue": 78.49300309597523
   },
   "978-2207247426": {
@@ -11840,7 +11840,7 @@
     "monochrome_variance": 98.65581067659092,
     "contrast": 86.33340636608806,
     "luminance": 1,
-    "clazz": "white",
+    "clazz": "black",
     "mean_hue": 53.33428571428571
   },
   "978-8804425540": {
