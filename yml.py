@@ -18,19 +18,13 @@ try:
 except OSError:
     pass
 
-yellow_threshold = [{
-    "lum":255, "sat":1,
-    "lum":254, "sat":0.85,
-    "lum":253, "sat":0.73,
-    "lum":252, "sat":0.63,
-    "lum":251, "sat":0.53,
-    "lum":250, "sat":0.43,
-    "lum":249, "sat":0.33,
-    "lum":248, "sat":0.68,
-    "lum":248, "sat":0.60,
-    
-    
-}]
+def lumToSatThreshold(lum):
+  # f(255) = 1
+  # f(232) = 0
+    if lum < 232:
+        return 0
+    return (lum-232) / (255-232)
+
 def classify(luminance, hue, lgt, sat):
 
     ## luminance = lgt * 255
@@ -54,6 +48,12 @@ def classify(luminance, hue, lgt, sat):
     ##         return "white"
     ##     return "gray"
     ## else:
+    if luminance <= 40 :
+        return "black"
+    satThreshold = lumToSatThreshold(luminance)
+    if sat < satThreshold:
+        return "white"
+    else:
         ## 0.05555555555
         if (hue < 20/360.0)     : 
             ## if luminance <= 47  :
@@ -118,7 +118,10 @@ with open('year_first_published.json', 'r') as fp:
 
 for filename in glob.iglob('**/*.yaml', recursive=True):
     # print("-------------")
-    print(i, os.path.basename(filename))
+    basename = os.path.basename(filename)
+    if basename[0:1] == "!":
+        continue
+    print(i, basename)
     parts = PurePath(filename).parts
     house = parts[0]
     folder = parts[len(parts) - 2]
@@ -155,12 +158,9 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
 
                     monochrome_variance = colors_dictionnary[key]["monochrome_variance"]
                     image_properties["monochrome_variance"] = monochrome_variance
-                    if (monochrome_variance < 70 and contrast > 40):
-                        tags.append("rainbow")
-                    if True:
-                        clazz = classify(luminance, float(h), float(l), float(s))
-                        if clazz is not None:
-                            tags.append(clazz)
+
+                    tags.append(colors_dictionnary[key]["clazz"])
+
                 if key in goodreads:
                     # print("found date", key, goodreads[key])
                     tags.append(f"_{goodreads[key]}")
