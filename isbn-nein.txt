@@ -1,7 +1,7 @@
-boh13 => 978-2070321407
-paris => 978-0320081590
-ASIN-B00OB8WNMK => 978-8817121170
-ASIN-B07TJB59Y5 => 978-8806154516
+boh13
+paris
+ASIN-B00OB8WNMK
+ASIN-B07TJB59Y5
 vinci
 370-0224304768
 lamartine
@@ -9,7 +9,6 @@ boh38
 boh10
 shakespeare
 boh11
-boh39
 977-1827138009
 boh15
 boh29
@@ -18,6 +17,7 @@ boh28
 boh14
 ASIN-B00FG5GXQE
 boh16
+ASIN-B003X84X04
 ASIN-B0098MD4B8
 boh17
 977-1128608539
@@ -66,7 +66,6 @@ stalemates
 boh27
 ASIN-B00340LFAM
 ASIN-B0014QGFG2
-boh19
 fleurs_du_mal
 boh25
 boh31
@@ -74,7 +73,6 @@ boh31
 boh30
 boh24
 boh18
-boh20
 boh34
 500-0089466431
 boh35
@@ -93,13 +91,13 @@ barbie
 boh44
 ASIN-B009HVT4FK
 i_love_you_baby_7
-politica
+boh19
 wonderland
 977-3817002658
 i_love_you_baby_6
 801-3075911005
 i_love_you_baby_5
-boh3
+boh20
 gai-luron
 ASIN-B0007J1C9W
 boh2

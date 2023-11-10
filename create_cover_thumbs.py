@@ -5,13 +5,14 @@ from PIL import Image
 extensions = ['jpg', 'jpeg', 'webp', 'png']
 directories = [("covers-no-text","thumbs2"), ("covers","thumbs")]
 
+i = 0
+created = 0
 for ext in extensions:
   ## print(ext) 
   for dir in directories:
     ## print(dir[0], "=>", dir[1]) 
     covers = f"/Users/christophe.thiebaud/github.com/cthiebaud/bookcovers/{dir[0]}/*.{ext}"
     thumbs = dir[1]
-    i = 0
     for filename in glob.iglob(covers):
         basename = os.path.basename(filename)
         if basename[0] == 'Z':
@@ -27,6 +28,9 @@ for ext in extensions:
           im = Image.open(filename).convert('RGB')
           im.thumbnail((200, 400), Image.LANCZOS)
           im.save(thumbName, "JPEG")
+          created = created + 1
         
         i = i + 1
- 
+
+      
+print(f"{created} thumb(s) created out of {i} images crawled, because they already exist")

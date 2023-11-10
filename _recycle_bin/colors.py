@@ -78,7 +78,6 @@ def getDominant(file):
     import scipy.misc
     import scipy.cluster
     import binascii
-    import struct
 
     NUM_CLUSTERS = 5
 

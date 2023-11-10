@@ -140,26 +140,7 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                 tags.append(house)
                 tags.append(value["lan"])
                 if (key in colors_dictionnary) :
-                    hls = colors_dictionnary[key]["hls"]
-                    image_properties["hls"] = hls
-                    h,l,s = hls.split(", ")                       
-                    image_properties["saturation"] = s
-                    image_properties["hue"] = h
-                    image_properties["lightness"] = l
-                    
-                    dominant_color = colors_dictionnary[key]["dominant_color"]
-                    image_properties["dominant_color"] = dominant_color
-                    
-                    luminance = colors_dictionnary[key]["luminance"]
-                    image_properties["luminance"] = luminance
-
-                    contrast = colors_dictionnary[key]["contrast"]
-                    image_properties["contrast"] = contrast
-
-                    monochrome_variance = colors_dictionnary[key]["monochrome_variance"]
-                    image_properties["monochrome_variance"] = monochrome_variance
-
-                    tags.append(colors_dictionnary[key]["clazz"])
+                    image_properties = colors_dictionnary[key]
 
                 if key in goodreads:
                     # print("found date", key, goodreads[key])
