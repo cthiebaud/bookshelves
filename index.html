@@ -288,140 +288,123 @@
         </div>
         <hr>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/ac-colors@1.4.3/dist/ac-colors.min.js"></script>
-    <script>
+    <script type="module">
+        import jsYaml from 'https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/+esm'
+        import acColors from 'https://cdn.jsdelivr.net/npm/ac-colors@1.4.3/+esm'
+        import { deltaE } from 'https://cdn.jsdelivr.net/npm/color-delta-e@1.3.0/+esm'
+        import colorSpace from 'https://cdn.jsdelivr.net/npm/color-space@2.0.1/+esm'
+
         const container = document.getElementById("container");
         let entries
         let total_des_totaux = undefined
 
-        // Function to calculate CIEDE2000 color difference between two LAB color values
-        function ciede2000_color_difference(Lab1, Lab2) {
-            const L1 = Lab1[0];
-            const a1 = Lab1[1];
-            const b1 = Lab1[2];
-            const L2 = Lab2[0];
-            const a2 = Lab2[1];
-            const b2 = Lab2[2];
+        function calculateAverageHueHSL(palette) {
+            let totalHue = 0;
+            let totalWeight = 0;
 
-            // Constants for CIEDE2000 calculation
-            const KL = 1;
-            const KC = 1;
-            const KH = 1;
-
-            function delta_L(L1, L2) {
-                return L2 - L1;
+            for (const color of palette) {
+                // Assuming color is in HSL color space
+                const hsl = colorSpace.rgb.hsl(color.color)
+                totalHue += hsl[0] * color.count;
+                totalWeight += color.count;
             }
 
-            function delta_C(C1, C2) {
-                return C2 - C1;
-            }
+            const averageHue = totalHue / totalWeight;
 
-            function delta_H(H1, H2, C1, C2) {
-                let delta_h = H2 - H1;
-                delta_h = (Math.abs(delta_h) <= 180) ? delta_h : (delta_h > 0) ? delta_h - 360 : delta_h + 360;
-                return 2 * Math.sqrt(C1 * C2) * Math.sin(delta_h / 2);
-            }
-
-            function mean(a, b) {
-                return (a + b) / 2;
-            }
-
-            function mean_L(L1, L2) {
-                return mean(L1, L2);
-            }
-
-            function mean_C(C1, C2) {
-                return mean(C1, C2);
-            }
-
-            function mean_H(H1, H2, C1, C2) {
-                return mean(H1, H2) + (Math.abs(H1 - H2) > 180 ? 180 : 0);
-            }
-
-            function C_prime(C, L) {
-                return Math.sqrt(C * C + KL * (L - 50) * (L - 50));
-            }
-
-            function H_prime(H, C, L) {
-                return (180 / Math.PI) * Math.atan2(C * Math.sin((Math.PI / 180) * H), C * Math.cos((Math.PI / 180) * H));
-            }
-
-            const C1 = Math.sqrt(a1 * a1 + b1 * b1);
-            const C2 = Math.sqrt(a2 * a2 + b2 * b2);
-
-            const L1L2 = mean_L(L1, L2);
-            const C1C2 = mean_C(C1, C2);
-            const H1H2 = mean_H(H_prime(a1, C1, L1), H_prime(a2, C2, L2), C1, C2);
-
-            const delta_L_ = delta_L(L1, L2);
-            const delta_C_ = delta_C(C1, C2);
-            const delta_H_ = delta_H(H1, H2, C1, C2);
-
-            const SL = 1 + (0.015 * (L1L2 - 50) * (L1L2 - 50)) / Math.sqrt(20 + (L1L2 - 50) * (L1L2 - 50));
-            const SC = 1 + 0.045 * C1C2;
-            const SH = 1 + 0.015 * C1C2 * (1 - Math.cos((Math.PI / 180) * (H1H2 - 160)));
-
-            const delta_theta = 30 * Math.exp(-((H1H2 - 275) / 25) * ((H1H2 - 275) / 25));
-            const RC = 2 * Math.sqrt(Math.pow(C1C2, 7) / (Math.pow(C1C2, 7) + Math.pow(25, 7)));
-            const RT = -RC * Math.sin((2 * (Math.PI / 180)) * delta_theta);
-
-            return Math.sqrt((delta_L_ / (KL * SL)) * (delta_L_ / (KL * SL)) + (delta_C_ / (KC * SC)) * (delta_C_ / (KC * SC)) + (delta_H_ / (KH * SH)) * (delta_H_ / (KH * SH)) + RT * (delta_C_ / (KC * SC)) * (delta_H_ / (KH * SH)))
+            return averageHue;
         }
 
-        // // Example LAB color values
-        // const Lab1 = [54.29, 80.81, 69.89];
-        // const Lab2 = [56.91, 82.37, 70.29];
-        // 
-        // // Calculate the CIEDE2000 color difference
-        // const difference = ciede2000_color_difference(Lab1, Lab2);
-        // 
-        // console.log('CIEDE2000 Color Difference:', difference);
-        // 
-        // 
-        // // Function to calculate the CIEDE2000 color difference between two LAB color objects
-        // function ciede2000(Lab1, Lab2) {
-        //     // Implement the CIEDE2000 formula
-        //     // You can find open-source implementations of the formula in JavaScript
-        //     // For example, you can use the 'color-diff' library: https://www.npmjs.com/package/color-diff
-        //     // Or you can implement it yourself if you prefer.
-        // 
-        //     // Return the color difference value
-        // }
+        function calculateWeightedAverageChroma(palette) {
+            let totalWeightedChroma = 0;
+            let totalWeight = 0;
 
+            for (const color of palette) {
+                // Assuming color is in CIELAB color space
+                const lab = colorSpace.rgb.lab(color.color)
+                const chroma = Math.sqrt(Math.pow(lab[1], 2) + Math.pow(lab[2], 2))
+                const weightedChroma = chroma * color.count;
+                totalWeightedChroma += weightedChroma;
+                totalWeight += color.count;
+            }
 
-        // // Your color palette as an array of RGB values (e.g., [r, g, b])
-        // const palette = [
-        //     [255, 0, 0], // Red
-        //     [0, 255, 0], // Green
-        //     [0, 0, 255], // Blue
-        //     // Add more colors
-        // ];
+            const weightedAverageChroma = totalWeightedChroma / totalWeight;
+
+            return weightedAverageChroma;
+        }
+
+        function calculateAverageLuminance(palette) {
+            let totalWeightedLuminance = 0;
+            let totalWeight = 0;
+
+            for (const color of palette) {
+                const lab = colorSpace.rgb.lab(color.color)
+                const weightedLuminance = lab[0] * color.count;
+                totalWeightedLuminance += weightedLuminance;
+                totalWeight += color.count;
+            }
+
+            const weightedAverageLuminance = totalWeightedLuminance / totalWeight;
+
+            return weightedAverageLuminance;
+        }
 
         function palette_diversity(palette) {
-            // Convert RGB colors to LAB colors
-            const labPalette = palette.map(rgb => {
-                // Convert RGB to LAB
-                // You can use libraries like 'color-convert' or implement it yourself
-            });
-
             // Calculate the color differences between all pairs of colors
             let totalDifference = 0;
             let pairCount = 0;
+            const diversity = {}
+            let totalWeightedDeltaE = 0
+            let weightNorm = 0
+            let weightVariance = 0
 
-            for (let i = 0; i < labPalette.length; i++) {
-                for (let j = i + 1; j < labPalette.length; j++) {
-                    const diff = ciede2000(labPalette[i], labPalette[j]);
-                    totalDifference += diff;
-                    pairCount++;
+            // Calculate the mean (average) weight of colors in the set
+            let meanWeight = 0;
+            for (const color of palette) {
+                meanWeight += color.count;
+            }
+            meanWeight /= palette.length;
+
+
+            for (let i = 0; i < palette.length; i++) {
+                for (let j = i + 1; j < palette.length; j++) {
+
+                    const color1 = palette[i]
+                    const color2 = palette[j]
+
+                    // Calculate CIELAB ΔE between the two colors
+                    const _deltaE = deltaE(color1.color, color2.color)
+
+                    // Calculate the weighted ΔE for the pair
+                    const weightedDeltaE = _deltaE * (color1.count * color2.count)
+
+                    const key = "_" + i + j
+                    diversity[key] = weightedDeltaE
+
+                    // Add the weighted ΔE to the total
+                    totalWeightedDeltaE += weightedDeltaE
+
+                    // Add the square of the weight to weightNorm
+                    weightNorm += Math.pow(color1.count, 2) + Math.pow(color2.count, 2)
+
+                    // Calculate the weight deviation from the mean and add it to the weightVariance
+                    let weightDeviation = color1.count - meanWeight;
+                    weightVariance += weightDeviation * weightDeviation;
+                    weightDeviation = color2.count - meanWeight;
+                    weightVariance += weightDeviation * weightDeviation;
                 }
             }
 
-            // Calculate the average color difference as the diversity indicator
-            const diversityIndicator = totalDifference / pairCount;
+            const weightVarianceScalingFactor = 0.1
 
-            console.log('Diversity Indicator:', diversityIndicator);
+            // Calculate the average color difference as the diversity indicator
+            const diversityIndex = (totalWeightedDeltaE / (1 + weightVariance)) * weightNorm * weightVarianceScalingFactor
+
+            diversity["total"] = diversityIndex
+
+            // console.log('Diversity Indicator:', diversity)
+
+            return diversity
         }
 
 
@@ -520,7 +503,7 @@
             // You can access the base variables to make classification decisions
             const dominantColorHue = baseVariables.dominantColorHSL[0]
             const dominantColorSaturation = baseVariables.dominantColorHSL[1]
-            const dominantColorLightness = baseVariables.dominantColorHSL[2]
+            const dominantColorLightness = baseVariables.dominantColorHSL[2] * 255 / 100
             const meanHue = baseVariables.mean_hue;
             const meanSaturation = baseVariables.mean_saturation;
             const meanLightness = baseVariables.mean_lightness;
@@ -531,56 +514,78 @@
             const monochrome = baseVariables.monochrome
             const monochrome2 = baseVariables.monochrome2
 
-            // Define a threshold for hue values (adjust as needed)
-            const hueThresholdLeft = 18;
-            const hueThresholdRight = 12;
-
             // Initialize classification as "Unknown"
             let classification = "Unknown";
 
-            if (baseVariables.dominantColor) {
-                // Check for specific conditions for each color
-                // WHITES WHITES WHITES WHITES WHITES WHITES WHITES WHITES 
-                if (250 <= meanLightness) {
-                    classification = "White";
-                }
-                else if (240 <= meanLightness && 10 <= stdLightness && meanSaturation < 200) {
-                    classification = "White";
-                }
-                else if (230 <= meanLightness && 30 <= stdLightness && meanSaturation < 140) {
-                    classification = "White";
-                }
-                else if (220 <= meanLightness && 50 <= stdLightness && meanSaturation < 100) {
-                    classification = "White";
-                }
-                else if (210 <= meanLightness && 80 <= stdLightness && meanSaturation < 80) {
-                    classification = "White";
-                }
-                // BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS 
-                else if (meanLightness < 55) {
-                    classification = "Black";
-                }
-                // GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS
-                else if (meanSaturation < 30 && 10 < stdSaturation && stdSaturation < 50) {
-                    classification = "Gray";
-                }
-                // RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW 
-                else if (monochrome2 < 30) { //  && 50 < stdHue && 30 < stdSaturation
-                    classification = "Rainbow"
-                }
-                else {
-                    dominantColorHue180 = dominantColorHue / 2
-                    if (0 <= dominantColorHue180 && dominantColorHue180 < hueThresholdRight) {
+            // function identifyColorSetType(colorSet) {
+
+            const weightedAverageChroma = calculateWeightedAverageChroma(baseVariables.palette)
+            const averageLuminance = calculateAverageLuminance(baseVariables.palette);
+
+            if (averageLuminance < 40 && weightedAverageChroma < 4) {
+                return "Black";
+            } else if (averageLuminance >= 40 && averageLuminance < 80 && weightedAverageChroma < 3.5) {
+                return "Gray";
+            } else if (averageLuminance >= 80 && averageLuminance <= 100 && weightedAverageChroma < 3) {
+                return "White";
+            }
+
+            // rainbow
+            if (137491511317 <= baseVariables.palette_diversity.total) {
+                return "Rainbow"
+            }
+
+            /* if (baseVariables.dominantColor) */ {
+                // // Check for specific conditions for each color
+                // // WHITES WHITES WHITES WHITES WHITES WHITES WHITES WHITES 
+                // if (250 <= dominantColorLightness) {
+                //     classification = "White";
+                // }
+                // else if (240 <= dominantColorLightness && 10 <= stdLightness && meanSaturation < 200) {
+                //     classification = "White";
+                // }
+                // else if (230 <= dominantColorLightness && 30 <= stdLightness && meanSaturation < 140) {
+                //     classification = "White";
+                // }
+                // else if (220 <= dominantColorLightness && 50 <= stdLightness && meanSaturation < 100) {
+                //     classification = "White";
+                // }
+                // else if (210 <= dominantColorLightness && 80 <= stdLightness && meanSaturation < 80) {
+                //     classification = "White";
+                // }
+                // // BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS 
+                // else if (meanLightness < 55 || dominantColorLightness <= 20) {
+                //     classification = "Black";
+                // }
+                // // GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS
+                // else if (meanSaturation < 30 && 10 < stdSaturation && stdSaturation < 50) {
+                //     classification = "Gray";
+                // }
+                // // RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW 
+                // else if (monochrome2 < 20) { //  && 50 < stdHue && 30 < stdSaturation
+                //     classification = "Rainbow"
+                // }
+                // else 
+                {
+                    // Define a threshold for hue values (adjust as needed)
+                    const averageHue = calculateAverageHueHSL(baseVariables.palette)
+
+                    const hueThresholdLeft = 16;
+                    const hueThresholdRight = 14;
+
+
+                    let averageHue180 = averageHue / 2
+                    if (0 <= averageHue180 && averageHue180 < hueThresholdRight) {
                         classification = "Red";
-                    } else if ((30 - hueThresholdLeft <= dominantColorHue180 && dominantColorHue180 < 30 + hueThresholdRight)) {
+                    } else if ((30 - hueThresholdLeft <= averageHue180 && averageHue180 < 30 + hueThresholdRight)) {
                         classification = "Yellow";
-                    } else if (60 - hueThresholdLeft <= dominantColorHue180 && dominantColorHue180 < 60 + hueThresholdRight) {
+                    } else if (60 - hueThresholdLeft <= averageHue180 && averageHue180 < 60 + hueThresholdRight) {
                         classification = "Green";
-                    } else if (90 - hueThresholdLeft <= dominantColorHue180 && dominantColorHue180 < 90 + hueThresholdRight) {
+                    } else if (90 - hueThresholdLeft <= averageHue180 && averageHue180 < 90 + hueThresholdRight) {
                         classification = "Cyan";
-                    } else if (120 - hueThresholdLeft <= dominantColorHue180 && dominantColorHue180 < 120 + hueThresholdRight) {
+                    } else if (120 - hueThresholdLeft <= averageHue180 && averageHue180 < 120 + hueThresholdRight) {
                         classification = "Blue";
-                    } else if (150 - hueThresholdLeft <= dominantColorHue180 && dominantColorHue180 < 150 + hueThresholdRight) {
+                    } else if (150 - hueThresholdLeft <= averageHue180 && averageHue180 < 150 + hueThresholdRight) {
                         classification = "Magenta";
                     } else {
                         classification = "Red";
@@ -637,7 +642,7 @@
             }
 
             let selection = ""
-            for (catKey in categories) {
+            for (let catKey in categories) {
                 // build a css selector
                 /*if (catKey === "langage" && categories[catKey]) {
                     selection += "." + categories.langage
@@ -730,7 +735,7 @@
             const figcaption = document.createElement("figcaption");
             figcaption.classList.add("figure-caption")
             figcaption.classList.add("text-wrap")
-            figcaptionstyle = `width: 100%;` // ${bg};
+            let figcaptionstyle = `width: 100%;` // ${bg};
             figcaption.style = figcaptionstyle
 
             let lan = property['lan'] || '';
@@ -802,6 +807,12 @@ mono: ${image_properties.properties.monochrome}
                 const text4 = document.createTextNode(`
 mono2: ${image_properties.properties.monochrome2}
 `)
+                const text5 = document.createTextNode(`
+${image_properties.properties.palette_diversity["_01"].toFixed(0)} +
+${image_properties.properties.palette_diversity["_02"].toFixed(0)} +
+${image_properties.properties.palette_diversity["_12"].toFixed(0)} =
+${image_properties.properties.palette_diversity.total.toFixed(0)}
+`)
                 spy = document.createElement("div");
                 // div.classList.add("float-end")
                 spy.style = "font-size: 9.5px; overflow-wrap: anywhere; font-family: monospace, monospace;"// font-family: monospace, monospace;
@@ -814,6 +825,8 @@ mono2: ${image_properties.properties.monochrome2}
                 spy.appendChild(text3)
                 spy.appendChild(document.createElement("br"))
                 spy.appendChild(text4)
+                spy.appendChild(document.createElement("br"))
+                spy.appendChild(text5)
             }
             figcaption.appendChild(authorE)
             figcaption.appendChild(document.createElement("br"))
@@ -828,28 +841,33 @@ mono2: ${image_properties.properties.monochrome2}
         }
 
         function updateDisplay(text) {
-            const doc = jsyaml.load(text, 'utf8')
+            const doc = jsYaml.load(text, 'utf8')
 
             entries = Object.entries(doc);
 
-            for (entry in entries) {
+            for (let entry in entries) {
+                const key = entries[entry][0]
                 const property = entries[entry][1]
                 property.image_properties.properties.palette = JSON.parse(property.image_properties.properties.most_common.replaceAll("'", '"'))
                 property.image_properties.properties.palette.sort((a, b) => b.count - a.count)
                 property.image_properties.properties.paletteSize = property.image_properties.properties.palette.reduce((accumulator, currentValue) => accumulator + currentValue.count, 0)
 
                 const dominantColor = property.image_properties.properties.palette[0].color;
-                const dominantColorHSL = Color.rgbToHsl(dominantColor)
+                const dominantColorHSL = acColors.rgbToHsl(dominantColor)
                 property.image_properties.properties.hue = dominantColorHSL[0]
                 property.image_properties.properties.saturation = dominantColorHSL[1]
                 property.image_properties.properties.lightness = dominantColorHSL[2]
 
                 property.image_properties.properties.dominantColor = dominantColor
                 property.image_properties.properties.dominantColorHSL = dominantColorHSL
+                console.log(key)
+                property.image_properties.properties.palette_diversity = palette_diversity(property.image_properties.properties.palette)
             }
 
             entries.sort((a, b) => {
                 try {
+                    const palA = +a[1].image_properties.properties.palette_diversity.total
+                    const palB = +b[1].image_properties.properties.palette_diversity.total
                     const monoA = +a[1].image_properties.properties.monochrome2
                     const monoB = +b[1].image_properties.properties.monochrome2
                     const A = +a[1].image_properties.properties.lightness
@@ -860,15 +878,13 @@ mono2: ${image_properties.properties.monochrome2}
                     const stdLumB = +b[1].image_properties.properties.std_lightness
                     let critA
                     let critB
-                    /*
-                    {
-                        critA = monoA
-                        critB = monoB
+                    /* {
+                        critA = palA
+                        critB = palB
                         if (critA != critB) {
-                            return critB - critA
+                            return critA - critB
                         }
                     }
-                    */
                     {
                         critA = lumA
                         critB = lumB
@@ -883,6 +899,7 @@ mono2: ${image_properties.properties.monochrome2}
                             return critB - critA
                         }
                     }
+                    */
 
                     const nameA = a[1].de.toUpperCase().split(/ \(/)[0]
                     const nameB = b[1].de.toUpperCase().split(/ \(/)[0]
