@@ -518,9 +518,9 @@
         // Define a function to classify the image based on base variables
         function classifyImage(baseVariables) {
             // You can access the base variables to make classification decisions
-            const dominantColorHue          = baseVariables.dominantColorHSL[0]
-            const dominantColorSaturation   = baseVariables.dominantColorHSL[1]
-            const dominantColorLightness    = baseVariables.dominantColorHSL[2]
+            const dominantColorHue = baseVariables.dominantColorHSL[0]
+            const dominantColorSaturation = baseVariables.dominantColorHSL[1]
+            const dominantColorLightness = baseVariables.dominantColorHSL[2]
             const meanHue = baseVariables.mean_hue;
             const meanSaturation = baseVariables.mean_saturation;
             const meanLightness = baseVariables.mean_lightness;
@@ -565,7 +565,7 @@
                     classification = "Gray";
                 }
                 // RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW 
-                else if (monochrome2 < 30 ) { //  && 50 < stdHue && 30 < stdSaturation
+                else if (monochrome2 < 30) { //  && 50 < stdHue && 30 < stdSaturation
                     classification = "Rainbow"
                 }
                 else {
@@ -710,16 +710,6 @@
                 fig.classList.add(property.tags[tagIndex])
             }
 
-            const palette = JSON.parse(property.image_properties.properties.most_common.replaceAll("'", '"'))
-            palette.sort((a,b) => b.count - a.count)
-            paletteSize = palette.reduce((accumulator, currentValue) => accumulator + currentValue.count, 0)
-
-            const dominantColor = palette[0].color;
-            const dominantColorHSL = Color.rgbToHsl(dominantColor)
-
-            property.image_properties.properties.dominantColor = dominantColor
-            property.image_properties.properties.dominantColorHSL = dominantColorHSL
-
             fig.classList.add(classifyImage(property.image_properties.properties))
             fig.classList.add(property.where)
             fig.id = key
@@ -728,7 +718,7 @@
             if (!property['image_path']) {
                 console.log("image_path not defined", property)
             }
-            img.src = property['image_path'].replace("thumbs", "thumbs2")
+            img.src = property['image_path'] // .replace("thumbs", "thumbs2")
             img.classList.add("figure-img")
             img.classList.add("img-fluid")
 
@@ -782,10 +772,10 @@
             }
             let spy
             {
-                palette.forEach(e => {
+                property.image_properties.properties.palette.forEach(e => {
                     let color = document.createElement("div")
                     let bg = `rgb(${e.color})`
-                    let width = 100 * (e.count / paletteSize)
+                    let width = 100 * (e.count / property.image_properties.properties.paletteSize)
                     color.style = `display:inline-block; height: 6px; width: ${width}%; background: ${bg}`
                     titleBar.appendChild(color)
                 })
@@ -842,10 +832,28 @@ mono2: ${image_properties.properties.monochrome2}
 
             entries = Object.entries(doc);
 
+            for (entry in entries) {
+                const property = entries[entry][1]
+                property.image_properties.properties.palette = JSON.parse(property.image_properties.properties.most_common.replaceAll("'", '"'))
+                property.image_properties.properties.palette.sort((a, b) => b.count - a.count)
+                property.image_properties.properties.paletteSize = property.image_properties.properties.palette.reduce((accumulator, currentValue) => accumulator + currentValue.count, 0)
+
+                const dominantColor = property.image_properties.properties.palette[0].color;
+                const dominantColorHSL = Color.rgbToHsl(dominantColor)
+                property.image_properties.properties.hue = dominantColorHSL[0]
+                property.image_properties.properties.saturation = dominantColorHSL[1]
+                property.image_properties.properties.lightness = dominantColorHSL[2]
+
+                property.image_properties.properties.dominantColor = dominantColor
+                property.image_properties.properties.dominantColorHSL = dominantColorHSL
+            }
+
             entries.sort((a, b) => {
                 try {
                     const monoA = +a[1].image_properties.properties.monochrome2
                     const monoB = +b[1].image_properties.properties.monochrome2
+                    const A = +a[1].image_properties.properties.lightness
+                    const B = +b[1].image_properties.properties.lightness
                     const lumA = +a[1].image_properties.properties.mean_lightness
                     const lumB = +b[1].image_properties.properties.mean_lightness
                     const stdLumA = +a[1].image_properties.properties.std_lightness
