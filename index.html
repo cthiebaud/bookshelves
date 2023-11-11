@@ -290,10 +290,140 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/dist/js-yaml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ac-colors@1.4.3/dist/ac-colors.min.js"></script>
     <script>
         const container = document.getElementById("container");
         let entries
         let total_des_totaux = undefined
+
+        // Function to calculate CIEDE2000 color difference between two LAB color values
+        function ciede2000_color_difference(Lab1, Lab2) {
+            const L1 = Lab1[0];
+            const a1 = Lab1[1];
+            const b1 = Lab1[2];
+            const L2 = Lab2[0];
+            const a2 = Lab2[1];
+            const b2 = Lab2[2];
+
+            // Constants for CIEDE2000 calculation
+            const KL = 1;
+            const KC = 1;
+            const KH = 1;
+
+            function delta_L(L1, L2) {
+                return L2 - L1;
+            }
+
+            function delta_C(C1, C2) {
+                return C2 - C1;
+            }
+
+            function delta_H(H1, H2, C1, C2) {
+                let delta_h = H2 - H1;
+                delta_h = (Math.abs(delta_h) <= 180) ? delta_h : (delta_h > 0) ? delta_h - 360 : delta_h + 360;
+                return 2 * Math.sqrt(C1 * C2) * Math.sin(delta_h / 2);
+            }
+
+            function mean(a, b) {
+                return (a + b) / 2;
+            }
+
+            function mean_L(L1, L2) {
+                return mean(L1, L2);
+            }
+
+            function mean_C(C1, C2) {
+                return mean(C1, C2);
+            }
+
+            function mean_H(H1, H2, C1, C2) {
+                return mean(H1, H2) + (Math.abs(H1 - H2) > 180 ? 180 : 0);
+            }
+
+            function C_prime(C, L) {
+                return Math.sqrt(C * C + KL * (L - 50) * (L - 50));
+            }
+
+            function H_prime(H, C, L) {
+                return (180 / Math.PI) * Math.atan2(C * Math.sin((Math.PI / 180) * H), C * Math.cos((Math.PI / 180) * H));
+            }
+
+            const C1 = Math.sqrt(a1 * a1 + b1 * b1);
+            const C2 = Math.sqrt(a2 * a2 + b2 * b2);
+
+            const L1L2 = mean_L(L1, L2);
+            const C1C2 = mean_C(C1, C2);
+            const H1H2 = mean_H(H_prime(a1, C1, L1), H_prime(a2, C2, L2), C1, C2);
+
+            const delta_L_ = delta_L(L1, L2);
+            const delta_C_ = delta_C(C1, C2);
+            const delta_H_ = delta_H(H1, H2, C1, C2);
+
+            const SL = 1 + (0.015 * (L1L2 - 50) * (L1L2 - 50)) / Math.sqrt(20 + (L1L2 - 50) * (L1L2 - 50));
+            const SC = 1 + 0.045 * C1C2;
+            const SH = 1 + 0.015 * C1C2 * (1 - Math.cos((Math.PI / 180) * (H1H2 - 160)));
+
+            const delta_theta = 30 * Math.exp(-((H1H2 - 275) / 25) * ((H1H2 - 275) / 25));
+            const RC = 2 * Math.sqrt(Math.pow(C1C2, 7) / (Math.pow(C1C2, 7) + Math.pow(25, 7)));
+            const RT = -RC * Math.sin((2 * (Math.PI / 180)) * delta_theta);
+
+            return Math.sqrt((delta_L_ / (KL * SL)) * (delta_L_ / (KL * SL)) + (delta_C_ / (KC * SC)) * (delta_C_ / (KC * SC)) + (delta_H_ / (KH * SH)) * (delta_H_ / (KH * SH)) + RT * (delta_C_ / (KC * SC)) * (delta_H_ / (KH * SH)))
+        }
+
+        // // Example LAB color values
+        // const Lab1 = [54.29, 80.81, 69.89];
+        // const Lab2 = [56.91, 82.37, 70.29];
+        // 
+        // // Calculate the CIEDE2000 color difference
+        // const difference = ciede2000_color_difference(Lab1, Lab2);
+        // 
+        // console.log('CIEDE2000 Color Difference:', difference);
+        // 
+        // 
+        // // Function to calculate the CIEDE2000 color difference between two LAB color objects
+        // function ciede2000(Lab1, Lab2) {
+        //     // Implement the CIEDE2000 formula
+        //     // You can find open-source implementations of the formula in JavaScript
+        //     // For example, you can use the 'color-diff' library: https://www.npmjs.com/package/color-diff
+        //     // Or you can implement it yourself if you prefer.
+        // 
+        //     // Return the color difference value
+        // }
+
+
+        // // Your color palette as an array of RGB values (e.g., [r, g, b])
+        // const palette = [
+        //     [255, 0, 0], // Red
+        //     [0, 255, 0], // Green
+        //     [0, 0, 255], // Blue
+        //     // Add more colors
+        // ];
+
+        function palette_diversity(palette) {
+            // Convert RGB colors to LAB colors
+            const labPalette = palette.map(rgb => {
+                // Convert RGB to LAB
+                // You can use libraries like 'color-convert' or implement it yourself
+            });
+
+            // Calculate the color differences between all pairs of colors
+            let totalDifference = 0;
+            let pairCount = 0;
+
+            for (let i = 0; i < labPalette.length; i++) {
+                for (let j = i + 1; j < labPalette.length; j++) {
+                    const diff = ciede2000(labPalette[i], labPalette[j]);
+                    totalDifference += diff;
+                    pairCount++;
+                }
+            }
+
+            // Calculate the average color difference as the diversity indicator
+            const diversityIndicator = totalDifference / pairCount;
+
+            console.log('Diversity Indicator:', diversityIndicator);
+        }
+
 
         class Counter {
             total = 0;
@@ -366,17 +496,13 @@
         // const data = 'rgb[{"color": [232, 203, 175], "count": 17721}, {"color": [137, 61, 62], "count": 4277}, {"color": [246, 230, 207], "count": 44802}]';
         // const extractedDominantColor = extractDominantColor(data);
         // console.log("Dominant Color:", extractedDominantColor);
-        function extractDominantColor(data) {
-            // Parse the data string into a JavaScript object
-            let data2 = data.replaceAll("'", '"')
-            const parsedData = JSON.parse(data2);
-
+        function extractDominantColor(palette) {
             // Initialize variables to track the dominant color and its count
             let dominantColor = null;
             let maxCount = -1;
 
             // Iterate through the color objects
-            for (const colorObject of parsedData) {
+            for (const colorObject of palette) {
                 const count = colorObject.count;
 
                 // Check if the current count is higher than the previous maximum
@@ -392,13 +518,18 @@
         // Define a function to classify the image based on base variables
         function classifyImage(baseVariables) {
             // You can access the base variables to make classification decisions
-            const dominantColor = extractDominantColor(baseVariables.most_common);
+            const dominantColorHue          = baseVariables.dominantColorHSL[0]
+            const dominantColorSaturation   = baseVariables.dominantColorHSL[1]
+            const dominantColorLightness    = baseVariables.dominantColorHSL[2]
             const meanHue = baseVariables.mean_hue;
             const meanSaturation = baseVariables.mean_saturation;
             const meanLightness = baseVariables.mean_lightness;
             const stdHue = baseVariables.std_hue;
             const stdSaturation = baseVariables.std_saturation;
             const stdLightness = baseVariables.std_lightness;
+
+            const monochrome = baseVariables.monochrome
+            const monochrome2 = baseVariables.monochrome2
 
             // Define a threshold for hue values (adjust as needed)
             const hueThresholdLeft = 18;
@@ -407,8 +538,9 @@
             // Initialize classification as "Unknown"
             let classification = "Unknown";
 
-            if (dominantColor) {
+            if (baseVariables.dominantColor) {
                 // Check for specific conditions for each color
+                // WHITES WHITES WHITES WHITES WHITES WHITES WHITES WHITES 
                 if (250 <= meanLightness) {
                     classification = "White";
                 }
@@ -424,27 +556,31 @@
                 else if (210 <= meanLightness && 80 <= stdLightness && meanSaturation < 80) {
                     classification = "White";
                 }
-                else if (meanLightness < 40) {
+                // BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS 
+                else if (meanLightness < 55) {
                     classification = "Black";
                 }
+                // GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS
                 else if (meanSaturation < 30 && 10 < stdSaturation && stdSaturation < 50) {
                     classification = "Gray";
                 }
-                else if (stdHue > 80) {
+                // RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW 
+                else if (monochrome2 < 30 ) { //  && 50 < stdHue && 30 < stdSaturation
                     classification = "Rainbow"
                 }
                 else {
-                    if (0 <= meanHue && meanHue < hueThresholdRight) {
+                    dominantColorHue180 = dominantColorHue / 2
+                    if (0 <= dominantColorHue180 && dominantColorHue180 < hueThresholdRight) {
                         classification = "Red";
-                    } else if ((30 - hueThresholdLeft <= meanHue && meanHue < 30 + hueThresholdRight)) {
+                    } else if ((30 - hueThresholdLeft <= dominantColorHue180 && dominantColorHue180 < 30 + hueThresholdRight)) {
                         classification = "Yellow";
-                    } else if (60 - hueThresholdLeft <= meanHue && meanHue < 60 + hueThresholdRight) {
+                    } else if (60 - hueThresholdLeft <= dominantColorHue180 && dominantColorHue180 < 60 + hueThresholdRight) {
                         classification = "Green";
-                    } else if (90 - hueThresholdLeft <= meanHue && meanHue < 90 + hueThresholdRight) {
+                    } else if (90 - hueThresholdLeft <= dominantColorHue180 && dominantColorHue180 < 90 + hueThresholdRight) {
                         classification = "Cyan";
-                    } else if (120 - hueThresholdLeft <= meanHue && meanHue < 120 + hueThresholdRight) {
+                    } else if (120 - hueThresholdLeft <= dominantColorHue180 && dominantColorHue180 < 120 + hueThresholdRight) {
                         classification = "Blue";
-                    } else if (150 - hueThresholdLeft <= meanHue && meanHue < 150 + hueThresholdRight) {
+                    } else if (150 - hueThresholdLeft <= dominantColorHue180 && dominantColorHue180 < 150 + hueThresholdRight) {
                         classification = "Magenta";
                     } else {
                         classification = "Red";
@@ -573,6 +709,17 @@
             for (const tagIndex in property.tags) {
                 fig.classList.add(property.tags[tagIndex])
             }
+
+            const palette = JSON.parse(property.image_properties.properties.most_common.replaceAll("'", '"'))
+            palette.sort((a,b) => b.count - a.count)
+            paletteSize = palette.reduce((accumulator, currentValue) => accumulator + currentValue.count, 0)
+
+            const dominantColor = palette[0].color;
+            const dominantColorHSL = Color.rgbToHsl(dominantColor)
+
+            property.image_properties.properties.dominantColor = dominantColor
+            property.image_properties.properties.dominantColorHSL = dominantColorHSL
+
             fig.classList.add(classifyImage(property.image_properties.properties))
             fig.classList.add(property.where)
             fig.id = key
@@ -581,7 +728,7 @@
             if (!property['image_path']) {
                 console.log("image_path not defined", property)
             }
-            img.src = property['image_path'] // .replace("thumbs", "thumbs2")
+            img.src = property['image_path'].replace("thumbs", "thumbs2")
             img.classList.add("figure-img")
             img.classList.add("img-fluid")
 
@@ -635,33 +782,48 @@
             }
             let spy
             {
-                let most_common = image_properties.properties.most_common.replaceAll("'", '"')
-                let most_commons = JSON.parse(most_common)
-                most_commons.sort((a, b) => b.count - a.count)
-                most_commons.forEach(e => {
+                palette.forEach(e => {
                     let color = document.createElement("div")
                     let bg = `rgb(${e.color})`
-                    color.style = `display:inline-block; height: 6px; width: 33%; background: ${bg}`
+                    let width = 100 * (e.count / paletteSize)
+                    color.style = `display:inline-block; height: 6px; width: ${width}%; background: ${bg}`
                     titleBar.appendChild(color)
                 })
 
                 const decimals = 0
+                const text0 = document.createTextNode(`
+_H: ${image_properties.properties.dominantColorHSL[0].toFixed(decimals).padStart(3, '0')}
+_S: ${image_properties.properties.dominantColorHSL[1].toFixed(decimals).padStart(3, '0')}
+_L: ${image_properties.properties.dominantColorHSL[2].toFixed(decimals).padStart(3, '0')}
+`)
                 const text = document.createTextNode(`
-H: ${image_properties.properties.mean_hue.toFixed(decimals).padStart(3, '0')},
-S: ${image_properties.properties.mean_saturation.toFixed(decimals).padStart(3, '0')}, 
-L: ${image_properties.properties.mean_lightness.toFixed(decimals).padStart(3, '0')}
+μH: ${image_properties.properties.mean_hue.toFixed(decimals).padStart(3, '0')}
+μS: ${image_properties.properties.mean_saturation.toFixed(decimals).padStart(3, '0')}
+μL: ${image_properties.properties.mean_lightness.toFixed(decimals).padStart(3, '0')}
 `)
                 const text2 = document.createTextNode(`
-H: ${image_properties.properties.std_hue.toFixed(decimals).padStart(3, '0')},
-S: ${image_properties.properties.std_saturation.toFixed(decimals).padStart(3, '0')}, 
-L: ${image_properties.properties.std_lightness.toFixed(decimals).padStart(3, '0')}
+σH: ${image_properties.properties.std_hue.toFixed(decimals).padStart(3, '0')}
+σS: ${image_properties.properties.std_saturation.toFixed(decimals).padStart(3, '0')}
+σL: ${image_properties.properties.std_lightness.toFixed(decimals).padStart(3, '0')}
+`)
+                const text3 = document.createTextNode(`
+mono: ${image_properties.properties.monochrome}
+`)
+                const text4 = document.createTextNode(`
+mono2: ${image_properties.properties.monochrome2}
 `)
                 spy = document.createElement("div");
                 // div.classList.add("float-end")
-                spy.style = "font-size: 10px; overflow-wrap: anywhere; font-family: monospace, monospace;"// font-family: monospace, monospace;
+                spy.style = "font-size: 9.5px; overflow-wrap: anywhere; font-family: monospace, monospace;"// font-family: monospace, monospace;
+                spy.appendChild(text0)
+                spy.appendChild(document.createElement("br"))
                 spy.appendChild(text)
                 spy.appendChild(document.createElement("br"))
                 spy.appendChild(text2)
+                spy.appendChild(document.createElement("br"))
+                spy.appendChild(text3)
+                spy.appendChild(document.createElement("br"))
+                spy.appendChild(text4)
             }
             figcaption.appendChild(authorE)
             figcaption.appendChild(document.createElement("br"))
@@ -682,46 +844,37 @@ L: ${image_properties.properties.std_lightness.toFixed(decimals).padStart(3, '0'
 
             entries.sort((a, b) => {
                 try {
-                    const lumA = +a[1].image_properties.luminance
-                    const lumB = +b[1].image_properties.luminance
-                    const satA = +a[1].image_properties.saturation
-                    const satB = +b[1].image_properties.saturation
-                    const hueA = +a[1].image_properties.hue
-                    const hueB = +b[1].image_properties.hue
-                    const conA = +a[1].image_properties.contrast
-                    const conB = +b[1].image_properties.contrast
+                    const monoA = +a[1].image_properties.properties.monochrome2
+                    const monoB = +b[1].image_properties.properties.monochrome2
+                    const lumA = +a[1].image_properties.properties.mean_lightness
+                    const lumB = +b[1].image_properties.properties.mean_lightness
+                    const stdLumA = +a[1].image_properties.properties.std_lightness
+                    const stdLumB = +b[1].image_properties.properties.std_lightness
                     let critA
                     let critB
-                    {
-                        critA = lumA // lumA //* Math.exp(satA) 
-                        critB = lumB // lumB //* Math.exp(satB) 
-                        if (critA != critB) {
-                            return critB - critA
-                        }
-                    }
-                    {
-                        critA = satA // lumA //* Math.exp(satA) 
-                        critB = satB // lumB //* Math.exp(satB) 
-                        if (critA != critB) {
-                            return critA - critB
-                        }
-                    }
                     /*
                     {
-                        critA = conA // lumA //* Math.exp(satA) 
-                        critB = conB // lumB //* Math.exp(satB) 
+                        critA = monoA
+                        critB = monoB
+                        if (critA != critB) {
+                            return critB - critA
+                        }
+                    }
+                    */
+                    {
+                        critA = lumA
+                        critB = lumB
                         if (critA != critB) {
                             return critB - critA
                         }
                     }
                     {
-                        critA = hueA // lumA //* Math.exp(satA) 
-                        critB = hueB // lumB //* Math.exp(satB) 
+                        critA = stdLumA
+                        critB = stdLumB
                         if (critA != critB) {
-                            return critA - critB
+                            return critB - critA
                         }
-                    }*/
-
+                    }
 
                     const nameA = a[1].de.toUpperCase().split(/ \(/)[0]
                     const nameB = b[1].de.toUpperCase().split(/ \(/)[0]
