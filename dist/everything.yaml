@@ -1315,7 +1315,7 @@
   title: The Europeans
   where: /saint-lazare-de-savene/salon/_9
 978-0192832696:
-  de: F. Scott Fitzgerald (Autore), Ruth Prigozy (a cura di)
+  de: Francis Scott Key Fitzgerald (Autore), Ruth Prigozy (a cura di)
   image_path: thumbs/T_978-0192832696.jpg
   image_properties:
     properties:
@@ -2632,21 +2632,21 @@
   where: /saint-lazare-de-savene/salon/_9
 978-0590444590:
   de: Jacob & Wilhelm Grimm - Illustrazioni di Lisbeth Zwerger
-  ext: "Copertina flessibile \u2013 1 agosto 1991"
-  image_path: thumbs/T_978-0590444590.jpg
+  ext: "Reli\xE9"
+  image_path: thumbs/T_978-0590444590.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [212, 203, 183], ''count'': 7322}, {''color'': [202,
-        177, 148], ''count'': 6691}, {''color'': [164, 129, 107], ''count'': 5318},
-        {''color'': [122, 94, 82], ''count'': 9654}, {''color'': [92, 71, 61], ''count'':
-        5215}]'
+      palette: '[{''color'': [225, 209, 178], ''count'': 7666}, {''color'': [205,
+        179, 144], ''count'': 5030}, {''color'': [172, 140, 97], ''count'': 4139},
+        {''color'': [110, 83, 56], ''count'': 10848}, {''color'': [136, 105, 69],
+        ''count'': 8317}]'
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
   - _1979
-  title: Hansel and Gretel
+  title: "H\xE4nsel e Gretel"
   where: /saint-lazare-de-savene/salon/arts
 978-0600610779:
   de: Rose Elliot (Auteur)
@@ -9138,10 +9138,10 @@
   image_path: thumbs/T_978-2207280478.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [164, 174, 190], ''count'': 2835}, {''color'': [182,
-        172, 155], ''count'': 16825}, {''color'': [144, 141, 138], ''count'': 917},
-        {''color'': [79, 72, 70], ''count'': 898}, {''color'': [188, 179, 163], ''count'':
-        35925}]'
+      palette: '[{''color'': [180, 170, 153], ''count'': 10477}, {''color'': [186,
+        176, 159], ''count'': 24107}, {''color'': [190, 181, 164], ''count'': 23838},
+        {''color'': [152, 143, 128], ''count'': 225}, {''color'': [108, 99, 83], ''count'':
+        153}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - perec
@@ -12106,10 +12106,10 @@
   image_path: thumbs/T_978-2731801293.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [120, 112, 108], ''count'': 8938}, {''color'': [53, 54,
-        55], ''count'': 9485}, {''color'': [183, 171, 162], ''count'': 12929}, {''color'':
-        [207, 147, 71], ''count'': 4531}, {''color'': [217, 225, 232], ''count'':
-        15317}]'
+      palette: '[{''color'': [221, 198, 144], ''count'': 7367}, {''color'': [54, 50,
+        34], ''count'': 10744}, {''color'': [128, 104, 66], ''count'': 10739}, {''color'':
+        [187, 144, 76], ''count'': 11000}, {''color'': [252, 249, 233], ''count'':
+        12350}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cuisine
@@ -17217,9 +17217,9 @@
   image_path: thumbs/T_978-8817009430.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [3, 139, 190], ''count'': 13529}, {''color'': [3, 143,
-        199], ''count'': 32082}, {''color'': [3, 128, 175], ''count'': 3514}, {''color'':
-        [3, 113, 157], ''count'': 2040}, {''color'': [13, 54, 66], ''count'': 35}]'
+      palette: '[{''color'': [2, 122, 190], ''count'': 46305}, {''color'': [3, 123,
+        196], ''count'': 14341}, {''color'': [60, 138, 188], ''count'': 184}, {''color'':
+        [88, 178, 232], ''count'': 112}, {''color'': [32, 58, 81], ''count'': 58}]'
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - berlusconneries
@@ -18090,10 +18090,10 @@
   image_path: thumbs/T_978-8833916798.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [253, 253, 246], ''count'': 2260}, {''color'': [244,
-        242, 229], ''count'': 58664}, {''color'': [213, 206, 190], ''count'': 1078},
-        {''color'': [104, 104, 98], ''count'': 511}, {''color'': [154, 149, 140],
-        ''count'': 1287}]'
+      palette: '[{''color'': [247, 245, 232], ''count'': 11813}, {''color'': [244,
+        242, 229], ''count'': 41130}, {''color'': [241, 239, 225], ''count'': 11156},
+        {''color'': [225, 214, 187], ''count'': 467}, {''color'': [190, 175, 143],
+        ''count'': 434}]'
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - philo
