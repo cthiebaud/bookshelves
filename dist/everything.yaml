@@ -22921,25 +22921,6 @@ boh2:
   - "\U0001F1EE\U0001F1F9"
   title: "in caso di\u2026 Prontuario di rimedi naturali"
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
-boh21:
-  ASIN: B003X20RGE
-  de: Serge Bramly (Auteur)
-  ext: "Reli\xE9 \u2013 1 janvier 1988"
-  image_path: thumbs/T_boh21.jpg
-  image_properties:
-    properties:
-      palette: '[{''color'': [208, 210, 208], ''count'': 8996}, {''color'': [155,
-        156, 138], ''count'': 42291}, {''color'': [129, 124, 109], ''count'': 10471},
-        {''color'': [53, 42, 33], ''count'': 4538}, {''color'': [150, 90, 35], ''count'':
-        3104}]'
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - biographie
-  - _1
-  - saint-lazare-de-savene
-  - "\U0001F1EB\U0001F1F7"
-  title: "L\xE9onard de Vinci"
-  where: /saint-lazare-de-savene/salon/_1
 boh22:
   ASIN: B0000ECQO5
   de: Umberto Eco (Autore)
@@ -23903,6 +23884,25 @@ vinci:
   title: "Catalogue de l'exposition L\xE9onard de Vinci 24 octobre 2019 - 24 f\xE9\
     vrier 2020"
   where: /saint-lazare-de-savene/salon/small_etc
+vinci_par_bramly:
+  ASIN: B003X20RGE
+  de: Serge Bramly (Auteur)
+  ext: "Reli\xE9 \u2013 1 janvier 1988"
+  image_path: thumbs/T_vinci_par_bramly.jpg
+  image_properties:
+    properties:
+      palette: '[{''color'': [201, 197, 189], ''count'': 31830}, {''color'': [213,
+        212, 206], ''count'': 24518}, {''color'': [123, 84, 78], ''count'': 1780},
+        {''color'': [220, 114, 76], ''count'': 2822}, {''color'': [49, 24, 28], ''count'':
+        3850}]'
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - biographie
+  - _1
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "L\xE9onard de Vinci"
+  where: /saint-lazare-de-savene/salon/_1
 wonderland:
   de: Lewis Carroll
   ext: Published by MacMillan & Co., 1938
