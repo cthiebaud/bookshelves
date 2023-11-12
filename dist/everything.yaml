@@ -3520,10 +3520,10 @@
   image_path: thumbs/T_978-1015562929.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [156, 158, 154], ''count'': 18160}, {''color'': [151,
-        140, 108], ''count'': 11830}, {''color'': [107, 106, 104], ''count'': 16543},
-        {''color'': [75, 70, 62], ''count'': 8242}, {''color'': [104, 146, 170], ''count'':
-        4825}]'
+      palette: '[{''color'': [159, 180, 182], ''count'': 10988}, {''color'': [241,
+        221, 153], ''count'': 11037}, {''color'': [236, 228, 206], ''count'': 18303},
+        {''color'': [183, 164, 126], ''count'': 15011}, {''color'': [138, 121, 87],
+        ''count'': 6661}]'
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - _7
@@ -9204,7 +9204,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1983
-  title: La petite soeur de Cricri-Lapin
+  title: "La petite s\u0153ur de Cricri-Lapin"
   url: https://www.amazon.fr/s\?k=978-2211025973
   where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2211049283:
@@ -9892,10 +9892,10 @@
   - _2020
   title: "Dans les ge\xF4les de Sib\xE9rie"
   where: /saint-jean-lipion/chambre/favourite
-978-2244194028:
+978-2244437149:
   de: Charles Dickens (Auteur)
   ext: "Poche \u2013 13 ao\xFBt 2014"
-  image_path: thumbs/T_978-2244194028.jpeg
+  image_path: thumbs/T_978-2244437149.jpeg
   image_properties:
     properties:
       palette: '[{''color'': [168, 151, 122], ''count'': 4670}, {''color'': [231,
@@ -9909,6 +9909,7 @@
   - "\U0001F1EB\U0001F1F7"
   - _1865
   title: "Oliver Twist - Texte abr\xE9g\xE9"
+  was: 978-2244194028
   where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2246138822:
   de: Primo Levi (Autore)
@@ -11834,7 +11835,7 @@
   title: Football
   where: /saint-lazare-de-savene/chambre_paul/football
 978-2708111691:
-  de: Auguste Detoeuf
+  de: "Auguste Det\u0153uf"
   image_path: thumbs/T_978-2708111691.jpeg
   image_properties:
     properties:
@@ -13174,20 +13175,23 @@
   title: "De m\xE9moire de lutin !\u2026"
   where: /saint-lazare-de-savene/salon/_7
 978-2862602868:
+  collection: "l'Europe des Villes R\xEAv\xE9es"
   de: Jean-Pierre Le Dantec (Auteur)
-  ext: "Broch\xE9 \u2013 8 f\xE9vrier 1990"
-  image_path: thumbs/T_978-2862602868.jpg
+  ext: "Reli\xE9 \u2013 septembre 1989"
+  image_path: thumbs/T_978-2862602868.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [139, 117, 103], ''count'': 1656}, {''color'': [196,
-        165, 142], ''count'': 3852}, {''color'': [222, 221, 217], ''count'': 2315},
-        {''color'': [249, 249, 247], ''count'': 43138}, {''color'': [63, 53, 48],
-        ''count'': 3639}]'
+      palette: '[{''color'': [253, 253, 253], ''count'': 45645}, {''color'': [216,
+        191, 175], ''count'': 2201}, {''color'': [188, 155, 135], ''count'': 2576},
+        {''color'': [117, 95, 87], ''count'': 1394}, {''color'': [48, 36, 33], ''count'':
+        3584}]'
   lan: "\U0001F1EB\U0001F1F7"
+  publisher: "Autrement \xC9ditions"
   tags:
   - _4
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
+  - _1989
   title: Bologne - Un guide intime
   where: /saint-lazare-de-savene/salon/_4
 978-2862604145:
@@ -13579,9 +13583,10 @@
   image_path: thumbs/T_978-2901376859.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [250, 249, 247], ''count'': 19578}, {''color'': [187,
-        174, 169], ''count'': 3230}, {''color'': [69, 74, 56], ''count'': 3926}, {''color'':
-        [9, 10, 8], ''count'': 28023}, {''color'': [128, 106, 103], ''count'': 2643}]'
+      palette: '[{''color'': [252, 250, 248], ''count'': 16462}, {''color'': [216,
+        207, 201], ''count'': 3111}, {''color'': [161, 146, 142], ''count'': 3187},
+        {''color'': [97, 81, 78], ''count'': 3312}, {''color'': [9, 10, 8], ''count'':
+        34728}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _7
