@@ -7,6 +7,10 @@ from collections import Counter
 from pathlib import PurePath 
 from sklearn.cluster import KMeans
 
+## https://stackoverflow.com/a/57986495/1070215
+import warnings
+warnings.filterwarnings("ignore")
+
 ####    import warnings
 ####    warnings.filterwarnings("ignore")
 ####
@@ -150,7 +154,7 @@ def calculate_monochrome2(image):
     return dominant_color_percentage
 
 
-def calculate_dominant_colors(image, k=3):
+def calculate_dominant_colors(image, k=5):
     # Read the image
     # image = cv2.imread(image_path)
 
@@ -194,60 +198,61 @@ def classify_color(image_path, properties):
     image = cv2.imread(image_path)
 
     if True:
-        dom = calculate_dominant_colors(image.copy())
+        dom = calculate_dominant_colors(image, 5) ## .copy()
         ####, pal 
         properties["most_common"] = f"{dom}"
         #### properties["palette_diversity"] = f"{pal}"
 
-    if True:
+    if False:
         mono = calculate_monochrome( image.copy())
         properties["monochrome"] = f"{mono}"
     
-    if True:
+    if False:
         mono2 = calculate_monochrome2( image.copy())
         properties["monochrome2"] = f"{mono2}"
 
     # Convert the image from BGR to HSV
     # image_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-    image_hsl = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)    
+    ## 
+    # image_hsl = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)    
     # Resize the image if needed
     # image_hsv = cv2.resize(image_hsv, (width, height))
     
-    # Calculate the mean value and standard deviation for the saturation channel
-    mean_hue = properties["mean_hue"] = np.mean(image_hsl[:, :, 0])
-    std_hue = properties["std_hue"] = np.std(image_hsl[:, :, 0])
-    mean_lightness = properties["mean_lightness"] = np.mean(image_hsl[:, :, 1])
-    std_lightness = properties["std_lightness"] = np.std(image_hsl[:, :, 1])
-    mean_saturation = properties["mean_saturation"] = np.mean(image_hsl[:, :, 2])
-    std_saturation = properties["std_saturation"] = np.std(image_hsl[:, :, 2])
+    ## # Calculate the mean value and standard deviation for the saturation channel
+    ## mean_hue = properties["mean_hue"] = np.mean(image_hsl[:, :, 0])
+    ## std_hue = properties["std_hue"] = np.std(image_hsl[:, :, 0])
+    ## mean_lightness = properties["mean_lightness"] = np.mean(image_hsl[:, :, 1])
+    ## std_lightness = properties["std_lightness"] = np.std(image_hsl[:, :, 1])
+    ## mean_saturation = properties["mean_saturation"] = np.mean(image_hsl[:, :, 2])
+    ## std_saturation = properties["std_saturation"] = np.std(image_hsl[:, :, 2])
 
-    # Classify the image based on color
-    if mean_saturation < 30 and std_saturation < 10:
-        return "White"
-    elif mean_saturation < 30 and std_saturation < 50:
-        return "Gray"
-    elif mean_saturation < 30 and std_saturation >= 50:
-        return "Black"
-    elif std_hue > 60:
-        return "Rainbow"    
-    else:
-        # Extract dominant hue value
-        
-        ## print(image_path)
-
-        # Classify based on hue
-        if 0 <= mean_hue < 15 or 165 <= mean_hue <= 180:
-            return "Red"
-        elif 15 <= mean_hue < 45:
-            return "Yellow"
-        elif 45 <= mean_hue < 75:
-            return "Green"
-        elif 75 <= mean_hue < 105:
-            return "Cyan"
-        elif 105 <= mean_hue < 135:
-            return "Blue"
-        elif 135 <= mean_hue < 165:
-            return "Magenta"
+    ## # Classify the image based on color
+    ## if mean_saturation < 30 and std_saturation < 10:
+    ##     return "White"
+    ## elif mean_saturation < 30 and std_saturation < 50:
+    ##     return "Gray"
+    ## elif mean_saturation < 30 and std_saturation >= 50:
+    ##     return "Black"
+    ## elif std_hue > 60:
+    ##     return "Rainbow"    
+    ## else:
+    ##     # Extract dominant hue value
+    ##     
+    ##     ## print(image_path)
+    ##   
+    ##     # Classify based on hue
+    ##     if 0 <= mean_hue < 15 or 165 <= mean_hue <= 180:
+    ##         return "Red"
+    ##     elif 15 <= mean_hue < 45:
+    ##         return "Yellow"
+    ##     elif 45 <= mean_hue < 75:
+    ##         return "Green"
+    ##     elif 75 <= mean_hue < 105:
+    ##         return "Cyan"
+    ##     elif 105 <= mean_hue < 135:
+    ##         return "Blue"
+    ##     elif 135 <= mean_hue < 165:
+    ##         return "Magenta"
 
 ## # Example usage
 ## image_path = "path/to/your/image.jpg"
@@ -271,7 +276,6 @@ for ext in extensions:
             clazz = classify_color(filename2, properties)
             print(i, key, clazz, properties)
             colors_dictionnary[key] = {
-                "clazz": clazz.lower(),
                 "properties": properties
             }
         i = i + 1

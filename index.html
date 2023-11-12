@@ -289,14 +289,16 @@
         <hr>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
+
     <script type="module">
         import jsYaml from 'https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/+esm'
         import acColors from 'https://cdn.jsdelivr.net/npm/ac-colors@1.4.3/+esm'
         import { deltaE } from 'https://cdn.jsdelivr.net/npm/color-delta-e@1.3.0/+esm'
         import colorSpace from 'https://cdn.jsdelivr.net/npm/color-space@2.0.1/+esm'
+        // import chroma from 'https://cdn.jsdelivr.net/npm/chroma-js@2.4.2/+esm'
 
         const container = document.getElementById("container");
-        let entries
+        let filteredEntries
         let total_des_totaux = undefined
 
         function calculateAverageHueHSL(palette) {
@@ -373,7 +375,10 @@
                     const color2 = palette[j]
 
                     // Calculate CIELAB ΔE between the two colors
+                    // const _deltaE = chroma.deltaE(color1.color, color2.color)
                     const _deltaE = deltaE(color1.color, color2.color)
+
+                    // console.log(_deltaE, _deltaE2)
 
                     // Calculate the weighted ΔE for the pair
                     const weightedDeltaE = _deltaE * (color1.count * color2.count)
@@ -502,18 +507,18 @@
         function classifyImage(baseVariables) {
             // You can access the base variables to make classification decisions
             const dominantColorHue = baseVariables.dominantColorHSL[0]
-            const dominantColorSaturation = baseVariables.dominantColorHSL[1]
-            const dominantColorLightness = baseVariables.dominantColorHSL[2] * 255 / 100
-            const meanHue = baseVariables.mean_hue;
-            const meanSaturation = baseVariables.mean_saturation;
-            const meanLightness = baseVariables.mean_lightness;
-            const stdHue = baseVariables.std_hue;
-            const stdSaturation = baseVariables.std_saturation;
-            const stdLightness = baseVariables.std_lightness;
-
-            const monochrome = baseVariables.monochrome
-            const monochrome2 = baseVariables.monochrome2
-
+            // const dominantColorSaturation = baseVariables.dominantColorHSL[1]
+            // const dominantColorLightness = baseVariables.dominantColorHSL[2] * 255 / 100
+            // const meanHue = baseVariables.mean_hue;
+            // const meanSaturation = baseVariables.mean_saturation;
+            // const meanLightness = baseVariables.mean_lightness;
+            // const stdHue = baseVariables.std_hue;
+            // const stdSaturation = baseVariables.std_saturation;
+            // const stdLightness = baseVariables.std_lightness;
+// 
+            // const monochrome = baseVariables.monochrome
+            // const monochrome2 = baseVariables.monochrome2
+// 
             // Initialize classification as "Unknown"
             let classification = "Unknown";
 
@@ -522,16 +527,24 @@
             const weightedAverageChroma = calculateWeightedAverageChroma(baseVariables.palette)
             const averageLuminance = calculateAverageLuminance(baseVariables.palette);
 
-            if (averageLuminance < 40 && weightedAverageChroma < 4) {
+            if (averageLuminance < 45 && weightedAverageChroma < 15) {
                 return "Black";
-            } else if (averageLuminance >= 40 && averageLuminance < 80 && weightedAverageChroma < 3.5) {
+            } else if (averageLuminance >= 45 && averageLuminance < 82 && weightedAverageChroma < 3.85) {
                 return "Gray";
-            } else if (averageLuminance >= 80 && averageLuminance <= 100 && weightedAverageChroma < 3) {
+            } else if (averageLuminance >= 82 && averageLuminance <= 100 && weightedAverageChroma < 3.1) {
                 return "White";
             }
 
             // rainbow
-            if (137491511317 <= baseVariables.palette_diversity.total) {
+            if ( /* 
+                137491511317 
+                23884881606 
+                 8398430870
+                13894183832 
+                */
+                11000000000
+                
+                <= baseVariables.palette_diversity.total) {
                 return "Rainbow"
             }
 
@@ -568,18 +581,18 @@
                 // else 
                 {
                     // Define a threshold for hue values (adjust as needed)
-                    const averageHue = calculateAverageHueHSL(baseVariables.palette)
+                    const averageHue = dominantColorHue // calculateAverageHueHSL(baseVariables.palette)
 
-                    const hueThresholdLeft = 16;
-                    const hueThresholdRight = 14;
+                    const hueThresholdLeft = 18;
+                    const hueThresholdRight = 12;
 
 
                     let averageHue180 = averageHue / 2
-                    if (0 <= averageHue180 && averageHue180 < hueThresholdRight) {
+                    if (0 <= averageHue180 && averageHue180 < hueThresholdRight + 3) {
                         classification = "Red";
-                    } else if ((30 - hueThresholdLeft <= averageHue180 && averageHue180 < 30 + hueThresholdRight)) {
+                    } else if ((30 - 3 - hueThresholdLeft <= averageHue180 && averageHue180 < 30 - 4 + hueThresholdRight)) {
                         classification = "Yellow";
-                    } else if (60 - hueThresholdLeft <= averageHue180 && averageHue180 < 60 + hueThresholdRight) {
+                    } else if (60 - 4 - hueThresholdLeft <= averageHue180 && averageHue180 < 60 + hueThresholdRight) {
                         classification = "Green";
                     } else if (90 - hueThresholdLeft <= averageHue180 && averageHue180 < 90 + hueThresholdRight) {
                         classification = "Cyan";
@@ -666,12 +679,12 @@
             if (selection.trim() !== "") {
                 const taggeds = document.querySelectorAll(selection)
                 for (const tagged of taggeds) {
-                    c.count(entries[tagged.dataset.index][1])
+                    c.count(filteredEntries[tagged.dataset.index][1])
                     tagged.style.display = "inline-block"
                 }
             } else {
                 for (const figure of figures) {
-                    c.count(entries[figure.dataset.index][1])
+                    c.count(filteredEntries[figure.dataset.index][1])
                     figure.style.display = "inline-block"
                 }
             }
@@ -696,7 +709,7 @@
             const figures = document.querySelectorAll('figure')
             const c = new Counter()
             for (const figure of figures) {
-                c.count(entries[figure.dataset.index][1])
+                c.count(filteredEntries[figure.dataset.index][1])
                 figure.style.display = "inline-block"
             }
             c.display()
@@ -784,7 +797,7 @@
                     color.style = `display:inline-block; height: 6px; width: ${width}%; background: ${bg}`
                     titleBar.appendChild(color)
                 })
-
+                /*
                 const decimals = 0
                 const text0 = document.createTextNode(`
 _H: ${image_properties.properties.dominantColorHSL[0].toFixed(decimals).padStart(3, '0')}
@@ -807,6 +820,7 @@ mono: ${image_properties.properties.monochrome}
                 const text4 = document.createTextNode(`
 mono2: ${image_properties.properties.monochrome2}
 `)
+*/
                 const text5 = document.createTextNode(`
 ${image_properties.properties.palette_diversity["_01"].toFixed(0)} +
 ${image_properties.properties.palette_diversity["_02"].toFixed(0)} +
@@ -816,6 +830,7 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
                 spy = document.createElement("div");
                 // div.classList.add("float-end")
                 spy.style = "font-size: 9.5px; overflow-wrap: anywhere; font-family: monospace, monospace;"// font-family: monospace, monospace;
+                /*
                 spy.appendChild(text0)
                 spy.appendChild(document.createElement("br"))
                 spy.appendChild(text)
@@ -825,13 +840,14 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
                 spy.appendChild(text3)
                 spy.appendChild(document.createElement("br"))
                 spy.appendChild(text4)
+                */
                 spy.appendChild(document.createElement("br"))
                 spy.appendChild(text5)
             }
             figcaption.appendChild(authorE)
             figcaption.appendChild(document.createElement("br"))
             figcaption.appendChild(titleSPAN)
-            if (true) {
+            if (spy) {
                 figcaption.appendChild(spy)
             }
             figcaption.appendChild(titleBar)
@@ -843,11 +859,25 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
         function updateDisplay(text) {
             const doc = jsYaml.load(text, 'utf8')
 
-            entries = Object.entries(doc);
+            {
+                let entries = Object.entries(doc);
 
-            for (let entry in entries) {
-                const key = entries[entry][0]
-                const property = entries[entry][1]
+                filteredEntries = entries.filter((e) => {
+                    return true 
+                    /*
+                    return e[0] === "978-2729841102"
+                    return e[0] === "978-2070108534"
+                    return e[0] === "978-0810902626"
+                    return e[0] === "978-8837097073"
+                    return e[0] === "978-0194313353"
+                    return e[0] === "978-3551732248"
+                    */
+                })
+            }
+
+            for (let entry in filteredEntries) {
+                const key = filteredEntries[entry][0]
+                const property = filteredEntries[entry][1]
                 property.image_properties.properties.palette = JSON.parse(property.image_properties.properties.most_common.replaceAll("'", '"'))
                 property.image_properties.properties.palette.sort((a, b) => b.count - a.count)
                 property.image_properties.properties.paletteSize = property.image_properties.properties.palette.reduce((accumulator, currentValue) => accumulator + currentValue.count, 0)
@@ -864,7 +894,7 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
                 property.image_properties.properties.palette_diversity = palette_diversity(property.image_properties.properties.palette)
             }
 
-            entries.sort((a, b) => {
+            filteredEntries.sort((a, b) => {
                 try {
                     const palA = +a[1].image_properties.properties.palette_diversity.total
                     const palB = +b[1].image_properties.properties.palette_diversity.total
@@ -878,7 +908,8 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
                     const stdLumB = +b[1].image_properties.properties.std_lightness
                     let critA
                     let critB
-                    /* {
+
+                    {
                         critA = palA
                         critB = palB
                         if (critA != critB) {
@@ -899,7 +930,7 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
                             return critB - critA
                         }
                     }
-                    */
+
 
                     const nameA = a[1].de.toUpperCase().split(/ \(/)[0]
                     const nameB = b[1].de.toUpperCase().split(/ \(/)[0]
@@ -927,25 +958,25 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
             })
 
             const c = new Counter();
-            for (const property in entries) {
+            for (const property in filteredEntries) {
                 const enableSkip = undefined // "tintin" // "Kafka" // "Perec" // 
                 let skip = typeof enableSkip !== "undefined"
-                if (typeof entries[property][1].tags !== "undefined") {
+                if (typeof filteredEntries[property][1].tags !== "undefined") {
                     if (enableSkip) {
-                        skip = !entries[property][1].tags.includes(enableSkip)
+                        skip = !filteredEntries[property][1].tags.includes(enableSkip)
                     }
-                    if (entries[property][1].tags.includes("verboten")) {
+                    if (filteredEntries[property][1].tags.includes("verboten")) {
                         skip = true
-                        console.log("SKIP", entries[property][1].de, entries[property][1].tags)
+                        console.log("SKIP", filteredEntries[property][1].de, filteredEntries[property][1].tags)
                     }
                 }
 
                 if (!skip) {
-                    const entry = entries[property]
+                    const entry = filteredEntries[property]
                     blend(property, entry)
                     c.count(entry[1])
                 } else {
-                    // console.log(entries[property][1])
+                    // console.log(filteredEntries[property][1])
                 }
 
             }
