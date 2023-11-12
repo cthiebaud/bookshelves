@@ -6,7 +6,7 @@ from colorthief import ColorThief
 
 colors_dictionnary = {}
 
-with open('colors.json', 'r') as fp:
+with open('_colors.json', 'r') as fp:
     colors_dictionnary = json.load(fp)
 
 # // sRGB luminance(Y) values
@@ -51,7 +51,7 @@ for qwe in colors_dictionnary:
     colors_dictionnary[qwe]["luminance"] = g
     # del colors_dictionnary[qwe]["gray"]
 
-with open('colors.json', 'w') as fp:
+with open('_colors.json', 'w') as fp:
   json.dump(colors_dictionnary, fp, indent=2)
 
     

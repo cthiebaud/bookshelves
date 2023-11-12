@@ -19,7 +19,7 @@ for ext in extensions:
            basename = basename[2:]
         # if basename.startswith('978-2070514427') :
           # prefix thumbnail file with T_
-        thumbName = f"/Users/christophe.thiebaud/github.com/cthiebaud/bookshelves/{dir[1]}/T_{basename}"
+        thumbName = f"{dir[1]}/T_{basename}"
         # print(i, filename, "=>", thumbName, os.path.isfile(thumbName))
         
         # don't create thumbnail if already exists
@@ -33,4 +33,4 @@ for ext in extensions:
         i = i + 1
 
       
-print(f"{created} thumb(s) created out of {i} images crawled, because they already exist")
+print(f"{created} thumb(s) created out of {i} images crawled, {i-created} already exist")

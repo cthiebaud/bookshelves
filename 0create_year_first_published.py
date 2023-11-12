@@ -23,8 +23,8 @@ with open('/Users/christophe.thiebaud/github.com/goodreads-scraper/QWE/all_books
                 max_title = book["book_title"]
         goodreads_dictionnary[key] = year
 
-print(f"min year: {min}, [{min_title}];\nmax year: {max}, [{max_title}];")
+print(f"min year: {min}, [{min_title}];\nmax year: {max}, [{max_title}];\n{len(goodreads_dictionnary)}")
 
-with open('year_first_published.json', 'w') as fp:
+with open('year_first_published_from_goodreads.json', 'w') as fp:
   json.dump(goodreads_dictionnary, fp, indent=2)
 

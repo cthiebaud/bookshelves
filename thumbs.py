@@ -19,11 +19,11 @@ for filename3 in glob.iglob('thumbs/*', recursive=False):
   im = Image.open(filename3)
   basename = os.path.basename(filename3)
 
-  print(basename, im.size)
   size = os.stat(filename3).st_size 
+  print(basename, im.size, size)
   sizes.append(size)
   i += 1
 
 
-print(i, sum(sizes), min(sizes), max(sizes))
+print(f"{i} thumbs, {sum(sizes)} total bytes, {min(sizes)} min, {max(sizes)} max")
 

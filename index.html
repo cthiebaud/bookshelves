@@ -878,7 +878,7 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
             for (let entry in filteredEntries) {
                 const key = filteredEntries[entry][0]
                 const property = filteredEntries[entry][1]
-                property.image_properties.properties.palette = JSON.parse(property.image_properties.properties.most_common.replaceAll("'", '"'))
+                property.image_properties.properties.palette = JSON.parse(property.image_properties.properties.palette.replaceAll("'", '"'))
                 property.image_properties.properties.palette.sort((a, b) => b.count - a.count)
                 property.image_properties.properties.paletteSize = property.image_properties.properties.palette.reduce((accumulator, currentValue) => accumulator + currentValue.count, 0)
 
@@ -987,7 +987,7 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
 
         function fetchData() {
             const xhr = new XMLHttpRequest()
-            xhr.open("GET", "everything.yaml", true)
+            xhr.open("GET", "dist/everything.yaml", true)
             xhr.onload = () => {
                 updateDisplay(xhr.response)
             };

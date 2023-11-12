@@ -13,7 +13,7 @@ with open('isbn-nein.txt', 'w') as fNein:
                 isbn = PurePath(filename).stem[2:]
                 if not isbn.startswith("978") and not isbn.startswith("979"):
                     # print(isbn)
-                    fNein.write(f"{isbn}\n")
+                    fNein.write(f"https://www.goodreads.com/book/isbn/{isbn}\n")
                 else:
                     fJa.write(f"{isbn}\n")
 
