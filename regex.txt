@@ -16,3 +16,5 @@ $1\n  ext: $2
   
   lan: 🇵🇹
   lan: 🇪🇸
+
+non beakable utf8 char : \u00A0

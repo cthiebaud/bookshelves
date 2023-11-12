@@ -880,13 +880,13 @@
   where: /saint-lazare-de-savene/salon/_9
 978-0140228458:
   de: Detlev Peukert (1988-12-03) Mass Market Paperback
-  image_path: thumbs/T_978-0140228458.jpeg
+  image_path: thumbs/T_978-0140228458.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [239, 234, 230], ''count'': 4228}, {''color'': [186,
-        168, 151], ''count'': 10755}, {''color'': [103, 80, 74], ''count'': 8091},
-        {''color'': [43, 36, 35], ''count'': 17830}, {''color'': [178, 58, 65], ''count'':
-        9688}]'
+      palette: '[{''color'': [9, 18, 25], ''count'': 24703}, {''color'': [65, 57,
+        45], ''count'': 6778}, {''color'': [140, 40, 35], ''count'': 14786}, {''color'':
+        [139, 129, 105], ''count'': 5426}, {''color'': [197, 186, 159], ''count'':
+        10307}]'
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - nazi
@@ -2146,13 +2146,13 @@
 978-0500510346:
   de: Perry Ogden (Author), John Edwards (Author)
   ext: "Hardcover \u2013 September 1, 2001"
-  image_path: thumbs/T_978-0500510346.jpg
+  image_path: thumbs/T_978-0500510346.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [253, 251, 248], ''count'': 12594}, {''color'': [76,
-        63, 61], ''count'': 13166}, {''color'': [32, 31, 37], ''count'': 9388}, {''color'':
-        [149, 110, 99], ''count'': 3874}, {''color'': [206, 169, 146], ''count'':
-        3978}]'
+      palette: '[{''color'': [77, 76, 61], ''count'': 19667}, {''color'': [47, 47,
+        43], ''count'': 17784}, {''color'': [137, 111, 89], ''count'': 6107}, {''color'':
+        [182, 157, 123], ''count'': 6354}, {''color'': [229, 223, 208], ''count'':
+        5488}]'
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - arts_bis
@@ -4722,13 +4722,13 @@
   where: /saint-jean-lipion/salon/perec
 978-2020259194:
   de: "Heinrich B\xF6ll (Auteur)"
-  image_path: thumbs/T_978-2020259194.webp
+  image_path: thumbs/T_978-2020259194.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [160, 148, 131], ''count'': 12068}, {''color'': [203,
-        196, 157], ''count'': 8330}, {''color'': [229, 217, 110], ''count'': 25622},
-        {''color'': [122, 106, 99], ''count'': 10901}, {''color'': [70, 64, 71], ''count'':
-        8479}]'
+      palette: '[{''color'': [248, 236, 91], ''count'': 28020}, {''color'': [124,
+        118, 76], ''count'': 10206}, {''color'': [66, 69, 48], ''count'': 8160}, {''color'':
+        [221, 214, 148], ''count'': 7333}, {''color'': [173, 161, 109], ''count'':
+        10881}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _4
@@ -6267,7 +6267,7 @@
 978-2070362844:
   de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)
   ext: "Poche \u2013 10 novembre 1972"
-  image_path: thumbs/T_978-2070362844.webp
+  image_path: thumbs/T_978-2070362844.jpg
   image_properties:
     properties:
       palette: '[{''color'': [154, 156, 153], ''count'': 8249}, {''color'': [181,
@@ -6344,10 +6344,10 @@
   image_path: thumbs/T_978-2070367863.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [251, 252, 251], ''count'': 4222}, {''color'': [195,
-        190, 182], ''count'': 21582}, {''color'': [165, 150, 135], ''count'': 11829},
-        {''color'': [122, 82, 66], ''count'': 5272}, {''color'': [69, 37, 29], ''count'':
-        7415}]'
+      palette: '[{''color'': [240, 221, 176], ''count'': 8273}, {''color'': [253,
+        252, 229], ''count'': 45543}, {''color'': [199, 171, 110], ''count'': 2712},
+        {''color'': [153, 122, 62], ''count'': 4334}, {''color'': [104, 77, 34], ''count'':
+        6138}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - poche
@@ -7907,9 +7907,10 @@
   image_path: thumbs/T_978-2080815002.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [231, 210, 112], ''count'': 27545}, {''color'': [162,
-        139, 148], ''count'': 4887}, {''color'': [87, 80, 82], ''count'': 6652}, {''color'':
-        [43, 46, 40], ''count'': 9032}, {''color'': [240, 244, 239], ''count'': 2484}]'
+      palette: '[{''color'': [236, 211, 106], ''count'': 39483}, {''color'': [155,
+        127, 145], ''count'': 5489}, {''color'': [104, 86, 100], ''count'': 6043},
+        {''color'': [199, 169, 190], ''count'': 3003}, {''color'': [60, 60, 57], ''count'':
+        13382}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cinema
@@ -7924,10 +7925,10 @@
   image_path: thumbs/T_978-2081212480.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [176, 168, 160], ''count'': 6780}, {''color'': [201,
-        195, 187], ''count'': 7304}, {''color'': [146, 136, 128], ''count'': 3378},
-        {''color'': [97, 87, 78], ''count'': 9097}, {''color'': [234, 232, 230], ''count'':
-        3441}]'
+      palette: '[{''color'': [209, 202, 190], ''count'': 15100}, {''color'': [234,
+        227, 216], ''count'': 9889}, {''color'': [188, 182, 171], ''count'': 21116},
+        {''color'': [167, 161, 150], ''count'': 12837}, {''color'': [140, 135, 124],
+        ''count'': 6058}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - philo
@@ -9359,10 +9360,10 @@
   image_path: thumbs/T_978-2213663098.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [81, 74, 70], ''count'': 2087}, {''color'': [151, 136,
-        123], ''count'': 7168}, {''color'': [190, 174, 161], ''count'': 11406}, {''color'':
-        [225, 208, 193], ''count'': 15671}, {''color'': [252, 240, 225], ''count'':
-        27268}]'
+      palette: '[{''color'': [180, 164, 151], ''count'': 8863}, {''color'': [209,
+        192, 178], ''count'': 11372}, {''color'': [234, 216, 201], ''count'': 12901},
+        {''color'': [253, 242, 226], ''count'': 26739}, {''color'': [145, 128, 114],
+        ''count'': 4325}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - perec
@@ -10163,7 +10164,7 @@
 978-2251010311:
   de: "Jules C\xE9sar (Auteur), L.-A. (L\xE9opold-Albert) Constans (Auteur), A. (Andr\xE9\
     ) Balland (Traduction)"
-  image_path: thumbs/T_978-2251010311.jpg
+  image_path: thumbs/T_978-2251010311.jpeg
   image_properties:
     properties:
       palette: '[{''color'': [179, 54, 77], ''count'': 14816}, {''color'': [176, 50,
@@ -10179,7 +10180,7 @@
 978-2251010328:
   de: "Jules C\xE9sar (Auteur), L.-A. (L\xE9opold-Albert) Constans (Auteur), A. (Andr\xE9\
     ) Balland (Traduction)"
-  image_path: thumbs/T_978-2251010328.jpg
+  image_path: thumbs/T_978-2251010328.jpeg
   image_properties:
     properties:
       palette: '[{''color'': [147, 82, 66], ''count'': 309}, {''color'': [199, 132,
@@ -10653,10 +10654,10 @@
   image_path: thumbs/T_978-2263014017.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [124, 124, 112], ''count'': 11823}, {''color'': [99,
-        70, 46], ''count'': 9766}, {''color'': [26, 24, 25], ''count'': 13412}, {''color'':
-        [202, 191, 123], ''count'': 7439}, {''color'': [171, 137, 48], ''count'':
-        7560}]'
+      palette: '[{''color'': [46, 47, 50], ''count'': 21694}, {''color'': [162, 60,
+        60], ''count'': 3215}, {''color'': [111, 89, 69], ''count'': 9799}, {''color'':
+        [201, 185, 126], ''count'': 8215}, {''color'': [159, 127, 90], ''count'':
+        12277}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - enfer
@@ -11549,13 +11550,13 @@
 978-2700064605:
   de: "Gr\xFCnd - Collectif (Auteur)"
   ext: "Reli\xE9 \u2013 1 janvier 1998"
-  image_path: thumbs/T_978-2700064605.jpg
+  image_path: thumbs/T_978-2700064605.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [216, 203, 179], ''count'': 12979}, {''color'': [253,
-        253, 249], ''count'': 18461}, {''color'': [213, 160, 123], ''count'': 9252},
-        {''color'': [157, 110, 92], ''count'': 8591}, {''color'': [93, 66, 59], ''count'':
-        5117}]'
+      palette: '[{''color'': [119, 89, 67], ''count'': 8527}, {''color'': [60, 45,
+        38], ''count'': 4765}, {''color'': [169, 139, 109], ''count'': 11573}, {''color'':
+        [190, 182, 166], ''count'': 13148}, {''color'': [241, 240, 239], ''count'':
+        16987}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cuisine
@@ -11567,13 +11568,12 @@
   where: /saint-lazare-de-savene/salon/cuisine
 978-2700064643:
   de: "Gr\xFCnd - Collectif (Auteur)"
-  image_path: thumbs/T_978-2700064643.jpg
+  image_path: thumbs/T_978-2700064643.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [164, 147, 123], ''count'': 11090}, {''color'': [122,
-        98, 60], ''count'': 8911}, {''color'': [65, 48, 32], ''count'': 6255}, {''color'':
-        [220, 213, 206], ''count'': 16591}, {''color'': [183, 139, 57], ''count'':
-        5153}]'
+      palette: '[{''color'': [116, 99, 67], ''count'': 10608}, {''color'': [168, 163,
+        145], ''count'': 12374}, {''color'': [242, 241, 234], ''count'': 17944}, {''color'':
+        [56, 44, 32], ''count'': 7110}, {''color'': [176, 138, 71], ''count'': 6964}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cuisine
@@ -12175,7 +12175,7 @@
   title: Quelques jours dans la vie de Sharon Stone
   where: /saint-jean-lipion/chambre/beau_livre
 978-2737001222:
-  de: Miguel de Cervantes Saavedra
+  de: "Miguel de Cervantes\_Saavedra"
   ext: "Broch\xE9 \u2013 1 juin 2020"
   image_path: thumbs/T_978-2737001222.jpeg
   image_properties:
@@ -14434,13 +14434,13 @@
   where: /saint-lazare-de-savene/salon/_9
 978-8804352211:
   de: Bianca Pitzorno (Autore)
-  image_path: thumbs/T_978-8804352211.jpg
+  image_path: thumbs/T_978-8804352211.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [46, 32, 63], ''count'': 5191}, {''color'': [139, 124,
-        120], ''count'': 6416}, {''color'': [238, 149, 161], ''count'': 13111}, {''color'':
-        [253, 248, 248], ''count'': 29962}, {''color'': [234, 53, 49], ''count'':
-        6120}]'
+      palette: '[{''color'': [252, 250, 250], ''count'': 31667}, {''color'': [229,
+        170, 178], ''count'': 13459}, {''color'': [141, 139, 133], ''count'': 5246},
+        {''color'': [71, 62, 80], ''count'': 5911}, {''color'': [222, 103, 63], ''count'':
+        5117}]'
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - hardcovers
@@ -14944,7 +14944,7 @@
 978-8804599128:
   de: Bianca Pitzorno (Autore)
   ext: "Copertina flessibile \u2013 23 luglio 2019"
-  image_path: thumbs/T_978-8804599128.jpg
+  image_path: thumbs/T_978-8804599128.jpeg
   image_properties:
     properties:
       palette: '[{''color'': [249, 252, 253], ''count'': 14269}, {''color'': [218,
@@ -20932,13 +20932,12 @@
   where: /saint-lazare-de-savene/chambre_alessia/_F
 978-8879272391:
   de: Babette Cole (Autore), G. Lughi (Traduttore)
-  image_path: thumbs/T_978-8879272391.jpg
+  image_path: thumbs/T_978-8879272391.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [110, 104, 100], ''count'': 7785}, {''color'': [153,
-        139, 136], ''count'': 10133}, {''color'': [159, 60, 61], ''count'': 6018},
-        {''color'': [64, 48, 47], ''count'': 5329}, {''color'': [170, 173, 176], ''count'':
-        10735}]'
+      palette: '[{''color'': [133, 85, 54], ''count'': 6435}, {''color'': [158, 141,
+        101], ''count'': 7888}, {''color'': [226, 214, 181], ''count'': 14680}, {''color'':
+        [182, 179, 145], ''count'': 8142}, {''color'': [55, 46, 26], ''count'': 4055}]'
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - _C
@@ -22653,13 +22652,13 @@ ASIN-B00NO4ODDO:
   where: /saint-lazare-de-savene/salon/_1
 ASIN-B00OB8WNMK:
   de: Denis de Rougemont
-  image_path: thumbs/T_ASIN-B00OB8WNMK.jpg
+  image_path: thumbs/T_ASIN-B00OB8WNMK.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [172, 151, 148], ''count'': 10467}, {''color'': [212,
-        200, 192], ''count'': 10642}, {''color'': [222, 226, 226], ''count'': 35717},
-        {''color'': [41, 39, 35], ''count'': 370}, {''color'': [129, 120, 121], ''count'':
-        7804}]'
+      palette: '[{''color'': [251, 244, 221], ''count'': 37013}, {''color'': [196,
+        185, 170], ''count'': 3731}, {''color'': [121, 128, 133], ''count'': 5553},
+        {''color'': [76, 83, 89], ''count'': 7592}, {''color'': [53, 53, 46], ''count'':
+        12111}]'
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - _7
@@ -22766,24 +22765,6 @@ boh10:
   - "\U0001F1EB\U0001F1F7"
   title: "Nanni Moretti \xE0 Rome"
   where: /saint-jean-lipion/chambre/cinema
-boh11:
-  de: Georges Perec (Auteur)
-  ext: Edition originale
-  image_path: thumbs/T_boh11.jpg
-  image_properties:
-    properties:
-      palette: '[{''color'': [222, 217, 223], ''count'': 16067}, {''color'': [201,
-        191, 182], ''count'': 1631}, {''color'': [230, 222, 190], ''count'': 41832},
-        {''color'': [139, 126, 107], ''count'': 373}, {''color'': [63, 53, 34], ''count'':
-        97}]'
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - perec
-  - perec
-  - saint-jean-lipion
-  - "\U0001F1EB\U0001F1F7"
-  title: Les choses
-  where: /saint-jean-lipion/salon/perec
 boh12:
   ISSN: 0180-376-X
   de: Georges Perec (Auteur)
@@ -23047,42 +23028,6 @@ boh28:
   - "\U0001F1EE\U0001F1F9"
   title: La canzone francese
   where: /saint-lazare-de-savene/salon/_3
-boh29:
-  ASIN: B07CQN67D8
-  de: Hauser Arnold (Autore)
-  ext: "Preistoria Antichit\xE0 Medioevo Rinascimento Manierismo Barocco - Copertina\
-    \ flessibile \u2013 1 gennaio 1975"
-  image_path: thumbs/T_boh29.jpg
-  image_properties:
-    properties:
-      palette: '[{''color'': [205, 194, 186], ''count'': 5873}, {''color'': [238,
-        224, 211], ''count'': 13086}, {''color'': [127, 119, 114], ''count'': 1116},
-        {''color'': [246, 237, 226], ''count'': 38587}, {''color'': [37, 34, 37],
-        ''count'': 10938}]'
-  lan: "\U0001F1EE\U0001F1F9"
-  tags:
-  - _3
-  - saint-lazare-de-savene
-  - "\U0001F1EE\U0001F1F9"
-  title: Storia sociale dell'arte. Volume primo
-  where: /saint-lazare-de-savene/salon/_3
-boh30:
-  ASIN: B000KGVW0G
-  de: Hauser Arnold (Autore)
-  image_path: thumbs/T_boh30.jpg
-  image_properties:
-    properties:
-      palette: '[{''color'': [138, 134, 130], ''count'': 3288}, {''color'': [195,
-        180, 163], ''count'': 12844}, {''color'': [82, 80, 78], ''count'': 2023},
-        {''color'': [214, 205, 190], ''count'': 26149}, {''color'': [11, 10, 11],
-        ''count'': 9096}]'
-  lan: "\U0001F1EE\U0001F1F9"
-  tags:
-  - _3
-  - saint-lazare-de-savene
-  - "\U0001F1EE\U0001F1F9"
-  title: Storia sociale dell'arte. Volume secondo
-  where: /saint-lazare-de-savene/salon/_3
 boh31:
   de: Lewis Carroll (Auteur)
   image_path: thumbs/T_boh31.jpg
@@ -23116,23 +23061,6 @@ boh32:
   - "\U0001F1EC\U0001F1E7"
   title: Treasure Island
   where: /saint-lazare-de-savene/salon/_9
-boh33:
-  de: Italo Svevo (Autore)
-  ext: "Prefazione di Eugenio Montale. Rilegatura sconosciuta \u2013 31 dicembre 1983"
-  image_path: thumbs/T_boh33.webp
-  image_properties:
-    properties:
-      palette: '[{''color'': [183, 166, 152], ''count'': 2866}, {''color'': [243,
-        230, 208], ''count'': 23218}, {''color'': [212, 74, 57], ''count'': 17976},
-        {''color'': [104, 96, 91], ''count'': 4097}, {''color'': [49, 42, 38], ''count'':
-        4643}]'
-  lan: "\U0001F1EE\U0001F1F9"
-  tags:
-  - _6
-  - saint-lazare-de-savene
-  - "\U0001F1EE\U0001F1F9"
-  title: La coscienza di Zeno
-  where: /saint-lazare-de-savene/salon/_6
 boh34:
   de: Harold Pinter (Autore)
   image_path: thumbs/T_boh34.jpg
@@ -23199,23 +23127,6 @@ boh37:
   - "\U0001F1EE\U0001F1F9"
   title: Sei Giornate
   where: /saint-lazare-de-savene/salon/_2
-boh38:
-  de: Giorgio Biondi
-  ext: La Prima Parte Ha Come Oggetto La Nostra Infanzia A Castello, La Seconda I
-    Suoi Personaggi.
-  image_path: thumbs/T_boh38.jpg
-  image_properties:
-    properties:
-      palette: '[{''color'': [97, 93, 94], ''count'': 4191}, {''color'': [185, 183,
-        180], ''count'': 24470}, {''color'': [136, 136, 136], ''count'': 11762}, {''color'':
-        [5, 5, 5], ''count'': 11107}, {''color'': [57, 49, 50], ''count'': 4270}]'
-  lan: "\U0001F1EE\U0001F1F9"
-  tags:
-  - _7
-  - saint-lazare-de-savene
-  - "\U0001F1EE\U0001F1F9"
-  title: "Granelli di\u2026"
-  where: /saint-lazare-de-savene/salon/_7
 boh4:
   ASIN: B00DFH42S6
   de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)
@@ -23522,6 +23433,23 @@ emigrati_sangiovannesi:
   - "\U0001F1EE\U0001F1F9"
   title: Storie di emigrati sangiovannesi nel mondo
   where: /saint-lazare-de-savene/salon/_7
+endymion:
+  de: John Keats
+  image_path: thumbs/T_endymion.jpeg
+  image_properties:
+    properties:
+      palette: '[{''color'': [184, 94, 100], ''count'': 4559}, {''color'': [170, 57,
+        79], ''count'': 16904}, {''color'': [117, 34, 46], ''count'': 473}, {''color'':
+        [178, 65, 86], ''count'': 23421}, {''color'': [183, 74, 93], ''count'': 15843}]'
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - "po\xE9sie"
+  - mostly_red
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Endymion and other poems
+  url: https://sites.gold.ac.uk/goldsmithshistory/a-greatly-lamented-goldsmiths-casualty-of-passchendaele-william-thomas-young/
+  where: /saint-lazare-de-savene/salon/mostly_red
 fleurs_du_mal:
   de: Charles Baudelaire (Ernest Raynaud)
   ext: "Edit\xE9 par Garnier coll. Selecta, 1957"
@@ -23556,6 +23484,24 @@ gai-luron:
   - "\U0001F1EB\U0001F1F7"
   title: Gai-Luron - Chauds les marrons ! Chauds !
   where: /saint-lazare-de-savene/salon/small
+granellidi:
+  de: Giorgio Biondi
+  ext: La Prima Parte Ha Come Oggetto La Nostra Infanzia A Castello, La Seconda I
+    Suoi Personaggi.
+  image_path: thumbs/T_granellidi.jpeg
+  image_properties:
+    properties:
+      palette: '[{''color'': [253, 253, 245], ''count'': 25465}, {''color'': [209,
+        205, 197], ''count'': 10921}, {''color'': [169, 160, 155], ''count'': 4713},
+        {''color'': [79, 76, 72], ''count'': 10253}, {''color'': [125, 110, 107],
+        ''count'': 5048}]'
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _7
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: "Granelli di\u2026"
+  where: /saint-lazare-de-savene/salon/_7
 i_love_you_baby_1:
   de: Yoko Maki
   image_path: thumbs/T_i_love_you_baby_1.jpeg
@@ -23669,24 +23615,23 @@ i_love_you_baby_7:
   title: I Love You Baby 7
   url: https://www.bedetheque.com/BD-Babe-My-Love-Tome-7-65166.html
   where: /saint-lazare-de-savene/chambre_alessia/manga
-keats:
-  de: John Keats
-  image_path: thumbs/T_keats.jpg
+lacoscienzadizeno:
+  de: Italo Svevo (Autore)
+  ext: "Prefazione di Eugenio Montale. Rilegatura sconosciuta \u2013 31 dicembre 1983"
+  image_path: thumbs/T_lacoscienzadizeno.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [244, 237, 231], ''count'': 7680}, {''color'': [224,
-        216, 211], ''count'': 8617}, {''color'': [205, 198, 192], ''count'': 7824},
-        {''color'': [152, 140, 129], ''count'': 1237}, {''color'': [180, 173, 166],
-        ''count'': 4642}]'
-  lan: "\U0001F1EC\U0001F1E7"
+      palette: '[{''color'': [249, 245, 196], ''count'': 21626}, {''color'': [182,
+        49, 17], ''count'': 25907}, {''color'': [159, 157, 130], ''count'': 3311},
+        {''color'': [77, 83, 69], ''count'': 5609}, {''color'': [22, 26, 20], ''count'':
+        8947}]'
+  lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - "po\xE9sie"
-  - mostly_red
+  - _6
   - saint-lazare-de-savene
-  - "\U0001F1EC\U0001F1E7"
-  title: Endymion and other poems
-  url: https://sites.gold.ac.uk/goldsmithshistory/a-greatly-lamented-goldsmiths-casualty-of-passchendaele-william-thomas-young/
-  where: /saint-lazare-de-savene/salon/mostly_red
+  - "\U0001F1EE\U0001F1F9"
+  title: La coscienza di Zeno
+  where: /saint-lazare-de-savene/salon/_6
 ladivinacommedia_inferno:
   ASIN: B01EN52O8I
   de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
@@ -23740,6 +23685,23 @@ lamartine:
   - "\U0001F1EB\U0001F1F7"
   title: "M\xE9ditations - Nouvelles m\xE9ditations"
   where: /saint-lazare-de-savene/salon/small
+leschoses:
+  de: Georges Perec (Auteur)
+  ext: Edition originale
+  image_path: thumbs/T_leschoses.jpg
+  image_properties:
+    properties:
+      palette: '[{''color'': [132, 130, 113], ''count'': 223}, {''color'': [230, 212,
+        159], ''count'': 1858}, {''color'': [248, 238, 179], ''count'': 18466}, {''color'':
+        [252, 246, 186], ''count'': 49050}, {''color'': [34, 32, 22], ''count'': 203}]'
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - perec
+  - perec
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Les choses
+  where: /saint-jean-lipion/salon/perec
 looking_glass:
   de: Lewis Carroll
   ext: Published by MacMillan & Co., 1938
@@ -23852,6 +23814,42 @@ stalemates:
   - "\U0001F1EC\U0001F1E7"
   title: Stalemates
   where: /saint-lazare-de-savene/chambre_alessia/_G
+storiasocialedellarte1:
+  ASIN: B07CQN67D8
+  de: Hauser Arnold (Autore)
+  ext: "Preistoria Antichit\xE0 Medioevo Rinascimento Manierismo Barocco - Copertina\
+    \ flessibile \u2013 1 gennaio 1975"
+  image_path: thumbs/T_storiasocialedellarte1.jpeg
+  image_properties:
+    properties:
+      palette: '[{''color'': [218, 199, 172], ''count'': 13179}, {''color'': [188,
+        165, 134], ''count'': 2694}, {''color'': [243, 225, 198], ''count'': 41146},
+        {''color'': [21, 21, 20], ''count'': 9613}, {''color'': [100, 93, 83], ''count'':
+        1168}]'
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _3
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Storia sociale dell'arte. Volume primo
+  where: /saint-lazare-de-savene/salon/_3
+storiasocialedellarte2:
+  ASIN: B000KGVW0G
+  de: Hauser Arnold (Autore)
+  image_path: thumbs/T_storiasocialedellarte2.jpeg
+  image_properties:
+    properties:
+      palette: '[{''color'': [242, 224, 197], ''count'': 48433}, {''color'': [184,
+        172, 156], ''count'': 3567}, {''color'': [128, 124, 115], ''count'': 3943},
+        {''color'': [74, 71, 65], ''count'': 2444}, {''color'': [21, 20, 20], ''count'':
+        9413}]'
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _3
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Storia sociale dell'arte. Volume secondo
+  where: /saint-lazare-de-savene/salon/_3
 storie_di_emigranti_san_giovanese_nel_mondo:
   de: Berenice Salvatore Finarelli
   image_path: thumbs/T_storie_di_emigranti_san_giovanese_nel_mondo.jpeg
