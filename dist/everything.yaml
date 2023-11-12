@@ -5078,6 +5078,23 @@
   - _1996
   title: "\u0152uvres"
   where: /saint-lazare-de-savene/salon/lapleiade
+978-2070101757:
+  de: "F\xE9dor Dosto\xEFevski (Auteur), Henri Mongault (Traduction)"
+  ext: "La Pl\xE9iade, Gaillmard \u2013 1956"
+  image_path: thumbs/T_978-2070101757.jpg
+  image_properties:
+    properties:
+      palette: '[{''color'': [233, 233, 238], ''count'': 59323}, {''color'': [212,
+        210, 216], ''count'': 2075}, {''color'': [170, 168, 172], ''count'': 622},
+        {''color'': [122, 121, 123], ''count'': 615}, {''color'': [61, 60, 61], ''count'':
+        1565}]'
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - lapleiade
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "Les Fr\xE8res Karamazov"
+  where: /saint-jean-lipion/chambre/lapleiade
 978-2070104031:
   de: Roland-Manuel (sous la direction de)
   image_path: thumbs/T_978-2070104031.jpeg
@@ -23280,23 +23297,6 @@ boh50:
   - "\U0001F1EE\U0001F1F9"
   title: Dolci con le mele - torte, plumcake, pie, crostate e altre delizie
   where: /saint-lazare-de-savene/salon/cuisine
-boh6:
-  de: "F\xE9dor Dosto\xEFevski (Auteur), Henri Mongault (Traduction)"
-  ext: "La Pl\xE9iade, Gaillmard \u2013 1956"
-  image_path: thumbs/T_boh6.webp
-  image_properties:
-    properties:
-      palette: '[{''color'': [245, 244, 245], ''count'': 19769}, {''color'': [213,
-        212, 210], ''count'': 10077}, {''color'': [143, 143, 140], ''count'': 12457},
-        {''color'': [96, 101, 93], ''count'': 22984}, {''color'': [46, 51, 33], ''count'':
-        14513}]'
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - lapleiade
-  - saint-jean-lipion
-  - "\U0001F1EB\U0001F1F7"
-  title: "Les Fr\xE8res Karamazov"
-  where: /saint-jean-lipion/chambre/lapleiade
 boh7:
   ASIN: B0141G1U4S
   de: Morris (Autor)
