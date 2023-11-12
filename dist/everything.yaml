@@ -2636,10 +2636,10 @@
   image_path: thumbs/T_978-0590444590.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [225, 209, 178], ''count'': 7666}, {''color'': [205,
-        179, 144], ''count'': 5030}, {''color'': [172, 140, 97], ''count'': 4139},
-        {''color'': [110, 83, 56], ''count'': 10848}, {''color'': [136, 105, 69],
-        ''count'': 8317}]'
+      palette: '[{''color'': [230, 218, 194], ''count'': 6489}, {''color'': [205,
+        180, 148], ''count'': 6017}, {''color'': [167, 138, 101], ''count'': 4894},
+        {''color'': [91, 71, 50], ''count'': 8995}, {''color'': [124, 98, 68], ''count'':
+        11005}]'
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - arts
@@ -21617,12 +21617,13 @@
 978-8893082532:
   de: Hans Christian Andersen - Illustrazioni di Lisbeth Zwerger
   ext: "Ediz. a colori Copertina rigida \u2013 Illustrato, 1991"
-  image_path: thumbs/T_978-8893082532.jpg
+  image_path: thumbs/T_978-8893082532.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [185, 184, 168], ''count'': 24326}, {''color'': [163,
-        141, 122], ''count'': 6843}, {''color'': [38, 38, 38], ''count'': 5635}, {''color'':
-        [123, 80, 68], ''count'': 2639}, {''color'': [54, 79, 109], ''count'': 11757}]'
+      palette: '[{''color'': [207, 191, 152], ''count'': 5052}, {''color'': [248,
+        248, 245], ''count'': 23961}, {''color'': [44, 47, 27], ''count'': 4680},
+        {''color'': [171, 124, 63], ''count'': 4075}, {''color'': [107, 135, 171],
+        ''count'': 13632}]'
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - arts
