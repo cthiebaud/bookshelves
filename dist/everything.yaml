@@ -8238,10 +8238,10 @@
   image_path: thumbs/T_978-2082115254.jpg
   image_properties:
     properties:
-      palette: '[{''color'': [94, 82, 61], ''count'': 3881}, {''color'': [149, 128,
-        92], ''count'': 6498}, {''color'': [201, 184, 149], ''count'': 4780}, {''color'':
-        [246, 241, 224], ''count'': 34763}, {''color'': [144, 155, 138], ''count'':
-        12678}]'
+      palette: '[{''color'': [247, 241, 224], ''count'': 36946}, {''color'': [202,
+        183, 143], ''count'': 4561}, {''color'': [144, 155, 138], ''count'': 13245},
+        {''color'': [149, 127, 89], ''count'': 6408}, {''color'': [90, 76, 52], ''count'':
+        3040}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
@@ -22905,24 +22905,6 @@ boh18:
   - "\U0001F1EE\U0001F1F9"
   title: Il ramo d'oro, volume terzo
   where: /saint-lazare-de-savene/salon/_1
-boh19:
-  ASIN: B01EN52O8I
-  de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
-  image_path: thumbs/T_boh19.jpeg
-  image_properties:
-    properties:
-      palette: '[{''color'': [184, 157, 119], ''count'': 3891}, {''color'': [209,
-        188, 155], ''count'': 7709}, {''color'': [221, 204, 171], ''count'': 25413},
-        {''color'': [230, 214, 182], ''count'': 24549}, {''color'': [95, 87, 70],
-        ''count'': 438}]'
-  lan: "\U0001F1EE\U0001F1F9"
-  tags:
-  - "po\xE9sie"
-  - _1
-  - saint-lazare-de-savene
-  - "\U0001F1EE\U0001F1F9"
-  title: La Divina Commedia - Inferno
-  where: /saint-lazare-de-savene/salon/_1
 boh2:
   de: Erus Sangiorgi, Marcella Brizzi
   image_path: thumbs/T_boh2.jpeg
@@ -22939,24 +22921,6 @@ boh2:
   - "\U0001F1EE\U0001F1F9"
   title: "in caso di\u2026 Prontuario di rimedi naturali"
   where: "/saint-jean-lipion/chambre/\xE9sot\xE9risme"
-boh20:
-  ASIN: B01EN52O8I
-  de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
-  image_path: thumbs/T_boh20.jpeg
-  image_properties:
-    properties:
-      palette: '[{''color'': [219, 211, 201], ''count'': 4255}, {''color'': [240,
-        236, 226], ''count'': 15966}, {''color'': [250, 248, 241], ''count'': 36231},
-        {''color'': [175, 169, 162], ''count'': 1369}, {''color'': [87, 86, 84], ''count'':
-        379}]'
-  lan: "\U0001F1EE\U0001F1F9"
-  tags:
-  - "po\xE9sie"
-  - _1
-  - saint-lazare-de-savene
-  - "\U0001F1EE\U0001F1F9"
-  title: La Divina Commedia - Purgatorio
-  where: /saint-lazare-de-savene/salon/_1
 boh21:
   ASIN: B003X20RGE
   de: Serge Bramly (Auteur)
@@ -23742,6 +23706,42 @@ keats:
   title: Endymion and other poems
   url: https://sites.gold.ac.uk/goldsmithshistory/a-greatly-lamented-goldsmiths-casualty-of-passchendaele-william-thomas-young/
   where: /saint-lazare-de-savene/salon/mostly_red
+ladivinacommedia_inferno:
+  ASIN: B01EN52O8I
+  de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
+  image_path: thumbs/T_ladivinacommedia_inferno.jpg
+  image_properties:
+    properties:
+      palette: '[{''color'': [99, 87, 68], ''count'': 271}, {''color'': [187, 159,
+        136], ''count'': 2485}, {''color'': [201, 187, 162], ''count'': 18375}, {''color'':
+        [159, 126, 105], ''count'': 1539}, {''color'': [207, 197, 178], ''count'':
+        35130}]'
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - "po\xE9sie"
+  - _1
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: La Divina Commedia - Inferno
+  where: /saint-lazare-de-savene/salon/_1
+ladivinacommedia_purgatorio:
+  ASIN: B01EN52O8I
+  de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
+  image_path: thumbs/T_ladivinacommedia_purgatorio.jpg
+  image_properties:
+    properties:
+      palette: '[{''color'': [205, 200, 190], ''count'': 20693}, {''color'': [192,
+        185, 173], ''count'': 18227}, {''color'': [180, 171, 159], ''count'': 19196},
+        {''color'': [150, 134, 123], ''count'': 1407}, {''color'': [69, 65, 58], ''count'':
+        477}]'
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - "po\xE9sie"
+  - _1
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: La Divina Commedia - Purgatorio
+  where: /saint-lazare-de-savene/salon/_1
 lamartine:
   de: Lamartine
   image_path: thumbs/T_lamartine.jpg
