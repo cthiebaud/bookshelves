@@ -12298,12 +12298,12 @@
   where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2744124389:
   de: Christian Grenier (Auteur)
-  image_path: thumbs/T_978-2744124389.jpg
+  image_path: thumbs/T_978-2744124389.jpeg
   image_properties:
     properties:
-      palette: '[{''color'': [43, 20, 16], ''count'': 4686}, {''color'': [202, 28,
-        26], ''count'': 45378}, {''color'': [151, 98, 85], ''count'': 1977}, {''color'':
-        [78, 66, 85], ''count'': 3442}, {''color'': [218, 172, 152], ''count'': 917}]'
+      palette: '[{''color'': [196, 148, 139], ''count'': 2403}, {''color'': [200,
+        71, 67], ''count'': 6766}, {''color'': [97, 84, 89], ''count'': 3537}, {''color'':
+        [49, 33, 27], ''count'': 3437}, {''color'': [195, 47, 33], ''count'': 43657}]'
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _E
