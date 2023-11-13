@@ -21005,21 +21005,6 @@ boh36:
   - "\U0001F1EE\U0001F1F9"
   title: Mito e modelli mitologici nel romanzo americano del '900
   where: /saint-lazare-de-savene/salon/_6
-boh37:
-  cover:
-    palette: '[{''color'': [151, 123, 85], ''count'': 3442}, {''color'': [207, 187,
-      149], ''count'': 6696}, {''color'': [251, 253, 248], ''count'': 38140}, {''color'':
-      [92, 66, 28], ''count'': 11660}, {''color'': [192, 18, 32], ''count'': 2862}]'
-  de: Pietro Aretino (Autore). A cura di Guido Davico Bonino. Aretino
-  ext: "1^ Ed. Einaudi 1975 - I Millenni Copertina rigida \u2013 14 gennaio 1975"
-  image_path: thumbs/T_boh37.webp
-  lan: "\U0001F1EE\U0001F1F9"
-  tags:
-  - _2
-  - saint-lazare-de-savene
-  - "\U0001F1EE\U0001F1F9"
-  title: Sei Giornate
-  where: /saint-lazare-de-savene/salon/_2
 boh4:
   ASIN: B00DFH42S6
   cover:
@@ -21600,6 +21585,21 @@ san_giovanni_lipioni_sulle_orme_dei_padri:
   - "\U0001F1EE\U0001F1F9"
   title: San Giovanni Lipioni - Sulle orme dei padri
   where: /saint-lazare-de-savene/chambre_alessia/hardcovers
+seigiornate:
+  cover:
+    palette: '[{''color'': [255, 254, 255], ''count'': 55113}, {''color'': [232, 214,
+      193], ''count'': 1879}, {''color'': [178, 152, 138], ''count'': 1468}, {''color'':
+      [172, 34, 69], ''count'': 644}, {''color'': [123, 98, 66], ''count'': 2896}]'
+  de: Pietro Aretino (Autore). A cura di Guido Davico Bonino. Aretino
+  ext: "1^ Ed. Einaudi 1975 - I Millenni Copertina rigida \u2013 14 gennaio 1975"
+  image_path: thumbs/T_seigiornate.jpeg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _2
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Sei Giornate
+  where: /saint-lazare-de-savene/salon/_2
 shakespeare:
   cover:
     palette: '[{''color'': [36, 44, 45], ''count'': 3379}, {''color'': [229, 228,
