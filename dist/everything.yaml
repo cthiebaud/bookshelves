@@ -20430,12 +20430,12 @@ ASIN-B0092FT3LQ:
 ASIN-B0098MD4B8:
   ASIN: B0098MD4B8
   cover:
-    palette: '[{''color'': [150, 13, 98], ''count'': 15446}, {''color'': [108, 109,
-      117], ''count'': 2568}, {''color'': [180, 163, 141], ''count'': 1830}, {''color'':
-      [54, 36, 47], ''count'': 2996}, {''color'': [234, 214, 182], ''count'': 5760}]'
+    palette: '[{''color'': [184, 43, 127], ''count'': 44804}, {''color'': [140, 156,
+      156], ''count'': 5890}, {''color'': [59, 53, 50], ''count'': 7665}, {''color'':
+      [244, 238, 214], ''count'': 7969}, {''color'': [230, 228, 76], ''count'': 1072}]'
   de: "Donatien Alphonse Fran\xE7ois de Sade (Auteur)"
   ext: "Broch\xE9 \u2013 12 septembre 1999"
-  image_path: thumbs/T_ASIN-B0098MD4B8.jpg
+  image_path: thumbs/T_ASIN-B0098MD4B8.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - enfer
