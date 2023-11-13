@@ -11,7 +11,7 @@ with open('isbn-nein.txt', 'w') as fNein:
             i = 0
             for filename in glob.iglob(covers):
                 isbn = PurePath(filename).stem[2:]
-                if not isbn.startswith("978") and not isbn.startswith("979"):
+                if not isbn.startswith("978") and not isbn.startswith("979") and not isbn.startswith("977"):
                     # print(isbn)
                     fNein.write(f"https://www.goodreads.com/book/isbn/{isbn}\n")
                 else:

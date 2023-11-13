@@ -17,6 +17,8 @@ for ext in extensions:
         basename = os.path.basename(filename)
         if basename[0] == 'Z':
            basename = basename[2:]
+        if basename[0] == 'N':
+           basename = basename[2:]
         # if basename.startswith('978-2070514427') :
           # prefix thumbnail file with T_
         thumbName = f"{dir[1]}/T_{basename}"
