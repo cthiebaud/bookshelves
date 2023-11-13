@@ -242,9 +242,9 @@
   where: /saint-lazare-de-savene/salon/cuisine
 977-2035843037:
   cover:
-    palette: '[{''color'': [181, 176, 163], ''count'': 10992}, {''color'': [126, 131,
-      139], ''count'': 12767}, {''color'': [44, 42, 37], ''count'': 15485}, {''color'':
-      [154, 98, 41], ''count'': 6851}, {''color'': [12, 132, 208], ''count'': 4151}]'
+    palette: '[{''color'': [105, 143, 179], ''count'': 18311}, {''color'': [175, 179,
+      175], ''count'': 10306}, {''color'': [231, 234, 225], ''count'': 8204}, {''color'':
+      [159, 137, 115], ''count'': 5730}, {''color'': [62, 66, 80], ''count'': 6649}]'
   de: Corriere della sera - Collectif
   image_path: thumbs/T_977-2035843037.jpeg
   lan: "\U0001F1EE\U0001F1F9"
@@ -4721,9 +4721,9 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070108299:
   cover:
-    palette: '[{''color'': [252, 252, 252], ''count'': 62383}, {''color'': [222, 220,
-      221], ''count'': 1465}, {''color'': [180, 178, 179], ''count'': 1048}, {''color'':
-      [122, 121, 121], ''count'': 678}, {''color'': [60, 59, 60], ''count'': 826}]'
+    palette: '[{''color'': [254, 254, 254], ''count'': 56940}, {''color'': [219, 217,
+      218], ''count'': 1388}, {''color'': [174, 173, 174], ''count'': 1359}, {''color'':
+      [64, 63, 63], ''count'': 1148}, {''color'': [122, 121, 122], ''count'': 1165}]'
   de: Charles Baudelaire (Auteur)
   image_path: thumbs/T_978-2070108299.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -4737,9 +4737,9 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070108534:
   cover:
-    palette: '[{''color'': [236, 235, 241], ''count'': 59379}, {''color'': [216, 215,
-      220], ''count'': 1852}, {''color'': [170, 169, 172], ''count'': 630}, {''color'':
-      [113, 112, 114], ''count'': 807}, {''color'': [67, 66, 66], ''count'': 1132}]'
+    palette: '[{''color'': [253, 253, 253], ''count'': 57504}, {''color'': [201, 201,
+      203], ''count'': 1958}, {''color'': [144, 145, 146], ''count'': 632}, {''color'':
+      [66, 66, 68], ''count'': 804}, {''color'': [22, 23, 24], ''count'': 1102}]'
   de: Charles Baudelaire (Auteur)
   image_path: thumbs/T_978-2070108534.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -7400,12 +7400,12 @@
   where: /saint-lazare-de-savene/salon/cuisine
 978-2082005678:
   cover:
-    palette: '[{''color'': [169, 137, 113], ''count'': 16014}, {''color'': [202, 178,
-      130], ''count'': 10698}, {''color'': [207, 211, 196], ''count'': 2190}, {''color'':
-      [128, 103, 93], ''count'': 8757}, {''color'': [73, 65, 59], ''count'': 10941}]'
+    palette: '[{''color'': [212, 168, 55], ''count'': 14468}, {''color'': [171, 113,
+      56], ''count'': 16887}, {''color'': [93, 82, 50], ''count'': 8255}, {''color'':
+      [224, 218, 149], ''count'': 2568}, {''color'': [31, 29, 20], ''count'': 10622}]'
   de: "Roger Verg\xE9 (Auteur)"
   ext: "Reli\xE9 \u2013 1 octobre 1992"
-  image_path: thumbs/T_978-2082005678.webp
+  image_path: thumbs/T_978-2082005678.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cuisine
@@ -10484,12 +10484,12 @@
   where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2700053807:
   cover:
-    palette: '[{''color'': [160, 132, 112], ''count'': 10503}, {''color'': [229, 179,
-      134], ''count'': 3861}, {''color'': [126, 98, 87], ''count'': 16903}, {''color'':
-      [209, 115, 86], ''count'': 6879}, {''color'': [92, 72, 68], ''count'': 11254}]'
+    palette: '[{''color'': [150, 135, 104], ''count'': 11776}, {''color'': [115, 94,
+      76], ''count'': 15513}, {''color'': [208, 96, 80], ''count'': 7932}, {''color'':
+      [221, 188, 132], ''count'': 5144}, {''color'': [68, 57, 48], ''count'': 8835}]'
   de: Richard Cawley (Auteur)
   ext: "Reli\xE9"
-  image_path: thumbs/T_978-2700053807.jpg
+  image_path: thumbs/T_978-2700053807.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - cuisine
