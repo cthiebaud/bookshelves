@@ -44,7 +44,7 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
             for key, value in data.items():
                 value["where"] = where
                 tags = value.get("tags", [])
-                image_properties = value.get("image_properties", {})
+                cover = value.get("cover", {})
                 tags.append(folder)
                 tags.append(house)
                 tags.append(value["lan"])
@@ -52,7 +52,7 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                 found_color = False
                 if (key in colors_dictionnary) :
                     if colors_dictionnary[key] is not None:
-                        image_properties = colors_dictionnary[key]
+                        cover = colors_dictionnary[key]
                         found_color = True
                 
                 if not found_color:
@@ -64,7 +64,7 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
                         tags.append(f"_{goodreads[key]}")
 
                 value["tags"] = tags
-                value["image_properties"] = image_properties
+                value["cover"] = cover
             my_dictionary.update(data)
     
     i = i + 1

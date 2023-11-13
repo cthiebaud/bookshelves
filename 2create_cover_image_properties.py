@@ -129,9 +129,10 @@ for ext in extensions:
             print(i, key, "...")
             properties = calc_image_properties(filename2)
             print(i, key, properties)
-            colors_dictionnary[key] = {
-                "properties": properties
-            }
+            colors_dictionnary[key] = properties 
+            ## {
+            ##     "properties": properties
+            ## }
         i = i + 1
 
 with open('_colors.json', 'w') as fp:

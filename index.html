@@ -10,21 +10,33 @@
         hr {
             margin: 0.2rem;
         }
-        
+
         /*
         figure:after {
             content: "";
-            *//*/* This is necessary for the pseudo element to work. *//*
+            */
+        /*/* This is necessary for the pseudo element to work. */
+        /*
             display: block;
-            *//*/* This will put the pseudo element on its own line. *//*
+            */
+        /*/* This will put the pseudo element on its own line. */
+        /*
             margin: 0 auto;
-            *//*/* This will center the border. *//*
+            */
+        /*/* This will center the border. */
+        /*
             width: 84%;
-            *//*/* Change this to whatever width you want. *//*
+            */
+        /*/* Change this to whatever width you want. */
+        /*
             padding-top: 20px;
-            *//*/* This creates some space between the element and the border. *//*
+            */
+        /*/* This creates some space between the element and the border. */
+        /*
             border-bottom: 1px solid lightgray;
-            *//*/* This creates the border. Replace black with whatever color you want. *//*
+            */
+        /*/* This creates the border. Replace black with whatever color you want. */
+        /*
         }
         */
 
@@ -299,75 +311,75 @@
         import colorSpace from 'https://cdn.jsdelivr.net/npm/color-space@2.0.1/+esm'
         // import chroma from 'https://cdn.jsdelivr.net/npm/chroma-js@2.4.2/+esm'
 
-        const container = document.getElementById("container");
-        let filteredEntries
+        const container = document.getElementById("container")
+        let booksFiltered
         let total_des_totaux = undefined
 
         function calculateAverageHueHSL(palette) {
-            let totalHue = 0;
-            let totalWeight = 0;
+            let totalHue = 0
+            let totalWeight = 0
 
             for (const color of palette) {
                 // Assuming color is in HSL color space
                 const hsl = colorSpace.rgb.hsl(color.color)
-                totalHue += hsl[0] * color.count;
-                totalWeight += color.count;
+                totalHue += hsl[0] * color.count
+                totalWeight += color.count
             }
 
-            const averageHue = totalHue / totalWeight;
+            const averageHue = totalHue / totalWeight
 
-            return averageHue;
+            return averageHue
         }
 
         function calculateWeightedAverageChroma(palette) {
-            let totalWeightedChroma = 0;
-            let totalWeight = 0;
+            let totalWeightedChroma = 0
+            let totalWeight = 0
 
             for (const color of palette) {
                 // Assuming color is in CIELAB color space
                 const lab = colorSpace.rgb.lab(color.color)
                 const chroma = Math.sqrt(Math.pow(lab[1], 2) + Math.pow(lab[2], 2))
-                const weightedChroma = chroma * color.count;
-                totalWeightedChroma += weightedChroma;
-                totalWeight += color.count;
+                const weightedChroma = chroma * color.count
+                totalWeightedChroma += weightedChroma
+                totalWeight += color.count
             }
 
-            const weightedAverageChroma = totalWeightedChroma / totalWeight;
+            const weightedAverageChroma = totalWeightedChroma / totalWeight
 
-            return weightedAverageChroma;
+            return weightedAverageChroma
         }
 
         function calculateAverageLuminance(palette) {
-            let totalWeightedLuminance = 0;
-            let totalWeight = 0;
+            let totalWeightedLuminance = 0
+            let totalWeight = 0
 
             for (const color of palette) {
                 const lab = colorSpace.rgb.lab(color.color)
-                const weightedLuminance = lab[0] * color.count;
-                totalWeightedLuminance += weightedLuminance;
-                totalWeight += color.count;
+                const weightedLuminance = lab[0] * color.count
+                totalWeightedLuminance += weightedLuminance
+                totalWeight += color.count
             }
 
-            const weightedAverageLuminance = totalWeightedLuminance / totalWeight;
+            const weightedAverageLuminance = totalWeightedLuminance / totalWeight
 
-            return weightedAverageLuminance;
+            return weightedAverageLuminance
         }
 
         function palette_diversity(palette) {
             // Calculate the color differences between all pairs of colors
-            let totalDifference = 0;
-            let pairCount = 0;
+            let totalDifference = 0
+            let pairCount = 0
             const diversity = {}
             let totalWeightedDeltaE = 0
             let weightNorm = 0
             let weightVariance = 0
 
             // Calculate the mean (average) weight of colors in the set
-            let meanWeight = 0;
+            let meanWeight = 0
             for (const color of palette) {
-                meanWeight += color.count;
+                meanWeight += color.count
             }
-            meanWeight /= palette.length;
+            meanWeight /= palette.length
 
 
             for (let i = 0; i < palette.length; i++) {
@@ -395,10 +407,10 @@
                     weightNorm += Math.pow(color1.count, 2) + Math.pow(color2.count, 2)
 
                     // Calculate the weight deviation from the mean and add it to the weightVariance
-                    let weightDeviation = color1.count - meanWeight;
-                    weightVariance += weightDeviation * weightDeviation;
-                    weightDeviation = color2.count - meanWeight;
-                    weightVariance += weightDeviation * weightDeviation;
+                    let weightDeviation = color1.count - meanWeight
+                    weightVariance += weightDeviation * weightDeviation
+                    weightDeviation = color2.count - meanWeight
+                    weightVariance += weightDeviation * weightDeviation
                 }
             }
 
@@ -416,37 +428,37 @@
 
 
         class Counter {
-            total = 0;
-            sgl = 0;
-            slds = 0;
-            en = 0;
-            it = 0;
-            fr = 0;
-            de = 0;
-            pt = 0;
-            sp = 0;
+            total = 0
+            sgl = 0
+            slds = 0
+            en = 0
+            it = 0
+            fr = 0
+            de = 0
+            pt = 0
+            sp = 0
             count = (entry) => {
                 switch (entry.lan) {
                     case '🇬🇧':
                         this.en++
-                        break;
+                        break
                     case '🇮🇹':
                         this.it++
-                        break;
+                        break
                     case '🇫🇷':
                         this.fr++
-                        break;
+                        break
                     case '🇩🇪':
                         this.de++
-                        break;
+                        break
                     case '🇵🇹':
                         this.pt++
-                        break;
+                        break
                     case '🇪🇸':
                         this.sp++
-                        break;
+                        break
                     default:
-                        console.error("missing lan property", entry);
+                        console.error("missing lan property", entry)
                 }
                 if (entry.where.includes("lipion")) {
                     this.sgl++
@@ -454,13 +466,13 @@
                     this.slds++
                 }
                 this.total++
-            };
+            }
 
             display = () => {
                 if (typeof total_des_totaux === "undefined") {
                     total_des_totaux = this.total
                 }
-                var s = Number(this.total / total_des_totaux).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 1 });
+                var s = Number(this.total / total_des_totaux).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 1 })
                 document.getElementById("total").innerHTML = `${total_des_totaux}`
                 document.getElementById("current").innerHTML = `${this.total}`
                 document.getElementById("percent").innerHTML = `${s}`
@@ -483,132 +495,76 @@
         }
 
         // // Example usage
-        // const data = 'rgb[{"color": [232, 203, 175], "count": 17721}, {"color": [137, 61, 62], "count": 4277}, {"color": [246, 230, 207], "count": 44802}]';
-        // const extractedDominantColor = extractDominantColor(data);
-        // console.log("Dominant Color:", extractedDominantColor);
+        // const data = 'rgb[{"color": [232, 203, 175], "count": 17721}, {"color": [137, 61, 62], "count": 4277}, {"color": [246, 230, 207], "count": 44802}]'
+        // const extractedDominantColor = extractDominantColor(data)
+        // console.log("Dominant Color:", extractedDominantColor)
         function extractDominantColor(palette) {
             // Initialize variables to track the dominant color and its count
-            let dominantColor = null;
-            let maxCount = -1;
+            let dominantColor = null
+            let maxCount = -1
 
             // Iterate through the color objects
             for (const colorObject of palette) {
-                const count = colorObject.count;
+                const count = colorObject.count
 
                 // Check if the current count is higher than the previous maximum
                 if (count > maxCount) {
-                    maxCount = count;
-                    dominantColor = colorObject.color;
+                    maxCount = count
+                    dominantColor = colorObject.color
                 }
             }
 
-            return dominantColor;
+            return dominantColor
         }
 
         // Define a function to classify the image based on base variables
         function classifyImage(baseVariables) {
-            // You can access the base variables to make classification decisions
             const dominantColorHue = baseVariables.dominantColorHSL[0]
-            // const dominantColorSaturation = baseVariables.dominantColorHSL[1]
-            // const dominantColorLightness = baseVariables.dominantColorHSL[2] * 255 / 100
-            // const meanHue = baseVariables.mean_hue;
-            // const meanSaturation = baseVariables.mean_saturation;
-            // const meanLightness = baseVariables.mean_lightness;
-            // const stdHue = baseVariables.std_hue;
-            // const stdSaturation = baseVariables.std_saturation;
-            // const stdLightness = baseVariables.std_lightness;
-// 
-            // const monochrome = baseVariables.monochrome
-            // const monochrome2 = baseVariables.monochrome2
-// 
-            // Initialize classification as "Unknown"
-            let classification = "Unknown";
-
-            // function identifyColorSetType(colorSet) {
 
             const weightedAverageChroma = calculateWeightedAverageChroma(baseVariables.palette)
-            const averageLuminance = calculateAverageLuminance(baseVariables.palette);
+            const averageLuminance = calculateAverageLuminance(baseVariables.palette)
 
             if (averageLuminance < 45 && weightedAverageChroma < 15) {
-                return "Black";
+                return "Black"
             } else if (averageLuminance >= 45 && averageLuminance < 82 && weightedAverageChroma < 3.85) {
-                return "Gray";
+                return "Gray"
             } else if (averageLuminance >= 82 && averageLuminance <= 100 && weightedAverageChroma < 3.1) {
-                return "White";
+                return "White"
             }
 
             // rainbow
-            if ( /* 
-                137491511317 
-                23884881606 
-                 8398430870
-                13894183832 
-                */
-                11000000000
-                
-                <= baseVariables.palette_diversity.total) {
+            if (11000000000 <= baseVariables.palette_diversity.total) {
                 return "Rainbow"
             }
 
-            /* if (baseVariables.dominantColor) */ {
-                // // Check for specific conditions for each color
-                // // WHITES WHITES WHITES WHITES WHITES WHITES WHITES WHITES 
-                // if (250 <= dominantColorLightness) {
-                //     classification = "White";
-                // }
-                // else if (240 <= dominantColorLightness && 10 <= stdLightness && meanSaturation < 200) {
-                //     classification = "White";
-                // }
-                // else if (230 <= dominantColorLightness && 30 <= stdLightness && meanSaturation < 140) {
-                //     classification = "White";
-                // }
-                // else if (220 <= dominantColorLightness && 50 <= stdLightness && meanSaturation < 100) {
-                //     classification = "White";
-                // }
-                // else if (210 <= dominantColorLightness && 80 <= stdLightness && meanSaturation < 80) {
-                //     classification = "White";
-                // }
-                // // BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS BLACKS 
-                // else if (meanLightness < 55 || dominantColorLightness <= 20) {
-                //     classification = "Black";
-                // }
-                // // GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS GRAYS
-                // else if (meanSaturation < 30 && 10 < stdSaturation && stdSaturation < 50) {
-                //     classification = "Gray";
-                // }
-                // // RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW RAINBOW 
-                // else if (monochrome2 < 20) { //  && 50 < stdHue && 30 < stdSaturation
-                //     classification = "Rainbow"
-                // }
-                // else 
-                {
-                    // Define a threshold for hue values (adjust as needed)
-                    const averageHue = dominantColorHue // calculateAverageHueHSL(baseVariables.palette)
+            // hue
+            {
+                // Define a threshold for hue values (adjust as needed)
+                const averageHue = dominantColorHue // calculateAverageHueHSL(baseVariables.palette)
 
-                    const hueThresholdLeft = 18;
-                    const hueThresholdRight = 12;
+                const hueThresholdLeft = 18
+                const hueThresholdRight = 12
 
 
-                    let averageHue180 = averageHue / 2
-                    if (0 <= averageHue180 && averageHue180 < hueThresholdRight + 3) {
-                        classification = "Red";
-                    } else if ((30 - 3 - hueThresholdLeft <= averageHue180 && averageHue180 < 30 - 4 + hueThresholdRight)) {
-                        classification = "Yellow";
-                    } else if (60 - 4 - hueThresholdLeft <= averageHue180 && averageHue180 < 60 + hueThresholdRight) {
-                        classification = "Green";
-                    } else if (90 - hueThresholdLeft <= averageHue180 && averageHue180 < 90 + hueThresholdRight) {
-                        classification = "Cyan";
-                    } else if (120 - hueThresholdLeft <= averageHue180 && averageHue180 < 120 + hueThresholdRight) {
-                        classification = "Blue";
-                    } else if (150 - hueThresholdLeft <= averageHue180 && averageHue180 < 150 + hueThresholdRight) {
-                        classification = "Magenta";
-                    } else {
-                        classification = "Red";
-                    }
+                let averageHue180 = averageHue / 2
+                if (0 <= averageHue180 && averageHue180 < hueThresholdRight + 3) {
+                    return "Red"
+                } else if ((30 - 3 - hueThresholdLeft <= averageHue180 && averageHue180 < 30 - 4 + hueThresholdRight)) {
+                    return "Yellow"
+                } else if (60 - 4 - hueThresholdLeft <= averageHue180 && averageHue180 < 60 + hueThresholdRight) {
+                    return "Green"
+                } else if (90 - hueThresholdLeft <= averageHue180 && averageHue180 < 90 + hueThresholdRight) {
+                    return "Cyan"
+                } else if (120 - hueThresholdLeft <= averageHue180 && averageHue180 < 120 + hueThresholdRight) {
+                    return "Blue"
+                } else if (150 - hueThresholdLeft <= averageHue180 && averageHue180 < 150 + hueThresholdRight) {
+                    return "Magenta"
+                } else {
+                    return "Red"
                 }
             }
+            return "Unknown"
 
-            return classification;
         }
 
 
@@ -657,16 +613,13 @@
             }
 
             let selection = ""
-            for (let catKey in categories) {
+            for (let categoryIndex in categories) {
+                const category = categories[categoryIndex]
                 // build a css selector
-                /*if (catKey === "langage" && categories[catKey]) {
-                    selection += "." + categories.langage
-                } else if (catKey === "location" && categories[catKey]) {
-                    selection += "." + categories.location
-                } else */ if (categories[catKey]) {
+                if (category) {
                     let sel = ""
                     let clazzIndex = 0
-                    for (const clazz of categories[catKey]) {
+                    for (const clazz of category) {
                         if (clazzIndex > 0) {
                             sel += ","
                         }
@@ -677,27 +630,26 @@
                 }
             }
 
-            console.log(categories, selection)
+            // console.log(categories, selection)
             if (selection.trim() !== "") {
                 const taggeds = document.querySelectorAll(selection)
                 for (const tagged of taggeds) {
-                    c.count(filteredEntries[tagged.dataset.index][1])
+                    c.count(booksFiltered[tagged.dataset.index][1])
                     tagged.style.display = "inline-block"
                 }
             } else {
                 for (const figure of figures) {
-                    c.count(filteredEntries[figure.dataset.index][1])
+                    c.count(booksFiltered[figure.dataset.index][1])
                     figure.style.display = "inline-block"
                 }
             }
-
 
             c.display()
         }
 
         const allBtns = document.querySelectorAll(".btn:not(#circle_with_cross)")
         for (const btn of allBtns) {
-            btn.addEventListener("click", selectOrUnselectTag);
+            btn.addEventListener("click", selectOrUnselectTag)
         }
 
         circle_with_cross.addEventListener("click", () => {
@@ -707,72 +659,69 @@
             }
             Object.keys(categories).forEach(function (key, index) {
                 categories[key] = undefined
-            });
+            })
             const figures = document.querySelectorAll('figure')
             const c = new Counter()
             for (const figure of figures) {
-                c.count(filteredEntries[figure.dataset.index][1])
+                c.count(booksFiltered[figure.dataset.index][1])
                 figure.style.display = "inline-block"
             }
             c.display()
         })
 
-        function blend(index, propert) {
-            const key = propert[0]
-            const property = propert[1]
-            const image_properties = property['image_properties']
+        function blend(index, isbn, book) {
 
-            const fig = document.createElement("figure");
+            const fig = document.createElement("figure")
             fig.dataset.index = index
             fig.classList.add("figure")
-            fig.style = "padding: 10px; max-width: 164px" // max-width: 158px;
-            for (const tagIndex in property.tags) {
-                fig.classList.add(property.tags[tagIndex])
+            fig.style = "padding: 10px; max-width: 164px" // max-width: 158px
+            for (const tagIndex in book.tags) {
+                fig.classList.add(book.tags[tagIndex])
             }
 
-            fig.classList.add(classifyImage(property.image_properties.properties))
-            fig.classList.add(property.where)
-            fig.id = key
+            fig.classList.add(classifyImage(book.cover))
+            fig.classList.add(book.where)
+            fig.id = isbn
 
-            const img = document.createElement("img");
-            if (!property['image_path']) {
-                console.log("image_path not defined", property)
+            const img = document.createElement("img")
+            if (!book.image_path) {
+                console.error("image_path not defined", isbn, book)
             }
-            img.src = property['image_path'] // .replace("thumbs", "thumbs2")
+            img.src = book.image_path // .replace("thumbs", "thumbs2")
             img.classList.add("figure-img")
             img.classList.add("img-fluid")
 
-            const goodreads_link = document.createElement("a");
+            const goodreads_link = document.createElement("a")
             goodreads_link.target = "_goodreads"
-            goodreads_link.href = `https://www.goodreads.com/book/isbn/${key}`
+            goodreads_link.href = `https://www.goodreads.com/book/isbn/${isbn}`
             goodreads_link.appendChild(img)
 
-            const figcaption = document.createElement("figcaption");
+            const figcaption = document.createElement("figcaption")
             figcaption.classList.add("figure-caption")
             figcaption.classList.add("text-wrap")
-            let figcaptionstyle = `width: 100%;` // ${bg};
+            let figcaptionstyle = `width: 100%;`
             figcaption.style = figcaptionstyle
 
-            let lan = property['lan'] || '';
-            if (!property['de']) {
-                console.log(property)
+            let lan = book.lan || ''
+            if (!book.de) {
+                console.error("author ('de') not defined", isbn, book)
             }
-            let author = property['de'].split(/ \(/)[0];
-            let title = property['title']
-            let where = property['where']
-            const authorE = document.createTextNode(author);
-            const titleE = document.createTextNode(title);
-            const titleSPAN = document.createElement("span");
+            let author = book.de.split(/ \(/)[0]
+            let title = book.title
+            let where = book.where
+            const authorE = document.createTextNode(author)
+            const titleE = document.createTextNode(title)
+            const titleSPAN = document.createElement("span")
             titleSPAN.appendChild(titleE)
             titleSPAN.style = "font-size:smaller;"
-            const titleBar = document.createElement("div");
+            const titleBar = document.createElement("div")
             titleBar.classList.add("titleBar")
 
             if (where.includes("lipion")) {
-                const float1 = document.createElement("span");
+                const float1 = document.createElement("span")
                 float1.classList.add("float-end")
                 float1.style = "color: #b9e537; font-size: 14pt; font-weight: bold;"
-                const sgl = document.createElement("span");
+                const sgl = document.createElement("span")
                 sgl.classList.add("sgl")
                 /*
                 <span class="sgl"></span>
@@ -781,8 +730,8 @@
                 float1.appendChild(sgl)
                 figcaption.appendChild(float1)
             } {
-                const text = document.createTextNode(lan);
-                const float = document.createElement("span");
+                const text = document.createTextNode(lan)
+                const float = document.createElement("span")
                 float.classList.add("float-end")
                 float.appendChild(text)
                 float.style = "font-size: larger;"
@@ -792,46 +741,46 @@
             }
             let spy
             {
-                property.image_properties.properties.palette.forEach(e => {
+                book.cover.palette.forEach(e => {
                     let color = document.createElement("div")
                     let bg = `rgb(${e.color})`
-                    let width = 100 * (e.count / property.image_properties.properties.paletteSize)
+                    let width = 100 * (e.count / book.cover.paletteSize)
                     color.style = `display:inline-block; height: 6px; width: ${width}%; background: ${bg}`
                     titleBar.appendChild(color)
                 })
                 /*
                 const decimals = 0
                 const text0 = document.createTextNode(`
-_H: ${image_properties.properties.dominantColorHSL[0].toFixed(decimals).padStart(3, '0')}
-_S: ${image_properties.properties.dominantColorHSL[1].toFixed(decimals).padStart(3, '0')}
-_L: ${image_properties.properties.dominantColorHSL[2].toFixed(decimals).padStart(3, '0')}
+_H: ${book.cover.dominantColorHSL[0].toFixed(decimals).padStart(3, '0')}
+_S: ${book.cover.dominantColorHSL[1].toFixed(decimals).padStart(3, '0')}
+_L: ${book.cover.dominantColorHSL[2].toFixed(decimals).padStart(3, '0')}
 `)
                 const text = document.createTextNode(`
-μH: ${image_properties.properties.mean_hue.toFixed(decimals).padStart(3, '0')}
-μS: ${image_properties.properties.mean_saturation.toFixed(decimals).padStart(3, '0')}
-μL: ${image_properties.properties.mean_lightness.toFixed(decimals).padStart(3, '0')}
+μH: ${book.cover.mean_hue.toFixed(decimals).padStart(3, '0')}
+μS: ${book.cover.mean_saturation.toFixed(decimals).padStart(3, '0')}
+μL: ${book.cover.mean_lightness.toFixed(decimals).padStart(3, '0')}
 `)
                 const text2 = document.createTextNode(`
-σH: ${image_properties.properties.std_hue.toFixed(decimals).padStart(3, '0')}
-σS: ${image_properties.properties.std_saturation.toFixed(decimals).padStart(3, '0')}
-σL: ${image_properties.properties.std_lightness.toFixed(decimals).padStart(3, '0')}
+σH: ${book.cover.std_hue.toFixed(decimals).padStart(3, '0')}
+σS: ${book.cover.std_saturation.toFixed(decimals).padStart(3, '0')}
+σL: ${book.cover.std_lightness.toFixed(decimals).padStart(3, '0')}
 `)
                 const text3 = document.createTextNode(`
-mono: ${image_properties.properties.monochrome}
+mono: ${book.cover.monochrome}
 `)
                 const text4 = document.createTextNode(`
-mono2: ${image_properties.properties.monochrome2}
+mono2: ${book.cover.monochrome2}
 `)
 */
                 const text5 = document.createTextNode(`
-${image_properties.properties.palette_diversity["_01"].toFixed(0)} +
-${image_properties.properties.palette_diversity["_02"].toFixed(0)} +
-${image_properties.properties.palette_diversity["_12"].toFixed(0)} =
-${image_properties.properties.palette_diversity.total.toFixed(0)}
+${book.cover.palette_diversity["_01"].toFixed(0)} +
+${book.cover.palette_diversity["_02"].toFixed(0)} +
+${book.cover.palette_diversity["_12"].toFixed(0)} =
+${book.cover.palette_diversity.total.toFixed(0)}
 `)
-                spy = document.createElement("div");
+                spy = document.createElement("div")
                 // div.classList.add("float-end")
-                spy.style = "font-size: 9.5px; overflow-wrap: anywhere; font-family: monospace, monospace;"// font-family: monospace, monospace;
+                spy.style = "font-size: 9.5px; overflow-wrap: anywhere; font-family: monospace, monospace;"// font-family: monospace, monospace
                 /*
                 spy.appendChild(text0)
                 spy.appendChild(document.createElement("br"))
@@ -862,10 +811,10 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
             const doc = jsYaml.load(text, 'utf8')
 
             {
-                let entries = Object.entries(doc);
+                const books = Object.entries(doc)
 
-                filteredEntries = entries.filter((e) => {
-                    return true 
+                booksFiltered = books.filter((e) => {
+                    return true
                     /*
                     return e[0] === "978-2729841102"
                     return e[0] === "978-2070108534"
@@ -877,41 +826,41 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
                 })
             }
 
-            for (let entry in filteredEntries) {
-                const key = filteredEntries[entry][0]
-                const property = filteredEntries[entry][1]
-                property.image_properties.properties.palette = JSON.parse(property.image_properties.properties.palette.replaceAll("'", '"'))
-                property.image_properties.properties.palette.sort((a, b) => b.count - a.count)
-                property.image_properties.properties.paletteSize = property.image_properties.properties.palette.reduce((accumulator, currentValue) => accumulator + currentValue.count, 0)
+            for (const bookIndex in booksFiltered) {
+                const isbn = booksFiltered[bookIndex][0]
+                // console.log(isbn)
+                const book = booksFiltered[bookIndex][1]
+                book.cover.palette = JSON.parse(book.cover.palette.replaceAll("'", '"'))
+                book.cover.palette.sort((a, b) => b.count - a.count)
+                book.cover.paletteSize = book.cover.palette.reduce((accumulator, currentValue) => accumulator + currentValue.count, 0)
 
-                const dominantColor = property.image_properties.properties.palette[0].color;
+                const dominantColor = book.cover.palette[0].color
                 const dominantColorHSL = acColors.rgbToHsl(dominantColor)
-                property.image_properties.properties.hue = dominantColorHSL[0]
-                property.image_properties.properties.saturation = dominantColorHSL[1]
-                property.image_properties.properties.lightness = dominantColorHSL[2]
+                book.cover.dominantColor = dominantColor
+                book.cover.dominantColorHSL = dominantColorHSL
+                book.cover.hue = dominantColorHSL[0]
+                book.cover.saturation = dominantColorHSL[1]
+                book.cover.lightness = dominantColorHSL[2]
 
-                property.image_properties.properties.dominantColor = dominantColor
-                property.image_properties.properties.dominantColorHSL = dominantColorHSL
-                console.log(key)
-                property.image_properties.properties.palette_diversity = palette_diversity(property.image_properties.properties.palette)
+                book.cover.palette_diversity = palette_diversity(book.cover.palette)
             }
 
-            filteredEntries.sort((a, b) => {
+            booksFiltered.sort((a, b) => {
                 try {
-                    const palA = +a[1].image_properties.properties.palette_diversity.total
-                    const palB = +b[1].image_properties.properties.palette_diversity.total
-                    const monoA = +a[1].image_properties.properties.monochrome2
-                    const monoB = +b[1].image_properties.properties.monochrome2
-                    const A = +a[1].image_properties.properties.lightness
-                    const B = +b[1].image_properties.properties.lightness
-                    const lumA = +a[1].image_properties.properties.mean_lightness
-                    const lumB = +b[1].image_properties.properties.mean_lightness
-                    const stdLumA = +a[1].image_properties.properties.std_lightness
-                    const stdLumB = +b[1].image_properties.properties.std_lightness
+                    /*
+                    const palA = +a[1].cover.palette_diversity.total
+                    const palB = +b[1].cover.palette_diversity.total
+                    const monoA = +a[1].cover.monochrome2
+                    const monoB = +b[1].cover.monochrome2
+                    const A = +a[1].cover.lightness
+                    const B = +b[1].cover.lightness
+                    const lumA = +a[1].cover.mean_lightness
+                    const lumB = +b[1].cover.mean_lightness
+                    const stdLumA = +a[1].cover.std_lightness
+                    const stdLumB = +b[1].cover.std_lightness
                     let critA
                     let critB
                     
-                    /*
                     {
                         critA = palA
                         critB = palB
@@ -952,35 +901,40 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
                     }
                     if (typeof a[1].title === "undefined" || typeof b[1].title === "undefined") {
                         console.log("boum!")
+                        return 0
                     }
                     const titleA = a[1].title.toUpperCase()
                     const titleB = b[1].title.toUpperCase()
                     return titleA.localeCompare(titleB)
                 } catch (error) {
                     console.error(a, b)
+                    return 0
                 }
             })
 
-            const c = new Counter();
-            for (const property in filteredEntries) {
+            const c = new Counter()
+            for (const bookIndex in booksFiltered) {
+                const bookEntry = booksFiltered[bookIndex]
+                const isbn = bookEntry[0]
+                const book = bookEntry[1]
+
                 const enableSkip = undefined // "tintin" // "Kafka" // "Perec" // 
                 let skip = typeof enableSkip !== "undefined"
-                if (typeof filteredEntries[property][1].tags !== "undefined") {
+                if (typeof book.tags !== "undefined") {
                     if (enableSkip) {
-                        skip = !filteredEntries[property][1].tags.includes(enableSkip)
+                        skip = !book.tags.includes(enableSkip)
                     }
-                    if (filteredEntries[property][1].tags.includes("verboten")) {
+                    if (book.tags.includes("verboten")) {
                         skip = true
-                        console.log("SKIP", filteredEntries[property][1].de, filteredEntries[property][1].tags)
+                        console.log("SKIP", book.de, book.tags)
                     }
                 }
 
                 if (!skip) {
-                    const entry = filteredEntries[property]
-                    blend(property, entry)
-                    c.count(entry[1])
+                    blend(bookIndex, isbn, book)
+                    c.count(book)
                 } else {
-                    // console.log(filteredEntries[property][1])
+                    // console.log(book)
                 }
 
             }
@@ -992,7 +946,7 @@ ${image_properties.properties.palette_diversity.total.toFixed(0)}
             xhr.open("GET", "dist/everything.yaml", true)
             xhr.onload = () => {
                 updateDisplay(xhr.response)
-            };
+            }
             xhr.send()
         }
 
