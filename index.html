@@ -924,7 +924,7 @@ ${book.cover.palette_diversity.total.toFixed(0)}
                     if (enableSkip) {
                         skip = !book.tags.includes(enableSkip)
                     }
-                    if (book.tags.includes("verboten")) {
+                    if (book.tags.includes("_verboten")) {
                         skip = true
                         console.log("SKIP", book.de, book.tags)
                     }
