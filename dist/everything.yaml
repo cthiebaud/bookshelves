@@ -5593,11 +5593,11 @@
   where: /saint-jean-lipion/chambre/editor
 978-2070354399:
   cover:
-    palette: '[{''color'': [34, 22, 9], ''count'': 5064}, {''color'': [30, 97, 48],
-      ''count'': 8452}, {''color'': [114, 96, 63], ''count'': 8405}, {''color'': [250,
-      220, 191], ''count'': 25061}, {''color'': [213, 114, 44], ''count'': 6181}]'
+    palette: '[{''color'': [248, 234, 200], ''count'': 32983}, {''color'': [175, 119,
+      53], ''count'': 9550}, {''color'': [102, 94, 52], ''count'': 4826}, {''color'':
+      [14, 78, 52], ''count'': 13091}, {''color'': [23, 27, 15], ''count'': 5950}]'
   de: OuLiPo
-  image_path: thumbs/T_978-2070354399.jpg
+  image_path: thumbs/T_978-2070354399.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - perec
@@ -9106,12 +9106,12 @@
   where: /saint-jean-lipion/chambre/editor
 978-2246688414:
   cover:
-    palette: '[{''color'': [227, 227, 229], ''count'': 4872}, {''color'': [168, 167,
-      177], ''count'': 3953}, {''color'': [125, 93, 118], ''count'': 5649}, {''color'':
-      [61, 57, 64], ''count'': 13534}, {''color'': [38, 40, 44], ''count'': 35392}]'
+    palette: '[{''color'': [78, 69, 69], ''count'': 5627}, {''color'': [28, 27, 27],
+      ''count'': 50078}, {''color'': [113, 132, 131], ''count'': 3609}, {''color'':
+      [187, 177, 181], ''count'': 1672}, {''color'': [150, 71, 119], ''count'': 2414}]'
   de: Dominique Fernandez (Auteur)
   ext: "Broch\xE9 \u2013 2 mars 2005"
-  image_path: thumbs/T_978-2246688414.jpg
+  image_path: thumbs/T_978-2246688414.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _4
