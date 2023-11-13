@@ -2522,9 +2522,9 @@
   where: /saint-lazare-de-savene/chambre_alessia/berlusconneries_etc
 978-0679723165:
   cover:
-    palette: '[{''color'': [225, 180, 140], ''count'': 10670}, {''color'': [243, 234,
-      217], ''count'': 34615}, {''color'': [185, 100, 89], ''count'': 10119}, {''color'':
-      [108, 74, 66], ''count'': 5465}, {''color'': [37, 31, 27], ''count'': 4731}]'
+    palette: '[{''color'': [252, 246, 220], ''count'': 38548}, {''color'': [238, 173,
+      120], ''count'': 8805}, {''color'': [196, 87, 65], ''count'': 9867}, {''color'':
+      [105, 55, 45], ''count'': 6118}, {''color'': [9, 10, 8], ''count'': 3462}]'
   de: Vladimir Nabokov (Author)
   ext: "Paperback \u2013 March 13, 1989"
   image_path: thumbs/T_978-0679723165.jpg
@@ -4176,7 +4176,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1998
-  title: Traite du zen et de l'entretien des motocyclettes
+  title: "Trait\xE9 du zen et de l'entretien des motocyclettes"
   where: /saint-lazare-de-savene/salon/_4
 978-2020096287:
   cover:
@@ -5918,9 +5918,9 @@
   where: /saint-lazare-de-savene/salon/poche
 978-2070380596:
   cover:
-    palette: '[{''color'': [61, 37, 24], ''count'': 10750}, {''color'': [145, 131,
-      115], ''count'': 5200}, {''color'': [250, 249, 243], ''count'': 28583}, {''color'':
-      [229, 227, 130], ''count'': 12244}, {''color'': [104, 77, 59], ''count'': 9023}]'
+    palette: '[{''color'': [226, 222, 136], ''count'': 12122}, {''color'': [251, 245,
+      227], ''count'': 29042}, {''color'': [155, 133, 118], ''count'': 5892}, {''color'':
+      [80, 49, 47], ''count'': 9360}, {''color'': [119, 85, 77], ''count'': 9784}]'
   de: Daniel Pennac (Auteur)
   ext: "Poche \u2013 3 octobre 1997"
   image_path: thumbs/T_978-2070380596.jpg
@@ -8349,12 +8349,12 @@
   where: /saint-jean-lipion/chambre/favourite
 978-2211025973:
   cover:
-    palette: '[{''color'': [254, 254, 250], ''count'': 12884}, {''color'': [235, 223,
-      179], ''count'': 3979}, {''color'': [185, 163, 131], ''count'': 3245}, {''color'':
-      [252, 213, 7], ''count'': 17821}, {''color'': [121, 100, 91], ''count'': 2071}]'
+    palette: '[{''color'': [244, 211, 41], ''count'': 32814}, {''color'': [207, 199,
+      164], ''count'': 4543}, {''color'': [247, 244, 201], ''count'': 6334}, {''color'':
+      [162, 151, 128], ''count'': 4200}, {''color'': [109, 101, 88], ''count'': 2709}]'
   de: Ulf Nilsson (Auteur), Eva Eriksson (Auteur)
   ext: "Poche \u2013 4 mai 1994"
-  image_path: thumbs/T_978-2211025973.jpg
+  image_path: thumbs/T_978-2211025973.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _E
@@ -11787,14 +11787,14 @@
   where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2849010471:
   cover:
-    palette: '[{''color'': [254, 254, 254], ''count'': 9087}, {''color'': [80, 72,
-      50], ''count'': 3928}, {''color'': [171, 163, 143], ''count'': 5208}, {''color'':
-      [128, 121, 102], ''count'': 7235}, {''color'': [207, 207, 217], ''count'': 19942}]'
+    palette: '[{''color'': [140, 138, 118], ''count'': 8877}, {''color'': [176, 179,
+      169], ''count'': 20734}, {''color'': [175, 190, 202], ''count'': 11624}, {''color'':
+      [112, 111, 97], ''count'': 10279}, {''color'': [78, 77, 66], ''count'': 5686}]'
   de: "Auguste Guinnard, Paul Hyades, Henry de La Vaulx, Otto Nordenskj\xF6ld (Auteur),\
     \ Jean Raspail (Pr\xE9face)"
   ext: "Quatre d\xE9couvreurs du bout du monde, 1856-1897 Broch\xE9 \u2013 24 novembre\
     \ 2006"
-  image_path: thumbs/T_978-2849010471.jpg
+  image_path: thumbs/T_978-2849010471.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - mostly_black
