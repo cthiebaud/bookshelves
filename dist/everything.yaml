@@ -4789,9 +4789,9 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070110674:
   cover:
-    palette: '[{''color'': [255, 255, 255], ''count'': 21527}, {''color'': [240, 240,
-      242], ''count'': 10387}, {''color'': [224, 223, 225], ''count'': 3724}, {''color'':
-      [156, 148, 128], ''count'': 2482}, {''color'': [113, 105, 84], ''count'': 1880}]'
+    palette: '[{''color'': [254, 254, 254], ''count'': 59886}, {''color'': [204, 206,
+      199], ''count'': 1733}, {''color'': [157, 160, 150], ''count'': 1340}, {''color'':
+      [93, 96, 86], ''count'': 732}, {''color'': [21, 24, 16], ''count'': 709}]'
   de: "G\xE9rard de Nerval (Auteur)"
   ext: "Reli\xE9 \u2013 12 septembre 1989"
   image_path: thumbs/T_978-2070110674.jpg
