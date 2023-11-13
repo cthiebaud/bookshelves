@@ -711,10 +711,9 @@
   where: /saint-lazare-de-savene/salon/_9
 978-0140185584:
   cover:
-    palette: '[{''color'': [4, 3, 4], ''count'': 8449}, {''color'': [75, 54, 71],
-      ''count'': 8370}, {''color'': [164, 148, 156], ''count'': 5143}, {''color'':
-      [231, 248, 244], ''count'': 17034}, {''color'': [212, 202, 195], ''count'':
-      7804}]'
+    palette: '[{''color'': [164, 163, 163], ''count'': 11237}, {''color'': [200, 202,
+      197], ''count'': 13161}, {''color'': [242, 234, 227], ''count'': 18503}, {''color'':
+      [100, 105, 107], ''count'': 5191}, {''color'': [65, 71, 73], ''count'': 14108}]'
   de: James Joyce (Author), Jeri Johnson (Editor)
   image_path: thumbs/T_978-0140185584.jpg
   lan: "\U0001F1EC\U0001F1E7"
@@ -4700,13 +4699,12 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070107933:
   cover:
-    palette: '[{''color'': [39, 38, 34], ''count'': 2120}, {''color'': [99, 98, 91],
-      ''count'': 935}, {''color'': [165, 161, 152], ''count'': 1896}, {''color'':
-      [193, 191, 178], ''count'': 17950}, {''color'': [200, 196, 184], ''count'':
-      45099}]'
+    palette: '[{''color'': [227, 227, 226], ''count'': 1610}, {''color'': [255, 255,
+      255], ''count'': 63078}, {''color'': [161, 159, 161], ''count'': 743}, {''color'':
+      [104, 101, 106], ''count'': 1107}, {''color'': [57, 56, 59], ''count'': 1462}]'
   de: Franz Kafka (Auteur)
   ext: "Reli\xE9 \u2013 26 novembre 1976"
-  image_path: thumbs/T_978-2070107933.jpg
+  image_path: thumbs/T_978-2070107933.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
@@ -4770,12 +4768,12 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070109708:
   cover:
-    palette: '[{''color'': [195, 195, 186], ''count'': 31066}, {''color'': [187, 187,
-      178], ''count'': 27708}, {''color'': [146, 146, 134], ''count'': 3052}, {''color'':
-      [110, 110, 99], ''count'': 1522}, {''color'': [57, 57, 49], ''count'': 2852}]'
+    palette: '[{''color'': [255, 255, 255], ''count'': 62820}, {''color'': [205, 206,
+      204], ''count'': 1812}, {''color'': [168, 169, 168], ''count'': 1545}, {''color'':
+      [114, 114, 115], ''count'': 791}, {''color'': [39, 39, 39], ''count'': 1032}]'
   de: Franz Kafka (Auteur)
   ext: "Reli\xE9 \u2013 24 avril 1980"
-  image_path: thumbs/T_978-2070109708.jpg
+  image_path: thumbs/T_978-2070109708.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
@@ -4806,12 +4804,12 @@
   where: /saint-jean-lipion/chambre/lapleiade
 978-2070110841:
   cover:
-    palette: '[{''color'': [195, 195, 185], ''count'': 28822}, {''color'': [189, 189,
-      179], ''count'': 29761}, {''color'': [163, 164, 155], ''count'': 3125}, {''color'':
-      [111, 113, 106], ''count'': 1094}, {''color'': [59, 62, 56], ''count'': 1998}]'
+    palette: '[{''color'': [255, 255, 255], ''count'': 62770}, {''color'': [217, 216,
+      216], ''count'': 2368}, {''color'': [175, 174, 175], ''count'': 1066}, {''color'':
+      [126, 124, 127], ''count'': 636}, {''color'': [73, 70, 75], ''count'': 1160}]'
   de: Franz Kafka (Auteur)
   ext: "Reli\xE9 \u2013 23 octobre 1984"
-  image_path: thumbs/T_978-2070110841.jpg
+  image_path: thumbs/T_978-2070110841.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
@@ -4820,7 +4818,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1984
-  title: "\u0152uvres compl\xE8tes (\xC9dition de Claude David - 1984) II - Journaux\
+  title: "\u0152uvres compl\xE8tes (\xC9dition de Claude David - 1984) III - Journaux\
     \ - Lettres \xE0 sa famille et \xE0 ses amis"
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070111053:
