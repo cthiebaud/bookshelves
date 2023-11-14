@@ -9142,12 +9142,12 @@
   where: /saint-lazare-de-savene/salon/_7
 978-2246398127:
   cover:
-    palette: '[{''color'': [248, 31, 21], ''count'': 55127}, {''color'': [161, 35,
-      30], ''count'': 2389}, {''color'': [37, 5, 3], ''count'': 4630}, {''color'':
-      [81, 119, 112], ''count'': 1015}, {''color'': [156, 202, 195], ''count'': 1039}]'
+    palette: '[{''color'': [217, 29, 27], ''count'': 55683}, {''color'': [169, 46,
+      45], ''count'': 3620}, {''color'': [57, 13, 13], ''count'': 5645}, {''color'':
+      [129, 116, 114], ''count'': 1495}, {''color'': [202, 192, 190], ''count'': 1157}]'
   de: Bruce Chatwin (Auteur)
   ext: null
-  image_path: thumbs/T_978-2246398127.webp
+  image_path: thumbs/T_978-2246398127.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _1
@@ -21027,7 +21027,7 @@ boh27:
   title: Finzioni (la biblioteca di Babele)
   where: /saint-lazare-de-savene/salon/_3
 boh28:
-  ASIN: B00KU2SOSI
+  ASIN: B009W3MDKG
   cover:
     palette: '[{''color'': [248, 235, 214], ''count'': 49932}, {''color'': [186, 171,
       152], ''count'': 3728}, {''color'': [124, 106, 87], ''count'': 4708}, {''color'':
@@ -21040,7 +21040,9 @@ boh28:
   - _3
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
-  title: La canzone francese
+  title: "La canzone francese - Brassens, Brel, Ferr\xE8, Pottier e altri - La rabbia\
+    \ e la speranza nei testi dei pi\xF9 grandi \u201Dchansonnier\u201D dalla comune\
+    \ di Parigi ai nostri giorni"
   where: /saint-lazare-de-savene/salon/_3
 boh31:
   cover:
