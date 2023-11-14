@@ -2,6 +2,7 @@ import cv2
 import glob
 import json
 import numpy as np
+import sys
 
 from collections import Counter
 from pathlib import PurePath 
@@ -125,7 +126,7 @@ extensions = ['jpg', 'jpeg', 'webp', 'png']
 for ext in extensions:
     for filename2 in glob.iglob('thumbs2/*.'+ext, recursive=True):
         key = PurePath(filename2).stem[2:]
-        if key not in colors_dictionnary:
+        if key not in colors_dictionnary or (len(sys.argv) > 1 and key == sys.argv[1]):
             print(i, key, "...")
             properties = calc_image_properties(filename2)
             print(i, key, properties)

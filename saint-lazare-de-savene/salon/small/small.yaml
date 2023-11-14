@@ -5,10 +5,12 @@ lamartine:
   tags:
     - poésie
 
-paris:
+978-2843890505:
   title: Plan de Paris par Arrondissement
   de: Éditions A. Leconte
   lan: 🇫🇷
+  tags:
+    - paris
 
 978-2082025010:
   title: Guide des vins de Bourgogne

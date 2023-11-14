@@ -5439,6 +5439,21 @@
   - _1459
   title: "Po\xE9sies"
   where: "/saint-lazare-de-savene/salon/po\xE9sie"
+978-2070321407:
+  cover:
+    palette: '[{''color'': [240, 215, 186], ''count'': 28509}, {''color'': [248, 231,
+      204], ''count'': 27837}, {''color'': [164, 108, 71], ''count'': 3056}, {''color'':
+      [64, 56, 48], ''count'': 3775}, {''color'': [99, 157, 166], ''count'': 2623}]'
+  de: Dante Alighieri (Auteur), Louis-Paul Guigues (Traducteur)
+  ext: 1974
+  image_path: thumbs/T_978-2070321407.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Vita Nova
+  where: "/saint-lazare-de-savene/salon/po\xE9sie"
 978-2070321957:
   cover:
     palette: '[{''color'': [174, 149, 144], ''count'': 2649}, {''color'': [216, 204,
@@ -6185,6 +6200,7 @@
   image_path: thumbs/T_978-2070442553.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - paris
   - poche
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -9962,6 +9978,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - perec
+  - paris
   - perec
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -11722,6 +11739,21 @@
   title: "Le si\xE8ge de l\u2019\xE2me - \xC9loge de la sodomie"
   verboten: Ja
   where: /saint-jean-lipion/chambre/enfer
+978-2843890505:
+  cover:
+    palette: '[{''color'': [153, 106, 107], ''count'': 840}, {''color'': [133, 70,
+      74], ''count'': 1757}, {''color'': [127, 36, 46], ''count'': 27248}, {''color'':
+      [131, 46, 54], ''count'': 9848}, {''color'': [123, 30, 41], ''count'': 21907}]'
+  de: "\xC9ditions A. Leconte"
+  image_path: thumbs/T_978-2843890505.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - paris
+  - small
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Plan de Paris par Arrondissement
+  where: /saint-lazare-de-savene/salon/small
 978-2844141132:
   cover:
     palette: '[{''color'': [147, 184, 182], ''count'': 50064}, {''color'': [189, 201,
@@ -12561,6 +12593,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - photo
+  - paris
   - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -12626,6 +12659,7 @@
   image_path: thumbs/T_978-2950125804.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - paris
   - mostly_black
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -12845,6 +12879,7 @@
   image_path: thumbs/T_978-3822835401.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - paris
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -19531,9 +19566,9 @@
   where: /saint-lazare-de-savene/salon/random
 978-8887132625:
   cover:
-    palette: '[{''color'': [24, 18, 18], ''count'': 4224}, {''color'': [252, 252,
-      252], ''count'': 35320}, {''color'': [203, 184, 174], ''count'': 4549}, {''color'':
-      [107, 79, 71], ''count'': 4462}, {''color'': [163, 126, 114], ''count'': 5645}]'
+    palette: '[{''color'': [254, 253, 253], ''count'': 35594}, {''color'': [202, 185,
+      175], ''count'': 3979}, {''color'': [164, 131, 119], ''count'': 5184}, {''color'':
+      [118, 84, 74], ''count'': 4672}, {''color'': [32, 26, 24], ''count'': 3971}]'
   de: Edoardo Puglielli (Autore)
   ext: "Copertina flessibile \u2013 8 settembre 2014"
   image_path: thumbs/T_978-8887132625.jpg
@@ -20077,6 +20112,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - proust
+  - paris
   - arts
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -20726,21 +20762,6 @@ boh12:
   - "\U0001F1EB\U0001F1F7"
   title: Entretien (avec Gabriel Simony)
   where: /saint-jean-lipion/salon/perec
-boh13:
-  cover:
-    palette: '[{''color'': [97, 83, 67], ''count'': 2677}, {''color'': [185, 189,
-      179], ''count'': 1875}, {''color'': [244, 242, 224], ''count'': 53702}, {''color'':
-      [98, 139, 149], ''count'': 2584}, {''color'': [30, 38, 38], ''count'': 3562}]'
-  de: Dante Alighieri (Auteur), Louis-Paul Guigues (Traducteur)
-  ext: 1974
-  image_path: thumbs/T_boh13.jpg
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - "po\xE9sie"
-  - saint-lazare-de-savene
-  - "\U0001F1EB\U0001F1F7"
-  title: Vita Nova
-  where: "/saint-lazare-de-savene/salon/po\xE9sie"
 boh14:
   cover:
     palette: '[{''color'': [187, 152, 111], ''count'': 3328}, {''color'': [227, 200,
@@ -21543,20 +21564,6 @@ morgue:
   - "\U0001F1EC\U0001F1E7"
   title: The Murders in the Rue Morgue
   where: /saint-lazare-de-savene/chambre_alessia/_H
-paris:
-  cover:
-    palette: '[{''color'': [240, 202, 199], ''count'': 1042}, {''color'': [182, 98,
-      88], ''count'': 2133}, {''color'': [156, 35, 34], ''count'': 13303}, {''color'':
-      [168, 23, 23], ''count'': 41348}, {''color'': [58, 26, 22], ''count'': 974}]'
-  de: "\xC9ditions A. Leconte"
-  image_path: thumbs/T_paris.jpg
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - small
-  - saint-lazare-de-savene
-  - "\U0001F1EB\U0001F1F7"
-  title: Plan de Paris par Arrondissement
-  where: /saint-lazare-de-savene/salon/small
 revolutionibus:
   cover:
     palette: '[{''color'': [37, 130, 176], ''count'': 19933}, {''color'': [112, 163,

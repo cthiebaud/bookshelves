@@ -72,6 +72,8 @@
   title: Paris - Mon amour
   de: Jean-Claude Gautrans (Auteur)
   lan: 🇫🇷
+  tags:
+    - paris
 
 978-8889431122:
   title: Brazil
@@ -132,6 +134,7 @@ boh43:
   lan: 🇫🇷
   tags:
     - proust
+    - paris
 
 978-3822891193:
   title: Rivera
