@@ -8601,13 +8601,12 @@
   where: /saint-jean-lipion/chambre/favourite
 978-2213663098:
   cover:
-    palette: '[{''color'': [178, 162, 149], ''count'': 8381}, {''color'': [207, 190,
-      176], ''count'': 11032}, {''color'': [232, 215, 199], ''count'': 13332}, {''color'':
-      [253, 241, 226], ''count'': 27304}, {''color'': [144, 127, 113], ''count'':
-      4151}]'
+    palette: '[{''color'': [237, 219, 193], ''count'': 10051}, {''color'': [254, 250,
+      221], ''count'': 36145}, {''color'': [208, 188, 163], ''count'': 7586}, {''color'':
+      [177, 155, 131], ''count'': 6677}, {''color'': [141, 116, 95], ''count'': 3941}]'
   de: Georges Perec (Auteur)
   ext: "Broch\xE9"
-  image_path: thumbs/T_978-2213663098.jpg
+  image_path: thumbs/T_978-2213663098.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - perec
