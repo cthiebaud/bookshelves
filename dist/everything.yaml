@@ -11133,13 +11133,12 @@
   where: /saint-lazare-de-savene/salon/cuisine
 978-2732000084:
   cover:
-    palette: '[{''color'': [114, 93, 80], ''count'': 11335}, {''color'': [149, 133,
-      121], ''count'': 8057}, {''color'': [74, 61, 48], ''count'': 10315}, {''color'':
-      [200, 186, 166], ''count'': 18328}, {''color'': [225, 217, 207], ''count'':
-      11365}]'
+    palette: '[{''color'': [231, 228, 219], ''count'': 24986}, {''color'': [194, 192,
+      183], ''count'': 9982}, {''color'': [129, 127, 124], ''count'': 3701}, {''color'':
+      [74, 72, 76], ''count'': 10802}, {''color'': [52, 50, 54], ''count'': 14129}]'
   de: Georges Perec (Auteur), Robert Bober (Auteur)
   ext: "Broch\xE9"
-  image_path: thumbs/T_978-2732000084.jpg
+  image_path: thumbs/T_978-2732000084.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - perec
