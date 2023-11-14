@@ -11346,6 +11346,22 @@
   - _2014
   title: "Kafka - Tome 1 - Le temps des d\xE9cisions"
   where: /saint-jean-lipion/chambre/kafka
+978-2754111232:
+  cover:
+    palette: '[{''color'': [145, 142, 141], ''count'': 223}, {''color'': [109, 74,
+      65], ''count'': 14887}, {''color'': [104, 68, 60], ''count'': 47634}, {''color'':
+      [223, 217, 215], ''count'': 333}, {''color'': [64, 56, 51], ''count'': 523}]'
+  de: Vincent Delieuvin
+  ext: "Mus\xE9e du Louvre - Collectif"
+  image_path: thumbs/T_978-2754111232.jpeg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - small_etc
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: "Catalogue de l'exposition L\xE9onard de Vinci 24 octobre 2019 - 24 f\xE9\
+    vrier 2020"
+  where: /saint-lazare-de-savene/salon/small_etc
 978-2757820322:
   cover:
     palette: '[{''color'': [254, 254, 254], ''count'': 35952}, {''color'': [188, 182,
@@ -14127,6 +14143,24 @@
   - _1998
   title: Sentieri sotto la neve
   where: /saint-lazare-de-savene/salon/_8
+978-8806154516:
+  ASIN: B07TJB59Y5
+  cover:
+    palette: '[{''color'': [86, 89, 97], ''count'': 17738}, {''color'': [93, 95, 100],
+      ''count'': 13407}, {''color'': [188, 184, 174], ''count'': 710}, {''color'':
+      [250, 240, 220], ''count'': 21969}, {''color'': [147, 142, 137], ''count'':
+      776}]'
+  de: Vladimir Propp (Autore) Gian Luigi Bravo (A cura di)
+  ext: "Copertina flessibile \u2013 1 gennaio 1973"
+  image_path: thumbs/T_978-8806154516.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - _5
+  - saint-lazare-de-savene
+  - "\U0001F1EE\U0001F1F9"
+  title: Morfologia della fiaba
+  url: https://www.einaudi.it/catalogo-libri/critica-letteraria-e-linguistica/filologia-e-critica-letteraria/morfologia-della-fiaba-vladimir-j-propp-9788806154516/
+  where: /saint-lazare-de-savene/salon/_5
 978-8806155315:
   cover:
     palette: '[{''color'': [254, 254, 253], ''count'': 56948}, {''color'': [168, 161,
@@ -20681,22 +20715,6 @@ ASIN-B073DBKH1H:
   - "\U0001F1EE\U0001F1F9"
   title: I capolavori di Brecht
   where: /saint-lazare-de-savene/salon/_2
-ASIN-B07TJB59Y5:
-  cover:
-    palette: '[{''color'': [86, 89, 97], ''count'': 17738}, {''color'': [93, 95, 100],
-      ''count'': 13407}, {''color'': [188, 184, 174], ''count'': 710}, {''color'':
-      [250, 240, 220], ''count'': 21969}, {''color'': [147, 142, 137], ''count'':
-      776}]'
-  de: Vladimir Propp (Autore) Gian Luigi Bravo (A cura di)
-  ext: "Copertina flessibile \u2013 1 gennaio 1973"
-  image_path: thumbs/T_ASIN-B07TJB59Y5.jpg
-  lan: "\U0001F1EE\U0001F1F9"
-  tags:
-  - _5
-  - saint-lazare-de-savene
-  - "\U0001F1EE\U0001F1F9"
-  title: Morfologia della fiaba
-  where: /saint-lazare-de-savene/salon/_5
 LIEUES-2:
   cover:
     palette: '[{''color'': [149, 35, 51], ''count'': 10709}, {''color'': [127, 41,
@@ -21698,21 +21716,6 @@ storie_di_emigranti_san_giovanese_nel_mondo:
   - "\U0001F1EE\U0001F1F9"
   title: Storie di Emigranti Sangiovanese nel Mondo
   where: /saint-lazare-de-savene/chambre_alessia/_A
-vinci:
-  cover:
-    palette: '[{''color'': [109, 15, 7], ''count'': 60843}, {''color'': [103, 14,
-      6], ''count'': 1706}, {''color'': [146, 56, 47], ''count'': 176}, {''color'':
-      [63, 24, 22], ''count'': 115}, {''color'': [35, 31, 31], ''count'': 360}]'
-  de: "Mus\xE9e du Louvre - Collectif"
-  image_path: thumbs/T_vinci.jpg
-  lan: "\U0001F1EC\U0001F1E7"
-  tags:
-  - small_etc
-  - saint-lazare-de-savene
-  - "\U0001F1EC\U0001F1E7"
-  title: "Catalogue de l'exposition L\xE9onard de Vinci 24 octobre 2019 - 24 f\xE9\
-    vrier 2020"
-  where: /saint-lazare-de-savene/salon/small_etc
 vinci_par_bramly:
   ASIN: B003X20RGE
   cover:
