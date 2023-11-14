@@ -5607,9 +5607,9 @@
   where: /saint-lazare-de-savene/salon/_4
 978-2070354795:
   cover:
-    palette: '[{''color'': [250, 239, 205], ''count'': 15215}, {''color'': [97, 63,
-      69], ''count'': 4800}, {''color'': [206, 183, 172], ''count'': 3342}, {''color'':
-      [148, 119, 118], ''count'': 2081}, {''color'': [60, 20, 37], ''count'': 16962}]'
+    palette: '[{''color'': [108, 80, 86], ''count'': 8903}, {''color'': [156, 135,
+      131], ''count'': 5136}, {''color'': [198, 180, 159], ''count'': 8207}, {''color'':
+      [227, 216, 197], ''count'': 17932}, {''color'': [79, 39, 55], ''count'': 26822}]'
   de: Franz Kafka
   image_path: thumbs/T_978-2070354795.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -5688,6 +5688,23 @@
   - _1843
   title: Illusions perdues
   where: /saint-lazare-de-savene/salon/poche
+978-2070361922:
+  ASIN: B00DFH42S6
+  cover:
+    palette: '[{''color'': [186, 172, 155], ''count'': 5518}, {''color'': [233, 218,
+      192], ''count'': 48984}, {''color'': [131, 120, 106], ''count'': 4215}, {''color'':
+      [73, 57, 49], ''count'': 6438}, {''color'': [178, 67, 52], ''count'': 1445}]'
+  de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)
+  ext: "Poche \u2013 25 ao\xFBt 1972"
+  image_path: thumbs/T_978-2070361922.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - kafka
+  - kafka
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "La colonie p\xE9nitentiaire et autres r\xE9cits"
+  where: /saint-jean-lipion/chambre/kafka
 978-2070362844:
   cover:
     palette: '[{''color'': [191, 196, 193], ''count'': 4826}, {''color'': [243, 235,
@@ -10235,12 +10252,12 @@
   where: /saint-lazare-de-savene/salon/arbres
 978-2352120834:
   cover:
-    palette: '[{''color'': [215, 203, 166], ''count'': 13093}, {''color'': [230, 219,
-      184], ''count'': 29479}, {''color'': [130, 127, 113], ''count'': 1486}, {''color'':
-      [241, 233, 208], ''count'': 13652}, {''color'': [45, 41, 31], ''count'': 890}]'
+    palette: '[{''color'': [254, 254, 250], ''count'': 56906}, {''color'': [192, 187,
+      188], ''count'': 598}, {''color'': [148, 145, 146], ''count'': 785}, {''color'':
+      [104, 102, 103], ''count'': 624}, {''color'': [46, 46, 46], ''count'': 287}]'
   de: Franz Kafka (Auteur)
   ext: 18 mars 1980
-  image_path: thumbs/T_978-2352120834.jpg
+  image_path: thumbs/T_978-2352120834.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
@@ -11884,9 +11901,9 @@
   where: /saint-jean-lipion/chambre/beau_livre_etc
 978-2858502523:
   cover:
-    palette: '[{''color'': [139, 127, 112], ''count'': 1351}, {''color'': [196, 184,
-      161], ''count'': 11958}, {''color'': [215, 203, 179], ''count'': 16724}, {''color'':
-      [227, 217, 198], ''count'': 20338}, {''color'': [48, 40, 36], ''count'': 7229}]'
+    palette: '[{''color'': [224, 220, 214], ''count'': 19056}, {''color'': [241, 238,
+      232], ''count'': 27458}, {''color'': [167, 162, 158], ''count'': 1886}, {''color'':
+      [101, 94, 91], ''count'': 1363}, {''color'': [20, 10, 10], ''count'': 6437}]'
   de: Centre George Pompidou - Collectif () Yasha David (Sous la direction de)
   ext: "Broch\xE9 \u2013 22 juin 1984"
   image_path: thumbs/T_978-2858502523.jpg
@@ -12944,9 +12961,9 @@
   where: /saint-lazare-de-savene/chambre_alessia/_F
 978-8207036074:
   cover:
-    palette: '[{''color'': [250, 249, 213], ''count'': 36281}, {''color'': [148, 132,
-      125], ''count'': 3953}, {''color'': [82, 74, 90], ''count'': 5046}, {''color'':
-      [118, 61, 40], ''count'': 9387}, {''color'': [60, 28, 21], ''count'': 12133}]'
+    palette: '[{''color'': [165, 133, 126], ''count'': 4214}, {''color'': [246, 237,
+      200], ''count'': 36843}, {''color'': [107, 80, 102], ''count'': 4903}, {''color'':
+      [143, 73, 55], ''count'': 9274}, {''color'': [90, 33, 34], ''count'': 10966}]'
   de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)
   ext: "Poche \u2013 18 juin 1982"
   image_path: thumbs/T_978-8207036074.jpg
@@ -21003,23 +21020,6 @@ boh36:
   - "\U0001F1EE\U0001F1F9"
   title: Mito e modelli mitologici nel romanzo americano del '900
   where: /saint-lazare-de-savene/salon/_6
-boh4:
-  ASIN: B00DFH42S6
-  cover:
-    palette: '[{''color'': [180, 169, 156], ''count'': 5150}, {''color'': [234, 220,
-      202], ''count'': 49619}, {''color'': [125, 115, 105], ''count'': 3871}, {''color'':
-      [64, 53, 48], ''count'': 6035}, {''color'': [184, 82, 71], ''count'': 1325}]'
-  de: Franz Kafka (Auteur), Alexandre Vialatte (Traduction)
-  ext: "Poche \u2013 25 ao\xFBt 1972"
-  image_path: thumbs/T_boh4.jpg
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - kafka
-  - kafka
-  - saint-jean-lipion
-  - "\U0001F1EB\U0001F1F7"
-  title: "La colonie p\xE9nitentiaire et autres r\xE9cits"
-  where: /saint-jean-lipion/chambre/kafka
 boh40:
   cover:
     palette: '[{''color'': [118, 104, 80], ''count'': 2291}, {''color'': [151, 139,
