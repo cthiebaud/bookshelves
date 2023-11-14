@@ -3204,6 +3204,21 @@
   - _1893
   title: Idle Days in Patagonia
   where: /saint-lazare-de-savene/salon/_7
+978-1015631397:
+  cover:
+    palette: '[{''color'': [229, 207, 169], ''count'': 5871}, {''color'': [196, 179,
+      147], ''count'': 1222}, {''color'': [240, 216, 179], ''count'': 25555}, {''color'':
+      [246, 223, 187], ''count'': 18904}, {''color'': [123, 107, 82], ''count'': 448}]'
+  de: Alphonse de Lamartine
+  image_path: thumbs/T_978-1015631397.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - small
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "M\xE9ditations - Nouvelles m\xE9ditations"
+  where: /saint-lazare-de-savene/salon/small
 978-1316504864:
   cover:
     palette: '[{''color'': [253, 252, 251], ''count'': 23341}, {''color'': [219, 193,
@@ -4668,6 +4683,22 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: A la recherche du temps perdu - I
+  where: /saint-lazare-de-savene/salon/lapleiade
+978-2070105281:
+  cover:
+    palette: '[{''color'': [253, 254, 241], ''count'': 20532}, {''color'': [199, 199,
+      194], ''count'': 1383}, {''color'': [254, 255, 252], ''count'': 41096}, {''color'':
+      [121, 120, 119], ''count'': 841}, {''color'': [24, 23, 23], ''count'': 2748}]'
+  de: William Shakespeare
+  ext: "Pr\xE9sentations par Henri Fluch\xE8re - Reli\xE9 - 1980"
+  image_path: thumbs/T_978-2070105281.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "th\xE9atre"
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "\u0152uvres compl\xE8tes, Vol. II - Com\xE9dies II - Trag\xE9dies"
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070105793:
   cover:
@@ -6164,6 +6195,22 @@
   - _2000
   title: L'Adversaire
   where: /saint-lazare-de-savene/salon/poche
+978-2070421244:
+  cover:
+    palette: '[{''color'': [214, 192, 149], ''count'': 2672}, {''color'': [250, 234,
+      189], ''count'': 56292}, {''color'': [182, 147, 102], ''count'': 3338}, {''color'':
+      [163, 101, 56], ''count'': 2807}, {''color'': [103, 70, 42], ''count'': 2091}]'
+  de: "St\xE9phane Mallarm\xE9 (Auteur)"
+  ext: "Pr\xE9face (\"La po\xE9tique de Mallarm\xE9\") de Yves Bonnefoy Poche \u2013\
+    \ 1 janvier 1976"
+  image_path: thumbs/T_978-2070421244.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Igitur - Divagations - Un coup de d\xE9s - Pr\xE9face de Yves Bonnefoy"
+  where: "/saint-lazare-de-savene/salon/po\xE9sie"
 978-2070422067:
   cover:
     palette: '[{''color'': [245, 244, 238], ''count'': 18620}, {''color'': [154, 129,
@@ -20791,22 +20838,6 @@ boh12:
   - "\U0001F1EB\U0001F1F7"
   title: Entretien (avec Gabriel Simony)
   where: /saint-jean-lipion/salon/perec
-boh14:
-  cover:
-    palette: '[{''color'': [187, 152, 111], ''count'': 3328}, {''color'': [227, 200,
-      158], ''count'': 9792}, {''color'': [238, 217, 178], ''count'': 47923}, {''color'':
-      [163, 112, 54], ''count'': 3433}, {''color'': [85, 56, 30], ''count'': 2124}]'
-  de: "St\xE9phane Mallarm\xE9 (Auteur)"
-  ext: "Pr\xE9face (\"La po\xE9tique de Mallarm\xE9\") de Yves Bonnefoy Poche \u2013\
-    \ 1 janvier 1976"
-  image_path: thumbs/T_boh14.jpg
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - "po\xE9sie"
-  - saint-lazare-de-savene
-  - "\U0001F1EB\U0001F1F7"
-  title: "Igitur - Divagations - Un coup de d\xE9s - Pr\xE9face de Yves Bonnefoy"
-  where: "/saint-lazare-de-savene/salon/po\xE9sie"
 boh15:
   cover:
     palette: '[{''color'': [223, 218, 198], ''count'': 20210}, {''color'': [236, 232,
@@ -21533,22 +21564,6 @@ ladivinacommedia_purgatorio:
   - "\U0001F1EE\U0001F1F9"
   title: La Divina Commedia - Purgatorio
   where: /saint-lazare-de-savene/salon/_1
-lamartine:
-  cover:
-    palette: '[{''color'': [102, 92, 73], ''count'': 655}, {''color'': [154, 140,
-      119], ''count'': 1606}, {''color'': [198, 186, 165], ''count'': 2505}, {''color'':
-      [225, 212, 188], ''count'': 26847}, {''color'': [235, 221, 197], ''count'':
-      18987}]'
-  de: Lamartine
-  image_path: thumbs/T_lamartine.jpg
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - "po\xE9sie"
-  - small
-  - saint-lazare-de-savene
-  - "\U0001F1EB\U0001F1F7"
-  title: "M\xE9ditations - Nouvelles m\xE9ditations"
-  where: /saint-lazare-de-savene/salon/small
 leschoses:
   cover:
     palette: '[{''color'': [132, 130, 113], ''count'': 223}, {''color'': [230, 212,
@@ -21639,22 +21654,6 @@ seigiornate:
   - "\U0001F1EE\U0001F1F9"
   title: Sei Giornate
   where: /saint-lazare-de-savene/salon/_2
-shakespeare:
-  cover:
-    palette: '[{''color'': [36, 44, 45], ''count'': 3379}, {''color'': [229, 228,
-      219], ''count'': 9769}, {''color'': [241, 240, 234], ''count'': 48829}, {''color'':
-      [188, 187, 179], ''count'': 2083}, {''color'': [117, 122, 121], ''count'': 940}]'
-  de: William Shakespeare
-  ext: "Pr\xE9sentations par Henri Fluch\xE8re - Reli\xE9 - 1980"
-  image_path: thumbs/T_shakespeare.jpg
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - "th\xE9atre"
-  - lapleiade
-  - saint-lazare-de-savene
-  - "\U0001F1EB\U0001F1F7"
-  title: "\u0152uvres compl\xE8tes, Vol. II - Com\xE9dies II - Trag\xE9dies"
-  where: /saint-lazare-de-savene/salon/lapleiade
 stalemates:
   cover:
     palette: '[{''color'': [254, 254, 254], ''count'': 38411}, {''color'': [223, 223,
