@@ -1,9 +1,3 @@
-https://www.goodreads.com/book/isbn/370-0224304768
-https://www.goodreads.com/book/isbn/978-1015631397
-https://www.goodreads.com/book/isbn/978-2070421244
-https://www.goodreads.com/book/isbn/978-2070105281
-https://www.goodreads.com/book/isbn/boh10
-https://www.goodreads.com/book/isbn/boh15
 https://www.goodreads.com/book/isbn/dalla_dittatura_alla_democrazia
 https://www.goodreads.com/book/isbn/boh28
 https://www.goodreads.com/book/isbn/ASIN-B00FG5GXQE
@@ -101,3 +95,8 @@ https://www.goodreads.com/book/isbn/morgue
 https://www.goodreads.com/book/isbn/seigiornate
 https://www.goodreads.com/book/isbn/201-8051502860
 https://www.goodreads.com/book/isbn/boh12
+
+##############
+https://www.goodreads.com/book/isbn/370-0224304768
+https://www.goodreads.com/book/isbn/boh10
+

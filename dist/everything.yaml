@@ -5593,6 +5593,20 @@
   - _1991
   title: "Po\xE8mes choisis 1916-1980"
   where: "/saint-lazare-de-savene/salon/po\xE9sie"
+978-2070327164:
+  cover:
+    palette: '[{''color'': [254, 254, 253], ''count'': 57419}, {''color'': [107, 170,
+      189], ''count'': 2261}, {''color'': [44, 79, 86], ''count'': 3055}, {''color'':
+      [114, 104, 48], ''count'': 2381}, {''color'': [229, 207, 53], ''count'': 2084}]'
+  de: "St\xE9phane Mallarm\xE9"
+  image_path: thumbs/T_978-2070327164.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - "po\xE9sie"
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Po\xE9sies - Pr\xE9face de Jean-Paul Sartre"
+  where: "/saint-lazare-de-savene/salon/po\xE9sie"
 978-2070338641:
   cover:
     palette: '[{''color'': [144, 2, 56], ''count'': 24650}, {''color'': [243, 87,
@@ -20838,20 +20852,6 @@ boh12:
   - "\U0001F1EB\U0001F1F7"
   title: Entretien (avec Gabriel Simony)
   where: /saint-jean-lipion/salon/perec
-boh15:
-  cover:
-    palette: '[{''color'': [223, 218, 198], ''count'': 20210}, {''color'': [236, 232,
-      216], ''count'': 36274}, {''color'': [51, 60, 48], ''count'': 5686}, {''color'':
-      [188, 175, 66], ''count'': 2220}, {''color'': [96, 129, 150], ''count'': 2210}]'
-  de: "St\xE9phane Mallarm\xE9"
-  image_path: thumbs/T_boh15.jpg
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - "po\xE9sie"
-  - saint-lazare-de-savene
-  - "\U0001F1EB\U0001F1F7"
-  title: "Po\xE9sies - Pr\xE9face de Jean-Paul Sartre"
-  where: "/saint-lazare-de-savene/salon/po\xE9sie"
 boh16:
   cover:
     palette: '[{''color'': [127, 112, 110], ''count'': 7187}, {''color'': [151, 162,
