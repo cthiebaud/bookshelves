@@ -40,8 +40,6 @@ endymion:
   tags:
     - editori
 
-
-
 ASIN-B0007J1C9W:
   title: Selected stories
   ext: (Hour-glass library) M. Fridberg; First Edition (January 1, 1946)
@@ -191,6 +189,8 @@ ASIN-B00HNSXRVQ:
   publisher: Presses Universitaires de France - PUF
   lan: 🇫🇷
   url: https://www.amazon.fr/s\?k=978-2130426226
+  tags: 
+    - philo
 
 978-0465026562:
   title: "Gödel, Escher, Bach: an Eternal Golden Braid"
