@@ -1312,6 +1312,21 @@
   - _1999
   title: James Joyce
   where: /saint-lazare-de-savene/salon/_1
+978-0300087581:
+  cover:
+    palette: '[{''color'': [242, 80, 58], ''count'': 13009}, {''color'': [248, 110,
+      72], ''count'': 9858}, {''color'': [251, 142, 87], ''count'': 10851}, {''color'':
+      [252, 169, 99], ''count'': 14723}, {''color'': [252, 195, 109], ''count'': 13359}]'
+  de: Peter Kivy
+  image_path: thumbs/T_978-0300087581.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EC\U0001F1E7"
+  title: The Possessor and the Possessed
+  url: https://www.amazon.fr/s\?k=978-0300087581
+  where: /saint-jean-lipion/salon/mozart
 978-0307280510:
   cover:
     palette: '[{''color'': [15, 142, 215], ''count'': 43483}, {''color'': [82, 163,
@@ -2891,6 +2906,21 @@
   - _2015
   title: The Mountain Shadow
   where: /saint-jean-lipion/chambre/polar
+978-0804719377:
+  cover:
+    palette: '[{''color'': [248, 214, 122], ''count'': 44384}, {''color'': [170, 141,
+      111], ''count'': 2266}, {''color'': [78, 113, 74], ''count'': 3350}, {''color'':
+      [75, 44, 41], ''count'': 9647}, {''color'': [229, 208, 191], ''count'': 2153}]'
+  de: William Stafford
+  image_path: thumbs/T_978-0804719377.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EC\U0001F1E7"
+  title: The Mozart Myths - A Critical Reassessment
+  url: https://www.amazon.fr/s\?k=978-0804719377
+  where: /saint-jean-lipion/salon/mozart
 978-0805073393:
   cover:
     palette: '[{''color'': [18, 14, 15], ''count'': 9320}, {''color'': [40, 39, 81],
@@ -4246,6 +4276,21 @@
   - _1982
   title: "V\u0153ux"
   where: /saint-jean-lipion/salon/perec
+978-2020129398:
+  cover:
+    palette: '[{''color'': [118, 115, 107], ''count'': 3011}, {''color'': [213, 211,
+      201], ''count'': 4296}, {''color'': [249, 248, 240], ''count'': 26377}, {''color'':
+      [169, 166, 158], ''count'': 3955}, {''color'': [71, 69, 61], ''count'': 22361}]'
+  de: Jean-Victor Hocquard
+  image_path: thumbs/T_978-2020129398.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "La Pens\xE9e de Mozart"
+  url: https://www.amazon.fr/s\?k=978-2020129398
+  where: /saint-jean-lipion/salon/mozart
 978-2020134170:
   cover:
     palette: '[{''color'': [252, 251, 252], ''count'': 31662}, {''color'': [208, 203,
@@ -5388,6 +5433,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - music
+  - mozart
   - favourite
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -8507,12 +8553,12 @@
   image_path: thumbs/T_978-2213003092.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - mozart.yaml
-  - mozart.yaml
+  - mozart
+  - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: Mozart
   url: https://www.amazon.fr/s\?k=978-2213003092
-  where: /
+  where: /saint-jean-lipion/salon/mozart
 978-2213003795:
   cover:
     palette: '[{''color'': [16, 20, 23], ''count'': 17342}, {''color'': [26, 30, 35],
@@ -9636,6 +9682,21 @@
   - _2012
   title: Les Sex Addicts
   where: /saint-jean-lipion/chambre/enfer
+978-2259191067:
+  cover:
+    palette: '[{''color'': [250, 249, 253], ''count'': 48477}, {''color'': [195, 165,
+      123], ''count'': 1311}, {''color'': [242, 221, 161], ''count'': 1866}, {''color'':
+      [145, 98, 49], ''count'': 3325}, {''color'': [39, 15, 14], ''count'': 5821}]'
+  de: Philippe Sollers
+  image_path: thumbs/T_978-2259191067.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "Myst\xE9rieux Mozart"
+  url: https://www.amazon.fr/s\?k=978-2259191067
+  where: /saint-jean-lipion/salon/mozart
 978-2259211109:
   cover:
     palette: '[{''color'': [254, 242, 185], ''count'': 48637}, {''color'': [219, 212,
@@ -10086,6 +10147,21 @@
   - _1986
   title: "Petit trait\xE9 invitant \xE0 la d\xE9couverte de l'art subtil du go"
   where: /saint-jean-lipion/salon/perec
+978-2267011722:
+  cover:
+    palette: '[{''color'': [46, 54, 49], ''count'': 11696}, {''color'': [84, 82, 67],
+      ''count'': 7837}, {''color'': [144, 141, 118], ''count'': 3607}, {''color'':
+      [229, 192, 132], ''count'': 2403}, {''color'': [26, 31, 29], ''count'': 36257}]'
+  de: Pierre-Jean Jouve
+  image_path: thumbs/T_978-2267011722.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Le Don Juan de Mozart
+  url: https://www.amazon.fr/s\?k=978-2267011722
+  where: /saint-jean-lipion/salon/mozart
 978-2267017724:
   cover:
     palette: '[{''color'': [242, 242, 242], ''count'': 10811}, {''color'': [239, 239,
@@ -10536,6 +10612,21 @@
   - _2021
   title: La Chasse
   where: /saint-jean-lipion/chambre/polar
+978-2379070273:
+  cover:
+    palette: '[{''color'': [50, 53, 39], ''count'': 9238}, {''color'': [8, 8, 6],
+      ''count'': 37001}, {''color'': [174, 9, 6], ''count'': 638}, {''color'': [133,
+      125, 89], ''count'': 6533}, {''color'': [203, 181, 153], ''count'': 2990}]'
+  de: "Andr\xE9 Tubeuf"
+  image_path: thumbs/T_978-2379070273.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Mozart, le visiteur
+  url: https://www.amazon.fr/s\?k=978-2379070273
+  where: /saint-jean-lipion/salon/mozart
 978-2413010364:
   cover:
     palette: '[{''color'': [253, 242, 120], ''count'': 32161}, {''color'': [210, 229,
@@ -11045,6 +11136,21 @@
   - _1965
   title: Le Baphomet
   where: /saint-lazare-de-savene/salon/_6
+978-2715215108:
+  cover:
+    palette: '[{''color'': [85, 39, 37], ''count'': 4752}, {''color'': [137, 52, 51],
+      ''count'': 8629}, {''color'': [170, 78, 71], ''count'': 9266}, {''color'': [252,
+      252, 246], ''count'': 31551}, {''color'': [192, 125, 112], ''count'': 3002}]'
+  de: Lorenzo Da Ponte
+  image_path: thumbs/T_978-2715215108.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "M\xE9moires"
+  url: https://www.amazon.fr/s\?k=978-2715215108
+  where: /saint-jean-lipion/salon/mozart
 978-2718600147:
   cover:
     palette: '[{''color'': [147, 163, 159], ''count'': 4604}, {''color'': [94, 100,
@@ -11419,6 +11525,21 @@
   - _2014
   title: "Kafka - Tome 1 - Le temps des d\xE9cisions"
   where: /saint-jean-lipion/chambre/kafka
+978-2749809472:
+  cover:
+    palette: '[{''color'': [32, 21, 17], ''count'': 17178}, {''color'': [94, 54, 34],
+      ''count'': 18066}, {''color'': [157, 87, 38], ''count'': 6428}, {''color'':
+      [249, 242, 228], ''count'': 16549}, {''color'': [227, 188, 54], ''count'': 2779}]'
+  de: Peter Shaffer
+  image_path: thumbs/T_978-2749809472.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Amadeus
+  url: https://www.amazon.fr/s\?k=978-2749809472
+  where: /saint-jean-lipion/salon/mozart
 978-2754111232:
   cover:
     palette: '[{''color'': [145, 142, 141], ''count'': 223}, {''color'': [109, 74,
@@ -12079,6 +12200,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - music
+  - mozart
   - beau_livre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -12536,6 +12658,21 @@
   - "\U0001F1EB\U0001F1F7"
   title: Un sieur Rimbaud se disant negociant
   where: /saint-jean-lipion/chambre/rimbaud
+978-2904724084:
+  cover:
+    palette: '[{''color'': [254, 254, 251], ''count'': 49768}, {''color'': [238, 240,
+      204], ''count'': 2375}, {''color'': [159, 158, 157], ''count'': 1343}, {''color'':
+      [80, 79, 78], ''count'': 542}, {''color'': [22, 21, 20], ''count'': 572}]'
+  de: Roger Cotte
+  image_path: thumbs/T_978-2904724084.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "La musique ma\xE7onnique et ses musiciens"
+  url: https://www.amazon.fr/s\?k=978-2904724084
+  where: /saint-jean-lipion/salon/mozart
 978-2905899026:
   cover:
     palette: '[{''color'': [45, 70, 74], ''count'': 20026}, {''color'': [122, 83,
@@ -12560,12 +12697,27 @@
   image_path: thumbs/T_978-2905964465.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - mozart.yaml
-  - mozart.yaml
+  - mozart
+  - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "La Fl\xFBte d\xE9senchant\xE9e"
   url: https://www.amazon.fr/s\?k=978-2905964465
-  where: /
+  where: /saint-jean-lipion/salon/mozart
+978-2907563222:
+  cover:
+    palette: '[{''color'': [51, 69, 113], ''count'': 3591}, {''color'': [175, 163,
+      136], ''count'': 4829}, {''color'': [243, 238, 204], ''count'': 45144}, {''color'':
+      [66, 55, 61], ''count'': 4181}, {''color'': [145, 84, 70], ''count'': 4855}]'
+  de: Stendhal
+  image_path: thumbs/T_978-2907563222.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EE\U0001F1F9"
+  title: Vita di Mozart
+  url: https://www.amazon.fr/s\?k=978-2907563222
+  where: /saint-jean-lipion/salon/mozart
 978-2908024029:
   cover:
     palette: '[{''color'': [199, 196, 188], ''count'': 7458}, {''color'': [206, 89,
@@ -12640,11 +12792,11 @@
   image_path: thumbs/T_978-2909422602.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - mozart.yaml
-  - mozart.yaml
+  - mozart
+  - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   title: "Mozart et autres \xE9crits sur la musique"
-  where: /
+  where: /saint-jean-lipion/salon/mozart
 978-2909808390:
   cover:
     palette: '[{''color'': [234, 227, 215], ''count'': 6374}, {''color'': [201, 184,
@@ -12984,6 +13136,21 @@
   - "\U0001F1E9\U0001F1EA"
   title: "Jeder stirbt f\xFCr sich allein 2"
   where: /saint-lazare-de-savene/salon/mostly_red
+978-3765100208:
+  cover:
+    palette: '[{''color'': [101, 70, 66], ''count'': 1307}, {''color'': [69, 24, 15],
+      ''count'': 19921}, {''color'': [63, 16, 7], ''count'': 35005}, {''color'': [153,
+      126, 121], ''count'': 634}, {''color'': [231, 212, 207], ''count'': 333}]'
+  de: "Ludwig Ritter von K\xF6chel"
+  image_path: thumbs/T_978-3765100208.jpg
+  lan: "\U0001F1E9\U0001F1EA"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1E9\U0001F1EA"
+  title: "Der kleine K\xF6chel"
+  url: https://www.amazon.fr/s\?k=978-3765100208
+  where: /saint-jean-lipion/salon/mozart
 978-3822805398:
   cover:
     palette: '[{''color'': [236, 195, 146], ''count'': 13903}, {''color'': [193, 187,
@@ -13075,12 +13242,12 @@
   image_path: thumbs/T_978-3850023771.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
-  - mozart.yaml
-  - mozart.yaml
+  - mozart
+  - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
   title: Bruder Mozart
   url: https://www.amazon.fr/s\?k=978-3850023771
-  where: /
+  where: /saint-jean-lipion/salon/mozart
 978-3895080944:
   cover:
     palette: '[{''color'': [134, 72, 54], ''count'': 6418}, {''color'': [83, 47, 39],
@@ -13122,12 +13289,12 @@
   image_path: thumbs/T_978-3921518922.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
-  - mozart.yaml
-  - mozart.yaml
+  - mozart
+  - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
   title: Mozart
   url: https://www.amazon.fr/s\?k=978-3921518922
-  where: /
+  where: /saint-jean-lipion/salon/mozart
 978-3980858755:
   cover:
     palette: '[{''color'': [193, 195, 193], ''count'': 4990}, {''color'': [250, 249,
@@ -14640,6 +14807,21 @@
   - _1981
   title: Treno di panna
   where: /saint-lazare-de-savene/salon/_8
+978-8806590482:
+  cover:
+    palette: '[{''color'': [193, 156, 119], ''count'': 3783}, {''color'': [235, 223,
+      200], ''count'': 19719}, {''color'': [250, 243, 220], ''count'': 29198}, {''color'':
+      [128, 91, 70], ''count'': 3420}, {''color'': [66, 48, 44], ''count'': 11080}]'
+  de: Laura Mancinelli
+  image_path: thumbs/T_978-8806590482.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EE\U0001F1F9"
+  title: Il fantasma di Mozart
+  url: https://www.amazon.fr/s\?k=978-8806590482
+  where: /saint-jean-lipion/salon/mozart
 978-8806593315:
   cover:
     palette: '[{''color'': [31, 34, 55], ''count'': 1303}, {''color'': [43, 50, 70],
@@ -16296,12 +16478,12 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - 1981
-  - mozart.yaml
-  - mozart.yaml
+  - mozart
+  - saint-jean-lipion
   - "\U0001F1EE\U0001F1F9"
   title: Lettere
   url: https://www.amazon.fr/s\?k=978-8823522794
-  where: /
+  where: /saint-jean-lipion/salon/mozart
 978-8828203117:
   cover:
     palette: '[{''color'': [249, 4, 70], ''count'': 39626}, {''color'': [206, 18,
@@ -18786,6 +18968,21 @@
   - _2001
   title: Breve storia della bugia
   where: /saint-lazare-de-savene/salon/_8
+978-8870961928:
+  cover:
+    palette: '[{''color'': [173, 84, 64], ''count'': 45945}, {''color'': [224, 137,
+      116], ''count'': 1426}, {''color'': [248, 88, 72], ''count'': 9014}, {''color'':
+      [109, 90, 63], ''count'': 2967}, {''color'': [63, 61, 43], ''count'': 5448}]'
+  de: Giorgio Taboga
+  image_path: thumbs/T_978-8870961928.webp
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EE\U0001F1F9"
+  title: L'assassinio di Mozart
+  url: https://www.amazon.fr/s\?k=978-8870961928
+  where: /saint-jean-lipion/salon/mozart
 978-8871224602:
   cover:
     palette: '[{''color'': [184, 156, 140], ''count'': 2474}, {''color'': [224, 218,
@@ -18929,6 +19126,21 @@
   - "\U0001F1EE\U0001F1F9"
   title: Archeologia Industriale in italia
   where: /saint-lazare-de-savene/salon/_5
+978-8875923549:
+  cover:
+    palette: '[{''color'': [168, 152, 153], ''count'': 2090}, {''color'': [186, 182,
+      186], ''count'': 12616}, {''color'': [205, 196, 197], ''count'': 17645}, {''color'':
+      [221, 211, 211], ''count'': 22791}, {''color'': [112, 73, 80], ''count'': 658}]'
+  de: Guglielmo Barblan & Andrea Della Corte
+  image_path: thumbs/T_978-8875923549.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EE\U0001F1F9"
+  title: Mozart in Italia - I viaggi e le Lettere
+  url: https://www.amazon.fr/s\?k=978-8875923549
+  where: /saint-jean-lipion/salon/mozart
 978-8876153839:
   cover:
     palette: '[{''color'': [240, 240, 241], ''count'': 40367}, {''color'': [166, 139,
