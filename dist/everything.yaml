@@ -8498,6 +8498,21 @@
   - _1980
   title: "Alice racont\xE9e aux petits Poche \u2013 1 janvier 1980"
   where: /saint-lazare-de-savene/chambre_alessia/_E
+978-2213003092:
+  cover:
+    palette: '[{''color'': [181, 171, 160], ''count'': 1540}, {''color'': [254, 254,
+      253], ''count'': 37950}, {''color'': [178, 111, 48], ''count'': 3751}, {''color'':
+      [93, 54, 15], ''count'': 8742}, {''color'': [34, 13, 3], ''count'': 12417}]'
+  de: Jean et Brigitte Massin (Auteur)
+  image_path: thumbs/T_978-2213003092.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart.yaml
+  - mozart.yaml
+  - "\U0001F1EB\U0001F1F7"
+  title: Mozart
+  url: https://www.amazon.fr/s\?k=978-2213003092
+  where: /
 978-2213003795:
   cover:
     palette: '[{''color'': [16, 20, 23], ''count'': 17342}, {''color'': [26, 30, 35],
@@ -12536,6 +12551,21 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Mn\xE9mosyne"
   where: /saint-lazare-de-savene/salon/arts
+978-2905964465:
+  cover:
+    palette: '[{''color'': [120, 112, 110], ''count'': 2651}, {''color'': [177, 158,
+      157], ''count'': 5117}, {''color'': [254, 253, 252], ''count'': 51321}, {''color'':
+      [56, 42, 40], ''count'': 1635}, {''color'': [218, 208, 207], ''count'': 4276}]'
+  de: Jean Vermeil
+  image_path: thumbs/T_978-2905964465.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart.yaml
+  - mozart.yaml
+  - "\U0001F1EB\U0001F1F7"
+  title: "La Fl\xFBte d\xE9senchant\xE9e"
+  url: https://www.amazon.fr/s\?k=978-2905964465
+  where: /
 978-2908024029:
   cover:
     palette: '[{''color'': [199, 196, 188], ''count'': 7458}, {''color'': [206, 89,
@@ -12600,6 +12630,21 @@
   - _1996
   title: "L'\u0153uvre int\xE9grale manuscrite"
   where: /saint-jean-lipion/chambre/rimbaud
+978-2909422602:
+  cover:
+    palette: '[{''color'': [241, 240, 245], ''count'': 7365}, {''color'': [244, 244,
+      248], ''count'': 16268}, {''color'': [236, 236, 240], ''count'': 2931}, {''color'':
+      [247, 247, 249], ''count'': 27302}, {''color'': [250, 250, 251], ''count'':
+      4934}]'
+  de: "Fran\xE7ois Mauriac"
+  image_path: thumbs/T_978-2909422602.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart.yaml
+  - mozart.yaml
+  - "\U0001F1EB\U0001F1F7"
+  title: "Mozart et autres \xE9crits sur la musique"
+  where: /
 978-2909808390:
   cover:
     palette: '[{''color'': [234, 227, 215], ''count'': 6374}, {''color'': [201, 184,
@@ -13021,6 +13066,21 @@
   - _2013
   title: BMW
   where: /saint-jean-lipion/chambre/beau_livre
+978-3850023771:
+  cover:
+    palette: '[{''color'': [1, 1, 119], ''count'': 43237}, {''color'': [78, 40, 78],
+      ''count'': 2721}, {''color'': [129, 131, 121], ''count'': 3429}, {''color'':
+      [194, 184, 168], ''count'': 4498}, {''color'': [241, 231, 201], ''count'': 9115}]'
+  de: Guy Wagner
+  image_path: thumbs/T_978-3850023771.jpg
+  lan: "\U0001F1E9\U0001F1EA"
+  tags:
+  - mozart.yaml
+  - mozart.yaml
+  - "\U0001F1E9\U0001F1EA"
+  title: Bruder Mozart
+  url: https://www.amazon.fr/s\?k=978-3850023771
+  where: /
 978-3895080944:
   cover:
     palette: '[{''color'': [134, 72, 54], ''count'': 6418}, {''color'': [83, 47, 39],
@@ -13053,6 +13113,21 @@
   - _2017
   title: "Le Golem de Prague - Les r\xE9cits juifs du ghetto"
   where: /saint-lazare-de-savene/salon/_2
+978-3921518922:
+  cover:
+    palette: '[{''color'': [250, 249, 247], ''count'': 43494}, {''color'': [220, 219,
+      216], ''count'': 2006}, {''color'': [174, 138, 56], ''count'': 1906}, {''color'':
+      [86, 69, 21], ''count'': 5257}, {''color'': [22, 25, 19], ''count'': 6137}]'
+  de: "Konrad K\u016Bster"
+  image_path: thumbs/T_978-3921518922.jpg
+  lan: "\U0001F1E9\U0001F1EA"
+  tags:
+  - mozart.yaml
+  - mozart.yaml
+  - "\U0001F1E9\U0001F1EA"
+  title: Mozart
+  url: https://www.amazon.fr/s\?k=978-3921518922
+  where: /
 978-3980858755:
   cover:
     palette: '[{''color'': [193, 195, 193], ''count'': 4990}, {''color'': [250, 249,
@@ -16210,6 +16285,23 @@
   - _2016
   title: La ragazza della nave
   where: /saint-jean-lipion/chambre/polar
+978-8823522794:
+  cover:
+    palette: '[{''color'': [175, 153, 111], ''count'': 44188}, {''color'': [99, 83,
+      57], ''count'': 5434}, {''color'': [129, 109, 75], ''count'': 8452}, {''color'':
+      [243, 209, 156], ''count'': 1358}, {''color'': [226, 133, 80], ''count'': 4368}]'
+  de: Wolfgang Amadeus Mozart, a cura di Elisa Ranucci
+  ext: "Broch\xE9 \u2013 18 avril 2019"
+  image_path: thumbs/T_978-8823522794.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - 1981
+  - mozart.yaml
+  - mozart.yaml
+  - "\U0001F1EE\U0001F1F9"
+  title: Lettere
+  url: https://www.amazon.fr/s\?k=978-8823522794
+  where: /
 978-8828203117:
   cover:
     palette: '[{''color'': [249, 4, 70], ''count'': 39626}, {''color'': [206, 18,
