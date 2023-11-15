@@ -1312,6 +1312,21 @@
   - _1999
   title: James Joyce
   where: /saint-lazare-de-savene/salon/_1
+978-0300075427:
+  cover:
+    palette: '[{''color'': [201, 112, 58], ''count'': 29609}, {''color'': [179, 160,
+      180], ''count'': 4132}, {''color'': [76, 66, 118], ''count'': 9868}, {''color'':
+      [106, 97, 147], ''count'': 9733}, {''color'': [227, 210, 214], ''count'': 6058}]'
+  de: David Schroeder
+  image_path: thumbs/T_978-0300075427.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Mozart in Revolt - Strategies of Resistance, Mischief and Deception
+  url: https://www.amazon.fr/s\?k=978-0300075427
+  where: /saint-jean-lipion/salon/mozart
 978-0300087581:
   cover:
     palette: '[{''color'': [242, 80, 58], ''count'': 13009}, {''color'': [248, 110,
@@ -7281,6 +7296,112 @@
   title: Comedian rhapsodie
   url: https://www.amazon.fr/s\?k=978-2080263704
   where: /saint-lazare-de-savene/salon/editor
+978-2080660367:
+  cover:
+    palette: '[{''color'': [92, 88, 69], ''count'': 10348}, {''color'': [158, 139,
+      118], ''count'': 5469}, {''color'': [251, 230, 202], ''count'': 31227}, {''color'':
+      [73, 57, 44], ''count'': 14544}, {''color'': [21, 19, 23], ''count'': 1212}]'
+  de: "Wolfgang Amadeus Mozart, Genevi\xE8ve Geffray"
+  image_path: thumbs/T_978-2080660367.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Correspondance II 1777-1778
+  url: https://www.amazon.fr/s\?k=978-2080660367
+  where: /saint-jean-lipion/salon/mozart
+978-2080663146:
+  cover:
+    palette: '[{''color'': [111, 85, 76], ''count'': 4292}, {''color'': [178, 140,
+      117], ''count'': 3111}, {''color'': [250, 221, 186], ''count'': 32429}, {''color'':
+      [28, 21, 28], ''count'': 5044}, {''color'': [72, 56, 55], ''count'': 18324}]'
+  de: "Wolfgang Amadeus Mozart, Genevi\xE8ve Geffray"
+  image_path: thumbs/T_978-2080663146.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Correspondance III 1778-1781
+  url: https://www.amazon.fr/s\?k=978-2080663146
+  where: /saint-jean-lipion/salon/mozart
+978-2080665089:
+  cover:
+    palette: '[{''color'': [92, 79, 61], ''count'': 10324}, {''color'': [207, 174,
+      136], ''count'': 3019}, {''color'': [151, 125, 108], ''count'': 8292}, {''color'':
+      [250, 229, 197], ''count'': 31153}, {''color'': [44, 30, 28], ''count'': 9812}]'
+  de: "Wolfgang Amadeus Mozart, Genevi\xE8ve Geffray"
+  image_path: thumbs/T_978-2080665089.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Correspondance I 1756-1776
+  url: https://www.amazon.fr/s\?k=978-2080665089
+  where: /saint-jean-lipion/salon/mozart
+978-2080665669:
+  cover:
+    palette: '[{''color'': [132, 85, 64], ''count'': 3447}, {''color'': [172, 154,
+      127], ''count'': 1349}, {''color'': [250, 224, 185], ''count'': 30925}, {''color'':
+      [58, 46, 42], ''count'': 6740}, {''color'': [10, 12, 13], ''count'': 21139}]'
+  de: "Wolfgang Amadeus Mozart, Genevi\xE8ve Geffray"
+  image_path: thumbs/T_978-2080665669.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Correspondance IV 1782-1785
+  url: https://www.amazon.fr/s\?k=978-2080665669
+  where: /saint-jean-lipion/salon/mozart
+978-2080666819:
+  cover:
+    palette: '[{''color'': [96, 67, 54], ''count'': 7345}, {''color'': [204, 152,
+      97], ''count'': 3289}, {''color'': [159, 127, 101], ''count'': 2859}, {''color'':
+      [250, 228, 204], ''count'': 31052}, {''color'': [20, 14, 24], ''count'': 18255}]'
+  de: "Wolfgang Amadeus Mozart, Genevi\xE8ve Geffray"
+  image_path: thumbs/T_978-2080666819.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Correspondance V 1786-1791
+  url: https://www.amazon.fr/s\?k=978-2080666819
+  where: /saint-jean-lipion/salon/mozart
+978-2080669070:
+  cover:
+    palette: '[{''color'': [139, 98, 69], ''count'': 5536}, {''color'': [187, 148,
+      110], ''count'': 7420}, {''color'': [250, 228, 200], ''count'': 32380}, {''color'':
+      [79, 59, 50], ''count'': 13194}, {''color'': [26, 20, 22], ''count'': 4270}]'
+  de: "Constanze Mozart, Maria Anna Mozart, Genevi\xE8ve Geffray"
+  image_path: thumbs/T_978-2080669070.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Correspondance VI 1792-1825
+  url: https://www.amazon.fr/s\?k=978-2080669070
+  where: /saint-jean-lipion/salon/mozart
+978-2080674470:
+  cover:
+    palette: '[{''color'': [178, 116, 77], ''count'': 3610}, {''color'': [245, 164,
+      87], ''count'': 30485}, {''color'': [242, 221, 196], ''count'': 1535}, {''color'':
+      [111, 51, 39], ''count'': 8449}, {''color'': [38, 31, 33], ''count'': 19521}]'
+  de: "Wolfgang Amadeus Mozart, Genevi\xE8ve Geffray"
+  image_path: thumbs/T_978-2080674470.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "Correspondance - Notes de voyage, journal de Nannerl, t\xE9moignages, catalogues\
+    \ des oeuvres, index g\xE9n\xE9ral"
+  url: https://www.amazon.fr/s\?k=978-2080674470
+  where: /saint-jean-lipion/salon/mozart
 978-2080690401:
   cover:
     palette: '[{''color'': [254, 254, 254], ''count'': 32837}, {''color'': [219, 202,
