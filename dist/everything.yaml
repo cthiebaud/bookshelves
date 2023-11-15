@@ -1815,6 +1815,21 @@
   title: The Compleat Mozart - A Guide to the Musical Works of Wolfgang Amadeus Mozart
   url: https://www.amazon.fr/s\?k=978-0393028867
   where: /saint-jean-lipion/salon/mozart
+978-0393034950:
+  cover:
+    palette: '[{''color'': [56, 42, 76], ''count'': 12767}, {''color'': [2, 1, 2],
+      ''count'': 28995}, {''color'': [75, 98, 104], ''count'': 7928}, {''color'':
+      [113, 148, 150], ''count'': 7001}, {''color'': [171, 186, 179], ''count'': 5709}]'
+  de: Nicholas Till
+  image_path: thumbs/T_978-0393034950.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EC\U0001F1E7"
+  title: Mozart and the Enlightenment - Truth, Virtue, and Beauty in Mozart's Operas
+  url: https://www.amazon.com/s\?k=978-0393034950
+  where: /saint-jean-lipion/salon/mozart
 978-0393048254:
   cover:
     palette: '[{''color'': [181, 123, 101], ''count'': 10170}, {''color'': [236, 187,
@@ -1833,6 +1848,21 @@
   - _2000
   title: Johann Sebastian Bach - The Learned Musician
   where: /saint-lazare-de-savene/salon/_1
+978-0393302196:
+  cover:
+    palette: '[{''color'': [243, 224, 129], ''count'': 28347}, {''color'': [247, 231,
+      142], ''count'': 13208}, {''color'': [164, 143, 87], ''count'': 1629}, {''color'':
+      [239, 217, 118], ''count'': 14296}, {''color'': [129, 109, 72], ''count'': 2920}]'
+  de: Charles Rosen
+  image_path: thumbs/T_978-0393302196.jpg
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EC\U0001F1E7"
+  title: Sonata Forms
+  url: https://www.amazon.com/s\?k=978-0393302196
+  where: /saint-jean-lipion/salon/mozart
 978-0393329810:
   cover:
     palette: '[{''color'': [176, 163, 148], ''count'': 8968}, {''color'': [121, 107,
@@ -7965,6 +7995,21 @@
   title: Freud
   url: https://www.amazon.fr/s\?k=978-2130435587
   where: /saint-lazare-de-savene/chambre_alessia/_E
+978-2200248390:
+  cover:
+    palette: '[{''color'': [185, 157, 118], ''count'': 4840}, {''color'': [115, 106,
+      94], ''count'': 4897}, {''color'': [23, 18, 11], ''count'': 10695}, {''color'':
+      [36, 34, 29], ''count'': 16225}, {''color'': [54, 53, 49], ''count'': 22543}]'
+  de: Pierre-Yves Beaurepaire
+  image_path: thumbs/T_978-2200248390.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "Dictionnaire de la Franc-ma\xE7onnerie"
+  url: https://www.amazon.fr/s\?k=978-2200248390
+  where: /saint-jean-lipion/salon/mozart
 978-2200624521:
   cover:
     palette: '[{''color'': [2, 2, 2], ''count'': 27705}, {''color'': [61, 61, 61],
@@ -11231,6 +11276,21 @@
   title: Discours sur le colonialisme
   url: https://www.amazon.fr/s\?k=978-2708705319
   where: /saint-lazare-de-savene/chambre_alessia/_E
+978-2709603805:
+  cover:
+    palette: '[{''color'': [13, 10, 14], ''count'': 15503}, {''color'': [61, 37, 28],
+      ''count'': 6079}, {''color'': [209, 184, 156], ''count'': 27747}, {''color'':
+      [117, 75, 42], ''count'': 6904}, {''color'': [180, 132, 53], ''count'': 5167}]'
+  de: Wolfgang Hildesheimer
+  image_path: thumbs/T_978-2709603805.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Mozart
+  url: https://www.amazon.fr/s\?k=978-2709603805
+  where: /saint-jean-lipion/salon/mozart
 978-2709606820:
   cover:
     palette: '[{''color'': [249, 234, 192], ''count'': 21189}, {''color'': [180, 138,
@@ -11260,6 +11320,21 @@
   - "\U0001F1EB\U0001F1F7"
   title: "Mozart - L'\xE2ge d'or de la musique \xE0 Vienne 1781-1791"
   url: https://www.amazon.fr/s\?k=978-2709608015
+  where: /saint-jean-lipion/salon/mozart
+978-2709609180:
+  cover:
+    palette: '[{''color'': [80, 57, 42], ''count'': 5323}, {''color'': [31, 28, 27],
+      ''count'': 28975}, {''color'': [140, 109, 67], ''count'': 2195}, {''color'':
+      [236, 225, 197], ''count'': 25730}, {''color'': [203, 171, 95], ''count'': 2577}]'
+  de: Volkmar Braunbehrens
+  image_path: thumbs/T_978-2709609180.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Salieri - Dans l'ombre de Mozart
+  url: https://www.amazon.fr/s\?k=978-3492031943
   where: /saint-jean-lipion/salon/mozart
 978-2709609562:
   cover:
