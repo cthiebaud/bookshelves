@@ -2906,21 +2906,6 @@
   - _2015
   title: The Mountain Shadow
   where: /saint-jean-lipion/chambre/polar
-978-0802776259:
-  cover:
-    palette: '[{''color'': [187, 178, 173], ''count'': 5099}, {''color'': [221, 216,
-      212], ''count'': 12608}, {''color'': [254, 254, 252], ''count'': 27468}, {''color'':
-      [129, 89, 69], ''count'': 7249}, {''color'': [220, 145, 95], ''count'': 6376}]'
-  de: Joseph Solman
-  image_path: thumbs/T_978-0802776259.jpg
-  lan: "\U0001F1EE\U0001F1F9"
-  tags:
-  - mozart
-  - saint-jean-lipion
-  - "\U0001F1EE\U0001F1F9"
-  title: Mozartiana- Due secoli di commenti, citazioni e aneddoti
-  url: https://www.amazon.it/s\?k=978-0802776259
-  where: /saint-jean-lipion/salon/mozart
 978-0804719377:
   cover:
     palette: '[{''color'': [248, 214, 122], ''count'': 44384}, {''color'': [170, 141,
@@ -16769,6 +16754,21 @@
   - _2018
   title: M - Il figlio del secolo
   where: /saint-lazare-de-savene/salon/_2
+978-8830409958:
+  cover:
+    palette: '[{''color'': [187, 178, 173], ''count'': 5110}, {''color'': [221, 216,
+      212], ''count'': 12596}, {''color'': [254, 254, 252], ''count'': 27466}, {''color'':
+      [129, 89, 69], ''count'': 7282}, {''color'': [220, 146, 95], ''count'': 6346}]'
+  de: Joseph Solman
+  image_path: thumbs/T_978-8830409958.jpg
+  lan: "\U0001F1EE\U0001F1F9"
+  tags:
+  - mozart
+  - saint-jean-lipion
+  - "\U0001F1EE\U0001F1F9"
+  title: Mozartiana- Due secoli di commenti, citazioni e aneddoti
+  url: https://www.amazon.it/s\?k=978-0802776259
+  where: /saint-jean-lipion/salon/mozart
 978-8830421424:
   cover:
     palette: '[{''color'': [92, 130, 193], ''count'': 35573}, {''color'': [162, 157,
