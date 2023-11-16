@@ -321,9 +321,10 @@
   where: /saint-lazare-de-savene/chambre_alessia/_H
 978-0007351039:
   cover:
-    palette: '[{''color'': [110, 97, 96], ''count'': 1618}, {''color'': [56, 46, 54],
-      ''count'': 2064}, {''color'': [157, 146, 144], ''count'': 2671}, {''color'':
-      [203, 184, 149], ''count'': 6520}, {''color'': [219, 199, 157], ''count'': 37127}]'
+    palette: '[{''color'': [68, 75, 84], ''count'': 895}, {''color'': [137, 137, 111],
+      ''count'': 898}, {''color'': [199, 196, 140], ''count'': 1526}, {''color'':
+      [253, 248, 159], ''count'': 47237}, {''color'': [200, 197, 201], ''count'':
+      1444}]'
   de: Mark Twain (Author)
   image_path: thumbs/T_978-0007351039.jpg
   lan: "\U0001F1EC\U0001F1E7"
