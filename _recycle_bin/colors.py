@@ -72,7 +72,7 @@ def getMonochrome(im):
 
 # https://stackoverflow.com/a/3244061/1070215
 def getDominant(file):
-    ## print('reading image')
+    ## print('reading image')
     from PIL import Image
     import scipy
     import scipy.misc
@@ -113,8 +113,8 @@ for ext in extensions:
         # print(os.path.basename(filename2))
         key = PurePath(filename2).stem[2:]
 
-        ## if key != "978-2823609851":
-        ##     continue
+        ## if key != "978-2823609851":
+        ##     continue
 
         print(i, key)
 ##             if is_low_contrast(im, fraction_threshold=0.5): 

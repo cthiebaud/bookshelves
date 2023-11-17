@@ -275,7 +275,7 @@
     palette: '[{''color'': [66, 65, 65], ''count'': 4077}, {''color'': [98, 96, 95],
       ''count'': 14957}, {''color'': [44, 43, 45], ''count'': 6345}, {''color'': [156,
       156, 155], ''count'': 1406}, {''color'': [228, 228, 227], ''count'': 1215}]'
-  de: "L\u2019Unit\xE0"
+  de: "L\u2019Unit\xE0 - Collectif"
   ext: "Supplemento a L\u2019Unit\xE0"
   image_path: thumbs/T_977-3817002658.jpeg
   lan: "\U0001F1EE\U0001F1F9"
@@ -2428,6 +2428,7 @@
   image_path: thumbs/T_978-0571235926.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
+  - berlusconneries
   - _H
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
@@ -5442,7 +5443,7 @@
     palette: '[{''color'': [1, 1, 1], ''count'': 46868}, {''color'': [65, 65, 65],
       ''count'': 444}, {''color'': [142, 142, 142], ''count'': 696}, {''color'': [207,
       207, 207], ''count'': 484}, {''color'': [250, 250, 250], ''count'': 1108}]'
-  de: Annie Le Brun (Auteur)
+  de: "Annie Le\_Brun (Auteur)"
   ext: "Reli\xE9 \u2013 25 octobre 2014"
   image_path: thumbs/T_978-2070146826.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -5710,7 +5711,7 @@
     palette: '[{''color'': [240, 215, 186], ''count'': 28509}, {''color'': [248, 231,
       204], ''count'': 27837}, {''color'': [164, 108, 71], ''count'': 3056}, {''color'':
       [64, 56, 48], ''count'': 3775}, {''color'': [99, 157, 166], ''count'': 2623}]'
-  de: Dante\u00A0Alighieri (Auteur), Louis-Paul Guigues (Traducteur)
+  de: "Dante\_Alighieri (Auteur), Louis-Paul Guigues (Traducteur)"
   ext: 1974
   image_path: thumbs/T_978-2070321407.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -6621,11 +6622,11 @@
   where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2070522545:
   cover:
-    palette: '[{''color'': [85, 82, 91], ''count'': 3629}, {''color'': [159, 85, 93],
-      ''count'': 16086}, {''color'': [206, 160, 181], ''count'': 8610}, {''color'':
-      [248, 227, 232], ''count'': 30480}, {''color'': [217, 189, 79], ''count'': 1195}]'
-  de: Danziger/Martin, Virginia Lopez-Ballesteros, Olivier Malthet (Auteur)
-  image_path: thumbs/T_978-2070522545.jpg
+    palette: '[{''color'': [20, 11, 18], ''count'': 3696}, {''color'': [151, 33, 14],
+      ''count'': 13851}, {''color'': [212, 111, 136], ''count'': 9535}, {''color'':
+      [83, 131, 110], ''count'': 2839}, {''color'': [244, 214, 220], ''count'': 27879}]'
+  de: Paula Danziger, Ann-Matthews Martin (Autore)
+  image_path: thumbs/T_978-2070522545.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - _E
@@ -7789,7 +7790,7 @@
     palette: '[{''color'': [33, 118, 145], ''count'': 14960}, {''color'': [67, 28,
       22], ''count'': 3769}, {''color'': [170, 80, 58], ''count'': 10100}, {''color'':
       [228, 208, 186], ''count'': 5246}, {''color'': [248, 200, 37], ''count'': 21525}]'
-  de: "Durand Jean-Beno\xEEt (Auteur)"
+  de: "Jean-Beno\xEEt Durand (Auteur)"
   image_path: thumbs/T_978-2081638471.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -7910,7 +7911,7 @@
     palette: '[{''color'': [247, 241, 224], ''count'': 36946}, {''color'': [202, 183,
       143], ''count'': 4560}, {''color'': [144, 155, 138], ''count'': 13246}, {''color'':
       [149, 127, 89], ''count'': 6407}, {''color'': [90, 76, 52], ''count'': 3041}]'
-  de: "Dante\\u00A0Alighieri (Auteur), Jacqueline Risset (Pr\xE9face, Traduction)"
+  de: "Dante\_Alighieri (Auteur), Jacqueline Risset (Pr\xE9face, Traduction)"
   image_path: thumbs/T_978-2082115254.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -10025,7 +10026,7 @@
     palette: '[{''color'': [32, 35, 70], ''count'': 62009}, {''color'': [63, 61, 92],
       ''count'': 216}, {''color'': [96, 63, 130], ''count'': 220}, {''color'': [136,
       125, 161], ''count'': 94}, {''color'': [186, 168, 214], ''count'': 61}]'
-  de: "Ad\xE8le Van Reeth, \xC9ric Fiat (Auteur)"
+  de: "\xC9ric Fiat, Ad\xE8le Van\_Reeth (Auteur)"
   image_path: thumbs/T_978-2259249188.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -11422,15 +11423,17 @@
     palette: '[{''color'': [227, 26, 25], ''count'': 15010}, {''color'': [218, 195,
       182], ''count'': 1294}, {''color'': [132, 135, 135], ''count'': 1463}, {''color'':
       [73, 74, 90], ''count'': 600}, {''color'': [243, 234, 217], ''count'': 45033}]'
-  de: M. Demougeot & J. Duvillard & H. Laurioz & L. Marcoz
+  date: 1994
+  de: "Manuel Demougeot, J\xE9r\xF4me Duvillard, Hubert Laurioz, Laurent Marcoz"
   image_path: thumbs/T_978-2709614450.jpg
   lan: "\U0001F1EB\U0001F1F7"
+  publisher: "J.-C. Latt\xE8s"
   tags:
   - _E
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1994
-  title: "Nouveau fran\xE7ais : la compil."
+  title: "Nouveau Fran\xE7ais : la compil - petit dico des mots interdits aux parents"
   url: https://www.amazon.fr/s\?k=978-2709614450
   where: /saint-lazare-de-savene/chambre_alessia/_E
 978-2709624930:
@@ -11601,7 +11604,7 @@
     palette: '[{''color'': [253, 253, 253], ''count'': 53565}, {''color'': [232, 232,
       232], ''count'': 1259}, {''color'': [178, 178, 178], ''count'': 698}, {''color'':
       [6, 6, 6], ''count'': 5928}, {''color'': [83, 83, 83], ''count'': 350}]'
-  de: "Donatien Alphonse Fran\xE7ois de Sade (Auteur), Annie Le Brun (Sous la direction\
+  de: "Donatien Alphonse Fran\xE7ois de Sade (Auteur), Annie Le\_Brun (Sous la direction\
     \ de)"
   ext: "\u0152uvres compl\xE8tes, tome 6 - Broch\xE9 \u2013 Grand livre, 28 f\xE9\
     vrier 1987"
@@ -11778,7 +11781,7 @@
     palette: '[{''color'': [174, 150, 117], ''count'': 6426}, {''color'': [224, 189,
       131], ''count'': 8654}, {''color'': [232, 216, 176], ''count'': 11077}, {''color'':
       [252, 248, 213], ''count'': 24222}, {''color'': [116, 104, 85], ''count'': 3821}]'
-  de: Paul Auster, Jean Claverie, Christine Le Boeuf
+  de: Jean Claverie, Christine Le Boeuf, Paul Auster
   image_path: thumbs/T_978-2742719358.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -13961,7 +13964,7 @@
     palette: '[{''color'': [175, 180, 157], ''count'': 13225}, {''color'': [218, 188,
       179], ''count'': 5051}, {''color'': [250, 252, 236], ''count'': 36119}, {''color'':
       [182, 128, 127], ''count'': 3867}, {''color'': [121, 81, 73], ''count'': 2538}]'
-  de: Emidio De Felice (Autore)
+  de: "Emidio De\_Felice (Autore)"
   ext: "Copertina rigida \u2013 1 gennaio 1987"
   image_path: thumbs/T_978-8804283195.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -14538,7 +14541,7 @@
     palette: '[{''color'': [213, 194, 146], ''count'': 10116}, {''color'': [160, 134,
       92], ''count'': 8906}, {''color'': [64, 50, 46], ''count'': 26269}, {''color'':
       [240, 232, 217], ''count'': 10632}, {''color'': [234, 62, 74], ''count'': 5477}]'
-  de: Nazim Hikmet (Autore), Joyce Lussu (Traduttore)
+  de: "N\xE2z\u0131m Hikmet (Autore), Joyce Lussu (Traduttore)"
   ext: "Copertina flessibile \u2013 29 novembre 2016"
   image_path: thumbs/T_978-8804670308.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -14756,8 +14759,8 @@
     palette: '[{''color'': [164, 164, 154], ''count'': 16860}, {''color'': [184, 184,
       172], ''count'': 24074}, {''color'': [205, 205, 192], ''count'': 19383}, {''color'':
       [51, 47, 40], ''count'': 3400}, {''color'': [106, 102, 93], ''count'': 1683}]'
-  de: Federico De Roberto (Autore), Luigi Baldacci (Presentazione), Leonardo Sciascia
-    (Presentazione)
+  de: "Federico De\_Roberto (Autore), Luigi Baldacci (Presentazione), Leonardo Sciascia\
+    \ (Presentazione)"
   ext: "Copertina flessibile \u2013 1 gennaio 1997"
   image_path: thumbs/T_978-8806122058.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -15330,7 +15333,7 @@
     palette: '[{''color'': [247, 248, 247], ''count'': 41234}, {''color'': [233, 243,
       181], ''count'': 15959}, {''color'': [200, 203, 148], ''count'': 1639}, {''color'':
       [155, 139, 105], ''count'': 1106}, {''color'': [117, 53, 55], ''count'': 1862}]'
-  de: Andrea De Carlo (Auteur)
+  de: "Andrea De\_Carlo (Auteur)"
   ext: "Broch\xE9 \u2013 9 novembre 2017"
   image_path: thumbs/T_978-8806518967.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -15446,7 +15449,7 @@
     palette: '[{''color'': [237, 237, 237], ''count'': 27836}, {''color'': [240, 240,
       240], ''count'': 33809}, {''color'': [217, 217, 218], ''count'': 171}, {''color'':
       [180, 180, 180], ''count'': 162}, {''color'': [45, 45, 47], ''count'': 22}]'
-  de: Erri De Luca (Autore)
+  de: "Erri De\_Luca (Autore)"
   ext: "Copertina flessibile \u2013 23 marzo 2009"
   image_path: thumbs/T_978-8807017735.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -15462,7 +15465,7 @@
     palette: '[{''color'': [94, 131, 111], ''count'': 14671}, {''color'': [51, 74,
       62], ''count'': 9396}, {''color'': [66, 104, 90], ''count'': 11853}, {''color'':
       [128, 155, 130], ''count'': 16113}, {''color'': [35, 38, 28], ''count'': 11167}]'
-  de: Erri De Luca (Autore)
+  de: "Erri De\_Luca (Autore)"
   ext: "Copertina flessibile \u2013 12 giugno 2009"
   image_path: thumbs/T_978-8807017933.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -15512,7 +15515,7 @@
       117], ''count'': 3669}, {''color'': [243, 231, 219], ''count'': 10165}, {''color'':
       [252, 247, 244], ''count'': 39167}, {''color'': [223, 200, 167], ''count'':
       3836}]'
-  de: Concita De Gregorio (Autore)
+  de: "Concita De\_Gregorio (Autore)"
   image_path: thumbs/T_978-8807031588.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
@@ -18084,7 +18087,7 @@
     palette: '[{''color'': [8, 6, 6], ''count'': 13309}, {''color'': [198, 163, 121],
       ''count'': 15438}, {''color'': [229, 208, 182], ''count'': 5041}, {''color'':
       [119, 98, 74], ''count'': 7724}, {''color'': [23, 145, 195], ''count'': 20288}]'
-  de: Edmondo De Amicis (Autore)
+  de: "Edmondo De\_Amicis (Autore)"
   image_path: thumbs/T_978-8845177873.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
@@ -21725,8 +21728,8 @@ boh16:
     palette: '[{''color'': [127, 112, 110], ''count'': 7187}, {''color'': [151, 162,
       157], ''count'': 8114}, {''color'': [83, 77, 70], ''count'': 9985}, {''color'':
       [36, 35, 33], ''count'': 24312}, {''color'': [223, 205, 202], ''count'': 6602}]'
-  de: James George Frazer (Autore), Giuseppe Cocchiara (Prefazione), Lauro De Bosis
-    (Traduttore)
+  de: "James George Frazer (Autore), Giuseppe Cocchiara (Prefazione), Lauro De\_Bosis\
+    \ (Traduttore)"
   ext: Studio della magia e la religione
   image_path: thumbs/T_boh16.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -21741,8 +21744,8 @@ boh17:
     palette: '[{''color'': [167, 156, 139], ''count'': 15744}, {''color'': [199, 190,
       179], ''count'': 12824}, {''color'': [128, 113, 95], ''count'': 7359}, {''color'':
       [80, 70, 59], ''count'': 7605}, {''color'': [36, 35, 28], ''count'': 9868}]'
-  de: James George Frazer (Autore), Giuseppe Cocchiara (Prefazione), Lauro De Bosis
-    (Traduttore)
+  de: "James George Frazer (Autore), Giuseppe Cocchiara (Prefazione), Lauro De\_Bosis\
+    \ (Traduttore)"
   ext: Studio della magia e la religione
   image_path: thumbs/T_boh17.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -21757,8 +21760,8 @@ boh18:
     palette: '[{''color'': [69, 79, 71], ''count'': 14972}, {''color'': [98, 108,
       103], ''count'': 15898}, {''color'': [135, 146, 139], ''count'': 20695}, {''color'':
       [180, 192, 185], ''count'': 3377}, {''color'': [244, 249, 245], ''count'': 6458}]'
-  de: James George Frazer (Autore), Giuseppe Cocchiara (Prefazione), Lauro De Bosis
-    (Traduttore)
+  de: "James George Frazer (Autore), Giuseppe Cocchiara (Prefazione), Lauro De\_Bosis\
+    \ (Traduttore)"
   ext: Studio della magia e la religione
   image_path: thumbs/T_boh18.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -22392,7 +22395,7 @@ ladivinacommedia_inferno:
     palette: '[{''color'': [96, 85, 66], ''count'': 241}, {''color'': [187, 157, 135],
       ''count'': 2392}, {''color'': [201, 186, 161], ''count'': 17147}, {''color'':
       [158, 125, 104], ''count'': 1519}, {''color'': [207, 197, 178], ''count'': 36501}]'
-  de: Dante\u00A0Alighieri (Autore), Natalino Sapegno (a cura di)
+  de: "Dante\_Alighieri (Autore), Natalino Sapegno (a cura di)"
   image_path: thumbs/T_ladivinacommedia_inferno.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
@@ -22408,7 +22411,7 @@ ladivinacommedia_purgatorio:
     palette: '[{''color'': [205, 200, 190], ''count'': 20693}, {''color'': [192, 185,
       173], ''count'': 18227}, {''color'': [180, 171, 159], ''count'': 19196}, {''color'':
       [150, 134, 123], ''count'': 1407}, {''color'': [69, 65, 58], ''count'': 477}]'
-  de: Dante\u00A0Alighieri (Autore), Natalino Sapegno (a cura di)
+  de: "Dante\_Alighieri (Autore), Natalino Sapegno (a cura di)"
   image_path: thumbs/T_ladivinacommedia_purgatorio.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
