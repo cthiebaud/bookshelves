@@ -222,7 +222,7 @@
             <a href="#" id="amerique" class="btn" role="button" data-bs-toggle="button" data-tags="amerique">Amérique</a>
             <a href="#" id="arbres" class="btn" role="button" data-bs-toggle="button" data-tags="arbres">Arbres</a>
             <a href="#" id="bach" class="btn" role="button" data-bs-toggle="button" data-tags="bach">Bach</a>
-            <a href="#" id="bd" class="btn" role="button" data-bs-toggle="button" data-tags="bd manga tintin tintin_etc">BD</a>
+            <a href="#" id="bd" class="btn" role="button" data-bs-toggle="button" data-tags="fumetto manga tintin tintin_etc">BD</a>
             <a href="#" id="beau_livre" class="btn" role="button" data-bs-toggle="button" data-tags="beau_livre arts arts_bis">Beaux livres</a>
             <a href="#" id="berlusconneries" class="btn" role="button" data-bs-toggle="button" data-tags="berlusconneries">Berlusconneries</a>
             <a href="#" id="biographie" class="btn" role="button" data-bs-toggle="button" data-tags="biographie">Biographie</a>
@@ -671,27 +671,37 @@
                 figure.style.display = "none"
             }
 
-            let selection = ""
-            for (let categoryIndex in categories) {
-                const category = categories[categoryIndex]
-                // build a css selector
-                if (category) {
-                    let sel = ""
-                    let clazzIndex = 0
-                    for (const clazz of category) {
-                        if (clazzIndex > 0) {
-                            sel += ","
-                        }
-                        sel += selection + "." + clazz
-                        clazzIndex++
-                    }
-                    selection = sel
-                }
+            function generateCombinations(input) {
+                const rules = input.split(';').filter(line => line.trim() !== '');
+                const categories = rules.map(rule => rule.split(',').map(tag => `.${tag.trim()}`));
+                const combinations = cartesianProduct(...categories);
+
+                return combinations.map(combination => combination.join('')).join(',');
             }
 
-            // console.log(categories, selection)
-            if (selection.trim() !== "") {
-                const taggeds = document.querySelectorAll(selection)
+            // Helper function to find the Cartesian product of multiple arrays
+            function cartesianProduct(...arrays) {
+                return arrays.reduce((accumulator, array) => {
+                    return accumulator.flatMap(a => array.map(b => a.concat(b)));
+                }, [[]]);
+            }
+
+            const inputArray = Object.values(categories).filter(category => category);
+            /*
+            for (let categoryIndex in categories) {
+                const category = categories[categoryIndex]
+                if (category) {
+                    inputArray.push(category)
+                }
+            }
+            */
+            let input = inputArray.join("; ")
+            let selector = generateCombinations(input)
+            console.log(selector)
+
+            // console.log(categories, selector)
+            if (selector.trim() !== "") {
+                const taggeds = document.querySelectorAll(selector)
                 for (const tagged of taggeds) {
                     c.count(booksFiltered[tagged.dataset.index][1])
                     tagged.style.display = "inline-block"

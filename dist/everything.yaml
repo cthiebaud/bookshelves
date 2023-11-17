@@ -4350,9 +4350,9 @@
   where: /saint-lazare-de-savene/salon/_4
 978-2020096287:
   cover:
-    palette: '[{''color'': [251, 251, 231], ''count'': 37217}, {''color'': [203, 205,
-      193], ''count'': 5834}, {''color'': [76, 83, 82], ''count'': 11455}, {''color'':
-      [137, 137, 138], ''count'': 4313}, {''color'': [39, 45, 45], ''count'': 8581}]'
+    palette: '[{''color'': [206, 202, 191], ''count'': 6243}, {''color'': [253, 249,
+      234], ''count'': 37166}, {''color'': [151, 135, 141], ''count'': 4456}, {''color'':
+      [93, 89, 85], ''count'': 11123}, {''color'': [58, 55, 52], ''count'': 8212}]'
   de: Eugen Kogon, Hermann Langbein, Adalbert Ruckerl (Auteur)
   ext: "Points. Histoire Broch\xE9 \u2013 1 juin 1987"
   image_path: thumbs/T_978-2020096287.jpg
@@ -7041,12 +7041,12 @@
   where: /saint-lazare-de-savene/salon/_1
 978-2070773336:
   cover:
-    palette: '[{''color'': [254, 254, 215], ''count'': 35048}, {''color'': [255, 255,
-      222], ''count'': 19755}, {''color'': [243, 237, 203], ''count'': 1730}, {''color'':
-      [229, 223, 190], ''count'': 1824}, {''color'': [201, 201, 166], ''count'': 843}]'
+    palette: '[{''color'': [243, 242, 213], ''count'': 52353}, {''color'': [253, 249,
+      223], ''count'': 2551}, {''color'': [227, 204, 182], ''count'': 1656}, {''color'':
+      [144, 139, 116], ''count'': 836}, {''color'': [199, 179, 157], ''count'': 1604}]'
   de: Patrick Modiano (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 6 janvier 2005"
-  image_path: thumbs/T_978-2070773336.webp
+  image_path: thumbs/T_978-2070773336.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - editor
@@ -8425,7 +8425,7 @@
   image_path: thumbs/T_978-2203009479.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - bd
+  - fumetto
   - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -8508,7 +8508,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - tintin
-  - bd
+  - fumetto
   - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -8645,7 +8645,7 @@
   image_path: thumbs/T_978-2205066876.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - bd
+  - fumetto
   - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -9547,7 +9547,7 @@
   image_path: thumbs/T_978-2246686019.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - bd
+  - fumetto
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -9859,12 +9859,13 @@
   where: /saint-jean-lipion/chambre/kafka
 978-2253126164:
   cover:
-    palette: '[{''color'': [252, 251, 160], ''count'': 26779}, {''color'': [177, 151,
-      139], ''count'': 6524}, {''color'': [114, 84, 73], ''count'': 4650}, {''color'':
-      [158, 179, 223], ''count'': 5276}, {''color'': [36, 17, 14], ''count'': 7145}]'
+    palette: '[{''color'': [238, 228, 151], ''count'': 1844}, {''color'': [247, 237,
+      157], ''count'': 6639}, {''color'': [252, 242, 158], ''count'': 33429}, {''color'':
+      [251, 243, 162], ''count'': 21133}, {''color'': [209, 205, 134], ''count'':
+      155}]'
   de: Patrick Rambaud (Auteur)
   ext: "Poche \u2013 1 octobre 2008"
-  image_path: thumbs/T_978-2253126164.jpeg
+  image_path: thumbs/T_978-2253126164.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - editor
@@ -10578,7 +10579,7 @@
   image_path: thumbs/T_978-2290235805.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - bd
+  - fumetto
   - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -10942,7 +10943,7 @@
   image_path: thumbs/T_978-2413010364.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - bd
+  - fumetto
   - favourite
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -11781,7 +11782,7 @@
   image_path: thumbs/T_978-2742719358.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - bd
+  - fumetto
   - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -12426,7 +12427,7 @@
   image_path: thumbs/T_978-2844141132.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - bd
+  - fumetto
   - _2
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -12589,7 +12590,7 @@
   image_path: thumbs/T_978-2858150557.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - bd
+  - fumetto
   - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -18071,7 +18072,7 @@
   image_path: thumbs/T_978-8845174131.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - bd
+  - fumetto
   - arts_etc
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -20707,7 +20708,7 @@
   image_path: thumbs/T_978-8893360234.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - bd
+  - fumetto
   - _A
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -20724,7 +20725,7 @@
   image_path: thumbs/T_978-8893360746.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - bd
+  - fumetto
   - _A
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -20741,7 +20742,7 @@
   image_path: thumbs/T_978-8893361033.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
-  - bd
+  - fumetto
   - _A
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -22089,7 +22090,7 @@ boh7:
   image_path: thumbs/T_boh7.jpg
   lan: "\U0001F1E9\U0001F1EA"
   tags:
-  - bd
+  - fumetto
   - beau_livre_etc
   - saint-jean-lipion
   - "\U0001F1E9\U0001F1EA"
