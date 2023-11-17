@@ -11,13 +11,8 @@
             margin: 0.2rem;
         }
 
-        /*
         #figuresContainer {
-            margin: 0;
-            border-left: .5px solid lightgray;
-            border-right: .5px solid lightgray;
         }
-        */
         #figuresContainer:after,
         .category:after {
             content: "";
@@ -65,7 +60,7 @@
         }
 
         .svg-background {
-            --background-image: url('svg/flags/fra.svg');
+            --background-image: url('svg/flags/transparent.svg');
             background: var(--background-image) center/cover no-repeat;
             vertical-align: middle;
         }
@@ -77,7 +72,7 @@
 
         #langage .btn {
             padding: 2px;
-            min-width: 48px;
+            width: 42px;
             margin: 0 0.3rem
         }
 
@@ -85,6 +80,9 @@
             font-size: 12px;
             background-color: rgba(255, 255, 255, 0.85)!important;
             font-weight: normal;
+            min-height: 12px;
+            margin: 0;
+            padding: 0.1rem 0.3rem;
         }
 
         #tags .btn {
@@ -213,13 +211,13 @@
             </a>
         </div>
         <!-- prettier-ignore -->
-        <div id="langage" class="categor d-flex justify-content-center">
-            <a href="#" id="🇫🇷" class="btn svg-background d-flex flex-column justify-content-center align-items-center" role="button" data-bs-toggle="button" data-tags="🇫🇷"><span id="c-🇫🇷" class="badge text-bg-light rounded-pill font-monospace"></span></a>
-            <a href="#" id="🇮🇹" class="btn svg-background d-flex flex-column justify-content-center align-items-center" role="button" data-bs-toggle="button" data-tags="🇮🇹"><span id="c-🇮🇹" class="badge text-bg-light rounded-pill font-monospace"></span></a>
-            <a href="#" id="🇬🇧" class="btn svg-background d-flex flex-column justify-content-center align-items-center" role="button" data-bs-toggle="button" data-tags="🇬🇧"><span id="c-🇬🇧" class="badge text-bg-light rounded-pill font-monospace"></span></a>
-            <a href="#" id="🇩🇪" class="btn svg-background d-flex flex-column justify-content-center align-items-center" role="button" data-bs-toggle="button" data-tags="🇩🇪"><span id="c-🇩🇪" class="badge text-bg-light rounded-pill font-monospace"></span></a>
-            <a href="#" id="🇵🇹" class="btn svg-background d-flex flex-column justify-content-center align-items-center" role="button" data-bs-toggle="button" data-tags="🇵🇹"><span id="c-🇵🇹" class="badge text-bg-light rounded-pill font-monospace"></span></a>
-            <a href="#" id="🇪🇸" class="btn svg-background d-flex flex-column justify-content-center align-items-center" role="button" data-bs-toggle="button" data-tags="🇪🇸"><span id="c-🇪🇸" class="badge text-bg-light rounded-pill font-monospace"></span></a>
+        <div id="langage" class="category">
+            <a href="#" id="🇫🇷" class="btn svg-background" role="button" data-bs-toggle="button" data-tags="🇫🇷"><span id="c-🇫🇷" class="badge text-bg-light rounded-pill font-monospace">&nbsp;</span></a>
+            <a href="#" id="🇮🇹" class="btn svg-background" role="button" data-bs-toggle="button" data-tags="🇮🇹"><span id="c-🇮🇹" class="badge text-bg-light rounded-pill font-monospace">&nbsp;</span></a>
+            <a href="#" id="🇬🇧" class="btn svg-background" role="button" data-bs-toggle="button" data-tags="🇬🇧"><span id="c-🇬🇧" class="badge text-bg-light rounded-pill font-monospace">&nbsp;</span></a>
+            <a href="#" id="🇩🇪" class="btn svg-background" role="button" data-bs-toggle="button" data-tags="🇩🇪"><span id="c-🇩🇪" class="badge text-bg-light rounded-pill font-monospace">&nbsp;</span></a>
+            <a href="#" id="🇵🇹" class="btn svg-background" role="button" data-bs-toggle="button" data-tags="🇵🇹"><span id="c-🇵🇹" class="badge text-bg-light rounded-pill font-monospace">&nbsp;</span></a>
+            <a href="#" id="🇪🇸" class="btn svg-background" role="button" data-bs-toggle="button" data-tags="🇪🇸"><span id="c-🇪🇸" class="badge text-bg-light rounded-pill font-monospace">&nbsp;</span></a>
         </div>
         <div id="tags" class="category">
             <a href="#" id="2_guerre" class="btn" role="button" data-bs-toggle="button" data-tags="nazi">2ᵉ guerre</a>
@@ -258,39 +256,16 @@
             <a href="#" id="tintin" class="btn" role="button" data-bs-toggle="button" data-tags="tintin tintin_etc">Tintin</a>
         </div>
         <div id="color" class="category">
-            <a href="#" id="black" class="color btn" role="button" data-bs-toggle="button" data-tags="Black">
-                <span class="color_black">⬤</span>
-            </a>
-            <a href="#" id="white" class="color btn" role="button" data-bs-toggle="button" data-tags="White">
-                <span class="color_white">⬤</span>
-            </a>
-            <a href="#" id="gray" class="color btn" role="button" data-bs-toggle="button" data-tags="Gray">
-                <span class="color_gray">⬤</span>
-            </a>
-            <a href="#" id="red" class="color btn" role="button" data-bs-toggle="button" data-tags="Red">
-                <span class="color_red">⬤</span>
-            </a>
-            <a href="#" id="yellow" class="color btn" role="button" data-bs-toggle="button" data-tags="Yellow">
-                <span class="color_yellow">⬤</span>
-            </a>
-            <a href="#" id="green" class="color btn" role="button" data-bs-toggle="button" data-tags="Green">
-                <span class="color_green">⬤</span>
-            </a>
-            <a href="#" id="cyan" class="color btn" role="button" data-bs-toggle="button" data-tags="Cyan">
-                <span class="color_cyan">⬤</span>
-            </a>
-            <a href="#" id="blue" class="color btn" role="button" data-bs-toggle="button" data-tags="Blue">
-                <span class="color_blue">⬤</span>
-            </a>
-            <a href="#" id="magenta" class="color btn" role="button" data-bs-toggle="button" data-tags="Magenta">
-                <span class="color_magenta">⬤</span>
-            </a>
-            <a href="#" id="rainbow" class="color btn" role="button" data-bs-toggle="button" data-tags="Rainbow">
-                <span class="color_rainbow">
-                    <!-- 🌈 -->
-                    <img src="svg/Color_circle_(RGB).svg" style="width:14px; height: auto;">
-                </span>
-            </a>
+            <a href="#" id="black" class="color btn" role="button" data-bs-toggle="button" data-tags="Black"><span class="color_black">⬤</span></a>
+            <a href="#" id="white" class="color btn" role="button" data-bs-toggle="button" data-tags="White"><span class="color_white">⬤</span></a>
+            <a href="#" id="gray" class="color btn" role="button" data-bs-toggle="button" data-tags="Gray"><span class="color_gray">⬤</span></a>
+            <a href="#" id="red" class="color btn" role="button" data-bs-toggle="button" data-tags="Red"><span class="color_red">⬤</span></a>
+            <a href="#" id="yellow" class="color btn" role="button" data-bs-toggle="button" data-tags="Yellow"><span class="color_yellow">⬤</span></a>
+            <a href="#" id="green" class="color btn" role="button" data-bs-toggle="button" data-tags="Green"><span class="color_green">⬤</span></a>
+            <a href="#" id="cyan" class="color btn" role="button" data-bs-toggle="button" data-tags="Cyan"><span class="color_cyan">⬤</span></a>
+            <a href="#" id="blue" class="color btn" role="button" data-bs-toggle="button" data-tags="Blue"><span class="color_blue">⬤</span></a>
+            <a href="#" id="magenta" class="color btn" role="button" data-bs-toggle="button" data-tags="Magenta"><span class="color_magenta">⬤</span></a>
+            <a href="#" id="rainbow" class="color btn" role="button" data-bs-toggle="button" data-tags="Rainbow"><span class="color_rainbow"><img src="svg/Color_circle_(RGB).svg" style="width:14px; height: auto;"></span></a>
         </div>
         <div id="date" class="category" style="display: none;">
             <a href="#" id="_1400" class="btn" role="button" data-bs-toggle="button"  data-tags="_1400 _1401 _1402 _1403 _1404 _1405 _1406 _1407 _1408 _1409 _1410 _1411 _1412 _1413 _1414 _1415 _1416 _1417 _1418 _1419 _1420 _1421 _1422 _1423 _1424 _1425 _1426 _1427 _1428 _1429 _1430 _1431 _1432 _1433 _1434 _1435 _1436 _1437 _1438 _1439 _1440 _1441 _1442 _1443 _1444 _1445 _1446 _1447 _1448 _1449 _1450 _1451 _1452 _1453 _1454 _1455 _1456 _1457 _1458 _1459 _1460 _1461 _1462 _1463 _1464 _1465 _1466 _1467 _1468 _1469 _1470 _1471 _1472 _1473 _1474 _1475 _1476 _1477 _1478 _1479 _1480 _1481 _1482 _1483 _1484 _1485 _1486 _1487 _1488 _1489 _1490 _1491 _1492 _1493 _1494 _1495 _1496 _1497 _1498 _1499">1400'</a>
@@ -352,7 +327,7 @@
             <a href="#" id="_Y_" class="btn" role="button" data-bs-toggle="button" data-tags="_Y_">Y</a>
             <a href="#" id="_Z_" class="btn" role="button" data-bs-toggle="button" data-tags="_Z_">Z</a>
         </div>
-        <div id="figuresContainer"></div>
+        <div id="figuresContainer" class=""></div>
     </div>
     <script>
         // Function to set --background-image based on ID
@@ -552,14 +527,29 @@
                 document.getElementById("percent").innerHTML = `${s}`
                 circle_with_cross.style.display = (this.total === total_des_totaux ? "none" : "inline-block")
                 // /${total_des_totaux} ⇒ ${s}
-                {
-                    document.getElementById("c-🇫🇷").innerHTML = `${this.fr}`
-                    document.getElementById("c-🇮🇹").innerHTML = `${this.it}`
-                    document.getElementById("c-🇬🇧").innerHTML = `${this.en}`
-                    document.getElementById("c-🇩🇪").innerHTML = `${this.de}`
-                    document.getElementById("c-🇵🇹").innerHTML = `${this.pt}`
-                    document.getElementById("c-🇪🇸").innerHTML = `${this.sp}`
+                /*{
+                    document.getElementById("c-🇫🇷").innerHTML = this.fr ? `${this.fr}` : ''
+                    document.getElementById("c-🇮🇹").innerHTML = this.it ? `${this.it}` : ''
+                    document.getElementById("c-🇬🇧").innerHTML = this.en ? `${this.en}` : ''
+                    document.getElementById("c-🇩🇪").innerHTML = this.de ? `${this.de}` : ''
+                    document.getElementById("c-🇵🇹").innerHTML = this.pt ? `${this.pt}` : ''
+                    document.getElementById("c-🇪🇸").innerHTML = this.sp ? `${this.sp}` : ''
+                }*/
+                const flags = {fr: '🇫🇷', it: '🇮🇹', en: '🇬🇧', de: '🇩🇪', pt: '🇵🇹', sp: '🇪🇸'}
+                for (const [key, value] of Object.entries(flags)) {
+                    const elem = document.getElementById(`c-${value}`)
+                    if (elem) {
+                        if (this[key]) {
+                            elem.style.visibility = 'visible'
+                            elem.innerHTML = this[key]
+                        } else {
+                            elem.style.visibility = 'hidden'
+                            elem.innerHTML = '&bnsp;'
+                        }
+                    }
+                    // console.log(`Key: ${key}, Value: ${value} - ${this[key]}, ${elem}`);
                 }
+
                 {
                     document.getElementById("c-saint-jean-lipion").innerHTML = `${this.sgl}`
                     document.getElementById("c-saint-lazare-de-savene").innerHTML = `${this.slds}`
