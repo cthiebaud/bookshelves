@@ -687,17 +687,10 @@
             }
 
             const inputArray = Object.values(categories).filter(category => category);
-            /*
-            for (let categoryIndex in categories) {
-                const category = categories[categoryIndex]
-                if (category) {
-                    inputArray.push(category)
-                }
-            }
-            */
-            let input = inputArray.join("; ")
+            let input = inputArray.join(";")
+            // console.log(input)
             let selector = generateCombinations(input)
-            console.log(selector)
+            // console.log(selector)
 
             // console.log(categories, selector)
             if (selector.trim() !== "") {
