@@ -3168,12 +3168,12 @@
   image_path: thumbs/T_978-0828837408.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1959
   title: "Le plan\xE9tarium"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-0847814275:
   cover:
     palette: '[{''color'': [35, 23, 17], ''count'': 14760}, {''color'': [86, 49, 29],
@@ -3548,7 +3548,7 @@
     palette: '[{''color'': [52, 27, 11], ''count'': 9343}, {''color'': [22, 10, 5],
       ''count'': 38216}, {''color'': [105, 58, 16], ''count'': 6249}, {''color'':
       [166, 112, 39], ''count'': 4817}, {''color'': [228, 199, 89], ''count'': 2775}]'
-  de: K. Powers (Author)
+  de: Kevin Powers (Author)
   ext: "Paperback \u2013 January 1, 2013"
   image_path: thumbs/T_978-1444768763.jpg
   lan: "\U0001F1EC\U0001F1E7"
@@ -3712,12 +3712,12 @@
   where: /saint-lazare-de-savene/salon/_5
 978-1568585260:
   cover:
-    palette: '[{''color'': [6, 188, 202], ''count'': 39782}, {''color'': [42, 167,
-      176], ''count'': 2363}, {''color'': [155, 224, 224], ''count'': 1597}, {''color'':
-      [95, 104, 94], ''count'': 989}, {''color'': [252, 253, 253], ''count'': 15469}]'
+    palette: '[{''color'': [65, 177, 177], ''count'': 3140}, {''color'': [34, 177,
+      177], ''count'': 38767}, {''color'': [170, 212, 205], ''count'': 1153}, {''color'':
+      [253, 255, 255], ''count'': 16710}, {''color'': [103, 106, 86], ''count'': 1230}]'
   de: Stefan Szymanski (Author)
   ext: "Paperback \u2013 June 2, 2015"
-  image_path: thumbs/T_978-1568585260.jpg
+  image_path: thumbs/T_978-1568585260.jpeg
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - football
@@ -4773,9 +4773,9 @@
   where: /saint-lazare-de-savene/salon/arts_etc
 978-2070100156:
   cover:
-    palette: '[{''color'': [238, 237, 242], ''count'': 10434}, {''color'': [233, 232,
-      237], ''count'': 50336}, {''color'': [202, 201, 206], ''count'': 926}, {''color'':
-      [143, 142, 146], ''count'': 202}, {''color'': [62, 62, 65], ''count'': 102}]'
+    palette: '[{''color'': [255, 255, 255], ''count'': 62678}, {''color'': [235, 234,
+      233], ''count'': 1015}, {''color'': [192, 191, 190], ''count'': 701}, {''color'':
+      [127, 127, 125], ''count'': 277}, {''color'': [39, 39, 39], ''count'': 129}]'
   de: Guillaume Apollinaire (Auteur)
   ext: "Reli\xE9 \u2013 1 d\xE9cembre 1956"
   image_path: thumbs/T_978-2070100156.jpg
@@ -4790,9 +4790,9 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070101733:
   cover:
-    palette: '[{''color'': [63, 67, 77], ''count'': 2918}, {''color'': [214, 217,
-      220], ''count'': 21290}, {''color'': [230, 233, 235], ''count'': 25915}, {''color'':
-      [159, 161, 160], ''count'': 4256}, {''color'': [192, 194, 196], ''count'': 12221}]'
+    palette: '[{''color'': [254, 255, 254], ''count'': 58858}, {''color'': [195, 191,
+      189], ''count'': 1438}, {''color'': [79, 77, 75], ''count'': 721}, {''color'':
+      [138, 135, 134], ''count'': 862}, {''color'': [18, 17, 14], ''count'': 1921}]'
   de: Denis Diderot (Auteur)
   ext: "Reli\xE9 \u2013 25 septembre 1946"
   image_path: thumbs/T_978-2070101733.jpg
@@ -4851,11 +4851,26 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070104574:
   cover:
-    palette: '[{''color'': [254, 254, 252], ''count'': 62476}, {''color'': [199, 202,
-      189], ''count'': 2919}, {''color'': [143, 148, 137], ''count'': 593}, {''color'':
-      [82, 88, 78], ''count'': 547}, {''color'': [22, 27, 20], ''count'': 1065}]'
+    palette: '[{''color'': [254, 255, 252], ''count'': 62567}, {''color'': [190, 191,
+      186], ''count'': 3119}, {''color'': [139, 138, 137], ''count'': 602}, {''color'':
+      [81, 80, 80], ''count'': 612}, {''color'': [34, 33, 33], ''count'': 1100}]'
   de: Marcel Proust
-  image_path: thumbs/T_978-2070104574.jpg
+  image_path: thumbs/T_978-2070104574.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - lapleiade
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: A la recherche du temps perdu - I
+  where: /saint-lazare-de-savene/salon/lapleiade
+978-2070104574-2:
+  cover:
+    palette: '[{''color'': [191, 190, 187], ''count'': 3374}, {''color'': [131, 129,
+      127], ''count'': 848}, {''color'': [251, 250, 233], ''count'': 6609}, {''color'':
+      [255, 255, 254], ''count'': 55515}, {''color'': [62, 61, 62], ''count'': 1454}]'
+  de: Marcel Proust
+  image_path: thumbs/T_978-2070104574-2.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - proust
@@ -4880,6 +4895,22 @@
   - "\U0001F1EB\U0001F1F7"
   title: "\u0152uvres compl\xE8tes, Vol. II - Com\xE9dies II - Trag\xE9dies"
   where: /saint-lazare-de-savene/salon/lapleiade
+978-2070105632:
+  ASIN: B08YXPPKVH
+  cover:
+    palette: '[{''color'': [227, 226, 226], ''count'': 2015}, {''color'': [255, 255,
+      254], ''count'': 61871}, {''color'': [187, 185, 185], ''count'': 1094}, {''color'':
+      [69, 67, 65], ''count'': 1179}, {''color'': [133, 132, 131], ''count'': 641}]'
+  de: "L\xE9on Tolsto\xEF"
+  ext: "Biblioth\xE8que nrf de La Pl\xE9iade Reli\xE9 \u2013 1956"
+  image_path: thumbs/T_978-2070105632.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - lapleiade
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: La Guerre et la Paix
+  where: /saint-jean-lipion/chambre/lapleiade
 978-2070105793:
   cover:
     palette: '[{''color'': [247, 246, 251], ''count'': 60854}, {''color'': [226, 224,
@@ -4899,12 +4930,12 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070106974:
   cover:
-    palette: '[{''color'': [221, 222, 211], ''count'': 8307}, {''color'': [234, 235,
-      228], ''count'': 55103}, {''color'': [173, 174, 171], ''count'': 1341}, {''color'':
-      [74, 76, 72], ''count'': 797}, {''color'': [125, 126, 122], ''count'': 1452}]'
+    palette: '[{''color'': [255, 255, 255], ''count'': 62442}, {''color'': [224, 224,
+      224], ''count'': 1796}, {''color'': [172, 172, 174], ''count'': 1511}, {''color'':
+      [78, 78, 80], ''count'': 879}, {''color'': [127, 127, 130], ''count'': 1172}]'
   de: Stendhal (Auteur)
   ext: "Reli\xE9 \u2013 26 octobre 1973"
-  image_path: thumbs/T_978-2070106974.jpg
+  image_path: thumbs/T_978-2070106974.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - lapleiade
@@ -4968,9 +4999,9 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070109616:
   cover:
-    palette: '[{''color'': [232, 232, 234], ''count'': 60473}, {''color'': [183, 183,
-      183], ''count'': 2036}, {''color'': [156, 156, 156], ''count'': 1060}, {''color'':
-      [109, 109, 109], ''count'': 685}, {''color'': [59, 59, 59], ''count'': 546}]'
+    palette: '[{''color'': [251, 250, 253], ''count'': 60713}, {''color'': [221, 224,
+      225], ''count'': 1838}, {''color'': [187, 192, 194], ''count'': 970}, {''color'':
+      [132, 140, 142], ''count'': 684}, {''color'': [70, 79, 80], ''count'': 595}]'
   de: "Voltaire (Auteur), Fr\xE9d\xE9ric Deloffre (Sous la direction de), Jacques\
     \ Van Den Heuvel (Sous la direction de)"
   ext: "Reli\xE9 \u2013 16 mai 1979"
@@ -5040,9 +5071,9 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070111053:
   cover:
-    palette: '[{''color'': [234, 234, 239], ''count'': 60267}, {''color'': [184, 183,
-      186], ''count'': 1069}, {''color'': [149, 149, 150], ''count'': 1002}, {''color'':
-      [109, 109, 109], ''count'': 709}, {''color'': [70, 70, 70], ''count'': 1553}]'
+    palette: '[{''color'': [255, 255, 254], ''count'': 57713}, {''color'': [194, 184,
+      173], ''count'': 587}, {''color'': [150, 137, 122], ''count'': 1302}, {''color'':
+      [103, 89, 75], ''count'': 960}, {''color'': [53, 38, 23], ''count'': 1838}]'
   de: Albert Cohen (Auteur)
   ext: "Reli\xE9 \u2013 13juin 1988"
   image_path: thumbs/T_978-2070111053.jpg
@@ -5056,11 +5087,11 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070111367:
   cover:
-    palette: '[{''color'': [238, 239, 223], ''count'': 3056}, {''color'': [254, 255,
-      252], ''count'': 60711}, {''color'': [171, 173, 163], ''count'': 708}, {''color'':
-      [81, 87, 77], ''count'': 1368}, {''color'': [49, 55, 45], ''count'': 1357}]'
+    palette: '[{''color'': [255, 255, 254], ''count'': 62686}, {''color'': [234, 234,
+      231], ''count'': 1464}, {''color'': [183, 182, 181], ''count'': 649}, {''color'':
+      [62, 60, 62], ''count'': 2539}, {''color'': [116, 115, 115], ''count'': 462}]'
   de: Marcel Proust
-  image_path: thumbs/T_978-2070111367.jpg
+  image_path: thumbs/T_978-2070111367.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - proust
@@ -5072,11 +5103,11 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070111435:
   cover:
-    palette: '[{''color'': [191, 192, 187], ''count'': 24980}, {''color'': [201, 203,
-      200], ''count'': 39996}, {''color'': [130, 133, 134], ''count'': 663}, {''color'':
-      [39, 39, 46], ''count'': 2485}, {''color'': [76, 78, 85], ''count'': 1476}]'
+    palette: '[{''color'': [255, 255, 254], ''count'': 62558}, {''color'': [222, 222,
+      219], ''count'': 933}, {''color'': [94, 92, 95], ''count'': 1351}, {''color'':
+      [160, 159, 159], ''count'': 677}, {''color'': [41, 40, 41], ''count'': 2281}]'
   de: Marcel Proust
-  image_path: thumbs/T_978-2070111435.jpg
+  image_path: thumbs/T_978-2070111435.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - proust
@@ -5088,9 +5119,9 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070114757:
   cover:
-    palette: '[{''color'': [237, 237, 236], ''count'': 60346}, {''color'': [188, 187,
-      185], ''count'': 835}, {''color'': [138, 137, 135], ''count'': 1311}, {''color'':
-      [93, 92, 89], ''count'': 888}, {''color'': [53, 51, 47], ''count'': 1220}]'
+    palette: '[{''color'': [245, 245, 245], ''count'': 61002}, {''color'': [117, 112,
+      118], ''count'': 699}, {''color'': [65, 60, 64], ''count'': 1142}, {''color'':
+      [8, 7, 9], ''count'': 1782}, {''color'': [180, 176, 183], ''count'': 775}]'
   de: Gustave Flaubert
   ext: "Reli\xE9 \u2013 20 septembre 2001"
   image_path: thumbs/T_978-2070114757.jpg
@@ -5104,12 +5135,12 @@
   where: /saint-jean-lipion/chambre/lapleiade
 978-2070115594:
   cover:
-    palette: '[{''color'': [235, 236, 222], ''count'': 5096}, {''color'': [252, 252,
-      237], ''count'': 56163}, {''color'': [181, 180, 171], ''count'': 1363}, {''color'':
-      [28, 27, 22], ''count'': 1793}, {''color'': [98, 97, 90], ''count'': 985}]'
+    palette: '[{''color'': [255, 255, 254], ''count'': 62885}, {''color'': [184, 184,
+      183], ''count'': 1068}, {''color'': [87, 84, 88], ''count'': 1433}, {''color'':
+      [140, 139, 141], ''count'': 1109}, {''color'': [48, 47, 49], ''count'': 1505}]'
   de: "St\xE9phane Mallarm\xE9 (Auteur)"
   ext: "Reli\xE9"
-  image_path: thumbs/T_978-2070115594.jpg
+  image_path: thumbs/T_978-2070115594.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
@@ -5121,9 +5152,9 @@
   where: /saint-lazare-de-savene/salon/lapleiade
 978-2070116157:
   cover:
-    palette: '[{''color'': [70, 79, 77], ''count'': 1211}, {''color'': [132, 137,
-      146], ''count'': 1058}, {''color'': [248, 248, 248], ''count'': 57713}, {''color'':
-      [31, 41, 39], ''count'': 1496}, {''color'': [187, 192, 200], ''count'': 1922}]'
+    palette: '[{''color'': [237, 235, 238], ''count'': 60600}, {''color'': [188, 190,
+      193], ''count'': 816}, {''color'': [142, 135, 139], ''count'': 1027}, {''color'':
+      [77, 70, 73], ''count'': 795}, {''color'': [12, 8, 11], ''count'': 1162}]'
   de: Gustave Flaubert (Auteur)
   ext: "Reli\xE9 \u2013 8 novembre 2013"
   image_path: thumbs/T_978-2070116157.jpg
@@ -5525,6 +5556,22 @@
   - _1922
   title: Ulysse
   where: /saint-lazare-de-savene/salon/_1
+978-2070265800:
+  cover:
+    palette: '[{''color'': [166, 155, 157], ''count'': 964}, {''color'': [222, 215,
+      219], ''count'': 1710}, {''color'': [248, 245, 244], ''count'': 56168}, {''color'':
+      [106, 95, 96], ''count'': 887}, {''color'': [32, 26, 28], ''count'': 471}]'
+  de: Elio Vittorini (Auteur), Michel Arnaud (Auteur)
+  ext: "(Du monde entier) Broch\xE9 \u2013 1 janvier 1980"
+  image_path: thumbs/T_978-2070265800.jpg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - editor
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "L'\u0153illet rouge"
+  url: https://www.amazon.fr/Loeillet-rouge-Du-monde-entier/dp/B0014LJ38Y
+  where: /saint-lazare-de-savene/salon/editor
 978-2070286751:
   cover:
     palette: '[{''color'': [239, 226, 190], ''count'': 6319}, {''color'': [250, 236,
@@ -5663,7 +5710,7 @@
     palette: '[{''color'': [240, 215, 186], ''count'': 28509}, {''color'': [248, 231,
       204], ''count'': 27837}, {''color'': [164, 108, 71], ''count'': 3056}, {''color'':
       [64, 56, 48], ''count'': 3775}, {''color'': [99, 157, 166], ''count'': 2623}]'
-  de: Dante Alighieri (Auteur), Louis-Paul Guigues (Traducteur)
+  de: Dante\u00A0Alighieri (Auteur), Louis-Paul Guigues (Traducteur)
   ext: 1974
   image_path: thumbs/T_978-2070321407.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -5700,12 +5747,12 @@
   image_path: thumbs/T_978-2070323029.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1951
   title: "L'homme r\xE9volt\xE9"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070323524:
   cover:
     palette: '[{''color'': [254, 254, 254], ''count'': 21754}, {''color'': [202, 193,
@@ -5716,12 +5763,12 @@
   image_path: thumbs/T_978-2070323524.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1949
   title: "Le deuxi\xE8me sexe, II"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070324712:
   cover:
     palette: '[{''color'': [141, 114, 105], ''count'': 3822}, {''color'': [186, 173,
@@ -5732,13 +5779,13 @@
   image_path: thumbs/T_978-2070324712.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1962
   title: "Histoire extraordinaire, essai sur un r\xEAve de Baudelaire"
   url: https://www.amazon.fr/s\?k=978-2070324712
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070324934:
   ISBN-13: 978-2070
   cover:
@@ -5751,12 +5798,12 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1947
   title: Baudelaire
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070326624:
   cover:
     palette: '[{''color'': [252, 253, 253], ''count'': 44393}, {''color'': [181, 199,
@@ -5880,13 +5927,13 @@
   image_path: thumbs/T_978-2070358687.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _2008
   title: "D\xE9claration universelle des droits de l'homme"
   url: https://www.amazon.fr/s\?k=978-2070358687
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070360284:
   cover:
     palette: '[{''color'': [253, 253, 253], ''count'': 34966}, {''color'': [178, 178,
@@ -5898,12 +5945,12 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - celine
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1932
   title: Voyage au bout de la nuit
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070360420:
   cover:
     palette: '[{''color'': [32, 32, 22], ''count'': 5017}, {''color'': [118, 119,
@@ -5914,12 +5961,12 @@
   image_path: thumbs/T_978-2070360420.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1947
   title: La peste
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070360628:
   ISBN-13: 978-2070360628
   cover:
@@ -5930,12 +5977,12 @@
   image_path: thumbs/T_978-2070360628.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1843
   title: Illusions perdues
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070361922:
   ASIN: B00DFH42S6
   cover:
@@ -5981,12 +6028,12 @@
   image_path: thumbs/T_978-2070364398.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1923
   title: La conscience de Zeno
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070367696:
   cover:
     palette: '[{''color'': [253, 253, 252], ''count'': 22190}, {''color'': [185, 184,
@@ -5997,12 +6044,12 @@
   image_path: thumbs/T_978-2070367696.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1954
   title: Les mandarins I
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070367702:
   cover:
     palette: '[{''color'': [252, 252, 252], ''count'': 24777}, {''color'': [204, 204,
@@ -6013,12 +6060,12 @@
   image_path: thumbs/T_978-2070367702.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1954
   title: Les mandarins II
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070367863:
   cover:
     palette: '[{''color'': [240, 221, 176], ''count'': 8263}, {''color'': [253, 252,
@@ -6029,12 +6076,12 @@
   image_path: thumbs/T_978-2070367863.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1958
   title: "M\xE9moires d'une jeune fille rang\xE9e"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070367986:
   cover:
     palette: '[{''color'': [254, 254, 253], ''count'': 20969}, {''color'': [202, 196,
@@ -6045,12 +6092,12 @@
   image_path: thumbs/T_978-2070367986.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1968
   title: "L'\u0152uvre au Noir"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070369591:
   cover:
     palette: '[{''color'': [250, 251, 236], ''count'': 27281}, {''color'': [210, 198,
@@ -6060,12 +6107,12 @@
   image_path: thumbs/T_978-2070369591.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1967
   title: Vendredi ou les limbes du Pacifique
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070369973:
   cover:
     palette: '[{''color'': [254, 254, 253], ''count'': 20951}, {''color'': [212, 177,
@@ -6076,12 +6123,12 @@
   image_path: thumbs/T_978-2070369973.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1976
   title: "\u201Cdisent les imb\xE9ciles\u201D"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070370962:
   cover:
     palette: '[{''color'': [250, 250, 250], ''count'': 30910}, {''color'': [207, 207,
@@ -6092,12 +6139,12 @@
   image_path: thumbs/T_978-2070370962.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1953
   title: Jules et Jim
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070371440:
   cover:
     palette: '[{''color'': [252, 252, 251], ''count'': 16920}, {''color'': [202, 178,
@@ -6108,12 +6155,12 @@
   image_path: thumbs/T_978-2070371440.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1883
   title: "Contes de la B\xE9casse"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070372225:
   cover:
     palette: '[{''color'': [254, 254, 254], ''count'': 24706}, {''color'': [166, 136,
@@ -6125,12 +6172,12 @@
   image_path: thumbs/T_978-2070372225.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1891
   title: L'Argent
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070373628:
   cover:
     palette: '[{''color'': [253, 252, 246], ''count'': 34611}, {''color'': [225, 210,
@@ -6141,12 +6188,12 @@
   image_path: thumbs/T_978-2070373628.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1975
   title: La vie devant soi
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070373918:
   cover:
     palette: '[{''color'': [253, 254, 253], ''count'': 26170}, {''color'': [129, 131,
@@ -6157,12 +6204,12 @@
   image_path: thumbs/T_978-2070373918.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1923
   title: Le Diable au corps
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070374984:
   cover:
     palette: '[{''color'': [251, 249, 233], ''count'': 28681}, {''color'': [155, 126,
@@ -6173,12 +6220,12 @@
   image_path: thumbs/T_978-2070374984.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1812
   title: "Isabelle d'Egypte et autres r\xE9cits"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070380596:
   cover:
     palette: '[{''color'': [226, 222, 136], ''count'': 12122}, {''color'': [251, 245,
@@ -6189,12 +6236,12 @@
   image_path: thumbs/T_978-2070380596.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1985
   title: Au bonheur des ogres
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070381319:
   cover:
     palette: '[{''color'': [144, 124, 99], ''count'': 4883}, {''color'': [202, 192,
@@ -6205,12 +6252,12 @@
   image_path: thumbs/T_978-2070381319.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1987
   title: "La f\xE9e carabine"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070383382:
   cover:
     palette: '[{''color'': [253, 253, 253], ''count'': 17976}, {''color'': [202, 202,
@@ -6237,12 +6284,12 @@
   image_path: thumbs/T_978-2070383993.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1991
   title: Les mille et une nuits I
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070384006:
   cover:
     palette: '[{''color'': [253, 252, 251], ''count'': 26175}, {''color'': [141, 173,
@@ -6253,12 +6300,12 @@
   image_path: thumbs/T_978-2070384006.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1991
   title: Les Mille et Une Nuits II
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070384655:
   cover:
     palette: '[{''color'': [240, 231, 219], ''count'': 19333}, {''color'': [184, 174,
@@ -6269,12 +6316,12 @@
   image_path: thumbs/T_978-2070384655.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1990
   title: La petite marchande de prose
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070385645:
   cover:
     palette: '[{''color'': [183, 158, 137], ''count'': 12037}, {''color'': [244, 242,
@@ -6287,11 +6334,11 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - "po\xE9sie"
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   title: "Les M\xE9tamorphoses"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070387830:
   cover:
     palette: '[{''color'': [243, 240, 231], ''count'': 12066}, {''color'': [130, 162,
@@ -6320,12 +6367,12 @@
   image_path: thumbs/T_978-2070403264.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1994
   title: "Testament \xE0 l'anglaise"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070408832:
   cover:
     palette: '[{''color'': [254, 254, 252], ''count'': 21957}, {''color'': [208, 204,
@@ -6336,12 +6383,12 @@
   image_path: thumbs/T_978-2070408832.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1998
   title: Cannibale
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070409105:
   cover:
     palette: '[{''color'': [251, 239, 200], ''count'': 22490}, {''color'': [235, 217,
@@ -6352,12 +6399,12 @@
   image_path: thumbs/T_978-2070409105.jpeg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1894
   title: Lucien Leuwen
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070409280:
   cover:
     palette: '[{''color'': [254, 254, 253], ''count'': 25269}, {''color'': [143, 188,
@@ -6368,12 +6415,12 @@
   image_path: thumbs/T_978-2070409280.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1833
   title: "Eug\xE9nie Grandet"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070416219:
   cover:
     palette: '[{''color'': [254, 254, 254], ''count'': 21028}, {''color'': [192, 197,
@@ -6384,12 +6431,12 @@
   image_path: thumbs/T_978-2070416219.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _2000
   title: L'Adversaire
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070421244:
   cover:
     palette: '[{''color'': [214, 192, 149], ''count'': 2672}, {''color'': [250, 234,
@@ -6417,12 +6464,12 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1919
   title: "Lettre au p\xE8re"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070439805:
   cover:
     palette: '[{''color'': [253, 253, 252], ''count'': 16806}, {''color'': [222, 176,
@@ -6450,12 +6497,12 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - paris
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _2011
   title: Connaissez-vous Paris ?
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070450893:
   cover:
     palette: '[{''color'': [254, 254, 254], ''count'': 46334}, {''color'': [136, 137,
@@ -6482,12 +6529,12 @@
   image_path: thumbs/T_978-2070453863.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _2011
   title: "Les solidarit\xE9s myst\xE9rieuses"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070463480:
   cover:
     palette: '[{''color'': [254, 254, 254], ''count'': 16727}, {''color'': [160, 153,
@@ -6723,9 +6770,9 @@
   where: /saint-lazare-de-savene/salon/editor
 978-2070712809:
   cover:
-    palette: '[{''color'': [251, 235, 162], ''count'': 20507}, {''color'': [254, 250,
-      168], ''count'': 33859}, {''color'': [234, 215, 144], ''count'': 2833}, {''color'':
-      [183, 173, 103], ''count'': 1280}, {''color'': [133, 67, 24], ''count'': 121}]'
+    palette: '[{''color'': [254, 238, 193], ''count'': 54006}, {''color'': [246, 218,
+      175], ''count'': 1799}, {''color'': [227, 198, 157], ''count'': 1775}, {''color'':
+      [123, 107, 70], ''count'': 679}, {''color'': [179, 151, 116], ''count'': 541}]'
   de: Michel Leiris (Auteur)
   ext: "Broch\xE9 \u2013 Grand livre, 17 f\xE9vrier 1988"
   image_path: thumbs/T_978-2070712809.jpg
@@ -6797,12 +6844,12 @@
   image_path: thumbs/T_978-2070719907.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - poche
+  - folio
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _1946
   title: "Le Mus\xE9e noir"
-  where: /saint-lazare-de-savene/salon/poche
+  where: /saint-lazare-de-savene/salon/folio
 978-2070724680:
   cover:
     palette: '[{''color'': [176, 173, 164], ''count'': 3927}, {''color'': [128, 123,
@@ -7863,7 +7910,7 @@
     palette: '[{''color'': [247, 241, 224], ''count'': 36946}, {''color'': [202, 183,
       143], ''count'': 4560}, {''color'': [144, 155, 138], ''count'': 13246}, {''color'':
       [149, 127, 89], ''count'': 6407}, {''color'': [90, 76, 52], ''count'': 3041}]'
-  de: "Dante Alighieri (Auteur), Jacqueline Risset (Pr\xE9face, Traduction)"
+  de: "Dante\\u00A0Alighieri (Auteur), Jacqueline Risset (Pr\xE9face, Traduction)"
   image_path: thumbs/T_978-2082115254.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -9712,10 +9759,11 @@
     palette: '[{''color'': [227, 213, 198], ''count'': 10205}, {''color'': [191, 172,
       159], ''count'': 2953}, {''color'': [212, 123, 114], ''count'': 36893}, {''color'':
       [136, 96, 89], ''count'': 3315}, {''color'': [73, 52, 48], ''count'': 3034}]'
-  de: "Pierre Dac, L\xE9opold Lavolaille, Nostrautobus, Jean Survot, G.K.W. van den\
-    \ Paraboum, Maurice Henry, Fernand Rauz\xE9na, Don Charl'os, Pr Jules Lem\xE8\
-    tre et son fr\xE8re L\xE9on, Jacques Allahune (Autore)"
+  de: Pierre Dac
   ext: "Copertina flessibile \u2013 1974"
+  ext_de: "L\xE9opold Lavolaille, Nostrautobus, Jean Survot, G.K.W. van den Paraboum,\
+    \ Maurice Henry, Fernand Rauz\xE9na, Don Charl'os, Pr Jules Lem\xE8tre et son\
+    \ fr\xE8re L\xE9on, Jacques Allahune (Autore)"
   image_path: thumbs/T_978-2253001553.jpg
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -10134,9 +10182,9 @@
   where: /saint-jean-lipion/chambre/enfer
 978-2263071683:
   cover:
-    palette: '[{''color'': [253, 253, 252], ''count'': 27609}, {''color'': [173, 173,
-      171], ''count'': 3383}, {''color'': [110, 109, 107], ''count'': 3562}, {''color'':
-      [23, 23, 23], ''count'': 14332}, {''color'': [52, 52, 51], ''count'': 15314}]'
+    palette: '[{''color'': [253, 253, 253], ''count'': 26512}, {''color'': [184, 185,
+      184], ''count'': 1343}, {''color'': [118, 118, 116], ''count'': 4104}, {''color'':
+      [57, 58, 56], ''count'': 14318}, {''color'': [30, 31, 30], ''count'': 17523}]'
   de: "Les Cahiers du football - Collectif (Auteur), Christian Gourcuff (Pr\xE9face)"
   ext: "Broch\xE9 \u2013 11 f\xE9vrier 2016"
   image_path: thumbs/T_978-2263071683.jpg
@@ -10146,7 +10194,7 @@
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _2016
-  title: Comment regarder un match de foot
+  title: Comment regarder un match de foot ?
   where: /saint-lazare-de-savene/chambre_paul/football
 978-2264005878:
   cover:
@@ -10668,7 +10716,7 @@
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   - _2005
-  title: "S\xE9ville 82 France-Allemagne le match du si\xE8cle"
+  title: "S\xE9ville 82 - France\u2011Allemagne : le match du si\xE8cle"
   where: /saint-jean-lipion/chambre-paul/football
 978-2352045939:
   cover:
@@ -11552,7 +11600,8 @@
     palette: '[{''color'': [253, 253, 253], ''count'': 53565}, {''color'': [232, 232,
       232], ''count'': 1259}, {''color'': [178, 178, 178], ''count'': 698}, {''color'':
       [6, 6, 6], ''count'': 5928}, {''color'': [83, 83, 83], ''count'': 350}]'
-  de: Marquis de Sade (Auteur), Annie Le Brun (Sous la direction de)
+  de: "Donatien Alphonse Fran\xE7ois de Sade (Auteur), Annie Le Brun (Sous la direction\
+    \ de)"
   ext: "\u0152uvres compl\xE8tes, tome 6 - Broch\xE9 \u2013 Grand livre, 28 f\xE9\
     vrier 1987"
   image_path: thumbs/T_978-2720202018.jpg
@@ -12220,7 +12269,7 @@
       114], ''count'': 7617}, {''color'': [177, 167, 159], ''count'': 10361}, {''color'':
       [220, 205, 199], ''count'': 13335}, {''color'': [248, 235, 233], ''count'':
       12717}]'
-  de: Etienne Liebig (Auteur)
+  de: "\xC9tienne Liebig (Auteur)"
   ext: "Broch\xE9 \u2013 23 f\xE9vrier 2007"
   image_path: thumbs/T_978-2842712693.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -12254,7 +12303,7 @@
     palette: '[{''color'': [255, 255, 254], ''count'': 60300}, {''color'': [238, 234,
       231], ''count'': 1460}, {''color'': [196, 181, 178], ''count'': 661}, {''color'':
       [142, 130, 120], ''count'': 955}, {''color'': [101, 75, 71], ''count'': 1624}]'
-  de: Etienne Liebig (Auteur)
+  de: "\xC9tienne Liebig (Auteur)"
   ext: "Broch\xE9 \u2013 Grand livre, 17 avril 2008"
   image_path: thumbs/T_978-2842713546.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -12314,7 +12363,7 @@
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   - _1997
-  title: Eloge de la masturbation
+  title: "\xC9loge de la masturbation"
   where: /saint-jean-lipion/chambre/enfer
 978-2843040528:
   cover:
@@ -13189,10 +13238,9 @@
   where: /saint-lazare-de-savene/couloir/tintin_etc
 978-2909031569:
   cover:
-    palette: '[{''color'': [81, 100, 109], ''count'': 9777}, {''color'': [31, 40,
-      51], ''count'': 26687}, {''color'': [253, 252, 252], ''count'': 7534}, {''color'':
-      [244, 229, 223], ''count'': 12023}, {''color'': [210, 203, 176], ''count'':
-      4979}]'
+    palette: '[{''color'': [200, 132, 94], ''count'': 9654}, {''color'': [154, 94,
+      76], ''count'': 10655}, {''color'': [235, 170, 105], ''count'': 14345}, {''color'':
+      [103, 77, 70], ''count'': 15309}, {''color'': [62, 54, 56], ''count'': 9437}]'
   de: Jean-Luc Hennig (Auteur)
   ext: "Broch\xE9 \u2013 18 novembre 2003"
   image_path: thumbs/T_978-2909031569.jpg
@@ -13333,7 +13381,7 @@
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   - _2008
-  title: "\"C'\xE9tait pas gagn\xE9\u2026\""
+  title: "\xAB C'\xE9tait pas gagn\xE9\u2026 \xBB"
   where: /saint-jean-lipion/chambre-paul/football
 978-2916400402:
   cover:
@@ -16568,6 +16616,7 @@
   image_path: thumbs/T_978-8817010320.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - philo
   - football
   - saint-jean-lipion
   - "\U0001F1EE\U0001F1F9"
@@ -18599,7 +18648,7 @@
     palette: '[{''color'': [199, 183, 204], ''count'': 41146}, {''color'': [220, 232,
       244], ''count'': 2512}, {''color'': [66, 68, 121], ''count'': 8163}, {''color'':
       [138, 136, 156], ''count'': 3625}, {''color'': [31, 29, 38], ''count'': 6154}]'
-  de: Bennett Alan (Autore)
+  de: Alan Bennett (Autore)
   ext: "Copertina flessibile \u2013 28 settembre 2011"
   image_path: thumbs/T_978-8845926266.jpg
   lan: "\U0001F1EE\U0001F1F9"
@@ -21281,22 +21330,6 @@ ASIN-B000NNBJZ4:
   - "\U0001F1EE\U0001F1F9"
   title: Canti
   where: /saint-lazare-de-savene/salon/_2
-ASIN-B0014LJ38Y:
-  cover:
-    palette: '[{''color'': [166, 155, 157], ''count'': 964}, {''color'': [222, 215,
-      218], ''count'': 1643}, {''color'': [248, 245, 244], ''count'': 56235}, {''color'':
-      [106, 95, 96], ''count'': 887}, {''color'': [32, 26, 28], ''count'': 471}]'
-  de: Elio Vittorini (Auteur), Michel Arnaud (Auteur)
-  ext: "(Du monde entier) Broch\xE9 \u2013 1 janvier 1980"
-  image_path: thumbs/T_ASIN-B0014LJ38Y.jpg
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - editor
-  - saint-lazare-de-savene
-  - "\U0001F1EB\U0001F1F7"
-  title: "L'o\u0153illet rouge"
-  url: https://www.amazon.fr/Loeillet-rouge-Du-monde-entier/dp/B0014LJ38Y
-  where: /saint-lazare-de-savene/salon/editor
 ASIN-B0014QGFG2:
   cover:
     palette: '[{''color'': [189, 112, 91], ''count'': 3882}, {''color'': [134, 59,
@@ -22031,22 +22064,6 @@ boh45:
   title: 'Decoration #32'
   url: https://milk.fr/milkdecoration
   where: /saint-lazare-de-savene/salon/arts_bis
-boh5:
-  ASIN: B08YXPPKVH
-  cover:
-    palette: '[{''color'': [252, 250, 245], ''count'': 13401}, {''color'': [225, 211,
-      193], ''count'': 10626}, {''color'': [155, 140, 99], ''count'': 3376}, {''color'':
-      [91, 81, 44], ''count'': 4452}, {''color'': [38, 63, 49], ''count'': 27745}]'
-  de: "L\xE9on Tolsto\xEF"
-  ext: "Biblioth\xE8que nrf de La Pl\xE9iade Reli\xE9 \u2013 1956"
-  image_path: thumbs/T_boh5.jpg
-  lan: "\U0001F1EB\U0001F1F7"
-  tags:
-  - lapleiade
-  - saint-jean-lipion
-  - "\U0001F1EB\U0001F1F7"
-  title: La Guerre et la Paix
-  where: /saint-jean-lipion/chambre/lapleiade
 boh50:
   cover:
     palette: '[{''color'': [74, 44, 22], ''count'': 14699}, {''color'': [176, 125,
@@ -22374,7 +22391,7 @@ ladivinacommedia_inferno:
     palette: '[{''color'': [96, 85, 66], ''count'': 241}, {''color'': [187, 157, 135],
       ''count'': 2392}, {''color'': [201, 186, 161], ''count'': 17147}, {''color'':
       [158, 125, 104], ''count'': 1519}, {''color'': [207, 197, 178], ''count'': 36501}]'
-  de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
+  de: Dante\u00A0Alighieri (Autore), Natalino Sapegno (a cura di)
   image_path: thumbs/T_ladivinacommedia_inferno.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:
@@ -22390,7 +22407,7 @@ ladivinacommedia_purgatorio:
     palette: '[{''color'': [205, 200, 190], ''count'': 20693}, {''color'': [192, 185,
       173], ''count'': 18227}, {''color'': [180, 171, 159], ''count'': 19196}, {''color'':
       [150, 134, 123], ''count'': 1407}, {''color'': [69, 65, 58], ''count'': 477}]'
-  de: Dante Alighieri (Autore), Natalino Sapegno (a cura di)
+  de: Dante\u00A0Alighieri (Autore), Natalino Sapegno (a cura di)
   image_path: thumbs/T_ladivinacommedia_purgatorio.jpg
   lan: "\U0001F1EE\U0001F1F9"
   tags:

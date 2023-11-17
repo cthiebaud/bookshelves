@@ -10,7 +10,6 @@ https://www.goodreads.com/book/isbn/810-4366120571
 https://www.goodreads.com/book/isbn/ASIN-B0007J1C9W
 https://www.goodreads.com/book/isbn/ASIN-B000KS30XG
 https://www.goodreads.com/book/isbn/ASIN-B000NNBJZ4
-https://www.goodreads.com/book/isbn/ASIN-B0014LJ38Y
 https://www.goodreads.com/book/isbn/ASIN-B0014QGFG2
 https://www.goodreads.com/book/isbn/ASIN-B00185DLIE
 https://www.goodreads.com/book/isbn/ASIN-B00340LFAM
@@ -52,7 +51,6 @@ https://www.goodreads.com/book/isbn/boh42
 https://www.goodreads.com/book/isbn/boh43
 https://www.goodreads.com/book/isbn/boh44
 https://www.goodreads.com/book/isbn/boh45
-https://www.goodreads.com/book/isbn/boh5
 https://www.goodreads.com/book/isbn/boh50
 https://www.goodreads.com/book/isbn/boh7
 https://www.goodreads.com/book/isbn/boh8
