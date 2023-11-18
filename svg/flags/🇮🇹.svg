@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 3 2">
-<rect width="1" height="2" fill="#009246"/>
-<rect width="1" height="2" x="1" fill="#fff"/>
-<rect width="1" height="2" x="2" fill="#ce2b37"/>
+<?xml version="1.0"?>
+<!-- 
+    https://commons.wikimedia.org/wiki/File:Flag_of_Italy.svg 
+    https://commons.wikimedia.org/wiki/File_talk:Flag_of_Italy.svg
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600">
+    <path d="m0,0h900v600H0" fill="#CE2B37" />
+    <path d="m0,0h600v600H0" fill="#F1F2F1" />
+    <path d="m0,0h300v600H0" fill="#009246" />
 </svg>
