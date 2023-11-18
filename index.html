@@ -68,8 +68,57 @@
             font-size: 24px;
         }
 
+        #howmuch #current.total {
+            text-shadow: 2px 2px lightgray;
+        }
+
+        /* https://css-tricks.com/how-to-create-neon-text-with-css/ */
+        .neonText {
+            color: #fff;
+            text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #0fa,
+                0 0 82px #0fa,
+                0 0 92px #0fa,
+                0 0 102px #0fa,
+                0 0 151px #0fa;
+            animation: flicker 1.6s infinite alternate;
+        }
+        /* Flickering animation */
+        @keyframes flicker {
+
+            0%,
+            18%,
+            22%,
+            25%,
+            53%,
+            57%,
+            100% {
+
+                text-shadow:
+                    0 0 4px #fff,
+                    0 0 11px #fff,
+                    0 0 19px #fff,
+                    0 0 40px #0fa,
+                    0 0 80px #0fa,
+                    0 0 90px #0fa,
+                    0 0 100px #0fa,
+                    0 0 150px #0fa;
+
+            }
+
+            20%,
+            24%,
+            55% {
+                text-shadow: none;
+            }
+        }
+
         #howmuch #percent {
-            font-size: 16px;
+            font-size: 14px;
+            font-weight: lighter;
         }
 
         #howmuch #circle_with_cross {
@@ -78,6 +127,10 @@
             visibility: hidden;
             border: none;
             padding: 0;
+        }
+
+        .cityName {
+            font-size: smaller;
         }
 
         #location .btn {
@@ -213,11 +266,11 @@
             z-index: -1;
         }
 
-        .titleBar {
+        .paletteBar {
             display: flex;
             border-bottom: .5px solid gray;
-            min-height: 6px;
-            margin: 0;
+            min-height: 0.333rem;
+            margin: 0 0 0.333rem 0;
             padding: 0;
         }
 
@@ -252,7 +305,7 @@
     <div id="container" class="container-md">
         <div id="howmuch" class="row align-items-center category animated-background">
             <div class="col-6 text-end">
-                <span id="current" class="font-monospace">&nbsp;</span>
+                <span id="current" class="badge neonText font-monospace" style="background-color: #010a01;">&nbsp;</span>
             </div>
             <div class="col-5">
                 <span id="percent" class="font-monospace">&nbsp;</span>
@@ -265,7 +318,7 @@
             <div class="col-6 text-end">
                 <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene"
                     style="margin-right: calc(var(--bs-btn-padding-x) * -1);">
-                    <span>San Lazzaro</span>
+                    <span class="cityName">San&nbsp;Lazzaro</span>
                     <span id="c-saint-lazare-de-savene" class="font-monospace">&nbsp;</span>
                     <!-- ⥣ -->
                 </a>
@@ -275,7 +328,7 @@
                     style="margin-left: calc(var(--bs-btn-padding-x) * -1);">
                     <!-- ⥥ -->
                     <span id="c-saint-jean-lipion" class="font-monospace">&nbsp;</span>
-                    <span>San Giovanni</span>
+                    <span class="cityName">San&nbsp;Giovanni</span>
                     <span class="sgl"></span>
                 </a>
             </div>
@@ -613,6 +666,11 @@
                 }
                 var s = Number(this.total / total_des_totaux).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 1 })
                 document.getElementById("current").innerHTML = `${this.total}`
+                if (total_des_totaux === this.total) {
+                    document.getElementById("current").classList.add('neonText')
+                } else {
+                    document.getElementById("current").classList.remove('neonText')
+                }
                 document.getElementById("howmuch").classList.remove("animated-background");
                 document.getElementById("percent").innerHTML = `${s}`
                 circle_with_cross.style.visibility = (this.total === total_des_totaux ? "hidden" : "visible")
@@ -879,8 +937,8 @@
             const titleSPAN = document.createElement("span")
             titleSPAN.appendChild(titleE)
             titleSPAN.style = "font-size:smaller;"
-            const titleBar = document.createElement("div")
-            titleBar.classList.add("titleBar")
+            const paletteBar = document.createElement("div")
+            paletteBar.classList.add("paletteBar")
 
             if (where.includes("lipion")) {
                 const float1 = document.createElement("span")
@@ -910,8 +968,8 @@
                     let color = document.createElement("div")
                     let bg = `rgb(${e.color})`
                     let width = 100 * (e.count / book.cover.paletteSize)
-                    color.style = `display:inline-block; height: 6px; width: ${width}%; background: ${bg}`
-                    titleBar.appendChild(color)
+                    color.style = `display:inline-block; heigt:100%; width: ${width}%; background: ${bg}`
+                    paletteBar.appendChild(color)
                 })
                 /*
                 const decimals = 0
@@ -961,14 +1019,15 @@ ${book.cover.palette_diversity.total.toFixed(0)}
                 spy.appendChild(text5)
             }
             figcaption.appendChild(authorE)
+            /* figcaption.appendChild(paletteBar) */
             figcaption.appendChild(document.createElement("br"))
             figcaption.appendChild(titleSPAN)
             if (false /*spy*/) {
                 figcaption.appendChild(spy)
             }
-            figcaption.appendChild(titleBar)
             fig.appendChild(img_link)
             fig.appendChild(figcaption)
+            fig.appendChild(paletteBar)
             figuresContainer.appendChild(fig)
         }
 
