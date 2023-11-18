@@ -218,15 +218,16 @@
 
 
         window.handleImageUpload = function () {
-            var input = document.getElementById('imageInput');
-            var img = document.getElementById('selectedImage');
+            var params = new URLSearchParams(window.location.search);
+            var imageUrl = params.get('image');
 
-            var reader = new FileReader();
+            if (imageUrl) {
+                var img = document.getElementById('selectedImage');
 
-            reader.onload = function (e) {
-                img.src = e.target.result;
+                img.src = imageUrl;
 
-                img.onload = function () {
+                // Wait for the image to fully load
+                img.addEventListener('load', function () {
                     // Get the pixel data from the image
                     var canvas = document.createElement('canvas');
                     var ctx = canvas.getContext('2d');
@@ -265,18 +266,20 @@
 
                     // Create 3D scatter plot
                     createRGBScatterPlot(rgbArray);
-                };
-            };
-
-            // Read the selected image file
-            reader.readAsDataURL(input.files[0]);
+                });
+            } else {
+                console.error("Image URL not provided in the query string.");
+            }
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Call handleImageUpload on document load
+            window.handleImageUpload();
+        });
     </script>
 </head>
 
 <body>
-    <input type="file" id="imageInput" onchange="handleImageUpload()">
-    <br>
     <img id="selectedImage" style="max-width: 300px; margin-top: 10px;">
 </body>
 
