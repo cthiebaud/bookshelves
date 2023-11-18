@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monochromatic Score</title>
     <!-- Include robust-regression library -->
-    <!-- Include robust-regression library -->
     <script type="module">
-         import regression from 'https://cdn.jsdelivr.net/npm/regression@latest/+esm'
+        import regression from 'https://cdn.jsdelivr.net/npm/regression@latest/+esm'
+        import * as d3 from 'https://cdn.skypack.dev/d3@7.0.0'
 
-         function rgbToLab(rgb) {
+        function rgbToLab(rgb) {
             // Convert RGB to Lab
             var r = rgb[0] / 255.0;
             var g = rgb[1] / 255.0;
@@ -73,17 +73,17 @@
             var xValues = labArray.map(point => point[0]);
             var yValues = labArray.map(point => point[1]);
 
-            // Fit a polynomial regression of degree 2 (you can change the degree)
+            // Fit a linear regression
             var result = regression.linear([xValues, yValues]);
 
-            // Access the coefficients of the polynomial
+            // Access the coefficients of the linear regression
             var coefficients = result.equation;
 
             // Use the coefficients as needed
 
             // Calculate the least squares error
-            var mse = meanSquaredError(rgbArray, coefficients);
-            
+            var mse = meanSquaredError(labArray, coefficients);
+
             // Define a threshold for monochromatic score
             var threshold = 0.0001;  // You may need to adjust this based on your specific use case
 
@@ -92,23 +92,29 @@
 
             console.log("Monochromatic Score:", monochromaticScore);
             console.log("Mean Squared Error:", mse);
+
+            // Return the results
+            return {
+                monochromaticScore: monochromaticScore,
+                mse: mse
+            };
         }
 
-        function meanSquaredError(rgbArray, predictedRgbArray) {
-            var sum = 0;
+        function meanSquaredError(labArray, coefficients) {
+            // Predicted y values based on linear regression
+            var predictedYValues = labArray.map(point => coefficients[0] + coefficients[1] * point[0]);
 
-            for (var i = 0; i < rgbArray.length; i++) {
-                var diff = Math.pow(rgbArray[i][0] - predictedRgbArray[i][0], 2) +
-                    Math.pow(rgbArray[i][1] - predictedRgbArray[i][1], 2) +
-                    Math.pow(rgbArray[i][2] - predictedRgbArray[i][2], 2);
-
-                sum += diff;
+            // Calculate mean squared error
+            var sumSquaredDifferences = 0;
+            for (var i = 0; i < labArray.length; i++) {
+                var diff = labArray[i][1] - predictedYValues[i];
+                sumSquaredDifferences += diff * diff;
             }
 
-            return sum / rgbArray.length;
+            return sumSquaredDifferences / labArray.length;
         }
 
-        window.handleImageUpload = function() {
+        window.handleImageUpload = function () {
             var input = document.getElementById('imageInput');
             var img = document.getElementById('selectedImage');
 
