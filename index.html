@@ -619,7 +619,8 @@
                 const flags = { fr: '🇫🇷', it: '🇮🇹', en: '🇬🇧', de: '🇩🇪', pt: '🇵🇹', sp: '🇪🇸' }
                 for (const [key, value] of Object.entries(flags)) {
                     const elem = document.getElementById(`c-${value}`)
-                    const isParentActive = elem.parentNode.classList.contains('active')
+                    const categoryElem = findParentWithClass(elem, "category")
+                    const isParentActive = categoryElem.classList.contains('active')
                     console.log(`Key: ${key}, Value: ${value} - ${this[key]}, ${isParentActive}`);
                     if (elem) {
                         if (this[key] || isParentActive || typeof categories.langage === 'undefined') {
@@ -723,20 +724,32 @@
             letters: undefined
         }
 
+        function findParentWithClass(element, className) {
+            let parent = element.parentNode;
+
+            while (parent && !parent.classList.contains(className)) {
+                parent = parent.parentNode;
+            }
+
+            return parent; // Returns the parent with the specified class or null if not found
+        }
+
         function selectOrUnselectTag(e) {
 
-            const id = e.currentTarget.id
-            const category = e.currentTarget.parentNode.id
-            // console.log(category)
-            const className = e.currentTarget.className
-            const tags = e.currentTarget.dataset.tags.split(' ')
+            const thisElem = e.currentTarget
+            const id = thisElem.id
+            const className = thisElem.className
+            const tags = thisElem.dataset.tags.split(' ')
+            const categoryElem = findParentWithClass(thisElem, "category")
+            const category = categoryElem.id
+            console.log(categoryElem.id)
 
             const allBtns = document.getElementsByClassName("btn")
             for (const btn of allBtns) {
                 if (btn.id === id) {
                     continue
                 }
-                if (btn.parentNode.id !== category) {
+                if (findParentWithClass(btn, "category").id !== category) {
                     continue
                 }
                 btn.classList.remove("active")
@@ -759,8 +772,8 @@
             }
 
             // *** BEGIN made by ChatGPT ***
-            function generateSelector(input) {
-                const rules = input.split(';').filter(line => line.trim() !== '')
+            function generateSelector(definedCategories) {
+                const rules = definedCategories.split(';').filter(line => line.trim() !== '')
                 const categories = rules.map(rule => rule.split(',').map(tag => `.${tag.trim()}`))
                 const combinations = cartesianProduct(...categories)
 
@@ -775,13 +788,13 @@
             }
             // *** END made by ChatGPT ***
 
-            const inputArray = Object.values(categories).filter(categoryValue => {
+            const definedCategoriesArray = Object.values(categories).filter(categoryValue => {
                 return categoryValue && categoryValue.length > 0 ? categoryValue : false
             })
 
-            let input = inputArray.join(";")
-            let selector = generateSelector(input)
-            console.log(categories, selector)
+            let definedCategories = definedCategoriesArray.join(";")
+            let selector = generateSelector(definedCategories)
+            // console.log(categories, selector)
 
             if (selector) {
                 const taggeds = document.querySelectorAll(selector)
