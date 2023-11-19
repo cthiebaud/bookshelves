@@ -8,67 +8,16 @@
     <!-- Include D3.js -->
     <script type="module">
         import * as d3 from 'https://cdn.skypack.dev/d3@7.0.0'
-
+        import colorSpace from 'https://cdn.jsdelivr.net/npm/color-space@latest/+esm'
         import regression from 'https://cdn.jsdelivr.net/npm/regression@latest/+esm'
 
-        function rgbToLab(rgb) {
-            // Convert RGB to Lab
-            var r = rgb[0] / 255.0;
-            var g = rgb[1] / 255.0;
-            var b = rgb[2] / 255.0;
 
-            r = r > 0.04045 ? Math.pow((r + 0.055) / 1.055, 2.4) : r / 12.92;
-            g = g > 0.04045 ? Math.pow((g + 0.055) / 1.055, 2.4) : g / 12.92;
-            b = b > 0.04045 ? Math.pow((b + 0.055) / 1.055, 2.4) : b / 12.92;
-
-            r *= 100.0;
-            g *= 100.0;
-            b *= 100.0;
-
-            var x = r * 0.4124564 + g * 0.3575761 + b * 0.1804375;
-            var y = r * 0.2126729 + g * 0.7151522 + b * 0.0721750;
-            var z = r * 0.0193339 + g * 0.1191920 + b * 0.9503041;
-
-            x = x / 95.047;
-            y = y / 100.000;
-            z = z / 108.883;
-
-            x = x > 0.008856 ? Math.pow(x, 1.0 / 3.0) : (903.3 * x + 16.0) / 116.0;
-            y = y > 0.008856 ? Math.pow(y, 1.0 / 3.0) : (903.3 * y + 16.0) / 116.0;
-            z = z > 0.008856 ? Math.pow(z, 1.0 / 3.0) : (903.3 * z + 16.0) / 116.0;
-
-            var l = (116.0 * y) - 16.0;
-            var a = (x - y) * 500.0;
-            var b = (y - z) * 200.0;
-
-            return [l, a, b];
-        }
-
-        function labToRgb(lab) {
-            // Convert Lab to RGB
-            var y = (lab[0] + 16.0) / 116.0;
-            var x = lab[1] / 500.0 + y;
-            var z = y - lab[2] / 200.0;
-
-            y = Math.pow(y, 3.0) > 0.008856 ? Math.pow(y, 3.0) : (y - 16.0 / 116.0) / 7.787;
-            x = Math.pow(x, 3.0) > 0.008856 ? Math.pow(x, 3.0) : (x - 16.0 / 116.0) / 7.787;
-            z = Math.pow(z, 3.0) > 0.008856 ? Math.pow(z, 3.0) : (z - 16.0 / 116.0) / 7.787;
-
-            var r = x * 95.047;
-            var g = y * 100.000;
-            var b = z * 108.883;
-
-            r = r > 0.0031308 ? (1.055 * Math.pow(r, 1.0 / 2.4) - 0.055) : r * 12.92;
-            g = g > 0.0031308 ? (1.055 * Math.pow(g, 1.0 / 2.4) - 0.055) : g * 12.92;
-            b = b > 0.0031308 ? (1.055 * Math.pow(b, 1.0 / 2.4) - 0.055) : b * 12.92;
-
-            return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
-        }
-
-        function computeMonochromaticScore(rgbArray) {
+        function computeMonochromaticScore(labArray) {
             // Apply weights to Lab channels
-            var labArray = rgbArray.map(rgb => rgbToLab(rgb));
-            labArray.forEach(lab => lab[0] *= 0.5);  // Lightness channel weight
+            // var labArray = rgbArray.map(rgb => colorSpace.rgb.lab(rgb));
+            // const lab = colorSpace.rgb.lab(color.color)
+
+            // labArray.forEach(lab => lab[0] *= 0.5);  // Lightness channel weight
 
             // Extract x and y values
             var xValues = labArray.map(point => point[0]);
@@ -181,6 +130,14 @@
                 .attr("transform",
                     "translate(" + margin.left + "," + margin.top + ")");
 
+            var scene = svg.append("scene")
+
+            scene.append("orthoviewpoint")
+                .attr("centerOfRotation", [5, 5, 5])
+                .attr("fieldOfView", [-5, -5, 15, 15])
+                .attr("orientation", [-0.5, 1, 0.2, 1.12 * Math.PI / 4])
+                .attr("position", [8, 4, 15])
+
             // X axis
             var x = d3.scaleLinear()
                 .domain([0, 255])
@@ -240,8 +197,9 @@
                     var labArray = [];
                     for (var i = 0; i < imageData.data.length; i += 4) {
                         var rgb = [imageData.data[i], imageData.data[i + 1], imageData.data[i + 2]];
-                        var lab = rgbToLab(rgb);
-                        labArray.push(lab[1]);  // Use only the 'a' channel for the histogram
+                        var lab = colorSpace.rgb.lab(rgb);
+
+                        labArray.push(lab[1]); // Use only the 'a' channel for the histogram
                     }
 
                     // Compute monochromatic score

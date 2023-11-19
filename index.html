@@ -912,8 +912,8 @@
             img.classList.add("img-fluid")
 
             const img_link = document.createElement("a")
-            img_link.target = "_image"
-            img_link.href = filterParam ? '/' : `/image.html?image=${book.image_path.replace('thumbs','thumbs2')}`// `/?f=${isbn}`
+            img_link.target = "_image" 
+            img_link.href = filterParam ? '/' : `/d3_3d/?image=/${book.image_path.replace('thumbs','thumbs2')}`// `/?f=${isbn}`
             img_link.appendChild(img)
 
             const figcaption = document.createElement("figcaption")
