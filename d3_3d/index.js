@@ -1,9 +1,9 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.8/+esm';
 import { _3d } from 'https://cdn.jsdelivr.net/npm/d3-3d@0.1.3/+esm';
 import colorSpace from 'https://cdn.jsdelivr.net/npm/color-space@latest/+esm'
-var origin = [480, 300],
+var origin = [300, 360],
   j = 10,
-  scale = 10,
+  scale = 12,
   scatter = [],
   yLine = [],
   xGrid = [],
@@ -12,7 +12,8 @@ var origin = [480, 300],
   key = function (d) {
     return d.id;
   },
-  startAngle = Math.PI / 6;
+  startAngle = Math.PI / 6,
+  startAngleY = 7*Math.PI / 4;
 var svg = d3
   .select("svg")
   .call(d3.drag().on("drag", dragged).on("start", dragStart).on("end", dragEnd))
@@ -23,7 +24,7 @@ var mx, my, mouseX, mouseY;
 var grid3d = _3d()
   .shape("GRID", 20)
   .origin(origin)
-  .rotateY(startAngle)
+  .rotateY(startAngleY)
   .rotateX(-startAngle)
   .scale(scale);
 
@@ -38,14 +39,14 @@ var point3d = _3d()
     return d.z;
   })
   .origin(origin)
-  .rotateY(startAngle)
+  .rotateY(startAngleY)
   .rotateX(-startAngle)
   .scale(scale);
 
 var yScale3d = _3d()
   .shape("LINE_STRIP")
   .origin(origin)
-  .rotateY(startAngle)
+  .rotateY(startAngleY)
   .rotateX(-startAngle)
   .scale(scale);
 
@@ -82,10 +83,11 @@ function processData(data, tt) {
     .transition()
     /* .duration(tt) */
     .attr("r", 2)
-    /* .attr("stroke", function (d) {
+    /*.attr("stroke", function (d) {
       return d3.color(color(d.id)).darker(3);
-    }) */
-    .attr("fill", "#69b3a2")
+    })*/
+    .attr("fill", d => d.color)
+    /* .style("fill", d => `#${d[0]}${d[1]}${d[2]}`) */
     .attr("opacity", 1)
     .attr("cx", posPointX)
     .attr("cy", posPointY);
@@ -108,7 +110,7 @@ function processData(data, tt) {
   yScale.exit().remove();
 
   /* ----------- y-Scale Text ----------- */
-
+  /*
   var yText = svg.selectAll("text.yText").data(data[2][0]);
 
   yText
@@ -131,7 +133,7 @@ function processData(data, tt) {
     });
 
   yText.exit().remove();
-
+  */
   d3.selectAll("._3d").sort(_3d().sort);
 }
 
@@ -197,62 +199,72 @@ init();
 */
 
 function normalize(value, fromSrc, toSrc, fromTarget, toTarget) {
-    // Ensure that the value is within the source range
-    value = Math.min(Math.max(value, fromSrc), toSrc);
+  // Ensure that the value is within the source range
+  // value = Math.min(Math.max(value, fromSrc), toSrc);
 
-    // Calculate the percentage of the value in the source range
-    const percentage = (value - fromSrc) / (toSrc - fromSrc);
+  // Calculate the percentage of the value in the source range
+  const percentage = (value - fromSrc) / (toSrc - fromSrc)
 
-    // Map the percentage to the target range and return the result
-    return fromTarget + percentage * (toTarget - fromTarget);
+  // Map the percentage to the target range and return the result
+  const normal =(fromTarget + percentage * (toTarget - fromTarget))
+  return normal // Math.round( normal * 10) / 10
 }
 
 window.handleImageUpload = function () {
-    var params = new URLSearchParams(window.location.search);
-    var imageUrl = params.get('image');
+  var params = new URLSearchParams(window.location.search);
+  var imageUrl = params.get('image');
 
-    if (imageUrl) {
-        var img = document.getElementById('selectedImage');
+  if (imageUrl) {
+    var img = document.getElementById('selectedImage');
 
-        img.src = imageUrl;
+    img.src = imageUrl;
 
-        // Wait for the image to fully load
-        img.addEventListener('load', function () {
-            // Get the pixel data from the image
-            var canvas = document.createElement('canvas');
-            var ctx = canvas.getContext('2d');
-            canvas.width = img.width;
-            canvas.height = img.height;
-            ctx.drawImage(img, 0, 0, img.width, img.height);
-            var imageData = ctx.getImageData(0, 0, img.width, img.height);
+    // Wait for the image to fully load
+    img.addEventListener('load', function () {
+      // Get the pixel data from the image
+      var canvas = document.createElement('canvas');
+      var ctx = canvas.getContext('2d');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx.drawImage(img, 0, 0, img.width, img.height);
+      var imageData = ctx.getImageData(0, 0, img.width, img.height);
 
-            // Convert pixel data to RGB then lab array
-            var rgbArray = [];
-            for (var i = 0; i < imageData.data.length; i += 4) {
-                var rgb = [imageData.data[i], imageData.data[i + 1], imageData.data[i + 2]];
-                // var lab = colorSpace.rgb.lab(rgb);
-                rgbArray.push(rgb);
-            }
+      // Convert pixel data to RGB then lab array
+      var rgbArray = [];
+      for (var i = 0; i < imageData.data.length; i += 4) {
+        var rgb = [imageData.data[i], imageData.data[i + 1], imageData.data[i + 2]];
+        // var lab = colorSpace.rgb.lab(rgb);
+        rgbArray.push(rgb);
+      }
 
-            let ii = 0;
-            scatter = rgbArray.map(rgb => {
-                return { 
-                    x: normalize(rgb[0], 0, 256, -j, j) ,
-                    y: normalize(rgb[1], 0, 256, -20, 0),
-                    z: normalize(rgb[2], 0, 256, -j, j), 
-                    id: `_${ii++}`}
-            })
+      const h = n => n.toString(16).padStart(2, '0')
 
-            // Create 3D scatter plot
-            /* createRGBScatterPlot(rgbArray); */
-            init(scatter);
-        });
-    } else {
-        console.error("Image URL not provided in the query string.");
-    }
+      let ii = 0;
+      const colors = []
+      scatter = rgbArray.map(rgb => {
+        const qwe = {
+          x: normalize(rgb[0], 0, 255, j-1, -j-1),
+          y: normalize(rgb[1], 0, 255, 1, -20),
+          z: normalize(rgb[2], 0, 255, -j, j),
+          id: `_${ii++}`,
+          color: `#${h(rgb[0])}${h(rgb[1])}${h(rgb[2])}`
+        }
+        colors.push(qwe.color)
+        return qwe
+      })
+      colors.sort()
+      console.log(colors)
+
+      // Create 3D scatter plot
+      /* createRGBScatterPlot(rgbArray); */
+      init(scatter);
+    });
+  } else {
+    console.error("Image URL not provided in the query string.");
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Call handleImageUpload on document load
-    window.handleImageUpload();
+  // Call handleImageUpload on document load
+  window.handleImageUpload();
 });

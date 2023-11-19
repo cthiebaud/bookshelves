@@ -169,8 +169,8 @@
                 .attr("cx", function (d) { return x(d[0]); })
                 .attr("cy", function (d) { return y(d[1]); })
                 .attr("cz", function (d) { return z(d[2]); })
-                .attr("r", 2)
-                .style("fill", "#69b3a2");
+                .attr("r", 3)
+                .style("fill", d => `#${d[0]}${d[1]}${d[2]}`);
         }
 
 

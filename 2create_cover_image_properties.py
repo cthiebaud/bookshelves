@@ -12,8 +12,6 @@ from sklearn.cluster import KMeans
 import warnings
 warnings.filterwarnings("ignore")
 
-monos = []
-
 # https://stackoverflow.com/a/59218331/1070215
 def calculate_monochrome(im):
 
@@ -74,45 +72,52 @@ def compute_monochromatic_score(original_image):
     # Load the image
     ## original_image = cv2.imread(image_path)
 
-    # Get the shape of the image
-    height, width, _ = original_image.shape
+    image_rgb = cv2.cvtColor(original_image, cv2.COLOR_BGR2RGB)
 
-    original_image_normalized = original_image / 255.0
+    # Get the shape of the image
+    height, width, _ = image_rgb.shape
+
+    original_image_normalized = image_rgb / 255.0
 
     # Reshape the image to a 1D array
     rgb_triplets = original_image_normalized.reshape((height * width, 3))
 
-    # Convert RGB to Lab
-    lab_triplets = np.array([rgb_to_lab(rgb) for rgb in rgb_triplets])
+    # Fit a plane using RANSAC
+    model = RANSACRegressor().fit(rgb_triplets, rgb_triplets)
 
-    # Apply weights to Lab channels
-    lab_triplets[:, 0] = (lab_triplets[:, 0] * 0.1).astype(np.uint8)  # Lightness channel weight
+    # Get the coefficients of the plane
+    plane_coefficients = model.estimator_.coef_
 
-    # Fit a straight line using RANSAC
-    model = RANSACRegressor().fit(lab_triplets, lab_triplets)
+    # Extract coefficients for the plane equation ax + by + cz + d = 0
+    a, b, c = plane_coefficients[:, -1]
+    d = model.estimator_.intercept_
+    # Convert to a JavaScript-friendly format
+    plane_coefficients_js = [float(a), float(b), float(c), float(d)]
 
-    # Fit a straight line to the Lab triplets
-    # model = LinearRegression().fit(lab_triplets, lab_triplets)
+    # Perform linear regression on 2D coordinates within the plane
+    plane_points_2d = rgb_triplets[:, :2]
+    linear_model_on_plane = LinearRegression().fit(plane_points_2d, rgb_triplets)
 
-    # Predict the Lab values on the line
-    predicted_lab = model.predict(lab_triplets)
+    # Get the coefficients of the line within the plane
+    line_coefficients = linear_model_on_plane.coef_
 
-    # Convert predicted Lab values back to RGB
-    predicted_rgb = np.array([lab_to_rgb(lab) for lab in predicted_lab])
+    # Extract coefficients for the line equation mx + ny + p = 0
+    m, n, p = line_coefficients[:, -1]
 
-    # Calculate the least squares error
-    mse = mean_squared_error(rgb_triplets, predicted_rgb)
+    # Convert to a JavaScript-friendly format
+    line_coefficients_js = [float(m), float(n), float(p)]    
 
-    # Define a threshold for monochromatic score
-    threshold = 0.0001  # You may need to adjust this based on your specific use case
+    # Predict the RGB values on the plane
+    predicted_rgb_on_plane = model.predict(rgb_triplets)
+    # Calculate the least squares error for the plane
+    mse_plane = mean_squared_error(rgb_triplets, predicted_rgb_on_plane)
 
-    monos.append(mse)
+    # Predict the RGB values on the line within the plane
+    predicted_rgb_on_line = linear_model_on_plane.predict(plane_points_2d)
+    # Calculate the least squares error for the line within the plane
+    mse_line_within_plane = mean_squared_error(rgb_triplets, predicted_rgb_on_line)
 
-    # Determine the monochromatic score
-    monochromatic_score = "Monochromatic" if mse < threshold else "Colorful"
-
-    return monochromatic_score, mse
-
+    return mse_plane, plane_coefficients_js, mse_line_within_plane, line_coefficients_js
 
 def calculate_dominant_colors(image, k=5):
     # Read the image
@@ -160,8 +165,11 @@ def calc_image_properties(image_path):
     image = cv2.imread(image_path)
 
     if True:
-        monochromatic_score, mean_squared_error = compute_monochromatic_score( image.copy())
-        properties["monochromatic_mean_squared_error"] = f"{mean_squared_error}"
+        mse_plane, plane_coefficients, mse_line_within_plane, line_coefficients = compute_monochromatic_score( image.copy())
+        properties["mse_plane"] = f"{mse_plane}"
+        properties["plane_coefficients"] = f"{plane_coefficients}"
+        properties["mse_line_within_plane"] = f"{mse_line_within_plane}"
+        properties["line_coefficients"] = f"{line_coefficients}"
 
     if True:
         dom = calculate_dominant_colors(image.copy(), 5) ## 
@@ -209,6 +217,3 @@ for ext in extensions:
 
 with open('_colors.json', 'w') as fp:
     json.dump(colors_dictionnary, fp, indent=2)
-
-print(f"mse: min {min(monos)} max {max(monos)}")
-
