@@ -164,7 +164,7 @@ def calc_image_properties(image_path):
     # Read the image
     image = cv2.imread(image_path)
 
-    if True:
+    if False:
         mse_plane, plane_coefficients, mse_line_within_plane, line_coefficients = compute_monochromatic_score( image.copy())
         properties["mse_plane"] = f"{mse_plane}"
         properties["plane_coefficients"] = f"{plane_coefficients}"

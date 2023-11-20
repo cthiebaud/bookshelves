@@ -34,8 +34,8 @@ width = 256
 height = 256
 
 # Set the start and end colors (RGB format)
-start_color = (255, 0, 0)  # Red
-end_color = (0, 0, 255)    # Blue
+end_color = (0, 0, 0)  
+start_color = (255, 255, 255) 
 
 # Create the gradient image
 gradient_image = create_gradient_image(width, height, start_color, end_color)
