@@ -1,34 +1,48 @@
+from collections import namedtuple
 from PIL import Image, ImageDraw
 
-def create_gradient_image(width, height, start_color, end_color, direction):
+Colors = namedtuple('Colors', ['black', 'red', 'green', 'blue', 'yellow', 'magenta', 'cyan', 'white'])
+
+def lerp(start, end, t):
+    return tuple(int(start[i] + t * (end[i] - start[i])) for i in range(3))
+
+def create_gradient_face(width, height, colors):
     image = Image.new("RGB", (width, height))
     draw = ImageDraw.Draw(image)
 
-    for i in range(height):
-        r = int(start_color[0] + (i / height) * (end_color[0] - start_color[0]))
-        g = int(start_color[1] + (i / height) * (end_color[1] - start_color[1]))
-        b = int(start_color[2] + (i / height) * (end_color[2] - start_color[2]))
+    for y in range(height):
+        for x in range(width):
+            t_x = x / width
+            t_y = y / height
 
-        if direction == 'horizontal':
-            draw.line([(0, i), (width, i)], fill=(r, g, b))
-        elif direction == 'vertical':
-            draw.line([(i, 0), (i, height)], fill=(r, g, b))
+            top_color = lerp(colors[0], colors[1], t_x)
+            bottom_color = lerp(colors[2], colors[3], t_x)
+            pixel_color = lerp(top_color, bottom_color, t_y)
+
+            draw.point((x, y), fill=pixel_color)
 
     return image
 
 def main():
     width, height = 256, 256
-    colors = [
-        ((255, 0, 0), (255, 255, 0)),  # Red to Yellow (Top Face)
-        ((0, 255, 0), (255, 255, 0)),  # Green to Yellow (Front Face)
-        ((0, 0, 255), (255, 0, 255)),  # Blue to Magenta (Right Face)
-        ((255, 255, 0), (255, 0, 0)),  # Yellow to Red (Bottom Face)
-        ((0, 255, 255), (0, 255, 0)),  # Cyan to Green (Back Face)
-        ((255, 0, 255), (0, 0, 255)),  # Magenta to Blue (Left Face)
+
+    colors = Colors(
+        black=(0, 0, 0),
+        red=(255, 0, 0),
+        green=(0, 255, 0),
+        blue=(0, 0, 255),
+        yellow=(255, 255, 0),
+        magenta=(255, 0, 255),
+        cyan=(0, 255, 255),
+        white=(255, 255, 255),
+    )
+
+    combinations = [
+        (colors.green, colors.black, colors.yellow, colors.red),
     ]
 
-    for i, (start_color, end_color) in enumerate(colors):
-        image = create_gradient_image(width, height, start_color, end_color, 'horizontal')
+    for i, combination in enumerate(combinations):
+        image = create_gradient_face(width, height, combination)
         image.save(f"gradient_face_{i + 1}.png")
 
 if __name__ == "__main__":
