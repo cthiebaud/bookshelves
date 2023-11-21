@@ -2,7 +2,10 @@ import colorSpace from 'https://cdn.jsdelivr.net/npm/color-space@latest/+esm'
 
 function scatterFromRGBArray(rgbArray, shape, j = 10) {
     let cnt = 0
-    const scatter = rgbArray.map(rgb => {
+    const scatter = rgbArray.filter(rgb => (
+        (rgb[0] !== 0 && rgb[1] !== 0 && rgb[2] !== 0) ||
+        (rgb[0] !== 255 && rgb[1] !== 255 && rgb[2] !== 255)
+    )).map(rgb => {
         // Convert RGB to HSL
         const hslColor = colorSpace.rgb.hsl(rgb)
         const h = hslColor[0]; // 0...360
