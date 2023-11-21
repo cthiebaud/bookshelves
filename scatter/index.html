@@ -1,49 +1,72 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Image Scatter Plot</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>3D Scatter Plot from Image</title>
 </head>
-
 <body>
-  <div class="container-md text-center">
 
-    <img id="selectedImage" style="display: inline-block;">
+<div id="scatter-plot"></div>
 
-    <svg style="display: inline-block; width: 640px; height: 640px;"></svg>
-  </div>
-  <script type="module">
-    import handleImageUpload from './index.js'
+<script>
+    // Function to load the image and create 3D scatter plot
+    function createScatterPlotFromImage(imagePath) {
+        var img = new Image();
 
-    // Get parameters from the query string
-    const urlParams = new URLSearchParams(window.location.search);
-    const imageParameter = urlParams.get('image') || "/every_rgb_pixel.png";
-    const typeParameter = urlParams.get('type') || "rgb";
-    const shapeParameter = urlParams.get('shape') || "cone";
-    // Check if the 'type' parameter is valid, fallback to 'rgb' if not specified or invalid
-    const validTypes = ['rgb', 'hsl'];
-    const typeToLoad = validTypes.includes(typeParameter) ? typeParameter : 'rgb';
+        img.onload = function() {
+            var canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            var ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, img.width, img.height);
 
-    // Function to dynamically load and execute the JavaScript module
-    function loadAndExecuteModule(type, image, shape) {
-      import(`./${type}.js`)
-        .then((module) => {
-          handleImageUpload(image, module.default, shape)
-        })
-        .catch(error => {
-          console.error(`Error importing or executing module: ${error}`);
-        });
+            var data = [];
+
+            for (var y = 0; y < img.height; y++) {
+                for (var x = 0; x < img.width; x++) {
+                    var pixel = ctx.getImageData(x, y, 1, 1).data;
+                    data.push({
+                        x: pixel[0],  // Red component as x
+                        y: pixel[1],  // Green component as y
+                        z: pixel[2],  // Blue component as z
+                        mode: 'markers',
+                        type: 'scatter3d',
+                        marker: {
+                            size: 5,
+                            color: `rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`
+                        }
+                    });
+                }
+            }
+
+            var layout = {
+                scene: {
+                    xaxis: { title: 'Red' },
+                    yaxis: { title: 'Green' },
+                    zaxis: { title: 'Blue' }
+                }
+            };
+
+            Plotly.newPlot('scatter-plot', data, layout);
+        };
+
+        img.src = imagePath;
     }
 
-    // Wait for DOMContentLoaded event
-    document.addEventListener('DOMContentLoaded', () => {
-      // Load and execute the appropriate JavaScript module based on the 'type' parameter
-      loadAndExecuteModule(typeToLoad, imageParameter, shapeParameter);
-    });
-  </script>
-</body>
+    // Get the image path from the query string using URLSearchParams
+    var queryParams = new URLSearchParams(window.location.search);
+    var imagePathFromQueryString = queryParams.get('image');
 
+    if (imagePathFromQueryString) {
+        // Call the function with the image path from the query string
+        createScatterPlotFromImage(imagePathFromQueryString);
+    } else {
+        console.error('Image path not provided in the query string.');
+    }
+</script>
+
+</body>
 </html>
