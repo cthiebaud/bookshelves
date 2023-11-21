@@ -106,10 +106,12 @@
     // Get the image path from the query string using URLSearchParams
     const queryParams = new URLSearchParams(window.location.search);
     const imagePathFromQueryString = queryParams.get('image');
+    const widthFromQueryString = parseInt(queryParams.get('width'));
+    const heightFromQueryString = parseInt(queryParams.get('height'));
 
     if (imagePathFromQueryString) {
         // Call the function with the image path
-        createScatterPlotFromImage(imagePathFromQueryString);
+        createScatterPlotFromImage(imagePathFromQueryString, widthFromQueryString, heightFromQueryString);
     } else {
         console.error('Image path not provided in the query string.');
     }
