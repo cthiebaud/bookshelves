@@ -10,7 +10,7 @@ let origin = [320, 480],
     yLine = [],
     xGrid = [],
     key = (d) => d.id,
-    startAngle = Math.PI / 4,
+    startAngle = Math.PI / 6,
     startAngleY = Math.PI / 4
 
 let svg = d3
@@ -152,7 +152,7 @@ function handleImageUpload(image, scatterFn, shape) {
         }
 
         img.addEventListener('load', () => {
-            setTimeout(afterImageLoaded, 10)
+            setTimeout(afterImageLoaded, 100)
         })
 
     } else {
