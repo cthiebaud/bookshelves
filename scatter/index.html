@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image Scatter Plot</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-md text-center">
+
+    <img id="selectedImage" style="display: inline-block;">
+
+    <svg style="display: inline-block; width: 640px; height: 640px;"></svg>
+  </div>
+  <script type="module">
+    import handleImageUpload from './index.js'
+
+    // Get parameters from the query string
+    const urlParams = new URLSearchParams(window.location.search);
+    const imageParameter = urlParams.get('image') || "/every_rgb_pixel.png";
+    const typeParameter = urlParams.get('type') || "rgb";
+    const shapeParameter = urlParams.get('shape') || "cone";
+    // Check if the 'type' parameter is valid, fallback to 'rgb' if not specified or invalid
+    const validTypes = ['rgb', 'hsl'];
+    const typeToLoad = validTypes.includes(typeParameter) ? typeParameter : 'rgb';
+
+    // Function to dynamically load and execute the JavaScript module
+    function loadAndExecuteModule(type, image, shape) {
+      import(`./${type}.js`)
+        .then((module) => {
+          handleImageUpload(image, module.default, shape)
+        })
+        .catch(error => {
+          console.error(`Error importing or executing module: ${error}`);
+        });
+    }
+
+    // Wait for DOMContentLoaded event
+    document.addEventListener('DOMContentLoaded', () => {
+      // Load and execute the appropriate JavaScript module based on the 'type' parameter
+      loadAndExecuteModule(typeToLoad, imageParameter, shapeParameter);
+    });
+  </script>
+</body>
+
+</html>
