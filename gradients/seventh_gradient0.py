@@ -22,7 +22,7 @@ for i in range(1, len(images)):
 # Create the concatenated image
 total_width = images[0].width * len(images)
 total_height = 3*images[0].height
-concatenated_image = Image.new('RGB', (total_width, total_height))
+concatenated_image = Image.new('RGB', (total_width, total_height), color='white')
 
 # Paste each image in the correct position
 left = 0
