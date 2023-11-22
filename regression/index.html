@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Multiple Linear Regression with Plotly</title>
+</head>
+<body>
+
+<div id="scatter-plot"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+
+<script>
+// Generate sample data
+function generateData() {
+    const nSamples = 100;
+    const X1 = Array.from({ length: nSamples }, () => Math.random());
+    const X2 = Array.from({ length: nSamples }, () => Math.random());
+    const Y = X1.map((x1, i) => 2 * x1 + 3 * X2[i] + 0.5 * Math.random());
+
+    return { X1, X2, Y };
+}
+
+// Fit the model
+function fitModel(X1, X2, Y) {
+    const X = X1.map((x1, i) => [x1, X2[i]]);
+    const model = new MLR(X, Y);
+
+    return model;
+}
+
+// Create a meshgrid for the plane
+function createMeshgrid(X1, X2, model) {
+    const nPoints = 10;
+    const X1_plane = linspace(X1, nPoints);
+    const X2_plane = linspace(X2, nPoints);
+
+    const meshgrid = [];
+    for (let i = 0; i < nPoints; i++) {
+        for (let j = 0; j < nPoints; j++) {
+            meshgrid.push([X1_plane[i], X2_plane[j]]);
+        }
+    }
+
+    const Y_plane = meshgrid.map(point => model.predict(point));
+
+    return { X1_plane, X2_plane, Y_plane };
+}
+
+// Plot the scatter plot and regression plane using Plotly
+function plotDataAndPlane(data, meshgrid) {
+    const scatterPlot = {
+        x: data.X1,
+        y: data.X2,
+        z: data.Y,
+        mode: 'markers',
+        type: 'scatter3d',
+        marker: { size: 5, color: 'red' },
+        name: 'Data Points'
+    };
+
+    const regressionPlane = {
+        x: meshgrid.X1_plane,
+        y: meshgrid.X2_plane,
+        z: meshgrid.Y_plane,
+        type: 'surface',
+        opacity: 0.5,
+        contours: {
+            z: {
+                show: true,
+                usecolormap: true,
+                highlightcolor: "#42f462",
+                project: { z: true }
+            }
+        },
+        colorscale: 'Viridis',
+        name: 'Regression Plane'
+    };
+
+    const layout = {
+        scene: {
+            xaxis: { title: 'X1' },
+            yaxis: { title: 'X2' },
+            zaxis: { title: 'Y' }
+        }
+    };
+
+    Plotly.newPlot('scatter-plot', [scatterPlot, regressionPlane], layout);
+}
+
+// Utility function to create a linspace array
+function linspace(start, n) {
+    const step = (start[1] - start[0]) / (n - 1);
+    return Array.from({ length: n }, (_, i) => start[0] + i * step);
+}
+
+// Multiple Linear Regression class
+class MLR {
+    constructor(X, Y) {
+        this.X = X;
+        this.Y = Y;
+        this.coefficients = this.fit();
+    }
+
+    fit() {
+        const Xt = math.transpose(this.X);
+        const XtX = math.multiply(Xt, this.X);
+        const XtY = math.multiply(Xt, this.Y);
+
+        const coefficients = math.multiply(math.inv(XtX), XtY);
+        return coefficients.valueOf();
+    }
+
+    predict(X) {
+        return math.chain(X).multiply(this.coefficients).sum().done();
+    }
+}
+
+
+// Main script
+const data = generateData();
+const model = fitModel(data.X1, data.X2, data.Y);
+const meshgrid = createMeshgrid(data.X1, data.X2, model);
+plotDataAndPlane(data, meshgrid);
+</script>
+
+</body>
+</html>
