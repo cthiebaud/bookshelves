@@ -27,7 +27,30 @@ def perform_regression():
     # Get coefficients
     coefficients = {'intercept': model.intercept_, 'coef_X1': model.coef_[0], 'coef_X2': model.coef_[1]}
 
-    return jsonify(coefficients)
+    # Predict Y values
+    Y_pred = model.predict(X)
+
+    # Calculate residuals
+    residuals = Y - Y_pred
+
+    # Calculate standard deviation of residuals
+    std_dev_residuals = np.std(residuals)
+
+    # Create a meshgrid for the plane
+    n_points = 10
+    X1_plane = np.linspace(min(X1), max(X1), n_points)
+    X2_plane = np.linspace(min(X2), max(X2), n_points)
+    X1_plane, X2_plane = np.meshgrid(X1_plane, X2_plane)
+    Y_plane = coefficients['intercept'] + coefficients['coef_X1'] * X1_plane + coefficients['coef_X2'] * X2_plane
+
+    # Prepare results to send back to the frontend
+    results = {
+        'coefficients': coefficients,
+        'meshgrid': {'X1': X1_plane.tolist(), 'X2': X2_plane.tolist(), 'Y': Y_plane.tolist()},
+        'std_dev_residuals': std_dev_residuals
+    }
+
+    return jsonify(results)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -10,13 +10,14 @@
 <body>
 
 <div id="scatter-plot"></div>
+<div id="std-dev-residuals"></div>
 
 <script>
 // Function to perform regression and update the plot
 function performRegression() {
     const X1 = Array.from({ length: 100 }, () => Math.random());
     const X2 = Array.from({ length: 100 }, () => Math.random());
-    const Y = X1.map((x1, i) => 2 * x1 + 3 * X2[i] + /* 0.5 * */ 3 * Math.random());
+    const Y = X1.map((x1, i) => 2 * x1 + 3 * X2[i] + 0.5 * Math.random());
 
     // Perform regression on the server
     fetch('/perform_regression', {
@@ -27,15 +28,16 @@ function performRegression() {
         body: JSON.stringify({ X1, X2, Y }),
     })
     .then(response => response.json())
-    .then(coefficients => {
+    .then(results => {
         // Display the results
-        plotResults(X1, X2, Y, coefficients);
+        plotResults(X1, X2, Y, results);
+        displayStdDevResiduals(results.std_dev_residuals);
     })
     .catch(error => console.error('Error:', error));
 }
 
 // Function to plot the scatter plot and regression plane
-function plotResults(X1, X2, Y, coefficients) {
+function plotResults(X1, X2, Y, results) {
     const scatterPlot = {
         x: X1,
         y: X2,
@@ -46,24 +48,10 @@ function plotResults(X1, X2, Y, coefficients) {
         name: 'Data Points'
     };
 
-    // Create meshgrid
-    const nPoints = 10;
-    const X1_plane = linspace(Math.min(...X1), Math.max(...X1), nPoints);
-    const X2_plane = linspace(Math.min(...X2), Math.max(...X2), nPoints);
-
-    const meshgrid = [];
-    for (let i = 0; i < nPoints; i++) {
-        for (let j = 0; j < nPoints; j++) {
-            meshgrid.push([X1_plane[i], X2_plane[j]]);
-        }
-    }
-
-    const Y_plane = meshgrid.map(point => coefficients.intercept + coefficients.coef_X1 * point[0] + coefficients.coef_X2 * point[1]);
-
     const regressionPlane = {
-        x: X1_plane,
-        y: X2_plane,
-        z: math.reshape(Y_plane, [nPoints, nPoints]),
+        x: results.meshgrid.X1,
+        y: results.meshgrid.X2,
+        z: results.meshgrid.Y,
         type: 'surface',
         opacity: 0.5,
         contours: {
@@ -89,12 +77,10 @@ function plotResults(X1, X2, Y, coefficients) {
     Plotly.newPlot('scatter-plot', [scatterPlot, regressionPlane], layout);
 }
 
-// Utility function to create a linspace array
-function linspace(start, end, n) {
-    const step = (end - start) / (n - 1);
-    return Array.from({ length: n }, (_, i) => start + i * step);
+// Function to display standard deviation of residuals
+function displayStdDevResiduals(stdDevResiduals) {
+    document.getElementById('std-dev-residuals').innerText = `Standard Deviation of Residuals: ${stdDevResiduals.toFixed(4)}`;
 }
-
 
 // Perform regression on page load
 performRegression();
