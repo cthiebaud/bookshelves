@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,84 +8,98 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
     <title>Multiple Linear Regression with Plotly</title>
 </head>
+
 <body>
 
-<div id="scatter-plot"></div>
-<div id="std-dev-residuals"></div>
+    <div id="scatter-plot"></div>
+    <div id="std-dev-residuals"></div>
 
-<script>
-// Function to perform regression and update the plot
-function performRegression() {
-    const X1 = Array.from({ length: 100 }, () => Math.random());
-    const X2 = Array.from({ length: 100 }, () => Math.random());
-    const Y = X1.map((x1, i) => 2 * x1 + 3 * X2[i] + 0.5 * Math.random());
+    <script>
+        window.N = (value, fromSrc, toSrc, fromTarget, toTarget) => {
+            // Calculate the percentage of the value in the source range
+            const percentage = (value - fromSrc) / (toSrc - fromSrc)
 
-    // Perform regression on the server
-    fetch('/perform_regression', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ X1, X2, Y }),
-    })
-    .then(response => response.json())
-    .then(results => {
-        // Display the results
-        plotResults(X1, X2, Y, results);
-        displayStdDevResiduals(results.std_dev_residuals);
-    })
-    .catch(error => console.error('Error:', error));
-}
-
-// Function to plot the scatter plot and regression plane
-function plotResults(X1, X2, Y, results) {
-    const scatterPlot = {
-        x: X1,
-        y: X2,
-        z: Y,
-        mode: 'markers',
-        type: 'scatter3d',
-        marker: { size: 5, color: 'red' },
-        name: 'Data Points'
-    };
-
-    const regressionPlane = {
-        x: results.meshgrid.X1,
-        y: results.meshgrid.X2,
-        z: results.meshgrid.Y,
-        type: 'surface',
-        opacity: 0.5,
-        contours: {
-            z: {
-                show: true,
-                usecolormap: true,
-                highlightcolor: "#42f462",
-                project: { z: true }
-            }
-        },
-        colorscale: 'Viridis',
-        name: 'Regression Plane'
-    };
-
-    const layout = {
-        scene: {
-            xaxis: { title: 'X1' },
-            yaxis: { title: 'X2' },
-            zaxis: { title: 'Y' }
+            // Map the percentage to the target range and return the result
+            const normalized = (fromTarget + percentage * (toTarget - fromTarget))
+            return normalized // Math.round( normal * 10) / 10
         }
-    };
 
-    Plotly.newPlot('scatter-plot', [scatterPlot, regressionPlane], layout);
-}
+        // Function to perform regression and update the plot
+        function performRegression() {
+            const X1 = Array.from({ length: 100 }, () => Math.random());
+            let i = 0
+            const X2 = Array.from({ length: 100 }, () => {
+                return N(Math.random(), 0, 1, 0, .1)
+            }/* 0 */);
+            const Y = X1.map((x1, i) => 2 * x1 + 3 * X2[i] + Math.random());
 
-// Function to display standard deviation of residuals
-function displayStdDevResiduals(stdDevResiduals) {
-    document.getElementById('std-dev-residuals').innerText = `Standard Deviation of Residuals: ${stdDevResiduals.toFixed(4)}`;
-}
+            // Perform regression on the server
+            fetch('/perform_regression', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ X1, X2, Y }),
+            })
+                .then(response => response.json())
+                .then(results => {
+                    // Display the results
+                    plotResults(X1, X2, Y, results);
+                    displayStdDevResiduals(results.std_dev_residuals);
+                })
+                .catch(error => console.error('Error:', error));
+        }
 
-// Perform regression on page load
-performRegression();
-</script>
+        // Function to plot the scatter plot and regression plane
+        function plotResults(X1, X2, Y, results) {
+            const scatterPlot = {
+                x: X1,
+                y: X2,
+                z: Y,
+                mode: 'markers',
+                type: 'scatter3d',
+                marker: { size: 5, color: 'red' },
+                name: 'Data Points'
+            };
+
+            const regressionPlane = {
+                x: results.meshgrid.X1,
+                y: results.meshgrid.X2,
+                z: results.meshgrid.Y,
+                type: 'surface',
+                opacity: 0.5,
+                contours: {
+                    z: {
+                        show: true,
+                        usecolormap: true,
+                        highlightcolor: "#42f462",
+                        project: { z: true }
+                    }
+                },
+                colorscale: 'Viridis',
+                name: 'Regression Plane'
+            };
+
+            const layout = {
+                scene: {
+                    xaxis: { title: 'X1' },
+                    yaxis: { title: 'X2' },
+                    zaxis: { title: 'Y' }
+                }
+            };
+
+            Plotly.newPlot('scatter-plot', [scatterPlot, regressionPlane], layout);
+        }
+
+        // Function to display standard deviation of residuals
+        function displayStdDevResiduals(stdDevResiduals) {
+            document.getElementById('std-dev-residuals').innerText = `Standard Deviation of Residuals: ${stdDevResiduals.toFixed(4)}`;
+        }
+
+        // Perform regression on page load
+        performRegression();
+    </script>
 
 </body>
+
 </html>

@@ -1,8 +1,11 @@
+from sklearn.preprocessing import StandardScaler
 from flask import Flask, jsonify, render_template, request
 import numpy as np
 from sklearn.linear_model import LinearRegression
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def index():
@@ -43,14 +46,28 @@ def perform_regression():
     X1_plane, X2_plane = np.meshgrid(X1_plane, X2_plane)
     Y_plane = coefficients['intercept'] + coefficients['coef_X1'] * X1_plane + coefficients['coef_X2'] * X2_plane
 
+    # Coerce z-coordinates onto the regression plane
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+
+    # Calculate coerced z-coordinates for the second scatter plot
+    Z_coerced_second = coefficients['intercept'] + coefficients['coef_X1'] * X_scaled[:, 0] + coefficients['coef_X2'] * X_scaled[:, 1]
+
+    # Reshape coerced z-coordinates for the second scatter plot
+    Z_coerced_second = np.array(Z_coerced_second).reshape(np.array(Y).shape)
+
+
     # Prepare results to send back to the frontend
     results = {
         'coefficients': coefficients,
         'meshgrid': {'X1': X1_plane.tolist(), 'X2': X2_plane.tolist(), 'Y': Y_plane.tolist()},
-        'std_dev_residuals': std_dev_residuals
+        'std_dev_residuals': std_dev_residuals,
+        'coercedZ_second': Z_coerced_second.tolist()  # Add coerced z-coordinates for the second scatter plot to results
     }
 
+    # Return results to the frontend
     return jsonify(results)
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='localhost', port=4321)
