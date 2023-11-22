@@ -119,11 +119,19 @@
 
                         const layout = {
                             scene: {
-                                xaxis: { title: 'Red', range: [0, 255] },
-                                yaxis: { title: 'Green', range: [0, 255] },
-                                zaxis: { title: 'Blue', range: [0, 255] }
+                                xaxis: { title: 'Red' },
+                                yaxis: { title: 'Green'},
+                                zaxis: { title: 'Blue'}
                             }
                         };
+
+                        const object = layout.scene
+                        for (const property in object) {
+                            object[property].range = [0, 255]
+                            object[property]["tickvals"] = [ 0, 63, 127, 191, 255],
+                            object[property]["ticktext"] = [ '00', '3F', '7F', 'BF', 'FF'],
+                            console.log(`${property}:`,object[property]);
+                        }
 
                         // Display the 3D scatter plot
                         Plotly.newPlot('scatter-plot', data, layout).then(function () {
