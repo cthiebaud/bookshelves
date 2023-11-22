@@ -17,8 +17,9 @@ function generateData() {
     const nSamples = 100;
     const X1 = Array.from({ length: nSamples }, () => Math.random());
     const X2 = Array.from({ length: nSamples }, () => Math.random());
-    const Y = X1.map((x1, i) => 2 * x1 + 3 * X2[i] + 0.5 * Math.random());
-
+    const Y = X1.map((x1, i) => 2 * x1 + 3 * X2[i] + /*0.5 **/3* Math.random());
+    // const Y = Array.from({ length: nSamples }, () => Math.random());
+    
     return { X1, X2, Y };
 }
 
