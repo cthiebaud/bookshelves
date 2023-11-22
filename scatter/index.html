@@ -86,9 +86,9 @@
                             mode: 'markers',
                             type: 'scatter3d',
                             marker: {
-                                size: 5,
+                                size: 4,
                                 color: [],  // Array to store colors for each point
-                                opacity: 0.5,  // Set opacity for every point
+                                opacity: 0.80,  // Set opacity for every point
                                 colorscale: 'Viridis'
                             },
                             hoverinfo: 'none'  // Disable tooltips
@@ -156,7 +156,6 @@
 
         if (imagePathFromQueryString) {
             // Call the function with the image path
-            console.log("ARGHH!")
             createScatterPlotFromImage(imagePathFromQueryString, widthFromQueryString, heightFromQueryString);
         } else {
             console.error('Image path not provided in the query string.');
