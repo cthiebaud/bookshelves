@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
     <title>Multiple Linear Regression with Plotly</title>
 </head>
 <body>
 
 <div id="scatter-plot"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
 
 <script>
 // Generate sample data
@@ -45,7 +45,7 @@ function createMeshgrid(X1, X2, model) {
 
     const Y_plane = meshgrid.map(point => model.predict(point));
 
-    return { X1_plane, X2_plane, Y_plane };
+    return { X1_plane, X2_plane, Y_plane, nPoints };
 }
 
 // Plot the scatter plot and regression plane using Plotly
@@ -63,7 +63,7 @@ function plotDataAndPlane(data, meshgrid) {
     const regressionPlane = {
         x: meshgrid.X1_plane,
         y: meshgrid.X2_plane,
-        z: meshgrid.Y_plane,
+        z: math.reshape(meshgrid.Y_plane, [meshgrid.nPoints, meshgrid.nPoints]),
         type: 'surface',
         opacity: 0.5,
         contours: {
@@ -116,7 +116,6 @@ class MLR {
         return math.chain(X).multiply(this.coefficients).sum().done();
     }
 }
-
 
 // Main script
 const data = generateData();
