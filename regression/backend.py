@@ -40,9 +40,9 @@ def perform_regression():
     std_dev_residuals = np.std(residuals)
 
     # Create a meshgrid for the plane
-    n_points = 10
-    X1_plane = np.linspace(min(X1), max(X1), n_points)
-    X2_plane = np.linspace(min(X2), max(X2), n_points)
+    n_points = 16
+    X1_plane = np.linspace(0, 255, n_points)
+    X2_plane = np.linspace(0, 255, n_points)
     X1_plane, X2_plane = np.meshgrid(X1_plane, X2_plane)
     Y_plane = coefficients['intercept'] + coefficients['coef_X1'] * X1_plane + coefficients['coef_X2'] * X2_plane
 
@@ -55,7 +55,6 @@ def perform_regression():
 
     # Reshape coerced z-coordinates for the second scatter plot
     Z_coerced_second = np.array(Z_coerced_second).reshape(np.array(Y).shape)
-
 
     # Prepare results to send back to the frontend
     results = {

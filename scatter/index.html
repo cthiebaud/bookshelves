@@ -7,35 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <title>3D Scatter Plot from Image</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
     <style>
         body {
             margin: 0;
             overflow: hidden;
         }
 
-        #scatter-plot {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
+        .graph-container {
+            position: relative;
             height: 100vh;
         }
 
-        #image-display {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 20px;
-            max-width: 30%;
-            /* Adjust the maximum width of the image */
+        .graph {
+            width: 100%;
+            height: 100%;
         }
 
-        #generated-image {
+        .image-overlay {
             position: absolute;
             top: 0;
+            /* Adjust right/left based on the column */
+        }
+
+        .image-overlay-left {
+            left: 0;
+        }
+
+        .image-overlay-right {
             right: 0;
-            margin: 20px;
-            max-width: 30%;
         }
 
         #loading {
@@ -61,211 +61,212 @@
         </svg>
     </div>
 
-    <div id="scatter-plot"></div>
-    <div id="scatter-plot2"></div>
-    <a href="/"><img id="image-display" /></a>
-    <img id="generated-image" />
+    <div class="container-fluid">
+        <div class="row">
+            <!-- First Column -->
+            <div class="col">
+                <div class="graph-container">
+                    <!-- Plotly Graph -->
+                    <div class="graph">
+                        <!-- Your Plotly Graph goes here -->
+                        <div id="scatter-plot"></div>
+                    </div>
+                    <!-- Image in the top-right corner -->
+                    <a href="/"><img id="image-display" class="image-overlay image-overlay-right"/></a>
+                </div>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col">
+                <div class="graph-container">
+                    <!-- Plotly Graph -->
+                    <div class="graph">
+                        <!-- Your Plotly Graph goes here -->
+                        <div id="scatter-plot2"></div>
+                    </div>
+                    <!-- Image in the top-left corner -->
+                    <img id="generated-image" class="image-overlay image-overlay-left"/>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script>
         // Function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath, width, height) {
             const loadingElement = document.getElementById('loading');
-            const img = new Image();
+            const imageDisplay = document.getElementById('image-display');
 
-            img.onload = function () {
-                // Display the image
-                function showImage() {
+            imageDisplay.onload = function () {
 
-                    const imageDisplay = document.getElementById('image-display');
-                    imageDisplay.src = img.src;
+                if (!width || !height) {
+                    // Use the width and height of the loaded image if not provided
+                    width = imageDisplay.width;
+                    height = imageDisplay.height;
+                }
 
-                    function imgonload() {
-                        function hideLoading() {
-                            loadingElement.style.display = 'none';
-                        }
-                        if (!width || !height) {
-                            // Use the width and height of the loaded image if not provided
-                            width = img.width;
-                            height = img.height;
-                        }
+                // Create a single canvas element and draw the image once
+                const canvas = document.createElement('canvas');
+                canvas.width = width;
+                canvas.height = height;
+                const ctx = canvas.getContext('2d', { willReadFrequently: true });
+                ctx.drawImage(this, 0, 0, width, height);
 
-                        const data = [{
-                            x: [],
-                            y: [],
+                const data = [{
+                    x: [],
+                    y: [],
+                    z: [],
+                    mode: 'markers',
+                    type: 'scatter3d',
+                    marker: {
+                        size: 4,
+                        color: [],  // Array to store colors for each point
+                        opacity: 0.80,  // Set opacity for every point
+                    },
+                    hoverinfo: 'none'  // Disable tooltips
+                }];
+
+                // Loop through all pixels and sample pixel data
+                for (let y = 0; y < height; y++) {
+                    for (let x = 0; x < width; x++) {
+                        // Sample pixel data from the drawn image
+                        const pixel = ctx.getImageData(x, y, 1, 1).data;
+
+                        // Add coordinates to the single trace
+                        data[0].x.push(pixel[0]);  // Red component as x
+                        data[0].y.push(pixel[1]);  // Green component as y
+                        data[0].z.push(pixel[2]);  // Blue component as z
+
+                        // Add color for each point
+                        data[0].marker.color.push(`rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`);
+                    }
+                }
+
+                const layout = {
+                    scene: {
+                        xaxis: { title: 'Red' },
+                        yaxis: { title: 'Green' },
+                        zaxis: { title: 'Blue' }
+                    },
+                    margin: {
+                        l: 0,
+                        r: 0,
+                        t: 0,
+                        b: 0
+                    }
+                };
+
+                for (const property in layout.scene) {
+                    layout.scene[property].range = [0, 255]
+                    layout.scene[property]["tickvals"] = [0, 63, 127, 191, 255]
+                    layout.scene[property]["ticktext"] = ['00', '3F', '7F', 'BF', 'FF']
+                    // console.log(`${property}:`, layout.scene[property])
+                }
+
+                // Display the 3D scatter plot
+                Plotly.newPlot('scatter-plot', data, layout, { displayModeBar: false }).then(function () {
+
+                    const X1 = data[0].x
+                    const X2 = data[0].y
+                    const Y = data[0].z
+
+                    // Perform regression on the server
+                    fetch('http://localhost:4321/perform_regression', {
+                        method: 'POST',
+                        mode: "cors",
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ X1, X2, Y }),
+                    }).then(response => response.json()).then(results => {
+                        console.log(results)
+
+                        const regressionPlane = {
+                            x: results.meshgrid.X1,
+                            y: results.meshgrid.X2,
+                            z: results.meshgrid.Y,
+                            type: 'surface',
+                            opacity: 0.5,
+                            showlegend: false,  // Add this line to hide the legend
+                            contours: {
+                                z: {
+                                    show: true,
+                                    usecolormap: true,
+                                    highlightcolor: "#42f462",
+                                    project: { z: true }
+                                }
+                            },
+                            colorscale: 'Viridis',
+                            name: 'Regression Plane'
+                        };
+
+                        // Plotly.addTraces('scatter-plot', regressionPlane);
+
+                        // Coerce the z-coordinates onto the regression plane
+                        const Z_coerced = results.coercedZ_second;
+
+                        // Create a second scatter plot with coerced z-coordinates
+                        const coercedScatter = {
+                            x: X1,
+                            y: X2,
                             z: [],
                             mode: 'markers',
                             type: 'scatter3d',
                             marker: {
                                 size: 4,
                                 color: [],  // Array to store colors for each point
-                                opacity: 0.80,  // Set opacity for every point
+                                opacity: 0.80,
                                 colorscale: 'Viridis'
                             },
-                            hoverinfo: 'none'  // Disable tooltips
-                        }];
-
-                        // Create a single canvas element and draw the image once
-                        const canvas = document.createElement('canvas');
-                        canvas.width = width;
-                        canvas.height = height;
-                        const ctx = canvas.getContext('2d', { willReadFrequently: true });
-                        ctx.drawImage(img, 0, 0, width, height);
-
-                        // Loop through all pixels and sample pixel data
-                        for (let y = 0; y < height; y++) {
-                            for (let x = 0; x < width; x++) {
-                                // Sample pixel data from the drawn image
-                                const pixel = ctx.getImageData(x, y, 1, 1).data;
-
-                                // Add coordinates to the single trace
-                                data[0].x.push(pixel[0]);  // Red component as x
-                                data[0].y.push(pixel[1]);  // Green component as y
-                                data[0].z.push(pixel[2]);  // Blue component as z
-
-                                // Add color for each point
-                                data[0].marker.color.push(`rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`);
-                            }
-                        }
-                        const X1 = data[0].x
-                        const X2 = data[0].y
-                        const Y = data[0].z
-
-                        // Perform regression on the server
-                        fetch('http://localhost:4321/perform_regression', {
-                            method: 'POST',
-                            mode: "cors",
-                            headers: {
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify({ X1, X2, Y }),
-                        })
-                            .then(response => response.json())
-                            .then(results => {
-
-                                console.log(results)
-                                
-                                const regressionPlane = {
-                                    x: results.meshgrid.X1,
-                                    y: results.meshgrid.X2,
-                                    z: results.meshgrid.Y,
-                                    type: 'surface',
-                                    opacity: 0.5,
-                                    contours: {
-                                        z: {
-                                            show: true,
-                                            usecolormap: true,
-                                            highlightcolor: "#42f462",
-                                            project: { z: true }
-                                        }
-                                    },
-                                    colorscale: 'Viridis',
-                                    name: 'Regression Plane'
-                                };
-
-                                Plotly.addTraces('scatter-plot', regressionPlane);
-
-                                // Coerce the z-coordinates onto the regression plane
-                                const Z_coerced = results.coercedZ_second;
-
-                                // Create a second scatter plot with coerced z-coordinates
-                                const coercedScatter = {
-                                    x: X1,
-                                    y: X2,
-                                    z: Z_coerced,
-                                    mode: 'markers',
-                                    type: 'scatter3d',
-                                    marker: {
-                                        size: 4,
-                                        color: [],  // Array to store colors for each point
-                                        opacity: 0.80,
-                                        colorscale: 'Viridis'
-                                    },
-                                    hoverinfo: 'none'
-                                };
-
-                                // Add the coerced scatter plot to the layout
-                                // Plotly.addTraces('scatter-plot', coercedScatter);
-
-                                // Create a new scatter plot for the coerced points
-                                const layout2 = {
-                                    scene: {
-                                        xaxis: { title: 'Red' },
-                                        yaxis: { title: 'Green' },
-                                        zaxis: { title: 'Blue' }  // Update z-axis title
-                                    }
-                                };
-
-                                // Create a new canvas to draw the generated image
-                                const generatedCanvas = document.createElement('canvas');
-                                generatedCanvas.width = width;
-                                generatedCanvas.height = height;
-                                const generatedCtx = generatedCanvas.getContext('2d');
-
-                                // Create a new ImageData object to hold the pixel data
-                                const imageData = generatedCtx.createImageData(width, height);
-
-                                // Loop through the coercedScatter data to set the RGB values for each pixel
-                                for (let i = 0; i < coercedScatter.x.length; i++) {
-                                    const x = coercedScatter.x[i];
-                                    const y = coercedScatter.y[i];
-                                    const z = coercedScatter.z[i];
-
-                                    coercedScatter.marker.color.push(`rgb(${x}, ${y}, ${z})`);
-
-                                    // Calculate the index in the ImageData array
-                                    const index = i * 4;
-
-                                    // Set the RGB values for the pixel directly from coercedScatter.z
-                                    imageData.data[index] = (x)        //  & 0xFF; // Red
-                                    imageData.data[index + 1] = (y)    //  & 0xFF; // Green
-                                    imageData.data[index + 2] = (z)    //  & 0xFF; // Blue
-                                    imageData.data[index + 3] = 255; // Alpha value, 255 for fully opaque
-                                }
-
-                                // Put the generated pixel data onto the canvas
-                                generatedCtx.putImageData(imageData, 0, 0);
-
-                                // Set the generated image as the source of the img element
-                                const generatedImage = document.getElementById('generated-image');
-                                generatedImage.src = generatedCanvas.toDataURL();
-
-                                Plotly.newPlot('scatter-plot2', [coercedScatter], layout2);
-
-                            })
-                            .catch(error => console.error('Error:', error))
-
-
-                        const layout = {
-                            scene: {
-                                xaxis: { title: 'Red' },
-                                yaxis: { title: 'Green' },
-                                zaxis: { title: 'Blue' }
-                            }
+                            hoverinfo: 'none'
                         };
 
-                        const object = layout.scene
-                        for (const property in object) {
-                            object[property].range = [0, 255]
-                            object[property]["tickvals"] = [0, 63, 127, 191, 255],
-                            object[property]["ticktext"] = ['00', '3F', '7F', 'BF', 'FF'],
-                            console.log(`${property}:`, object[property]);
+                        // Create a new canvas to draw the generated image
+                        const generatedCanvas = document.createElement('canvas');
+                        generatedCanvas.width = width;
+                        generatedCanvas.height = height;
+                        const generatedCtx = generatedCanvas.getContext('2d');
+
+                        // Create a new ImageData object to hold the pixel data
+                        const imageData = generatedCtx.createImageData(width, height);
+
+                        // Loop through the coercedScatter data to set the RGB values for each pixel
+                        for (let i = 0; i < coercedScatter.x.length; i++) {
+                            const x = coercedScatter.x[i];
+                            const y = coercedScatter.y[i];
+                            const z = coercedScatter.z[i] =
+                                results.coefficients.intercept +
+                                results.coefficients.coef_X1 * x +
+                                results.coefficients.coef_X2 * y
+
+                            coercedScatter.marker.color.push(`rgb(${x}, ${y}, ${z})`);
+
+                            // Calculate the index in the ImageData array
+                            const index = i * 4;
+
+                            // Set the RGB values for the pixel directly from coercedScatter.z
+                            imageData.data[index] = (x)        //  & 0xFF; // Red
+                            imageData.data[index + 1] = (y)    //  & 0xFF; // Green
+                            imageData.data[index + 2] = (z)    //  & 0xFF; // Blue
+                            imageData.data[index + 3] = 255; // Alpha value, 255 for fully opaque
                         }
 
-                        // Display the 3D scatter plot
-                        Plotly.newPlot('scatter-plot', data, layout).then(function () {
-                            requestAnimationFrame(hideLoading);
-                        });
+                        Plotly.newPlot('scatter-plot2', [coercedScatter], layout, { displayModeBar: false }).then(function () {
 
+                            // Put the generated pixel data onto the canvas
+                            generatedCtx.putImageData(imageData, 0, 0);
 
-                    };
+                            // Set the generated image as the source of the img element
+                            const generatedImage = document.getElementById('generated-image');
+                            generatedImage.src = generatedCanvas.toDataURL();
+                        })
+                    }).catch(error => console.error('Error:', error))
 
-                    requestAnimationFrame(imgonload);
-                }
-                requestAnimationFrame(showImage);
-            };
-
-            img.src = imagePath;
+                    requestAnimationFrame(() => loadingElement.style.display = 'none');
+                });
+            }
+            imageDisplay.src = imagePath
         }
 
         // Get the image path from the query string using URLSearchParams
@@ -284,6 +285,7 @@
         // Resize the plot when the window is resized
         window.addEventListener('resize', function () {
             Plotly.Plots.resize('scatter-plot');
+            Plotly.Plots.resize('scatter-plot2');
         });
     </script>
 
