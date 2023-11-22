@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/regression@2.0.1/dist/regression.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+
     <title>Multiple Linear Regression with Plotly</title>
 </head>
 <body>
@@ -17,18 +19,18 @@ function generateData() {
     const nSamples = 100;
     const X1 = Array.from({ length: nSamples }, () => Math.random());
     const X2 = Array.from({ length: nSamples }, () => Math.random());
-    const Y = X1.map((x1, i) => 2 * x1 + 3 * X2[i] + /*0.5 **/3* Math.random());
-    // const Y = Array.from({ length: nSamples }, () => Math.random());
-    
+    const Y = X1.map((x1, i) => 2 * x1 + 3 * X2[i] + 0.5 * Math.random());
+
     return { X1, X2, Y };
 }
 
-// Fit the model
+// Fit the model using regression-js
 function fitModel(X1, X2, Y) {
-    const X = X1.map((x1, i) => [x1, X2[i]]);
-    const model = new MLR(X, Y);
+    const data = X1.map((x1, i) => [x1, X2[i], Y[i]]);
+    const result = regression.multiDim(data, { order: 1 });
 
-    return model;
+    const coefficients = result.equation;
+    return coefficients;
 }
 
 // Create a meshgrid for the plane
@@ -44,7 +46,7 @@ function createMeshgrid(X1, X2, model) {
         }
     }
 
-    const Y_plane = meshgrid.map(point => model.predict(point));
+    const Y_plane = meshgrid.map(point => model(point));
 
     return { X1_plane, X2_plane, Y_plane, nPoints };
 }
@@ -94,28 +96,6 @@ function plotDataAndPlane(data, meshgrid) {
 function linspace(start, n) {
     const step = (start[1] - start[0]) / (n - 1);
     return Array.from({ length: n }, (_, i) => start[0] + i * step);
-}
-
-// Multiple Linear Regression class
-class MLR {
-    constructor(X, Y) {
-        this.X = X;
-        this.Y = Y;
-        this.coefficients = this.fit();
-    }
-
-    fit() {
-        const Xt = math.transpose(this.X);
-        const XtX = math.multiply(Xt, this.X);
-        const XtY = math.multiply(Xt, this.Y);
-
-        const coefficients = math.multiply(math.inv(XtX), XtY);
-        return coefficients.valueOf();
-    }
-
-    predict(X) {
-        return math.chain(X).multiply(this.coefficients).sum().done();
-    }
 }
 
 // Main script
