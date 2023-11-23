@@ -11,12 +11,33 @@
     <style>
         body {
             margin: 0;
-            overflow: hidden;
+            /* overflow: hidden; */
+        }
+
+        /* .container-fluid {
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+        } 
+
+        .col-md-6 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        } */
+
+        #leftCol {
+            align-items: flex-start;
+        }
+
+        #rightCol {
+            align-items: flex-end;
         }
 
         .graph-container {
             position: relative;
-            height: 100vh;
+            flex: 1;
+            /* overflow: hidden; */
         }
 
         .graph {
@@ -48,6 +69,7 @@
             z-index: 12;
         }
     </style>
+
 </head>
 
 <body>
@@ -62,35 +84,48 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row">
-            <!-- First Column -->
+        <div class="row mt-3">
             <div class="col">
-                <div class="graph-container">
+                <button id="advanceButton" class="btn btn-light">Next Slide</button>
+            </div>
+        </div>
+        <div class="row" style="width: 100%">
+            <!-- First Column -->
+            <div id="leftCol" class="col-md-6">
+                <div class="graph-container" style="width: 100%">
                     <!-- Plotly Graph -->
-                    <div class="graph">
-                        <!-- Your Plotly Graph goes here -->
+                    <div class="graph" id="scatter-plot-container">
                         <div id="scatter-plot"></div>
                     </div>
                     <!-- Image in the top-right corner -->
-                    <a href="/"><img id="image-display" class="image-overlay image-overlay-right"/></a>
+                    <a href="/"><img id="image-display" class="image-overlay image-overlay-right" /></a>
                 </div>
             </div>
 
             <!-- Second Column -->
-            <div class="col">
-                <div class="graph-container">
+            <div id="rightCol" class="col-md-6 justify-content-end">
+                <div class="graph-container" style="width: 100%">
                     <!-- Plotly Graph -->
-                    <div class="graph">
-                        <!-- Your Plotly Graph goes here -->
+                    <div class="graph" id="scatter-plot2-container">
                         <div id="scatter-plot2"></div>
                     </div>
                     <!-- Image in the top-left corner -->
-                    <img id="generated-image" class="image-overlay image-overlay-left"/>
+                    <img id="generated-image" class="image-overlay image-overlay-left" />
+                </div>
+            </div>
+        </div>
+        <div class="row" style="width: 100%">
+            <!-- Third Column for the 2D Scatter Plot -->
+            <div class="col-md-6">
+                <div class="graph-container" style="width: 100%">
+                    <!-- 2D Scatter Plot for Coerced Surface -->
+                    <div class="graph" id="scatter-surface-container">
+                        <div id="scatter-surface"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <script>
         // Function to load the image and create 3D scatter plot with Plotly
@@ -254,6 +289,12 @@
 
                         Plotly.newPlot('scatter-plot2', [coercedScatter], layout, { displayModeBar: false }).then(function () {
 
+                            const plot2Canvas = document.querySelector('#scatter-plot2 .svg-container');
+
+                            // Apply custom styles to right-align the canvas
+                            plot2Canvas.style.marginLeft = 'auto';
+                            plot2Canvas.style.marginRight = '0';
+
                             // Put the generated pixel data onto the canvas
                             generatedCtx.putImageData(imageData, 0, 0);
 
@@ -261,6 +302,96 @@
                             const generatedImage = document.getElementById('generated-image');
                             generatedImage.src = generatedCanvas.toDataURL();
                         })
+
+                        // Duplicate the coercedScatter data for the 2D scatter plot
+                        const scatter2DData = {
+                            x: coercedScatter.x.slice(),
+                            y: coercedScatter.y.slice(),
+                            z: coercedScatter.z.slice(),
+                            marker: {
+                                color: coercedScatter.marker.color.slice()
+                            }
+                        };
+
+                        function transformCoordinates(x, y, z) {
+                            // Replace this with your specific transformation logic
+                            const L = results.coefficients.coef_X1; // Replace with the coefficient B of the plane equation
+                            const M = results.coefficients.coef_X2; // Replace with the coefficient C of the plane equation
+                            const u = x + L * z;
+                            const v = y + M * z;
+                            return { u, v };
+                        }
+
+                        // Transform coordinates before creating the 2D scatter plot
+                        for (let i = 0; i < scatter2DData.x.length; i++) {
+                            const { u, v } = transformCoordinates(scatter2DData.x[i], scatter2DData.y[i], scatter2DData.z[i]);
+                            scatter2DData.x[i] = u;
+                            scatter2DData.y[i] = v;
+                        }
+
+                        // Create a new scatter plot with the transformed 2D coordinates
+                        const surfacePlot = {
+                            x: scatter2DData.x,
+                            y: scatter2DData.y,
+                            mode: 'markers',
+                            type: 'scatter',
+                            marker: {
+                                size: 4,
+                                color: scatter2DData.marker.color, // Use the same color array as scatter2DData
+                                opacity: 0.80,
+                                colorscale: 'Viridis'
+                            },
+                            hoverinfo: 'none'
+                        };
+
+                        const layoutSurface = {
+                            xaxis: { title: 'Transformed U' },
+                            yaxis: { title: 'Transformed V' },
+                            margin: {
+                                l: 0,
+                                r: 0,
+                                t: 0,
+                                b: 0
+                            }
+                        };
+
+                        Plotly.newPlot('scatter-surface', [surfacePlot], layoutSurface, { displayModeBar: false });
+
+                        const X = surfacePlot.x
+                        const Y = surfacePlot.y
+
+                        // Fetch regression results from perform_regression2d
+                        fetch('http://localhost:4321/perform_regression2d', {
+                            method: 'POST',
+                            mode: "cors",
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({ X, Y }),
+                        }).then(response => response.json()).then(results2d => {
+                            console.log(results2d);
+
+                            // Extract coefficients from the 2D regression results
+                            const coefficients2d = results2d.coefficients;
+
+                            // Create a line trace using the coefficients
+                            const lineTrace = {
+                                x: [Math.min(...X), Math.max(...X)],  // Assuming X is the independent variable
+                                y: [coefficients2d.intercept + coefficients2d.coef_X * Math.min(...X),
+                                coefficients2d.intercept + coefficients2d.coef_X * Math.max(...X)],
+                                mode: 'lines',
+                                type: 'scatter',
+                                line: {
+                                    color: 'red',  // You can set the color of the line
+                                    width: 4,
+                                },
+                                showlegend: false,  // Add this line to hide the legend
+                            };
+
+                            // Add the line trace to the scatter-surface plot
+                            Plotly.addTraces('scatter-surface', lineTrace);
+
+                        }).catch(error => console.error('Error:', error));
                     }).catch(error => console.error('Error:', error))
 
                     requestAnimationFrame(() => loadingElement.style.display = 'none');
@@ -269,18 +400,65 @@
             imageDisplay.src = imagePath
         }
 
-        // Get the image path from the query string using URLSearchParams
-        const queryParams = new URLSearchParams(window.location.search);
-        const imagePathFromQueryString = queryParams.get('image');
-        const widthFromQueryString = parseInt(queryParams.get('width'));
-        const heightFromQueryString = parseInt(queryParams.get('height'));
+        // Function to show or hide elements based on the current step
+        function updateSlideShow(step) {
+            const scatterPlotContainer = document.getElementById('scatter-plot-container');
+            const scatterPlot2Container = document.getElementById('scatter-plot2-container');
+            const imageLink = document.getElementById('generated-image');
 
-        if (imagePathFromQueryString) {
-            // Call the function with the image path
-            createScatterPlotFromImage(imagePathFromQueryString, widthFromQueryString, heightFromQueryString);
-        } else {
-            console.error('Image path not provided in the query string.');
+            // Hide all elements
+            scatterPlotContainer.style.display = 'none';
+            scatterPlot2Container.style.display = 'none';
+            imageLink.style.display = 'none';
+
+            // Show elements based on the current step
+            if (step >= 1) {
+                scatterPlotContainer.style.display = 'block';
+            }
+            if (step >= 2) {
+                scatterPlot2Container.style.display = 'block';
+            }
+            if (step >= 3) {
+                imageLink.style.display = 'block';
+            }
         }
+
+        let currentStep = 0;
+
+        // Function to handle key events and button click
+        function handleInteraction() {
+            currentStep++;
+            updateSlideShow(currentStep);
+
+            // Disable the button when the slideshow is done
+            const advanceButton = document.getElementById('advanceButton');
+            if (currentStep >= 3) {
+                advanceButton.disabled = true;
+            }
+        }
+
+        // Attach key event listener to the document
+        document.addEventListener('keypress', handleInteraction);
+
+        // Attach click event listener to the button
+        document.getElementById('advanceButton').addEventListener('click', handleInteraction);
+
+        // Initial state of the slideshow
+        updateSlideShow(currentStep);
+
+        // Load the image and create the scatter plot when the DOM is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            const queryParams = new URLSearchParams(window.location.search);
+            const imagePathFromQueryString = queryParams.get('image');
+            const widthFromQueryString = parseInt(queryParams.get('width'));
+            const heightFromQueryString = parseInt(queryParams.get('height'));
+
+            if (imagePathFromQueryString) {
+                createScatterPlotFromImage(imagePathFromQueryString, widthFromQueryString, heightFromQueryString);
+            } else {
+                console.error('Image path not provided in the query string.');
+            }
+        });
 
         // Resize the plot when the window is resized
         window.addEventListener('resize', function () {

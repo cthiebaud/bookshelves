@@ -67,6 +67,41 @@ def perform_regression():
     # Return results to the frontend
     return jsonify(results)
 
+@app.route('/perform_regression2d', methods=['POST'])
+def perform_regression2d():
+    data = request.get_json()
+
+    # Extract data
+    X = data['X']
+    Y = data['Y']
+
+    # Reshape the data for sklearn
+    X = np.array(X).reshape(-1, 1)
+
+    # Perform simple linear regression
+    model = LinearRegression()
+    model.fit(X, Y)
+
+    # Get coefficients
+    coefficients = {'intercept': model.intercept_, 'coef_X': model.coef_[0]}
+
+    # Predict Y values
+    Y_pred = model.predict(X)
+
+    # Calculate residuals
+    residuals = Y - Y_pred
+
+    # Calculate standard deviation of residuals
+    std_dev_residuals = np.std(residuals)
+
+    # Prepare results to send back to the frontend
+    results = {
+        'coefficients': coefficients,
+        'std_dev_residuals': std_dev_residuals
+    }
+
+    # Return results to the frontend
+    return jsonify(results)
 
 if __name__ == '__main__':
     app.run(debug=True, host='localhost', port=4321)
