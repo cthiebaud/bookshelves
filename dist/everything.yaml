@@ -28965,6 +28965,22 @@ seigiornate:
   - "\U0001F1EE\U0001F1F9"
   title: Sei Giornate
   where: /saint-lazare-de-savene/salon/_2
+serienoire:
+  cover:
+    palette: '[{''color'': [31, 179, 144], ''count'': 13602}, {''color'': [60, 146,
+      126], ''count'': 9829}, {''color'': [44, 105, 90], ''count'': 10399}, {''color'':
+      [77, 181, 156], ''count'': 17917}, {''color'': [33, 71, 62], ''count'': 8253}]'
+  de: Alain Corneau, Georges Perec (Dialogues)
+  image_path: thumbs/T_serienoire.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - perec
+  - saint-lazare-de-savene
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "L'Avant-Sc\xE8ne Cin\xE9ma - N\xB0 233 - S\xE9rie Noire (d\xE9coupage int\xE9\
+    gral et dialogues in extenso)"
+  where: /saint-lazare-de-savene
 stalemates:
   cover:
     line_coefficients: '[7.36061480820699e-16, 0.9999999999999998, 1.1121125321167484]'
