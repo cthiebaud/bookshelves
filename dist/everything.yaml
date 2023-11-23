@@ -11854,6 +11854,22 @@
   - _2020
   title: Arthur Rimbaud
   where: /saint-jean-lipion/chambre/rimbaud
+978-2221271308:
+  cover:
+    palette: '[{''color'': [239, 239, 239], ''count'': 67}, {''color'': [249, 249,
+      249], ''count'': 374}, {''color'': [255, 255, 255], ''count'': 59230}, {''color'':
+      [254, 254, 254], ''count'': 3510}, {''color'': [218, 218, 218], ''count'': 19}]'
+  de: Laure Murat (Auteur)
+  ext: "Prix M\xE9dicis essai 2023 Broch\xE9 \u2013 Grand livre, 24 ao\xFBt 2023"
+  image_path: thumbs/T_978-2221271308.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - proust
+  - saint-lazare-de-savene
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Proust, roman familial
+  where: /saint-lazare-de-savene
 978-2221501290:
   cover:
     line_coefficients: '[-1.3300270506673733e-16, 0.9999999999999976, 0.6432899570630152]'
@@ -15361,7 +15377,7 @@
       115], ''count'': 13220}, {''color'': [228, 123, 97], ''count'': 8999}, {''color'':
       [219, 94, 77], ''count'': 17939}, {''color'': [212, 46, 47], ''count'': 12851}]'
     plane_coefficients: '[3.200671954260787e-17, 0.0, 1.0, 0.0]'
-  de: "Reiner Stach (Author), R\xE9gis QUATRESOUS (Translator)"
+  de: "Reiner Stach (Author), R\xE9gis Quatresous (Translator)"
   ext: "Paperback \u2013 March 9, 2023"
   image_path: thumbs/T_978-2749173979.jpg
   lan: "\U0001F1EB\U0001F1F7"
@@ -15373,6 +15389,23 @@
   - _2014
   title: "Kafka - Tome 1 - Le temps des d\xE9cisions"
   where: /saint-jean-lipion/chambre/kafka
+978-2749174044:
+  cover:
+    palette: '[{''color'': [71, 78, 85], ''count'': 12698}, {''color'': [108, 101,
+      101], ''count'': 8538}, {''color'': [141, 126, 120], ''count'': 9523}, {''color'':
+      [164, 144, 131], ''count'': 13938}, {''color'': [192, 170, 143], ''count'':
+      12503}]'
+  de: "Reiner Stach (Auteur), R\xE9gis Quatresous (Traduction)"
+  ext: "Broch\xE9 \u2013 Grand livre, 16 novembre 2023"
+  image_path: thumbs/T_978-2749174044.jpeg
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - kafka
+  - saint-lazare-de-savene
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: Kafka - Tome 2 - Le temps de la connaissance
+  where: /saint-lazare-de-savene
 978-2749809472:
   cover:
     line_coefficients: '[-1.2402077733979825e-16, 1.000000000000001, 1.5025276087532218]'
