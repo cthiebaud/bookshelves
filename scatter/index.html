@@ -11,20 +11,7 @@
     <style>
         body {
             margin: 0;
-            /* overflow: hidden; */
         }
-
-        /* .container-fluid {
-            height: 50vh;
-            display: flex;
-            flex-direction: row;
-        } 
-
-        .col-md-6 {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        } */
 
         #leftCol {
             align-items: flex-start;
@@ -37,7 +24,6 @@
         .graph-container {
             position: relative;
             flex: 1;
-            /* overflow: hidden; */
         }
 
         .graph {
@@ -154,12 +140,15 @@
                     z: [],
                     mode: 'markers',
                     type: 'scatter3d',
+                    showlegend: false,
+                    showscale: false,
+                    hoverinfo: "none",
+                    hovermode: false,
                     marker: {
                         size: 4,
                         color: [],  // Array to store colors for each point
                         opacity: 0.80,  // Set opacity for every point
                     },
-                    hoverinfo: 'none'  // Disable tooltips
                 }];
 
                 // Loop through all pixels and sample pixel data
@@ -184,6 +173,10 @@
                         yaxis: { title: 'Green' },
                         zaxis: { title: 'Blue' }
                     },
+                    showlegend: false,
+                    showscale: false,
+                    hoverinfo: "none",
+                    hovermode: false,
                     margin: {
                         l: 0,
                         r: 0,
@@ -222,8 +215,11 @@
                             y: results.meshgrid.X2,
                             z: results.meshgrid.Y,
                             type: 'surface',
-                            opacity: 0.5,
-                            showlegend: false,  // Add this line to hide the legend
+                            opacity: 0.3, 
+                            showlegend: false,
+                            showscale: false,
+                            hoverinfo: "none",
+                            hovermode: false,
                             contours: {
                                 z: {
                                     show: true,
@@ -233,10 +229,10 @@
                                 }
                             },
                             colorscale: 'Viridis',
-                            name: 'Regression Plane'
+                            name: 'Regression Plane',
                         };
 
-                        // Plotly.addTraces('scatter-plot', regressionPlane);
+                        Plotly.addTraces('scatter-plot', regressionPlane);
 
                         // Coerce the z-coordinates onto the regression plane
                         const Z_coerced = results.coercedZ_second;
@@ -385,7 +381,6 @@
                                     color: 'red',  // You can set the color of the line
                                     width: 4,
                                 },
-                                showlegend: false,  // Add this line to hide the legend
                             };
 
                             // Add the line trace to the scatter-surface plot
@@ -406,10 +401,12 @@
             const scatterPlot2Container = document.getElementById('scatter-plot2-container');
             const imageLink = document.getElementById('generated-image');
 
-            // Hide all elements
+            // Hide all elements 
+            /*
             scatterPlotContainer.style.display = 'none';
             scatterPlot2Container.style.display = 'none';
             imageLink.style.display = 'none';
+            */
 
             // Show elements based on the current step
             if (step >= 1) {
@@ -444,7 +441,7 @@
         document.getElementById('advanceButton').addEventListener('click', handleInteraction);
 
         // Initial state of the slideshow
-        updateSlideShow(currentStep);
+        // updateSlideShow(currentStep);
 
         // Load the image and create the scatter plot when the DOM is ready
         document.addEventListener('DOMContentLoaded', function () {
