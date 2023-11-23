@@ -47,7 +47,10 @@
                     plotResults(X1, X2, Y, results);
                     displayStdDevResiduals(results.std_dev_residuals);
                 })
-                .catch(error => console.error('Error:', error));
+                .catch(error => {
+                    console.error('Error:', error)
+                    alert(error)
+                });
         }
 
         // Function to plot the scatter plot and regression plane

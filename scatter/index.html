@@ -200,7 +200,8 @@
                     const Y = data[0].z
 
                     // Perform regression on the server
-                    fetch('http://localhost:4321/perform_regression', {
+                    const url = 'http://localhost:4321/perform_regression'
+                    fetch(url, {
                         method: 'POST',
                         mode: "cors",
                         headers: {
@@ -215,7 +216,7 @@
                             y: results.meshgrid.X2,
                             z: results.meshgrid.Y,
                             type: 'surface',
-                            opacity: 0.3, 
+                            opacity: 0.3,
                             showlegend: false,
                             showscale: false,
                             hoverinfo: "none",
@@ -351,13 +352,14 @@
                             }
                         };
 
-                        Plotly.newPlot('scatter-surface', [surfacePlot], layoutSurface, { displayModeBar: false });
+                        Plotly.newPlot('scatter-surface', [surfacePlot], layoutSurface, { displayModeBar: false, staticPlot: true});
 
                         const X = surfacePlot.x
                         const Y = surfacePlot.y
 
                         // Fetch regression results from perform_regression2d
-                        fetch('http://localhost:4321/perform_regression2d', {
+                        const url2 = 'http://localhost:4321/perform_regression2d'
+                        fetch(url2, {
                             method: 'POST',
                             mode: "cors",
                             headers: {
@@ -378,7 +380,7 @@
                                 mode: 'lines',
                                 type: 'scatter',
                                 line: {
-                                    color: 'red',  // You can set the color of the line
+                                    color: "#42f46248",
                                     width: 4,
                                 },
                             };
@@ -386,8 +388,15 @@
                             // Add the line trace to the scatter-surface plot
                             Plotly.addTraces('scatter-surface', lineTrace);
 
-                        }).catch(error => console.error('Error:', error));
-                    }).catch(error => console.error('Error:', error))
+                        }).catch(error => {
+                            console.error('Error:', error)
+                            alert(`${url2}: ${error}`)
+                        })
+
+                    }).catch(error => {
+                        console.error('Error:', error)
+                        alert(`${url}: ${error}`)
+                    })
 
                     requestAnimationFrame(() => loadingElement.style.display = 'none');
                 });
