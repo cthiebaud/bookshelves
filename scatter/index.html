@@ -101,13 +101,24 @@
             </div>
         </div>
         <div class="row" style="width: 100%">
-            <!-- Third Column for the 2D Scatter Plot -->
+            <!-- First Column -->
             <div class="col-md-6">
                 <div class="graph-container" style="width: 100%">
                     <!-- 2D Scatter Plot for Coerced Surface -->
                     <div class="graph" id="scatter-surface-container">
                         <div id="scatter-surface"></div>
                     </div>
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div id="rightCol" class="col-md-6 justify-content-end">
+                <div class="graph-container" style="width: 100%">
+                    <!-- Plotly Graph -->
+                    <div class="graph" id="scatter-plot3-container">
+                        <div id="scatter-plot3"></div>
+                    </div>
+                    <!-- Image in the top-left corner -->
+                    <img id="generated-image2" class="image-overlay image-overlay-left" />
                 </div>
             </div>
         </div>
@@ -194,6 +205,8 @@
 
                 // Display the 3D scatter plot
                 Plotly.newPlot('scatter-plot', data, layout, { displayModeBar: false }).then(function () {
+
+                    requestAnimationFrame(() => loadingElement.style.display = 'block');
 
                     const X1 = data[0].x
                     const X2 = data[0].y
@@ -352,45 +365,100 @@
                             }
                         };
 
-                        Plotly.newPlot('scatter-surface', [surfacePlot], layoutSurface, { displayModeBar: false, staticPlot: true});
+                        Plotly.newPlot('scatter-surface', [surfacePlot], layoutSurface, { displayModeBar: false, staticPlot: true }).then(function () {
 
-                        const X = surfacePlot.x
-                        const Y = surfacePlot.y
+                            const X = surfacePlot.x
+                            const Y = surfacePlot.y
 
-                        // Fetch regression results from perform_regression2d
-                        const url2 = 'http://localhost:4321/perform_regression2d'
-                        fetch(url2, {
-                            method: 'POST',
-                            mode: "cors",
-                            headers: {
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify({ X, Y }),
-                        }).then(response => response.json()).then(results2d => {
-                            console.log(results2d);
-
-                            // Extract coefficients from the 2D regression results
-                            const coefficients2d = results2d.coefficients;
-
-                            // Create a line trace using the coefficients
-                            const lineTrace = {
-                                x: [Math.min(...X), Math.max(...X)],  // Assuming X is the independent variable
-                                y: [coefficients2d.intercept + coefficients2d.coef_X * Math.min(...X),
-                                coefficients2d.intercept + coefficients2d.coef_X * Math.max(...X)],
-                                mode: 'lines',
-                                type: 'scatter',
-                                line: {
-                                    color: "#42f46248",
-                                    width: 4,
+                            // Fetch regression results from perform_regression2d
+                            const url2 = 'http://localhost:4321/perform_regression2d'
+                            fetch(url2, {
+                                method: 'POST',
+                                mode: "cors",
+                                headers: {
+                                    'Content-Type': 'application/json',
                                 },
-                            };
+                                body: JSON.stringify({ X, Y }),
+                            }).then(response => response.json()).then(results2d => {
+                                console.log(results2d);
 
-                            // Add the line trace to the scatter-surface plot
-                            Plotly.addTraces('scatter-surface', lineTrace);
+                                // Extract coefficients from the 2D regression results
+                                const coefficients2d = results2d.coefficients;
 
-                        }).catch(error => {
-                            console.error('Error:', error)
-                            alert(`${url2}: ${error}`)
+                                // Create a line trace using the coefficients
+                                const lineTrace = {
+                                    x: [Math.min(...X), Math.max(...X)],  // Assuming X is the independent variable
+                                    y: [coefficients2d.intercept + coefficients2d.coef_X * Math.min(...X),
+                                    coefficients2d.intercept + coefficients2d.coef_X * Math.max(...X)],
+                                    mode: 'lines',
+                                    type: 'scatter',
+                                    line: {
+                                        color: "#42f46248",
+                                        width: 4,
+                                    },
+                                };
+
+                                // Add the line trace to the scatter-surface plot
+                                Plotly.addTraces('scatter-surface', lineTrace);
+
+                                // Create a new canvas to draw the generated image
+                                const generatedCanvas2 = document.createElement('canvas');
+                                generatedCanvas2.width = width;
+                                generatedCanvas2.height = height;
+                                const generatedCtx2 = generatedCanvas2.getContext('2d');
+
+                                // Create a new ImageData object to hold the pixel data
+                                const imageData2 = generatedCtx2.createImageData(width, height);
+
+                                const scatterLineData = {
+                                };
+
+                                // Loop through the coercedScatter data to set the RGB values for each pixel
+                                for (let i = 0; i < coercedScatter.x.length; i++) {
+                                    let x = coercedScatter.x[i];
+                                    let y = coercedScatter.y[i];
+                                    let z = coercedScatter.z[i] =
+                                        results.coefficients.intercept +
+                                        results.coefficients.coef_X1 * x +
+                                        results.coefficients.coef_X2 * y
+
+                                    x = results2d.coefficients.intercept +
+                                        results2d.coefficients.coef_X1 * x;
+
+                                    // coercedScatter.marker.color.push(`rgb(${x}, ${y}, ${z})`);
+
+                                    // Calculate the index in the ImageData array
+                                    const index = i * 4;
+
+                                    // Set the RGB values for the pixel directly from coercedScatter.z
+                                    imageData2.data[index] = (x)        //  & 0xFF; // Red
+                                    imageData2.data[index + 1] = (y)    //  & 0xFF; // Green
+                                    imageData2.data[index + 2] = (z)    //  & 0xFF; // Blue
+                                    imageData2.data[index + 3] = 255; // Alpha value, 255 for fully opaque
+                                }
+
+                                Plotly.newPlot('scatter-plot3', [coercedScatter], layout, { displayModeBar: false }).then(function () {
+
+                                    const plot2Canvas = document.querySelector('#scatter-plot3 .svg-container');
+
+                                    // Apply custom styles to right-align the canvas
+                                    plot2Canvas.style.marginLeft = 'auto';
+                                    plot2Canvas.style.marginRight = '0';
+
+                                    // Put the generated pixel data onto the canvas
+                                    generatedCtx2.putImageData(imageData2, 0, 0);
+
+                                    // Set the generated image as the source of the img element
+                                    const generatedImage2 = document.getElementById('generated-image2');
+                                    generatedImage2.src = generatedCanvas2.toDataURL();
+                                })
+
+                            }).catch(error => {
+                                console.error('Error:', error)
+                                alert(`${url2}: ${error}`)
+                            })
+
+                            requestAnimationFrame(() => loadingElement.style.display = 'none');
                         })
 
                     }).catch(error => {
