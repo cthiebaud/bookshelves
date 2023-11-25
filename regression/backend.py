@@ -41,8 +41,8 @@ def perform_regression():
 
     # Create a meshgrid for the plane
     n_points = 16
-    X1_plane = np.linspace(0, 255, n_points)
-    X2_plane = np.linspace(0, 255, n_points)
+    X1_plane = np.linspace(0, 256, n_points)
+    X2_plane = np.linspace(0, 256, n_points)
     X1_plane, X2_plane = np.meshgrid(X1_plane, X2_plane)
     Y_plane = coefficients['intercept'] + coefficients['coef_X1'] * X1_plane + coefficients['coef_X2'] * X2_plane
 

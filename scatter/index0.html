@@ -14,15 +14,11 @@
         }
 
         .leftCol {
-            position: relative;
             align-items: flex-start;
-            border-right: .5px dotted gray;
         }
 
         .rightCol {
-            position: relative;
             align-items: flex-end;
-            border-left: .5px dotted gray;
         }
 
         .graph-container {
@@ -37,10 +33,8 @@
 
         .image-overlay {
             position: absolute;
-            bottom: 0;
-            margin: 0.5rem;
-            width: 20%;
-            height: auto;
+            top: 0;
+            /* Adjust right/left based on the column */
         }
 
         .image-overlay-left {
@@ -89,9 +83,9 @@
                     <div class="graph" id="scatter-plot-container">
                         <div id="scatter-plot"></div>
                     </div>
+                    <!-- Image in the top-right corner -->
+                    <a href="/"><img id="image-display" class="image-overlay image-overlay-right" /></a>
                 </div>
-                <!-- Image in the top-right corner -->
-                <a href="/"><img id="image-display" class="image-overlay image-overlay-right" /></a>
             </div>
 
             <!-- Second Column -->
@@ -101,9 +95,9 @@
                     <div class="graph" id="scatter-plot2-container">
                         <div id="scatter-plot2"></div>
                     </div>
+                    <!-- Image in the top-left corner -->
+                    <img id="generated-image" class="image-overlay image-overlay-left" />
                 </div>
-                <!-- Image in the top-left corner -->
-                <img id="generated-image" class="image-overlay image-overlay-left" />
             </div>
         </div>
         <div class="row" style="width: 100%">
@@ -132,37 +126,58 @@
 
     <script type="module">
         // main.js
-        import { orthographicProjection, orthographicProjectionSet } from './vectorOperations.js';
+        import { orthographicProjection } from './vectorOperations.js';
         import { extractPlaneInfo, orthographicProjectionOnLine } from './planeOperations.js';
-        import glob from './singletonModule.js';
+        import { convertCoordinatesFrom2DPTo3DS, convertCoordinatesFrom3DSTo2DP } from './convertCoordinates.js';
 
-        function arrayToXYZObject(arr) {
-            return { x: arr[0], y: arr[1], z: arr[2] };
-        }
-        function XYZObjectToArray(obj) {
-            return [obj.x, obj.y, obj.z];
+
+        {
+            // Example usage:
+            const A = 2;
+            const B = -1;
+            const C = 3;
+            const D = 10;
+
+            const pointIn2D = { x: 3, y: 4 };
+            const pointIn3D = convertCoordinatesFrom2DPTo3DS(pointIn2D.x, pointIn2D.y, A, B, C, D);
+            console.log("Converted 2D to 3D:", pointIn3D);
+
+            const convertedBackTo2D = convertCoordinatesFrom3DSTo2DP(pointIn3D.a, pointIn3D.b, pointIn3D.c, A, B, C, D);
+            console.log("Converted back to 2D:", convertedBackTo2D);
+
         }
 
         // Function to load the image and create 3D scatter plot with Plotly
-        function createScatterPlotFromImage(imagePath) {
+        function createScatterPlotFromImage(imagePath, width, height) {
             const loadingElement = document.getElementById('loading');
             const imageDisplay = document.getElementById('image-display');
 
+            function arrayToXYZObject(arr) {
+                const obj = {
+                    x: arr[0],
+                    y: arr[1],
+                    z: arr[2]
+                };
+
+                return obj;
+            }
+
             imageDisplay.onload = function () {
 
-                if (!glob.width || !glob.height) {
-                    glob.width = imageDisplay.width;
-                    glob.height = imageDisplay.height;
+                if (!width || !height) {
+                    // Use the width and height of the loaded image if not provided
+                    width = imageDisplay.width;
+                    height = imageDisplay.height;
                 }
 
                 // Create a single canvas element and draw the image once
                 const canvas = document.createElement('canvas');
-                canvas.width = glob.width;
-                canvas.height = glob.height;
+                canvas.width = width;
+                canvas.height = height;
                 const ctx = canvas.getContext('2d', { willReadFrequently: true });
-                ctx.drawImage(this, 0, 0, glob.width, glob.height);
+                ctx.drawImage(this, 0, 0, width, height);
 
-                const data3d = {
+                const data = [{
                     x: [],
                     y: [],
                     z: [],
@@ -174,42 +189,32 @@
                     hovermode: false,
                     marker: {
                         size: 4,
-                        color: [],      // Array to store colors for each point
+                        color: [],  // Array to store colors for each point
                         opacity: 0.80,  // Set opacity for every point
                     },
-                };
+                }];
 
                 // Loop through all pixels and sample pixel data
-                for (let y = 0; y < glob.height; y++) {
-                    for (let x = 0; x < glob.width; x++) {
+                for (let y = 0; y < height; y++) {
+                    for (let x = 0; x < width; x++) {
                         // Sample pixel data from the drawn image
                         const pixel = ctx.getImageData(x, y, 1, 1).data;
 
                         // Add coordinates to the single trace
-                        data3d.x.push(pixel[0]);  // Red component as x
-                        data3d.y.push(pixel[1]);  // Green component as y
-                        data3d.z.push(pixel[2]);  // Blue component as z
+                        data[0].x.push(pixel[0]);  // Red component as x
+                        data[0].y.push(pixel[1]);  // Green component as y
+                        data[0].z.push(pixel[2]);  // Blue component as z
 
                         // Add color for each point
-                        data3d.marker.color.push(`rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`);
+                        data[0].marker.color.push(`rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`);
                     }
                 }
 
                 const layout = {
                     scene: {
-                        aspectmode: 'cube',
-                        xaxis: { title: 'X Red' },
-                        yaxis: { title: 'Y Green' },
-                        zaxis: { title: 'Z Blue' },
-                    },
-                    xaxis: {
-                        autorange: false,
-                    },
-                    yaxis: {
-                        autorange: false,
-                    },
-                    ternary: {
-                        autorange: false,
+                        xaxis: { title: 'Red' },
+                        yaxis: { title: 'Green' },
+                        zaxis: { title: 'Blue' }
                     },
                     showlegend: false,
                     showscale: false,
@@ -224,7 +229,6 @@
                 };
 
                 for (const property in layout.scene) {
-                    if (!['xaxis','yaxis','zaxis'].includes(property)) continue;
                     layout.scene[property].range = [0, 255]
                     layout.scene[property]["tickvals"] = [0, 63, 127, 191, 255]
                     layout.scene[property]["ticktext"] = ['00', '3F', '7F', 'BF', 'FF']
@@ -232,16 +236,15 @@
                 }
 
                 // Display the 3D scatter plot
-                Plotly.newPlot('scatter-plot', [data3d], layout, { displayModeBar: false }).then(function () {
-                    const plotSvgContainer = document.querySelector('#scatter-plot .svg-container');
+                Plotly.newPlot('scatter-plot', data, layout, { displayModeBar: false }).then(function () {
 
-                    // Apply custom styles to right-align the canvas
-                    plotSvgContainer.style.marginLeft = '0';
-                    plotSvgContainer.style.marginRight = 'auto';
+                    requestAnimationFrame(() => loadingElement.style.display = 'block');
 
-                    loadingElement.style.display = 'none'
+                    const X1 = data[0].x
+                    const X2 = data[0].y
+                    const Y = data[0].z
 
-                    // Fetch the multiple linear regression plane from the server
+                    // Perform regression on the server
                     const url = 'http://localhost:4321/perform_regression'
                     fetch(url, {
                         method: 'POST',
@@ -249,9 +252,10 @@
                         headers: {
                             'Content-Type': 'application/json',
                         },
-                        body: JSON.stringify({ X1: data3d.x, X2: data3d.y, Y: data3d.z }),
+                        body: JSON.stringify({ X1, X2, Y }),
                     }).then(response => response.json()).then(results => {
                         console.log(results)
+
                         const regressionPlane = {
                             x: results.meshgrid.X1,
                             y: results.meshgrid.X2,
@@ -276,14 +280,17 @@
 
                         Plotly.addTraces('scatter-plot', regressionPlane);
 
+                        // Coerce the z-coordinates onto the regression plane
+                        const Z_coerced = results.coercedZ_second;
+
                         // Create a new canvas to draw the generated image
                         const generatedCanvas = document.createElement('canvas');
-                        generatedCanvas.width = glob.width;
-                        generatedCanvas.height = glob.height;
+                        generatedCanvas.width = width;
+                        generatedCanvas.height = height;
                         const generatedCtx = generatedCanvas.getContext('2d');
 
                         // Create a new ImageData object to hold the pixel data
-                        const imageData = generatedCtx.createImageData(glob.width, glob.height);
+                        const imageData = generatedCtx.createImageData(width, height);
 
                         const planeInfo = extractPlaneInfo(results.coefficients.coef_X1, results.coefficients.coef_X2, -1, results.coefficients.intercept)
 
@@ -303,41 +310,18 @@
                             hoverinfo: 'none'
                         };
 
-                        const projections = orthographicProjectionSet(data3d,
-                            planeInfo.planeNormal,
-                            planeInfo.planePoint)
-
-
-                        function convertToPointsObject(projections) {
-                            // Transpose the array of projections to separate x, y, z coordinates
-                            const transposedProjections = projections[0].map((_, i) =>
-                                projections.map(projection => projection[i])
-                            );
-
-                            return {
-                                x: transposedProjections[0],
-                                y: transposedProjections[1],
-                                z: transposedProjections[2]
-                            };
-                        }
-                        const originalPoints = convertToPointsObject(projections);
-
-                        coercedScatter.x = originalPoints.x
-                        coercedScatter.y = originalPoints.y
-                        coercedScatter.z = originalPoints.z
-
                         // Loop through the coercedScatter data to set the RGB values for each pixel
-                        let wrongs = 0
-                        for (let i = 0; i < projections.length; i++) {
+                        for (let i = 0; i < X1.length; i++) {
 
-                            const x = coercedScatter.x[i]
-                            const y = coercedScatter.y[i]
-                            const z = coercedScatter.z[i]
-
-                            if (x < 0 || y < 0 || z < 0 || x >= 256 || y >= 256 || z >= 256) {
-                                console.log(`rgb(${x}, ${y}, ${z}) WRONG !!!`)
-                                wrongs++
-                            }
+                            const projection = orthographicProjection(
+                                [X1[i],
+                                X2[i],
+                                Y[i]],
+                                planeInfo.planeNormal,
+                                planeInfo.planePoint)
+                            const x = coercedScatter.x[i] = projection[0]
+                            const y = coercedScatter.y[i] = projection[1]
+                            const z = coercedScatter.z[i] = projection[2]
 
                             coercedScatter.marker.color.push(`rgb(${x}, ${y}, ${z})`);
 
@@ -350,14 +334,14 @@
                             imageData.data[index + 2] = (z)    //  & 0xFF; // Blue
                             imageData.data[index + 3] = 255; // Alpha value, 255 for fully opaque
                         }
-                        console.log(`wrongs: ${wrongs} out of ${projections.length}`)
 
                         Plotly.newPlot('scatter-plot2', [coercedScatter], layout, { displayModeBar: false }).then(function () {
-                            const plot2SvgContainer = document.querySelector('#scatter-plot2 .svg-container');
+
+                            const plot2Canvas = document.querySelector('#scatter-plot2 .svg-container');
 
                             // Apply custom styles to right-align the canvas
-                            plot2SvgContainer.style.marginLeft = 'auto';
-                            plot2SvgContainer.style.marginRight = '0';
+                            plot2Canvas.style.marginLeft = 'auto';
+                            plot2Canvas.style.marginRight = '0';
 
                             // Put the generated pixel data onto the canvas
                             generatedCtx.putImageData(imageData, 0, 0);
@@ -366,11 +350,181 @@
                             const generatedImage = document.getElementById('generated-image');
                             generatedImage.src = generatedCanvas.toDataURL();
                         })
+
+                        // Duplicate the coercedScatter data for the 2D scatter plot
+                        const scatter2DData = {
+                            x: coercedScatter.x.slice(),
+                            y: coercedScatter.y.slice(),
+                            z: coercedScatter.z.slice(),
+                            marker: {
+                                color: coercedScatter.marker.color.slice()
+                            }
+                        };
+
+                        // Transform coordinates before creating the 2D scatter plot
+                        for (let i = 0; i < scatter2DData.x.length; i++) {
+                            /*
+                            const point2D = convertCoordinates3DTo2D(scatter2DData.x[i], scatter2DData.y[i], scatter2DData.z[i], arrayToXYZObject(planeInfo.planeNormal), arrayToXYZObject(planeInfo.planePoint))
+                            if (!point2D.X || !point2D.Y) {
+                                console.log('NaN!')
+                            }
+
+                            scatter2DData.x[i] = point2D.X;
+                            scatter2DData.y[i] = -point2D.Y;
+                            */
+                        }
+
+                        // Create a new scatter plot with the transformed 2D coordinates
+                        const surfacePlot = {
+                            x: scatter2DData.x,
+                            y: scatter2DData.y,
+                            mode: 'markers',
+                            type: 'scatter',
+                            marker: {
+                                size: 4,
+                                color: scatter2DData.marker.color, // Use the same color array as scatter2DData
+                                opacity: 0.80,
+                                colorscale: 'Viridis'
+                            },
+                            hoverinfo: 'none'
+                        };
+
+                        const layoutSurface = {
+                            xaxis: { title: 'U' },
+                            yaxis: { title: 'V' },
+                            showlegend: false,
+                            showscale: false,
+                            hoverinfo: "none",
+                            hovermode: false,
+                            margin: {
+                                l: 0,
+                                r: 0,
+                                t: 0,
+                                b: 0
+                            }
+                        };
+
+                        Plotly.newPlot('scatter-surface', [surfacePlot], layoutSurface, { displayModeBar: false, staticPlot: true }).then(function () {
+
+                            const svgContainer = document.querySelector('#scatter-surface .svg-container');
+
+                            // Apply custom styles to right-align the canvas
+                            svgContainer.style.marginLeft = 'auto';
+                            svgContainer.style.marginRight = '0';
+
+                            const X = surfacePlot.x
+                            const Y = surfacePlot.y
+
+                            // Fetch regression results from perform_regression2d
+                            const url2 = 'http://localhost:4321/perform_regression2d'
+                            fetch(url2, {
+                                method: 'POST',
+                                mode: "cors",
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({ X, Y }),
+                            }).then(response => response.json()).then(results2d => {
+                                console.log(results2d);
+
+                                // Extract coefficients from the 2D regression results
+                                const coefficients2d = results2d.coefficients;
+
+                                const pointA = { x: Math.min(...X), y: coefficients2d.intercept + coefficients2d.coef_X * Math.min(...X) };
+                                const pointB = { x: Math.max(...X), y: coefficients2d.intercept + coefficients2d.coef_X * Math.max(...X) };
+
+                                // Create a line trace using the coefficients
+                                const lineTrace = {
+                                    x: [pointA.x, pointB.x],
+                                    y: [pointA.y, pointB.y],
+                                    mode: 'lines',
+                                    type: 'scatter',
+                                    line: {
+                                        color: "#42f46248",
+                                        width: 4,
+                                    },
+                                };
+
+                                // Add the line trace to the scatter-surface plot
+                                Plotly.addTraces('scatter-surface', lineTrace);
+
+                                // Create a new canvas to draw the generated image
+                                const generatedCanvas2 = document.createElement('canvas');
+                                generatedCanvas2.width = width;
+                                generatedCanvas2.height = height;
+                                const generatedCtx2 = generatedCanvas2.getContext('2d');
+
+                                // Create a new ImageData object to hold the pixel data
+                                const imageData2 = generatedCtx2.createImageData(width, height);
+
+                                const linePlot = {
+                                    x: [],
+                                    y: [],
+                                    z: [],
+                                    mode: 'markers',
+                                    type: 'scatter3d',
+                                    marker: {
+                                        color: []
+                                    }
+                                };
+
+                                for (let i = 0; i < scatter2DData.x.length; i++) {
+                                    /*
+                                    const pointA = arrayToXYZObject(lineTrace.x)
+                                    const pointB = arrayToXYZObject(lineTrace.y)
+                                    const pointC = arrayToXYZObject([scatter2DData.x[i], scatter2DData.y[i]]);
+
+                                    const proj = orthographicProjectionOnLine(pointA, pointB, pointC)
+                                    const point3D = convertCoordinates2DTo3D(proj.x, proj.y, arrayToXYZObject(planeInfo.planeNormal), arrayToXYZObject(planeInfo.planePoint))
+
+                                    const r = linePlot.x[i] = point3D.x
+                                    const g = linePlot.y[i] = point3D.y
+                                    const b = linePlot.z[i] = -point3D.z
+
+                                    linePlot.marker.color.push(`rgb(${r}, ${g}, ${b})`);
+                                    */
+                                    // Calculate the index in the ImageData array
+                                    const index = i * 4;
+
+                                    // Set the RGB values for the pixel directly from coercedScatter.z
+                                    imageData2.data[index] = (r)        //  & 0xFF; // Red
+                                    imageData2.data[index + 1] = (g)    //  & 0xFF; // Green
+                                    imageData2.data[index + 2] = (b)    //  & 0xFF; // Blue
+                                    imageData2.data[index + 3] = 255; // Alpha value, 255 for fully opaque
+                                }
+
+                                Plotly.newPlot('scatter-plot3', [coercedScatter, linePlot], layout, { displayModeBar: false }).then(function () {
+
+                                    const plot2Canvas = document.querySelector('#scatter-plot3 .svg-container');
+
+                                    // Apply custom styles to right-align the canvas
+                                    plot2Canvas.style.marginLeft = 'auto';
+                                    plot2Canvas.style.marginRight = '0';
+
+                                    // Put the generated pixel data onto the canvas
+                                    generatedCtx2.putImageData(imageData2, 0, 0);
+
+                                    // Set the generated image as the source of the img element
+                                    const generatedImage2 = document.getElementById('generated-image2');
+                                    generatedImage2.src = generatedCanvas2.toDataURL();
+                                })
+
+                            }).catch(error => {
+                                console.error('Error:', error)
+                                alert(`${url2}: ${error}`)
+                            })
+
+                            requestAnimationFrame(() => loadingElement.style.display = 'none');
+                        })
+
+                    }).catch(error => {
+                        console.error('Error:', error)
+                        alert(`${url}: ${error}`)
                     })
 
-                })
+                    requestAnimationFrame(() => loadingElement.style.display = 'none');
+                });
             }
-
             imageDisplay.src = imagePath
         }
 
@@ -381,9 +535,11 @@
             const imageLink = document.getElementById('generated-image');
 
             // Hide all elements 
+            /*
             scatterPlotContainer.style.display = 'none';
             scatterPlot2Container.style.display = 'none';
             imageLink.style.display = 'none';
+            */
 
             // Show elements based on the current step
             if (step >= 1) {
@@ -418,15 +574,17 @@
         document.getElementById('advanceButton').addEventListener('click', handleInteraction);
 
         // Initial state of the slideshow
-        updateSlideShow(currentStep);
+        // updateSlideShow(currentStep);
 
         // Load the image and create the scatter plot when the DOM is ready
         document.addEventListener('DOMContentLoaded', function () {
             const queryParams = new URLSearchParams(window.location.search);
             const imagePathFromQueryString = queryParams.get('image');
+            const widthFromQueryString = parseInt(queryParams.get('width'));
+            const heightFromQueryString = parseInt(queryParams.get('height'));
 
             if (imagePathFromQueryString) {
-                createScatterPlotFromImage(imagePathFromQueryString);
+                createScatterPlotFromImage(imagePathFromQueryString, widthFromQueryString, heightFromQueryString);
             } else {
                 console.error('Image path not provided in the query string.');
             }
