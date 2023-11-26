@@ -39,7 +39,7 @@
             position: absolute;
             bottom: 0;
             margin: 0.5rem;
-            width: 20%;
+            width: 25%;
             height: auto;
         }
 
@@ -143,6 +143,16 @@
             return [obj.x, obj.y, obj.z];
         }
 
+        function _coerce_(w, min = glob.MIN, max = glob.MAX) {
+            if (w < min) {
+                return min
+            }
+            if (max < w) {
+                return max - glob.EPSILON
+            }
+            return w
+        }
+
         // Function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath) {
             const loadingElement = document.getElementById('loading');
@@ -198,18 +208,9 @@
                 const layout = {
                     scene: {
                         aspectmode: 'cube',
-                        xaxis: { title: 'X Red' },
-                        yaxis: { title: 'Y Green' },
-                        zaxis: { title: 'Z Blue' },
-                    },
-                    xaxis: {
-                        autorange: false,
-                    },
-                    yaxis: {
-                        autorange: false,
-                    },
-                    ternary: {
-                        autorange: false,
+                        xaxis: { autorange: false, title: 'X Red' },
+                        yaxis: { autorange: false, title: 'Y Green' },
+                        zaxis: { autorange: false, title: 'Z Blue' },
                     },
                     showlegend: false,
                     showscale: false,
@@ -224,11 +225,10 @@
                 };
 
                 for (const property in layout.scene) {
-                    if (!['xaxis','yaxis','zaxis'].includes(property)) continue;
-                    layout.scene[property].range = [0, 255]
-                    layout.scene[property]["tickvals"] = [0, 63, 127, 191, 255]
-                    layout.scene[property]["ticktext"] = ['00', '3F', '7F', 'BF', 'FF']
-                    // console.log(`${property}:`, layout.scene[property])
+                    if (!['xaxis', 'yaxis', 'zaxis'].includes(property)) continue;
+                    layout.scene[property].range = [glob.MIN, glob.MAX]
+                    layout.scene[property]["tickvals"] = [glob.MIN, glob.MAX / 4 - 1, glob.MAX / 2 - 1, 3 * glob.MAX / 4 - 1, glob.MAX - 1]
+                    layout.scene[property]["ticktext"] = layout.scene[property]["tickvals"].map(tickval => tickval.toString(16).padStart(2, '0').toUpperCase())
                 }
 
                 // Display the 3D scatter plot
@@ -258,20 +258,11 @@
                             z: results.meshgrid.Y,
                             type: 'surface',
                             opacity: 0.3,
+                            colorscale: 'Greens',
                             showlegend: false,
                             showscale: false,
                             hoverinfo: "none",
                             hovermode: false,
-                            contours: {
-                                z: {
-                                    show: true,
-                                    usecolormap: true,
-                                    highlightcolor: "#42f462",
-                                    project: { z: true }
-                                }
-                            },
-                            colorscale: 'Viridis',
-                            name: 'Regression Plane',
                         };
 
                         Plotly.addTraces('scatter-plot', regressionPlane);
@@ -287,8 +278,8 @@
 
                         const planeInfo = extractPlaneInfo(results.coefficients.coef_X1, results.coefficients.coef_X2, -1, results.coefficients.intercept)
 
-                        // Create a second scatter plot with coerced z-coordinates
-                        const coercedScatter = {
+                        // Create a second scatter plot with projected and coerced z-coordinates
+                        const projectedCoercedScatter = {
                             x: [],
                             y: [],
                             z: [],
@@ -298,20 +289,26 @@
                                 size: 4,
                                 color: [],  // Array to store colors for each point
                                 opacity: 0.80,
-                                colorscale: 'Viridis'
                             },
                             hoverinfo: 'none'
                         };
 
-                        const projections = orthographicProjectionSet(data3d,
+                        const projecteds = orthographicProjectionSet(
+                            data3d,
                             planeInfo.planeNormal,
-                            planeInfo.planePoint)
+                            planeInfo.planePoint
+                        )
 
-
-                        function convertToPointsObject(projections) {
-                            // Transpose the array of projections to separate x, y, z coordinates
-                            const transposedProjections = projections[0].map((_, i) =>
-                                projections.map(projection => projection[i])
+                        // converts the array of points to separate array for each x, y, z coordinates
+                        /*
+                        from 
+                        [[x1,y1,z1],[x2,y2,z2],...]
+                        to
+                        {x: [x1,x2,...],y: [y1,y2,...], z:...}
+                        */
+                        function convertToPointsObject(projecteds) {
+                            const transposedProjections = projecteds[0].map((_, i) =>
+                                projecteds.map(projection => projection[i])
                             );
 
                             return {
@@ -320,39 +317,52 @@
                                 z: transposedProjections[2]
                             };
                         }
-                        const originalPoints = convertToPointsObject(projections);
+                        const projectedsAsPoints = convertToPointsObject(projecteds);
 
-                        coercedScatter.x = originalPoints.x
-                        coercedScatter.y = originalPoints.y
-                        coercedScatter.z = originalPoints.z
+                        // coerce projections to [0, 256)
+                        projectedCoercedScatter.x = projectedsAsPoints.x.map(x => _coerce_(x))
+                        projectedCoercedScatter.y = projectedsAsPoints.y.map(y => _coerce_(y))
+                        projectedCoercedScatter.z = projectedsAsPoints.z.map(z => _coerce_(z))
 
-                        // Loop through the coercedScatter data to set the RGB values for each pixel
+                        // Loop through the projectedCoercedScatter data to set the RGB values for each pixel
+                        let altered = 0
                         let wrongs = 0
-                        for (let i = 0; i < projections.length; i++) {
+                        for (let i = 0; i < projecteds.length; i++) {
 
-                            const x = coercedScatter.x[i]
-                            const y = coercedScatter.y[i]
-                            const z = coercedScatter.z[i]
+                            const x = projectedCoercedScatter.x[i]
+                            const y = projectedCoercedScatter.y[i]
+                            const z = projectedCoercedScatter.z[i]
+
+                            if (x !== projectedsAsPoints.x[i] ||
+                                y !== projectedsAsPoints.y[i] ||
+                                z !== projectedsAsPoints.z[i]) {
+                                /*
+                                console.log(`rgb(${projectedsAsPoints.x[i]}, ${projectedsAsPoints.y[i]}, ${projectedsAsPoints.z[i]}) ORIGINAL...`)
+                                console.log(`rgb(${x}, ${y}, ${z}) ...ALTERED !!!`)
+                                */
+                                altered++
+                            }
 
                             if (x < 0 || y < 0 || z < 0 || x >= 256 || y >= 256 || z >= 256) {
                                 console.log(`rgb(${x}, ${y}, ${z}) WRONG !!!`)
                                 wrongs++
                             }
 
-                            coercedScatter.marker.color.push(`rgb(${x}, ${y}, ${z})`);
+                            projectedCoercedScatter.marker.color.push(`rgb(${x}, ${y}, ${z})`);
 
                             // Calculate the index in the ImageData array
                             const index = i * 4;
 
-                            // Set the RGB values for the pixel directly from coercedScatter.z
+                            // Set the RGB values for the pixel directly from projectedCoercedScatter.z
                             imageData.data[index] = (x)        //  & 0xFF; // Red
                             imageData.data[index + 1] = (y)    //  & 0xFF; // Green
                             imageData.data[index + 2] = (z)    //  & 0xFF; // Blue
                             imageData.data[index + 3] = 255; // Alpha value, 255 for fully opaque
                         }
-                        console.log(`wrongs: ${wrongs} out of ${projections.length}`)
+                        console.log(`altered: ${altered} out of ${projecteds.length}`)
+                        console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
 
-                        Plotly.newPlot('scatter-plot2', [coercedScatter], layout, { displayModeBar: false }).then(function () {
+                        Plotly.newPlot('scatter-plot2', [projectedCoercedScatter], layout, { displayModeBar: false }).then(function () {
                             const plot2SvgContainer = document.querySelector('#scatter-plot2 .svg-container');
 
                             // Apply custom styles to right-align the canvas

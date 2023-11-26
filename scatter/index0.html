@@ -280,9 +280,6 @@
 
                         Plotly.addTraces('scatter-plot', regressionPlane);
 
-                        // Coerce the z-coordinates onto the regression plane
-                        const Z_coerced = results.coercedZ_second;
-
                         // Create a new canvas to draw the generated image
                         const generatedCanvas = document.createElement('canvas');
                         generatedCanvas.width = width;

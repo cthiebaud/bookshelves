@@ -50,18 +50,11 @@ def perform_regression():
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
-    # Calculate coerced z-coordinates for the second scatter plot
-    Z_coerced_second = coefficients['intercept'] + coefficients['coef_X1'] * X_scaled[:, 0] + coefficients['coef_X2'] * X_scaled[:, 1]
-
-    # Reshape coerced z-coordinates for the second scatter plot
-    Z_coerced_second = np.array(Z_coerced_second).reshape(np.array(Y).shape)
-
     # Prepare results to send back to the frontend
     results = {
         'coefficients': coefficients,
         'meshgrid': {'X1': X1_plane.tolist(), 'X2': X2_plane.tolist(), 'Y': Y_plane.tolist()},
-        'std_dev_residuals': std_dev_residuals,
-        'coercedZ_second': Z_coerced_second.tolist()  # Add coerced z-coordinates for the second scatter plot to results
+        'std_dev_residuals': std_dev_residuals
     }
 
     # Return results to the frontend
