@@ -321,7 +321,7 @@
                     advanceButtons.forEach((e) => e.classList.add('visible'))
 
                     // Fetch the multiple linear regression plane from the server
-                    const url = 'http://localhost:4321/perform_regression'
+                    const url = 'https://bookshelves-406316.ew.r.appspot.com/perform_regression'
                     fetch(url, {
                         method: 'POST',
                         mode: "cors",
@@ -463,6 +463,7 @@
                 })
             }
 
+            imageDisplay.crossOrigin = "Anonymous";
             imageDisplay.src = imagePath
         }
 
