@@ -134,7 +134,7 @@
     </div>
 
     <div class="container-xl">
-        <div class="row mt-3">
+        <div id="menu" class="row mt-3">
             <style>
                 .advance {
                     visibility: hidden;
@@ -208,9 +208,25 @@
     -->
     <script type="module">
         // main.js
+        import { Mutex } from 'https://cdn.jsdelivr.net/npm/async-mutex@0.4.0/+esm'
         import { orthographicProjection, orthographicProjectionSet } from './vectorOperations.js';
         import { extractPlaneInfo, orthographicProjectionOnLine } from './planeOperations.js';
         import glob from './singletonModule.js';
+
+        const queryParams = new URLSearchParams(window.location.search);
+        const imagePathFromQueryString = queryParams.get('image');
+        let slideshow = queryParams.get('slideshow');
+        if (typeof slideshow === undefined || slideshow == null) {
+            slideshow = true
+        } else {
+            if (slideshow.toLowerCase() === "true") {
+                slideshow = true
+            } else {
+                slideshow = false
+            }
+        }
+
+        const mutex = new Mutex();
 
         const advanceButtons = Array.from(document.getElementsByClassName('advance'))
 
@@ -236,235 +252,238 @@
             const loadingElement = document.getElementById('loading');
             const imageDisplay = document.getElementById('image-display');
 
-            imageDisplay.onload = function () {
+            mutex.acquire().then(function (release) {
+                imageDisplay.onload = function () {
 
-                if (!glob.width || !glob.height) {
-                    glob.width = imageDisplay.width;
-                    glob.height = imageDisplay.height;
-                }
-
-                // Create a single canvas element and draw the image once
-                const canvas = document.createElement('canvas');
-                canvas.width = glob.width;
-                canvas.height = glob.height;
-                const ctx = canvas.getContext('2d', { willReadFrequently: true });
-                ctx.drawImage(this, 0, 0, glob.width, glob.height);
-
-                const data3d = {
-                    x: [],
-                    y: [],
-                    z: [],
-                    mode: 'markers',
-                    type: 'scatter3d',
-                    showlegend: false,
-                    showscale: false,
-                    hoverinfo: "none",
-                    hovermode: false,
-                    marker: {
-                        size: 4,
-                        color: [],      // Array to store colors for each point
-                        opacity: 0.80,  // Set opacity for every point
-                    },
-                };
-
-                // Loop through all pixels and sample pixel data
-                for (let y = 0; y < glob.height; y++) {
-                    for (let x = 0; x < glob.width; x++) {
-                        // Sample pixel data from the drawn image
-                        const pixel = ctx.getImageData(x, y, 1, 1).data;
-
-                        // Add coordinates to the single trace
-                        data3d.x.push(pixel[0]);  // Red component as x
-                        data3d.y.push(pixel[1]);  // Green component as y
-                        data3d.z.push(pixel[2]);  // Blue component as z
-
-                        // Add color for each point
-                        data3d.marker.color.push(`rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`);
+                    if (!glob.width || !glob.height) {
+                        glob.width = imageDisplay.width;
+                        glob.height = imageDisplay.height;
                     }
-                }
 
-                const layout = {
-                    scene: {
-                        aspectmode: 'cube',
-                        xaxis: { autorange: false, title: 'X Red' },
-                        yaxis: { autorange: false, title: 'Y Green' },
-                        zaxis: { autorange: false, title: 'Z Blue' },
-                    },
-                    showlegend: false,
-                    showscale: false,
-                    hoverinfo: "none",
-                    hovermode: false,
-                    margin: {
-                        l: 0,
-                        r: 0,
-                        t: 0,
-                        b: 0
-                    }
-                };
+                    // Create a single canvas element and draw the image once
+                    const canvas = document.createElement('canvas');
+                    canvas.width = glob.width;
+                    canvas.height = glob.height;
+                    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+                    ctx.drawImage(this, 0, 0, glob.width, glob.height);
 
-                for (const property in layout.scene) {
-                    if (!['xaxis', 'yaxis', 'zaxis'].includes(property)) continue;
-                    layout.scene[property].range = [glob.MIN, glob.MAX]
-                    layout.scene[property]["tickvals"] = [glob.MIN, glob.MAX / 4 - 1, glob.MAX / 2 - 1, 3 * glob.MAX / 4 - 1, glob.MAX - 1]
-                    layout.scene[property]["ticktext"] = layout.scene[property]["tickvals"].map(tickval => tickval.toString(16).padStart(2, '0').toUpperCase())
-                }
-
-                // Display the 3D scatter plot
-                Plotly.newPlot('scatter-plot', [data3d], layout, { displayModeBar: false }).then(function () {
-                    /* const plotSvgContainer = document.querySelector('#scatter-plot .svg-container');
-
-                    // Apply custom styles to right-align the canvas
-                    plotSvgContainer.style.marginLeft = '0';
-                    plotSvgContainer.style.marginRight = 'auto'; */
-
-                    loadingElement.style.display = 'none'
-                    advanceButtons.forEach((e) => e.classList.add('visible'))
-
-                    // Fetch the multiple linear regression plane from the server
-                    const url = 'https://bookshelves-406316.ew.r.appspot.com/perform_regression'
-                    fetch(url, {
-                        method: 'POST',
-                        mode: "cors",
-                        headers: {
-                            'Content-Type': 'application/json',
+                    const data3d = {
+                        x: [],
+                        y: [],
+                        z: [],
+                        mode: 'markers',
+                        type: 'scatter3d',
+                        showlegend: false,
+                        showscale: false,
+                        hoverinfo: "none",
+                        hovermode: false,
+                        marker: {
+                            size: 4,
+                            color: [],      // Array to store colors for each point
+                            opacity: 0.80,  // Set opacity for every point
                         },
-                        body: JSON.stringify({ X1: data3d.x, X2: data3d.y, Y: data3d.z }),
-                    }).then(response => response.json()).then(results => {
-                        console.log(results)
-                        const regressionPlane = {
-                            x: results.meshgrid.X1,
-                            y: results.meshgrid.X2,
-                            z: results.meshgrid.Y,
-                            type: 'surface',
-                            opacity: 0.3,
-                            colorscale: 'Greens',
-                            showlegend: false,
-                            showscale: false,
-                            hoverinfo: "none",
-                            hovermode: false,
-                            visible: false,
-                            name: 'regression-plane'
-                        };
+                    };
 
-                        Plotly.addTraces('scatter-plot', regressionPlane);
+                    // Loop through all pixels and sample pixel data
+                    for (let y = 0; y < glob.height; y++) {
+                        for (let x = 0; x < glob.width; x++) {
+                            // Sample pixel data from the drawn image
+                            const pixel = ctx.getImageData(x, y, 1, 1).data;
 
-                        // Create a new canvas to draw the generated image
-                        const generatedCanvas = document.createElement('canvas');
-                        generatedCanvas.width = glob.width;
-                        generatedCanvas.height = glob.height;
-                        const generatedCtx = generatedCanvas.getContext('2d', { willReadFrequently: true });
+                            // Add coordinates to the single trace
+                            data3d.x.push(pixel[0]);  // Red component as x
+                            data3d.y.push(pixel[1]);  // Green component as y
+                            data3d.z.push(pixel[2]);  // Blue component as z
 
-                        // Create a new ImageData object to hold the pixel data
-                        const imageData = generatedCtx.createImageData(glob.width, glob.height);
+                            // Add color for each point
+                            data3d.marker.color.push(`rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`);
+                        }
+                    }
 
-                        const planeInfo = extractPlaneInfo(results.coefficients.coef_X1, results.coefficients.coef_X2, -1, results.coefficients.intercept)
+                    const layout = {
+                        scene: {
+                            aspectmode: 'cube',
+                            xaxis: { autorange: false, title: 'X Red' },
+                            yaxis: { autorange: false, title: 'Y Green' },
+                            zaxis: { autorange: false, title: 'Z Blue' },
+                        },
+                        showlegend: false,
+                        showscale: false,
+                        hoverinfo: "none",
+                        hovermode: false,
+                        margin: {
+                            l: 0,
+                            r: 0,
+                            t: 0,
+                            b: 0
+                        }
+                    };
 
-                        // Create a second scatter plot with projected and coerced z-coordinates
-                        const projectedCoercedScatter = {
-                            x: [],
-                            y: [],
-                            z: [],
-                            mode: 'markers',
-                            type: 'scatter3d',
-                            marker: {
-                                size: 4,
-                                color: [],  // Array to store colors for each point
-                                opacity: 0.80,
+                    for (const property in layout.scene) {
+                        if (!['xaxis', 'yaxis', 'zaxis'].includes(property)) continue;
+                        layout.scene[property].range = [glob.MIN, glob.MAX]
+                        layout.scene[property]["tickvals"] = [glob.MIN, glob.MAX / 4 - 1, glob.MAX / 2 - 1, 3 * glob.MAX / 4 - 1, glob.MAX - 1]
+                        layout.scene[property]["ticktext"] = layout.scene[property]["tickvals"].map(tickval => tickval.toString(16).padStart(2, '0').toUpperCase())
+                    }
+
+                    // Display the 3D scatter plot
+                    Plotly.newPlot('scatter-plot', [data3d], layout, { displayModeBar: false }).then(function () {
+                        /* const plotSvgContainer = document.querySelector('#scatter-plot .svg-container');
+     
+                        // Apply custom styles to right-align the canvas
+                        plotSvgContainer.style.marginLeft = '0';
+                        plotSvgContainer.style.marginRight = 'auto'; */
+
+                        loadingElement.style.display = 'none'
+                        advanceButtons.forEach((e) => e.classList.add('visible'))
+
+                        // Fetch the multiple linear regression plane from the server
+                        const url = 'https://bookshelves-406316.ew.r.appspot.com/perform_regression'
+                        fetch(url, {
+                            method: 'POST',
+                            mode: "cors",
+                            headers: {
+                                'Content-Type': 'application/json',
                             },
-                            hoverinfo: 'none'
-                        };
-
-                        const projecteds = orthographicProjectionSet(
-                            data3d,
-                            planeInfo.planeNormal,
-                            planeInfo.planePoint
-                        )
-
-                        // converts the array of points to separate array for each x, y, z coordinates
-                        /*
-                        from 
-                        [[x1,y1,z1],[x2,y2,z2],...]
-                        to
-                        {x: [x1,x2,...],y: [y1,y2,...], z:...}
-                        */
-                        function convertToPointsObject(projecteds) {
-                            const transposedProjections = projecteds[0].map((_, i) =>
-                                projecteds.map(projection => projection[i])
-                            );
-
-                            return {
-                                x: transposedProjections[0],
-                                y: transposedProjections[1],
-                                z: transposedProjections[2]
+                            body: JSON.stringify({ X1: data3d.x, X2: data3d.y, Y: data3d.z }),
+                        }).then(response => response.json()).then(results => {
+                            console.log(results)
+                            const regressionPlane = {
+                                x: results.meshgrid.X1,
+                                y: results.meshgrid.X2,
+                                z: results.meshgrid.Y,
+                                type: 'surface',
+                                opacity: 0.3,
+                                colorscale: 'Greens',
+                                showlegend: false,
+                                showscale: false,
+                                hoverinfo: "none",
+                                hovermode: false,
+                                visible: false,
+                                name: 'regression-plane'
                             };
-                        }
-                        const projectedsAsPoints = convertToPointsObject(projecteds);
 
-                        // coerce projections to [0, 256)
-                        projectedCoercedScatter.x = projectedsAsPoints.x.map(x => _coerce_(x))
-                        projectedCoercedScatter.y = projectedsAsPoints.y.map(y => _coerce_(y))
-                        projectedCoercedScatter.z = projectedsAsPoints.z.map(z => _coerce_(z))
+                            Plotly.addTraces('scatter-plot', regressionPlane);
+                            release()
 
-                        // Loop through the projectedCoercedScatter data to set the RGB values for each pixel
-                        let altered = 0
-                        let wrongs = 0
-                        for (let i = 0; i < projecteds.length; i++) {
+                            // Create a new canvas to draw the generated image
+                            const generatedCanvas = document.createElement('canvas');
+                            generatedCanvas.width = glob.width;
+                            generatedCanvas.height = glob.height;
+                            const generatedCtx = generatedCanvas.getContext('2d', { willReadFrequently: true });
 
-                            const x = projectedCoercedScatter.x[i]
-                            const y = projectedCoercedScatter.y[i]
-                            const z = projectedCoercedScatter.z[i]
+                            // Create a new ImageData object to hold the pixel data
+                            const imageData = generatedCtx.createImageData(glob.width, glob.height);
 
-                            if (x !== projectedsAsPoints.x[i] ||
-                                y !== projectedsAsPoints.y[i] ||
-                                z !== projectedsAsPoints.z[i]) {
-                                /*
-                                console.log(`rgb(${projectedsAsPoints.x[i]}, ${projectedsAsPoints.y[i]}, ${projectedsAsPoints.z[i]}) ORIGINAL...`)
-                                console.log(`rgb(${x}, ${y}, ${z}) ...ALTERED !!!`)
-                                */
-                                altered++
-                            }
+                            const planeInfo = extractPlaneInfo(results.coefficients.coef_X1, results.coefficients.coef_X2, -1, results.coefficients.intercept)
 
-                            if (x < 0 || y < 0 || z < 0 || x >= 256 || y >= 256 || z >= 256) {
-                                console.log(`rgb(${x}, ${y}, ${z}) WRONG !!!`)
-                                wrongs++
-                            }
+                            // Create a second scatter plot with projected and coerced z-coordinates
+                            const projectedCoercedScatter = {
+                                x: [],
+                                y: [],
+                                z: [],
+                                mode: 'markers',
+                                type: 'scatter3d',
+                                marker: {
+                                    size: 4,
+                                    color: [],  // Array to store colors for each point
+                                    opacity: 0.80,
+                                },
+                                hoverinfo: 'none'
+                            };
 
-                            projectedCoercedScatter.marker.color.push(`rgb(${x}, ${y}, ${z})`);
+                            const projecteds = orthographicProjectionSet(
+                                data3d,
+                                planeInfo.planeNormal,
+                                planeInfo.planePoint
+                            )
 
-                            // Calculate the index in the ImageData array
-                            const index = i * 4;
-
-                            // Set the RGB values for the pixel directly from projectedCoercedScatter.z
-                            imageData.data[index] = (x)        //  & 0xFF; // Red
-                            imageData.data[index + 1] = (y)    //  & 0xFF; // Green
-                            imageData.data[index + 2] = (z)    //  & 0xFF; // Blue
-                            imageData.data[index + 3] = 255; // Alpha value, 255 for fully opaque
-                        }
-                        console.log(`altered: ${altered} out of ${projecteds.length}`)
-                        console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
-
-                        Plotly.newPlot('scatter-plot2', [projectedCoercedScatter], layout, { displayModeBar: false }).then(function () {
-                            /* const plot2SvgContainer = document.querySelector('#scatter-plot2 .svg-container');
-
-                            // Apply custom styles to right-align the canvas
-                            plot2SvgContainer.style.marginLeft = 'auto';
-                            plot2SvgContainer.style.marginRight = '0';
+                            // converts the array of points to separate array for each x, y, z coordinates
+                            /*
+                            from 
+                            [[x1,y1,z1],[x2,y2,z2],...]
+                            to
+                            {x: [x1,x2,...],y: [y1,y2,...], z:...}
                             */
+                            function convertToPointsObject(projecteds) {
+                                const transposedProjections = projecteds[0].map((_, i) =>
+                                    projecteds.map(projection => projection[i])
+                                );
 
-                            // Put the generated pixel data onto the canvas
-                            generatedCtx.putImageData(imageData, 0, 0);
+                                return {
+                                    x: transposedProjections[0],
+                                    y: transposedProjections[1],
+                                    z: transposedProjections[2]
+                                };
+                            }
+                            const projectedsAsPoints = convertToPointsObject(projecteds);
 
-                            // Set the generated image as the source of the img element
-                            const generatedImage = document.getElementById('generated-image');
-                            generatedImage.src = generatedCanvas.toDataURL();
+                            // coerce projections to [0, 256)
+                            projectedCoercedScatter.x = projectedsAsPoints.x.map(x => _coerce_(x))
+                            projectedCoercedScatter.y = projectedsAsPoints.y.map(y => _coerce_(y))
+                            projectedCoercedScatter.z = projectedsAsPoints.z.map(z => _coerce_(z))
+
+                            // Loop through the projectedCoercedScatter data to set the RGB values for each pixel
+                            let altered = 0
+                            let wrongs = 0
+                            for (let i = 0; i < projecteds.length; i++) {
+
+                                const x = projectedCoercedScatter.x[i]
+                                const y = projectedCoercedScatter.y[i]
+                                const z = projectedCoercedScatter.z[i]
+
+                                if (x !== projectedsAsPoints.x[i] ||
+                                    y !== projectedsAsPoints.y[i] ||
+                                    z !== projectedsAsPoints.z[i]) {
+                                    /*
+                                    console.log(`rgb(${projectedsAsPoints.x[i]}, ${projectedsAsPoints.y[i]}, ${projectedsAsPoints.z[i]}) ORIGINAL...`)
+                                    console.log(`rgb(${x}, ${y}, ${z}) ...ALTERED !!!`)
+                                    */
+                                    altered++
+                                }
+
+                                if (x < 0 || y < 0 || z < 0 || x >= 256 || y >= 256 || z >= 256) {
+                                    console.log(`rgb(${x}, ${y}, ${z}) WRONG !!!`)
+                                    wrongs++
+                                }
+
+                                projectedCoercedScatter.marker.color.push(`rgb(${x}, ${y}, ${z})`);
+
+                                // Calculate the index in the ImageData array
+                                const index = i * 4;
+
+                                // Set the RGB values for the pixel directly from projectedCoercedScatter.z
+                                imageData.data[index] = (x)        //  & 0xFF; // Red
+                                imageData.data[index + 1] = (y)    //  & 0xFF; // Green
+                                imageData.data[index + 2] = (z)    //  & 0xFF; // Blue
+                                imageData.data[index + 3] = 255; // Alpha value, 255 for fully opaque
+                            }
+                            console.log(`altered: ${altered} out of ${projecteds.length}`)
+                            console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
+
+                            Plotly.newPlot('scatter-plot2', [projectedCoercedScatter], layout, { displayModeBar: false }).then(function () {
+                                /* const plot2SvgContainer = document.querySelector('#scatter-plot2 .svg-container');
+     
+                                // Apply custom styles to right-align the canvas
+                                plot2SvgContainer.style.marginLeft = 'auto';
+                                plot2SvgContainer.style.marginRight = '0';
+                                */
+
+                                // Put the generated pixel data onto the canvas
+                                generatedCtx.putImageData(imageData, 0, 0);
+
+                                // Set the generated image as the source of the img element
+                                const generatedImage = document.getElementById('generated-image');
+                                generatedImage.src = generatedCanvas.toDataURL();
+                            })
                         })
+
                     })
+                }
 
-                })
-            }
-
-            imageDisplay.crossOrigin = "Anonymous";
-            imageDisplay.src = imagePath
+                imageDisplay.crossOrigin = "Anonymous";
+                imageDisplay.src = imagePath
+            })
         }
 
         // Function to show or hide elements based on the current step
@@ -488,6 +507,7 @@
             const scatterPlot2Container = document.getElementById('scatter-plot2-container');
             const imageLink = document.getElementById('generated-image');
 
+            
             updateAdvanceButtons(step)
 
             // Show elements based on the current step
@@ -506,15 +526,21 @@
                     return step + 1;
 
                 case 2:
-                    const scatterPlot = document.getElementById('scatter-plot');
-                    const allTraces = scatterPlot.data;
+                    mutex
+                        .waitForUnlock()
+                        .then(() => {
+                            const scatterPlot = document.getElementById('scatter-plot');
+                            const allTraces = scatterPlot.data;
 
-                    // Find index of trace-object with "name" property  = "text to find":
-                    const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane');
+                            // Find index of trace-object with "name" property  = "text to find":
+                            const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane');
 
-                    // Make specified trace visible to the user:
-                    Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane]);
-                    return step + 1;
+                            // Make specified trace visible to the user:
+                            Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane]);
+
+                            return currentStep = step + 1;
+                        });
+                    return step;
 
                 case 3:
                     scatterPlot2Container.style.display = 'block';
@@ -543,16 +569,20 @@
         // Attach key event listener to the document
         document.addEventListener('keypress', handleInteraction);
 
-        // Initial state of the slideshow
-        currentStep = updateSlideShow(currentStep);
-
         // Load the image and create the scatter plot when the DOM is ready
         document.addEventListener('DOMContentLoaded', function () {
-            const queryParams = new URLSearchParams(window.location.search);
-            const imagePathFromQueryString = queryParams.get('image');
 
             if (imagePathFromQueryString) {
                 createScatterPlotFromImage(imagePathFromQueryString);
+
+                // Initial state of the slideshow
+                if (slideshow) {
+                    currentStep = updateSlideShow(currentStep);
+                } else {
+                    document.getElementById('menu').style.display = 'none';
+                    [0, 1, 2, 3, 4].map(n => updateSlideShow(n))
+                }
+
             } else {
                 console.error('Image path not provided in the query string.');
             }
