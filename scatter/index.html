@@ -5,10 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- 
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    -->
     <title>3D Scatter Plot from Image</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
     <style>
+        /*
+            + leftCol - - - - - - - - + - - - - - - - -rightCol +
+            |                         |                         |
+            |                         |                         |
+            |                         |                         |
+            |              + img1- - +|+ img2- - +              |
+            |              |         ||          |              |
+            |              |         ||          |              |
+            |              + - - - - +|+ - - - - +              |
+            + - - - - - - - - - - - - + - - - - - - - - - - - - +
+
+            + leftCol - - - - - - - - +
+            |                         |
+            |                         |
+            |                         |
+            |              + img1- - +|
+            |              |         ||
+            |              |         ||
+            |              + - - - - +|
+            + - - - - - - - - - - - - +
+            + - - - - - - - -rightCol +
+            |              + img2- - +|
+            |              |         ||
+            |              |         ||
+            |              + - - - - +|
+            |                         |
+            |                         |
+            |                         |
+            + - - - - - - - - - - - - +
+        */
         body {
             margin: 0;
         }
@@ -28,6 +60,17 @@
         .graph-container {
             position: relative;
             flex: 1;
+            width: 80%;
+        }
+
+        .leftCol .graph-container {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .rightCol .graph-container {
+            margin-left: auto;
+            margin-right: 0;
         }
 
         .graph {
@@ -37,7 +80,6 @@
 
         .image-overlay {
             position: absolute;
-            bottom: 0;
             margin: 0.5rem;
             width: 25%;
             height: auto;
@@ -45,10 +87,26 @@
 
         .image-overlay-left {
             left: 0;
+            bottom: 0;
         }
 
         .image-overlay-right {
             right: 0;
+            bottom: 0;
+        }
+
+        @media (max-width: 1140px) {
+            .image-overlay-left {
+                top: 0;
+                right: 0;
+                left: auto;
+                bottom: auto;
+            }
+
+            .rightCol .graph-container {
+                margin-left: 0;
+                margin-right: auto;
+            }
         }
 
         #loading {
@@ -75,16 +133,32 @@
         </svg>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-xl">
         <div class="row mt-3">
+            <style>
+                .advance {
+                    visibility: hidden;
+                }
+
+                .advance.visible {
+                    visibility: visible;
+                }
+            </style>
             <div class="col">
-                <button id="advanceButton" class="btn btn-light">Next Slide</button>
+                <button id="advanceButton1" class="btn btn-light advance">show plot</button>
+                &raquo;
+                <button id="advanceButton2" class="btn btn-light advance">show regression plane</button>
+                &raquo;
+                <button id="advanceButton3" class="btn btn-light advance">show flat plot</button>
+                &raquo;
+                <button id="advanceButton4" class="btn btn-light advance">show flat image</button>
             </div>
         </div>
-        <div class="row" style="width: 100%">
+        <div class="row" style="width: 100%; height: 40vh;">
             <!-- First Column -->
-            <div id="leftCol1" class="col-md-6 leftCol">
-                <div class="graph-container" style="width: 100%">
+            <div id="leftCol1" class="col-xl-6 leftCol">
+                &nbsp;
+                <div class="graph-container">
                     <!-- Plotly Graph -->
                     <div class="graph" id="scatter-plot-container">
                         <div id="scatter-plot"></div>
@@ -95,8 +169,9 @@
             </div>
 
             <!-- Second Column -->
-            <div id="rightCol1" class="col-md-6 justify-content-end rightCol">
-                <div class="graph-container" style="width: 100%">
+            <div id="rightCol1" class="col-xl-6 justify-content-end rightCol">
+                &nbsp;
+                <div class="graph-container">
                     <!-- Plotly Graph -->
                     <div class="graph" id="scatter-plot2-container">
                         <div id="scatter-plot2"></div>
@@ -106,35 +181,38 @@
                 <img id="generated-image" class="image-overlay image-overlay-left" />
             </div>
         </div>
-        <div class="row" style="width: 100%">
-            <!-- First Column -->
-            <div id="leftCol2" class="col-md-6 leftCol">
-                <div class="graph-container" style="width: 100%">
-                    <!-- 2D Scatter Plot for Coerced Surface -->
-                    <div class="graph" id="scatter-surface-container">
-                        <div id="scatter-surface"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- Second Column -->
-            <div id="rightCol2" class="col-md-6 justify-content-end rightCol">
-                <div class="graph-container" style="width: 100%">
-                    <!-- Plotly Graph -->
-                    <div class="graph" id="scatter-plot3-container">
-                        <div id="scatter-plot3"></div>
-                    </div>
-                    <!-- Image in the top-left corner -->
-                    <img id="generated-image2" class="image-overlay image-overlay-left" />
-                </div>
-            </div>
-        </div>
-    </div>
+        <!-- 
 
+            <div class="row" style="width: 100%; height: 40vh;">
+                <div id="leftCol2" class="col-xl-6 leftCol">
+                    <div class="graph-container" style="width: 100%">
+                        <div class="graph" id="scatter-surface-container">
+                            <div id="scatter-surface"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rightCol2" class="col-xl-6 justify-content-end rightCol">
+                    <div class="graph-container" style="width: 100%">
+                        <div class="graph" id="scatter-plot3-container">
+                            <div id="scatter-plot3"></div>
+                        </div>
+                        <img id="generated-image2" class="image-overlay image-overlay-left" />
+                    </div>
+                </div>
+            </div>
+        -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/plotly.js@latest/dist/plotly.min.js"></script>
+    <!-- 
+        <script src="https://cdn.jsdelivr.net/npm/default-passive-events@latest/dist/index.min.js"></script>
+    -->
     <script type="module">
         // main.js
         import { orthographicProjection, orthographicProjectionSet } from './vectorOperations.js';
         import { extractPlaneInfo, orthographicProjectionOnLine } from './planeOperations.js';
         import glob from './singletonModule.js';
+
+        const advanceButtons = Array.from(document.getElementsByClassName('advance'))
 
         function arrayToXYZObject(arr) {
             return { x: arr[0], y: arr[1], z: arr[2] };
@@ -233,13 +311,14 @@
 
                 // Display the 3D scatter plot
                 Plotly.newPlot('scatter-plot', [data3d], layout, { displayModeBar: false }).then(function () {
-                    const plotSvgContainer = document.querySelector('#scatter-plot .svg-container');
+                    /* const plotSvgContainer = document.querySelector('#scatter-plot .svg-container');
 
                     // Apply custom styles to right-align the canvas
                     plotSvgContainer.style.marginLeft = '0';
-                    plotSvgContainer.style.marginRight = 'auto';
+                    plotSvgContainer.style.marginRight = 'auto'; */
 
                     loadingElement.style.display = 'none'
+                    advanceButtons.forEach((e) => e.classList.add('visible'))
 
                     // Fetch the multiple linear regression plane from the server
                     const url = 'http://localhost:4321/perform_regression'
@@ -263,6 +342,8 @@
                             showscale: false,
                             hoverinfo: "none",
                             hovermode: false,
+                            visible: false,
+                            name: 'regression-plane'
                         };
 
                         Plotly.addTraces('scatter-plot', regressionPlane);
@@ -271,7 +352,7 @@
                         const generatedCanvas = document.createElement('canvas');
                         generatedCanvas.width = glob.width;
                         generatedCanvas.height = glob.height;
-                        const generatedCtx = generatedCanvas.getContext('2d');
+                        const generatedCtx = generatedCanvas.getContext('2d', { willReadFrequently: true });
 
                         // Create a new ImageData object to hold the pixel data
                         const imageData = generatedCtx.createImageData(glob.width, glob.height);
@@ -363,11 +444,12 @@
                         console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
 
                         Plotly.newPlot('scatter-plot2', [projectedCoercedScatter], layout, { displayModeBar: false }).then(function () {
-                            const plot2SvgContainer = document.querySelector('#scatter-plot2 .svg-container');
+                            /* const plot2SvgContainer = document.querySelector('#scatter-plot2 .svg-container');
 
                             // Apply custom styles to right-align the canvas
                             plot2SvgContainer.style.marginLeft = 'auto';
                             plot2SvgContainer.style.marginRight = '0';
+                            */
 
                             // Put the generated pixel data onto the canvas
                             generatedCtx.putImageData(imageData, 0, 0);
@@ -385,50 +467,83 @@
         }
 
         // Function to show or hide elements based on the current step
+        function updateAdvanceButtons(step) {
+            advanceButtons.forEach(b => {
+                b.disabled = true
+                b.classList.add('btn-light')
+            })
+            if (step < advanceButtons.length) {
+                const thisButton = advanceButtons[step]
+                thisButton.disabled = false
+                thisButton.addEventListener('click', handleInteraction)
+                thisButton.classList.remove('btn-light')
+                thisButton.classList.add('btn-secondary')
+            }
+        }
+
+        // Function to show or hide elements based on the current step
         function updateSlideShow(step) {
             const scatterPlotContainer = document.getElementById('scatter-plot-container');
             const scatterPlot2Container = document.getElementById('scatter-plot2-container');
             const imageLink = document.getElementById('generated-image');
 
-            // Hide all elements 
-            scatterPlotContainer.style.display = 'none';
-            scatterPlot2Container.style.display = 'none';
-            imageLink.style.display = 'none';
+            updateAdvanceButtons(step)
 
             // Show elements based on the current step
-            if (step >= 1) {
-                scatterPlotContainer.style.display = 'block';
-            }
-            if (step >= 2) {
-                scatterPlot2Container.style.display = 'block';
-            }
-            if (step >= 3) {
-                imageLink.style.display = 'block';
+            switch (step) {
+                case 0:
+                    // Hide all elements 
+                    scatterPlotContainer.style.display = 'none';
+                    scatterPlot2Container.style.display = 'none';
+                    imageLink.style.display = 'none';
+
+                    return step + 1;
+                    break;
+
+                case 1:
+                    scatterPlotContainer.style.display = 'block';
+                    return step + 1;
+
+                case 2:
+                    const scatterPlot = document.getElementById('scatter-plot');
+                    const allTraces = scatterPlot.data;
+
+                    // Find index of trace-object with "name" property  = "text to find":
+                    const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane');
+
+                    // Make specified trace visible to the user:
+                    Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane]);
+                    return step + 1;
+
+                case 3:
+                    scatterPlot2Container.style.display = 'block';
+                    return step + 1;
+
+                case 4:
+                    imageLink.style.display = 'block';
+                    return step + 1;
+
+                default:
+                    return step;
             }
         }
 
         let currentStep = 0;
 
         // Function to handle key events and button click
-        function handleInteraction() {
-            currentStep++;
-            updateSlideShow(currentStep);
-
-            // Disable the button when the slideshow is done
-            const advanceButton = document.getElementById('advanceButton');
-            if (currentStep >= 3) {
-                advanceButton.disabled = true;
+        function handleInteraction(e) {
+            if (event.target.disabled) {
+                return
             }
+            currentStep = updateSlideShow(currentStep)
+
         }
 
         // Attach key event listener to the document
         document.addEventListener('keypress', handleInteraction);
 
-        // Attach click event listener to the button
-        document.getElementById('advanceButton').addEventListener('click', handleInteraction);
-
         // Initial state of the slideshow
-        updateSlideShow(currentStep);
+        currentStep = updateSlideShow(currentStep);
 
         // Load the image and create the scatter plot when the DOM is ready
         document.addEventListener('DOMContentLoaded', function () {
@@ -446,8 +561,6 @@
         window.addEventListener('resize', function () {
             Plotly.Plots.resize('scatter-plot');
             Plotly.Plots.resize('scatter-plot2');
-            Plotly.Plots.resize('scatter-surface');
-            Plotly.Plots.resize('scatter-plot3');
         });
     </script>
 
