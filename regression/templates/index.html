@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
     <title>Multiple Linear Regression with Plotly</title>
@@ -11,10 +12,16 @@
 
 <body>
 
-    <div id="scatter-plot"></div>
-    <div id="std-dev-residuals"></div>
+    <main class="container-md">
+        <div id="scatter-plot"></div>
+        <div id="std-dev-residuals"></div>
+    </main>
 
-    <script>
+    <script type="module">
+        const glob = {
+            MIN: 0,
+            MAX: 256,
+        }
         window.N = (value, fromSrc, toSrc, fromTarget, toTarget) => {
             // Calculate the percentage of the value in the source range
             const percentage = (value - fromSrc) / (toSrc - fromSrc)
@@ -26,12 +33,9 @@
 
         // Function to perform regression and update the plot
         function performRegression() {
-            const X1 = Array.from({ length: 100 }, () => Math.random());
-            let i = 0
-            const X2 = Array.from({ length: 100 }, () => {
-                return N(Math.random(), 0, 1, 0, .1)
-            }/* 0 */);
-            const Y = X1.map((x1, i) => 2 * x1 + 3 * X2[i] + Math.random());
+            const X1 = Array.from({ length: 256 }, () => { return N(Math.random(), 0, 1, 0, 256) })
+            const X2 = Array.from({ length: 256 }, () => { return N(Math.random(), 0, 1, 0, 256) })
+            const Y = Array.from({ length: 256 }, () => { return N(Math.random(), 0, 1, 0, 256) })
 
             // Perform regression on the server
             fetch('/perform_regression', {
@@ -61,37 +65,67 @@
                 z: Y,
                 mode: 'markers',
                 type: 'scatter3d',
-                marker: { size: 5, color: 'red' },
-                name: 'Data Points'
+                showlegend: false,
+                showscale: false,
+                hoverinfo: "none",
+                hovermode: false,
+                marker: {
+                    size: 5,
+                    color: [],      // Array to store colors for each point
+                    opacity: 0.80,  // Set opacity for every point
+                },
             };
+            for (let i = 0; i < scatterPlot.x.length; i++) {
+                const x = scatterPlot.x[i]
+                const y = scatterPlot.y[i]
+                const z = scatterPlot.z[i]
+                scatterPlot.marker.color.push(`rgb(${x}, ${y}, ${z})`);
+            }
 
             const regressionPlane = {
                 x: results.meshgrid.X1,
                 y: results.meshgrid.X2,
                 z: results.meshgrid.Y,
                 type: 'surface',
-                opacity: 0.5,
-                contours: {
-                    z: {
-                        show: true,
-                        usecolormap: true,
-                        highlightcolor: "#42f462",
-                        project: { z: true }
-                    }
-                },
-                colorscale: 'Viridis',
-                name: 'Regression Plane'
+                type: 'surface',
+                opacity: 0.3,
+                colorscale: 'Greens',
+                showlegend: false,
+                showscale: false,
+                hoverinfo: "none",
+                hovermode: false,
+                visible: true,
+                name: 'regression-plane'
             };
 
             const layout = {
                 scene: {
-                    xaxis: { title: 'X1' },
-                    yaxis: { title: 'X2' },
-                    zaxis: { title: 'Y' }
+                    aspectmode: 'cube',
+                    xaxis: { autorange: false, title: 'X Red' },
+                    yaxis: { autorange: false, title: 'Y Green' },
+                    zaxis: { autorange: false, title: 'Z Blue' },
+                },
+                showlegend: false,
+                showscale: false,
+                hoverinfo: "none",
+                hovermode: false,
+                margin: {
+                    l: 0,
+                    r: 0,
+                    t: 0,
+                    b: 0
                 }
             };
 
-            Plotly.newPlot('scatter-plot', [scatterPlot, regressionPlane], layout);
+            for (const property in layout.scene) {
+                if (!['xaxis', 'yaxis', 'zaxis'].includes(property)) continue;
+                layout.scene[property].range = [glob.MIN, glob.MAX]
+                layout.scene[property]["tickvals"] = [glob.MIN, glob.MAX / 4 - 1, glob.MAX / 2 - 1, 3 * glob.MAX / 4 - 1, glob.MAX - 1]
+                layout.scene[property]["ticktext"] = layout.scene[property]["tickvals"].map(tickval => tickval.toString(16).padStart(2, '0').toUpperCase())
+            }
+
+
+            Plotly.newPlot('scatter-plot', [scatterPlot, regressionPlane], layout, { displayModeBar: false });
         }
 
         // Function to display standard deviation of residuals

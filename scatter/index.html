@@ -490,6 +490,7 @@
         function updateAdvanceButtons(step) {
             advanceButtons.forEach(b => {
                 b.disabled = true
+                b.classList.remove('btn-secondary')
                 b.classList.add('btn-light')
             })
             if (step < advanceButtons.length) {
@@ -506,7 +507,6 @@
             const scatterPlotContainer = document.getElementById('scatter-plot-container');
             const scatterPlot2Container = document.getElementById('scatter-plot2-container');
             const imageLink = document.getElementById('generated-image');
-
             
             updateAdvanceButtons(step)
 
@@ -517,9 +517,7 @@
                     scatterPlotContainer.style.display = 'none';
                     scatterPlot2Container.style.display = 'none';
                     imageLink.style.display = 'none';
-
                     return step + 1;
-                    break;
 
                 case 1:
                     scatterPlotContainer.style.display = 'block';
@@ -532,7 +530,7 @@
                             const scatterPlot = document.getElementById('scatter-plot');
                             const allTraces = scatterPlot.data;
 
-                            // Find index of trace-object with "name" property  = "text to find":
+                            // Find index of trace-object with "name" property = "regression-plane":
                             const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane');
 
                             // Make specified trace visible to the user:
@@ -563,7 +561,6 @@
                 return
             }
             currentStep = updateSlideShow(currentStep)
-
         }
 
         // Attach key event listener to the document
