@@ -4,7 +4,7 @@ import numpy as np
 from sklearn import linear_model
 
 # Load the example image
-image_path = "thumbs2/T_979-1092457186.jpg"
+image_path = "../thumbs2/T_979-1092457186.jpg"
 original_image = cv2.imread(image_path)
 image_rgb = cv2.cvtColor(original_image, cv2.COLOR_BGR2RGB)
 
