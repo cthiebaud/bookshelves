@@ -42,7 +42,7 @@ def cluster_image(image_path, min_cluster_size = 50):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python hdbsca.py <min_cluster_size> <isbn>")
+        print("Usage: python hdbsca.py <min_cluster_size> <isbn (with a jpg file!)>")
         sys.exit(1)
 
     min_cluster_size = int(sys.argv[1])
