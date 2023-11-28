@@ -144,7 +144,7 @@
                     visibility: visible;
                 }
             </style>
-            <div class="col">
+            <div id="menu-bar" class="col" style="visibility: hidden;">
                 <button id="advanceButton1" class="btn btn-light advance">show plot</button>
                 &raquo;
                 <button id="advanceButton2" class="btn btn-light advance">show regression plane</button>
@@ -335,6 +335,7 @@
                         plotSvgContainer.style.marginRight = 'auto'; */
 
                         loadingElement.style.display = 'none'
+                        document.getElementById('menu-bar').style.visibility = 'visible'
                         advanceButtons.forEach((e) => e.classList.add('visible'))
 
                         // Determine the server location based on the current environment
