@@ -337,10 +337,13 @@
                         loadingElement.style.display = 'none'
                         advanceButtons.forEach((e) => e.classList.add('visible'))
 
+                        // Determine the server location based on the current environment
+                        const host = window.location.hostname === 'localhost'
+                            ? 'http://localhost:4321'
+                            : 'https://bookshelves-406316.ew.r.appspot.com';
+
                         // Fetch the multiple linear regression plane from the server
-                        const host = 'https://bookshelves-406316.ew.r.appspot.com/'
-                        // const host = 'http://localhost:4321/'
-                        const url = `${host}perform_regression`
+                        const url = `${host}/perform_regression`
                         fetch(url, {
                             method: 'POST',
                             mode: "cors",
@@ -510,7 +513,7 @@
             const scatterPlotContainer = document.getElementById('scatter-plot-container');
             const scatterPlot2Container = document.getElementById('scatter-plot2-container');
             const imageLink = document.getElementById('generated-image');
-            
+
             updateAdvanceButtons(step)
 
             // Show elements based on the current step
