@@ -338,20 +338,22 @@
                         advanceButtons.forEach((e) => e.classList.add('visible'))
 
                         // Fetch the multiple linear regression plane from the server
-                        const url = 'https://bookshelves-406316.ew.r.appspot.com/perform_regression'
+                        // const host = 'https://bookshelves-406316.ew.r.appspot.com/'
+                        const host = 'http://localhost:4321/'
+                        const url = `${host}perform_regression`
                         fetch(url, {
                             method: 'POST',
                             mode: "cors",
                             headers: {
                                 'Content-Type': 'application/json',
                             },
-                            body: JSON.stringify({ X1: data3d.x, X2: data3d.y, Y: data3d.z }),
+                            body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z }),
                         }).then(response => response.json()).then(results => {
                             console.log(results)
                             const regressionPlane = {
-                                x: results.meshgrid.X1,
-                                y: results.meshgrid.X2,
-                                z: results.meshgrid.Y,
+                                x: results.meshgrid.x,
+                                y: results.meshgrid.y,
+                                z: results.meshgrid.z,
                                 type: 'surface',
                                 opacity: 0.3,
                                 colorscale: 'Greens',
@@ -375,7 +377,7 @@
                             // Create a new ImageData object to hold the pixel data
                             const imageData = generatedCtx.createImageData(glob.width, glob.height);
 
-                            const planeInfo = extractPlaneInfo(results.coefficients.coef_X1, results.coefficients.coef_X2, -1, results.coefficients.intercept)
+                            const planeInfo = extractPlaneInfo(results.coefficients.x, results.coefficients.y, results.coefficients.z, results.coefficients.intercept)
 
                             // Create a second scatter plot with projected and coerced z-coordinates
                             const projectedCoercedScatter = {
@@ -460,6 +462,7 @@
                             }
                             console.log(`altered: ${altered} out of ${projecteds.length}`)
                             console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
+                            console.log(`std_dev: ${results.std_dev_residuals}`)
 
                             Plotly.newPlot('scatter-plot2', [projectedCoercedScatter], layout, { displayModeBar: false }).then(function () {
                                 /* const plot2SvgContainer = document.querySelector('#scatter-plot2 .svg-container');
