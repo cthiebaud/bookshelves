@@ -27,7 +27,7 @@ def perform_regression_and_get_std_dev_and_model(X1, X2, Y):
     # Calculate standard deviation of residuals
     std_dev_residuals = np.std(residuals)
 
-    print(f"std_dev_residuals: {std_dev_residuals}")
+    # print(f"std_dev_residuals: {std_dev_residuals}")
 
     return std_dev_residuals, model
 
@@ -42,32 +42,27 @@ def perform_regression():
         data['z']
     ]
 
-    p = [
+    permutations = [
         [0,1,2],
         [2,1,0],
         [0,2,1],    
     ]
 
-    res = []
-
-    for index, _p in enumerate(p):
-        res.append(perform_regression_and_get_std_dev_and_model(xyz[_p[0]], xyz[_p[1]], xyz[_p[2]]))
     # Calculate std_dev_residuals and get the model for the original data
-    ## std_dev_original, model_original = perform_regression_and_get_std_dev_and_model(xyz[p[0][0]], xyz[p[0][1]], xyz[p[0][2]])
-    ## std_dev_permuta1, model_permuta1 = perform_regression_and_get_std_dev_and_model(xyz[p[1][0]], xyz[p[1][1]], xyz[p[1][2]])
-    ## std_dev_permuta2, model_permuta2 = perform_regression_and_get_std_dev_and_model(xyz[p[2][0]], xyz[p[2][1]], xyz[p[2][2]])
+    res = [perform_regression_and_get_std_dev_and_model(xyz[p[0]], xyz[p[1]], xyz[p[2]]) for p in permutations]
 
-    print(res)
+    # print(res)
 
     # Find the permutation with the lowest std_dev_residuals
-    P, best_permutation = min(
+    p, best_permutation = min(
         enumerate(res),
         key=lambda x: x[1][0]
     )
+    P = permutations[p]
     std_dev_residuals = best_permutation[0]
     model = best_permutation[1]
     
-    print(p[P], "model.coef_", model.coef_, "model.intercept_", model.intercept_)
+    # print(P, "model.coef_", model.coef_, "model.intercept_", model.intercept_)
 
     # Create a meshgrid for the plane
     n_points = 16
@@ -79,8 +74,8 @@ def perform_regression():
     planes = [X1_plane.tolist(), X2_plane.tolist(), Y_plane.tolist()]
     coeffs = [model.coef_[0], model.coef_[1], -1]
 
-    coefficients = {'intercept': model.intercept_, 'x': coeffs[p[P][0]], 'y': coeffs[p[P][1]], 'z': coeffs[p[P][2]]}
-    meshgrid =  {'x': planes[p[P][0]], 'y': planes[p[P][1]], 'z': planes[p[P][2]]}
+    coefficients = {'intercept': model.intercept_, 'x': coeffs[P[0]], 'y': coeffs[P[1]], 'z': coeffs[P[2]]}
+    meshgrid =  {'x': planes[P[0]], 'y': planes[P[1]], 'z': planes[P[2]]}
 
     # Prepare results to send back to the frontend
     results = {
@@ -88,6 +83,8 @@ def perform_regression():
         'meshgrid': meshgrid,
         'std_dev_residuals': std_dev_residuals
     }
+
+    print(f"{data['image']}:\n\tstd_dev: {std_dev_residuals}")
 
     # Return results to the frontend
     return jsonify(results)

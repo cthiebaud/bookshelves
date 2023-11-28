@@ -43,8 +43,10 @@
         */
         body {
             margin: 0;
-        }
 
+            background-color: #ececec;
+        }
+        
         .leftCol {
             position: relative;
             align-items: flex-start;
@@ -83,25 +85,26 @@
             margin: 0.5rem;
             width: 25%;
             height: auto;
+            bottom: 0;
         }
 
         .image-overlay-left {
             left: 0;
-            bottom: 0;
         }
 
         .image-overlay-right {
             right: 0;
-            bottom: 0;
         }
 
         @media (max-width: 1140px) {
             .image-overlay-left {
+                bottom: auto;
                 top: 0;
                 right: 0;
                 left: auto;
-                bottom: auto;
             }
+
+            .image-overlay-right {}
 
             .rightCol .graph-container {
                 margin-left: 0;
@@ -147,14 +150,22 @@
             <div id="menu-bar" class="col" style="visibility: hidden;">
                 <button id="advanceButton1" class="btn btn-light advance">show plot</button>
                 &raquo;
-                <button id="advanceButton2" class="btn btn-light advance">show regression plane</button>
+                <button id="advanceButton2" class="btn btn-light advance position-relative">
+                    show regression plane
+                    <span id="std_dev_badge" class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-secondary font-monospace"
+                        style="visibility: hidden;">
+                        <span id="std_dev" title="Standard Deviation"></span>
+                        <span class="visually-hidden">Standard Deviation</span>
+                    </span>
+                </button>
                 &raquo;
                 <button id="advanceButton3" class="btn btn-light advance">show flat plot</button>
                 &raquo;
                 <button id="advanceButton4" class="btn btn-light advance">show flat image</button>
             </div>
         </div>
-        <div class="row" style="width: 100%; height: 40vh;">
+
+        <div class="row">
             <!-- First Column -->
             <div id="leftCol1" class="col-xl-6 leftCol">
                 &nbsp;
@@ -303,9 +314,17 @@
                     const layout = {
                         scene: {
                             aspectmode: 'cube',
-                            xaxis: { autorange: false, title: 'X Red' },
-                            yaxis: { autorange: false, title: 'Y Green' },
-                            zaxis: { autorange: false, title: 'Z Blue' },
+                            xaxis: { autorange: false, showticklabels: false, title: '' },
+                            yaxis: { autorange: false, showticklabels: false, title: '' },
+                            zaxis: { autorange: false, showticklabels: false, title: '' },
+                            /*
+                            annotations: [],
+                            camera: {
+                                eye: { x: 1.25, y: 1.25, z: 1.25 },
+                                center: { x: 0, y: 0, z: 0 },
+                                up: { x: 0, y: 0, z: 1 }
+                            }
+                            */
                         },
                         showlegend: false,
                         showscale: false,
@@ -318,7 +337,39 @@
                             b: 0
                         }
                     };
-
+                    /*
+                    const colors = {
+                        '000': "black",
+                        '001': "blue",
+                        '010': "green",
+                        '011': "cyan",
+                        '100': "red",
+                        '101': "magenta",
+                        '110': "yellow",
+                        '111': "white",
+                    }
+                    for (let r = 0; r < 2; r++) {
+                        for (let g = 0; g < 2; g++) {
+                            for (let b = 0; b < 2; b++) {
+                                const colorName = colors[`${r}${g}${b}`]
+                                layout.scene.annotations.push({
+                                    showarrow: false,
+                                    x: r * 256,
+                                    y: g * 256,
+                                    z: b * 256,
+                                    text: colorName,
+                                    font: {
+                                        color: colorName,
+                                        size: 12,
+                                        weight: "bold",
+                                    },
+                                    bordercolor: 'black',
+                                    opacity: 0.5
+                                })
+                            }
+                        }
+                    }
+                    */
                     for (const property in layout.scene) {
                         if (!['xaxis', 'yaxis', 'zaxis'].includes(property)) continue;
                         layout.scene[property].range = [glob.MIN, glob.MAX]
@@ -351,9 +402,9 @@
                             headers: {
                                 'Content-Type': 'application/json',
                             },
-                            body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z }),
+                            body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z, image: imagePathFromQueryString}),
                         }).then(response => response.json()).then(results => {
-                            console.log(results)
+                            /* console.log(results) */
                             const regressionPlane = {
                                 x: results.meshgrid.x,
                                 y: results.meshgrid.y,
@@ -466,7 +517,8 @@
                             }
                             console.log(`altered: ${altered} out of ${projecteds.length}`)
                             console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
-                            console.log(`std_dev: ${results.std_dev_residuals}`)
+                            document.getElementById('std_dev_badge').style.visibility = 'visible'
+                            document.getElementById('std_dev').innerHTML = results.std_dev_residuals.toFixed(2)
 
                             Plotly.newPlot('scatter-plot2', [projectedCoercedScatter], layout, { displayModeBar: false }).then(function () {
                                 /* const plot2SvgContainer = document.querySelector('#scatter-plot2 .svg-container');
@@ -475,6 +527,18 @@
                                 plot2SvgContainer.style.marginLeft = 'auto';
                                 plot2SvgContainer.style.marginRight = '0';
                                 */
+                                // Add event listener to plot1 for changes in the camera angle
+                                document.getElementById('scatter-plot2').on('plotly_relayout', function (eventData) {
+                                    // Check if the event is related to a change in the camera
+                                    if (eventData['scene.camera']) {
+                                        // Update the camera of plot2 based on the changes in plot1
+                                        Plotly.relayout('scatter-plot', {
+                                            'scene.camera.eye': eventData['scene.camera'].eye,
+                                            'scene.camera.center': eventData['scene.camera'].center,
+                                            'scene.camera.up': eventData['scene.camera'].up
+                                        });
+                                    }
+                                });
 
                                 // Put the generated pixel data onto the canvas
                                 generatedCtx.putImageData(imageData, 0, 0);
@@ -521,13 +585,13 @@
             switch (step) {
                 case 0:
                     // Hide all elements 
-                    scatterPlotContainer.style.display = 'none';
-                    scatterPlot2Container.style.display = 'none';
+                    scatterPlotContainer.style.visibility = 'hidden';
+                    scatterPlot2Container.style.visibility = 'hidden';
                     imageLink.style.display = 'none';
                     return step + 1;
 
                 case 1:
-                    scatterPlotContainer.style.display = 'block';
+                    scatterPlotContainer.style.visibility = 'visible';
                     return step + 1;
 
                 case 2:
@@ -548,7 +612,7 @@
                     return step;
 
                 case 3:
-                    scatterPlot2Container.style.display = 'block';
+                    scatterPlot2Container.style.visibility = 'visible';
                     return step + 1;
 
                 case 4:
