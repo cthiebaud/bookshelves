@@ -157,10 +157,22 @@
                 .advance.visible {
                     visibility: visible;
                 }
+
+                .gray {
+                    color: #a0a0a0;
+                    /* Set the color to black */
+                }
+                button:disabled {
+                    filter: opacity(0.75);
+                }
             </style>
-            <div id="menu-bar" class="col" style="visibility: hidden;">
+            <div class="col" id="menu-bar" style="visibility: hidden;">
+                <button class="btn btn-light" onclick="restartFromBeginning()">
+                    <span class="gray">↺</span>
+                </button>
+                <span class="gray">|</span>
                 <button id="advanceButton1" class="btn btn-light advance">show plot</button>
-                &raquo;
+                <span class="gray">▶</span>
                 <button id="advanceButton2" class="btn btn-light advance position-relative">
                     show regression plane
                     <span id="std_dev_badge" class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-secondary font-monospace"
@@ -169,9 +181,9 @@
                         <span class="visually-hidden">Standard Deviation</span>
                     </span>
                 </button>
-                &raquo;
+                <span class="gray">▶</span>
                 <button id="advanceButton3" class="btn btn-light advance">show flat plot</button>
-                &raquo;
+                <span class="gray">▶</span>
                 <button id="advanceButton4" class="btn btn-light advance">show flat image</button>
             </div>
         </div>
@@ -248,6 +260,11 @@
             }
         }
 
+        window.restartFromBeginning = () => {
+            // Reload the "/" URL
+            window.location.href = `/scatter${slideshow === false? '?slideshow=false' : ''}`
+        }
+
         const mutex = new Mutex();
 
         const advanceButtons = Array.from(document.getElementsByClassName('advance'))
@@ -279,7 +296,7 @@
                 if (slideshow) {
                     currentStep = updateSlideShow(currentStep);
                 } else {
-                    document.getElementById('menu').style.display = 'none';
+                    // document.getElementById('menu').style.display = 'none';
                     [0, 1, 2, 3, 4].map(n => updateSlideShow(n))
                 }
 
