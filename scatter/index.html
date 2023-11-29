@@ -540,6 +540,7 @@
         }
 
         // Function to show or hide elements based on the current step
+        let currentStep = 0;
         function updateSlideShow(step) {
             const scatterPlotContainer = document.getElementById('scatter-plot-container');
             const scatterPlot2Container = document.getElementById('scatter-plot2-container');
@@ -589,8 +590,6 @@
                     return step;
             }
         }
-
-        let currentStep = 0;
 
         // Function to handle key events and button click
         function handleInteraction(e) {
