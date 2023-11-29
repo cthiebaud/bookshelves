@@ -43,14 +43,17 @@ def main():
     }
 
     combinations = [
-        (color_dict['cyan'], color_dict['blue'], color_dict['black'], color_dict['green']),
-        (color_dict['blue'], color_dict['magenta'], color_dict['red'], color_dict['black']),
-        (color_dict['magenta'], color_dict['white'], color_dict['yellow'], color_dict['red']),
-        (color_dict['white'], color_dict['cyan'], color_dict['green'], color_dict['yellow']),
-        
-        (color_dict['cyan'], color_dict['white'], color_dict['magenta'], color_dict['blue']),
-        (color_dict['black'], color_dict['red'], color_dict['yellow'], color_dict['green']),
-        # Add more combinations as needed
+
+        ## (color_dict['cyan'], color_dict['blue'], color_dict['black'], color_dict['green']),
+        ## (color_dict['blue'], color_dict['magenta'], color_dict['red'], color_dict['black']),
+        ## (color_dict['magenta'], color_dict['white'], color_dict['yellow'], color_dict['red']),
+        ## (color_dict['white'], color_dict['cyan'], color_dict['green'], color_dict['yellow']),
+        ## 
+        ## (color_dict['cyan'], color_dict['white'], color_dict['magenta'], color_dict['blue']),
+        ## (color_dict['black'], color_dict['red'], color_dict['yellow'], color_dict['green']),
+        ## # Add more combinations as needed
+
+        (color_dict['black'], color_dict['red'], color_dict['yellow'], color_dict['blue']),
     ]
 
     for i, combination in enumerate(combinations):
