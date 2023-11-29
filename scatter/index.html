@@ -231,7 +231,15 @@
 
         const queryParams = new URLSearchParams(window.location.search);
         const imagePathFromQueryString = queryParams.get('image');
-        const slideshowFromQueryString = (queryParams.get('slideshow') || '').toLowerCase() === 'true';
+        const slideshowFromQueryString = ((slideshowFromQueryString) => {
+            if (typeof slideshowFromQueryString === undefined || slideshowFromQueryString == null) {
+                return true;
+            } else if (slideshowFromQueryString.toLowerCase() === "true") {
+                return true;
+            }
+            return false;
+        })(queryParams.get('slideshow'));
+
 
         window.restartFromBeginning = () => {
             // Reload the "/scatter" URL
