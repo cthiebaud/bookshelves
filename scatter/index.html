@@ -148,7 +148,7 @@
     </div>
 
     <div class="container-xl">
-        <div id="menu" class="row mt-3">
+        <div id="menu" class="row mt-3" style="white-space: nowrap;">
             <style>
                 .advance {
                     visibility: hidden;
@@ -162,18 +162,19 @@
                     color: #a0a0a0;
                     /* Set the color to black */
                 }
+
                 button:disabled {
                     filter: opacity(0.75);
                 }
             </style>
-            <div class="col" id="menu-bar" style="visibility: hidden;">
+            <div class="col" id="menu-bar" style="visibility: hidden; white-space: nowrap;">
                 <button class="btn btn-light" onclick="restartFromBeginning()">
                     <span class="gray">↺</span>
                 </button>
                 <span class="gray">|</span>
-                <button id="advanceButton1" class="btn btn-light advance">show plot</button>
+                <button id="advance-button-1" class="btn btn-light advance">show plot</button>
                 <span class="gray">▶</span>
-                <button id="advanceButton2" class="btn btn-light advance position-relative">
+                <button id="advance-button-2" class="btn btn-light advance position-relative">
                     show regression plane
                     <span id="std_dev_badge" class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-secondary font-monospace"
                         style="visibility: hidden;">
@@ -182,10 +183,12 @@
                     </span>
                 </button>
                 <span class="gray">▶</span>
-                <button id="advanceButton3" class="btn btn-light advance">show flat plot</button>
+                <button id="advance-button-3" class="btn btn-light advance">show flat plot</button>
                 <span class="gray">▶</span>
-                <button id="advanceButton4" class="btn btn-light advance">show flat image</button>
-                <div id="error-msg"></div>
+                <button id="advance-button-4" class="btn btn-light advance">show flat image</button>
+            </div>
+            <div class="col-auto d-flex align-items-center">
+                <div id="error-msg" class="text-danger"></div>
             </div>
         </div>
 
@@ -216,90 +219,48 @@
                 <img id="generated-image" class="image-overlay image-overlay-left" />
             </div>
         </div>
-        <!-- 
-
-            <div class="row" style="width: 100%; height: 40vh;">
-                <div id="leftCol2" class="col-xl-6 leftCol">
-                    <div class="graph-container" style="width: 100%">
-                        <div class="graph" id="scatter-surface-container">
-                            <div id="scatter-surface"></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="rightCol2" class="col-xl-6 justify-content-end rightCol">
-                    <div class="graph-container" style="width: 100%">
-                        <div class="graph" id="scatter-plot3-container">
-                            <div id="scatter-plot3"></div>
-                        </div>
-                        <img id="generated-image2" class="image-overlay image-overlay-left" />
-                    </div>
-                </div>
-            </div>
-        -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/plotly.js@latest/dist/plotly.min.js"></script>
-    <!-- 
-        <script src="https://cdn.jsdelivr.net/npm/default-passive-events@latest/dist/index.min.js"></script>
-    -->
     <script type="module">
-        // main.js
         import { Mutex } from 'https://cdn.jsdelivr.net/npm/async-mutex@0.4.0/+esm'
-        import { orthographicProjection, orthographicProjectionSet } from './vectorOperations.js';
-        import { extractPlaneInfo, orthographicProjectionOnLine } from './planeOperations.js';
+
+        import { orthographicProjectionSet } from './vectorOperations.js';
+        import { extractPlaneInfo } from './planeOperations.js';
         import glob from './singletonModule.js';
+        import _ from './_.js'
 
         const queryParams = new URLSearchParams(window.location.search);
         const imagePathFromQueryString = queryParams.get('image');
-        let slideshow = queryParams.get('slideshow');
-        if (typeof slideshow === undefined || slideshow == null) {
-            slideshow = true
-        } else {
-            if (slideshow.toLowerCase() === "true") {
-                slideshow = true
-            } else {
-                slideshow = false
-            }
-        }
+        const slideshowFromQueryString = (queryParams.get('slideshow') || '').toLowerCase() === 'true';
 
         window.restartFromBeginning = () => {
-            // Reload the "/" URL
-            window.location.href = `/scatter${slideshow === false? '?slideshow=false' : ''}`
+            // Reload the "/scatter" URL
+            window.location.href = `/scatter${slideshowFromQueryString === false ? '?slideshow=false' : ''}`
         }
 
-        const mutex = new Mutex();
+        // if the user pushes the "show regression plane" button, 
+        // the button will wait until this mutex has been released to display anything
+        const regressionPlaneFromServerMutex = new Mutex();
 
         const advanceButtons = Array.from(document.getElementsByClassName('advance'))
-
-        function arrayToXYZObject(arr) {
-            return { x: arr[0], y: arr[1], z: arr[2] };
-        }
-        function XYZObjectToArray(obj) {
-            return [obj.x, obj.y, obj.z];
-        }
-
-        function _coerce_(w, min = glob.MIN, max = glob.MAX) {
-            if (w < min) {
-                return min
-            }
-            if (max < w) {
-                return max - glob.EPSILON
-            }
-            return w
-        }
 
         // Function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath) {
             const loadingElement = document.getElementById('loading');
             const imageDisplay = document.getElementById('image-display');
 
-            mutex.acquire().then(function (release) {
+            regressionPlaneFromServerMutex.acquire().then(function (releaseMutex) {
                 // Initial state of the slideshow
-                if (slideshow) {
+                if (slideshowFromQueryString) {
                     currentStep = updateSlideShow(currentStep);
                 } else {
-                    // document.getElementById('menu').style.display = 'none';
-                    [0, 1, 2, 3, 4].map(n => updateSlideShow(n))
+                    advanceButtons.map((element, index) => updateSlideShow(index))
                 }
+
+                imageDisplay.onerror = function () {
+                    document.getElementById('error-msg').innerHTML = `Error loading the image: ${_.truncateString(imagePath, 24)}`
+                    releaseMutex()
+                };
 
                 imageDisplay.onload = function () {
 
@@ -354,14 +315,6 @@
                             xaxis: { autorange: false, showticklabels: false, title: '' },
                             yaxis: { autorange: false, showticklabels: false, title: '' },
                             zaxis: { autorange: false, showticklabels: false, title: '' },
-                            /*
-                            annotations: [],
-                            camera: {
-                                eye: { x: 1.25, y: 1.25, z: 1.25 },
-                                center: { x: 0, y: 0, z: 0 },
-                                up: { x: 0, y: 0, z: 1 }
-                            }
-                            */
                         },
                         showlegend: false,
                         showscale: false,
@@ -374,39 +327,7 @@
                             b: 0
                         }
                     };
-                    /*
-                    const colors = {
-                        '000': "black",
-                        '001': "blue",
-                        '010': "green",
-                        '011': "cyan",
-                        '100': "red",
-                        '101': "magenta",
-                        '110': "yellow",
-                        '111': "white",
-                    }
-                    for (let r = 0; r < 2; r++) {
-                        for (let g = 0; g < 2; g++) {
-                            for (let b = 0; b < 2; b++) {
-                                const colorName = colors[`${r}${g}${b}`]
-                                layout.scene.annotations.push({
-                                    showarrow: false,
-                                    x: r * 256,
-                                    y: g * 256,
-                                    z: b * 256,
-                                    text: colorName,
-                                    font: {
-                                        color: colorName,
-                                        size: 12,
-                                        weight: "bold",
-                                    },
-                                    bordercolor: 'black',
-                                    opacity: 0.5
-                                })
-                            }
-                        }
-                    }
-                    */
+
                     for (const property in layout.scene) {
                         if (!['xaxis', 'yaxis', 'zaxis'].includes(property)) continue;
                         layout.scene[property].range = [glob.MIN, glob.MAX]
@@ -416,11 +337,6 @@
 
                     // Display the 3D scatter plot
                     Plotly.newPlot('scatter-plot', [data3d], layout, { displayModeBar: false }).then(function () {
-                        /* const plotSvgContainer = document.querySelector('#scatter-plot .svg-container');
-     
-                        // Apply custom styles to right-align the canvas
-                        plotSvgContainer.style.marginLeft = '0';
-                        plotSvgContainer.style.marginRight = 'auto'; */
 
                         loadingElement.style.display = 'none'
                         document.getElementById('menu-bar').style.visibility = 'visible'
@@ -441,7 +357,7 @@
                             },
                             body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z, image: imagePath }),
                         }).then(response => response.json()).then(results => {
-                            /* console.log(results) */
+
                             const regressionPlane = {
                                 x: results.meshgrid.x,
                                 y: results.meshgrid.y,
@@ -458,7 +374,7 @@
                             };
 
                             Plotly.addTraces('scatter-plot', regressionPlane);
-                            release()
+                            releaseMutex()
 
                             // Create a new canvas to draw the generated image
                             const generatedCanvas = document.createElement('canvas');
@@ -513,9 +429,9 @@
                             const projectedsAsPoints = convertToPointsObject(projecteds);
 
                             // coerce projections to [0, 256)
-                            projectedCoercedScatter.x = projectedsAsPoints.x.map(x => _coerce_(x))
-                            projectedCoercedScatter.y = projectedsAsPoints.y.map(y => _coerce_(y))
-                            projectedCoercedScatter.z = projectedsAsPoints.z.map(z => _coerce_(z))
+                            projectedCoercedScatter.x = projectedsAsPoints.x.map(x => _.coerce(x))
+                            projectedCoercedScatter.y = projectedsAsPoints.y.map(y => _.coerce(y))
+                            projectedCoercedScatter.z = projectedsAsPoints.z.map(z => _.coerce(z))
 
                             // Loop through the projectedCoercedScatter data to set the RGB values for each pixel
                             let altered = 0
@@ -584,8 +500,13 @@
                                 const generatedImage = document.getElementById('generated-image');
                                 generatedImage.src = generatedCanvas.toDataURL();
                             })
-                        })
-
+                        }).catch((error) => {
+                            console.error('Fetch error:', error);
+                            document.getElementById('error-msg').innerHTML = `${_.truncateString(url, 24)}: ${error}`
+                        }).finally(() => {
+                            // Ensure the mutex is released regardless of success or failure
+                            releaseMutex();
+                        });
                     })
                 }
 
@@ -632,7 +553,7 @@
                     return step + 1;
 
                 case 2:
-                    mutex
+                    regressionPlaneFromServerMutex
                         .waitForUnlock()
                         .then(() => {
                             const scatterPlot = document.getElementById('scatter-plot');
@@ -720,9 +641,11 @@
                                     reader.readAsDataURL(blob);
                                 })
                                 .catch(error => {
+                                    document.getElementById('error-msg').innerHTML = `${_.truncateString(url, 24)}: ${error}`
                                     console.error('Error fetching the image:', error);
                                 });
                         } else {
+                            document.getElementById('error-msg').innerHTML = `${_.truncateString(url, 24)}: Invalid URL or not an image URL.`
                             console.error('Invalid URL or not an image URL.');
                         }
                     });
