@@ -185,6 +185,7 @@
                 <button id="advanceButton3" class="btn btn-light advance">show flat plot</button>
                 <span class="gray">▶</span>
                 <button id="advanceButton4" class="btn btn-light advance">show flat image</button>
+                <div id="error-msg"></div>
             </div>
         </div>
 
@@ -438,7 +439,7 @@
                             headers: {
                                 'Content-Type': 'application/json',
                             },
-                            body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z, image: imagePathFromQueryString }),
+                            body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z, image: imagePath }),
                         }).then(response => response.json()).then(results => {
                             /* console.log(results) */
                             const regressionPlane = {
