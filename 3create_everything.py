@@ -30,6 +30,8 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
     basename = os.path.basename(filename)
     if basename[0:1] == "!":
         continue
+    if basename == 'app.yaml':
+        continue
     print(i, basename)
     parts = PurePath(filename).parts
     house = parts[0]
@@ -42,6 +44,7 @@ for filename in glob.iglob('**/*.yaml', recursive=True):
         if os.fstat(f.fileno()).st_size != 0: # https://stackoverflow.com/a/283719/1070215
             data = yaml.safe_load(f)
             for key, value in data.items():
+                print(key, value)
                 value["where"] = where
                 tags = value.get("tags", [])
                 cover = value.get("cover", {})
