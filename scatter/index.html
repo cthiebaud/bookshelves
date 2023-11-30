@@ -158,34 +158,56 @@
                     visibility: visible;
                 }
 
-                .gray {
-                    color: #a0a0a0;
-                    /* Set the color to black */
-                }
-
                 button:disabled {
                     filter: opacity(0.75);
                 }
+
+                button.btn {
+                    padding: 4px 6px;
+                    vertical-align: middle !important;
+                }
             </style>
             <div class="col" id="menu-bar" style="visibility: hidden; white-space: nowrap;">
-                <button class="btn btn-light" onclick="restartFromBeginning()">
-                    <span class="gray">↺</span>
-                </button>
-                <span class="gray">|</span>
-                <button id="advance-button-1" class="btn btn-light advance">show plot</button>
-                <span class="gray">▶</span>
-                <button id="advance-button-2" class="btn btn-light advance position-relative">
-                    show regression plane
-                    <span id="std_dev_badge" class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-secondary font-monospace"
-                        style="visibility: hidden;">
-                        <span id="std_dev" title="Standard Deviation"></span>
-                        <span class="visually-hidden">Standard Deviation</span>
-                    </span>
-                </button>
-                <span class="gray">▶</span>
-                <button id="advance-button-3" class="btn btn-light advance">show flat plot</button>
-                <span class="gray">▶</span>
-                <button id="advance-button-4" class="btn btn-light advance">show flat image</button>
+                <div class="btn-group" role="group">
+                    <button class="btn btn-light" onclick="window.location.href = '/'">
+                        <!-- home-svgrepo-com.svg -->
+                        <svg fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width:22px; height:auto;">
+                            <path fill-rule="evenodd" fill="#606060"
+                                d="M192,1.42108547e-14 L384,153.6 L384,384 L213.333333,384 L213.333333,277.333333 L170.666667,277.333333 L170.666667,384 L1.42108547e-14,384 L1.42108547e-14,153.6 L192,1.42108547e-14 Z M192,53.3333333 L42.6666667,170.666667 L42.6666667,341.333333 L128,341.333333 L128,234.666667 L256,234.666667 L256,341.333333 L341.333333,341.333333 L341.333333,170.666667 L192,53.3333333 Z"
+                                transform="translate(64 64)" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-light" onclick="restartFromBeginning()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:22px; height:auto;">
+                            <path fill-rule="evenodd" fill="#606060"
+                                d="M420.48 121.813 390.187 91.52 256 225.92 121.813 91.52 91.52 121.813 225.92 256 91.52 390.187l30.293 30.293L256 286.08l134.187 134.4 30.293-30.293L286.08 256z" />
+                        </svg>
+
+                        <!-- reset-svgrepo-com.svg 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:22px; height:auto;">
+                                <path fill-rule="evenodd" fill="#606060"
+                                d="M426.667 106.667v42.666L358 149.33c36.077 31.659 58.188 77.991 58.146 128.474-.065 78.179-53.242 146.318-129.063 165.376-75.82 19.058-154.895-15.838-191.92-84.695C58.142 289.63 72.638 204.42 130.348 151.68a85.333 85.333 0 0 0 33.28 30.507 124.587 124.587 0 0 0-46.294 97.066c1.05 69.942 58.051 126.088 128 126.08 64.072 1.056 118.709-46.195 126.906-109.749 6.124-47.483-15.135-92.74-52.237-118.947L320 256h-42.667V106.667h149.334ZM202.667 64c23.564 0 42.666 19.103 42.666 42.667s-19.102 42.666-42.666 42.666c-23.564 0-42.667-19.102-42.667-42.666C160 83.103 179.103 64 202.667 64Z" />
+                            </svg>
+                        -->
+                    </button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="advance-button-1" class="btn btn-light advance">show plot <span class="gray">▷</span></button>
+
+                    <button id="advance-button-2" class="btn btn-light advance position-relative">
+                        show regression plane
+                        <span id="std_dev_badge" class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-secondary font-monospace"
+                            style="visibility: hidden;">
+                            <span id="std_dev" title="Standard Deviation"></span>
+                            <span class="visually-hidden">Standard Deviation</span>
+                        </span>
+                        <span class="gray">▷</span>
+                    </button>
+                    
+                    <button id="advance-button-3" class="btn btn-light advance">show flat plot <span class="gray">▷</span></button>
+                    
+                    <button id="advance-button-4" class="btn btn-light advance">show flat image <span class="gray">▷</span></button>
+                </div>
             </div>
             <div class="col-auto d-flex align-items-center">
                 <div id="error-msg" class="text-danger"></div>
@@ -203,7 +225,7 @@
                     </div>
                 </div>
                 <!-- Image in the top-right corner -->
-                <a href="/"><img id="image-display" class="image-overlay image-overlay-right" /></a>
+                <img id="image-display" class="image-overlay image-overlay-right" />
             </div>
 
             <!-- Second Column -->
@@ -279,7 +301,7 @@
                     imageDisplay.src = theImage.src
 
                     if (!glob.width || !glob.height) {
-                        const containsDimensions = _.contains(theImage, 150*300)
+                        const containsDimensions = _.contains(theImage, 150 * 300)
                         glob.width = containsDimensions.width;
                         glob.height = containsDimensions.height;
                     }
@@ -319,7 +341,7 @@
                             data3d.x.push(pixel[0]);  // Red component as x
                             data3d.y.push(pixel[1]);  // Green component as y
                             data3d.z.push(pixel[2]);  // Blue component as z
-                            data3d.w.push(pixel[3]/255);  // alpha channel
+                            data3d.w.push(pixel[3] / 255);  // alpha channel
 
                             // Add color for each point
                             data3d.marker.color.push(`rgba(${pixel[0]}, ${pixel[1]}, ${pixel[2]}, ${pixel[3]})`);
@@ -484,7 +506,7 @@
                                 imageData.data[index] = (x)        //  & 0xFF; // Red
                                 imageData.data[index + 1] = (y)    //  & 0xFF; // Green
                                 imageData.data[index + 2] = (z)    //  & 0xFF; // Blue
-                                imageData.data[index + 3] = (w*255)    // Alpha value, 255 for fully opaque
+                                imageData.data[index + 3] = (w * 255)    // Alpha value, 255 for fully opaque
                             }
                             console.log(`altered: ${altered} out of ${projecteds.length}`)
                             console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
