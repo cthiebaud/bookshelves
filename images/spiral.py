@@ -32,4 +32,4 @@ def plot_3d_spiral(num_points=100, height_factor=1, base_radius_factor=1, height
     plt.show()
 
 # Demo: Plot a 3D spiral with exponentially increasing radius and height with a parameter
-plot_3d_spiral(40000, height_factor=.1, base_radius_factor=.1, height_exponent=2, radius_exponent=2, some_other_parameter=3, num_rotations=20)
+plot_3d_spiral(1024, height_factor=1, base_radius_factor=1, height_exponent=2, radius_exponent=3, some_other_parameter=1.618, num_rotations=16)

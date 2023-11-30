@@ -295,6 +295,7 @@
                         x: [],
                         y: [],
                         z: [],
+                        w: [],
                         mode: 'markers',
                         type: 'scatter3d',
                         showlegend: false,
@@ -318,9 +319,10 @@
                             data3d.x.push(pixel[0]);  // Red component as x
                             data3d.y.push(pixel[1]);  // Green component as y
                             data3d.z.push(pixel[2]);  // Blue component as z
+                            data3d.w.push(pixel[3]/255);  // alpha channel
 
                             // Add color for each point
-                            data3d.marker.color.push(`rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`);
+                            data3d.marker.color.push(`rgba(${pixel[0]}, ${pixel[1]}, ${pixel[2]}, ${pixel[3]})`);
                         }
                     }
 
@@ -438,7 +440,7 @@
                                 return {
                                     x: transposedProjections[0],
                                     y: transposedProjections[1],
-                                    z: transposedProjections[2]
+                                    z: transposedProjections[2],
                                 };
                             }
                             const projectedsAsPoints = convertToPointsObject(projecteds);
@@ -456,6 +458,7 @@
                                 const x = projectedCoercedScatter.x[i]
                                 const y = projectedCoercedScatter.y[i]
                                 const z = projectedCoercedScatter.z[i]
+                                const w = data3d.w[i]
 
                                 if (x !== projectedsAsPoints.x[i] ||
                                     y !== projectedsAsPoints.y[i] ||
@@ -467,12 +470,12 @@
                                     altered++
                                 }
 
-                                if (x < 0 || y < 0 || z < 0 || x >= 256 || y >= 256 || z >= 256) {
-                                    console.log(`rgb(${x}, ${y}, ${z}) WRONG !!!`)
+                                if (x < 0 || y < 0 || z < 0 || w < 0 || x >= 256 || y >= 256 || z >= 256 || w > 1) {
+                                    console.log(`rgba(${x}, ${y}, ${z}, ${w}) WRONG !!!`)
                                     wrongs++
                                 }
 
-                                projectedCoercedScatter.marker.color.push(`rgb(${x}, ${y}, ${z})`);
+                                projectedCoercedScatter.marker.color.push(`rgba(${x}, ${y}, ${z}), ${w}`);
 
                                 // Calculate the index in the ImageData array
                                 const index = i * 4;
@@ -481,7 +484,7 @@
                                 imageData.data[index] = (x)        //  & 0xFF; // Red
                                 imageData.data[index + 1] = (y)    //  & 0xFF; // Green
                                 imageData.data[index + 2] = (z)    //  & 0xFF; // Blue
-                                imageData.data[index + 3] = 255; // Alpha value, 255 for fully opaque
+                                imageData.data[index + 3] = (w*255)    // Alpha value, 255 for fully opaque
                             }
                             console.log(`altered: ${altered} out of ${projecteds.length}`)
                             console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
