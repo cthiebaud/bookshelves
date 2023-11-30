@@ -16,12 +16,9 @@ class Singleton {
         this._dataStructure.MAX = 256
         this._dataStructure.ε = (() => {
             let ε = Number.EPSILON
-            let c = 0;
-            while (this._dataStructure.MAX - ε == this._dataStructure.MAX) {
+            while (this._dataStructure.MAX - ε >= this._dataStructure.MAX) {
                 ε *= 2
-                c++
             }
-            console.log(`MIN = ${this._dataStructure.MIN}, MAX = ${this._dataStructure.MAX}, ε = ${this._dataStructure.ε} (in ${c} iterations)`)
             return ε
         })()
     }
@@ -57,6 +54,7 @@ class Singleton {
 
 // Create a single instance of the Singleton class
 const glob = new Singleton();
+console.log(`MIN = ${glob.MIN}, MAX = ${glob.MAX}, ε = ${glob.EPSILON}`)
 
 // Export the instance to make it accessible in other modules
 export default glob;

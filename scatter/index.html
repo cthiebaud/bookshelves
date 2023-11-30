@@ -264,17 +264,24 @@
                 } else {
                     advanceButtons.map((element, index) => updateSlideShow(index))
                 }
+                const theImage = new Image()
 
-                imageDisplay.onerror = function () {
+                theImage.onerror = function () {
                     document.getElementById('error-msg').innerHTML = `Error loading the image: ${_.truncateString(imagePath, 24)}`
                     releaseMutex()
                 };
 
-                imageDisplay.onload = function () {
+                theImage.onload = function () {
+
+                    imageDisplay.onload = function () {
+                        console.log(`in memory dimensions: ${glob.width}x${glob.height}, squeezed from ${theImage.width}x${theImage.height}, instead of <img>: ${imageDisplay.width}x${imageDisplay.height}`)
+                    }
+                    imageDisplay.src = theImage.src
 
                     if (!glob.width || !glob.height) {
-                        glob.width = imageDisplay.width;
-                        glob.height = imageDisplay.height;
+                        const containsDimensions = _.contains(theImage, 150*300)
+                        glob.width = containsDimensions.width;
+                        glob.height = containsDimensions.height;
                     }
 
                     // Create a single canvas element and draw the image once
@@ -363,7 +370,7 @@
                             headers: {
                                 'Content-Type': 'application/json',
                             },
-                            body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z, image: imagePath }),
+                            body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z, image: _.truncateString(imagePath, 128) }),
                         }).then(response => response.json()).then(results => {
 
                             const regressionPlane = {
@@ -518,8 +525,8 @@
                     })
                 }
 
-                imageDisplay.crossOrigin = "Anonymous";
-                imageDisplay.src = imagePath
+                theImage.crossOrigin = "Anonymous";
+                theImage.src = imagePath
             })
         }
 
