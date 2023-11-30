@@ -43,7 +43,6 @@
             text-align: left;
         }
 
-        #figuresContainer:after,
         .category:after {
             content: "";
             /* This is necessary for the pseudo element to work. */
@@ -468,6 +467,9 @@
             </div>
         </div>
         <div id="figuresContainer" class="image-container"></div>
+        <!--
+            <div><hr></div>
+        -->
     </div>
     <script>
         // Function to set --background-image based on ID
@@ -1171,7 +1173,6 @@ ${book.cover.palette_diversity.total.toFixed(0)}
                 } else {
                     // console.log(book)
                 }
-
             }
             c.display()
         }
