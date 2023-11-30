@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pause Philo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #full-cover {
+            width: 100vw;
+            height: 100vh;
+            background: url('sphere_image_surface_uniform_shuffled.png') center/cover no-repeat;
+            position: relative;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="full-cover" onclick="openNewTab('/scatter/?image=/images/sphere_image_surface_uniform_shuffled.png')"></div>
+
+    <script>
+        function openNewTab(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
