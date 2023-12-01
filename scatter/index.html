@@ -132,7 +132,7 @@
 
     <div class="container-xl">
         <div class="row">
-            <div id="error-msg" class="text-danger col d-flex align-items-center"></div>
+            <div id="error-msg" class="text-danger col"></div>
         </div>
     </div>
 
@@ -379,7 +379,6 @@
                             b: 0
                         }
                     };
-
 
                     for (const property in layout.scene) {
                         if (!['xaxis', 'yaxis', 'zaxis'].includes(property)) continue;
