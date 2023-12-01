@@ -8,7 +8,7 @@ max = 0
 min_title = None
 max_title = None
 
-with open('/Users/christophe.thiebaud/github.com/goodreads-scraper/QWE/all_books.json', 'r') as fp:
+with open('./dist/all_books.json', 'r') as fp:
     goodreads = json.load(fp)
 
     for book in goodreads:
