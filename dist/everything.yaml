@@ -18955,14 +18955,9 @@
   where: /saint-lazare-de-savene/salon/_7
 978-8806114176:
   cover:
-    line_coefficients: '[-1.2120271925796712e-16, 1.0000000000000004, 0.996548140494387]'
-    mse_line_within_plane: '6.0595560871306245e-05'
-    mse_plane: '2.2097128531007178e-33'
     palette: '[{''color'': [46, 0, 1], ''count'': 962}, {''color'': [112, 50, 50],
-      ''count'': 1137}, {''color'': [163, 73, 75], ''count'': 2383}, {''color'': [188,
-      67, 66], ''count'': 24363}, {''color'': [182, 62, 59], ''count'': 27555}]'
-    plane_coefficients: '[2.9260629865652147e-16, 2.220446049250313e-16, 1.0000000000000002,
-      0.0]'
+      ''count'': 1137}, {''color'': [163, 73, 75], ''count'': 2382}, {''color'': [188,
+      67, 66], ''count'': 24364}, {''color'': [182, 62, 59], ''count'': 27555}]'
   de: Italo Calvino
   image_path: thumbs/T_978-8806114176.jpg
   lan: "\U0001F1EE\U0001F1F9"
