@@ -1,6 +1,4 @@
-// singletonModule.js
-
-class Singleton {
+class Globals {
     _dataStructure = {
         width: undefined,
         height: undefined,
@@ -53,7 +51,7 @@ class Singleton {
 }
 
 // Create a single instance of the Singleton class
-const glob = new Singleton();
+const glob = new Globals();
 console.log(`MIN = ${glob.MIN}, MAX = ${glob.MAX}, ε = ${glob.EPSILON}`)
 
 // Export the instance to make it accessible in other modules

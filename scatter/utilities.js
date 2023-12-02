@@ -1,4 +1,4 @@
-import glob from './singletonModule.js'
+import glob from './globals.js'
 
 class _ {
     static truncateString(str, maxLength) {
@@ -42,7 +42,6 @@ class _ {
             return { width: theImage.width, height: theImage.height }
         }
     }
-
 
     static truncateString(str, maxLength) {
         if (str.length <= maxLength) {

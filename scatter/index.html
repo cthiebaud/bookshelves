@@ -252,11 +252,11 @@
     <script src="https://cdn.jsdelivr.net/npm/plotly.js@latest/dist/plotly.min.js"></script>
     <script type="module">
         import { Mutex } from 'https://cdn.jsdelivr.net/npm/async-mutex@0.4.0/+esm'
-        import { orthographicProjectionSet } from './vectorOperations.js';
-        import { extractPlaneInfo } from './planeOperations.js';
-        import glob from './singletonModule.js';
-        import _ from './_.js'
-        import SlideShow from './slideShow.js'
+
+        import _ from './utilities.js'
+        import { extractPlaneInfo , orthographicProjectionSet } from './geometry.js';
+        import glob from './globals.js';
+        import SlideShow from './slideshow.js'
 
         // gros sablier au milieu
         const loadingElement = document.getElementById('loading');
