@@ -21,15 +21,15 @@ for ext in extensions:
            basename = basename[2:]
         # if basename.startswith('978-2070514427') :
           # prefix thumbnail file with T_
-        thumbName = f"{dir[1]}/T_{basename}"
+        thumbName = f"{dir[1]}/T_{basename}".replace('.png', '.webp')
         # print(i, filename, "=>", thumbName, os.path.isfile(thumbName))
         
         # don't create thumbnail if already exists
         if not os.path.isfile(thumbName):
           print(f"{basename} => {thumbName}")
-          im = Image.open(filename).convert('RGB')
+          im = Image.open(filename).convert('RGBA')
           im.thumbnail((200, 400), Image.LANCZOS)
-          im.save(thumbName, "JPEG")
+          im.save(thumbName, format='WebP')
           created = created + 1
         
         i = i + 1

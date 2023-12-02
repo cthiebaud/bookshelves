@@ -78,8 +78,6 @@ extensions = ['jpg', 'jpeg', 'webp', 'png']
 i = 0
 for ext in extensions:
     for filename2 in glob.iglob('thumbs/*.'+ext, recursive=True):
-        if ext == 'png':
-            print(os.path.basename(i, filename2))
         key = PurePath(filename2).stem[2:]
         images.append(filename2)
         my_dictionary[key]["image_path"] = f"thumbs/{os.path.basename(filename2)}" # filename2

@@ -14,6 +14,7 @@ from PIL import Image
 
 import os
 sizes = []
+imsizes = []
 i = 0
 for filename3 in glob.iglob('thumbs/*', recursive=False):
   im = Image.open(filename3)
@@ -22,8 +23,11 @@ for filename3 in glob.iglob('thumbs/*', recursive=False):
   size = os.stat(filename3).st_size 
   print(basename, im.size, size)
   sizes.append(size)
+  imsizes.append(im.size)
   i += 1
 
 
 print(f"{i} thumbs, {sum(sizes)} total bytes, {min(sizes)} min, {max(sizes)} max")
+print(f"{min(imsizes, key = lambda t: t[0])} min width, {max(imsizes, key = lambda t: t[0])} max width")
+print(f"{min(imsizes, key = lambda t: t[1])} min height, {max(imsizes, key = lambda t: t[1])} max height")
 
