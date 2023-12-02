@@ -254,24 +254,24 @@
         import { Mutex } from 'https://cdn.jsdelivr.net/npm/async-mutex@0.4.0/+esm'
 
         import _ from './utilities.js'
-        import { extractPlaneInfo , orthographicProjectionSet } from './geometry.js';
-        import glob from './globals.js';
+        import { extractPlaneInfo , orthographicProjectionSet } from './geometry.js'
+        import glob from './globals.js'
         import SlideShow from './slideshow.js'
 
         // gros sablier au milieu
-        const loadingElement = document.getElementById('loading');
+        const loadingElement = document.getElementById('loading')
 
         // what's in the URL ?
-        const queryParams = new URLSearchParams(window.location.search);
-        const imagePathFromQueryString = queryParams.get('image');
+        const queryParams = new URLSearchParams(window.location.search)
+        const imagePathFromQueryString = queryParams.get('image')
         const slideshowFromQueryString = ((slideshowParam) => {
             if (typeof slideshowParam === undefined || slideshowParam == null) {
-                return true;
+                return true
             } else if (slideshowParam.toLowerCase() === "true" || slideshowParam === "") {
-                return true;
+                return true
             }
-            return false;
-        })(queryParams.get('slideshow'));
+            return false
+        })(queryParams.get('slideshow'))
 
         // reload the "/scatter" URL
         window.restartFromBeginning = () => {
@@ -288,13 +288,13 @@
         }
         // resize the plot when the window is resized
         window.addEventListener('resize', function () {
-            Plotly.Plots.resize('scatter-plot');
-            Plotly.Plots.resize('scatter-plot2');
-        });
+            Plotly.Plots.resize('scatter-plot')
+            Plotly.Plots.resize('scatter-plot2')
+        })
 
         // if the user pushes the "show regression plane" button, 
         // the button will wait until this mutex has been released to display anything
-        const regressionPlaneFromServerMutex = new Mutex();
+        const regressionPlaneFromServerMutex = new Mutex()
 
         // function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath) {
@@ -305,9 +305,9 @@
             regressionPlaneFromServerMutex.acquire().then(function (releaseMutex) {
                 // initial state of the slideshow
                 if (slideshowFromQueryString) {
-                    slideShow.bump();
+                    slideShow.bump()
                 } else {
-                    slideShow.disable();
+                    slideShow.disable()
                 }
 
                 // will hold the image
@@ -318,29 +318,29 @@
                     showError(`Error loading image: ${imagePath}`)
                     releaseMutex()
                     loadingElement.style.display = 'none'
-                };
+                }
 
                 // allons-y
                 theImage.onload = function () {
 
-                    const imageDisplay = document.getElementById('image-display');
+                    const imageDisplay = document.getElementById('image-display')
                     // imageDisplay.src = theImage.src
-                    imageDisplay.style.backgroundImage = `url('${theImage.src}')`;
+                    imageDisplay.style.backgroundImage = `url('${theImage.src}')`
 
                     if (!glob.width || !glob.height) {
                         const containsDimensions = _.contains(theImage, 160 * 300)
-                        glob.width = containsDimensions.width;
-                        glob.height = containsDimensions.height;
+                        glob.width = containsDimensions.width
+                        glob.height = containsDimensions.height
                     }
                     // just log some calculations
                     console.log(`in memory: ${glob.width}x${glob.height}, squeezed from ${theImage.width}x${theImage.height}`)
 
                     // create a single canvas element and draw the image once
-                    const canvas = document.createElement('canvas');
-                    canvas.width = glob.width;
-                    canvas.height = glob.height;
-                    const ctx = canvas.getContext('2d', { willReadFrequently: true });
-                    ctx.drawImage(this, 0, 0, glob.width, glob.height); // this should be theImage, if I follow correctly
+                    const canvas = document.createElement('canvas')
+                    canvas.width = glob.width
+                    canvas.height = glob.height
+                    const ctx = canvas.getContext('2d', { willReadFrequently: true })
+                    ctx.drawImage(this, 0, 0, glob.width, glob.height) // this should be theImage, if I follow correctly
 
                     // this will hold the points
                     const data3d = {
@@ -359,22 +359,22 @@
                             color: [],      // array to store colors for each point
                             opacity: 0.80,  // set opacity for every point
                         },
-                    };
+                    }
 
                     // loop through all pixels and sample pixel data
                     for (let y = 0; y < glob.height; y++) {
                         for (let x = 0; x < glob.width; x++) {
                             // sample pixel data from the drawn image
-                            const pixel = ctx.getImageData(x, y, 1, 1).data;
+                            const pixel = ctx.getImageData(x, y, 1, 1).data
 
                             // add coordinates to the single trace
-                            data3d.x.push(pixel[0]);  // red component as x
-                            data3d.y.push(pixel[1]);  // green component as y
-                            data3d.z.push(pixel[2]);  // blue component as z
-                            data3d.w.push(pixel[3] / 255);  // alpha channel
+                            data3d.x.push(pixel[0])  // red component as x
+                            data3d.y.push(pixel[1])  // green component as y
+                            data3d.z.push(pixel[2])  // blue component as z
+                            data3d.w.push(pixel[3] / 255)  // alpha channel
 
                             // add color for each point
-                            data3d.marker.color.push(`rgba(${pixel[0]}, ${pixel[1]}, ${pixel[2]}, ${pixel[3]})`);
+                            data3d.marker.color.push(`rgba(${pixel[0]}, ${pixel[1]}, ${pixel[2]}, ${pixel[3]})`)
                         }
                     }
 
@@ -395,10 +395,10 @@
                             t: 0,
                             b: 0
                         }
-                    };
+                    }
 
                     for (const property in layout.scene) {
-                        if (!['xaxis', 'yaxis', 'zaxis'].includes(property)) continue;
+                        if (!['xaxis', 'yaxis', 'zaxis'].includes(property)) continue
                         layout.scene[property].range = [glob.MIN, glob.MAX]
                         // leave in case we decide to show tickslabel
                         layout.scene[property]["tickvals"] = [glob.MIN, glob.MAX / 4 - 1, glob.MAX / 2 - 1, 3 * glob.MAX / 4 - 1, glob.MAX - 1]
@@ -422,7 +422,7 @@
                         // determine the server location based on the current environment
                         const host = window.location.hostname === 'localhost'
                             ? 'http://localhost:4321'
-                            : 'https://bookshelves-406316.ew.r.appspot.com';
+                            : 'https://bookshelves-406316.ew.r.appspot.com'
 
                         // fetch the multiple linear regression plane from the server
                         const url = `${host}/perform_regression`
@@ -448,19 +448,19 @@
                                 hovermode: false,
                                 visible: false,
                                 name: 'regression-plane'
-                            };
+                            }
 
-                            Plotly.addTraces('scatter-plot', regressionPlane);
+                            Plotly.addTraces('scatter-plot', regressionPlane)
                             releaseMutex()
 
                             // create a new canvas to draw the generated image
-                            const generatedCanvas = document.createElement('canvas');
-                            generatedCanvas.width = glob.width;
-                            generatedCanvas.height = glob.height;
-                            const generatedCtx = generatedCanvas.getContext('2d', { willReadFrequently: true });
+                            const generatedCanvas = document.createElement('canvas')
+                            generatedCanvas.width = glob.width
+                            generatedCanvas.height = glob.height
+                            const generatedCtx = generatedCanvas.getContext('2d', { willReadFrequently: true })
 
                             // create a new ImageData object to hold the pixel data
-                            const imageData = generatedCtx.createImageData(glob.width, glob.height);
+                            const imageData = generatedCtx.createImageData(glob.width, glob.height)
 
                             const planeInfo = extractPlaneInfo(results.coefficients.x, results.coefficients.y, results.coefficients.z, results.coefficients.intercept)
 
@@ -477,7 +477,7 @@
                                     opacity: 0.80,
                                 },
                                 hoverinfo: 'none'
-                            };
+                            }
 
                             const projecteds = orthographicProjectionSet(
                                 data3d,
@@ -495,15 +495,15 @@
                             function convertToPointsObject(projecteds) {
                                 const transposedProjections = projecteds[0].map((_, i) =>
                                     projecteds.map(projection => projection[i])
-                                );
+                                )
 
                                 return {
                                     x: transposedProjections[0],
                                     y: transposedProjections[1],
                                     z: transposedProjections[2],
-                                };
+                                }
                             }
-                            const projectedsAsPoints = convertToPointsObject(projecteds);
+                            const projectedsAsPoints = convertToPointsObject(projecteds)
 
                             // coerce projections to [0, 256)
                             projectedCoercedScatter.x = projectedsAsPoints.x.map(x => _.coerce(x))
@@ -531,15 +531,15 @@
                                     wrongs++
                                 }
 
-                                projectedCoercedScatter.marker.color.push(`rgba(${x}, ${y}, ${z}), ${w}`);
+                                projectedCoercedScatter.marker.color.push(`rgba(${x}, ${y}, ${z}), ${w}`)
 
                                 // calculate the index in the ImageData array
-                                const index = i * 4;
+                                const index = i * 4
 
                                 // set the RGB values for the pixel directly from projectedCoercedScatter.z
-                                imageData.data[index] = (x)            //  & 0xFF; // red
-                                imageData.data[index + 1] = (y)        //  & 0xFF; // green
-                                imageData.data[index + 2] = (z)        //  & 0xFF; // blue
+                                imageData.data[index] = (x)            //  red
+                                imageData.data[index + 1] = (y)        //  green
+                                imageData.data[index + 2] = (z)        //  blue
                                 imageData.data[index + 3] = (w * 255)  // alpha value, 255 for fully opaque
                             }
                             console.log(`altered: ${altered} out of ${projecteds.length}`)
@@ -557,62 +557,62 @@
                                             'scene.camera.eye': eventData['scene.camera'].eye,
                                             'scene.camera.center': eventData['scene.camera'].center,
                                             'scene.camera.up': eventData['scene.camera'].up
-                                        });
+                                        })
                                     }
-                                });
+                                })
 
                                 // put the generated pixel data onto the canvas
-                                generatedCtx.putImageData(imageData, 0, 0);
+                                generatedCtx.putImageData(imageData, 0, 0)
 
                                 // set the generated image as the source of the img element
-                                const generatedImage = document.getElementById('generated-image');
-                                // generatedImage.src = generatedCanvas.toDataURL();
-                                generatedImage.style.backgroundImage = `url('${generatedCanvas.toDataURL()}')`;
+                                const generatedImage = document.getElementById('generated-image')
+                                // generatedImage.src = generatedCanvas.toDataURL()
+                                generatedImage.style.backgroundImage = `url('${generatedCanvas.toDataURL()}')`
                                 
                                 // es ist vollbracht
                                 loadingElement.style.display = 'none'
                             })
                         }).catch((error) => {
-                            console.error('Fetch error:', error);
+                            console.error('Fetch error:', error)
                             showError(`${error}: ${url}`)
                         }).finally(() => {
                             // ensure the mutex is released regardless of success or failure
-                            releaseMutex();
-                        });
+                            releaseMutex()
+                        })
                     })
                 }
 
-                theImage.crossOrigin = "Anonymous";
+                theImage.crossOrigin = "Anonymous"
                 theImage.src = imagePath
             })
         }
         
         // slideshow in another file, but largely linked to this one
-        const slideShow = new SlideShow(regressionPlaneFromServerMutex);
+        const slideShow = new SlideShow(regressionPlaneFromServerMutex)
 
         // load the image and create the scatter plot when the DOM is ready
         document.addEventListener('DOMContentLoaded', function () {
 
-            const dropZone = document.getElementById('drop-zone');
-            const fileInput = document.getElementById('file-input');
+            const dropZone = document.getElementById('drop-zone')
+            const fileInput = document.getElementById('file-input')
 
             if (imagePathFromQueryString) {
-                createScatterPlotFromImage(imagePathFromQueryString);
+                createScatterPlotFromImage(imagePathFromQueryString)
             } else {
                 // show the drop zone if no image parameter is present
-                dropZone.style.display = 'flex';
+                dropZone.style.display = 'flex'
                 loadingElement.style.display = 'none'
             }
 
             function readImageAsDataURLThenFeedIntoScatterPlot(whatEverThatBe) {
-                const reader = new FileReader();
+                const reader = new FileReader()
                 reader.onload = (e) => {
-                    const imagePath = e.target.result;
-                    createScatterPlotFromImage(imagePath);
-                    dropZone.style.display = 'none';
+                    const imagePath = e.target.result
+                    createScatterPlotFromImage(imagePath)
+                    dropZone.style.display = 'none'
                     clearError()
                 }
-                reader.readAsDataURL(whatEverThatBe);
+                reader.readAsDataURL(whatEverThatBe)
             }
 
             function fetchAsBlobThenReadImageAsDataURLThenFeedIntoScatterPlot(item) {
@@ -628,44 +628,44 @@
                                 .catch(error => {
                                     const errorMsg = `${error}: ${url}`
                                     showError(errorMsg)
-                                    console.error(errorMsg);
-                                });
+                                    console.error(errorMsg)
+                                })
                         } else {
                             const errorMsg = `Not a (jpeg|jpg|gif|png|webp): ${url}`
                             showError(errorMsg)
-                            console.error(errorMsg);
+                            console.error(errorMsg)
                         }
-                    });
+                    })
                 }
             }
 
             // event listener for drag and drop
             dropZone.addEventListener('dragover', function (e) {
-                e.preventDefault();
-                dropZone.classList.add('bg-light', 'border', 'border-primary');
-            });
+                e.preventDefault()
+                dropZone.classList.add('bg-light', 'border', 'border-primary')
+            })
 
             dropZone.addEventListener('dragleave', function () {
-                dropZone.classList.remove('bg-light', 'border', 'border-primary');
-            });
+                dropZone.classList.remove('bg-light', 'border', 'border-primary')
+            })
 
             dropZone.addEventListener('drop', function (e) {
-                e.preventDefault();
-                dropZone.classList.remove('bg-light', 'border', 'border-primary');
+                e.preventDefault()
+                dropZone.classList.remove('bg-light', 'border', 'border-primary')
                 if (e.dataTransfer.files.length != 0) {
-                    readImageAsDataURLThenFeedIntoScatterPlot(e.dataTransfer.files[0]);
+                    readImageAsDataURLThenFeedIntoScatterPlot(e.dataTransfer.files[0])
                 } else if (e.dataTransfer.items.length != 0) {
-                    fetchAsBlobThenReadImageAsDataURLThenFeedIntoScatterPlot(e.dataTransfer.items[0]);
+                    fetchAsBlobThenReadImageAsDataURLThenFeedIntoScatterPlot(e.dataTransfer.items[0])
                 }
-            });
+            })
 
             // event listener for file input change
             fileInput.addEventListener('change', function () {
                 if (fileInput.files.length != 0) {
-                    readImageAsDataURLThenFeedIntoScatterPlot(fileInput.files[0]);
+                    readImageAsDataURLThenFeedIntoScatterPlot(fileInput.files[0])
                 }
-            });
-        });
+            })
+        })
 
     </script>
 
