@@ -301,10 +301,10 @@
 
         // slideshowButtons: show plot ▷ show regression plane ▷ show flat plot ▷ show flat image
         const slideshowButtons = Array.from(document.getElementsByClassName('slideshowButton'))
+        const loadingElement = document.getElementById('loading');
 
         // function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath) {
-            const loadingElement = document.getElementById('loading');
 
             regressionPlaneFromServerMutex.acquire().then(function (releaseMutex) {
                 // initial state of the slideshow
@@ -677,24 +677,21 @@
             } else {
                 // show the drop zone if no image parameter is present
                 dropZone.style.display = 'flex';
-                const loadingElement = document.getElementById('loading');
                 loadingElement.style.display = 'none'
             }
 
-            function readerOnLoad(e) {
-                const imagePath = e.target.result;
-                createScatterPlotFromImage(imagePath);
-                dropZone.style.display = 'none';
-                clearError()
-            }
-
-            function handleFile(file) {
+            function readImageAsDataURLThenFeedIntoScatterPlot(whatEverThatBe) {
                 const reader = new FileReader();
-                reader.onload = readerOnLoad
-                reader.readAsDataURL(file);
+                reader.onload = (e) => {
+                    const imagePath = e.target.result;
+                    createScatterPlotFromImage(imagePath);
+                    dropZone.style.display = 'none';
+                    clearError()
+                }
+                reader.readAsDataURL(whatEverThatBe);
             }
 
-            function handleItem(item) {
+            function fetchAsBlobThenReadImageAsDataURLThenFeedIntoScatterPlot(item) {
                 // check if items array has DataTransferItem objects
                 if (item instanceof DataTransferItem) {
                     item.getAsString(url => {
@@ -703,11 +700,7 @@
                             // fetch the image from the URL
                             fetch(url)
                                 .then(response => response.blob())
-                                .then(blob => {
-                                    const reader = new FileReader();
-                                    reader.onload = readerOnLoad
-                                    reader.readAsDataURL(blob);
-                                })
+                                .then(readImageAsDataURLThenFeedIntoScatterPlot)
                                 .catch(error => {
                                     const errorMsg = `${error}: ${url}`
                                     showError(errorMsg)
@@ -736,16 +729,16 @@
                 e.preventDefault();
                 dropZone.classList.remove('bg-light', 'border', 'border-primary');
                 if (e.dataTransfer.files.length != 0) {
-                    handleFile(e.dataTransfer.files[0]);
+                    readImageAsDataURLThenFeedIntoScatterPlot(e.dataTransfer.files[0]);
                 } else if (e.dataTransfer.items.length != 0) {
-                    handleItem(e.dataTransfer.items[0]);
+                    fetchAsBlobThenReadImageAsDataURLThenFeedIntoScatterPlot(e.dataTransfer.items[0]);
                 }
             });
 
             // event listener for file input change
             fileInput.addEventListener('change', function () {
                 if (fileInput.files.length != 0) {
-                    handleFile(fileInput.files[0]);
+                    readImageAsDataURLThenFeedIntoScatterPlot(fileInput.files[0]);
                 }
             });
         });
