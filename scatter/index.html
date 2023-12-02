@@ -165,7 +165,7 @@
                     padding: 4px 6px;
                     vertical-align: middle !important;
                 }
-                
+
                 button.slideshowButton:disabled {
                     color: #a0a0a0;
                 }
@@ -256,6 +256,10 @@
         import { extractPlaneInfo } from './planeOperations.js';
         import glob from './singletonModule.js';
         import _ from './_.js'
+        import SlideShow from './slideShow.js'
+
+        // gros sablier au milieu
+        const loadingElement = document.getElementById('loading');
 
         // what's in the URL ?
         const queryParams = new URLSearchParams(window.location.search);
@@ -263,7 +267,7 @@
         const slideshowFromQueryString = ((slideshowParam) => {
             if (typeof slideshowParam === undefined || slideshowParam == null) {
                 return true;
-            } else if (slideshowParam.toLowerCase() === "true") {
+            } else if (slideshowParam.toLowerCase() === "true" || slideshowParam === "") {
                 return true;
             }
             return false;
@@ -276,6 +280,7 @@
         // show error message
         window.showError = (errorMsg) => {
             document.getElementById('error-msg').innerHTML = _.truncateString(errorMsg, 160)
+            loadingElement.style.display = 'none'
         }
         // clear error message
         window.clearError = () => {
@@ -291,23 +296,18 @@
         // the button will wait until this mutex has been released to display anything
         const regressionPlaneFromServerMutex = new Mutex();
 
-        // buttons for slideshow: show plot ▷ show regression plane ▷ show flat plot ▷ show flat image
-        const slideshowButtons = Array.from(document.getElementsByClassName('slideshowButton'))
-        slideshowButtons.forEach(b => b.addEventListener('click', handleInteraction))
-
-        // gros sablier au milieu
-        const loadingElement = document.getElementById('loading');
-
         // function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath) {
+
+            loadingElement.style.display = 'block'
 
             // cf. new Mutex() comment above
             regressionPlaneFromServerMutex.acquire().then(function (releaseMutex) {
                 // initial state of the slideshow
                 if (slideshowFromQueryString) {
-                    slideShow.update();
+                    slideShow.bump();
                 } else {
-                    slideshowButtons.forEach(b => b.disabled = true)
+                    slideShow.disable();
                 }
 
                 // will hold the image
@@ -317,6 +317,7 @@
                 theImage.onerror = function () {
                     showError(`Error loading image: ${imagePath}`)
                     releaseMutex()
+                    loadingElement.style.display = 'none'
                 };
 
                 // allons-y
@@ -407,10 +408,16 @@
                     // display the 3D scatter plot
                     Plotly.newPlot('scatter-plot', [data3d], layout, { displayModeBar: false }).then(function () {
 
-                        // show or hide UI things
-                        loadingElement.style.display = 'none'
+                        // if slideshow is active,
+                        // it is the good moment, 
+                        // from an user perception point of view,
+                        // to dismiss the 'loading' visual clue
+                        if (slideshowFromQueryString) {
+                            loadingElement.style.display = 'none'
+                        }
+
+                        // show menu
                         document.getElementById('menu-bar').style.visibility = 'visible'
-                        // slideshowButtons.forEach(b => b.classList.add('visible'))
 
                         // determine the server location based on the current environment
                         const host = window.location.hostname === 'localhost'
@@ -516,10 +523,6 @@
                                 if (x !== projectedsAsPoints.x[i] ||
                                     y !== projectedsAsPoints.y[i] ||
                                     z !== projectedsAsPoints.z[i]) {
-                                    /*
-                                    console.log(`rgb(${projectedsAsPoints.x[i]}, ${projectedsAsPoints.y[i]}, ${projectedsAsPoints.z[i]}) ORIGINAL...`)
-                                    console.log(`rgb(${x}, ${y}, ${z}) ...ALTERED !!!`)
-                                    */
                                     altered++
                                 }
 
@@ -534,10 +537,10 @@
                                 const index = i * 4;
 
                                 // set the RGB values for the pixel directly from projectedCoercedScatter.z
-                                imageData.data[index] = (x)        //  & 0xFF; // red
-                                imageData.data[index + 1] = (y)    //  & 0xFF; // green
-                                imageData.data[index + 2] = (z)    //  & 0xFF; // blue
-                                imageData.data[index + 3] = (w * 255)    // alpha value, 255 for fully opaque
+                                imageData.data[index] = (x)            //  & 0xFF; // red
+                                imageData.data[index + 1] = (y)        //  & 0xFF; // green
+                                imageData.data[index + 2] = (z)        //  & 0xFF; // blue
+                                imageData.data[index + 3] = (w * 255)  // alpha value, 255 for fully opaque
                             }
                             console.log(`altered: ${altered} out of ${projecteds.length}`)
                             console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
@@ -565,7 +568,9 @@
                                 const generatedImage = document.getElementById('generated-image');
                                 // generatedImage.src = generatedCanvas.toDataURL();
                                 generatedImage.style.backgroundImage = `url('${generatedCanvas.toDataURL()}')`;
-
+                                
+                                // es ist vollbracht
+                                loadingElement.style.display = 'none'
                             })
                         }).catch((error) => {
                             console.error('Fetch error:', error);
@@ -581,77 +586,9 @@
                 theImage.src = imagePath
             })
         }
-
-        class SlideShow {
-            currentStep = 0
-            elems = {
-                scatterPlotContainer: document.getElementById('scatter-plot-container'),
-                placeholder: { style: { visibility: null } },
-                scatterPlot2Container: document.getElementById('scatter-plot2-container'),
-                generatedImage: document.getElementById('generated-image'),
-            }
-
-            // function to show or hide elements based on the current step
-            static updateButtons(step) {
-                slideshowButtons.forEach(b => {
-                    b.disabled = true
-                    b.classList.remove('btn-secondary')
-                    b.classList.add('btn-light')
-                })
-                if (step < slideshowButtons.length) {
-                    const thisButton = slideshowButtons[step]
-                    thisButton.disabled = false
-                    thisButton.classList.remove('btn-light')
-                    thisButton.classList.add('btn-secondary')
-                }
-            }
-
-            // function to show or hide elements based on the current step
-            async update() {
-
-                SlideShow.updateButtons(this.currentStep)
-                // console.log(`performing slideshow step ${this.currentStep}`)
-                // show elements based on the current step
-                Object.keys(this.elems).map((key, index) => {
-                    this.elems[key].style.visibility = index < this.currentStep ? 'visible' : 'hidden'
-                })
-
-                switch (this.currentStep) {
-                    case 2:
-                        await regressionPlaneFromServerMutex.waitForUnlock()
-
-                        const scatterPlot = document.getElementById('scatter-plot')
-                        const allTraces = scatterPlot.data
-
-                        // find index of trace-object where "name" property is "regression-plane":
-                        const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane')
-
-                        // make specified trace visible to the user:
-                        Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane])
-                        break
-                    default:
-                        break
-
-                }
-                // console.log(`done! slideshow step is now: ${this.currentStep}`)
-                this.currentStep++
-                return this.currentStep
-            }
-        }
-
-        const slideShow = new SlideShow();
-
-
-        // function to handle key events and button click
-        function handleInteraction(e) {
-            if (event.target.disabled) {
-                return
-            }
-            slideShow.update()
-        }
-
-        // attach key event listener to the document
-        document.addEventListener('keypress', handleInteraction);
+        
+        // slideshow in another file, but largely linked to this one
+        const slideShow = new SlideShow(regressionPlaneFromServerMutex);
 
         // load the image and create the scatter plot when the DOM is ready
         document.addEventListener('DOMContentLoaded', function () {
