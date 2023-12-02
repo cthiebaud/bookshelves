@@ -23,12 +23,12 @@ class SlideShow {
 
         // attach event listeners
         this.slideshowButtons.forEach(b => b.addEventListener('click', this.handleInteraction))
-        document.addEventListener('keypress', this.handleInteraction);
+        document.addEventListener('keypress', this.handleInteraction)
     }
 
     disable() {
         // dettach event listeners
-        document.removeEventListener('keypress', this.handleInteraction);
+        document.removeEventListener('keypress', this.handleInteraction)
         this.slideshowButtons.forEach(b => {
             b.removeEventListener('click', this.handleInteraction)
             b.disabled = true
@@ -80,7 +80,7 @@ class SlideShow {
             case this.slideshowButtons.length:
                 console.log("slideshow is done")
                 this.disable()
-                break;
+                break
             default:
                 break
 

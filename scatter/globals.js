@@ -5,7 +5,7 @@ class Globals {
         MIN: undefined,
         MAX: undefined,
         ε: undefined,
-    };
+    }
 
     constructor() {
         this._dataStructure.width = null
@@ -22,37 +22,37 @@ class Globals {
     }
 
     get MIN() {
-        return this._dataStructure.MIN;
+        return this._dataStructure.MIN
     }
 
     get MAX() {
-        return this._dataStructure.MAX;
+        return this._dataStructure.MAX
     }
 
     get EPSILON() {
-        return this._dataStructure.ε;
+        return this._dataStructure.ε
     }
 
     get width() {
-        return this._dataStructure.width;
+        return this._dataStructure.width
     }
 
     set width(newWidth) {
-        this._dataStructure.width = newWidth;
+        this._dataStructure.width = newWidth
     }
 
     get height() {
-        return this._dataStructure.height;
+        return this._dataStructure.height
     }
 
     set height(newHeight) {
-        this._dataStructure.height = newHeight;
+        this._dataStructure.height = newHeight
     }
 }
 
 // Create a single instance of the Singleton class
-const glob = new Globals();
+const glob = new Globals()
 console.log(`MIN = ${glob.MIN}, MAX = ${glob.MAX}, ε = ${glob.EPSILON}`)
 
 // Export the instance to make it accessible in other modules
-export default glob;
+export default glob
