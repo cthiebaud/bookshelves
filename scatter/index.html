@@ -59,6 +59,9 @@
             position: relative;
             flex: 1;
             width: 80%;
+            margin-top: .2rem;
+            margin-bottom: .2rem;
+            display: block !important;
         }
 
         .leftCol .graph-container {
@@ -80,8 +83,11 @@
             position: absolute;
             margin: 0.5rem;
             width: 25%;
-            height: auto;
+            height: 80%;
             bottom: 0;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
         }
 
         .image-overlay-left {
@@ -98,12 +104,18 @@
                 right: 0;
                 bottom: auto;
                 left: auto;
+                background-position: top;
             }
 
             .rightCol .graph-container {
                 margin-left: 0;
                 margin-right: auto;
             }
+
+            .graph-container {
+                display: inline-block !important;
+            }
+
         }
 
         #loading {
@@ -222,27 +234,31 @@
             <!-- First Column -->
             <div id="leftCol1" class="col-xl-6 leftCol">
                 &nbsp;
-                <div class="graph-container">
+                <div class="graph-container align-middle">
                     <!-- Plotly Graph -->
                     <div class="graph" id="scatter-plot-container">
                         <div id="scatter-plot"></div>
                     </div>
                 </div>
-                <!-- Image in the top-right corner -->
-                <img id="image-display" class="image-overlay image-overlay-right" />
+                <!-- Image in the top-right corner 
+                    <img id="image-display" class="image-overlay image-overlay-right" />
+                -->
+                <div id="image-display" class="image-overlay image-overlay-right"></div>
             </div>
 
             <!-- Second Column -->
-            <div id="rightCol1" class="col-xl-6 justify-content-end rightCol">
+            <div id="rightCol1" class="col-xl-6 rightCol justify-content-end ">
                 &nbsp;
-                <div class="graph-container">
+                <div class="graph-container align-middle">
                     <!-- Plotly Graph -->
                     <div class="graph" id="scatter-plot2-container">
                         <div id="scatter-plot2"></div>
                     </div>
                 </div>
-                <!-- Image in the top-left corner -->
-                <img id="generated-image" class="image-overlay image-overlay-left" />
+                <!-- Image in the top-left corner 
+                    <img id="generated-image" class="image-overlay image-overlay-left" />
+                -->
+                <div id="generated-image" class="image-overlay image-overlay-left"></div>
             </div>
         </div>
     </div>
@@ -283,7 +299,6 @@
         // function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath) {
             const loadingElement = document.getElementById('loading');
-            const imageDisplay = document.getElementById('image-display');
 
             regressionPlaneFromServerMutex.acquire().then(function (releaseMutex) {
                 // initial state of the slideshow
@@ -306,17 +321,17 @@
                 // allons-y
                 theImage.onload = function () {
 
-                    // just log some calculations
-                    imageDisplay.onload = function () {
-                        console.log(`in memory dimensions: ${glob.width}x${glob.height}, squeezed from ${theImage.width}x${theImage.height}, instead of <img>: ${imageDisplay.width}x${imageDisplay.height}`)
-                    }
-                    imageDisplay.src = theImage.src
+                    const imageDisplay = document.getElementById('image-display');
+                    // imageDisplay.src = theImage.src
+                    imageDisplay.style.backgroundImage = `url('${theImage.src}')`;
 
                     if (!glob.width || !glob.height) {
                         const containsDimensions = _.contains(theImage, 160 * 300)
                         glob.width = containsDimensions.width;
                         glob.height = containsDimensions.height;
                     }
+                    // just log some calculations
+                    console.log(`in memory: ${glob.width}x${glob.height}, squeezed from ${theImage.width}x${theImage.height}`)
 
                     // create a single canvas element and draw the image once
                     const canvas = document.createElement('canvas');
@@ -547,7 +562,9 @@
 
                                 // set the generated image as the source of the img element
                                 const generatedImage = document.getElementById('generated-image');
-                                generatedImage.src = generatedCanvas.toDataURL();
+                                // generatedImage.src = generatedCanvas.toDataURL();
+                                generatedImage.style.backgroundImage = `url('${generatedCanvas.toDataURL()}')`;
+
                             })
                         }).catch((error) => {
                             console.error('Fetch error:', error);
@@ -585,7 +602,7 @@
         function updateSlideShow(step) {
             const scatterPlotContainer = document.getElementById('scatter-plot-container');
             const scatterPlot2Container = document.getElementById('scatter-plot2-container');
-            const imageLink = document.getElementById('generated-image');
+            const generatedImage = document.getElementById('generated-image');
 
             updateSlideshowButtons(step)
 
@@ -595,7 +612,7 @@
                     // hide all elements 
                     scatterPlotContainer.style.visibility = 'hidden';
                     scatterPlot2Container.style.visibility = 'hidden';
-                    imageLink.style.display = 'none';
+                    generatedImage.style.display = 'none';
                     return step + 1;
 
                 case 1:
@@ -624,7 +641,7 @@
                     return step + 1;
 
                 case 4:
-                    imageLink.style.display = 'block';
+                    generatedImage.style.display = 'block';
                     return step + 1;
 
                 default:
