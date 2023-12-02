@@ -46,13 +46,11 @@
         .leftCol {
             position: relative;
             align-items: flex-start;
-            border-right: .5px dotted gray;
         }
 
         .rightCol {
             position: relative;
             align-items: flex-end;
-            border-left: .5px dotted gray;
         }
 
         .graph-container {
@@ -90,16 +88,16 @@
             background-size: contain;
         }
 
-        .image-overlay-left {
+        .rightCol .image-overlay {
             left: 0;
         }
 
-        .image-overlay-right {
+        .leftCol .image-overlay {
             right: 0;
         }
 
         @media (max-width: 1200px) {
-            .image-overlay-left {
+            .rightCol .image-overlay {
                 top: 0;
                 right: 0;
                 bottom: auto;
@@ -163,15 +161,15 @@
 
         <div id="menu" class="row mt-3" style="white-space: nowrap;">
             <style>
-                button.slideshow {
+                button.slideshowButton {
                     visibility: hidden;
                 }
 
-                button.slideshow.visible {
+                button.slideshowButton.visible {
                     visibility: visible;
                 }
 
-                button.slideshow:disabled {
+                button.slideshowButton:disabled {
                     color: #a0a0a0;
                 }
 
@@ -180,17 +178,17 @@
                     vertical-align: middle !important;
                 }
 
-                button.slideshow+span.triangle:after {
+                button.slideshowButton+span.triangle:after {
                     color: #808080;
                     padding: 4px 6px;
                     vertical-align: middle !important;
                 }
 
-                button.slideshow:not(:disabled)+.triangle:after {
+                button.slideshowButton:not(:disabled)+.triangle:after {
                     content: '▶';
                 }
 
-                button.slideshow:disabled+.triangle:after {
+                button.slideshowButton:disabled+.triangle:after {
                     content: '▷';
                     color: #a0a0a0;
                 }
@@ -214,25 +212,25 @@
                     </button>
                 </div>
                 <span>&nbsp;</span>
-                <button id="slideshow-button-1" class="btn btn-light slideshow">show plot</button>
+                <button id="sb1" class="btn btn-light slideshowButton">show plot</button>
                 <span class="triangle"></span>
-                <button id="slideshow-button-2" class="btn btn-light slideshow position-relative">show regression plane
+                <button id="sb2" class="btn btn-light slideshowButton position-relative">show regression plane
                     <span id="std_dev_badge" class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-secondary font-monospace"
                         style="visibility: hidden;">
                         <span id="std_dev" title="Standard Deviation"></span>
-                        <span class="visually-hidden">Standard Deviation</span>
+                        <span class="visually-hidden">standard deviation</span>
                     </span>
                 </button>
                 <span class="triangle"></span>
-                <button id="slideshow-button-3" class="btn btn-light slideshow">show flat plot</button>
+                <button id="sb3" class="btn btn-light slideshowButton">show flat plot</button>
                 <span class="triangle"></span>
-                <button id="slideshow-button-4" class="btn btn-light slideshow">show flat image</button>
+                <button id="sb4" class="btn btn-light slideshowButton">show flat image</button>
             </div>
         </div>
 
         <div class="row">
             <!-- First Column -->
-            <div id="leftCol1" class="col-xl-6 leftCol">
+            <div class="col-xl-6 leftCol">
                 &nbsp;
                 <div class="graph-container align-middle">
                     <!-- Plotly Graph -->
@@ -240,14 +238,12 @@
                         <div id="scatter-plot"></div>
                     </div>
                 </div>
-                <!-- Image in the top-right corner 
-                    <img id="image-display" class="image-overlay image-overlay-right" />
-                -->
-                <div id="image-display" class="image-overlay image-overlay-right"></div>
+                <!-- Image in the bottom-right corner -->
+                <div id="image-display" class="image-overlay"></div>
             </div>
 
             <!-- Second Column -->
-            <div id="rightCol1" class="col-xl-6 rightCol justify-content-end ">
+            <div class="col-xl-6 rightCol justify-content-end ">
                 &nbsp;
                 <div class="graph-container align-middle">
                     <!-- Plotly Graph -->
@@ -255,10 +251,8 @@
                         <div id="scatter-plot2"></div>
                     </div>
                 </div>
-                <!-- Image in the top-left corner 
-                    <img id="generated-image" class="image-overlay image-overlay-left" />
-                -->
-                <div id="generated-image" class="image-overlay image-overlay-left"></div>
+                <!-- Image in the bottom-left corner -->
+                <div id="generated-image" class="image-overlay"></div>
             </div>
         </div>
     </div>
@@ -266,7 +260,6 @@
     <script src="https://cdn.jsdelivr.net/npm/plotly.js@latest/dist/plotly.min.js"></script>
     <script type="module">
         import { Mutex } from 'https://cdn.jsdelivr.net/npm/async-mutex@0.4.0/+esm'
-
         import { orthographicProjectionSet } from './vectorOperations.js';
         import { extractPlaneInfo } from './planeOperations.js';
         import glob from './singletonModule.js';
@@ -288,13 +281,26 @@
         window.restartFromBeginning = () => {
             window.location.href = `/scatter${slideshowFromQueryString === false ? '?slideshow=false' : ''}`
         }
+        // show error message
+        window.showError = (errorMsg) => {
+            document.getElementById('error-msg').innerHTML = _.truncateString(errorMsg, 160)
+        }
+        // clear error message
+        window.clearError = () => {
+            document.getElementById('error-msg').innerHTML = ''
+        }
+        // resize the plot when the window is resized
+        window.addEventListener('resize', function () {
+            Plotly.Plots.resize('scatter-plot');
+            Plotly.Plots.resize('scatter-plot2');
+        });
 
         // if the user pushes the "show regression plane" button, 
         // the button will wait until this mutex has been released to display anything
         const regressionPlaneFromServerMutex = new Mutex();
 
-        // show plot ▷ show regression plane ▷ show flat plot ▷ show flat image
-        const slideshowButtons = Array.from(document.getElementsByClassName('slideshow'))
+        // slideshowButtons: show plot ▷ show regression plane ▷ show flat plot ▷ show flat image
+        const slideshowButtons = Array.from(document.getElementsByClassName('slideshowButton'))
 
         // function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath) {
@@ -666,31 +672,32 @@
             const dropZone = document.getElementById('drop-zone');
             const fileInput = document.getElementById('file-input');
 
-            // show the drop zone if no image parameter is present
             if (imagePathFromQueryString) {
                 createScatterPlotFromImage(imagePathFromQueryString);
             } else {
-                const loadingElement = document.getElementById('loading');
+                // show the drop zone if no image parameter is present
                 dropZone.style.display = 'flex';
+                const loadingElement = document.getElementById('loading');
                 loadingElement.style.display = 'none'
             }
 
-            function handleFiles(files) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    const imagePath = e.target.result;
-                    createScatterPlotFromImage(imagePath);
-                    dropZone.style.display = 'none';
-                };
-
-                reader.readAsDataURL(files[0]);
+            function readerOnLoad(e) {
+                const imagePath = e.target.result;
+                createScatterPlotFromImage(imagePath);
+                dropZone.style.display = 'none';
+                clearError()
             }
-            function handleItems(items) {
-                const dropZone = document.getElementById('drop-zone');
 
+            function handleFile(file) {
+                const reader = new FileReader();
+                reader.onload = readerOnLoad
+                reader.readAsDataURL(file);
+            }
+
+            function handleItem(item) {
                 // check if items array has DataTransferItem objects
-                if (items.length > 0 && items[0] instanceof DataTransferItem) {
-                    items[0].getAsString(url => {
+                if (item instanceof DataTransferItem) {
+                    item.getAsString(url => {
                         // check if the URL is an image URL (you can improve this check based on your requirements)
                         if (url.match(/\.(jpeg|jpg|gif|png|webp)$/) != null) {
                             // fetch the image from the URL
@@ -698,11 +705,7 @@
                                 .then(response => response.blob())
                                 .then(blob => {
                                     const reader = new FileReader();
-                                    reader.onload = function (e) {
-                                        const imagePath = e.target.result;
-                                        createScatterPlotFromImage(imagePath);
-                                        dropZone.style.display = 'none';
-                                    };
+                                    reader.onload = readerOnLoad
                                     reader.readAsDataURL(blob);
                                 })
                                 .catch(error => {
@@ -731,34 +734,22 @@
 
             dropZone.addEventListener('drop', function (e) {
                 e.preventDefault();
-                clearError()
                 dropZone.classList.remove('bg-light', 'border', 'border-primary');
                 if (e.dataTransfer.files.length != 0) {
-                    handleFiles(e.dataTransfer.files);
+                    handleFile(e.dataTransfer.files[0]);
                 } else if (e.dataTransfer.items.length != 0) {
-                    handleItems(e.dataTransfer.items);
+                    handleItem(e.dataTransfer.items[0]);
                 }
             });
 
             // event listener for file input change
             fileInput.addEventListener('change', function () {
-                clearError()
-                handleFiles(fileInput.files);
+                if (fileInput.files.length != 0) {
+                    handleFile(fileInput.files[0]);
+                }
             });
         });
 
-        window.showError = (errorMsg) => {
-            document.getElementById('error-msg').innerHTML = _.truncateString(errorMsg, 160)
-        }
-        window.clearError = () => {
-            document.getElementById('error-msg').innerHTML = ''
-        }
-
-        // resize the plot when the window is resized
-        window.addEventListener('resize', function () {
-            Plotly.Plots.resize('scatter-plot');
-            Plotly.Plots.resize('scatter-plot2');
-        });
     </script>
 
 </body>
