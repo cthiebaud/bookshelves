@@ -299,20 +299,23 @@
         // the button will wait until this mutex has been released to display anything
         const regressionPlaneFromServerMutex = new Mutex();
 
-        // slideshowButtons: show plot ▷ show regression plane ▷ show flat plot ▷ show flat image
+        // buttons for slideshow: show plot ▷ show regression plane ▷ show flat plot ▷ show flat image
         const slideshowButtons = Array.from(document.getElementsByClassName('slideshowButton'))
+        slideshowButtons.forEach(b => b.addEventListener('click', handleInteraction))
+
+        // gros sablier au milieu
         const loadingElement = document.getElementById('loading');
 
         // function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath) {
 
+            // cf. new Mutex() comment above
             regressionPlaneFromServerMutex.acquire().then(function (releaseMutex) {
                 // initial state of the slideshow
                 if (slideshowFromQueryString) {
-                    currentStep = updateSlideShow(currentStep);
+                    slideShow.update();
                 } else {
-                    // perform all steps of the slide show à toute berzingue
-                    slideshowButtons.map((element, index) => updateSlideShow(index))
+                    slideshowButtons.forEach(b => b.disabled = true)
                 }
 
                 // will hold the image
@@ -415,7 +418,7 @@
                         // show or hide UI things
                         loadingElement.style.display = 'none'
                         document.getElementById('menu-bar').style.visibility = 'visible'
-                        slideshowButtons.forEach((e) => e.classList.add('visible'))
+                        slideshowButtons.forEach(b => b.classList.add('visible'))
 
                         // determine the server location based on the current environment
                         const host = window.location.hostname === 'localhost'
@@ -587,80 +590,100 @@
             })
         }
 
-        // function to show or hide elements based on the current step
-        function updateSlideshowButtons(step) {
-            slideshowButtons.forEach(b => {
-                b.disabled = true
-                b.classList.remove('btn-secondary')
-                b.classList.add('btn-light')
-            })
-            if (step < slideshowButtons.length) {
-                const thisButton = slideshowButtons[step]
-                thisButton.disabled = false
-                thisButton.addEventListener('click', handleInteraction)
-                thisButton.classList.remove('btn-light')
-                thisButton.classList.add('btn-secondary')
+        class SlideShow {
+            currentStep = 0;
+
+            // function to show or hide elements based on the current step
+            static updateButtons(step) {
+                slideshowButtons.forEach(b => {
+                    b.disabled = true
+                    b.classList.remove('btn-secondary')
+                    b.classList.add('btn-light')
+                })
+                if (step < slideshowButtons.length) {
+                    const thisButton = slideshowButtons[step]
+                    thisButton.disabled = false
+                    thisButton.classList.remove('btn-light')
+                    thisButton.classList.add('btn-secondary')
+                }
+            }
+
+            // function to show or hide elements based on the current step
+            async update() {
+                const scatterPlotContainer = document.getElementById('scatter-plot-container');
+                const scatterPlot2Container = document.getElementById('scatter-plot2-container');
+                const generatedImage = document.getElementById('generated-image');
+
+                SlideShow.updateButtons(this.currentStep)
+                console.log(`performing slideshow step ${this.currentStep}`)
+
+                // show elements based on the current step
+                switch (this.currentStep) {
+                    case 0:
+                        // hide all elements 
+                        scatterPlotContainer.style.visibility = 'hidden'
+                        scatterPlot2Container.style.visibility = 'hidden'
+                        generatedImage.style.display = 'none'
+                        this.currentStep++
+                        break
+
+                    case 1:
+                        scatterPlotContainer.style.visibility = 'visible'
+                        scatterPlot2Container.style.visibility = 'hidden'
+                        generatedImage.style.display = 'none'
+                        this.currentStep++
+                        break
+
+                    case 2:
+                        scatterPlotContainer.style.visibility = 'visible'
+                        scatterPlot2Container.style.visibility = 'hidden'
+                        generatedImage.style.display = 'none'
+                        await regressionPlaneFromServerMutex.waitForUnlock()
+
+                        const scatterPlot = document.getElementById('scatter-plot')
+                        const allTraces = scatterPlot.data
+
+                        // find index of trace-object with "name" property = "regression-plane":
+                        const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane')
+
+                        // make specified trace visible to the user:
+                        Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane])
+
+                        this.currentStep++
+                        break
+
+                    case 3:
+                        scatterPlotContainer.style.visibility = 'visible'
+                        scatterPlot2Container.style.visibility = 'visible'
+                        generatedImage.style.display = 'none'
+                        this.currentStep++
+                        break
+
+                    case 4:
+                        scatterPlotContainer.style.visibility = 'visible'
+                        scatterPlot2Container.style.visibility = 'visible'
+                        generatedImage.style.display = 'block'
+                        this.currentStep++
+                        break
+
+                    default:
+                        break
+
+                }
+                console.log(`done! slideshow step is now: ${this.currentStep}`)
+                return this.currentStep
             }
         }
 
-        // function to show or hide elements based on the current step
-        let currentStep = 0;
-        function updateSlideShow(step) {
-            const scatterPlotContainer = document.getElementById('scatter-plot-container');
-            const scatterPlot2Container = document.getElementById('scatter-plot2-container');
-            const generatedImage = document.getElementById('generated-image');
+        const slideShow = new SlideShow();
 
-            updateSlideshowButtons(step)
-
-            // show elements based on the current step
-            switch (step) {
-                case 0:
-                    // hide all elements 
-                    scatterPlotContainer.style.visibility = 'hidden';
-                    scatterPlot2Container.style.visibility = 'hidden';
-                    generatedImage.style.display = 'none';
-                    return step + 1;
-
-                case 1:
-                    scatterPlotContainer.style.visibility = 'visible';
-                    return step + 1;
-
-                case 2:
-                    regressionPlaneFromServerMutex
-                        .waitForUnlock()
-                        .then(() => {
-                            const scatterPlot = document.getElementById('scatter-plot');
-                            const allTraces = scatterPlot.data;
-
-                            // find index of trace-object with "name" property = "regression-plane":
-                            const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane');
-
-                            // make specified trace visible to the user:
-                            Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane]);
-
-                            return currentStep = step + 1;
-                        });
-                    return step; // will wait until the mutex is relesed to be bumped, see just above
-
-                case 3:
-                    scatterPlot2Container.style.visibility = 'visible';
-                    return step + 1;
-
-                case 4:
-                    generatedImage.style.display = 'block';
-                    return step + 1;
-
-                default:
-                    return step;
-            }
-        }
 
         // function to handle key events and button click
         function handleInteraction(e) {
             if (event.target.disabled) {
                 return
             }
-            currentStep = updateSlideShow(currentStep)
+            slideShow.update()
         }
 
         // attach key event listener to the document
