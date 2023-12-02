@@ -17549,14 +17549,9 @@
   where: /saint-lazare-de-savene/couloir/tintin
 978-3596181162:
   cover:
-    line_coefficients: '[-2.5888082999029742e-17, 1.0000000000000067, 0.3520867102300369]'
-    mse_line_within_plane: '4.635604314132357e-06'
-    mse_plane: '0.0001484511822357972'
-    palette: '[{''color'': [254, 254, 254], ''count'': 30491}, {''color'': [193, 176,
-      190], ''count'': 308}, {''color'': [139, 120, 135], ''count'': 255}, {''color'':
-      [93, 57, 82], ''count'': 478}, {''color'': [22, 20, 26], ''count'': 5268}]'
-    plane_coefficients: '[0.4999999999999995, 0.4999999999999995, -0.019687578749773636,
-      0.0]'
+    palette: '[{''color'': [255, 255, 255], ''count'': 54426}, {''color'': [208, 192,
+      204], ''count'': 276}, {''color'': [150, 125, 144], ''count'': 272}, {''color'':
+      [88, 53, 78], ''count'': 496}, {''color'': [21, 20, 24], ''count'': 5330}]'
   de: Franz Kafka (Autor)
   ext: "Roman Taschenbuch \u2013 1. Juni 2008"
   image_path: thumbs/T_978-3596181162.jpg
