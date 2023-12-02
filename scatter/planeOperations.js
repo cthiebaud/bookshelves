@@ -21,29 +21,4 @@ function extractPlaneInfo(A, B, C, D) {
     return { planeNormal, planePoint, planeCoefficients };
 }
 
-function orthographicProjectionOnLine(pointA, pointB, pointC) {
-    // Calculate the direction vector AB
-    const vectorAB = { x: pointB.x - pointA.x, y: pointB.y - pointA.y };
-
-    // Calculate the vector AC
-    const vectorAC = { x: pointC.x - pointA.x, y: pointC.y - pointA.y };
-
-    // Calculate the dot product AC dot AB
-    const dotProductACAB = vectorAC.x * vectorAB.x + vectorAC.y * vectorAB.y;
-
-    // Calculate the squared magnitude of AB
-    const magnitudeSquaredAB = vectorAB.x ** 2 + vectorAB.y ** 2;
-
-    // Calculate the projection of AC onto AB
-    const projectionACAB = {
-        x: (dotProductACAB / magnitudeSquaredAB) * vectorAB.x,
-        y: (dotProductACAB / magnitudeSquaredAB) * vectorAB.y
-    };
-
-    // Calculate the coordinates of the orthographic projection
-    const projectionPoint = { x: pointA.x + projectionACAB.x, y: pointA.y + projectionACAB.y };
-
-    return projectionPoint;
-}
-
-export { extractPlaneInfo, orthographicProjectionOnLine }
+export { extractPlaneInfo }
