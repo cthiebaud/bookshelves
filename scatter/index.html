@@ -161,21 +161,13 @@
 
         <div id="menu" class="row mt-3" style="white-space: nowrap;">
             <style>
-                button.slideshowButton {
-                    visibility: hidden;
-                }
-
-                button.slideshowButton.visible {
-                    visibility: visible;
-                }
-
-                button.slideshowButton:disabled {
-                    color: #a0a0a0;
-                }
-
                 button.btn {
                     padding: 4px 6px;
                     vertical-align: middle !important;
+                }
+                
+                button.slideshowButton:disabled {
+                    color: #a0a0a0;
                 }
 
                 button.slideshowButton+span.triangle:after {
@@ -418,7 +410,7 @@
                         // show or hide UI things
                         loadingElement.style.display = 'none'
                         document.getElementById('menu-bar').style.visibility = 'visible'
-                        slideshowButtons.forEach(b => b.classList.add('visible'))
+                        // slideshowButtons.forEach(b => b.classList.add('visible'))
 
                         // determine the server location based on the current environment
                         const host = window.location.hostname === 'localhost'
@@ -591,7 +583,13 @@
         }
 
         class SlideShow {
-            currentStep = 0;
+            currentStep = 0
+            elems = {
+                scatterPlotContainer: document.getElementById('scatter-plot-container'),
+                placeholder: { style: { visibility: null } },
+                scatterPlot2Container: document.getElementById('scatter-plot2-container'),
+                generatedImage: document.getElementById('generated-image'),
+            }
 
             // function to show or hide elements based on the current step
             static updateButtons(step) {
@@ -610,67 +608,33 @@
 
             // function to show or hide elements based on the current step
             async update() {
-                const scatterPlotContainer = document.getElementById('scatter-plot-container');
-                const scatterPlot2Container = document.getElementById('scatter-plot2-container');
-                const generatedImage = document.getElementById('generated-image');
 
                 SlideShow.updateButtons(this.currentStep)
-                console.log(`performing slideshow step ${this.currentStep}`)
-
+                // console.log(`performing slideshow step ${this.currentStep}`)
                 // show elements based on the current step
+                Object.keys(this.elems).map((key, index) => {
+                    this.elems[key].style.visibility = index < this.currentStep ? 'visible' : 'hidden'
+                })
+
                 switch (this.currentStep) {
-                    case 0:
-                        // hide all elements 
-                        scatterPlotContainer.style.visibility = 'hidden'
-                        scatterPlot2Container.style.visibility = 'hidden'
-                        generatedImage.style.display = 'none'
-                        this.currentStep++
-                        break
-
-                    case 1:
-                        scatterPlotContainer.style.visibility = 'visible'
-                        scatterPlot2Container.style.visibility = 'hidden'
-                        generatedImage.style.display = 'none'
-                        this.currentStep++
-                        break
-
                     case 2:
-                        scatterPlotContainer.style.visibility = 'visible'
-                        scatterPlot2Container.style.visibility = 'hidden'
-                        generatedImage.style.display = 'none'
                         await regressionPlaneFromServerMutex.waitForUnlock()
 
                         const scatterPlot = document.getElementById('scatter-plot')
                         const allTraces = scatterPlot.data
 
-                        // find index of trace-object with "name" property = "regression-plane":
+                        // find index of trace-object where "name" property is "regression-plane":
                         const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane')
 
                         // make specified trace visible to the user:
                         Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane])
-
-                        this.currentStep++
                         break
-
-                    case 3:
-                        scatterPlotContainer.style.visibility = 'visible'
-                        scatterPlot2Container.style.visibility = 'visible'
-                        generatedImage.style.display = 'none'
-                        this.currentStep++
-                        break
-
-                    case 4:
-                        scatterPlotContainer.style.visibility = 'visible'
-                        scatterPlot2Container.style.visibility = 'visible'
-                        generatedImage.style.display = 'block'
-                        this.currentStep++
-                        break
-
                     default:
                         break
 
                 }
-                console.log(`done! slideshow step is now: ${this.currentStep}`)
+                // console.log(`done! slideshow step is now: ${this.currentStep}`)
+                this.currentStep++
                 return this.currentStep
             }
         }
