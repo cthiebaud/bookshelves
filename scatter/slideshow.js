@@ -1,7 +1,7 @@
 class SlideShow {
 
-    constructor(regressionPlaneFromServerMutex) {
-        this.regressionPlaneFromServerMutex = regressionPlaneFromServerMutex
+    constructor(promises) {
+        this.promises = promises
         this.currentStep = 0
         this.slides = {
             show_plot: document.getElementById('scatter-plot-container'),
@@ -23,12 +23,12 @@ class SlideShow {
 
         // attach event listeners
         this.slideshowButtons.forEach(b => b.addEventListener('click', this.handleInteraction))
-        document.addEventListener('keypress', this.handleInteraction)
+        // document.addEventListener('keypress', this.handleInteraction)
     }
 
     disable() {
-        // dettach event listeners
-        document.removeEventListener('keypress', this.handleInteraction)
+        // detach event listeners
+        // document.removeEventListener('keypress', this.handleInteraction)
         this.slideshowButtons.forEach(b => {
             b.removeEventListener('click', this.handleInteraction)
             b.disabled = true
@@ -60,33 +60,30 @@ class SlideShow {
 
     // function to execute a step
     async bump() {
+        if (this.slideshowButtons.length < this.currentStep) {
+            return
+        }
         console.log(`bump slideshow (${this.currentStep})`)
-        this.updateButtons()
-        this.updateSlides()
-
         switch (this.currentStep) {
-            case 2:
-                await this.regressionPlaneFromServerMutex.waitForUnlock()
-
-                const scatterPlot = document.getElementById('scatter-plot')
-                const allTraces = scatterPlot.data
-
-                // find index of trace-object where "name" property is "regression-plane":
-                const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane')
-
-                // make specified trace visible to the user:
-                Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane])
-                break
-            case this.slideshowButtons.length:
-                console.log("slideshow is done")
-                this.disable()
-                break
             default:
+                if (this.promises[this.currentStep] !== null) {
+                    this.slideshowButtons.forEach(b => { b.disabled = true }) // you cannot click anymore
+                    console.log(`AWAIT promise ${this.currentStep}`)
+                    await this.promises[this.currentStep]()
+                    console.log(`DONE promise ${this.currentStep}`)
+                } else {
+                    console.log(`no promise for step ${this.currentStep}`)
+                }
+                this.updateButtons()
+                this.updateSlides()
                 break
-
         }
         // do bump
         this.currentStep++
+        if (this.slideshowButtons.length < this.currentStep) {
+            console.log("slideshow is done")
+            this.disable()
+        }
         return
     }
 }

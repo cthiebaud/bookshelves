@@ -254,7 +254,7 @@
         import { Mutex } from 'https://cdn.jsdelivr.net/npm/async-mutex@0.4.0/+esm'
 
         import _ from './utilities.js'
-        import { extractPlaneInfo , orthographicProjectionSet } from './geometry.js'
+        import { extractPlaneInfo, orthographicProjectionSet } from './geometry.js'
         import glob from './globals.js'
         import SlideShow from './slideshow.js'
 
@@ -295,6 +295,20 @@
         // if the user pushes the "show regression plane" button, 
         // the button will wait until this mutex has been released to display anything
         const regressionPlaneFromServerMutex = new Mutex()
+
+        async function awaitRegressionPlane() {
+            await regressionPlaneFromServerMutex.waitForUnlock()
+        }
+        async function showSurface() {
+            const scatterPlot = document.getElementById('scatter-plot')
+            const allTraces = scatterPlot.data
+
+            // find index of trace-object where "name" property is "regression-plane":
+            const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane')
+
+            // make specified trace visible to the user:
+            await Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane])
+        }
 
         // function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath) {
@@ -433,7 +447,10 @@
                                 'Content-Type': 'application/json',
                             },
                             body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z, image: _.truncateString(imagePath, 128) }),
-                        }).then(response => response.json()).then(results => {
+                        }).then(response => {
+                            console.log("HABEMUS regression")
+                            return response.json()
+                        }).then(results => {
 
                             const regressionPlane = {
                                 x: results.meshgrid.x,
@@ -451,7 +468,12 @@
                             }
 
                             Plotly.addTraces('scatter-plot', regressionPlane)
+                            console.log("About to release Mutex ...")
                             releaseMutex()
+                            console.log("Mutex released !")
+                            if (!slideshowFromQueryString) {
+                                showSurface()
+                            }
 
                             // create a new canvas to draw the generated image
                             const generatedCanvas = document.createElement('canvas')
@@ -568,7 +590,7 @@
                                 const generatedImage = document.getElementById('generated-image')
                                 // generatedImage.src = generatedCanvas.toDataURL()
                                 generatedImage.style.backgroundImage = `url('${generatedCanvas.toDataURL()}')`
-                                
+
                                 // es ist vollbracht
                                 loadingElement.style.display = 'none'
                             })
@@ -586,9 +608,9 @@
                 theImage.src = imagePath
             })
         }
-        
+
         // slideshow in another file, but largely linked to this one
-        const slideShow = new SlideShow(regressionPlaneFromServerMutex)
+        const slideShow = new SlideShow([null, awaitRegressionPlane, showSurface, null, null])
 
         // load the image and create the scatter plot when the DOM is ready
         document.addEventListener('DOMContentLoaded', function () {
