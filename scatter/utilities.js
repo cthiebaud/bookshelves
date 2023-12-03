@@ -15,6 +15,14 @@ class _ {
         return beginning + ellipsis + end
     }
 
+    static truncateString0(str, maxLength) {
+        if (str.length <= maxLength) {
+            return str
+        } else {
+            return str.slice(0, maxLength) + '…'
+        }
+    }
+
     static coerce(w, min = glob.MIN, max = glob.MAX) {
         if (w < min) {
             return min
@@ -40,14 +48,6 @@ class _ {
         } else {
             // If squeeze is not needed, return the original dimensions
             return { width: theImage.width, height: theImage.height }
-        }
-    }
-
-    static truncateString(str, maxLength) {
-        if (str.length <= maxLength) {
-            return str
-        } else {
-            return str.slice(0, maxLength) + '…'
         }
     }
 

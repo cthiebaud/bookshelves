@@ -56,4 +56,4 @@ export function magnitudeSquared(vector) {
     return vector.reduce((sum, value) => sum + value ** 2, 0)
 }
 
-export { extractPlaneInfo, orthographicProjectionSet }
+export { extractPlaneInfo, orthographicProjection, orthographicProjectionSet }
