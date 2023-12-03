@@ -191,29 +191,31 @@
             }
         </style>
 
-        <div id="menu-bar" class="d-flex mt-3 ">
+        <div id="menu-bar" class="mt-3 position-relative">
             <!-- slideshow buttons -->
-            <div class="nParent">
-                <button id="sb1" class="btn btn-light slideshowButton">show plot</button>
-            </div>
-            <div class="slideshowButtonParent">
-                <button id="sb2" class="btn btn-light slideshowButton position-relative">show regression plane
-                    <span id="std_dev_badge" class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-secondary font-monospace"
-                        style="visibility: hidden;">
-                        <span id="std_dev" title="Standard Deviation"></span>
-                        <span class="visually-hidden">standard deviation</span>
-                    </span>
-                </button>
-            </div>
-            <div class="slideshowButtonParent">
-                <button id="sb3" class="btn btn-light slideshowButton">show flat plot</button>
-            </div>
-            <div class="slideshowButtonParent last">
-                <button id="sb4" class="btn btn-light slideshowButton">show flat image</button>
+            <div id="slideshowButtons" class="d-inline-flex">
+                <div class="slideshowButtonParent">
+                    <button id="sb1" class="btn btn-light slideshowButton">show plot</button>
+                </div>
+                <div class="slideshowButtonParent">
+                    <button id="sb2" class="btn btn-light slideshowButton position-relative">show regression plane
+                        <span id="std_dev_badge" class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-secondary font-monospace"
+                            style="visibility: hidden;">
+                            <span id="std_dev" title="Standard Deviation"></span>
+                            <span class="visually-hidden">standard deviation</span>
+                        </span>
+                    </button>
+                </div>
+                <div class="slideshowButtonParent">
+                    <button id="sb3" class="btn btn-light slideshowButton">show flat plot</button>
+                </div>
+                <div class="slideshowButtonParent last">
+                    <button id="sb4" class="btn btn-light slideshowButton">show flat image</button>
+                </div>
             </div>
 
             <!-- link to dropzone button -->
-            <button class="btn btn-light ms-auto" style="margin-left: 1rem;" onclick="restartFromBeginning()">
+            <button class="btn btn-light position-absolute top-0 end-0" style="margin-left: 1rem;" onclick="restartFromBeginning()">
                 <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: auto;">
                     <g>
                         <path fill="none" d="M0 0h24v24H0z" />
@@ -603,6 +605,16 @@
                         }).catch((error) => {
                             console.error('Fetch error:', error)
                             showError(`${error}: ${url}`)
+                            document.querySelectorAll('#slideshowButtons > *').forEach(
+                                (e, i) => {
+                                    // hide everything but first, that becomes last as well
+                                    if (i === 0) {
+                                        e.classList.add('last')
+                                    } else {
+                                        e.style.display = 'none'
+                                    }
+                                }
+                            )
                         }).finally(() => {
                             // ensure the mutex is released regardless of success or failure
                             releaseMutex()

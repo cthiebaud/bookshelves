@@ -204,7 +204,10 @@ if len(sys.argv) > 1:
 for ext in extensions:
     for filename2 in glob.iglob('thumbs2/*.'+ext, recursive=True):
         key = PurePath(filename2).stem[2:]
-        ## print(f"(key not in colors_dictionnary): {key not in colors_dictionnary} or (key in arguments): {key in arguments} or (first_argument == '*'): {first_argument}")
+        # print(f"(key not in colors_dictionnary): {key not in colors_dictionnary} or (key in arguments): {key in arguments} or (first_argument == '*'): {first_argument}")
+        # if (key in colors_dictionnary):
+        #    print(f"{colors_dictionnary[key]} {key}")
+        
         if (key not in colors_dictionnary) or (key in arguments) or (first_argument == '*'):
             print(i, key, "...")
             properties = calc_image_properties(filename2)

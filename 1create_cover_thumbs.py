@@ -1,6 +1,7 @@
 import glob
 import os
 from PIL import Image
+from pathlib import PurePath 
 
 extensions = ['jpg', 'jpeg', 'webp', 'png']
 directories = [("covers-no-text","thumbs2"), ("covers","thumbs")]
@@ -8,25 +9,26 @@ directories = [("covers-no-text","thumbs2"), ("covers","thumbs")]
 i = 0
 created = 0
 for ext in extensions:
-  ## print(ext) 
   for dir in directories:
-    ## print(dir[0], "=>", dir[1]) 
     covers = f"/Users/christophe.thiebaud/github.com/cthiebaud/bookcovers/{dir[0]}/*.{ext}"
     thumbs = dir[1]
     for filename in glob.iglob(covers):
-        basename = os.path.basename(filename)
-        if basename[0] == 'Z':
-           basename = basename[2:]
-        if basename[0] == 'N':
-           basename = basename[2:]
-        # if basename.startswith('978-2070514427') :
-          # prefix thumbnail file with T_
-        thumbName = f"{dir[1]}/T_{basename}".replace('.png', '.webp')
-        # print(i, filename, "=>", thumbName, os.path.isfile(thumbName))
+        key = ''
+        stem = PurePath(filename).stem
+
+        if stem[0] == 'Z':
+           key = stem[2:]
+        elif stem[0] == 'N':
+           key = stem[2:]
+        else:
+          key = stem
+        # prefix thumbnail file with T_
+        thumbName = f"{dir[1]}/T_{key}.webp"
+        print(i, filename, "=>", thumbName, os.path.isfile(thumbName))
         
         # don't create thumbnail if already exists
         if not os.path.isfile(thumbName):
-          print(f"{basename} => {thumbName}")
+          print(f"{key} => {thumbName}")
           im = Image.open(filename).convert('RGBA')
           im.thumbnail((200, 400), Image.LANCZOS)
           im.save(thumbName, format='WebP')
@@ -35,4 +37,4 @@ for ext in extensions:
         i = i + 1
 
       
-print(f"{created} thumb(s) created out of {i} images crawled, {i-created} already exist")
+print(f"2 x {created/2} thumb(s) created out of {i} images crawled, {i-created} already exist")

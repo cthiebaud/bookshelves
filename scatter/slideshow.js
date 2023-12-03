@@ -32,6 +32,7 @@ class SlideShow {
         this.slideshowButtons.forEach(b => {
             b.removeEventListener('click', this.handleInteraction)
             b.disabled = true
+            b.parentNode.classList.add('disabled')
         })
         this.currentStep = this.slideshowButtons.length
     }
@@ -48,7 +49,7 @@ class SlideShow {
         this.slideshowButtons.forEach(b => {
             b.disabled = true
             b.parentNode.classList.add('disabled')
-            b.classList.remove('btn-secondary')
+            b.classList.remove('btn-primary')
             b.classList.add('btn-light')
         })
         if (this.currentStep < this.slideshowButtons.length) {
@@ -56,7 +57,7 @@ class SlideShow {
             theButtonForThisStep.disabled = false
             theButtonForThisStep.parentNode.classList.remove('disabled')
             theButtonForThisStep.classList.remove('btn-light')
-            theButtonForThisStep.classList.add('btn-secondary')
+            theButtonForThisStep.classList.add('btn-primary')
         }
     }
 
