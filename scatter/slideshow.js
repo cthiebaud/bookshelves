@@ -47,12 +47,14 @@ class SlideShow {
     updateButtons() {
         this.slideshowButtons.forEach(b => {
             b.disabled = true
+            b.parentNode.classList.add('disabled')
             b.classList.remove('btn-secondary')
             b.classList.add('btn-light')
         })
         if (this.currentStep < this.slideshowButtons.length) {
             const theButtonForThisStep = this.slideshowButtons[this.currentStep]
             theButtonForThisStep.disabled = false
+            theButtonForThisStep.parentNode.classList.remove('disabled')
             theButtonForThisStep.classList.remove('btn-light')
             theButtonForThisStep.classList.add('btn-secondary')
         }

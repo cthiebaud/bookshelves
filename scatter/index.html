@@ -132,17 +132,14 @@
 <body>
 
     <div id="loading">
-        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 473.068 473.068">
-            <path
-                d="M355.507 181.955c8.793-6.139 29.39-20.519 29.39-55.351v-71.77h9.814c4.49 0 8.17-3.679 8.17-8.169v-38.5c0-4.49-3.681-8.165-8.17-8.165H78.351c-4.495 0-8.165 3.675-8.165 8.165v38.5c0 4.491 3.67 8.169 8.165 8.169h9.82v73.071c0 34.499 10.502 42.576 29.074 53.89l80.745 49.203v20.984c-20.346 12.23-73.465 44.242-80.434 49.107-8.793 6.135-29.384 20.51-29.384 55.352v61.793h-9.82c-4.495 0-8.165 3.676-8.165 8.166v38.498c0 4.49 3.67 8.17 8.165 8.17h316.361c4.49 0 8.17-3.68 8.17-8.17V426.4c0-4.49-3.681-8.166-8.17-8.166h-9.814V355.13c0-34.493-10.508-42.572-29.069-53.885l-80.745-49.202v-20.987c20.332-12.225 73.452-44.234 80.422-49.101zm-102.781 90.904 87.802 53.5c6.734 4.109 10.333 6.373 12.001 9.002 1.991 3.164 2.963 9.627 2.963 19.768v63.104H117.574V356.44c0-19.507 9.718-26.289 16.81-31.242 5.551-3.865 54.402-33.389 85.878-52.289a14.701 14.701 0 0 0 7.135-12.611v-37.563c0-5.123-2.671-9.883-7.053-12.55l-87.54-53.339-.265-.165c-6.741-4.105-10.336-6.369-11.998-9.009-1.992-3.156-2.968-9.626-2.968-19.767v-73.07h237.918v71.77c0 19.5-9.718 26.288-16.814 31.235-5.546 3.872-54.391 33.395-85.869 52.295a14.7 14.7 0 0 0-7.134 12.601v37.563a14.71 14.71 0 0 0 7.052 12.56z" />
-            <path
-                d="M331.065 154.234s5.291-4.619-2.801-3.299c-19.178 3.115-53.079 15.133-92.079 15.133s-57-11-82.507-11.303c-5.569-.066-5.456 3.629.937 7.391 6.386 3.758 63.772 35.681 71.671 40.08 7.896 4.389 12.417 4.05 20.786 0 12.174-5.902 83.993-48.002 83.993-48.002zm-176.754 243.33c-6.748 6.209-9.978 10.713 5.536 10.713h155.442c16.099 0 9.856-5.453 2.311-12.643-14.576-13.883-45.416-23.566-82.414-23.566-38.754 0-65.844 11.655-80.875 25.496z" />
-        </svg>
+        <div class="spinner-border" style="width: 4rem; height: 4rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
     </div>
 
     <div class="container-xl">
         <div class="row">
-            <div id="error-msg" class="text-danger col"></div>
+            <div id="error-msg" class="col text-danger text-center"></div>
         </div>
     </div>
 
@@ -159,53 +156,47 @@
 
     <div class="container-xl">
 
-        <div id="menu" class="row mt-3" style="white-space: nowrap;">
-            <style>
-                button.btn {
-                    padding: 4px 6px;
-                    vertical-align: middle !important;
-                }
+        <style>
+            #menu-bar {
+                visibility: hidden;
+            }
 
-                button.slideshowButton:disabled {
-                    color: #a0a0a0;
-                }
+            #menu-bar button.slideshowButton {
+                padding: 4px 6px;
+                vertical-align: middle !important;
+                white-space: normal !important;
+            }
 
-                button.slideshowButton+span.triangle:after {
-                    color: #808080;
-                    padding: 4px 6px;
-                    vertical-align: middle !important;
-                }
+            #menu-bar button.slideshowButton:disabled {
+                color: #a0a0a0;
+            }
 
-                button.slideshowButton:not(:disabled)+.triangle:after {
-                    content: '▶';
-                }
+            #menu-bar .slideshowButtonParent {
+                white-space: nowrap;
+            }
 
-                button.slideshowButton:disabled+.triangle:after {
-                    content: '▷';
-                    color: #a0a0a0;
-                }
-            </style>
-            <div class="col" id="menu-bar" style="visibility: hidden; white-space: nowrap;">
-                <div class="btn-group" role="group">
-                    <button class="btn btn-light" onclick="window.location.href = '/'">
-                        <!-- home-svgrepo-com.svg -->
-                        <svg fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width:22px; height:auto;">
-                            <path fill-rule="evenodd" fill="#606060"
-                                d="M192,1.42108547e-14 L384,153.6 L384,384 L213.333333,384 L213.333333,277.333333 L170.666667,277.333333 L170.666667,384 L1.42108547e-14,384 L1.42108547e-14,153.6 L192,1.42108547e-14 Z M192,53.3333333 L42.6666667,170.666667 L42.6666667,341.333333 L128,341.333333 L128,234.666667 L256,234.666667 L256,341.333333 L341.333333,341.333333 L341.333333,170.666667 L192,53.3333333 Z"
-                                transform="translate(64 64)" />
-                        </svg>
-                    </button>
-                    <button class="btn btn-light" onclick="restartFromBeginning()">
-                        <!-- reset-svgrepo-com.svg -->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:22px; height:auto;">
-                            <path fill-rule="evenodd" fill="#606060"
-                                d="M426.667 106.667v42.666L358 149.33c36.077 31.659 58.188 77.991 58.146 128.474-.065 78.179-53.242 146.318-129.063 165.376-75.82 19.058-154.895-15.838-191.92-84.695C58.142 289.63 72.638 204.42 130.348 151.68a85.333 85.333 0 0 0 33.28 30.507 124.587 124.587 0 0 0-46.294 97.066c1.05 69.942 58.051 126.088 128 126.08 64.072 1.056 118.709-46.195 126.906-109.749 6.124-47.483-15.135-92.74-52.237-118.947L320 256h-42.667V106.667h149.334ZM202.667 64c23.564 0 42.666 19.103 42.666 42.667s-19.102 42.666-42.666 42.666c-23.564 0-42.667-19.102-42.667-42.666C160 83.103 179.103 64 202.667 64Z" />
-                        </svg>
-                    </button>
-                </div>
-                <span>&nbsp;</span>
+            #menu-bar .slideshowButtonParent:not(.last):after {
+                color: #808080;
+                padding: 4px 6px;
+                vertical-align: middle !important;
+            }
+
+            #menu-bar .slideshowButtonParent:not(.last):not(.disabled):after {
+                content: '▶';
+            }
+
+            #menu-bar .slideshowButtonParent:not(.last).disabled:after {
+                content: '▷';
+                color: #a0a0a0;
+            }
+        </style>
+
+        <div id="menu-bar" class="d-flex mt-3 ">
+            <!-- slideshow buttons -->
+            <div class="nParent">
                 <button id="sb1" class="btn btn-light slideshowButton">show plot</button>
-                <span class="triangle"></span>
+            </div>
+            <div class="slideshowButtonParent">
                 <button id="sb2" class="btn btn-light slideshowButton position-relative">show regression plane
                     <span id="std_dev_badge" class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-secondary font-monospace"
                         style="visibility: hidden;">
@@ -213,11 +204,25 @@
                         <span class="visually-hidden">standard deviation</span>
                     </span>
                 </button>
-                <span class="triangle"></span>
+            </div>
+            <div class="slideshowButtonParent">
                 <button id="sb3" class="btn btn-light slideshowButton">show flat plot</button>
-                <span class="triangle"></span>
+            </div>
+            <div class="slideshowButtonParent last">
                 <button id="sb4" class="btn btn-light slideshowButton">show flat image</button>
             </div>
+
+            <!-- link to dropzone button -->
+            <button class="btn btn-light ms-auto" style="margin-left: 1rem;" onclick="restartFromBeginning()">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: auto;">
+                    <g>
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path fill-rule="nonzero"
+                            d="M16 13l6.964 4.062-2.973.85 2.125 3.681-1.732 1-2.125-3.68-2.223 2.15L16 13zm-2-7h2v2h5a1 1 0 0 1 1 1v4h-2v-3H10v10h4v2H9a1 1 0 0 1-1-1v-5H6v-2h2V9a1 1 0 0 1 1-1h5V6zM4 14v2H2v-2h2zm0-4v2H2v-2h2zm0-4v2H2V6h2zm0-4v2H2V2h2zm4 0v2H6V2h2zm4 0v2h-2V2h2zm4 0v2h-2V2h2z" />
+                    </g>
+                </svg>
+            </button>
+
         </div>
 
         <div class="row">
