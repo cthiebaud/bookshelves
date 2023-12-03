@@ -467,13 +467,14 @@
                                 name: 'regression-plane'
                             }
 
-                            Plotly.addTraces('scatter-plot', regressionPlane)
-                            console.log("About to release Mutex ...")
-                            releaseMutex()
-                            console.log("Mutex released !")
-                            if (!slideshowFromQueryString) {
-                                showSurface()
-                            }
+                            Plotly.addTraces('scatter-plot', regressionPlane).then(() => {
+                                console.log("About to release Mutex ...")
+                                releaseMutex()
+                                console.log("Mutex released !")
+                                if (!slideshowFromQueryString) {
+                                    showSurface()
+                                }
+                            })
 
                             // create a new canvas to draw the generated image
                             const generatedCanvas = document.createElement('canvas')
