@@ -130,7 +130,7 @@
 </head>
 
 <body>
-
+    <!-- loading -->
     <style>
         #loading {
             position: absolute;
@@ -148,13 +148,14 @@
         </div>
     </div>
 
+    <!-- error messages -->
     <div class="container-xl">
         <div class="row">
             <div id="error-msg" class="col text-danger text-center"></div>
         </div>
     </div>
 
-    <!-- Add a central div for drag and drop dropzone -->
+    <!-- drag and drop zone -->
     <div id="drop-zone" class="text-center" style="display: none; height: 80vh;">
         <div class="d-flex align-items-center justify-content-center h-100 w-100">
             <div>
@@ -165,8 +166,9 @@
         </div>
     </div>
 
-    <div class="container-xl">
-
+    <!-- main -->
+    <main class="container-xl">
+        <!-- menu -->
         <style>
             #menu-bar {
                 visibility: hidden;
@@ -238,6 +240,7 @@
 
         </div>
 
+        <!-- plots and images -->
         <div class="row">
             <!-- First Column -->
             <div class="col-xl-6 leftCol">
@@ -265,7 +268,7 @@
                 <div id="generated-image" class="image-overlay"></div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/plotly.js@latest/dist/plotly.min.js"></script>
     <script type="module">
@@ -276,7 +279,7 @@
         import glob from './globals.js'
         import SlideShow from './slideshow.js'
 
-        // gros sablier au milieu
+        // le gros loading animated svg au milieu
         const loadingElement = document.getElementById('loading')
 
         // what's in the URL ?
@@ -295,16 +298,19 @@
         window.restartFromBeginning = () => {
             window.location.href = `/scatter${slideshowFromQueryString === false ? '?slideshow=false' : ''}`
         }
+
         // show error message
         window.showError = (errorMsg) => {
             document.getElementById('error-msg').innerHTML = _.truncateString(errorMsg, 160)
             loadingElement.style.display = 'none'
         }
+        
         // clear error message
         window.clearError = () => {
             document.getElementById('error-msg').innerHTML = ''
         }
-        // resize the plot when the window is resized
+        
+        // resize the plots when the window is resized
         window.addEventListener('resize', function () {
             Plotly.Plots.resize('scatter-plot')
             Plotly.Plots.resize('scatter-plot2')
@@ -313,11 +319,10 @@
         // if the user pushes the "show regression plane" button, 
         // the button will wait until this mutex has been released to display anything
         const regressionPlaneFromServerMutex = new Mutex()
-
         async function awaitRegressionPlane() {
             await regressionPlaneFromServerMutex.waitForUnlock()
         }
-        async function showSurface() {
+        async function showRegressionPlane() {
             const scatterPlot = document.getElementById('scatter-plot')
             const allTraces = scatterPlot.data
 
@@ -356,7 +361,7 @@
                 theImage.onload = function () {
 
                     const imageDisplay = document.getElementById('image-display')
-                    // imageDisplay.src = theImage.src
+
                     imageDisplay.style.backgroundImage = `url('${theImage.src}')`
 
                     if (!glob.width || !glob.height) {
@@ -364,6 +369,7 @@
                         glob.width = containsDimensions.width
                         glob.height = containsDimensions.height
                     }
+
                     // just log some calculations
                     console.log(`in memory: ${glob.width}x${glob.height}, squeezed from ${theImage.width}x${theImage.height}`)
 
@@ -441,7 +447,7 @@
                     Plotly.newPlot('scatter-plot', [data3d], layout, { displayModeBar: false }).then(function () {
 
                         // if slideshow is active,
-                        // it is the good moment, 
+                        // it's the right time, 
                         // from an user perception point of view,
                         // to dismiss the 'loading' visual clue
                         if (slideshowFromQueryString) {
@@ -470,6 +476,9 @@
                             return response.json()
                         }).then(results => {
 
+                            document.getElementById('std_dev_badge').style.visibility = 'visible'
+                            document.getElementById('std_dev').innerHTML = results.std_dev_residuals.toFixed(2)
+
                             const regressionPlane = {
                                 x: results.meshgrid.x,
                                 y: results.meshgrid.y,
@@ -490,7 +499,7 @@
                                 releaseMutex()
                                 console.log("Mutex released !")
                                 if (!slideshowFromQueryString) {
-                                    showSurface()
+                                    showRegressionPlane()
                                 }
                             })
 
@@ -498,7 +507,7 @@
                             const generatedCanvas = document.createElement('canvas')
                             generatedCanvas.width = glob.width
                             generatedCanvas.height = glob.height
-                            const generatedCtx = generatedCanvas.getContext('2d', { willReadFrequently: true })
+                            const generatedCtx = generatedCanvas.getContext('2d')
 
                             // create a new ImageData object to hold the pixel data
                             const imageData = generatedCtx.createImageData(glob.width, glob.height)
@@ -585,8 +594,6 @@
                             }
                             console.log(`altered: ${altered} out of ${projecteds.length}`)
                             console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
-                            document.getElementById('std_dev_badge').style.visibility = 'visible'
-                            document.getElementById('std_dev').innerHTML = results.std_dev_residuals.toFixed(2)
 
                             Plotly.newPlot('scatter-plot2', [projectedCoercedScatter], layout, { displayModeBar: false }).then(function () {
                                 // add event listener to plot for changes in the camera angle
@@ -607,7 +614,6 @@
 
                                 // set the generated image as the source of the img element
                                 const generatedImage = document.getElementById('generated-image')
-                                // generatedImage.src = generatedCanvas.toDataURL()
                                 generatedImage.style.backgroundImage = `url('${generatedCanvas.toDataURL()}')`
 
                                 // es ist vollbracht
@@ -639,7 +645,7 @@
         }
 
         // slideshow in another file, but largely linked to this one
-        const slideShow = new SlideShow([null, awaitRegressionPlane, showSurface, null, null])
+        const slideShow = new SlideShow([null, awaitRegressionPlane, showRegressionPlane, null, null])
 
         // load the image and create the scatter plot when the DOM is ready
         document.addEventListener('DOMContentLoaded', function () {
