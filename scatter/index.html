@@ -208,10 +208,10 @@
             <!-- slideshow buttons -->
             <div id="slideshowButtons" class="d-inline-flex">
                 <div class="slideshowButtonParent">
-                    <button id="sb1" class="btn btn-light slideshowButton">show plot</button>
+                    <button id="show_plot" class="btn btn-light slideshowButton">show plot</button>
                 </div>
                 <div class="slideshowButtonParent">
-                    <button id="sb2" class="btn btn-light slideshowButton position-relative">show regression plane
+                    <button id="show_regression_plane" class="btn btn-light slideshowButton position-relative">show regression plane
                         <span id="std_dev_badge" class="position-absolute top-0 start-50 translate-middle badge rounded-pill text-bg-secondary font-monospace"
                             style="visibility: hidden;">
                             <span id="std_dev" title="Standard Deviation"></span>
@@ -220,10 +220,10 @@
                     </button>
                 </div>
                 <div class="slideshowButtonParent">
-                    <button id="sb3" class="btn btn-light slideshowButton">show flat plot</button>
+                    <button id="show_flat_plot" class="btn btn-light slideshowButton">show flat plot</button>
                 </div>
                 <div class="slideshowButtonParent last">
-                    <button id="sb4" class="btn btn-light slideshowButton">show flat image</button>
+                    <button id="show_flat_image" class="btn btn-light slideshowButton">show flat image</button>
                 </div>
             </div>
 
@@ -277,7 +277,7 @@
         import _ from './utilities.js'
         import { extractPlaneInfo, orthographicProjectionSet } from './geometry.js'
         import glob from './globals.js'
-        import SlideShow from './slideshow.js'
+        import { Slide, SlideShow } from './slideshow.js'
 
         // le gros loading animated svg au milieu
         const loadingElement = document.getElementById('loading')
@@ -304,24 +304,24 @@
             document.getElementById('error-msg').innerHTML = _.truncateString(errorMsg, 160)
             loadingElement.style.display = 'none'
         }
-        
+
         // clear error message
         window.clearError = () => {
             document.getElementById('error-msg').innerHTML = ''
         }
-        
+
         // resize the plots when the window is resized
         window.addEventListener('resize', function () {
             Plotly.Plots.resize('scatter-plot')
             Plotly.Plots.resize('scatter-plot2')
         })
 
-        // if the user pushes the "show regression plane" button, 
-        // the button will wait until this mutex has been released to display anything
+        // the "show_plot" button will wait until this mutex has been released to proceed to the next step
         const regressionPlaneFromServerMutex = new Mutex()
         async function awaitRegressionPlane() {
             await regressionPlaneFromServerMutex.waitForUnlock()
         }
+        // we need to make this function available to both /slideshow/ and /non-slideshow/ variants
         async function showRegressionPlane() {
             const scatterPlot = document.getElementById('scatter-plot')
             const allTraces = scatterPlot.data
@@ -332,6 +332,15 @@
             // make specified trace visible to the user:
             await Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane])
         }
+        const slides = [
+            /*        button id                     id of element to show           promise to invoke  */
+            new Slide(null                    /**/, null                      /**/, null                 /**/),
+            new Slide('show_plot'             /**/, 'scatter-plot-container'  /**/, awaitRegressionPlane /**/),
+            new Slide('show_regression_plane' /**/, null                      /**/, showRegressionPlane  /**/),
+            new Slide('show_flat_plot'        /**/, 'scatter-plot2-container' /**/, null                 /**/),
+            new Slide('show_flat_image'       /**/, 'generated-image'         /**/, null                 /**/),
+        ]
+        const slideShow = new SlideShow(slides)
 
         // function to load the image and create 3D scatter plot with Plotly
         function createScatterPlotFromImage(imagePath) {
@@ -643,9 +652,6 @@
                 theImage.src = imagePath
             })
         }
-
-        // slideshow in another file, but largely linked to this one
-        const slideShow = new SlideShow([null, awaitRegressionPlane, showRegressionPlane, null, null])
 
         // load the image and create the scatter plot when the DOM is ready
         document.addEventListener('DOMContentLoaded', function () {

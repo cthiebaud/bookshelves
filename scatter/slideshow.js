@@ -1,16 +1,61 @@
+async function doNothing() { }
+
+class Slide {
+    constructor(buttonName, elementName, promise) {
+        this.button = document.getElementById(buttonName)
+        this.element = document.getElementById(elementName)
+        this.promise = promise;
+    }
+
+    // Getter and setter for the 'element' property
+    get element() {
+        return this._element;
+    }
+
+    set element(newElement) {
+        this._element = newElement ? newElement : {
+            style: { visibility: null }
+        };
+    }
+
+    // Getter and setter for the 'button' property
+    get button() {
+        return this._button;
+    }
+
+    set button(newButton) {
+        this._button = newButton ? newButton : {
+            addEventListener: () => { },
+            removeEventListener: () => { },
+            disabled: undefined,
+            classList: {
+                add: () => { },
+                remove: () => { },
+            },
+            parentNode: {
+                classList: {
+                    add: () => { },
+                    remove: () => { },
+                }
+            }
+        };
+    }
+
+    // Getter and setter for the 'promise' property
+    get promise() {
+        return this._promise;
+    }
+
+    set promise(newPromise) {
+        this._promise = newPromise ? newPromise : doNothing;
+    }
+}
+
 class SlideShow {
 
-    constructor(promises) {
-        this.promises = promises
-        this.currentStep = 0
-        this.slides = {
-            show_plot: document.getElementById('scatter-plot-container'),
-            show_regression_plane: { style: { visibility: null } },
-            show_flat_plot: document.getElementById('scatter-plot2-container'),
-            show_flat_image: document.getElementById('generated-image'),
-        }
-        // buttons for slideshow: show plot ▷ show regression plane ▷ show flat plot ▷ show flat image
-        this.slideshowButtons = Array.from(document.getElementsByClassName('slideshowButton'))
+    constructor(slides) {
+        this._currentStep = 0
+        this._slides = slides
 
         // function to handle key events and button click
         const _this_ = this
@@ -22,73 +67,69 @@ class SlideShow {
         }
 
         // attach event listeners
-        this.slideshowButtons.forEach(b => b.addEventListener('click', this.handleInteraction))
+        this._slides.forEach(s => {
+            s.button.addEventListener('click', this.handleInteraction)
+        })
         // document.addEventListener('keypress', this.handleInteraction)
     }
 
     disable() {
         // detach event listeners
         // document.removeEventListener('keypress', this.handleInteraction)
-        this.slideshowButtons.forEach(b => {
-            b.removeEventListener('click', this.handleInteraction)
-            b.disabled = true
-            b.parentNode.classList.add('disabled')
+        this._slides.forEach(s => {
+            s.button.removeEventListener('click', this.handleInteraction)
+            s.button.disabled = true
+            s.button.parentNode.classList.add('disabled')
         })
-        this.currentStep = this.slideshowButtons.length
+        this._currentStep = this._slides.length
     }
 
     // function to show or hide slides based on the current step
     updateSlides() {
-        Object.keys(this.slides).map((slide, index) => {
-            this.slides[slide].style.visibility = index < this.currentStep ? 'visible' : 'hidden'
-        })
+        for (let index = 0; index < this._slides.length; index++) {
+            this._slides[index].element.style.visibility = index <= this._currentStep ? 'visible' : 'hidden'
+        }
     }
 
     // function to set buttons properties based on the current step
     updateButtons() {
-        this.slideshowButtons.forEach(b => {
-            b.disabled = true
-            b.parentNode.classList.add('disabled')
-            b.classList.remove('btn-primary')
-            b.classList.add('btn-light')
+        this._slides.forEach(s => {
+            s.button.disabled = true
+            s.button.parentNode.classList.add('disabled')
+            s.button.classList.remove('btn-primary')
+            s.button.classList.add('btn-light')
         })
-        if (this.currentStep < this.slideshowButtons.length) {
-            const theButtonForThisStep = this.slideshowButtons[this.currentStep]
-            theButtonForThisStep.disabled = false
-            theButtonForThisStep.parentNode.classList.remove('disabled')
-            theButtonForThisStep.classList.remove('btn-light')
-            theButtonForThisStep.classList.add('btn-primary')
+        if (this._currentStep < this._slides.length) {
+            const b = this._slides[this._currentStep].button
+            b.disabled = false
+            b.parentNode.classList.remove('disabled')
+            b.classList.remove('btn-light')
+            b.classList.add('btn-primary')
         }
     }
 
     // function to execute a step
     async bump() {
-        if (this.slideshowButtons.length < this.currentStep) {
+        if (this._currentStep < 0 || this._slides.length <= this._currentStep) {
             return
         }
-        console.log(`bump slideshow (${this.currentStep})`)
-        switch (this.currentStep) {
-            default:
-                if (this.promises[this.currentStep] !== null) {
-                    this.slideshowButtons.forEach(b => { b.disabled = true }) // you cannot click anymore
-                    console.log(`AWAIT promise ${this.currentStep}`)
-                    await this.promises[this.currentStep]()
-                    console.log(`DONE promise ${this.currentStep}`)
-                } else {
-                    console.log(`no promise for step ${this.currentStep}`)
-                }
-                this.updateButtons()
-                this.updateSlides()
-                break
-        }
-        // do bump
-        this.currentStep++
-        if (this.slideshowButtons.length < this.currentStep) {
-            console.log("slideshow is done")
+        // disable all buttons during slide bump
+        this._slides.forEach(s => s.button.disabled = true) 
+        // sho what needs to be shown
+        this.updateSlides()
+        // wait for promise to be done
+        await this._slides[this._currentStep].promise()
+        // BUMP!
+        this._currentStep++
+        // update display to show were we are now
+        this.updateButtons() // button associated with current step will be re-enabled
+
+        if (this._slides.length <= this._currentStep) {
+            // FINITO !!
             this.disable()
         }
         return
     }
 }
 
-export default SlideShow
+export { Slide, SlideShow }
