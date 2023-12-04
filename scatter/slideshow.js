@@ -57,6 +57,13 @@ class SlideShow {
         this._currentStep = 0
         this._slides = slides
 
+        this.reset()
+
+    }
+
+    reset() {
+        this._currentStep = 0
+        
         // function to handle key events and button click
         const _this_ = this
         this.handleInteraction = (event) => {

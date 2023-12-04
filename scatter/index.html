@@ -91,20 +91,21 @@
         .image-overlay {
             position: absolute;
             margin: 0.5rem;
-            width: 25%;
+            width: 50%;
             height: 80%;
             bottom: 0;
             background-repeat: no-repeat;
-            background-position: bottom;
             background-size: contain;
         }
 
         .rightCol .image-overlay {
             left: 0;
+            background-position: bottom left;
         }
 
         .leftCol .image-overlay {
             right: 0;
+            background-position: bottom right;
         }
 
         @media (max-width: 1200px) {
@@ -113,7 +114,7 @@
                 right: 0;
                 bottom: auto;
                 left: auto;
-                background-position: top;
+                background-position: top right;
             }
 
             .rightCol .graph-container {
@@ -228,7 +229,7 @@
             </div>
 
             <!-- link to dropzone button -->
-            <button class="btn btn-light position-absolute top-0 end-0" style="margin-left: 1rem;" onclick="restartFromBeginning()">
+            <button id="to-dropzone" class="btn btn-light position-absolute top-0 end-0" style="margin-left: 1rem;" onclick="restartFromBeginning()">
                 <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: auto;">
                     <g>
                         <path fill="none" d="M0 0h24v24H0z" />
@@ -351,6 +352,7 @@
             regressionPlaneFromServerMutex.acquire().then(function (releaseMutex) {
                 // initial state of the slideshow
                 if (slideshowFromQueryString) {
+                    slideShow.reset()
                     slideShow.bump()
                 } else {
                     slideShow.disable()
@@ -373,15 +375,28 @@
 
                     imageDisplay.style.backgroundImage = `url('${theImage.src}')`
 
-                    if (!glob.width || !glob.height) {
-                        const containsDimensions = _.contains(theImage, 160 * 300)
+                    // image dimensions
+                    {
+                        // ratio of image-overlay to parent depend on ratio of image
+                        Array.from(document.getElementsByClassName('image-overlay')).forEach(io => {
+                            const iRatioHW = theImage.height / theImage.width
+                            if (iRatioHW < 1) {
+                                io.style.height = '40%'
+                                io.style.width = '80%'
+                            } else {
+                                // image width <= height
+                                io.style.height = '80%'
+                                io.style.width = '30%'
+                            }
+                        })
+                        // can't remember how this works
+                        const containsDimensions = _.contains(theImage, 200 * 300)
                         glob.width = containsDimensions.width
                         glob.height = containsDimensions.height
+
+                        // just log some calculations
+                        console.log(`in memory: ${glob.width}x${glob.height}, squeezed from ${theImage.width}x${theImage.height}`)
                     }
-
-                    // just log some calculations
-                    console.log(`in memory: ${glob.width}x${glob.height}, squeezed from ${theImage.width}x${theImage.height}`)
-
                     // create a single canvas element and draw the image once
                     const canvas = document.createElement('canvas')
                     canvas.width = glob.width
@@ -657,6 +672,8 @@
         document.addEventListener('DOMContentLoaded', function () {
 
             const dropZone = document.getElementById('drop-zone')
+            const toDropZone = document.getElementById('to-dropzone')
+            const dropzones = [dropZone, toDropZone]
             const fileInput = document.getElementById('file-input')
 
             if (imagePathFromQueryString) {
@@ -703,24 +720,24 @@
             }
 
             // event listener for drag and drop
-            dropZone.addEventListener('dragover', function (e) {
+            dropzones.forEach(d => d.addEventListener('dragover', function (e) {
                 e.preventDefault()
-                dropZone.classList.add('bg-light', 'border', 'border-primary')
-            })
+                d.classList.add('bg-light', 'border', 'border-primary')
+            }))
 
-            dropZone.addEventListener('dragleave', function () {
-                dropZone.classList.remove('bg-light', 'border', 'border-primary')
-            })
+            dropzones.forEach(d => d.addEventListener('dragleave', function () {
+                d.classList.remove('bg-light', 'border', 'border-primary')
+            }))
 
-            dropZone.addEventListener('drop', function (e) {
+            dropzones.forEach(d => d.addEventListener('drop', function (e) {
                 e.preventDefault()
-                dropZone.classList.remove('bg-light', 'border', 'border-primary')
+                d.classList.remove('bg-light', 'border', 'border-primary')
                 if (e.dataTransfer.files.length != 0) {
                     readImageAsDataURLThenFeedIntoScatterPlot(e.dataTransfer.files[0])
                 } else if (e.dataTransfer.items.length != 0) {
                     fetchAsBlobThenReadImageAsDataURLThenFeedIntoScatterPlot(e.dataTransfer.items[0])
                 }
-            })
+            }))
 
             // event listener for file input change
             fileInput.addEventListener('change', function () {
