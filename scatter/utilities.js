@@ -58,6 +58,44 @@ class _ {
     static XYZObjectToArray(obj) {
         return [obj.x, obj.y, obj.z]
     }
+
+    //// // Example usage:
+    //// const inputValue = 75;
+    //// const normalizedValue = normalizeLinearly(inputValue, [0, 100], [0, 1]);
+    //// console.log('Normalized Value:', normalizedValue);
+    static normalizeLinearly(value, inRange, outRange) {
+        // Check if the input range has a valid width
+        if (inRange[0] === inRange[1]) {
+            throw new Error('Input range has zero width');
+        }
+
+        // Normalize the value from the input range to the [0, 1] range
+        const normalizedValue = (value - inRange[0]) / (inRange[1] - inRange[0]);
+    
+        // Scale the normalized value to the output range
+        const result = (normalizedValue * (outRange[1] - outRange[0])) + outRange[0];
+    
+        return result;
+    }
+
+    static normalizeQuadratically(value, inRange, outRange) {
+        // Check if the input range has a valid width
+        if (inRange[0] === inRange[1]) {
+            throw new Error('Input range has zero width');
+        }
+    
+        // Normalize the value from the input range to the [0, 1] range
+        const normalizedValue = (value - inRange[0]) / (inRange[1] - inRange[0]);
+    
+        // Apply a quadratic transformation to the normalized value
+        const transformedValue = normalizedValue * normalizedValue;
+    
+        // Scale the transformed value to the output range
+        const result = (transformedValue * (outRange[1] - outRange[0])) + outRange[0];
+    
+        return result;
+    }
+    
 }
 
 export default _
