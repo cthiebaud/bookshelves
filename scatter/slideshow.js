@@ -1,21 +1,10 @@
 async function doNothing() { }
 
 class Slide {
-    constructor(buttonName, elementName, promise) {
-        this.button = document.getElementById(buttonName)
-        this.element = document.getElementById(elementName)
+    constructor(buttonId, elementId, promise) {
+        this.button = document.getElementById(buttonId)
+        this.element = document.getElementById(elementId)
         this.promise = promise;
-    }
-
-    // Getter and setter for the 'element' property
-    get element() {
-        return this._element;
-    }
-
-    set element(newElement) {
-        this._element = newElement ? newElement : {
-            style: { visibility: null }
-        };
     }
 
     // Getter and setter for the 'button' property
@@ -41,6 +30,17 @@ class Slide {
         };
     }
 
+    // Getter and setter for the 'element' property
+    get element() {
+        return this._element;
+    }
+
+    set element(newElement) {
+        this._element = newElement ? newElement : {
+            style: { visibility: null }
+        };
+    }
+
     // Getter and setter for the 'promise' property
     get promise() {
         return this._promise;
@@ -54,11 +54,8 @@ class Slide {
 class SlideShow {
 
     constructor(slides) {
-        this._currentStep = 0
         this._slides = slides
-
         this.reset()
-
     }
 
     reset() {
@@ -80,7 +77,7 @@ class SlideShow {
         // document.addEventListener('keypress', this.handleInteraction)
     }
 
-    disable() {
+    close() {
         // detach event listeners
         // document.removeEventListener('keypress', this.handleInteraction)
         this._slides.forEach(s => {
@@ -122,7 +119,7 @@ class SlideShow {
         }
         // disable all buttons during slide bump
         this._slides.forEach(s => s.button.disabled = true) 
-        // sho what needs to be shown
+        // show what needs to be shown
         this.updateSlides()
         // wait for promise to be done
         await this._slides[this._currentStep].promise()
@@ -133,7 +130,7 @@ class SlideShow {
 
         if (this._slides.length <= this._currentStep) {
             // FINITO !!
-            this.disable()
+            this.close()
         }
         return
     }
