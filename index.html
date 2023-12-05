@@ -926,10 +926,13 @@
             img.classList.add("img-fluid")
 
             const img_link = document.createElement("a")
-            img_link.target = "_image" 
-            /* img_link.href = filterParam ? '/' : `/scatter/?type=hsl&shape=cylinder&image=/${book.image_path.replace('thumbs','thumbs2')}`// `/?f=${isbn}`
-            http://localhost:2345/scatter/plotly2.html?image=/thumbs2/T_978-8804509097.jpg */
-            img_link.href = filterParam ? '/' : `/scatter/?image=/${book.image_path.replace('thumbs','thumbs2')}`// `/?f=${isbn}`
+            //// {
+            ////    img_link.href = filterParam ? '/' : `/?f=${isbn}`
+            //// } // OR
+            {
+                img_link.target = "_image" 
+                img_link.href = `/scatter/?image=/${book.image_path.replace('thumbs','thumbs2')}`
+            }
             img_link.appendChild(img)
 
             const figcaption = document.createElement("figcaption")
