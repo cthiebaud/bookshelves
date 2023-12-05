@@ -1035,6 +1035,21 @@
   title: We Are All Made of Glue - A Short History of Tractors in Ukrainian
   url: https://www.amazon.com/s\?k=978-0141030999
   where: /saint-lazare-de-savene/chambre_alessia/_H
+978-0141034591:
+  cover:
+    palette: '[{''color'': [5, 23, 18], ''count'': 28727}, {''color'': [51, 41, 31],
+      ''count'': 3487}, {''color'': [112, 49, 26], ''count'': 2030}, {''color'': [193,
+      75, 35], ''count'': 2399}, {''color'': [249, 72, 24], ''count'': 26557}]'
+  de: Nassim Nicholas Taleb (Auteur)
+  ext: "Broch\xE9 \u2013 28 f\xE9vrier 2008"
+  image_path: thumbs/T_978-0141034591.webp
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EC\U0001F1E7"
+  title: The Black Swan - The Impact of the Highly Improbable
+  where: /saint-jean-lipion/salon/autres
 978-0141346090:
   cover:
     palette: '[{''color'': [207, 64, 69], ''count'': 41126}, {''color'': [159, 68,
@@ -1278,6 +1293,22 @@
   - _1926
   title: Selected Poems
   where: /saint-lazare-de-savene/salon/_6
+978-0252071270:
+  cover:
+    palette: '[{''color'': [230, 90, 45], ''count'': 37346}, {''color'': [5, 3, 3],
+      ''count'': 24208}, {''color'': [85, 75, 73], ''count'': 1423}, {''color'': [174,
+      169, 167], ''count'': 1776}, {''color'': [229, 227, 226], ''count'': 4447}]'
+  de: Avital Ronell (Autore)
+  ext: "Copertina flessibile \u2013 17 dicembre 2002"
+  image_path: thumbs/T_978-0252071270.webp
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EC\U0001F1E7"
+  title: Stupidity
+  where: /saint-jean-lipion/salon/autres
 978-0262550420:
   cover:
     palette: '[{''color'': [52, 37, 30], ''count'': 9458}, {''color'': [117, 90, 68],
@@ -4632,6 +4663,36 @@
   title: "Les vraies lois de l'\xE9conomie"
   url: https://www.amazon.fr/s\?k=978-2020844819
   where: /saint-lazare-de-savene/chambre_alessia/_E
+978-2020872331:
+  cover:
+    palette: '[{''color'': [254, 255, 254], ''count'': 55122}, {''color'': [77, 85,
+      89], ''count'': 4092}, {''color'': [48, 45, 45], ''count'': 4446}, {''color'':
+      [97, 117, 161], ''count'': 1616}, {''color'': [222, 101, 106], ''count'': 1524}]'
+  de: "Jacques G\xE9n\xE9reux (Auteur)"
+  ext: "Broch\xE9 \u2013 5 octobre 2006"
+  image_path: thumbs/T_978-2020872331.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "La Dissoci\xE9t\xE9"
+  where: /saint-jean-lipion/salon/autres
+978-2021054019:
+  cover:
+    palette: '[{''color'': [254, 251, 238], ''count'': 54850}, {''color'': [252, 252,
+      238], ''count'': 4075}, {''color'': [252, 250, 237], ''count'': 2480}, {''color'':
+      [251, 251, 237], ''count'': 819}, {''color'': [252, 251, 240], ''count'': 576}]'
+  de: Maurice Godelier (Auteur)
+  ext: "Broch\xE9 - 7 novembre 2013"
+  image_path: thumbs/T_978-2021054019.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "L\xE9vi-Strauss"
+  where: /saint-jean-lipion/salon/autres
 978-2021082289:
   cover:
     palette: '[{''color'': [145, 133, 118], ''count'': 597}, {''color'': [184, 172,
@@ -5637,6 +5698,22 @@
   - _1971
   title: Le style classique - Haydn, Mozart, Beethoven
   where: /saint-jean-lipion/chambre/favourite
+978-2070297795:
+  cover:
+    palette: '[{''color'': [216, 220, 221], ''count'': 1270}, {''color'': [255, 255,
+      255], ''count'': 48017}, {''color'': [135, 157, 159], ''count'': 5869}, {''color'':
+      [83, 118, 132], ''count'': 4199}, {''color'': [35, 72, 84], ''count'': 1845}]'
+  de: Robert Antelme (Auteur)
+  ext: "Poche \u2013 21 mars 1978"
+  image_path: thumbs/T_978-2070297795.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "L'esp\xE8ce humaine"
+  where: /saint-jean-lipion/salon/autres
 978-2070298709:
   cover:
     palette: '[{''color'': [252, 241, 216], ''count'': 54113}, {''color'': [224, 206,
@@ -6767,6 +6844,22 @@
   - _2005
   title: "Harry Potter, 6 - Harry Potter et le Prince de sang m\xEAl\xE9"
   where: /saint-lazare-de-savene/chambre_alessia/rowling
+978-2070701070:
+  cover:
+    palette: '[{''color'': [255, 255, 253], ''count'': 48868}, {''color'': [163, 154,
+      117], ''count'': 1560}, {''color'': [130, 125, 91], ''count'': 4184}, {''color'':
+      [61, 54, 52], ''count'': 1332}, {''color'': [117, 91, 70], ''count'': 4656}]'
+  de: "S\xF8ren Kierkegaard (Auteur), F. et O. Prior (Traduction), M.-H. Guignot (Traduction)"
+  ext: "Poche \u2013 22 f\xE9vrier 1984"
+  image_path: thumbs/T_978-2070701070.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Ou bien... Ou bien...
+  where: /saint-jean-lipion/salon/autres
 978-2070704491:
   cover:
     palette: '[{''color'': [217, 208, 173], ''count'': 245}, {''color'': [254, 248,
@@ -7742,6 +7835,21 @@
   title: Temps glaciaires
   url: https://www.amazon.fr/s\?k=978-2081360440
   where: /saint-lazare-de-savene/salon/mostly_black
+978-2081375017:
+  cover:
+    palette: '[{''color'': [162, 194, 214], ''count'': 14322}, {''color'': [246, 246,
+      240], ''count'': 28489}, {''color'': [210, 174, 77], ''count'': 7322}, {''color'':
+      [65, 69, 78], ''count'': 5696}, {''color'': [95, 160, 201], ''count'': 9971}]'
+  de: "\xC9tienne de La Bo\xE9tie"
+  image_path: thumbs/T_978-2081375017.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Discours de la servitude volontaire
+  where: /saint-jean-lipion/salon/autres
 978-2081378261:
   cover:
     palette: '[{''color'': [2, 2, 3], ''count'': 46133}, {''color'': [46, 53, 57],
@@ -8736,6 +8844,7 @@
   image_path: thumbs/T_978-2207233702.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - favourite
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -8954,6 +9063,22 @@
   - _1987
   title: "Les v\xE9ritables principes de la grammaire"
   where: /saint-jean-lipion/chambre/editor
+978-2213601250:
+  cover:
+    palette: '[{''color'': [188, 185, 182], ''count'': 8770}, {''color'': [101, 96,
+      91], ''count'': 7643}, {''color'': [56, 53, 49], ''count'': 34155}, {''color'':
+      [144, 139, 134], ''count'': 7216}, {''color'': [227, 227, 224], ''count'': 4416}]'
+  de: Christophe Nick (Auteur)
+  ext: "Broch\xE9 \u2013 28 octobre 1998"
+  image_path: thumbs/T_978-2213601250.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "R\xE9surrection - Naissance de la Ve R\xE9publique, un coup d'Etat d\xE9\
+    mocratique"
+  where: /saint-jean-lipion/salon/autres
 978-2213614649:
   cover:
     palette: '[{''color'': [125, 90, 77], ''count'': 4160}, {''color'': [62, 42, 39],
@@ -8995,7 +9120,7 @@
       ''count'': 7922}, {''color'': [25, 23, 19], ''count'': 20795}, {''color'': [19,
       18, 14], ''count'': 20321}, {''color'': [166, 164, 160], ''count'': 95}]'
   de: Shlomo Sand (Auteur)
-  ext: "Broch\xE9 \u2013 3 septembre 2008"
+  ext: "Broch\xE9 - 3 septembre 2008"
   image_path: thumbs/T_978-2213637785.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
@@ -9021,6 +9146,22 @@
   - _1978
   title: La vie mode d'emploi
   where: /saint-jean-lipion/salon/perec
+978-2213665917:
+  cover:
+    palette: '[{''color'': [254, 254, 254], ''count'': 41323}, {''color'': [180, 161,
+      144], ''count'': 4283}, {''color'': [31, 22, 21], ''count'': 8284}, {''color'':
+      [67, 59, 56], ''count'': 5914}, {''color'': [115, 108, 102], ''count'': 3996}]'
+  de: Quentin Meillassoux (Auteur)
+  ext: "Broch\xE9 \u2013 21 septembre 2011"
+  image_path: thumbs/T_978-2213665917.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "Le nombre et la sir\xE8ne"
+  where: /saint-jean-lipion/salon/autres
 978-2213671567:
   cover:
     palette: '[{''color'': [181, 158, 131], ''count'': 8255}, {''color'': [132, 104,
@@ -9069,6 +9210,22 @@
   - _2017
   title: "L'empire de l'or rouge - Enqu\xEAte mondiale sur la tomate d'industrie"
   where: /saint-jean-lipion/chambre/favourite
+978-2213700700:
+  cover:
+    palette: '[{''color'': [238, 237, 236], ''count'': 7711}, {''color'': [252, 252,
+      251], ''count'': 41392}, {''color'': [203, 203, 196], ''count'': 697}, {''color'':
+      [198, 134, 94], ''count'': 200}, {''color'': [234, 83, 17], ''count'': 13600}]'
+  de: "Fr\xE9d\xE9ric Lenoir (Auteur)"
+  ext: "Broch\xE9 \u2013 Grand livre, 8 novembre 2017"
+  image_path: thumbs/T_978-2213700700.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "Le miracle Spinoza - Une philosophie pour \xE9clairer notre vie"
+  where: /saint-jean-lipion/salon/autres
 978-2213726083:
   cover:
     palette: '[{''color'': [252, 247, 235], ''count'': 43000}, {''color'': [211, 146,
@@ -9167,6 +9324,22 @@
   - _1938
   title: "\u0152uvres po\xE9tiques compl\xE8tes"
   where: /saint-lazare-de-savene/salon/_7
+978-2221057797:
+  cover:
+    palette: '[{''color'': [254, 254, 254], ''count'': 38358}, {''color'': [203, 175,
+      180], ''count'': 985}, {''color'': [134, 60, 58], ''count'': 1634}, {''color'':
+      [46, 42, 40], ''count'': 16189}, {''color'': [99, 113, 129], ''count'': 3034}]'
+  de: Georges Ifrah (Auteur)
+  ext: "Poche \u2013 11 mai 1994"
+  image_path: thumbs/T_978-2221057797.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "Histoire universelle des chiffres. L'Intelligence des hommes racont\xE9\
+    e par les nombres et les calculs - tome 1"
+  where: /saint-jean-lipion/salon/autres
 978-2221064528:
   cover:
     palette: '[{''color'': [82, 34, 28], ''count'': 3500}, {''color'': [146, 79, 73],
@@ -9184,6 +9357,22 @@
   - _1845
   title: "Les Trois Mousquetaires - Vingt ans apr\xE8s"
   where: /saint-lazare-de-savene/salon/_7
+978-2221078372:
+  cover:
+    palette: '[{''color'': [251, 253, 253], ''count'': 38542}, {''color'': [195, 185,
+      159], ''count'': 1925}, {''color'': [156, 121, 63], ''count'': 774}, {''color'':
+      [40, 40, 38], ''count'': 16244}, {''color'': [89, 114, 133], ''count'': 2715}]'
+  de: Georges Ifrah (Auteur)
+  ext: "Poche \u2013 11 mai 1994"
+  image_path: thumbs/T_978-2221078372.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "Histoire universelle des chiffres. L'Intelligence des hommes racont\xE9\
+    e par les nombres et les calculs - tome 2"
+  where: /saint-jean-lipion/salon/autres
 978-2221092019:
   cover:
     palette: '[{''color'': [232, 232, 233], ''count'': 43943}, {''color'': [180, 174,
@@ -9577,6 +9766,22 @@
   - _1977
   title: En Patagonie
   where: /saint-lazare-de-savene/salon/_1
+978-2246539117:
+  cover:
+    palette: '[{''color'': [222, 209, 207], ''count'': 1997}, {''color'': [239, 237,
+      235], ''count'': 21144}, {''color'': [245, 243, 241], ''count'': 44644}, {''color'':
+      [203, 159, 153], ''count'': 872}, {''color'': [160, 67, 54], ''count'': 1543}]'
+  de: Luc Ferry (Auteur)
+  ext: "Broch\xE9 - 4 octobre 2006"
+  image_path: thumbs/T_978-2246539117.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Kant
+  where: /saint-jean-lipion/salon/autres
 978-2246545910:
   cover:
     palette: '[{''color'': [255, 255, 143], ''count'': 20813}, {''color'': [255, 254,
@@ -10711,6 +10916,22 @@
   - _2020
   title: "La Vall\xE9e"
   where: /saint-jean-lipion/chambre/polar
+978-2315008100:
+  cover:
+    palette: '[{''color'': [255, 253, 241], ''count'': 60501}, {''color'': [246, 246,
+      234], ''count'': 246}, {''color'': [226, 227, 214], ''count'': 19}, {''color'':
+      [171, 172, 159], ''count'': 16}, {''color'': [197, 197, 185], ''count'': 18}]'
+  de: Avital Ronell (Auteur)
+  ext: "Broch\xE9 - Grand livre, 21 mars 2019"
+  image_path: thumbs/T_978-2315008100.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: La plainte
+  where: /saint-jean-lipion/salon/autres
 978-2330072612:
   cover:
     palette: '[{''color'': [43, 29, 69], ''count'': 44576}, {''color'': [84, 75, 89],
@@ -11809,6 +12030,22 @@
   - "\U0001F1EB\U0001F1F7"
   title: Don Quichotte de la Manche
   where: /saint-lazare-de-savene/salon/_4
+978-2738101792:
+  cover:
+    palette: '[{''color'': [255, 255, 254], ''count'': 48736}, {''color'': [181, 131,
+      96], ''count'': 2593}, {''color'': [144, 99, 71], ''count'': 4152}, {''color'':
+      [100, 67, 50], ''count'': 2650}, {''color'': [43, 30, 24], ''count'': 1269}]'
+  de: Badinter Elisabeth (Auteur)
+  ext: "Broch\xE9 \u2013 28 ao\xFBt 1992"
+  image_path: thumbs/T_978-2738101792.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "XY - De l'identit\xE9 masculine"
+  where: /saint-jean-lipion/salon/autres
 978-2738116697:
   cover:
     palette: '[{''color'': [255, 254, 254], ''count'': 46749}, {''color'': [216, 166,
@@ -12086,6 +12323,22 @@
   title: "Catalogue de l'exposition L\xE9onard de Vinci 24 octobre 2019 - 24 f\xE9\
     vrier 2020"
   where: /saint-lazare-de-savene/salon/small_etc
+978-2755500110:
+  cover:
+    palette: '[{''color'': [192, 219, 178], ''count'': 54005}, {''color'': [245, 234,
+      178], ''count'': 1230}, {''color'': [106, 56, 52], ''count'': 2564}, {''color'':
+      [190, 154, 88], ''count'': 1542}, {''color'': [38, 15, 8], ''count'': 2259}]'
+  de: "Fran\xE7ois Flahault (Auteur)"
+  ext: Copertina flessibile - 21 novembre 2007
+  image_path: thumbs/T_978-2755500110.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "Adam et \xC8ve - La condition humaine"
+  where: /saint-jean-lipion/salon/autres
 978-2757820322:
   cover:
     palette: '[{''color'': [254, 254, 254], ''count'': 35935}, {''color'': [189, 183,
@@ -12330,12 +12583,29 @@
   image_path: thumbs/T_978-2842059194.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - philo
   - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
   - _2005
   title: "Le Paradoxe de Robinson - Capitalisme et soci\xE9t\xE9"
   where: /saint-lazare-de-savene/salon/small
+978-2842059316:
+  cover:
+    palette: '[{''color'': [98, 25, 67], ''count'': 54680}, {''color'': [111, 46,
+      80], ''count'': 4200}, {''color'': [143, 87, 117], ''count'': 575}, {''color'':
+      [196, 143, 171], ''count'': 507}, {''color'': [240, 230, 231], ''count'': 1238}]'
+  de: "Fran\xE7ois Flahault (Auteur)"
+  ext: "Broch\xE9 - 4 octobre 2006"
+  image_path: thumbs/T_978-2842059316.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "\xABBe Yourself!\xBB - Au-del\xE0 de la conception occidentale de l'individu"
+  where: /saint-jean-lipion/salon/autres
 978-2842712600:
   cover:
     palette: '[{''color'': [252, 251, 250], ''count'': 19388}, {''color'': [166, 148,
@@ -12438,6 +12708,21 @@
   - _2015
   title: "Le Fruit d\xE9fendu"
   where: /saint-jean-lipion/chambre/enfer
+978-2842917418:
+  cover:
+    palette: '[{''color'': [222, 77, 68], ''count'': 54099}, {''color'': [195, 111,
+      102], ''count'': 1502}, {''color'': [244, 190, 128], ''count'': 979}, {''color'':
+      [121, 92, 95], ''count'': 1707}, {''color'': [74, 61, 61], ''count'': 913}]'
+  de: Michel Onfray (Auteur)
+  image_path: thumbs/T_978-2842917418.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "Antimanuel de philosophie Poche \u2013 10 mai 2001"
+  where: /saint-jean-lipion/salon/autres
 978-2843040009:
   cover:
     palette: '[{''color'': [78, 99, 128], ''count'': 2596}, {''color'': [48, 74, 114],
@@ -12804,6 +13089,23 @@
   - _1987
   title: "La Biblioth\xE8que Oulipienne, volume 2"
   where: /saint-jean-lipion/salon/perec
+978-2859567262:
+  cover:
+    palette: '[{''color'': [53, 54, 48], ''count'': 3490}, {''color'': [138, 121,
+      104], ''count'': 603}, {''color'': [216, 205, 180], ''count'': 3959}, {''color'':
+      [248, 243, 220], ''count'': 24437}, {''color'': [232, 221, 194], ''count'':
+      6711}]'
+  de: Rousset David (Auteur)
+  ext: "Broch\xE9 \u2013 1 janvier 1988"
+  image_path: thumbs/T_978-2859567262.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - nazi
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: Les jours de notre mort
+  where: /saint-jean-lipion/salon/autres
 978-2862602578:
   cover:
     palette: '[{''color'': [254, 253, 250], ''count'': 49169}, {''color'': [191, 185,
@@ -13493,6 +13795,22 @@
   - _2008
   title: A fleur de peau
   where: /saint-jean-lipion/chambre-paul/football
+978-2919176052:
+  cover:
+    palette: '[{''color'': [255, 254, 254], ''count'': 57738}, {''color'': [219, 197,
+      199], ''count'': 1317}, {''color'': [144, 82, 92], ''count'': 1418}, {''color'':
+      [178, 136, 141], ''count'': 1296}, {''color'': [121, 20, 35], ''count'': 6631}]'
+  de: Quentin Meillassoux (Auteur)
+  ext: "Poche \u2013 Grand livre, 15 mars 2013"
+  image_path: thumbs/T_978-2919176052.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - philo
+  - autres
+  - saint-jean-lipion
+  - "\U0001F1EB\U0001F1F7"
+  title: "M\xE9taphysique et fiction des mondes hors-science"
+  where: /saint-jean-lipion/salon/autres
 978-2940427017:
   cover:
     palette: '[{''color'': [254, 254, 254], ''count'': 23319}, {''color'': [217, 216,
@@ -20903,6 +21221,7 @@
   image_path: thumbs/T_978-8890326905.webp
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - philo
   - _F
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -22244,6 +22563,7 @@ boh35:
   image_path: thumbs/T_boh35.webp
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - philo
   - _6
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -22535,6 +22855,7 @@ gai-luron:
   image_path: thumbs/T_gai-luron.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
+  - bd
   - small
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -22763,6 +23084,7 @@ revolutionibus:
   image_path: thumbs/T_revolutionibus.webp
   lan: "\U0001F1EE\U0001F1F9"
   tags:
+  - philo
   - _F
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"

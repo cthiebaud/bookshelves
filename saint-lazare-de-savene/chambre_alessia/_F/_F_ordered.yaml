@@ -155,6 +155,8 @@
   de: Carlo Monaco (Autore)
   lan: 🇮🇹
   url: https://www.amazon.it/s\?k=978-8890326905
+  tags:
+    - philo
 
 978-8879263108:
   title: L'inventore di sogni
@@ -276,6 +278,8 @@ revolutionibus:
   title: De revolutionibus orbium caelestium - La ricerca dealla sfericità
   de: Giuliano Giuliani, Carlo Monaco
   lan: 🇮🇹
+  tags:
+    - philo
 
 978-8839551528:
   title: Nomen - Il nuovissimo Campanini Carboni - Latino Italiano ● Italiano Latino
