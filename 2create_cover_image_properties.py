@@ -209,7 +209,7 @@ for ext in extensions:
         #    print(f"{colors_dictionnary[key]} {key}")
         
         if (key not in colors_dictionnary) or (key in arguments) or (first_argument == '*'):
-            print(i, key, "...")
+            print(i, key, "…")
             properties = calc_image_properties(filename2)
             print(i, key, properties)
             colors_dictionnary[key] = properties 

@@ -1,5 +1,6 @@
 import glob
 from PIL import Image
+from statistics import mean, median, stdev, variance
 
 ## # get all the jpg files from the current folder
 ## for infile in glob.glob("*.jpg"):
@@ -33,5 +34,5 @@ for filename3 in glob.iglob('thumbs/*', recursive=False):
 print(f"{i} thumbs, {sum(sizes)} total bytes, {min(sizes)} min, {max(sizes)} max")
 print(f"{min(imsizes, key = lambda t: t[0])} min width, {max(imsizes, key = lambda t: t[0])} max width")
 print(f"{min(imsizes, key = lambda t: t[1])} min height, {max(imsizes, key = lambda t: t[1])} max height")
-print(f"{min(ratios)} min ratio, {max(ratios)} max ratio")
+print(f"ratio: {min(ratios)} min, {max(ratios)} max, {mean(ratios)} mean, {median(ratios)} median, {stdev(ratios)} stdev, {variance(ratios)} variance")
 

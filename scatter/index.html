@@ -145,7 +145,7 @@
     </style>
     <div id="loading">
         <div class="spinner-border" style="width: 4rem; height: 4rem;" role="status">
-            <span class="visually-hidden">Loading...</span>
+            <span class="visually-hidden">Loading…</span>
         </div>
     </div>
 
@@ -320,7 +320,9 @@
         // the "show_plot" button will wait until this mutex has been released to proceed to the next step
         const regressionPlaneFromServerMutex = new Mutex()
         async function awaitRegressionPlane() {
+            // console.log("[slides] waiting for mutex to be released …")
             await regressionPlaneFromServerMutex.waitForUnlock()
+            // console.log("[slides] mutex released, let's continue.")
         }
         // we need to make this function available to both /slideshow/ and /non-slideshow/ variants
         async function showRegressionPlane() {
@@ -389,12 +391,15 @@
                                 io.style.width = '30%'
                             }
                         })
-                        // can't remember how this works
-                        const containsDimensions = _.contains(theImage, 200 * 300)
+                        // h/w ratios: 1.51 mean, 0.17 stdev (cf. list_thumb_sizes.py)
+                        // so height = width x (mean ratio + 2 x stdev ratio)
+                        // i.e. 200 x (1.51 + 2 x 0.17) = 370 
+                        // ("In a normal distribution, approximately 95.44% of the data falls within two standard deviations of the mean")
+                        const containsDimensions = _.contains(theImage, 200 * 370) 
                         glob.width = containsDimensions.width
                         glob.height = containsDimensions.height
 
-                        // just log some calculations
+                        // log some calculations
                         console.log(`in memory: ${glob.width}x${glob.height}, squeezed from ${theImage.width}x${theImage.height}`)
                     }
                     // create a single canvas element and draw the image once
@@ -496,7 +501,7 @@
                             },
                             body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z, image: _.truncateStringInTheMiddle(imagePath, 128) }),
                         }).then(response => {
-                            console.log("HABEMUS regression")
+                            // console.log("Habemus regression plane!")
                             return response.json()
                         }).then(results => {
 
@@ -519,9 +524,9 @@
                             }
 
                             Plotly.addTraces('scatter-plot', regressionPlane).then(() => {
-                                console.log("About to release Mutex ...")
+                                // console.log("About to release mutex …")
                                 releaseMutex()
-                                console.log("Mutex released !")
+                                // console.log("… mutex released!")
                                 if (!slideshowFromQueryString) {
                                     showRegressionPlane()
                                 }
@@ -617,7 +622,7 @@
                                 imageData.data[index + 3] = (w * 255)  // alpha value, 255 for fully opaque
                             }
                             console.log(`altered: ${altered} out of ${projecteds.length}`)
-                            console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
+                            // console.log(`wrongs: ${wrongs} out of ${projecteds.length}`)
 
                             Plotly.newPlot('scatter-plot2', [projectedCoercedScatter], layout, { displayModeBar: false }).then(function () {
                                 // add event listener to plot for changes in the camera angle
@@ -644,18 +649,11 @@
                                 loadingElement.style.display = 'none'
                             })
                         }).catch((error) => {
-                            console.error('Fetch error:', error)
                             showError(`${error}: ${url}`)
-                            document.querySelectorAll('#slideshowButtons > *').forEach(
-                                (e, i) => {
-                                    // hide everything but first, that becomes last as well
-                                    if (i === 0) {
-                                        e.classList.add('last')
-                                    } else {
-                                        e.style.display = 'none'
-                                    }
-                                }
-                            )
+                            // hide all slideshow buttons except the first, which becomes the last button
+                            document.querySelectorAll('#slideshowButtons > .slideshowButtonParent').forEach((e, i) => {
+                                i === 0 ? e.classList.add('last') : e.style.display = 'none'
+                            })
                         }).finally(() => {
                             // ensure the mutex is released regardless of success or failure
                             releaseMutex()
