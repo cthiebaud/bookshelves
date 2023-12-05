@@ -4,12 +4,12 @@ class Slide {
     constructor(buttonId, elementId, promise) {
         this.button = document.getElementById(buttonId)
         this.element = document.getElementById(elementId)
-        this.promise = promise;
+        this.promise = promise
     }
 
     // Getter and setter for the 'button' property
     get button() {
-        return this._button;
+        return this._button
     }
 
     set button(newButton) {
@@ -27,27 +27,27 @@ class Slide {
                     remove: () => { },
                 }
             }
-        };
+        }
     }
 
     // Getter and setter for the 'element' property
     get element() {
-        return this._element;
+        return this._element
     }
 
     set element(newElement) {
         this._element = newElement ? newElement : {
             style: { visibility: null }
-        };
+        }
     }
 
     // Getter and setter for the 'promise' property
     get promise() {
-        return this._promise;
+        return this._promise
     }
 
     set promise(newPromise) {
-        this._promise = newPromise ? newPromise : doNothing;
+        this._promise = newPromise ? newPromise : doNothing
     }
 }
 
