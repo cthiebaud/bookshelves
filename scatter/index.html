@@ -302,7 +302,7 @@
 
         // show error message
         window.showError = (errorMsg) => {
-            document.getElementById('error-msg').innerHTML = _.truncateString(errorMsg, 160)
+            document.getElementById('error-msg').innerHTML = _.truncateStringInTheMiddle(errorMsg, 160)
             loadingElement.style.display = 'none'
         }
 
@@ -494,7 +494,7 @@
                             headers: {
                                 'Content-Type': 'application/json',
                             },
-                            body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z, image: _.truncateString(imagePath, 128) }),
+                            body: JSON.stringify({ x: data3d.x, y: data3d.y, z: data3d.z, image: _.truncateStringInTheMiddle(imagePath, 128) }),
                         }).then(response => {
                             console.log("HABEMUS regression")
                             return response.json()
@@ -579,10 +579,10 @@
                             }
                             const projectedsAsPoints = convertToPointsObject(projecteds)
 
-                            // coerce projections to [0, 256)
-                            projectedCoercedScatter.x = projectedsAsPoints.x.map(x => _.coerce(x))
-                            projectedCoercedScatter.y = projectedsAsPoints.y.map(y => _.coerce(y))
-                            projectedCoercedScatter.z = projectedsAsPoints.z.map(z => _.coerce(z))
+                            // clamp projections into [glob.MIN, glob.MAX), i.e. [0, 256) 
+                            projectedCoercedScatter.x = projectedsAsPoints.x.map(x => glob.clamp(x))
+                            projectedCoercedScatter.y = projectedsAsPoints.y.map(y => glob.clamp(y))
+                            projectedCoercedScatter.z = projectedsAsPoints.z.map(z => glob.clamp(z))
 
                             // loop through the projectedCoercedScatter data to set the RGB values for each pixel
                             let altered = 0

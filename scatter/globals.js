@@ -21,6 +21,17 @@ class Globals {
         })()
     }
 
+    // Ensure a value is within a specified range [min, max), clamping if necessary
+    clamp = (w, min = glob.MIN, max = glob.MAX) => {
+        if (w < min) {
+            return min
+        }
+        if (max < w) {
+            return max - glob.EPSILON
+        }
+        return w
+    }
+
     get MIN() {
         return this._dataStructure.MIN
     }
