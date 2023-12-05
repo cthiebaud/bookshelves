@@ -328,6 +328,7 @@
         async function showRegressionPlane() {
             const scatterPlot = document.getElementById('scatter-plot')
             const allTraces = scatterPlot.data
+            // const layout = scatterPlot.layout
 
             // find index of trace-object where "name" property is "regression-plane":
             const regressionPlane = allTraces.findIndex(obj => obj.name === 'regression-plane')
@@ -335,6 +336,7 @@
             // make specified trace visible to the user:
             await Plotly.restyle(scatterPlot, { "visible": true }, [regressionPlane])
         }
+
         const slides = [
             /*        button id                     id of element to show           promise to invoke  */
             new Slide(null                    /**/, null                      /**/, null                 /**/),
@@ -451,6 +453,14 @@
                             xaxis: { autorange: false, showticklabels: false, title: '' },
                             yaxis: { autorange: false, showticklabels: false, title: '' },
                             zaxis: { autorange: false, showticklabels: false, title: '' },
+                            /* below are default values 
+                            c.f. https://plotly.com/python/3d-camera-controls/#default-parameters
+                            camera: {
+                                eye: { x: 1.25, y: 1.25, z: 1.25 },
+                                up: { x: 0, y: 0, z: 1 },
+                                center: { x: 0, y: 0, z: 0 }
+                            }
+                            */
                         },
                         showlegend: false,
                         showscale: false,
