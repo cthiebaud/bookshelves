@@ -7,7 +7,7 @@ class Slide {
         this.promise = promise
     }
 
-    // Getter and setter for the 'button' property
+    // getter and setter for the 'button' property
     get button() {
         return this._button
     }
@@ -30,7 +30,7 @@ class Slide {
         }
     }
 
-    // Getter and setter for the 'element' property
+    // getter and setter for the 'element' property
     get element() {
         return this._element
     }
@@ -41,7 +41,7 @@ class Slide {
         }
     }
 
-    // Getter and setter for the 'promise' property
+    // getter and setter for the 'promise' property
     get promise() {
         return this._promise
     }

@@ -24,21 +24,21 @@
             MAX: 256,
         }
         window.N = (value, fromSrc, toSrc, fromTarget, toTarget) => {
-            // Calculate the percentage of the value in the source range
+            // calculate the percentage of the value in the source range
             const percentage = (value - fromSrc) / (toSrc - fromSrc)
 
-            // Map the percentage to the target range and return the result
+            // map the percentage to the target range and return the result
             const normalized = (fromTarget + percentage * (toTarget - fromTarget))
-            return normalized // Math.round( normal * 10) / 10
+            return normalized // math.round( normal * 10) / 10
         }
 
-        // Function to perform regression and update the plot
+        // function to perform regression and update the plot
         function performRegression() {
             const X1 = Array.from({ length: 256 }, () => { return N(Math.random(), 0, 1, 0, 256) })
             const X2 = Array.from({ length: 256 }, () => { return N(Math.random(), 0, 1, 0, 256) })
             const Y = Array.from({ length: 256 }, () => { return N(Math.random(), 0, 1, 0, 256) })
 
-            // Perform regression on the server
+            // perform regression on the server
             fetch('/perform_regression', {
                 method: 'POST',
                 headers: {
@@ -48,7 +48,7 @@
             })
                 .then(response => response.json())
                 .then(results => {
-                    // Display the results
+                    // display the results
                     plotResults(X1, X2, Y, results);
                     displayStdDevResiduals(results.std_dev_residuals);
                 })
@@ -58,7 +58,7 @@
                 });
         }
 
-        // Function to plot the scatter plot and regression plane
+        // function to plot the scatter plot and regression plane
         function plotResults(X1, X2, Y, results) {
             const scatterPlot = {
                 x: X1,
@@ -72,8 +72,8 @@
                 hovermode: false,
                 marker: {
                     size: 5,
-                    color: [],      // Array to store colors for each point
-                    opacity: 0.80,  // Set opacity for every point
+                    color: [],      // array to store colors for each point
+                    opacity: 0.80,  // set opacity for every point
                 },
             };
             for (let i = 0; i < scatterPlot.x.length; i++) {
@@ -129,12 +129,12 @@
             Plotly.newPlot('scatter-plot', [scatterPlot, regressionPlane], layout, { displayModeBar: false });
         }
 
-        // Function to display standard deviation of residuals
+        // function to display standard deviation of residuals
         function displayStdDevResiduals(stdDevResiduals) {
             document.getElementById('std-dev-residuals').innerText = `Standard Deviation: ${stdDevResiduals.toFixed(4)}`;
         }
 
-        // Perform regression on page load
+        // perform regression on page load
         performRegression();
     </script>
 

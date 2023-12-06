@@ -475,29 +475,29 @@
     <script>
         Handlebars.registerHelper('calculatePercentage', function (dividend, divisor) {
             if (!divisor || divisor === 0) {
-                return 0; // Avoid division by zero or undefined
+                return 0; // avoid division by zero or undefined
             }
 
             return (dividend / divisor) * 100;
         });
     </script>
     <script>
-        // Function to set --background-image based on ID
+        // function to set --background-image based on ID
         function setSVGBackgrounds(selector) {
-            // Get all elements matching the selector
+            // get all elements matching the selector
             const elements = document.querySelectorAll(selector);
 
-            // Iterate over the elements and set the --background-image variable
+            // iterate over the elements and set the --background-image variable
             elements.forEach(function (element) {
                 const id = element.id;
                 if (id) {
-                    // Directly use the template literal within setProperty
+                    // directly use the template literal within setProperty
                     element.style.setProperty('--background-image', `url("svg/flags/${id}.svg")`);
                 }
             });
         }
 
-        // Call the function with your specific selector
+        // call the function with your specific selector
         setSVGBackgrounds('.svg-background');
     </script>
 
@@ -546,7 +546,7 @@
         }
 
         function palette_diversity(palette) {
-            // Calculate the color differences between all pairs of colors
+            // calculate the color differences between all pairs of colors
             let totalDifference = 0
             let pairCount = 0
             const diversity = {}
@@ -554,7 +554,7 @@
             let weightNorm = 0
             let weightVariance = 0
 
-            // Calculate the mean (average) weight of colors in the set
+            // calculate the mean (average) weight of colors in the set
             let meanWeight = 0
             for (const color of palette) {
                 meanWeight += color.count
@@ -567,25 +567,25 @@
                     const color1 = palette[i]
                     const color2 = palette[j]
 
-                    // Calculate CIELAB ΔE between the two colors
+                    // calculate CIELAB ΔE between the two colors
                     // const _deltaE = chroma.deltaE(color1.color, color2.color)
                     const _deltaE = deltaE(color1.color, color2.color)
 
                     // console.log(_deltaE, _deltaE2)
 
-                    // Calculate the weighted ΔE for the pair
+                    // calculate the weighted ΔE for the pair
                     const weightedDeltaE = _deltaE * (color1.count * color2.count)
 
                     const key = "_" + i + j
                     diversity[key] = weightedDeltaE
 
-                    // Add the weighted ΔE to the total
+                    // add the weighted ΔE to the total
                     totalWeightedDeltaE += weightedDeltaE
 
-                    // Add the square of the weight to weightNorm
+                    // add the square of the weight to weightNorm
                     weightNorm += Math.pow(color1.count, 2) + Math.pow(color2.count, 2)
 
-                    // Calculate the weight deviation from the mean and add it to the weightVariance
+                    // calculate the weight deviation from the mean and add it to the weightVariance
                     let weightDeviation = color1.count - meanWeight
                     weightVariance += weightDeviation * weightDeviation
                     weightDeviation = color2.count - meanWeight
@@ -595,7 +595,7 @@
 
             const weightVarianceScalingFactor = 0.1
 
-            // Calculate the average color difference as the diversity indicator
+            // calculate the average color difference as the diversity indicator
             const diversityIndex = (totalWeightedDeltaE / (1 + weightVariance)) * weightNorm * weightVarianceScalingFactor
             diversity["total"] = diversityIndex
             return diversity
@@ -682,7 +682,7 @@
 
         }
 
-        // Define a function to classify the image based on base variables
+        // define a function to classify the image based on base variables
         function classifyImage(baseVariables) {
             const dominantColorHue = baseVariables.dominantColorHSL[0]
             const weightedAverageChroma = calculateWeightedAverageChroma(baseVariables.palette)
@@ -703,7 +703,7 @@
 
             // hue
             {
-                // Define a threshold for hue values (adjust as needed)
+                // define a threshold for hue values (adjust as needed)
                 const averageHue = dominantColorHue
 
                 const hueThresholdLeft = 18
@@ -747,7 +747,7 @@
                 parent = parent.parentNode;
             }
 
-            return parent; // Returns the parent with the specified class or null if not found
+            return parent; // returns the parent with the specified class or null if not found
         }
 
         function selectOrUnselectTag(e) {
@@ -796,7 +796,7 @@
                 return combinations.map(combination => combination.join('')).join(',').trim()
             }
 
-            // Helper function to find the Cartesian product of multiple arrays
+            // helper function to find the Cartesian product of multiple arrays
             function cartesianProduct(...arrays) {
                 return arrays.reduce((accumulator, array) => {
                     return accumulator.flatMap(a => array.map(b => a.concat(b)))
@@ -867,7 +867,7 @@
             const html = template(context);
             const fragment = document.createRange().createContextualFragment(html);
 
-            // Append the generated HTML to your container
+            // append the generated HTML to your container
             figuresContainer.appendChild(fragment);
             const loadingElement = document.getElementById('loading')
             loadingElement.style.display = 'none'

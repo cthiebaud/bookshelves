@@ -1,9 +1,9 @@
 function extractPlaneInfo(A, B, C, D) {
-    // Extract the normal vector
+    // extract the normal vector
     const planeCoefficients = {A:A, B:B, C:C, D:D}
     const planeNormal = [A, B, C]
 
-    // Find a point on the plane
+    // find a point on the plane
     let planePoint
     if (A !== 0) {
         planePoint = [-D / A, 0, 0]
@@ -12,7 +12,7 @@ function extractPlaneInfo(A, B, C, D) {
     } else if (C !== 0) {
         planePoint = [0, 0, -D / C]
     } else {
-        // Handle the case where the coefficients are invalid
+        // handle the case where the coefficients are invalid
         console.error("Invalid coefficients. Plane is not well-defined.")
         return null
     }
@@ -21,12 +21,12 @@ function extractPlaneInfo(A, B, C, D) {
 }
 
 function orthographicProjection(point, planeNormal, planePoint) {
-    // Convert inputs to arrays for vector operations
+    // convert inputs to arrays for vector operations
     const pointArray = [...point]
     const planeNormalArray = [...planeNormal]
     const planePointArray = [...planePoint]
 
-    // Calculate the projection
+    // calculate the projection
     const projection = pointArray.map((coord, i) =>
         coord - (dotProduct(planeNormalArray, vectorSubtraction(pointArray, planePointArray)) / magnitudeSquared(planeNormalArray)) * planeNormalArray[i]
     )
@@ -36,7 +36,7 @@ function orthographicProjection(point, planeNormal, planePoint) {
 
 function orthographicProjectionSet(points, planeNormal, planePoint) {
     const pointArray = points.x.map((x, i) => [x, points.y[i], points.z[i]])
-    // Calculate the projection for each point in the set
+    // calculate the projection for each point in the set
     const projections = pointArray.map(point =>
         orthographicProjection(point, planeNormal, planePoint)
     )

@@ -21,7 +21,7 @@ class Globals {
         })()
     }
 
-    // Ensure a value is within a specified range [min, max), clamping if necessary
+    // ensure a value is within a specified range [min, max), clamping if necessary
     clamp = (w, min = glob.MIN, max = glob.MAX) => {
         if (w < min) {
             return min
@@ -61,9 +61,9 @@ class Globals {
     }
 }
 
-// Create a single instance of the Singleton class
+// create a single instance of the Singleton class
 const glob = new Globals()
 console.log(`MIN = ${glob.MIN}, MAX = ${glob.MAX}, ε = ${glob.EPSILON}`)
 
-// Export the instance to make it accessible in other modules
+// export the instance to make it accessible in other modules
 export default glob
