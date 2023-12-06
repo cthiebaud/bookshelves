@@ -54,6 +54,9 @@
             text-align: left;
         }
 
+        .category {
+            min-height: 40px;
+        }
         .category:after {
             content: "";
             /* This is necessary for the pseudo element to work. */
@@ -283,37 +286,29 @@
             margin: 0 0 0.333rem 0;
             padding: 0;
         }
-
-        .animated-background {
-            width: 100vw;
-            /* height: 100vh; */
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: linear-gradient(45deg, #fff, #ddd, #bbb, #ddd, #fff);
-            background-size: 400% 400%;
-            animation: gradientAnimation 3s ease infinite;
-        }
-
-        @keyframes gradientAnimation {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
     </style>
 </head>
 
 <body>
+    <!-- loading -->
+    <style>
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: auto;
+            z-index: 20;
+        }
+    </style>
+    <div id="loading">
+        <div class="spinner-border" style="width: 4rem; height: 4rem;" role="status">
+            <span class="visually-hidden">Loading…</span>
+        </div>
+    </div>
     <div id="container" class="container-md">
-        <div id="howmuch" class="row align-items-center category animated-background">
+        <div id="howmuch" class="row align-items-center category">
             <div class="col-6 text-end">
                 <span id="current" class="badge neonText font-monospace" style="background-color: #010a01;">&hellip;</span>
             </div>
@@ -326,6 +321,7 @@
         </div>
         <div id="location" class="row align-items-center category">
             <div class="col-6 text-end">
+                &nbsp;
                 <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene"
                     style="margin-right: calc(var(--bs-btn-padding-x) * -1);">
                     <span class="cityName">San&nbsp;Lazzaro</span>
@@ -341,6 +337,7 @@
                     <span class="cityName">San&nbsp;Giovanni</span>
                     <span class="sgl"></span>
                 </a>
+                &nbsp;
             </div>
         </div>
         <!-- prettier-ignore -->
@@ -695,7 +692,6 @@
                 } else {
                     document.getElementById("current").classList.remove('neonText')
                 }
-                document.getElementById("howmuch").classList.remove("animated-background");
                 document.getElementById("percent").innerHTML = `${s}`
                 circle_with_cross.style.visibility = (this.total === total_des_totaux ? "hidden" : "visible")
                 const flags = { fr: '🇫🇷', it: '🇮🇹', en: '🇬🇧', de: '🇩🇪', pt: '🇵🇹', sp: '🇪🇸' }
@@ -936,6 +932,8 @@
 
             // Append the generated HTML to your container
             figuresContainer.appendChild(fragment);
+            const loadingElement = document.getElementById('loading')
+            loadingElement.style.display = 'none'
         }
 
         function updateDisplay(text) {
