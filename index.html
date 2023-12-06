@@ -480,30 +480,27 @@
             </div>
         </div>
         <div id="figuresContainer" class="image-container"></div>
-        <!--
-            <div><hr></div>
-        -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
     <script>
-        Handlebars.registerHelper('calculatePercentage', function (count, total) {
+        Handlebars.registerHelper('calculatePercentage', function (part, total) {
             if (!total || total === 0) {
                 return 0; // Avoid division by zero or undefined
             }
 
-            return (count / total) * 100;
+            return (part / total) * 100;
         });
     </script>
     <script>
         // Function to set --background-image based on ID
         function setSVGBackgrounds(selector) {
             // Get all elements matching the selector
-            var elements = document.querySelectorAll(selector);
+            const elements = document.querySelectorAll(selector);
 
             // Iterate over the elements and set the --background-image variable
             elements.forEach(function (element) {
-                var id = element.id;
+                const id = element.id;
                 if (id) {
                     // Directly use the template literal within setProperty
                     element.style.setProperty('--background-image', `url("svg/flags/${id}.svg")`);
@@ -520,7 +517,6 @@
         import acColors from 'https://cdn.jsdelivr.net/npm/ac-colors@1.4.3/+esm'
         import { deltaE } from 'https://cdn.jsdelivr.net/npm/color-delta-e@1.3.0/+esm'
         import colorSpace from 'https://cdn.jsdelivr.net/npm/color-space@2.0.1/+esm'
-        // import chroma from 'https://cdn.jsdelivr.net/npm/chroma-js@2.4.2/+esm'
 
         const urlParams = new URLSearchParams(window.location.search);
         const filterParam = urlParams.get('f');
@@ -529,28 +525,11 @@
         let booksFiltered
         let total_des_totaux = undefined
 
-        function calculateAverageHueHSL(palette) {
-            let totalHue = 0
-            let totalWeight = 0
-
-            for (const color of palette) {
-                // Assuming color is in HSL color space
-                const hsl = colorSpace.rgb.hsl(color.color)
-                totalHue += hsl[0] * color.count
-                totalWeight += color.count
-            }
-
-            const averageHue = totalHue / totalWeight
-
-            return averageHue
-        }
-
         function calculateWeightedAverageChroma(palette) {
             let totalWeightedChroma = 0
             let totalWeight = 0
 
             for (const color of palette) {
-                // Assuming color is in CIELAB color space
                 const lab = colorSpace.rgb.lab(color.color)
                 const chroma = Math.sqrt(Math.pow(lab[1], 2) + Math.pow(lab[2], 2))
                 const weightedChroma = chroma * color.count
@@ -559,7 +538,6 @@
             }
 
             const weightedAverageChroma = totalWeightedChroma / totalWeight
-
             return weightedAverageChroma
         }
 
@@ -575,7 +553,6 @@
             }
 
             const weightedAverageLuminance = totalWeightedLuminance / totalWeight
-
             return weightedAverageLuminance
         }
 
@@ -594,7 +571,6 @@
                 meanWeight += color.count
             }
             meanWeight /= palette.length
-
 
             for (let i = 0; i < palette.length; i++) {
                 for (let j = i + 1; j < palette.length; j++) {
@@ -632,14 +608,9 @@
 
             // Calculate the average color difference as the diversity indicator
             const diversityIndex = (totalWeightedDeltaE / (1 + weightVariance)) * weightNorm * weightVarianceScalingFactor
-
             diversity["total"] = diversityIndex
-
-            // console.log('Diversity Indicator:', diversity)
-
             return diversity
         }
-
 
         class Counter {
             total = 0
@@ -704,7 +675,7 @@
                     const elem = document.getElementById(`c-${value}`)
                     if (elem && elem.parentNode) {
                         const isActive = elem.parentNode.classList.contains('active')
-                        const categoryAncestor = findParentWithClass(elem, "category")
+                        const categoryAncestor = findAncestorWithClass(elem, "category")
                         const isCategoryAncestorActive = categoryAncestor ? categoryAncestor.classList.contains('active') : false;
                         if (this[key] !== 0 || isActive || isCategoryAncestorActive || typeof categories.langage === 'undefined') {
                             elem.style.visibility = 'visible'
@@ -722,33 +693,9 @@
 
         }
 
-        // // Example usage
-        // const data = 'rgb[{"color": [232, 203, 175], "count": 17721}, {"color": [137, 61, 62], "count": 4277}, {"color": [246, 230, 207], "count": 44802}]'
-        // const extractedDominantColor = extractDominantColor(data)
-        // console.log("Dominant Color:", extractedDominantColor)
-        function extractDominantColor(palette) {
-            // Initialize variables to track the dominant color and its count
-            let dominantColor = null
-            let maxCount = -1
-
-            // Iterate through the color objects
-            for (const colorObject of palette) {
-                const count = colorObject.count
-
-                // Check if the current count is higher than the previous maximum
-                if (count > maxCount) {
-                    maxCount = count
-                    dominantColor = colorObject.color
-                }
-            }
-
-            return dominantColor
-        }
-
         // Define a function to classify the image based on base variables
         function classifyImage(baseVariables) {
             const dominantColorHue = baseVariables.dominantColorHSL[0]
-
             const weightedAverageChroma = calculateWeightedAverageChroma(baseVariables.palette)
             const averageLuminance = calculateAverageLuminance(baseVariables.palette)
 
@@ -768,7 +715,7 @@
             // hue
             {
                 // Define a threshold for hue values (adjust as needed)
-                const averageHue = dominantColorHue // calculateAverageHueHSL(baseVariables.palette)
+                const averageHue = dominantColorHue
 
                 const hueThresholdLeft = 18
                 const hueThresholdRight = 12
@@ -792,7 +739,6 @@
                 }
             }
             return "Unknown"
-
         }
 
 
@@ -805,7 +751,7 @@
             letters: undefined
         }
 
-        function findParentWithClass(element, className) {
+        function findAncestorWithClass(element, className) {
             let parent = element.parentNode;
 
             while (parent && !parent.classList.contains(className)) {
@@ -821,7 +767,7 @@
             const id = thisElem.id
             const className = thisElem.className
             const tags = thisElem.dataset.tags.split(' ')
-            const categoryElem = findParentWithClass(thisElem, "category")
+            const categoryElem = findAncestorWithClass(thisElem, "category")
             const category = categoryElem.id
             console.log(categoryElem.id)
 
@@ -830,7 +776,7 @@
                 if (btn.id === id) {
                     continue
                 }
-                if (findParentWithClass(btn, "category").id !== category) {
+                if (findAncestorWithClass(btn, "category").id !== category) {
                     continue
                 }
                 btn.classList.remove("active")
@@ -875,7 +821,6 @@
 
             let definedCategories = definedCategoriesArray.join(";")
             let selector = generateSelector(definedCategories)
-            // console.log(categories, selector)
 
             if (selector) {
                 const taggeds = document.querySelectorAll(selector)
