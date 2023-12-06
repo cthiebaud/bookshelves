@@ -686,15 +686,19 @@
                 if (typeof total_des_totaux === "undefined") {
                     total_des_totaux = this.total
                 }
-                var s = Number(this.total / total_des_totaux).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 1 })
+                // total
                 document.getElementById("current").innerHTML = `${this.total}`
-                if (total_des_totaux === this.total) {
+                // percent
+                let percent = total_des_totaux !== 0 ? this.total / total_des_totaux : 1
+                if (percent === 1) {
                     document.getElementById("current").classList.add('neonText')
+                    circle_with_cross.style.visibility = "hidden"
                 } else {
                     document.getElementById("current").classList.remove('neonText')
+                    circle_with_cross.style.visibility = "visible"
                 }
-                document.getElementById("percent").innerHTML = `${s}`
-                circle_with_cross.style.visibility = (this.total === total_des_totaux ? "hidden" : "visible")
+                document.getElementById("percent").innerHTML = `${Number(percent).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 1 })}`
+                // langage
                 const flags = { fr: '🇫🇷', it: '🇮🇹', en: '🇬🇧', de: '🇩🇪', pt: '🇵🇹', sp: '🇪🇸' }
                 for (const [key, value] of Object.entries(flags)) {
                     const elem = document.getElementById(`c-${value}`)
@@ -702,7 +706,7 @@
                         const isActive = elem.parentNode.classList.contains('active')
                         const categoryAncestor = findParentWithClass(elem, "category")
                         const isCategoryAncestorActive = categoryAncestor ? categoryAncestor.classList.contains('active') : false;
-                        if (this[key]!==0 || isActive || isCategoryAncestorActive || typeof categories.langage === 'undefined') {
+                        if (this[key] !== 0 || isActive || isCategoryAncestorActive || typeof categories.langage === 'undefined') {
                             elem.style.visibility = 'visible'
                             elem.innerHTML = this[key]
                         } else {
@@ -711,11 +715,9 @@
                         }
                     }
                 }
-
-                {
-                    document.getElementById("c-saint-jean-lipion").innerHTML = `${this.sgl}`
-                    document.getElementById("c-saint-lazare-de-savene").innerHTML = `${this.slds}`
-                }
+                // location
+                document.getElementById("c-saint-jean-lipion").innerHTML = `${this.sgl}`
+                document.getElementById("c-saint-lazare-de-savene").innerHTML = `${this.slds}`
             }
 
         }
