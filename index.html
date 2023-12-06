@@ -42,10 +42,6 @@
             box-sizing: border-box;
         }
 
-        hr {
-            margin: 0.2rem;
-        }
-
         .left {
             text-align: right;
         }
@@ -66,11 +62,9 @@
             margin: 0 auto;
             /* This will center the border. */
             width: 67%;
-            /* Change this to whatever width you want.
-            padding-bottom: 20px;  */
-            /* This creates some space between the element and the border. */
+            /* Change this to whatever width you want. */
             border-bottom: .5px solid lightgray;
-            /* This creates the border. Replace black with whatever color you want. */
+            /* This creates the border. */
         }
 
         .figure-img {
@@ -103,7 +97,6 @@
 
         /* Flickering animation */
         @keyframes flicker {
-
             0%,
             18%,
             22%,
@@ -120,9 +113,7 @@
                     0 0 90px #0fa,
                     0 0 100px #0fa,
                     0 0 150px #0fa;
-
             }
-
             20%,
             24%,
             55% {
@@ -143,7 +134,7 @@
             padding: 0;
         }
 
-        .cityName {
+        .city-name {
             font-size: smaller;
         }
 
@@ -153,12 +144,10 @@
 
         .svg-background {
             --background-image: url('svg/flags/transparent.svg');
-            /* background: var(--background-image) center/cover no-repeat; */
             background-image: var(--background-image);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            /* transform: scale(0.9); */
         }
 
         .btn {
@@ -282,7 +271,6 @@
 
         .paletteBar {
             display: flex;
-            /* border-bottom: .5px solid gray; */
             min-height: 0.333rem;
             margin: 0 0 0.333rem 0;
             padding: 0;
@@ -325,7 +313,7 @@
                 &nbsp;
                 <a href="#" id="saint-lazare-de-savene" class="btn" role="button" data-bs-toggle="button" data-tags="saint-lazare-de-savene"
                     style="margin-right: calc(var(--bs-btn-padding-x) * -1);">
-                    <span class="cityName">San&nbsp;Lazzaro</span>
+                    <span class="city-name">San&nbsp;Lazzaro</span>
                     <span id="c-saint-lazare-de-savene" class="font-monospace">&nbsp;</span>
                     <!-- ⥣ -->
                 </a>
@@ -335,7 +323,7 @@
                     style="margin-left: calc(var(--bs-btn-padding-x) * -1);">
                     <!-- ⥥ -->
                     <span id="c-saint-jean-lipion" class="font-monospace">&nbsp;</span>
-                    <span class="cityName">San&nbsp;Giovanni</span>
+                    <span class="city-name">San&nbsp;Giovanni</span>
                     <span class="sgl"></span>
                 </a>
                 &nbsp;
@@ -407,8 +395,9 @@
                 <a href="#" id="cyan" class="color btn" role="button" data-bs-toggle="button" data-tags="Cyan"><span class="color_cyan">⬤</span></a>
                 <a href="#" id="blue" class="color btn" role="button" data-bs-toggle="button" data-tags="Blue"><span class="color_blue">⬤</span></a>
                 <a href="#" id="magenta" class="color btn" role="button" data-bs-toggle="button" data-tags="Magenta"><span class="color_magenta">⬤</span></a>
-                <a href="#" id="rainbow" class="color btn" role="button" data-bs-toggle="button" data-tags="Rainbow"><span class="color_rainbow"><img
-                            src="svg/Color_circle_(RGB).svg" style="width:14px; height: auto;"></span></a>
+                <a href="#" id="rainbow" class="color btn" role="button" data-bs-toggle="button" data-tags="Rainbow"><span class="color_rainbow">
+                    <img src="svg/Color_circle_(RGB).svg" style="width:14px; height: auto;">
+                </span></a>
             </div>
         </div>
         <div id="date" class="category" style="display: none;">
@@ -484,12 +473,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
     <script>
-        Handlebars.registerHelper('calculatePercentage', function (part, total) {
-            if (!total || total === 0) {
+        Handlebars.registerHelper('calculatePercentage', function (dividend, divisor) {
+            if (!divisor || divisor === 0) {
                 return 0; // Avoid division by zero or undefined
             }
 
-            return (part / total) * 100;
+            return (dividend / divisor) * 100;
         });
     </script>
     <script>
