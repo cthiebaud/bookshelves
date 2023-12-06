@@ -60,7 +60,7 @@ class SlideShow {
 
     reset() {
         this._currentStep = 0
-        
+
         // function to handle key events and button click
         const _this_ = this
         this.handleInteraction = (event) => {
@@ -97,19 +97,19 @@ class SlideShow {
 
     // function to set buttons properties based on the current step
     updateButtons() {
-        this._slides.forEach(s => {
-            s.button.disabled = true
-            s.button.parentNode.classList.add('disabled')
-            s.button.classList.remove('btn-primary')
-            s.button.classList.add('btn-light')
+        this._slides.forEach((s, i) => {
+            if (i === this._currentStep) {
+                s.button.disabled = false
+                s.button.classList.remove('btn-light')
+                s.button.classList.add('btn-primary')
+                s.button.parentNode.classList.remove('disabled')
+            } else {
+                s.button.disabled = true
+                s.button.classList.remove('btn-primary')
+                s.button.classList.add('btn-light')
+                s.button.parentNode.classList.add('disabled')
+            }
         })
-        if (this._currentStep < this._slides.length) {
-            const b = this._slides[this._currentStep].button
-            b.disabled = false
-            b.parentNode.classList.remove('disabled')
-            b.classList.remove('btn-light')
-            b.classList.add('btn-primary')
-        }
     }
 
     // function to execute a step
@@ -118,7 +118,7 @@ class SlideShow {
             return
         }
         // disable all buttons during slide bump
-        this._slides.forEach(s => s.button.disabled = true) 
+        this._slides.forEach(s => s.button.disabled = true)
         // show what needs to be shown
         this.updateSlides()
         // wait for promise to be done
