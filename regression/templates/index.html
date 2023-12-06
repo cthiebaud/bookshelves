@@ -13,6 +13,7 @@
 <body>
 
     <main class="container-md">
+        <h1>random pixels</h1>
         <div id="scatter-plot"></div>
         <div id="std-dev-residuals"></div>
     </main>
@@ -43,7 +44,7 @@
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ X1, X2, Y }),
+                body: JSON.stringify({ x: X1, y: X2, z: Y, image: "random" }),
             })
                 .then(response => response.json())
                 .then(results => {
@@ -130,7 +131,7 @@
 
         // Function to display standard deviation of residuals
         function displayStdDevResiduals(stdDevResiduals) {
-            document.getElementById('std-dev-residuals').innerText = `Standard Deviation of Residuals: ${stdDevResiduals.toFixed(4)}`;
+            document.getElementById('std-dev-residuals').innerText = `Standard Deviation: ${stdDevResiduals.toFixed(4)}`;
         }
 
         // Perform regression on page load
