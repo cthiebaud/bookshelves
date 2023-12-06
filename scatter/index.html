@@ -193,6 +193,7 @@
                 color: #808080;
                 padding: 4px 6px;
                 vertical-align: middle !important;
+                display: inline-block;
             }
 
             #menu-bar .slideshowButtonParent:not(.last):not(.disabled):after {
@@ -202,6 +203,20 @@
             #menu-bar .slideshowButtonParent:not(.last).disabled:after {
                 content: '▷';
                 color: #a0a0a0;
+            }
+
+            @keyframes rotateAnimation {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            #menu-bar .slideshowButtonParent.rotating-text:after {
+                animation: rotateAnimation 1.2s linear infinite;
             }
         </style>
 
@@ -397,7 +412,7 @@
                         // so height = width x (mean ratio + 2 x stdev ratio)
                         // i.e. 200 x (1.51 + 2 x 0.17) = 370 
                         // ("In a normal distribution, approximately 95.44% of the data falls within two standard deviations of the mean")
-                        const containsDimensions = _.contains(theImage, 200 * 370) 
+                        const containsDimensions = _.contains(theImage, 200 * 370)
                         glob.width = containsDimensions.width
                         glob.height = containsDimensions.height
 

@@ -117,12 +117,14 @@ class SlideShow {
         if (this._currentStep < 0 || this._slides.length <= this._currentStep) {
             return
         }
-        // disable all buttons during slide bump
-        this._slides.forEach(s => s.button.disabled = true)
         // show what needs to be shown
         this.updateSlides()
+        // disable current button while running promise
+        this._slides[this._currentStep].button.disabled = true
+        this._slides[this._currentStep].button.parentNode.classList.add('rotating-text')
         // wait for promise to be done
         await this._slides[this._currentStep].promise()
+        this._slides[this._currentStep].button.parentNode.classList.remove('rotating-text')
         // BUMP!
         this._currentStep++
         // update display to show were we are now

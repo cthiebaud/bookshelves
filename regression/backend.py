@@ -2,6 +2,7 @@ from flask import Flask, jsonify, render_template, request
 import numpy as np
 from sklearn.linear_model import LinearRegression
 from flask_cors import CORS
+import time
 
 app = Flask(__name__)
 CORS(app)
@@ -85,6 +86,8 @@ def perform_regression():
     }
 
     print(f"{data['image']}:\n\tstd_dev: {std_dev_residuals}")
+
+    # time.sleep(3)
 
     # Return results to the frontend
     return jsonify(results)
