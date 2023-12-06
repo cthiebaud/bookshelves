@@ -96,8 +96,10 @@
                 0 0 151px #0fa;
             animation: flicker 1.6s infinite alternate;
         }
+
         /* Flickering animation */
         @keyframes flicker {
+
             0%,
             18%,
             22%,
@@ -116,6 +118,7 @@
                     0 0 150px #0fa;
 
             }
+
             20%,
             24%,
             55% {
@@ -483,6 +486,17 @@
             <div><hr></div>
         -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+    <script>
+        Handlebars.registerHelper('calculatePercentage', function (count, total) {
+            if (!total || total === 0) {
+                return 0; // Avoid division by zero or undefined
+            }
+
+            return (count / total) * 100;
+        });
+    </script>
     <script>
         // Function to set --background-image based on ID
         function setSVGBackgrounds(selector) {
@@ -502,7 +516,6 @@
         // Call the function with your specific selector
         setSVGBackgrounds('.svg-background');
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js"></script>
 
     <script type="module">
         import jsYaml from 'https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/+esm'
@@ -690,7 +703,7 @@
                     const elem = document.getElementById(`c-${value}`)
                     const categoryElem = findParentWithClass(elem, "category")
                     const isParentActive = categoryElem.classList.contains('active')
-                    console.log(`Key: ${key}, Value: ${value} - ${this[key]}, ${isParentActive}`);
+                    // console.log(`Key: ${key}, Value: ${value} - ${this[key]}, ${isParentActive}`);
                     if (elem) {
                         if (this[key] || isParentActive || typeof categories.langage === 'undefined') {
                             elem.style.visibility = 'visible'
@@ -903,148 +916,26 @@
             c.display()
         })
 
+        const response = await fetch('./index-book-template.hbs');
+        const templateSource = await response.text();
+        const template = Handlebars.compile(templateSource);
+
         function blend(index, isbn, book) {
 
-            const fig = document.createElement("figure")
-            fig.dataset.index = index
-            fig.classList.add("figure")
-            fig.style = "padding: 10px; max-width: 164px" // max-width: 158px
-            for (const tagIndex in book.tags) {
-                fig.classList.add(book.tags[tagIndex])
-            }
+            const context = {
+                index,
+                isbn,
+                book,
+                author: book.de.split(/ \(/)[0],
+                imageClass: classifyImage(book.cover),
+                lipion: book.where.includes('lipion'),
+            };
 
-            fig.classList.add(classifyImage(book.cover))
-            fig.classList.add(book.where)
-            fig.id = isbn
+            const html = template(context);
+            const fragment = document.createRange().createContextualFragment(html);
 
-            const img = document.createElement("img")
-            if (!book.image_path) {
-                console.error("image_path not defined", isbn, book)
-            }
-            img.src = book.image_path // .replace("thumbs", "thumbs3")
-            img.classList.add("figure-img")
-            img.classList.add("img-fluid")
-
-            const img_link = document.createElement("a")
-            //// {
-            ////    img_link.href = filterParam ? '/' : `/?f=${isbn}`
-            //// } // OR
-            {
-                img_link.target = "_image" 
-                img_link.href = `/scatter/?image=/${book.image_path.replace('thumbs','thumbs2')}`
-            }
-            img_link.appendChild(img)
-
-            const figcaption = document.createElement("figcaption")
-            figcaption.classList.add("figure-caption")
-            figcaption.classList.add("text-wrap")
-            let figcaptionstyle = `width: 100%;`
-            figcaption.style = figcaptionstyle
-
-            let lan = book.lan || ''
-            if (!book.de) {
-                console.error("author ('de') not defined", isbn, book)
-            }
-            let author = book.de.split(/ \(/)[0]
-            let title = book.title
-            let where = book.where
-            const authorE = document.createTextNode(author)
-            const titleE = document.createTextNode(title)
-            const titleSPAN = document.createElement("span")
-            titleSPAN.appendChild(titleE)
-            titleSPAN.style = "font-size:smaller;"
-            const paletteBar = document.createElement("div")
-            paletteBar.classList.add("paletteBar")
-
-            if (where.includes("lipion")) {
-                const float1 = document.createElement("span")
-                float1.classList.add("float-end")
-                float1.style = "color: #b9e537; font-size: 14pt; font-weight: bold;"
-                const sgl = document.createElement("span")
-                sgl.classList.add("sgl")
-                /*
-                <span class="sgl"></span>
-                const flag = document.createTextNode('●'); // 
-                */
-                float1.appendChild(sgl)
-                figcaption.appendChild(float1)
-            } {
-                const text = document.createTextNode(lan)
-                const float = document.createElement("span")
-                float.classList.add("float-end")
-                float.appendChild(text)
-                float.style = "font-size: larger;"
-                if (false) {
-                    titleSPAN.appendChild(float)
-                }
-            }
-            let spy
-            {
-                book.cover.palette.forEach(e => {
-                    let color = document.createElement("div")
-                    let bg = `rgb(${e.color})`
-                    let width = 100 * (e.count / book.cover.paletteSize)
-                    color.style = `display:inline-block; heigt:100%; width: ${width}%; background: ${bg}`
-                    paletteBar.appendChild(color)
-                })
-                /*
-                const decimals = 0
-                const text0 = document.createTextNode(`
-_H: ${book.cover.dominantColorHSL[0].toFixed(decimals).padStart(3, '0')}
-_S: ${book.cover.dominantColorHSL[1].toFixed(decimals).padStart(3, '0')}
-_L: ${book.cover.dominantColorHSL[2].toFixed(decimals).padStart(3, '0')}
-`)
-                const text = document.createTextNode(`
-μH: ${book.cover.mean_hue.toFixed(decimals).padStart(3, '0')}
-μS: ${book.cover.mean_saturation.toFixed(decimals).padStart(3, '0')}
-μL: ${book.cover.mean_lightness.toFixed(decimals).padStart(3, '0')}
-`)
-                const text2 = document.createTextNode(`
-σH: ${book.cover.std_hue.toFixed(decimals).padStart(3, '0')}
-σS: ${book.cover.std_saturation.toFixed(decimals).padStart(3, '0')}
-σL: ${book.cover.std_lightness.toFixed(decimals).padStart(3, '0')}
-`)
-                const text3 = document.createTextNode(`
-mono: ${book.cover.monochrome}
-`)
-                const text4 = document.createTextNode(`
-mono2: ${book.cover.monochrome2}
-`)
-*/
-                const text5 = document.createTextNode(`
-${book.cover.palette_diversity["_01"].toFixed(0)} +
-${book.cover.palette_diversity["_02"].toFixed(0)} +
-${book.cover.palette_diversity["_12"].toFixed(0)} =
-${book.cover.palette_diversity.total.toFixed(0)}
-`)
-                spy = document.createElement("div")
-                // div.classList.add("float-end")
-                spy.style = "font-size: 9.5px; overflow-wrap: anywhere; font-family: monospace, monospace;"// font-family: monospace, monospace
-                /*
-                spy.appendChild(text0)
-                spy.appendChild(document.createElement("br"))
-                spy.appendChild(text)
-                spy.appendChild(document.createElement("br"))
-                spy.appendChild(text2)
-                spy.appendChild(document.createElement("br"))
-                spy.appendChild(text3)
-                spy.appendChild(document.createElement("br"))
-                spy.appendChild(text4)
-                */
-                spy.appendChild(document.createElement("br"))
-                spy.appendChild(text5)
-            }
-            figcaption.appendChild(authorE)
-            /* figcaption.appendChild(paletteBar) */
-            figcaption.appendChild(document.createElement("br"))
-            figcaption.appendChild(titleSPAN)
-            if (false /*spy*/) {
-                figcaption.appendChild(spy)
-            }
-            fig.appendChild(img_link)
-            fig.appendChild(figcaption)
-            fig.appendChild(paletteBar)
-            figuresContainer.appendChild(fig)
+            // Append the generated HTML to your container
+            figuresContainer.appendChild(fragment);
         }
 
         function updateDisplay(text) {
@@ -1060,11 +951,6 @@ ${book.cover.palette_diversity.total.toFixed(0)}
                         return true
                     }
                     /*
-                    return e[0] === "978-2729841102"
-                    return e[0] === "978-2070108534"
-                    return e[0] === "978-0810902626"
-                    return e[0] === "978-8837097073"
-                    return e[0] === "978-0194313353"
                     return e[0] === "978-3551732248"
                     */
                 })

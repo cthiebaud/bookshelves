@@ -1,0 +1,24 @@
+<!-- book-template.hbs -->
+<figure id="{{isbn}}" 
+        class="figure {{#each book.tags}}{{this}} {{/each}} {{imageClass}}" 
+        data-index="{{index}}" 
+        style="padding: 10px; max-width: 164px;">
+    <a href="/scatter/?image=/{{book.image_path}}" target="_image">
+        <img src="{{book.image_path}}" class="figure-img img-fluid">
+    </a>
+    <figcaption class="figure-caption text-wrap" style="width: 100%;">
+        {{#if lipion}}
+            <span class="float-end" style="color: #b9e537; font-size: 14pt; font-weight: bold;"><span class="sgl"></span></span>
+        {{/if}}
+        <div>{{author}}</div>
+        <div style="font-size:smaller;">{{book.title}}</div>
+        {{#if book.cover.palette}}
+            <div class="paletteBar">
+                {{#each book.cover.palette}}
+                    <div style="display:inline-block; width:{{calculatePercentage this.count @root.book.cover.paletteSize}}%; background:rgb({{this.color}});"></div>
+                {{/each}}
+            </div>
+        {{/if}}
+    </figcaption>
+</figure>
+    
