@@ -6,7 +6,6 @@
   tags:
     - philo
 
-
 978-8845922114:
   title: Kafka
   ext: Copertina flessibile – 10 ottobre 2007
@@ -95,5 +94,21 @@ serienoire:
   ext: Le battaglie del Biferno, del Trigno e dell'Alto Volturno. L'avanzata dell'8° Armatabritannica fino al fiume Sangro (Vol. 1) Copertina flessibile – 13 giugno 2022
   de: Giovanni Artese (Autore)
   lan: 🇮🇹
+  tags:
+    - nazi
+
+978-2330174125:
+  title: Trois femmes disparaissent
+  ext: Broché – Grand livre, 4 janvier 2023
+  de: Hélène Frappat (Auteur)
+  lan: 🇫🇷
+  tags:
+    - cinema
+
+978-2330186647:
+  title: "Le temps des loups: L'Allemagne et les Allemands (1945-1955)"
+  ext: Broché – Grand livre, 10 janvier 2024
+  de: Harald Jähner (Auteur), Olivier Mannoni (Traduction)
+  lan: 🇩🇪
   tags:
     - nazi
