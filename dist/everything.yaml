@@ -2519,6 +2519,21 @@
   - _1997
   title: A Certain Justice
   where: /saint-jean-lipion/chambre/pdjames
+978-0571370900:
+  cover:
+    palette: '[{''color'': [101, 101, 101], ''count'': 7103}, {''color'': [136, 136,
+      136], ''count'': 13533}, {''color'': [187, 187, 187], ''count'': 15838}, {''color'':
+      [232, 232, 232], ''count'': 11576}, {''color'': [10, 10, 10], ''count'': 13550}]'
+  de: Peter Cowie (Autore)
+  image_path: thumbs/T_978-0571370900.webp
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - cinema
+  - saint-lazare-de-savene
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: God and the Devil - The Life and Work of Ingmar Bergman
+  where: /saint-lazare-de-savene
 978-0575075207:
   cover:
     palette: '[{''color'': [39, 47, 66], ''count'': 16521}, {''color'': [23, 28, 42],
@@ -3696,6 +3711,20 @@
   - _2013
   title: Doctor Sleep
   where: /saint-jean-lipion/chambre/polar
+978-1509552689:
+  cover:
+    palette: '[{''color'': [66, 75, 71], ''count'': 11445}, {''color'': [46, 44, 43],
+      ''count'': 21567}, {''color'': [169, 137, 105], ''count'': 3717}, {''color'':
+      [18, 18, 21], ''count'': 17658}, {''color'': [119, 81, 57], ''count'': 6013}]'
+  de: Maxine Berg, Pat Hudson (Autore)
+  image_path: thumbs/T_978-1509552689.webp
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - saint-lazare-de-savene
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: Slavery, Capitalism and the Industrial Revolution
+  where: /saint-lazare-de-savene
 978-1522796152:
   cover:
     palette: '[{''color'': [14, 10, 10], ''count'': 10830}, {''color'': [69, 62, 67],
@@ -11033,12 +11062,12 @@
   de: "Harald J\xE4hner (Auteur), Olivier Mannoni (Traduction)"
   ext: "Broch\xE9 \u2013 Grand livre, 10 janvier 2024"
   image_path: thumbs/T_978-2330186647.webp
-  lan: "\U0001F1E9\U0001F1EA"
+  lan: "\U0001F1EB\U0001F1F7"
   tags:
   - nazi
   - saint-lazare-de-savene
   - saint-lazare-de-savene
-  - "\U0001F1E9\U0001F1EA"
+  - "\U0001F1EB\U0001F1F7"
   title: 'Le temps des loups: L''Allemagne et les Allemands (1945-1955)'
   where: /saint-lazare-de-savene
 978-2340047808:
