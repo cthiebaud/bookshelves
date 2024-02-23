@@ -2529,6 +2529,7 @@
   lan: "\U0001F1EC\U0001F1E7"
   tags:
   - cinema
+  - biographie
   - saint-lazare-de-savene
   - saint-lazare-de-savene
   - "\U0001F1EC\U0001F1E7"
@@ -3455,6 +3456,21 @@
   - _1820
   title: "M\xE9ditations - Nouvelles m\xE9ditations"
   where: /saint-lazare-de-savene/salon/small
+978-1250623546:
+  cover:
+    palette: '[{''color'': [51, 50, 50], ''count'': 16269}, {''color'': [40, 38, 37],
+      ''count'': 3185}, {''color'': [29, 27, 26], ''count'': 24946}, {''color'': [165,
+      165, 164], ''count'': 311}, {''color'': [247, 247, 247], ''count'': 15489}]'
+  de: Will Shortz (Editor)
+  ext: "100 Puzzles Edited by Will Shortz Hardcover \u2013 October 6, 2020"
+  image_path: thumbs/T_978-1250623546.webp
+  lan: "\U0001F1EC\U0001F1E7"
+  tags:
+  - saint-lazare-de-savene
+  - saint-lazare-de-savene
+  - "\U0001F1EC\U0001F1E7"
+  title: The New York Times Classic Crossword Puzzles
+  where: /saint-lazare-de-savene
 978-1316504864:
   cover:
     palette: '[{''color'': [253, 252, 251], ''count'': 23312}, {''color'': [219, 193,
@@ -4860,12 +4876,12 @@
   image_path: thumbs/T_978-2021323672.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - biographie
+  - autre
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
   - _2015
   title: "Anatomie de la Terreur - Le processus r\xE9volutionnaire 1787-1793"
-  where: /saint-jean-lipion/chambre/biographie
+  where: /saint-jean-lipion/chambre/autre
 978-2021427424:
   cover:
     palette: '[{''color'': [11, 9, 2], ''count'': 39614}, {''color'': [116, 118, 78],
@@ -5441,7 +5457,7 @@
   image_path: thumbs/T_978-2070126163.webp
   lan: "\U0001F1EB\U0001F1F7"
   tags:
-  - editeurs
+  - editor
   - roth
   - mostly_black
   - saint-lazare-de-savene
@@ -7506,6 +7522,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - celine
+  - editor
   - saint-lazare-de-savene
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -11037,6 +11054,22 @@
   - _2017
   title: "Imre Kert\xE9sz : \"l'histoire de mes morts\" - essai biographique"
   where: /saint-jean-lipion/chambre/biographie
+978-2330113445:
+  cover:
+    palette: '[{''color'': [223, 218, 189], ''count'': 27548}, {''color'': [213, 196,
+      146], ''count'': 13966}, {''color'': [175, 167, 141], ''count'': 15919}, {''color'':
+      [122, 113, 79], ''count'': 5004}, {''color'': [71, 68, 51], ''count'': 12163}]'
+  de: "Linn Ullmann (Auteur), C\xE9line Romand-Monnier (Traduction)"
+  etx: "Broch\xE9 \u2013 Grand livre, 3 octobre 2018"
+  image_path: thumbs/T_978-2330113445.webp
+  lan: "\U0001F1EB\U0001F1F7"
+  tags:
+  - cinema
+  - saint-lazare-de-savene
+  - saint-lazare-de-savene
+  - "\U0001F1EB\U0001F1F7"
+  title: "Le Registre de l'inqui\xE9tude"
+  where: /saint-lazare-de-savene
 978-2330174125:
   cover:
     palette: '[{''color'': [216, 103, 114], ''count'': 14612}, {''color'': [224, 146,
@@ -12417,6 +12450,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
+  - biographie
   - kafka
   - saint-jean-lipion
   - "\U0001F1EB\U0001F1F7"
@@ -12435,6 +12469,7 @@
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - kafka
+  - biographie
   - saint-lazare-de-savene
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"
@@ -19299,6 +19334,7 @@
   lan: "\U0001F1EE\U0001F1F9"
   tags:
   - kafka
+  - biographie
   - saint-lazare-de-savene
   - saint-lazare-de-savene
   - "\U0001F1EE\U0001F1F9"
@@ -23345,6 +23381,7 @@ serienoire:
   lan: "\U0001F1EB\U0001F1F7"
   tags:
   - perec
+  - cinema
   - saint-lazare-de-savene
   - saint-lazare-de-savene
   - "\U0001F1EB\U0001F1F7"

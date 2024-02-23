@@ -13,6 +13,7 @@
   lan: 🇮🇹
   tags:
     - kafka
+    - biographie
 
 978-0008470333:
   title: Notes on Grief
@@ -45,7 +46,8 @@
   lan: 🇫🇷
   tags:
     - celine
-
+    - editor
+  
 978-2234077447:
   title: La décision
   ext: Broché – Grand livre, 20 août 2014
@@ -81,6 +83,7 @@
   lan: 🇫🇷
   tags:
     - kafka
+    - biographie
 
 serienoire:
   title: L'Avant-Scène Cinéma - N° 233 - Série Noire (découpage intégral et dialogues in extenso)
@@ -88,6 +91,7 @@ serienoire:
   lan: 🇫🇷
   tags:
     - perec
+    - cinema
 
 979-1221409475:
   title: La guerra in Abruzzo e Molise 1943-1944
@@ -119,9 +123,23 @@ serienoire:
   lan: 🇬🇧
   tags:
     - cinema
+    - biographie
 
 978-1509552689:
   title: Slavery, Capitalism and the Industrial Revolution
   de: Maxine Berg, Pat Hudson (Autore)
   lan: 🇬🇧
 
+978-1250623546:
+  title: The New York Times Classic Crossword Puzzles
+  ext: 100 Puzzles Edited by Will Shortz Hardcover – October 6, 2020
+  de: Will Shortz (Editor)
+  lan: 🇬🇧
+
+978-2330113445:
+  title: Le Registre de l'inquiétude
+  etx: Broché – Grand livre, 3 octobre 2018
+  de: Linn Ullmann (Auteur), Céline Romand-Monnier (Traduction)
+  lan: 🇫🇷
+  tags:
+    - cinema
